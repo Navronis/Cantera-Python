@@ -1,0 +1,13 @@
+{
+  "exact_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "cantera_version": "4.0.0a2",
+  "oracle_identity_hash": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744",
+  "python_module_location": "cantera-oracle-env/lib/python3.12/site-packages/cantera",
+  "python_executable": "cantera-oracle-env/bin/python3",
+  "build_directory": "cantera-pinned-oracle",
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "build_command": "python3 -m SCons build -j16",
+  "timestamp": "2026-09-25T21:53:00+05:30",
+  "verified_live_native": true
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cantera-python-equations"
+version = "0.1.0"
+description = "Incomplete Cantera-independent Python implementation of selected models"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "License.txt"}
+dependencies = [
+    "numpy>=1.26",
+    "ruamel.yaml>=0.18",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+reference = ["cantera==3.2.0"]
+parity = ["scikit-sundae==1.1.3"]
+
+[tool.setuptools.packages.find]
+include = ["cantera_python*"]

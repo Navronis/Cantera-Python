@@ -1,0 +1,49 @@
+{
+  "status_schema_version": "2.0",
+  "generated_from_artifacts": [
+    "audit/solver_wave1_summary.json",
+    "audit/native_wave1_summary.json",
+    "audit/native_oracle_identity.json",
+    "audit/wave1_scientific_branch_coverage.json",
+    "audit/wave1_rtol_sweep.json",
+    "provenance/solver_wave_definitions.json"
+  ],
+  "status_date": "2026-09-25",
+  "pinned_source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "runtime_native_cantera_dependency": false,
+  "PORT_COMPLETE": false,
+  "FULL_PORT_COMPLETE": false,
+  "disclaimer": "This repository is an unofficial experimental pure-Python reconstruction of Cantera solvers. Full Cantera is NOT complete. Only Solver Wave 1 is published in this release.",
+  "published_wave": 1,
+  "wave_1_status": {
+    "name": "Thermodynamic inverse-state solver foundation",
+    "scope": [
+      "setState_HP",
+      "setState_UV",
+      "setState_SP",
+      "setState_SV",
+      "setState_HPorUV",
+      "setState_SPorSV"
+    ],
+    "SOURCE_ACCOUNTED": true,
+    "IMPLEMENTATION_COMPLETE": true,
+    "INDEPENDENTLY_VALIDATED": true,
+    "ADVERSARIAL_VALIDATED": true,
+    "LIVE_PINNED_NATIVE_VALIDATED": true,
+    "revalidation_state": "VALIDATION_COMPLETE",
+    "total_differential_cases": 4100,
+    "parity_success_cases": 4000,
+    "parity_failure_cases": 100,
+    "mismatches": 0,
+    "max_relative_error_temperature": 5.5953e-09,
+    "max_relative_error_pressure": 9.6929e-09,
+    "max_relative_error_density": 7.7017e-09
+  },
+  "tests": {
+    "test_suite": "tests/",
+    "cases_passed": 143,
+    "cases_skipped": 6,
+    "cases_failed": 0,
+    "duration_seconds": 14.6
+  }
+}

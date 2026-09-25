@@ -1,0 +1,159 @@
+{
+  "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "native_source_root": "outputs/cantera-original",
+  "python_runtime_root": "outputs/cantera-python/cantera_python",
+  "audit_root": "outputs/cantera-python/audit",
+  "provenance_root": "outputs/cantera-python/provenance",
+  "test_root": "outputs/cantera-python/tests",
+  "dimensions": [
+    "SOURCE_ACCOUNTED",
+    "IMPLEMENTATION_COMPLETE",
+    "INDEPENDENTLY_VALIDATED",
+    "ADVERSARIAL_VALIDATED",
+    "LIVE_PINNED_NATIVE_VALIDATED"
+  ],
+  "waves": {
+    "1": {
+      "name": "Thermodynamic inverse-state solver foundation",
+      "scope": [
+        "setState_HP",
+        "setState_UV",
+        "setState_SP",
+        "setState_SV",
+        "setState_HPorUV",
+        "setState_SPorSV"
+      ],
+      "native_sources": [
+        "src/thermo/ThermoPhase.cpp",
+        "include/cantera/thermo/ThermoPhase.h"
+      ],
+      "python_modules": [
+        "cantera_python.state",
+        "cantera_python.thermo",
+        "cantera_python.ideal_gas",
+        "cantera_python.phases"
+      ],
+      "audit_artifacts": [
+        "audit/solver_wave1_summary.json",
+        "audit/solver_wave1_mapping.jsonl",
+        "audit/solver_wave1_differential.jsonl",
+        "audit/solver_wave1_iteration_traces_python.jsonl",
+        "audit/solver_wave1_performance.json",
+        "audit/wave1_scientific_branch_coverage.json",
+        "audit/wave1_rtol_sweep.json"
+      ],
+      "status": {
+        "SOURCE_ACCOUNTED": true,
+        "IMPLEMENTATION_COMPLETE": true,
+        "INDEPENDENTLY_VALIDATED": true,
+        "ADVERSARIAL_VALIDATED": true,
+        "LIVE_PINNED_NATIVE_VALIDATED": true,
+        "live_native_reason": "MATCHES_PINNED_CANTERA_726522B",
+        "revalidation_state": "VALIDATION_COMPLETE"
+      }
+    },
+    "2": {
+      "name": "Cubic/nonideal root solver foundation",
+      "scope": [
+        "MixtureFugacityTP::solveCubic",
+        "PengRobinson::solveCubic",
+        "RedlichKwongMFTP::solveCubic",
+        "root solving",
+        "root filtering",
+        "root ordering",
+        "phase selection",
+        "continuation",
+        "density calculation",
+        "spinodal/stability behavior",
+        "PR/RK property integration"
+      ],
+      "native_sources": [
+        "src/thermo/MixtureFugacityTP.cpp",
+        "src/thermo/PengRobinson.cpp",
+        "src/thermo/RedlichKwongMFTP.cpp",
+        "include/cantera/thermo/MixtureFugacityTP.h",
+        "include/cantera/thermo/PengRobinson.h",
+        "include/cantera/thermo/RedlichKwongMFTP.h"
+      ],
+      "python_modules": [
+        "cantera_python.cubic_eos"
+      ],
+      "audit_artifacts": [
+        "audit/solver_wave2_summary.json",
+        "audit/solver_wave2_mapping.jsonl",
+        "audit/solver_wave2_differential.jsonl",
+        "audit/solver_wave2_root_selection_matrix.md",
+        "audit/solver_wave2_performance.json",
+        "audit/wave2_branch_coverage.json",
+        "audit/wave2_stability_validation.jsonl",
+        "audit/wave2_source_behavior_comparison.jsonl"
+      ],
+      "status": {
+        "SOURCE_ACCOUNTED": true,
+        "IMPLEMENTATION_COMPLETE": true,
+        "INDEPENDENTLY_VALIDATED": true,
+        "ADVERSARIAL_VALIDATED": true,
+        "LIVE_PINNED_NATIVE_VALIDATED": false,
+        "live_native_reason": "LIVE_PINNED_ORACLE_UNAVAILABLE",
+        "revalidation_state": "REVALIDATION_COMPLETE_EXCEPT_LIVE_NATIVE"
+      }
+    },
+    "3": {
+      "name": "TPX/PureFluid real-fluid solver stack",
+      "scope": [
+        "Substance",
+        "Water",
+        "CO2",
+        "N2",
+        "O2",
+        "H2",
+        "CH4",
+        "Heptane",
+        "HFC-134a",
+        "saturation",
+        "quality",
+        "density inversion",
+        "property-pair inversion",
+        "derivatives",
+        "critical/boundary behavior"
+      ],
+      "native_sources": [
+        "src/tpx/Sub.cpp",
+        "src/tpx/Water.cpp",
+        "src/tpx/CarbonDioxide.cpp",
+        "src/tpx/Nitrogen.cpp",
+        "src/tpx/Oxygen.cpp",
+        "src/tpx/Hydrogen.cpp",
+        "src/tpx/Methane.cpp",
+        "src/tpx/Heptane.cpp",
+        "src/tpx/HFC134a.cpp",
+        "src/tpx/utils.cpp",
+        "include/cantera/tpx/Sub.h",
+        "include/cantera/tpx/utils.h"
+      ],
+      "python_modules": [
+        "cantera_python.tpx",
+        "cantera_python.tpx_exact"
+      ],
+      "audit_artifacts": [
+        "audit/solver_wave3_summary.json",
+        "audit/solver_wave3_fluid_matrix.json",
+        "audit/solver_wave3_cp_cv_summary.json",
+        "audit/solver_wave3_cp_cv_validation.jsonl",
+        "audit/solver_wave3_property_pair_summary.json",
+        "audit/solver_wave3_property_pair_validation.jsonl",
+        "audit/runtime_stub_inventory.jsonl",
+        "audit/solver_cross_wave_sequences_summary.json"
+      ],
+      "status": {
+        "SOURCE_ACCOUNTED": true,
+        "IMPLEMENTATION_COMPLETE": true,
+        "INDEPENDENTLY_VALIDATED": true,
+        "ADVERSARIAL_VALIDATED": true,
+        "LIVE_PINNED_NATIVE_VALIDATED": false,
+        "live_native_reason": "LIVE_PINNED_ORACLE_UNAVAILABLE",
+        "revalidation_state": "REVALIDATION_COMPLETE_EXCEPT_LIVE_NATIVE"
+      }
+    }
+  }
+}
