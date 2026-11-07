@@ -1,0 +1,138 @@
+{
+  "campaign": "OneDim Differential Parity Campaign",
+  "total_cases": 20,
+  "passed_cases": 20,
+  "failed_cases": 0,
+  "pass_rate_percent": 100.0,
+  "structure_mismatches": 0,
+  "norm_mismatches": 0,
+  "residual_mismatches": 0,
+  "jacobian_mismatches": 0,
+  "exception_mismatches": 0,
+  "max_rel_norm_diff": 2.3323815749783864e-15,
+  "max_abs_residual_diff": 1.1368683772161603e-13,
+  "max_abs_jacobian_diff": 5.08606955440527e-08,
+  "parity_achieved": true,
+  "cases": [
+    {
+      "case_id": "oned_01_single_domain_linear",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_02_single_domain_quadratic",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_03_three_domains_symmetric",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_04_three_domains_asymmetric_vars",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_05_five_domains_multistage",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_06_weighted_norm_zero_state",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_07_weighted_norm_disparate_scales",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_08_eval_steady_full_grid",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_09_eval_transient_pseudo_time",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_10_eval_point_local",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_11_bandwidth_layout",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_12_eval_jacobian_single_domain",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_13_eval_jacobian_three_domains",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_14_component_queries",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_15_bounds_queries",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_16_time_integration_modes",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_17_point_domain_mapping",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_18_domain_index_lookup",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "oned_19_domain_index_out_of_bounds_exception",
+      "passed": true,
+      "exception_thrown": true,
+      "notes": "Expected exception triggered and matched in both."
+    },
+    {
+      "case_id": "oned_20_component_index_out_of_bounds_exception",
+      "passed": true,
+      "exception_thrown": true,
+      "notes": "Expected exception triggered and matched in both."
+    }
+  ]
+}

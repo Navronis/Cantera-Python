@@ -1,0 +1,6 @@
+{
+  "status": "PYTHON_ONLY_PENDING_NATIVE",
+  "oracle_role": "NO_LIVE_PINNED_NATIVE",
+  "benchmark_script": "tools/run_solver_wave2_differential.py",
+  "notes": "Native root timings and slowdown factors require an executable built from the pinned commit."
+}

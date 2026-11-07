@@ -1,0 +1,14 @@
+{
+  "family": "THERMO_FAMILY_3_THERMOPHASE_BASE",
+  "benchmark_environment": "x86_64 CPU, Windows 11 host vs WSL2 native",
+  "workload": "GRI-30 (53 species), 20k forward evals, 2k HP inversions",
+  "native_forward_eval_us": 2.08621,
+  "python_forward_eval_us": 414.4758649999858,
+  "forward_slowdown_factor": 198.674086022014,
+  "native_hp_inversion_us": 3.66006,
+  "python_hp_inversion_us": 870.0349499995355,
+  "hp_inversion_slowdown_factor": 237.71057031839243,
+  "THERMO_FAMILY3_NATIVE_SPEED_PARITY": false,
+  "status_explanation": "Pure-Python/NumPy ThermoPhase achieves full scientific parity with exact convergence and bitwise/numerical accuracy across all 90 cases. However, Python interpreter overhead results in a 198.7x slowdown on forward evaluations and 237.7x on Newton state inversions compared to -O3 compiled C++.",
+  "checksum_sink": -210158650831536.12
+}

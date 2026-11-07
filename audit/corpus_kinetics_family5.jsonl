@@ -1,0 +1,45 @@
+{"case_id": "fam5_vib_001_T300_P101325", "category": "vibrational_relaxation", "mechanism": "vibrational-relaxation.yaml", "temperature": 300.0, "pressure": 101325.0, "mole_fractions": "N2:0.7, O2:0.2, N2(v1):0.1"}
+{"case_id": "fam5_vib_002_T500_P50662", "category": "vibrational_relaxation", "mechanism": "vibrational-relaxation.yaml", "temperature": 500.0, "pressure": 50662.5, "mole_fractions": "N2:0.7, O2:0.2, N2(v1):0.1"}
+{"case_id": "fam5_vib_003_T800_P202650", "category": "vibrational_relaxation", "mechanism": "vibrational-relaxation.yaml", "temperature": 800.0, "pressure": 202650.0, "mole_fractions": "N2:0.7, O2:0.2, N2(v1):0.1"}
+{"case_id": "fam5_vib_004_T1000_P101325", "category": "vibrational_relaxation", "mechanism": "vibrational-relaxation.yaml", "temperature": 1000.0, "pressure": 101325.0, "mole_fractions": "N2:0.7, O2:0.2, N2(v1):0.1"}
+{"case_id": "fam5_vib_005_T1200_P1013250", "category": "vibrational_relaxation", "mechanism": "vibrational-relaxation.yaml", "temperature": 1200.0, "pressure": 1013250.0, "mole_fractions": "N2:0.7, O2:0.2, N2(v1):0.1"}
+{"case_id": "fam5_vib_006_T1500_P101325", "category": "vibrational_relaxation", "mechanism": "vibrational-relaxation.yaml", "temperature": 1500.0, "pressure": 101325.0, "mole_fractions": "N2:0.7, O2:0.2, N2(v1):0.1"}
+{"case_id": "fam5_vib_007_T1800_P506625", "category": "vibrational_relaxation", "mechanism": "vibrational-relaxation.yaml", "temperature": 1800.0, "pressure": 506625.0, "mole_fractions": "N2:0.7, O2:0.2, N2(v1):0.1"}
+{"case_id": "fam5_vib_008_T2200_P101325", "category": "vibrational_relaxation", "mechanism": "vibrational-relaxation.yaml", "temperature": 2200.0, "pressure": 101325.0, "mole_fractions": "N2:0.7, O2:0.2, N2(v1):0.1"}
+{"case_id": "fam5_vib_009_T2600_P2026500", "category": "vibrational_relaxation", "mechanism": "vibrational-relaxation.yaml", "temperature": 2600.0, "pressure": 2026500.0, "mole_fractions": "N2:0.7, O2:0.2, N2(v1):0.1"}
+{"case_id": "fam5_vib_010_T3000_P101325", "category": "vibrational_relaxation", "mechanism": "vibrational-relaxation.yaml", "temperature": 3000.0, "pressure": 101325.0, "mole_fractions": "N2:0.7, O2:0.2, N2(v1):0.1"}
+{"case_id": "fam5_plasma2t_001_T300_Te11604", "category": "two_temp_plasma", "mechanism": "oxygen-plasma.yaml", "temperature": 300.0, "electron_temperature": 11604.5, "pressure": 101325.0, "mole_fractions": "O2:0.9, E:0.05, O2-:0.05"}
+{"case_id": "fam5_plasma2t_002_T400_Te23209", "category": "two_temp_plasma", "mechanism": "oxygen-plasma.yaml", "temperature": 400.0, "electron_temperature": 23209.0, "pressure": 101325.0, "mole_fractions": "O2:0.9, E:0.05, O2-:0.05"}
+{"case_id": "fam5_plasma2t_003_T600_Te34813", "category": "two_temp_plasma", "mechanism": "oxygen-plasma.yaml", "temperature": 600.0, "electron_temperature": 34813.5, "pressure": 101325.0, "mole_fractions": "O2:0.9, E:0.05, O2-:0.05"}
+{"case_id": "fam5_plasma2t_004_T800_Te46418", "category": "two_temp_plasma", "mechanism": "oxygen-plasma.yaml", "temperature": 800.0, "electron_temperature": 46418.0, "pressure": 101325.0, "mole_fractions": "O2:0.9, E:0.05, O2-:0.05"}
+{"case_id": "fam5_plasma2t_005_T1000_Te58022", "category": "two_temp_plasma", "mechanism": "oxygen-plasma.yaml", "temperature": 1000.0, "electron_temperature": 58022.5, "pressure": 101325.0, "mole_fractions": "O2:0.9, E:0.05, O2-:0.05"}
+{"case_id": "fam5_plasma2t_006_T1200_Te11604", "category": "two_temp_plasma", "mechanism": "oxygen-plasma.yaml", "temperature": 1200.0, "electron_temperature": 11604.5, "pressure": 101325.0, "mole_fractions": "O2:0.9, E:0.05, O2-:0.05"}
+{"case_id": "fam5_plasma2t_007_T1500_Te23209", "category": "two_temp_plasma", "mechanism": "oxygen-plasma.yaml", "temperature": 1500.0, "electron_temperature": 23209.0, "pressure": 101325.0, "mole_fractions": "O2:0.9, E:0.05, O2-:0.05"}
+{"case_id": "fam5_plasma2t_008_T1800_Te34813", "category": "two_temp_plasma", "mechanism": "oxygen-plasma.yaml", "temperature": 1800.0, "electron_temperature": 34813.5, "pressure": 101325.0, "mole_fractions": "O2:0.9, E:0.05, O2-:0.05"}
+{"case_id": "fam5_plasma2t_009_T2000_Te46418", "category": "two_temp_plasma", "mechanism": "oxygen-plasma.yaml", "temperature": 2000.0, "electron_temperature": 46418.0, "pressure": 101325.0, "mole_fractions": "O2:0.9, E:0.05, O2-:0.05"}
+{"case_id": "fam5_plasma2t_010_T2500_Te58022", "category": "two_temp_plasma", "mechanism": "oxygen-plasma.yaml", "temperature": 2500.0, "electron_temperature": 58022.5, "pressure": 101325.0, "mole_fractions": "O2:0.9, E:0.05, O2-:0.05"}
+{"case_id": "fam5_airplasma_001_T300", "category": "air_plasma", "mechanism": "air-plasma.yaml", "temperature": 300.0, "electron_temperature": 23209.0, "pressure": 101325.0, "mole_fractions": "N2:0.78, O2:0.21, Electron:0.01"}
+{"case_id": "fam5_airplasma_002_T500", "category": "air_plasma", "mechanism": "air-plasma.yaml", "temperature": 500.0, "electron_temperature": 23209.0, "pressure": 101325.0, "mole_fractions": "N2:0.78, O2:0.21, Electron:0.01"}
+{"case_id": "fam5_airplasma_003_T1000", "category": "air_plasma", "mechanism": "air-plasma.yaml", "temperature": 1000.0, "electron_temperature": 23209.0, "pressure": 101325.0, "mole_fractions": "N2:0.78, O2:0.21, Electron:0.01"}
+{"case_id": "fam5_airplasma_004_T1500", "category": "air_plasma", "mechanism": "air-plasma.yaml", "temperature": 1500.0, "electron_temperature": 23209.0, "pressure": 101325.0, "mole_fractions": "N2:0.78, O2:0.21, Electron:0.01"}
+{"case_id": "fam5_airplasma_005_T2000", "category": "air_plasma", "mechanism": "air-plasma.yaml", "temperature": 2000.0, "electron_temperature": 23209.0, "pressure": 101325.0, "mole_fractions": "N2:0.78, O2:0.21, Electron:0.01"}
+{"case_id": "fam5_custom_delegator_001_T300", "category": "custom_delegator", "temperature": 300.0, "pressure": 101325.0}
+{"case_id": "fam5_custom_delegator_002_T500", "category": "custom_delegator", "temperature": 500.0, "pressure": 101325.0}
+{"case_id": "fam5_custom_delegator_003_T1000", "category": "custom_delegator", "temperature": 1000.0, "pressure": 101325.0}
+{"case_id": "fam5_custom_delegator_004_T1500", "category": "custom_delegator", "temperature": 1500.0, "pressure": 101325.0}
+{"case_id": "fam5_custom_delegator_005_T2000", "category": "custom_delegator", "temperature": 2000.0, "pressure": 101325.0}
+{"case_id": "fam5_multirate_001_Arrhenius", "category": "multirate_ops", "rate_type": "Arrhenius", "temperature": 1000.0}
+{"case_id": "fam5_multirate_002_Blowers_Masel", "category": "multirate_ops", "rate_type": "Blowers-Masel", "temperature": 1000.0}
+{"case_id": "fam5_multirate_003_two_temperature_plasma", "category": "multirate_ops", "rate_type": "two-temperature-plasma", "temperature": 1000.0}
+{"case_id": "fam5_multirate_004_constant_vibrational_relaxation", "category": "multirate_ops", "rate_type": "constant-vibrational-relaxation", "temperature": 1000.0}
+{"case_id": "fam5_multirate_005_custom_rate_function", "category": "multirate_ops", "rate_type": "custom-rate-function", "temperature": 1000.0}
+{"case_id": "fam5_deriv_001_h2o2_T500", "category": "kinetics_derivatives", "mechanism": "h2o2.yaml", "temperature": 500.0, "pressure": 101325.0, "mole_fractions": "H2:0.5, O2:0.5"}
+{"case_id": "fam5_deriv_002_gri30_T800", "category": "kinetics_derivatives", "mechanism": "gri30.yaml", "temperature": 800.0, "pressure": 202650.0, "mole_fractions": "CH4:0.1, O2:0.2, N2:0.7"}
+{"case_id": "fam5_deriv_003_vibrational-relaxation_T1000", "category": "kinetics_derivatives", "mechanism": "vibrational-relaxation.yaml", "temperature": 1000.0, "pressure": 101325.0, "mole_fractions": "N2:0.7, O2:0.2, N2(v1):0.1"}
+{"case_id": "fam5_deriv_004_h2o2_T1200", "category": "kinetics_derivatives", "mechanism": "h2o2.yaml", "temperature": 1200.0, "pressure": 506625.0, "mole_fractions": "H2:0.5, O2:0.5"}
+{"case_id": "fam5_deriv_005_gri30_T1500", "category": "kinetics_derivatives", "mechanism": "gri30.yaml", "temperature": 1500.0, "pressure": 1013250.0, "mole_fractions": "CH4:0.1, O2:0.2, N2:0.7"}
+{"case_id": "fam5_deriv_006_h2o2_T1800", "category": "kinetics_derivatives", "mechanism": "h2o2.yaml", "temperature": 1800.0, "pressure": 101325.0, "mole_fractions": "H2:0.5, O2:0.5"}
+{"case_id": "fam5_deriv_007_gri30_T2000", "category": "kinetics_derivatives", "mechanism": "gri30.yaml", "temperature": 2000.0, "pressure": 202650.0, "mole_fractions": "CH4:0.1, O2:0.2, N2:0.7"}
+{"case_id": "fam5_deriv_008_vibrational-relaxation_T2200", "category": "kinetics_derivatives", "mechanism": "vibrational-relaxation.yaml", "temperature": 2200.0, "pressure": 101325.0, "mole_fractions": "N2:0.7, O2:0.2, N2(v1):0.1"}
+{"case_id": "fam5_deriv_009_h2o2_T2500", "category": "kinetics_derivatives", "mechanism": "h2o2.yaml", "temperature": 2500.0, "pressure": 506625.0, "mole_fractions": "H2:0.5, O2:0.5"}
+{"case_id": "fam5_deriv_010_gri30_T3000", "category": "kinetics_derivatives", "mechanism": "gri30.yaml", "temperature": 3000.0, "pressure": 101325.0, "mole_fractions": "CH4:0.1, O2:0.2, N2:0.7"}

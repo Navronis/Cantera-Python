@@ -1,0 +1,207 @@
+"""Generate deterministic differential validation corpus for Boundary1D subsystem.
+
+Generates:
+  - audit/corpus_boundary1d.jsonl
+"""
+
+import json
+from pathlib import Path
+
+
+def generate_corpus():
+    repo_root = Path(__file__).resolve().parent.parent
+    corpus_path = repo_root / "audit" / "corpus_boundary1d.jsonl"
+
+    cases = [
+        {
+            "case_id": "boundary1d_01_base_defaults",
+            "boundary_type": "boundary",
+            "description": "Boundary1D base class constructor, defaults, and unsupported methods",
+            "temperature": 500.0,
+            "mdot": 1.25,
+        },
+        {
+            "case_id": "boundary1d_02_empty1d_lifecycle",
+            "boundary_type": "empty",
+            "description": "Empty1D connected to flow domain, init and eval no-op",
+            "flow_type": "gas-flow",
+            "mech": "h2o2.yaml",
+        },
+        {
+            "case_id": "boundary1d_03_inlet1d_properties_gas",
+            "boundary_type": "inlet",
+            "description": "Inlet1D properties with gas phase (T, mdot, V0, mole fractions string)",
+            "mech": "h2o2.yaml",
+            "temperature": 400.0,
+            "mdot": 2.5,
+            "spread_rate": 12.3,
+            "mole_fractions": "H2:0.8, O2:0.2",
+        },
+        {
+            "case_id": "boundary1d_04_inlet1d_properties_span",
+            "boundary_type": "inlet",
+            "description": "Inlet1D properties with span mole fractions",
+            "mech": "h2o2.yaml",
+            "temperature": 320.0,
+            "mdot": 0.8,
+            "mole_fractions_array": [0.4, 0.0, 0.0, 0.2, 0.0, 0.0, 0.0, 0.0, 0.2, 0.2],
+        },
+        {
+            "case_id": "boundary1d_05_inlet1d_unstrained_eval",
+            "boundary_type": "inlet",
+            "description": "Inlet1D left boundary evaluation with unstrained flow",
+            "flow_type": "gas-flow",
+            "mech": "h2o2.yaml",
+            "temperature": 350.0,
+            "mdot": 0.15,
+            "mole_fractions": "H2:0.1, O2:0.9",
+            "flow_points": 5,
+        },
+        {
+            "case_id": "boundary1d_06_inlet1d_free_flow_eval",
+            "boundary_type": "inlet",
+            "description": "Inlet1D left boundary evaluation with free flame (mdot = rho * u)",
+            "flow_type": "free-flow",
+            "mech": "h2o2.yaml",
+            "temperature": 300.0,
+            "mole_fractions": "H2:0.25, O2:0.25, AR:0.5",
+            "flow_points": 5,
+        },
+        {
+            "case_id": "boundary1d_07_inlet1d_strained_flow_left_eval",
+            "boundary_type": "inlet",
+            "description": "Inlet1D left boundary evaluation with strained axisymmetric flow",
+            "flow_type": "axisymmetric-flow",
+            "mech": "h2o2.yaml",
+            "temperature": 300.0,
+            "mdot": 0.5,
+            "spread_rate": 20.0,
+            "mole_fractions": "H2:0.5, AR:0.5",
+            "flow_points": 5,
+        },
+        {
+            "case_id": "boundary1d_08_inlet1d_strained_flow_right_eval",
+            "boundary_type": "inlet",
+            "description": "Inlet1D right boundary evaluation with strained axisymmetric flow",
+            "flow_type": "axisymmetric-flow",
+            "mech": "h2o2.yaml",
+            "temperature": 450.0,
+            "mdot": 0.75,
+            "spread_rate": 15.0,
+            "mole_fractions": "O2:0.21, AR:0.79",
+            "flow_points": 5,
+        },
+        {
+            "case_id": "boundary1d_09_outlet1d_unstrained_eval",
+            "boundary_type": "outlet",
+            "description": "Outlet1D right boundary evaluation with zero gradient conditions",
+            "flow_type": "gas-flow",
+            "mech": "h2o2.yaml",
+            "flow_points": 5,
+        },
+        {
+            "case_id": "boundary1d_10_outletres1d_unstrained_eval",
+            "boundary_type": "outlet-reservoir",
+            "description": "OutletRes1D right boundary evaluation with fixed reservoir composition",
+            "flow_type": "gas-flow",
+            "mech": "h2o2.yaml",
+            "mole_fractions": "H2O:0.2, AR:0.8",
+            "flow_points": 5,
+        },
+        {
+            "case_id": "boundary1d_11_symm1d_right_eval",
+            "boundary_type": "symmetry-plane",
+            "description": "Symm1D symmetry plane on right side of axisymmetric flow",
+            "flow_type": "axisymmetric-flow",
+            "mech": "h2o2.yaml",
+            "flow_points": 5,
+        },
+        {
+            "case_id": "boundary1d_12_symm1d_left_eval",
+            "boundary_type": "symmetry-plane",
+            "description": "Symm1D symmetry plane on left side of axisymmetric flow",
+            "flow_type": "axisymmetric-flow",
+            "mech": "h2o2.yaml",
+            "flow_points": 5,
+        },
+        {
+            "case_id": "boundary1d_13_surf1d_left_eval",
+            "boundary_type": "surface",
+            "description": "Surf1D surface on left of flow with specified temperature",
+            "flow_type": "gas-flow",
+            "mech": "h2o2.yaml",
+            "temperature": 800.0,
+            "flow_points": 5,
+        },
+        {
+            "case_id": "boundary1d_14_surf1d_right_eval",
+            "boundary_type": "surface",
+            "description": "Surf1D surface on right of flow with specified temperature",
+            "flow_type": "gas-flow",
+            "mech": "h2o2.yaml",
+            "temperature": 650.0,
+            "flow_points": 5,
+        },
+        {
+            "case_id": "boundary1d_15_reactingsurf1d_properties",
+            "boundary_type": "reacting-surface",
+            "description": "ReactingSurf1D basic properties, species names, indices, coverage toggles",
+            "mech": "ptcombust.yaml",
+            "phase_name": "Pt_surf",
+            "temperature": 900.0,
+        },
+        {
+            "case_id": "boundary1d_16_reactingsurf1d_bounds_resetbadvalues",
+            "boundary_type": "reacting-surface",
+            "description": "ReactingSurf1D bounds and resetBadValues coverage normalization",
+            "mech": "ptcombust.yaml",
+            "phase_name": "Pt_surf",
+            "unnormalized_coverages": [0.5] * 11,
+        },
+        {
+            "case_id": "boundary1d_17_reactingsurf1d_eval_steady",
+            "boundary_type": "reacting-surface",
+            "description": "ReactingSurf1D steady evaluation (rdt=0) with surface reactions and gas fluxes",
+            "mech": "ptcombust.yaml",
+            "phase_name": "Pt_surf",
+            "temperature": 900.0,
+            "coverages": [0.30, 0.10, 0.05, 0.05, 0.10, 0.05, 0.05, 0.05, 0.05, 0.10, 0.10],
+            "rdt": 0.0,
+        },
+        {
+            "case_id": "boundary1d_18_reactingsurf1d_eval_transient",
+            "boundary_type": "reacting-surface",
+            "description": "ReactingSurf1D transient evaluation (rdt=1000) with prevSoln step",
+            "mech": "ptcombust.yaml",
+            "phase_name": "Pt_surf",
+            "temperature": 900.0,
+            "coverages": [0.32, 0.10, 0.05, 0.05, 0.08, 0.05, 0.05, 0.05, 0.05, 0.10, 0.10],
+            "prev_coverages": [0.30, 0.10, 0.05, 0.05, 0.10, 0.05, 0.05, 0.05, 0.05, 0.10, 0.10],
+            "rdt": 1000.0,
+        },
+        {
+            "case_id": "boundary1d_19_reactingsurf1d_eval_fixed_coverage",
+            "boundary_type": "reacting-surface",
+            "description": "ReactingSurf1D evaluation when coverage equations are disabled (fixed coverage)",
+            "mech": "ptcombust.yaml",
+            "phase_name": "Pt_surf",
+            "temperature": 850.0,
+            "coverages": [0.35, 0.10, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.10, 0.10],
+            "enable_coverage": False,
+        },
+        {
+            "case_id": "boundary1d_20_topology_error_handling",
+            "boundary_type": "errors",
+            "description": "Verify exact C++ exception messages for invalid domain topologies",
+        },
+    ]
+
+    with open(corpus_path, "w", encoding="utf-8") as f:
+        for case in cases:
+            f.write(json.dumps(case) + "\n")
+
+    print(f"Generated {len(cases)} cases in {corpus_path}")
+
+
+if __name__ == "__main__":
+    generate_corpus()

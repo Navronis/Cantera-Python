@@ -1,0 +1,741 @@
+{
+  "source_scaling_records": [
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 67,
+      "expression": "-7.0510251E3",
+      "token": "1e3",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 82,
+      "expression": "8.726361E3,",
+      "token": "1e3",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 40,
+      "expression": "-2.9630491E6,",
+      "token": "1e6",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 33,
+      "expression": "static const double M=44.01; // [kg/kmol] molar density",
+      "token": "kmol",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 27,
+      "expression": "static const double R=188.918; // [] gas constant for CO2 J/kg/K",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 90,
+      "expression": "double CarbonDioxide::C(int j,double Tinverse, double T2inverse, double T3inverse, double T4inverse)",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 92,
+      "expression": "switch (j) {",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 122,
+      "expression": "double CarbonDioxide::Cprime(int j, double T2inverse, double T3inverse, double T4inverse)",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 124,
+      "expression": "switch (j) {",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 154,
+      "expression": "double CarbonDioxide::I(int j, double ergho, double Gamma)",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 156,
+      "expression": "switch (j) {",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 25,
+      "expression": "static const double Roc=464.00; // [kg/m^3] critical density",
+      "token": "kg",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 27,
+      "expression": "static const double R=188.918; // [] gas constant for CO2 J/kg/K",
+      "token": "kg",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 33,
+      "expression": "static const double M=44.01; // [kg/kmol] molar density",
+      "token": "kg",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 25,
+      "expression": "static const double Roc=464.00; // [kg/m^3] critical density",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 33,
+      "expression": "static const double M=44.01; // [kg/kmol] molar density",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 24,
+      "expression": "static const double Tc=304.21; // [K] critical temperature",
+      "token": "critical",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 25,
+      "expression": "static const double Roc=464.00; // [kg/m^3] critical density",
+      "token": "critical",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.cpp",
+      "line": 32,
+      "expression": "static const double Pc=7.38350E6; // [Pa] critical pressure",
+      "token": "critical",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.h",
+      "line": 54,
+      "expression": "* conjunction with C in the function Pp",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.h",
+      "line": 55,
+      "expression": "* - j is used to represent which of the values in the summation to calculate",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.h",
+      "line": 56,
+      "expression": "* - j=0 is the second additive in the formula in reynolds",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.h",
+      "line": 57,
+      "expression": "* - j=1 is the third...",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.h",
+      "line": 60,
+      "expression": "double C(int jm, double, double, double, double);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.h",
+      "line": 73,
+      "expression": "* conjunction with C in the function Pp this represents the product",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "CarbonDioxide.h",
+      "line": 49,
+      "expression": "//! Liquid density. Equation D2 in Reynolds.",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 31,
+      "expression": "static const double M=100.20; // [kg/kmol] molar density",
+      "token": "kmol",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 5,
+      "expression": "* Reynolds. AUTHOR: jrh@stanford.edu: GCEP, Stanford University",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 25,
+      "expression": "static const double R=82.99504; // [J/(kg*K)] gas constant (for this substance)",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 79,
+      "expression": "double Heptane::C(int j,double Tinverse, double T2inverse, double T3inverse, double T4inverse)",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 81,
+      "expression": "switch (j) {",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 101,
+      "expression": "double Heptane::Cprime(int j, double T2inverse, double T3inverse, double T4inverse)",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 103,
+      "expression": "switch (j) {",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 121,
+      "expression": "double Heptane::I(int j, double ergho, double Gamma)",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 123,
+      "expression": "switch (j) {",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 23,
+      "expression": "static const double Roc=197.60; // [kg/m^3] critical density",
+      "token": "kg",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 25,
+      "expression": "static const double R=82.99504; // [J/(kg*K)] gas constant (for this substance)",
+      "token": "kg",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 31,
+      "expression": "static const double M=100.20; // [kg/kmol] molar density",
+      "token": "kg",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 23,
+      "expression": "static const double Roc=197.60; // [kg/m^3] critical density",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 31,
+      "expression": "static const double M=100.20; // [kg/kmol] molar density",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 22,
+      "expression": "static const double Tc=537.68; // [K] critical temperature",
+      "token": "critical",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 23,
+      "expression": "static const double Roc=197.60; // [kg/m^3] critical density",
+      "token": "critical",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.cpp",
+      "line": 30,
+      "expression": "static const double Pc=2.6199E6; // [Pa] critical pressure",
+      "token": "critical",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.h",
+      "line": 53,
+      "expression": "* in P-2, used in conjunction with C in the function Pp",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.h",
+      "line": 54,
+      "expression": "* - j is used to represent which of the values in the summation to calculate",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.h",
+      "line": 55,
+      "expression": "* - j=0 is the second additive in the formula in reynolds",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.h",
+      "line": 56,
+      "expression": "* - j=1 is the third...",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.h",
+      "line": 58,
+      "expression": "double C(int jm, double, double, double, double);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.h",
+      "line": 71,
+      "expression": "* this is used in conjunction with C in the function Pp",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Heptane.h",
+      "line": 48,
+      "expression": "//! liquid density. Equation D2 in Reynolds.",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Hydrogen.cpp",
+      "line": 52,
+      "expression": "6.1934792e3, 2.9490437e2, -1.5401979e3, -4.9176101e3,",
+      "token": "1e3",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Hydrogen.h",
+      "line": 39,
+      "expression": "//! Liquid density. Equation D4 in Reynolds TPSI.",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Methane.h",
+      "line": 39,
+      "expression": "//! Liquid density. Equation D3 from Reynolds TPSI.",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Nitrogen.cpp",
+      "line": 50,
+      "expression": "-2.9067111e3, 4.4785979e3, -2.2746914e3",
+      "token": "1e3",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Nitrogen.h",
+      "line": 39,
+      "expression": "//! Liquid density. Equation D2 from Reynolds TPSI.",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Oxygen.cpp",
+      "line": 30,
+      "expression": "-1.70178244046465e-1 ,-3.33226903068473e-4, 8.61334799901291e3,",
+      "token": "1e3",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Oxygen.cpp",
+      "line": 32,
+      "expression": "-1.92123080811409e-7, 3.11764722329504e-8, -8.09463854745591e-6,",
+      "token": "1e-6",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Oxygen.h",
+      "line": 38,
+      "expression": "//! Liquid density. Equation D2 from Reynolds TPSI.",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 62,
+      "expression": "// T-dT is not, just take a one-sided difference",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 72,
+      "expression": "// T+dT is not, just take a one-sided difference",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 344,
+      "expression": "static const double TolAbsH = 1.e-4; // J/kg",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 578,
+      "expression": "double Substance::vprop(propertyFlag::type ijob)",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 580,
+      "expression": "switch (ijob) {",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 592,
+      "expression": "throw CanteraError(\"Substance::vprop\", \"Invalid job index\");",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 653,
+      "expression": "// new object, try to pick a \"reasonable\" starting point",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 658,
+      "expression": "// new object, try to pick a \"reasonable\" starting point",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 742,
+      "expression": "double Substance::prop(propertyFlag::type ijob)",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 744,
+      "expression": "if (ijob == propertyFlag::P) {",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 747,
+      "expression": "if (ijob == propertyFlag::T) {",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 754,
+      "expression": "double vp = vprop(ijob);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 756,
+      "expression": "double lp = vprop(ijob);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 761,
+      "expression": "return vprop(ijob);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 344,
+      "expression": "static const double TolAbsH = 1.e-4; // J/kg",
+      "token": "kg",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 481,
+      "expression": "throw CanteraError(\"Substance::set_Rho\", \"Invalid density: {}\", r0);",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 524,
+      "expression": "Rho = ldens(); // trial value = liquid density",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 529,
+      "expression": "Rhf = Rho; // sat liquid density",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 539,
+      "expression": "Rhv = Rho; // sat vapor density",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 902,
+      "expression": "// floating-point ULP of pressure, and when the initial density guess",
+      "token": "density",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 447,
+      "expression": "\"Illegal pressure value: {} (supercritical \"",
+      "token": "critical",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Sub.cpp",
+      "line": 463,
+      "expression": "\"(supercritical or below triple point)\", x0);",
+      "token": "critical",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 34,
+      "expression": "-6.3972405E-3, -3.9661401E-3, -6.9048554E-4",
+      "token": "1e-3",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 27,
+      "expression": "static const double Roaj=1000.0;",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 90,
+      "expression": "double water::I(int j)",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 92,
+      "expression": "double factor, sum, rho_aj;",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 93,
+      "expression": "rho_aj = (j == 0 ? Roa1 : Roaj);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 93,
+      "expression": "rho_aj = (j == 0 ? Roa1 : Roaj);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 93,
+      "expression": "rho_aj = (j == 0 ? Roa1 : Roaj);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 95,
+      "expression": "factor = Rho - rho_aj;",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 97,
+      "expression": "sum += A[i][j];",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 100,
+      "expression": "sum += A[0][j];",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 101,
+      "expression": "sum += (exp(-E*Rho)*(A[8][j] + A[9][j]*Rho));",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 101,
+      "expression": "sum += (exp(-E*Rho)*(A[8][j] + A[9][j]*Rho));",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 105,
+      "expression": "double water::H(int j)",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 107,
+      "expression": "double factor, sum, rho_aj;",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 108,
+      "expression": "rho_aj = (j == 0 ? Roa1 : Roaj);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 108,
+      "expression": "rho_aj = (j == 0 ? Roa1 : Roaj);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 108,
+      "expression": "rho_aj = (j == 0 ? Roa1 : Roaj);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 110,
+      "expression": "factor = Rho - rho_aj;",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 112,
+      "expression": "sum += (A[i][j] + Rho*(i+1)*A[i+1][j]);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 112,
+      "expression": "sum += (A[i][j] + Rho*(i+1)*A[i+1][j]);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 115,
+      "expression": "sum += (A[0][j] + Rho*A[1][j]);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 115,
+      "expression": "sum += (A[0][j] + Rho*A[1][j]);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 116,
+      "expression": "sum += (exp(-E*Rho)*((1.0 - Rho*E)*A[8][j]",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 117,
+      "expression": "+ Rho*(2.0 - Rho*E)*A[9][j]));",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    },
+    {
+      "source_file": "Water.cpp",
+      "line": 118,
+      "expression": "sum += A[7][j]*pow(factor,7);",
+      "token": "J",
+      "python_match_status": "MANUAL_REVIEW_REQUIRED"
+    }
+  ],
+  "SCALING_MISMATCHES": "UNRESOLVED_MANUAL_REVIEW",
+  "unexplained_scaling_differences": "NOT_CLOSED"
+}

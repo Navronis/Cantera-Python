@@ -1,0 +1,8 @@
+{
+  "environment_record": "provenance/environment.json",
+  "pinned_source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "oracle_fixture": "audit/wsl_oracle_data.json",
+  "oracle_fixture_sha256": "72701a5579ed60d1b9c7b55d8e47c66804f526dc8da52131ef9ff88b8369c57a",
+  "random_seed": 42,
+  "thermo_states": 10050
+}

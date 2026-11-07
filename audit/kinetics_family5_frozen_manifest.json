@@ -1,0 +1,111 @@
+{
+  "active_closure_family": "FAMILY_5_PLASMA_VIBRATIONAL_AND_MULTIRATE",
+  "active_closure_symbols_closed": 167,
+  "artifact_hashes": {
+    "corpus_kinetics_family5.jsonl": {
+      "path": "audit/corpus_kinetics_family5.jsonl",
+      "sha256": "9197bdab2d67e34086f68af84bd1d7be9f9dacbbd7462b3b9407b92dc3cf80d6",
+      "size_bytes": 9017
+    },
+    "kinetics.py": {
+      "path": "cantera_python/kinetics.py",
+      "sha256": "f094e01570f1227aecd72830f26986ec7f53f00125f4026bbe7563913f661fd9",
+      "size_bytes": 148500
+    },
+    "kinetics_family5_closure_symbol_set.json": {
+      "path": "audit/kinetics_family5_closure_symbol_set.json",
+      "sha256": "cd9c393522c4dab1445c1cd239880acf3e19b51970c111c8915af7acbbb51614",
+      "size_bytes": 285933
+    },
+    "kinetics_family5_differential_summary.json": {
+      "path": "audit/kinetics_family5_differential_summary.json",
+      "sha256": "8c45c3d64fd7be19d4eadbc77d7339e32acdaac6732d32a1f97a3ded7a06ba13",
+      "size_bytes": 9037
+    },
+    "kinetics_family5_performance_benchmark.json": {
+      "path": "audit/kinetics_family5_performance_benchmark.json",
+      "sha256": "4605eeabf38d4ee0310d2cff5288be859fbc6342d567526d5274b8f9bcdf344e",
+      "size_bytes": 971
+    },
+    "kinetics_family5_runtime_call_graph.json": {
+      "path": "audit/kinetics_family5_runtime_call_graph.json",
+      "sha256": "bf15cc7e5e56540835276ebb4462796c5ad102a8c102c8fff074901760ce77f1",
+      "size_bytes": 49931
+    },
+    "native_kinetics_family5_benchmark.json": {
+      "path": "audit/native_kinetics_family5_benchmark.json",
+      "sha256": "0937ec92eb43e519ad8ff4ad6b4c5132a651595b87cae258f91b0d06831ccc47",
+      "size_bytes": 632
+    },
+    "native_kinetics_family5_oracle_results.json": {
+      "path": "audit/native_kinetics_family5_oracle_results.json",
+      "sha256": "197a05c29c18bc988c2ada56e8137ff10c63c01eccaaff410bd32a78b5400a76",
+      "size_bytes": 19316
+    },
+    "python_kinetics_family5_port_results.json": {
+      "path": "audit/python_kinetics_family5_port_results.json",
+      "sha256": "fb5021e8563f5de121d99e797373fecd4e15740fb8eee9e3f7dbd24c51e9bcf4",
+      "size_bytes": 33229
+    },
+    "rates.py": {
+      "path": "cantera_python/rates.py",
+      "sha256": "2c9052a5bd28fa383cc7cf32c7b99cf8e5a7ca22235211e23094409a2d72c4ce",
+      "size_bytes": 82393
+    },
+    "solution.py": {
+      "path": "cantera_python/solution.py",
+      "sha256": "ebe5f1106e0da26520a40104f21b6bb7be3999edabce373db4677da5160e00bd",
+      "size_bytes": 38240
+    },
+    "test_family5_failure_semantics.py": {
+      "path": "tests/test_family5_failure_semantics.py",
+      "sha256": "dd3cbf72c909cdfd7fddb60153e7d6add673ba4856b03e18dda5e73f71487ed4",
+      "size_bytes": 3843
+    },
+    "test_family5_scientific_checks.py": {
+      "path": "tests/test_family5_scientific_checks.py",
+      "sha256": "e0c9b0e5594ba6bd527df742e2383b69346e92a3f8953691b68374bfca6aa2cc",
+      "size_bytes": 5140
+    }
+  },
+  "certification_flags": {
+    "FAMILY5_CUSTOM_FUNC_COMPLETE": true,
+    "FAMILY5_ELECTRON_COLLISION_COMPLETE": true,
+    "FAMILY5_FAILURE_SEMANTICS_VALIDATED": true,
+    "FAMILY5_FULLY_FROZEN": true,
+    "FAMILY5_FULL_REGRESSION_CLEAN": true,
+    "FAMILY5_KINETICS_DERIVATIVES_COMPLETE": true,
+    "FAMILY5_NATIVE_NUMERICAL_PARITY": true,
+    "FAMILY5_NATIVE_SPEED_PARITY": false,
+    "FAMILY5_PERFORMANCE_BENCHMARKED": true,
+    "FAMILY5_SCIENTIFIC_CHECKS_VALIDATED": true,
+    "FAMILY5_SOURCE_LOGIC_COMPLETE": true,
+    "FAMILY5_TWO_TEMP_PLASMA_COMPLETE": true,
+    "FAMILY5_VIBRATIONAL_RELAXATION_COMPLETE": true,
+    "KINETICS_SUBSYSTEM_100_PERCENT_CLOSED": true
+  },
+  "family5_proven_non_runtime_symbols": 40,
+  "family5_runtime_symbols_closed": 167,
+  "kinetics_subsystem_status": "100%_COMPLETE_CLOSED",
+  "manifest_schema_version": "1.0.0",
+  "open_kinetics_symbols_remaining": 0,
+  "performance": {
+    "benchmarks_conducted": 4,
+    "native_speed_parity": false
+  },
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "pinned_native_validated_symbols_total": 667,
+  "proven_non_runtime_symbols": 82,
+  "subsystem": "kinetics",
+  "timestamp": "2026-11-06T19:15:00Z",
+  "total_family5_symbols": 207,
+  "total_kinetics_symbols": 749,
+  "validation_campaign": {
+    "cases_evaluated": 45,
+    "cases_failed": 0,
+    "cases_passed": 45,
+    "max_relative_error": 1.6654e-06,
+    "pass_rate_percent": 100.0,
+    "status": "FULL_PARITY"
+  }
+}

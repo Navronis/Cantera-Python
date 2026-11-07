@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "symbol_id": "include/cantera/thermo/IdealGasPhase.h:369:setState_DP",
+  "source_evidence": [
+    {
+      "file": "include/cantera/thermo/IdealGasPhase.h",
+      "lines": "369-376",
+      "sha256": "ee0fe314454c75d8eb48ae201e4b66de7dba5ab523480183d3b02c6ee4327081",
+      "role": "pressure guard followed by density mutation and derived-temperature mutation"
+    },
+    {
+      "file": "src/thermo/Phase.cpp",
+      "lines": "607-616",
+      "sha256": "f56a02ae4337ca48b9f324463e39edded49431b1809c42ff3855ab545f22a7d5",
+      "role": "setDensity accepts exactly values satisfying density > 0"
+    },
+    {
+      "file": "include/cantera/thermo/Phase.h",
+      "lines": "647-655",
+      "sha256": "c4f374fe4ed76f8ba4f4a70fe958d9ebc9ee738d4d4a9e2c49a11a7c921cdc",
+      "role": "setTemperature accepts exactly values satisfying temperature > 0"
+    }
+  ],
+  "python_mapping": [
+    "cantera_python.ideal_gas.IdealGasPhase.setState_DP",
+    "cantera_python.solution.Solution.setState_DP",
+    "cantera_python.state.set_state_dp"
+  ],
+  "behavior_matrix": [
+    {
+      "density": "positive finite",
+      "pressure": "zero or negative",
+      "outcome": "pressure exception before mutation",
+      "post_failure_state": "unchanged"
+    },
+    {
+      "density": "NaN, zero, or negative",
+      "pressure": "positive finite",
+      "outcome": "density exception",
+      "post_failure_state": "unchanged"
+    },
+    {
+      "density": "positive finite",
+      "pressure": "NaN",
+      "outcome": "derived-temperature exception",
+      "post_failure_state": "new density and old temperature"
+    },
+    {
+      "density": "+infinity",
+      "pressure": "positive finite",
+      "outcome": "derived zero-temperature exception",
+      "post_failure_state": "infinite density and old temperature"
+    },
+    {
+      "density": "positive finite",
+      "pressure": "+infinity",
+      "outcome": "success",
+      "post_failure_state": "not applicable; infinite temperature at requested density"
+    },
+    {
+      "density": "+infinity",
+      "pressure": "+infinity",
+      "outcome": "derived NaN-temperature exception",
+      "post_failure_state": "infinite density and old temperature"
+    }
+  ],
+  "released_native_supplement": {
+    "version": "Cantera 3.2.0",
+    "purpose": "independent behavioral check only; not exact-pinned proof",
+    "all_six_behavior_matrix_cases_match": true
+  },
+  "tests": {
+    "focused_command": "python -m unittest tests.test_state tests.test_ideal_gas tests.test_solution_kinetics_reactor tests.test_set_state_dp_semantics -v",
+    "result": "31 passed, 0 failed, 0 errors",
+    "test_file": "tests/test_set_state_dp_semantics.py"
+  },
+  "validation_status": "SOURCE_BEHAVIOR_AND_REGRESSION_VALIDATED",
+  "strict_closure_status": "PARTIAL",
+  "remaining_gate": "Fresh executable comparison against the exact pinned commit and independent forensic review"
+}

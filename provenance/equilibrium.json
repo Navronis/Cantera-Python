@@ -1,0 +1,43 @@
+{
+  "module": "cantera_python.equilibrium",
+  "upstream_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "upstream_paths": [
+    "include/cantera/thermo/IdealGasPhase.h",
+    "src/kinetics/BulkKinetics.cpp",
+    "include/cantera/kinetics/BulkKinetics.h",
+    "test/kinetics/rates.cpp"
+  ],
+  "status": "selected ideal-gas standard-state reaction thermochemistry implemented; no equilibrium solver",
+  "native_cantera_required": false,
+  "translations": [
+    {
+      "python": "IdealGasEquilibrium.delta_standard_{enthalpy,entropy,gibbs}",
+      "source": ["BulkKinetics::{getDeltaSSGibbs,getDeltaSSEnthalpy,getDeltaSSEntropy}", "Kinetics::getReactionDelta"],
+      "equation": "delta q0 = sum_k (nu_products,k - nu_reactants,k) q0_k"
+    },
+    {
+      "python": "IdealGasEquilibrium.equilibrium_constant_pressure",
+      "source": ["IdealGasPhase.h ideal-gas Kp documentation"],
+      "equation": "Kp = exp(-delta_g0/(R*T))"
+    },
+    {
+      "python": "IdealGasEquilibrium.equilibrium_constant_concentration",
+      "source": ["BulkKinetics::getEquilibriumConstants", "test/kinetics/rates.cpp FracCoeffTest::EquilibriumConstants"],
+      "equation": "Kc = exp(-delta_g0/(R*T) + delta_n*log(Pref/(R*T)))"
+    }
+  ],
+  "behavioral_choices_and_limits": [
+    "ReactionStoichiometry has positive reactant and product coefficients; net coefficients are product minus reactant.",
+    "All ideal-gas species require one common reference pressure.",
+    "Only standard-state quantities are evaluated; composition, activities, non-ideal phases, electrochemistry, and pressure-dependent standard-state models are excluded.",
+    "Runtime imports only Python standard-library modules and existing pure-Python port modules."
+  ],
+  "excluded_methods_and_features": [
+    "Equilibrium composition solving, element potentials, VCS/MultiPhaseEquil, and constrained-state solvers",
+    "Automatic reverse-rate installation, rate-of-progress evaluation, third bodies, falloff, and reaction parsing",
+    "Surface, interface, charged, non-ideal, and multiphase standard states"
+  ],
+  "test_coverage": [
+    "delta H/G/S identity", "dimensionless Kp", "fractional delta_n Kc source equation", "zero delta_n", "temperature changes and validation"
+  ]
+}

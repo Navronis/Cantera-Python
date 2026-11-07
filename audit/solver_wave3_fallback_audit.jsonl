@@ -1,0 +1,4 @@
+{"classification": "REQUIRES_SOURCE_REPLAY", "file": "cantera_python\\tpx.py", "line": 673, "status": "UNRESOLVED_IMPLEMENTATION_GAP", "text": "# guard when exponentiation underflows in binary64."}
+{"classification": "REQUIRES_SOURCE_REPLAY", "file": "cantera_python\\tpx.py", "line": 692, "status": "UNRESOLVED_IMPLEMENTATION_GAP", "text": "# correction into binary64 underflow even though their published"}
+{"classification": "REQUIRES_SOURCE_REPLAY", "file": "cantera_python\\tpx.py", "line": 707, "status": "UNRESOLVED_IMPLEMENTATION_GAP", "text": "source iteration into a nonphysical/underflow branch near its boundary."}
+{"classification": "REQUIRES_SOURCE_REPLAY", "file": "cantera_python\\tpx_exact.py", "line": 5, "status": "UNRESOLVED_IMPLEMENTATION_GAP", "text": "external-fluid fallback."}

@@ -1,0 +1,246 @@
+{"case_id": "EQ_GRI_TP_0001", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1000.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0002", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1000.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0003", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1000.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0004", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1000.0, "P": 2026500.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0005", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1000.0, "P": 2026500.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0006", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1000.0, "P": 2026500.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0007", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1200.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0008", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1200.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0009", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1200.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0010", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1200.0, "P": 2026500.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0011", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1200.0, "P": 2026500.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0012", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1200.0, "P": 2026500.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0013", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1400.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0014", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1400.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0015", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1400.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0016", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1400.0, "P": 2026500.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0017", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1400.0, "P": 2026500.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0018", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1400.0, "P": 2026500.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0019", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1600.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0020", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1600.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0021", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1600.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0022", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1600.0, "P": 2026500.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0023", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1600.0, "P": 2026500.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0024", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1600.0, "P": 2026500.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0025", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0026", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0027", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0028", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 2026500.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0029", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 2026500.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0030", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 2026500.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0031", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2000.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0032", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2000.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0033", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2000.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0034", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2000.0, "P": 2026500.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0035", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2000.0, "P": 2026500.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0036", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2000.0, "P": 2026500.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0037", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2400.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0038", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2400.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0039", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2400.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0040", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2400.0, "P": 2026500.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0041", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2400.0, "P": 2026500.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0042", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2400.0, "P": 2026500.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0043", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2800.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0044", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2800.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0045", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2800.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0046", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2800.0, "P": 2026500.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0047", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2800.0, "P": 2026500.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0048", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 2800.0, "P": 2026500.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0049", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 3200.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0050", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 3200.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0051", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 3200.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0052", "category": "gri30_tp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 3200.0, "P": 2026500.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0053", "category": "gri30_tp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 3200.0, "P": 2026500.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_TP_0054", "category": "gri30_tp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 3200.0, "P": 2026500.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0055", "category": "gri30_psweep_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 10132.5, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0056", "category": "gri30_psweep_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 10132.5, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0057", "category": "gri30_psweep_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 10132.5, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0058", "category": "gri30_psweep_h2_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 10132.5, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_PSWP_0059", "category": "gri30_psweep_syngas_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 10132.5, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_PSWP_0060", "category": "gri30_psweep_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0061", "category": "gri30_psweep_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0062", "category": "gri30_psweep_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0063", "category": "gri30_psweep_h2_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 101325.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_PSWP_0064", "category": "gri30_psweep_syngas_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 101325.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_PSWP_0065", "category": "gri30_psweep_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 506625.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0066", "category": "gri30_psweep_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 506625.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0067", "category": "gri30_psweep_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 506625.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0068", "category": "gri30_psweep_h2_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 506625.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_PSWP_0069", "category": "gri30_psweep_syngas_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 506625.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_PSWP_0070", "category": "gri30_psweep_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 2026500.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0071", "category": "gri30_psweep_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 2026500.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0072", "category": "gri30_psweep_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 2026500.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0073", "category": "gri30_psweep_h2_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 2026500.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_PSWP_0074", "category": "gri30_psweep_syngas_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 2026500.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_PSWP_0075", "category": "gri30_psweep_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 5066250.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0076", "category": "gri30_psweep_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 5066250.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0077", "category": "gri30_psweep_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 5066250.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_PSWP_0078", "category": "gri30_psweep_h2_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 5066250.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_PSWP_0079", "category": "gri30_psweep_syngas_air", "mechanism": "gri30.yaml", "mode": "TP", "T": 1800.0, "P": 5066250.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0080", "category": "gri30_hp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0081", "category": "gri30_hp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0082", "category": "gri30_hp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0083", "category": "gri30_hp_h2_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 101325.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0084", "category": "gri30_hp_syngas_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 101325.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0085", "category": "gri30_hp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 1013250.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0086", "category": "gri30_hp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 1013250.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0087", "category": "gri30_hp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 1013250.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0088", "category": "gri30_hp_h2_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 1013250.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0089", "category": "gri30_hp_syngas_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 1013250.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0090", "category": "gri30_hp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 3039750.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0091", "category": "gri30_hp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 3039750.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0092", "category": "gri30_hp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 3039750.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0093", "category": "gri30_hp_h2_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 3039750.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0094", "category": "gri30_hp_syngas_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 3039750.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0095", "category": "gri30_hp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0096", "category": "gri30_hp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0097", "category": "gri30_hp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0098", "category": "gri30_hp_h2_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 101325.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0099", "category": "gri30_hp_syngas_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 101325.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0100", "category": "gri30_hp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 1013250.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0101", "category": "gri30_hp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 1013250.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0102", "category": "gri30_hp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 1013250.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0103", "category": "gri30_hp_h2_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 1013250.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0104", "category": "gri30_hp_syngas_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 1013250.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0105", "category": "gri30_hp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 3039750.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0106", "category": "gri30_hp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 3039750.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0107", "category": "gri30_hp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 3039750.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0108", "category": "gri30_hp_h2_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 3039750.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0109", "category": "gri30_hp_syngas_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 450.0, "P": 3039750.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0110", "category": "gri30_hp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0111", "category": "gri30_hp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0112", "category": "gri30_hp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0113", "category": "gri30_hp_h2_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 101325.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0114", "category": "gri30_hp_syngas_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 101325.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0115", "category": "gri30_hp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 1013250.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0116", "category": "gri30_hp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 1013250.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0117", "category": "gri30_hp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 1013250.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0118", "category": "gri30_hp_h2_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 1013250.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0119", "category": "gri30_hp_syngas_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 1013250.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0120", "category": "gri30_hp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 3039750.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0121", "category": "gri30_hp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 3039750.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0122", "category": "gri30_hp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 3039750.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0123", "category": "gri30_hp_h2_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 3039750.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0124", "category": "gri30_hp_syngas_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 600.0, "P": 3039750.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0125", "category": "gri30_hp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0126", "category": "gri30_hp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0127", "category": "gri30_hp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0128", "category": "gri30_hp_h2_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 101325.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0129", "category": "gri30_hp_syngas_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 101325.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0130", "category": "gri30_hp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 1013250.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0131", "category": "gri30_hp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 1013250.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0132", "category": "gri30_hp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 1013250.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0133", "category": "gri30_hp_h2_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 1013250.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0134", "category": "gri30_hp_syngas_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 1013250.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0135", "category": "gri30_hp_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 3039750.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0136", "category": "gri30_hp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 3039750.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0137", "category": "gri30_hp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 3039750.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_HP_0138", "category": "gri30_hp_h2_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 3039750.0, "X": "H2:2.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_HP_0139", "category": "gri30_hp_syngas_air", "mechanism": "gri30.yaml", "mode": "HP", "T": 800.0, "P": 3039750.0, "X": "CO:1.0, H2:1.0, O2:1.0, N2:3.76"}
+{"case_id": "EQ_GRI_UV_0140", "category": "gri30_uv_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 300.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0141", "category": "gri30_uv_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 300.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0142", "category": "gri30_uv_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 300.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0143", "category": "gri30_uv_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 300.0, "P": 506625.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0144", "category": "gri30_uv_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 300.0, "P": 506625.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0145", "category": "gri30_uv_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 300.0, "P": 506625.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0146", "category": "gri30_uv_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 500.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0147", "category": "gri30_uv_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 500.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0148", "category": "gri30_uv_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 500.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0149", "category": "gri30_uv_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 500.0, "P": 506625.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0150", "category": "gri30_uv_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 500.0, "P": 506625.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0151", "category": "gri30_uv_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 500.0, "P": 506625.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0152", "category": "gri30_uv_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 700.0, "P": 101325.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0153", "category": "gri30_uv_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 700.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0154", "category": "gri30_uv_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 700.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0155", "category": "gri30_uv_lean_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 700.0, "P": 506625.0, "X": "CH4:0.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0156", "category": "gri30_uv_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 700.0, "P": 506625.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_UV_0157", "category": "gri30_uv_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "UV", "T": 700.0, "P": 506625.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SP_0158", "category": "gri30_sp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "SP", "T": 1600.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SV_0159", "category": "gri30_sv_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "SV", "T": 1600.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SP_0160", "category": "gri30_sp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "SP", "T": 1600.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SV_0161", "category": "gri30_sv_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "SV", "T": 1600.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SP_0162", "category": "gri30_sp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "SP", "T": 1600.0, "P": 1013250.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SV_0163", "category": "gri30_sv_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "SV", "T": 1600.0, "P": 1013250.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SP_0164", "category": "gri30_sp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "SP", "T": 1600.0, "P": 1013250.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SV_0165", "category": "gri30_sv_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "SV", "T": 1600.0, "P": 1013250.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SP_0166", "category": "gri30_sp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "SP", "T": 2000.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SV_0167", "category": "gri30_sv_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "SV", "T": 2000.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SP_0168", "category": "gri30_sp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "SP", "T": 2000.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SV_0169", "category": "gri30_sv_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "SV", "T": 2000.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SP_0170", "category": "gri30_sp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "SP", "T": 2000.0, "P": 1013250.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SV_0171", "category": "gri30_sv_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "SV", "T": 2000.0, "P": 1013250.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SP_0172", "category": "gri30_sp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "SP", "T": 2000.0, "P": 1013250.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SV_0173", "category": "gri30_sv_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "SV", "T": 2000.0, "P": 1013250.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SP_0174", "category": "gri30_sp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "SP", "T": 2400.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SV_0175", "category": "gri30_sv_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "SV", "T": 2400.0, "P": 101325.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SP_0176", "category": "gri30_sp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "SP", "T": 2400.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SV_0177", "category": "gri30_sv_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "SV", "T": 2400.0, "P": 101325.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SP_0178", "category": "gri30_sp_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "SP", "T": 2400.0, "P": 1013250.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SV_0179", "category": "gri30_sv_stoich_ch4_air", "mechanism": "gri30.yaml", "mode": "SV", "T": 2400.0, "P": 1013250.0, "X": "CH4:1.0, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SP_0180", "category": "gri30_sp_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "SP", "T": 2400.0, "P": 1013250.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_GRI_SV_0181", "category": "gri30_sv_rich_ch4_air", "mechanism": "gri30.yaml", "mode": "SV", "T": 2400.0, "P": 1013250.0, "X": "CH4:1.5, O2:2.0, N2:7.52"}
+{"case_id": "EQ_H2O2_TP_0182", "category": "h2o2_tp_stoich_h2_o2", "mechanism": "h2o2.yaml", "mode": "TP", "T": 1200.0, "P": 101325.0, "X": "H2:2.0, O2:1.0"}
+{"case_id": "EQ_H2O2_TP_0183", "category": "h2o2_tp_lean_h2_o2", "mechanism": "h2o2.yaml", "mode": "TP", "T": 1200.0, "P": 101325.0, "X": "H2:1.0, O2:1.0"}
+{"case_id": "EQ_H2O2_TP_0184", "category": "h2o2_tp_rich_h2_o2", "mechanism": "h2o2.yaml", "mode": "TP", "T": 1200.0, "P": 101325.0, "X": "H2:4.0, O2:1.0"}
+{"case_id": "EQ_H2O2_TP_0185", "category": "h2o2_tp_pure_water_dissoc", "mechanism": "h2o2.yaml", "mode": "TP", "T": 1200.0, "P": 101325.0, "X": "H2O:1.0"}
+{"case_id": "EQ_H2O2_TP_0186", "category": "h2o2_tp_stoich_h2_o2", "mechanism": "h2o2.yaml", "mode": "TP", "T": 2000.0, "P": 101325.0, "X": "H2:2.0, O2:1.0"}
+{"case_id": "EQ_H2O2_TP_0187", "category": "h2o2_tp_lean_h2_o2", "mechanism": "h2o2.yaml", "mode": "TP", "T": 2000.0, "P": 101325.0, "X": "H2:1.0, O2:1.0"}
+{"case_id": "EQ_H2O2_TP_0188", "category": "h2o2_tp_rich_h2_o2", "mechanism": "h2o2.yaml", "mode": "TP", "T": 2000.0, "P": 101325.0, "X": "H2:4.0, O2:1.0"}
+{"case_id": "EQ_H2O2_TP_0189", "category": "h2o2_tp_pure_water_dissoc", "mechanism": "h2o2.yaml", "mode": "TP", "T": 2000.0, "P": 101325.0, "X": "H2O:1.0"}
+{"case_id": "EQ_H2O2_HP_0190", "category": "h2o2_hp_stoich_h2_o2", "mechanism": "h2o2.yaml", "mode": "HP", "T": 1200.0, "P": 101325.0, "X": "H2:2.0, O2:1.0"}
+{"case_id": "EQ_H2O2_HP_0191", "category": "h2o2_hp_lean_h2_o2", "mechanism": "h2o2.yaml", "mode": "HP", "T": 1200.0, "P": 101325.0, "X": "H2:1.0, O2:1.0"}
+{"case_id": "EQ_H2O2_HP_0192", "category": "h2o2_hp_rich_h2_o2", "mechanism": "h2o2.yaml", "mode": "HP", "T": 1200.0, "P": 101325.0, "X": "H2:4.0, O2:1.0"}
+{"case_id": "EQ_H2O2_HP_0193", "category": "h2o2_hp_pure_water_dissoc", "mechanism": "h2o2.yaml", "mode": "HP", "T": 1200.0, "P": 101325.0, "X": "H2O:1.0"}
+{"case_id": "EQ_H2O2_HP_0194", "category": "h2o2_hp_stoich_h2_o2", "mechanism": "h2o2.yaml", "mode": "HP", "T": 2000.0, "P": 101325.0, "X": "H2:2.0, O2:1.0"}
+{"case_id": "EQ_H2O2_HP_0195", "category": "h2o2_hp_lean_h2_o2", "mechanism": "h2o2.yaml", "mode": "HP", "T": 2000.0, "P": 101325.0, "X": "H2:1.0, O2:1.0"}
+{"case_id": "EQ_H2O2_HP_0196", "category": "h2o2_hp_rich_h2_o2", "mechanism": "h2o2.yaml", "mode": "HP", "T": 2000.0, "P": 101325.0, "X": "H2:4.0, O2:1.0"}
+{"case_id": "EQ_H2O2_HP_0197", "category": "h2o2_hp_pure_water_dissoc", "mechanism": "h2o2.yaml", "mode": "HP", "T": 2000.0, "P": 101325.0, "X": "H2O:1.0"}
+{"case_id": "EQ_H2O2_UV_0198", "category": "h2o2_uv_stoich_h2_o2", "mechanism": "h2o2.yaml", "mode": "UV", "T": 1200.0, "P": 101325.0, "X": "H2:2.0, O2:1.0"}
+{"case_id": "EQ_H2O2_UV_0199", "category": "h2o2_uv_lean_h2_o2", "mechanism": "h2o2.yaml", "mode": "UV", "T": 1200.0, "P": 101325.0, "X": "H2:1.0, O2:1.0"}
+{"case_id": "EQ_H2O2_UV_0200", "category": "h2o2_uv_rich_h2_o2", "mechanism": "h2o2.yaml", "mode": "UV", "T": 1200.0, "P": 101325.0, "X": "H2:4.0, O2:1.0"}
+{"case_id": "EQ_H2O2_UV_0201", "category": "h2o2_uv_pure_water_dissoc", "mechanism": "h2o2.yaml", "mode": "UV", "T": 1200.0, "P": 101325.0, "X": "H2O:1.0"}
+{"case_id": "EQ_H2O2_UV_0202", "category": "h2o2_uv_stoich_h2_o2", "mechanism": "h2o2.yaml", "mode": "UV", "T": 2000.0, "P": 101325.0, "X": "H2:2.0, O2:1.0"}
+{"case_id": "EQ_H2O2_UV_0203", "category": "h2o2_uv_lean_h2_o2", "mechanism": "h2o2.yaml", "mode": "UV", "T": 2000.0, "P": 101325.0, "X": "H2:1.0, O2:1.0"}
+{"case_id": "EQ_H2O2_UV_0204", "category": "h2o2_uv_rich_h2_o2", "mechanism": "h2o2.yaml", "mode": "UV", "T": 2000.0, "P": 101325.0, "X": "H2:4.0, O2:1.0"}
+{"case_id": "EQ_H2O2_UV_0205", "category": "h2o2_uv_pure_water_dissoc", "mechanism": "h2o2.yaml", "mode": "UV", "T": 2000.0, "P": 101325.0, "X": "H2O:1.0"}
+{"case_id": "EQ_H2O2_SP_0206", "category": "h2o2_sp_stoich_h2_o2", "mechanism": "h2o2.yaml", "mode": "SP", "T": 1200.0, "P": 101325.0, "X": "H2:2.0, O2:1.0"}
+{"case_id": "EQ_H2O2_SP_0207", "category": "h2o2_sp_lean_h2_o2", "mechanism": "h2o2.yaml", "mode": "SP", "T": 1200.0, "P": 101325.0, "X": "H2:1.0, O2:1.0"}
+{"case_id": "EQ_H2O2_SP_0208", "category": "h2o2_sp_rich_h2_o2", "mechanism": "h2o2.yaml", "mode": "SP", "T": 1200.0, "P": 101325.0, "X": "H2:4.0, O2:1.0"}
+{"case_id": "EQ_H2O2_SP_0209", "category": "h2o2_sp_pure_water_dissoc", "mechanism": "h2o2.yaml", "mode": "SP", "T": 1200.0, "P": 101325.0, "X": "H2O:1.0"}
+{"case_id": "EQ_H2O2_SP_0210", "category": "h2o2_sp_stoich_h2_o2", "mechanism": "h2o2.yaml", "mode": "SP", "T": 2000.0, "P": 101325.0, "X": "H2:2.0, O2:1.0"}
+{"case_id": "EQ_H2O2_SP_0211", "category": "h2o2_sp_lean_h2_o2", "mechanism": "h2o2.yaml", "mode": "SP", "T": 2000.0, "P": 101325.0, "X": "H2:1.0, O2:1.0"}
+{"case_id": "EQ_H2O2_SP_0212", "category": "h2o2_sp_rich_h2_o2", "mechanism": "h2o2.yaml", "mode": "SP", "T": 2000.0, "P": 101325.0, "X": "H2:4.0, O2:1.0"}
+{"case_id": "EQ_H2O2_SP_0213", "category": "h2o2_sp_pure_water_dissoc", "mechanism": "h2o2.yaml", "mode": "SP", "T": 2000.0, "P": 101325.0, "X": "H2O:1.0"}
+{"case_id": "EQ_AIR_TP_0214", "category": "air_tp", "mechanism": "air.yaml", "mode": "TP", "T": 1000.0, "P": 10132.5, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_TP_0215", "category": "air_tp", "mechanism": "air.yaml", "mode": "TP", "T": 1000.0, "P": 101325.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_TP_0216", "category": "air_tp", "mechanism": "air.yaml", "mode": "TP", "T": 1000.0, "P": 2026500.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_TP_0217", "category": "air_tp", "mechanism": "air.yaml", "mode": "TP", "T": 2000.0, "P": 10132.5, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_TP_0218", "category": "air_tp", "mechanism": "air.yaml", "mode": "TP", "T": 2000.0, "P": 101325.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_TP_0219", "category": "air_tp", "mechanism": "air.yaml", "mode": "TP", "T": 2000.0, "P": 2026500.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_TP_0220", "category": "air_tp", "mechanism": "air.yaml", "mode": "TP", "T": 3000.0, "P": 10132.5, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_TP_0221", "category": "air_tp", "mechanism": "air.yaml", "mode": "TP", "T": 3000.0, "P": 101325.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_TP_0222", "category": "air_tp", "mechanism": "air.yaml", "mode": "TP", "T": 3000.0, "P": 2026500.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_HP_0223", "category": "air_hp", "mechanism": "air.yaml", "mode": "HP", "T": 1000.0, "P": 10132.5, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_HP_0224", "category": "air_hp", "mechanism": "air.yaml", "mode": "HP", "T": 1000.0, "P": 101325.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_HP_0225", "category": "air_hp", "mechanism": "air.yaml", "mode": "HP", "T": 1000.0, "P": 2026500.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_HP_0226", "category": "air_hp", "mechanism": "air.yaml", "mode": "HP", "T": 2000.0, "P": 10132.5, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_HP_0227", "category": "air_hp", "mechanism": "air.yaml", "mode": "HP", "T": 2000.0, "P": 101325.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_HP_0228", "category": "air_hp", "mechanism": "air.yaml", "mode": "HP", "T": 2000.0, "P": 2026500.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_HP_0229", "category": "air_hp", "mechanism": "air.yaml", "mode": "HP", "T": 3000.0, "P": 10132.5, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_HP_0230", "category": "air_hp", "mechanism": "air.yaml", "mode": "HP", "T": 3000.0, "P": 101325.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_HP_0231", "category": "air_hp", "mechanism": "air.yaml", "mode": "HP", "T": 3000.0, "P": 2026500.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_UV_0232", "category": "air_uv", "mechanism": "air.yaml", "mode": "UV", "T": 1000.0, "P": 10132.5, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_UV_0233", "category": "air_uv", "mechanism": "air.yaml", "mode": "UV", "T": 1000.0, "P": 101325.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_UV_0234", "category": "air_uv", "mechanism": "air.yaml", "mode": "UV", "T": 1000.0, "P": 2026500.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_UV_0235", "category": "air_uv", "mechanism": "air.yaml", "mode": "UV", "T": 2000.0, "P": 10132.5, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_UV_0236", "category": "air_uv", "mechanism": "air.yaml", "mode": "UV", "T": 2000.0, "P": 101325.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_UV_0237", "category": "air_uv", "mechanism": "air.yaml", "mode": "UV", "T": 2000.0, "P": 2026500.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_UV_0238", "category": "air_uv", "mechanism": "air.yaml", "mode": "UV", "T": 3000.0, "P": 10132.5, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_UV_0239", "category": "air_uv", "mechanism": "air.yaml", "mode": "UV", "T": 3000.0, "P": 101325.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_AIR_UV_0240", "category": "air_uv", "mechanism": "air.yaml", "mode": "UV", "T": 3000.0, "P": 2026500.0, "X": "O2:0.21, N2:0.78, AR:0.01"}
+{"case_id": "EQ_ADV_HIGH_T_DISSOC_0241", "category": "adversarial_high_temperature", "mechanism": "gri30.yaml", "mode": "TP", "T": 3500.0, "P": 101325.0, "X": "CO2:1.0", "description": "Complete CO2 thermal dissociation at 3500 K"}
+{"case_id": "EQ_ADV_HIGH_T_H2O_0242", "category": "adversarial_high_temperature", "mechanism": "h2o2.yaml", "mode": "TP", "T": 3200.0, "P": 101325.0, "X": "H2O:1.0", "description": "Water thermal dissociation into radicals at 3200 K"}
+{"case_id": "EQ_ADV_PURE_N2_0243", "category": "adversarial_pure_element", "mechanism": "gri30.yaml", "mode": "TP", "T": 1500.0, "P": 101325.0, "X": "N2:1.0", "description": "Pure single element (N) inert atmosphere"}
+{"case_id": "EQ_ADV_HP_HIGH_P_0244", "category": "adversarial_high_pressure_hp", "mechanism": "gri30.yaml", "mode": "HP", "T": 300.0, "P": 5066250.0, "X": "CH4:1.0, O2:2.0, N2:7.52", "description": "Adiabatic flame at 50 atmospheres"}
+{"case_id": "EQ_ADV_UV_HIGH_P_0245", "category": "adversarial_high_pressure_uv", "mechanism": "gri30.yaml", "mode": "UV", "T": 300.0, "P": 2026500.0, "X": "H2:2.0, O2:1.0, N2:3.76", "description": "Constant-volume explosion at 20 atm initial pressure"}
+{"case_id": "EQ_ADV_TRACE_DILUTION_0246", "category": "adversarial_high_dilution", "mechanism": "gri30.yaml", "mode": "TP", "T": 1500.0, "P": 101325.0, "X": "N2:0.999997, CH4:1e-6, O2:2e-6", "description": "Ultra-dilute 1 ppm fuel in N2 at 1500 K"}

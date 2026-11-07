@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "solver_family": "refiner",
+  "subsystem": "grid refinement",
+  "public_entry_points": {
+    "Refiner.analyze(n, z, x)": {
+      "callees": [
+        "Refiner.maxSlope()",
+        "Refiner.maxDelta()",
+        "Refiner.maxRatio()",
+        "Refiner.prune()",
+        "Refiner.newPointNeeded(j)",
+        "Refiner.keepPoint(j)"
+      ],
+      "scientific_purpose": "Analyze solution profiles and identify points for addition or deletion based on adaptation criteria"
+    },
+    "Refiner.nNewPoints()": {
+      "callees": [],
+      "scientific_purpose": "Return number of new points to be inserted into 1D mesh"
+    },
+    "Refiner.newGrid(n, z, nn, zn)": {
+      "callees": [
+        "Refiner.analyze(n, z, x)"
+      ],
+      "scientific_purpose": "Generate refined coordinate vector zn by inserting and deleting grid nodes"
+    }
+  }
+}

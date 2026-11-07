@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-09-29T08:45:57.7659302Z",
+  "scope": "VCS problem mapping, component selection, and elemental abundance checks",
+  "pinned_source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "repository": {
+    "head": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+    "branch": "certified/waves-1-3-baseline",
+    "working_tree_dirty": true
+  },
+  "source_sha256": {
+    "cantera_python/vcs.py": "AA95068805511B26DE6C25D609E6FC7F27D9049288BDB04AE2957918FBB7DD84",
+    "cantera_python/ideal_gas.py": "C1C8E9548837533451C3947623112AC4DBBE4DCF941E6E387149FD64075E6456",
+    "cantera_python/solution.py": "962D281A7CEADD85C5AA150D084DCEA087D3B0B16B73F3F80BDCDB3B3D4FB483",
+    "tests/test_vcs_multiphase.py": "4F98C62F6EE79702337DAE4E631DCC2265C298900675E6899323A2FB25307C07",
+    "tests/test_multiphase_container.py": "1D6495A426DD256CC016B0BF5A628EF261E161185B5A74F7F926BAABDFAA4D72",
+    "../cantera-original/src/equil/vcs_solve_TP.cpp": "DAA7A8300D22FF739C2F4166BD42B8D00297F22EB6E1EB0263F43182247F3154",
+    "../cantera-original/src/equil/vcs_solve.cpp": "4259CEEB0ED244CA64D5CE71CA0BC6E44E5FAC1EFD52E5ED92348F58D6E105CA",
+    "../cantera-original/src/equil/vcs_VolPhase.cpp": "457504772AD44EB2266ABDBC14100444E640DE94D683E73428B68F868D9D0499"
+  },
+  "implemented": {
+    "phase_order": "Declared/indexed element order and phase-local electron/charge rows",
+    "vcs_elab": "Voltage-excluding elemental abundance accumulation",
+    "vcs_elabcheck": "Source-derived bounds and specialized zero/electron/charge tolerances",
+    "basopt_component_selection": "Abundance-weighted candidate selection, single-species tie handling, minor-growth candidate selection, modified Gram-Schmidt independence cutoff, and component-first permutation",
+    "problem_preparation": "Global species-phase mapping, phase-local to global element columns, formula matrix, starting moles, element goals, standard Gibbs over RT, and component basis",
+    "vcs_active_set_iterations": "NOT_IMPLEMENTED",
+    "basopt_reaction_stoichiometry": "NOT_IMPLEMENTED"
+  },
+  "validation": {
+    "targeted_command": "python -m pytest tests/test_vcs_multiphase.py tests/test_multiphase_container.py -q",
+    "targeted_result": "17 passed",
+    "full_command": "python -m pytest tests/ -q",
+    "full_result": "495 passed, 3 skipped, 698 subtests passed",
+    "full_exit_code": 0,
+    "full_duration_seconds": 151.16,
+    "diff_check": "passed"
+  },
+  "limitations": [
+    "No exact pinned-native differential probe directly compared the Python selected basis or matrix against internal VCS workspace values.",
+    "vcs_basopt stoichiometric coefficient solve and voltage-specific coefficient correction remain unported.",
+    "VCS main active-set iteration, species deletion/reinsertion, phase birth/death, and equilibrium convergence remain unimplemented; vcs_solve_TP prepares the problem then explicitly raises.",
+    "This evidence validates regression behavior and translated routines, not full VCS parity."
+  ]
+}

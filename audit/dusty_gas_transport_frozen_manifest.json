@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/dusty_gas_transport_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-04T17:03:41.370163+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "dusty_run_id": "a0f6357d731a18c658ed89201f122bf7",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "python_executable": "/home/nebula/cantera-oracle-env/bin/python3",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "file_hashes": {
+    "transport_py": "da26f34fb7e15fdb903991866fdd218899c50694e062452c8e159f1d6ea55d93",
+    "solution_py": "1a3a395a4d50eae73708d9d2aef0b63ef4df4ba6485f587361f41a7baf36ec4c",
+    "test_dusty_gas_transport_py": "f3cb659d9715b83b6c82562dcf96124e893b4660e3d8744b6369ce55e8dacb70",
+    "corpus_dusty_gas_transport_jsonl": "55cb83d79370b84f3e8ee9d3fb547750664622009855cbaf10e6c5ba2b3e59d4",
+    "dusty_gas_transport_mechanism_schema_json": "26ee0b6b7def9ff6c266cdbdf7dedd62c3559c0faae24dcdd87df88c13b35370",
+    "run_native_dusty_gas_oracle_py": "6cc5f1267ec4d9f9e88bb1f0fa44ede35b8fbd6ab4e5c0f453b5184bd959eaf2",
+    "run_dusty_gas_campaign_py": "5502a3c0ae4e50f7f78076817fa7098c91406656ccc15e4f70f31f7d48980bcc",
+    "raw_native_dusty_gas_transport_jsonl": "3074d3dcd0cf9846a39814523c1b4a51a7ae210939c29b3129ab8fd94ceaba70",
+    "raw_python_dusty_gas_transport_jsonl": "4a40d1f3c2535d1a3d86c8ea0bc10603b925c5257e70561adcee4b295190e50f",
+    "dusty_gas_transport_differential_results_jsonl": "1d94d3d3012ad0f2e005921f13401574383fcbf48dd375f59651f009229b94f9",
+    "dusty_gas_transport_differential_summary_json": "2443d5b7687e93f0fa170cded401f2b50bac93b0b58797af68fdbb81e6fe3170",
+    "dusty_gas_transport_adversarial_results_json": "beb6ff6ab7b16b0fd8001973c12435de2fe88532bb035f73f6e656c5ef571b05",
+    "dusty_gas_transport_failure_semantics_json": "d8f7c5974a81c986b0f6420f6da72f6573d257d6e670c4ac65e80d39f69bf8fb",
+    "dusty_gas_transport_closure_symbol_set_json": "d507f4b35e2639ed3dbfe542ed5442c60a0146a26dba464f100998a51f60004c",
+    "dusty_gas_transport_runtime_call_graph_json": "73b5d11cd56f76ae7ed8ac93959797b7ddd9edba47fe04eaa5658d0445e66657"
+  },
+  "campaign_summary": {
+    "total_cases": 66,
+    "passed_cases": 66,
+    "pass_rate_percent": 100.0,
+    "total_matrix_elements_compared": 106833,
+    "total_scalar_elements_compared": 2317,
+    "unexpected_nonfinite_native": 0,
+    "unexpected_nonfinite_python": 0,
+    "max_multi_diff_rel_err": 2.581608754990329e-13,
+    "max_flux_rel_err": 9.841407224266642e-11,
+    "max_thermal_cond_rel_err": 8.711861411346242e-14,
+    "adversarial_cases": 6,
+    "adversarial_passed": 6,
+    "failure_semantics_cases": 6,
+    "failure_semantics_mismatches": 0
+  },
+  "status": "VALIDATED_NUMERICALLY_EQUIVALENT"
+}

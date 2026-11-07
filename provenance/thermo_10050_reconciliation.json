@@ -1,0 +1,36 @@
+{
+  "fixture": "audit\\wsl_oracle_data.json",
+  "fixture_sha256": "72701a5579ed60d1b9c7b55d8e47c66804f526dc8da52131ef9ff88b8369c57a",
+  "oracle_commit": "726522be4",
+  "seed": 42,
+  "states": 10050,
+  "scalar_and_vector_components_compared": 2707860,
+  "failed_components": 0,
+  "temperature_range_K": [
+    252.33045722588258,
+    3498.012908330879
+  ],
+  "pressure_range_Pa": [
+    1000.0000000000002,
+    5000000.0
+  ],
+  "random_state_count": 9846,
+  "pure_species_state_count": 192,
+  "boundary_state_count": 7,
+  "pressure_probe_count": 4,
+  "normalization_max_residual": 2.220446049250313e-16,
+  "worst_relative_case": {
+    "state_index": 3181,
+    "tag": "random_gri30",
+    "mechanism": "gri30",
+    "property": "chem_potentials",
+    "species_index": 21,
+    "temperature": 1785.8525228646856,
+    "pressure": 477204.8124124893,
+    "absolute_error": 4.470348358154297e-08,
+    "relative_error": 5.6098368711565595e-12
+  },
+  "statistics_file": "provenance\\oracle_statistics.csv",
+  "native_fixture_regenerated_this_run": false,
+  "native_regeneration_blocker": "WSL launch denied by host (E_ACCESSDENIED)"
+}

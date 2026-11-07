@@ -1,0 +1,26 @@
+{
+  "family": "THERMO_FAMILY_2_SPECIES_THERMO",
+  "benchmark_methodology": "Rigorous varying temperature T = 300 + (i % 1000)*0.5 K with volatile checksum accumulation on both C++ and Python.",
+  "historical_invalidated_timings": {
+    "native_batch_eval_us": 0.0008114,
+    "invalidation_reason": "Native benchmark previously invoked setTemperature(T) without requesting polynomial property outputs, measuring only cache tag update rather than 53-species polynomial evaluations."
+  },
+  "verified_timings": {
+    "single_polynomial_eval": {
+      "python_time_us": 1.252950000052806,
+      "native_time_us": 0.017964,
+      "speed_ratio": 69.74782899425551,
+      "python_checksum": 2271696.2069205525,
+      "native_checksum": 2294410.0
+    },
+    "batch_53_species_eval": {
+      "python_time_us": 60.06912000011653,
+      "native_time_us": 0.276204,
+      "speed_ratio": 217.4809923104536,
+      "python_checksum": 113584.81034602356,
+      "native_checksum": 237865
+    }
+  },
+  "native_speed_parity": false,
+  "notes": "Pure Python polynomial evaluation is 69.7x native speed for scalar and 217.5x for batch 53-species update."
+}

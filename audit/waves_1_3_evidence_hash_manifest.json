@@ -1,0 +1,403 @@
+{
+  "schema": "waves-1-3-evidence-hash-manifest-v1",
+  "waves_1_3_snapshot_id": "e5a0c1a04c248d6d475a517078e5b4175529523a905bf18e038a2358821415bc",
+  "repository_identity_path": "audit/waves_1_3_repository_identity.json",
+  "generated_at_utc": "2026-09-29T00:50:37.583005+00:00",
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "native_binary_identity": {
+    "native_library_sha256_recorded_by_oracle_identity": "0f9948c9d3eea3f12547f11949a9cc6cbf28893ec98d6aa5425860b9d6d14e02",
+    "native_extension_sha256_recorded_by_oracle_identity": "d686773fe369ba07c2ad78431240869a3679316c4bdbb77160062d86aa14c68c",
+    "native_library_bytes_rehashed_for_recorded_rerun": true,
+    "native_oracle_environment_available_for_recorded_rerun": true
+  },
+  "native_rerun_provenance_sha256": "7c68ac656c1e8c8390b8acc1e5a217e91a07b4cdd0127a8faaa6e274d61791f5",
+  "native_rehash_verification_sha256": "b183cab039b77c9204c2518f8f1254b3e9995b5ecebae3ffee58c5e3faf26a71",
+  "evidence_files": [
+    {
+      "path": "audit/corpus_wave1.jsonl",
+      "exists": true,
+      "sha256": "f3f536bc375331bc75bbb590fb334e094365f8b83606a84b816811ea78d1410f",
+      "size_bytes": 1100838
+    },
+    {
+      "path": "audit/raw_native_wave1.jsonl",
+      "exists": true,
+      "sha256": "e9d356d9aa7cad0ab180cc35ffea1cf1419aecd699465c87502ed36e4c10b5cd",
+      "size_bytes": 1251749
+    },
+    {
+      "path": "audit/raw_python_wave1.jsonl",
+      "exists": true,
+      "sha256": "a61bc233cf9a0b0e028fdc251909231bffb1c30b9335aebe91a9441484a39533",
+      "size_bytes": 1230263
+    },
+    {
+      "path": "audit/corpus_wave1_failure_state.jsonl",
+      "exists": true,
+      "sha256": "27f4b14041e92c8b5b0b5443d90aaadb9abf5bce12164c60d7c5b97c388dc18c",
+      "size_bytes": 1889
+    },
+    {
+      "path": "audit/raw_native_wave1_failure_state.jsonl",
+      "exists": true,
+      "sha256": "19e0c2b947334992b1cb15da8eb2943d5dda9088d306b835cf234c9feafcc959",
+      "size_bytes": 8226
+    },
+    {
+      "path": "audit/raw_python_wave1_failure_state.jsonl",
+      "exists": true,
+      "sha256": "f49ac9e3ebc9347f62b554859d90e7e689bc679a39811a3ac3c02d89a704f4b4",
+      "size_bytes": 5603
+    },
+    {
+      "path": "audit/wave1_failure_state_comparison.json",
+      "exists": true,
+      "sha256": "cd483646aa8d7997b4caabf4574f3b3e51aa2f12095cea886d3763d9992ddb03",
+      "size_bytes": 12066
+    },
+    {
+      "path": "tools/compare_native_vs_python.py",
+      "exists": true,
+      "sha256": "54ca3e2288856a08fbf94a854f95d9ced5feb5a96b606bc291e71ab925c76239",
+      "size_bytes": 38838
+    },
+    {
+      "path": "audit/corpus_wave2.jsonl",
+      "exists": true,
+      "sha256": "3af0b5f0a15abae357d9537f33d9bad0c68f1c0c4baa42a832a0e09e480fd492",
+      "size_bytes": 439564
+    },
+    {
+      "path": "audit/raw_native_wave2.jsonl",
+      "exists": true,
+      "sha256": "f3f58f504d1a1acf4d29fc677c9dc35f1df76e87caa8866790a3df65a7f567c6",
+      "size_bytes": 681619
+    },
+    {
+      "path": "audit/raw_python_wave2.jsonl",
+      "exists": true,
+      "sha256": "c3032d2d41a846156392c28f473498d1cbeb5a31c3c6c5035b078539b53760b6",
+      "size_bytes": 674900
+    },
+    {
+      "path": "audit/raw_native_wave2_internal.jsonl",
+      "exists": true,
+      "sha256": "6da73a971df227877d549e6aa345dec99b7f915f4e802d13ef54626a4fe0a76a",
+      "size_bytes": 418414
+    },
+    {
+      "path": "audit/raw_python_wave2_internal.jsonl",
+      "exists": true,
+      "sha256": "29d90f52df6e78263aecd9d49dcfa9dccc1aa3f1291955cbfba414c95867bdf8",
+      "size_bytes": 415295
+    },
+    {
+      "path": "audit/wave2_return_code_distribution.json",
+      "exists": true,
+      "sha256": "da77454407d58ce6dda6c1b0eee70c2d9659261aaf48eb2240efd5f6b4410871",
+      "size_bytes": 2562111
+    },
+    {
+      "path": "audit/wave2_internal_root_parity.jsonl",
+      "exists": true,
+      "sha256": "27384d3cc23f5d04417c540aa011aa7d93d55bfc111baf2e515d1355be3b5b07",
+      "size_bytes": 1093859
+    },
+    {
+      "path": "audit/wave2_internal_root_parity_summary.md",
+      "exists": true,
+      "sha256": "22955106b23a77b8159ff54381204c7a1eb80ced38209142635848e775dccb90",
+      "size_bytes": 2602
+    },
+    {
+      "path": "tools/compare_wave2_internals.py",
+      "exists": true,
+      "sha256": "80809c31227595d0d170bbb6973caf2073bea511ae87f8c707223267cfe5bb8c",
+      "size_bytes": 9062
+    },
+    {
+      "path": "tools/build_wave2_return_code_distribution.py",
+      "exists": true,
+      "sha256": "2dca6525145dd7409491ae7316742ea5b440e4901cc0466b88557e539ccf2bfc",
+      "size_bytes": 10393
+    },
+    {
+      "path": "tools/run_native_cubic_internal_probe.cpp",
+      "exists": true,
+      "sha256": "a5f27a96ac8724f808e13a855732fe69fa37553e2efe9fc1ac55e3341a61c0f4",
+      "size_bytes": 4810
+    },
+    {
+      "path": "tools/run_native_cubic_internal_probe",
+      "exists": true,
+      "sha256": "6ae23ff6223c906d112f11956796fe349d74ef19760faa32b6e3cf6d64fb53f5",
+      "size_bytes": 51784
+    },
+    {
+      "path": "audit/corpus_wave3.jsonl",
+      "exists": true,
+      "sha256": "e698bd547b2bbdac26b901fc45880da46cc45b05e25295aaf84cbb2e7cce48f4",
+      "size_bytes": 2356490
+    },
+    {
+      "path": "audit/raw_native_wave3.jsonl",
+      "exists": true,
+      "sha256": "ace18e38c8cfee27b96997d9e5e6e2f02869b13a9045ffdc03d8e0318cc02c55",
+      "size_bytes": 3410863
+    },
+    {
+      "path": "audit/raw_python_wave3.jsonl",
+      "exists": true,
+      "sha256": "f4b14c4615694d88598db016d934d535b0522fd569274fbaf6c60f88683f80f8",
+      "size_bytes": 3396359
+    },
+    {
+      "path": "audit/corpus_wave3_singular_jacobian.jsonl",
+      "exists": true,
+      "sha256": "95759147d12a3dc480b48df4bb743f11f9de9eab3d32dfa73ff3f984ed4f49c1",
+      "size_bytes": 13472
+    },
+    {
+      "path": "audit/raw_native_wave3_singular.jsonl",
+      "exists": true,
+      "sha256": "fd5314dce79874fdb5a6e0afd76032522d94fc21c6516c27e4efa2a56ba613f5",
+      "size_bytes": 16108
+    },
+    {
+      "path": "audit/raw_python_wave3_singular.jsonl",
+      "exists": true,
+      "sha256": "3c316bc70418c9668bb1467a1e0dc26c702f488152b79e0e07a26bf78cc03abc",
+      "size_bytes": 46612
+    },
+    {
+      "path": "audit/wave3_fallback_activation_probe.json",
+      "exists": true,
+      "sha256": "66619dac28bc6faa07d34ee190a10d9490d5ac1562a81d651b8c09903d3df168",
+      "size_bytes": 5778129
+    },
+    {
+      "path": "audit/wave3_singular_jacobian_comparison.json",
+      "exists": true,
+      "sha256": "69c5ce8bf56de502336dcc6022abf0c007f8c57f2c04ff7083affdd8617001a2",
+      "size_bytes": 5157
+    },
+    {
+      "path": "audit/wave3_cp_cv_step_sweep.jsonl",
+      "exists": true,
+      "sha256": "e01dc718e49a2c355f698784163ae2d9075d0f3e233882e38fe0e84b3c83360b",
+      "size_bytes": 62434
+    },
+    {
+      "path": "tools/test_wave3_singular_differential.py",
+      "exists": true,
+      "sha256": "093a7ee13b5bbb5907f4361b92b10b3c81a87dce40be774f0011a5cc2f139447",
+      "size_bytes": 16124
+    },
+    {
+      "path": "tools/generate_wave3_fallback_activation_corpus.py",
+      "exists": true,
+      "sha256": "71a30b5a4aac1e03a6fdfc4c88216a4c3a2e93c9ea9f93d8c6fd4cb3fac953f2",
+      "size_bytes": 10804
+    },
+    {
+      "path": "audit/wave3_cp_cv_formula_audit.md",
+      "exists": true,
+      "sha256": "508529058da0e6df2e8415723d849b066d69f451b031c0f72ee517955964a6be",
+      "size_bytes": 3700
+    },
+    {
+      "path": "audit/wave3_cp_cv_perturbation_results.json",
+      "exists": true,
+      "sha256": "16424b82c3e6bdb1fa668dd9db31727a62d812c2e33566dbd6aa9c87c1c3a5a7",
+      "size_bytes": 3198
+    },
+    {
+      "path": "audit/wave3_metric_reconciliation.md",
+      "exists": true,
+      "sha256": "fde04edaecc48f7fb213492cb032a24214d1fc689cb4d97c59148b95ec16265b",
+      "size_bytes": 3319
+    },
+    {
+      "path": "audit/native_oracle_identity.json",
+      "exists": true,
+      "sha256": "5542764c437f32eb0841fe62b6be9ed0083febe57707bc290ce18cad10135362",
+      "size_bytes": 1410
+    },
+    {
+      "path": "audit/corpus_wave1_failure_state.jsonl",
+      "exists": true,
+      "sha256": "27f4b14041e92c8b5b0b5443d90aaadb9abf5bce12164c60d7c5b97c388dc18c",
+      "size_bytes": 1889
+    },
+    {
+      "path": "audit/raw_native_wave1_failure_state.jsonl",
+      "exists": true,
+      "sha256": "19e0c2b947334992b1cb15da8eb2943d5dda9088d306b835cf234c9feafcc959",
+      "size_bytes": 8226
+    },
+    {
+      "path": "audit/raw_python_wave1_failure_state.jsonl",
+      "exists": true,
+      "sha256": "f49ac9e3ebc9347f62b554859d90e7e689bc679a39811a3ac3c02d89a704f4b4",
+      "size_bytes": 5603
+    },
+    {
+      "path": "audit/wave1_failure_state_comparison.json",
+      "exists": true,
+      "sha256": "cd483646aa8d7997b4caabf4574f3b3e51aa2f12095cea886d3763d9992ddb03",
+      "size_bytes": 12066
+    },
+    {
+      "path": "tools/wave1_failure_state_probe.py",
+      "exists": true,
+      "sha256": "91f4882da31be44b36e84ca1c06a3d2a35d4d389e7c75c595b766842ae8921d1",
+      "size_bytes": 2961
+    },
+    {
+      "path": "tools/compare_wave1_failure_state.py",
+      "exists": true,
+      "sha256": "1e8006d5c3186d65cd01affa8c49150b25bc12361929f1b4c8bd58a2e45b292b",
+      "size_bytes": 3956
+    },
+    {
+      "path": "audit/wave3_implemented_differently_audit.json",
+      "exists": true,
+      "sha256": "ea348d6f0b35c6d6434ab98830b9f8c21fe383879f07c954860f451873545480",
+      "size_bytes": 11953
+    },
+    {
+      "path": "audit/wave3_implemented_differently_disposition.md",
+      "exists": true,
+      "sha256": "3d251d862c55dbaf239f426dd1b4fb561fabc1463dcf81e7a1cc3ca0426b6dd8",
+      "size_bytes": 7820
+    },
+    {
+      "path": "audit/waves_1_3_focused_unittest.log",
+      "exists": true,
+      "sha256": "5b65b3f4e0665144f0e25a19d361695635f74dec925076f53d68da45fc15861f",
+      "size_bytes": 2957
+    },
+    {
+      "path": "audit/waves_1_3_focused_unittest_results.json",
+      "exists": true,
+      "sha256": "3441b79477261fe4c93f08206a8f1f52a8d30d401a883fb1144588abb96a504a",
+      "size_bytes": 945
+    },
+    {
+      "path": "audit/waves_1_3_full_pytest.log",
+      "exists": true,
+      "sha256": "31abf63de3d686fb605e0deafffb2cbee7c42ce5c6e4dcfce9dc8e5a1f1b8a14",
+      "size_bytes": 5434
+    },
+    {
+      "path": "audit/waves_1_3_test_results.json",
+      "exists": true,
+      "sha256": "e5d5230dd5d99de92f250933a60dc12d50d7de6393f5b5ad76ec08c84ab37bf7",
+      "size_bytes": 1255
+    },
+    {
+      "path": "audit/waves_1_3_test_run_provenance.json",
+      "exists": true,
+      "sha256": "b3634617aa22467a420fba6fb0377bc8284a2a7bacf7b9e54d34d594a811b4e4",
+      "size_bytes": 11317
+    },
+    {
+      "path": "audit/waves_1_3_native_rerun_provenance.json",
+      "exists": true,
+      "sha256": "7c68ac656c1e8c8390b8acc1e5a217e91a07b4cdd0127a8faaa6e274d61791f5",
+      "size_bytes": 4970
+    },
+    {
+      "path": "audit/native_oracle_rehash_verification.json",
+      "exists": true,
+      "sha256": "b183cab039b77c9204c2518f8f1254b3e9995b5ecebae3ffee58c5e3faf26a71",
+      "size_bytes": 1445
+    },
+    {
+      "path": "tests/test_tpx_ieee_arithmetic.py",
+      "exists": true,
+      "sha256": "997d9dad45cad76ab052096fc349a9c81b5889b3ca503e1cd9ddc90803b4727c",
+      "size_bytes": 1613
+    },
+    {
+      "path": "cantera_python/state.py",
+      "exists": true,
+      "sha256": "a77be91837204dd6444e7b3daee4d0882b750003849093066886477418658bb9",
+      "size_bytes": 14208
+    },
+    {
+      "path": "cantera_python/ideal_gas.py",
+      "exists": true,
+      "sha256": "b15cf73deca87ecc7f49d17d26475b9edd9865dfa3b9eb11206853689be5cb67",
+      "size_bytes": 54961
+    },
+    {
+      "path": "cantera_python/cubic_eos.py",
+      "exists": true,
+      "sha256": "c4e80227350e954e2d8f6fb5e2bda66dcda5c0ec0a0dcceeefee49ad835ec3c3",
+      "size_bytes": 111459
+    },
+    {
+      "path": "cantera_python/tpx.py",
+      "exists": true,
+      "sha256": "64264b5d7c8680d6bdbeaacde5f78714e5f0dd4c9d3ed0df89c6662e7e332b45",
+      "size_bytes": 76035
+    },
+    {
+      "path": "audit/waves_1_3_repository_identity.json",
+      "exists": true,
+      "sha256": "e374fd250708290d5138c2ebaec0c58a25f14808a5a2f07ed500e296b52ab284",
+      "size_bytes": 165947
+    },
+    {
+      "path": "audit/waves_1_3_validation_gate.json",
+      "exists": true,
+      "sha256": "f68bb8b84af38a5810d5d43ea8aaae93d453c82b6f113b0e76fdb37908c15d8c",
+      "size_bytes": 50648
+    },
+    {
+      "path": "audit/waves_1_3_current_head_gate.json",
+      "exists": true,
+      "sha256": "24657cba33049c1ac4159cafd740ecb3c79504e5ec90b8b37b81bf6606b41ac2",
+      "size_bytes": 18215
+    },
+    {
+      "path": "tools/run_waves_1_3_pytest.py",
+      "exists": true,
+      "sha256": "14fab49f26ca748f0ab7ca0ea06830397552ce6fb6c54dde873c52621aa6188d",
+      "size_bytes": 4130
+    },
+    {
+      "path": "tools/run_waves_1_3_focused_unittest.py",
+      "exists": true,
+      "sha256": "01f6e7ea68e7bd746d72b470a40dcac3c3026c7d7f7e29733f6378272fc12082",
+      "size_bytes": 2044
+    },
+    {
+      "path": "tools/build_waves_1_3_repository_identity.py",
+      "exists": true,
+      "sha256": "ec3fd44e211e9c29f5b1b1a2fcc63edb6dec181bed2e107e549f7ec49395f9d8",
+      "size_bytes": 8872
+    },
+    {
+      "path": "tools/bind_waves_1_3_outputs.py",
+      "exists": true,
+      "sha256": "b07e47b35ccae452cf7b1fa396538e9fc3912b0d4ec92833efb8326be0f3d372",
+      "size_bytes": 4889
+    },
+    {
+      "path": "tools/validate_waves_1_3_current_head.py",
+      "exists": true,
+      "sha256": "a753f682f246d10e9f0bfe05c20e1096cd0a0ea2620ef5603577430ed3e964ce",
+      "size_bytes": 52026
+    },
+    {
+      "path": "tools/refresh_waves_1_3_current_head_manifest.py",
+      "exists": true,
+      "sha256": "26d73fd0ea199f1498c8d001af395682f797f8c9069c8f2b9a3f80fdf8295da6",
+      "size_bytes": 2701
+    }
+  ],
+  "missing_evidence_paths": [],
+  "note": "Native comparison rows and binary identity are accepted only when the separate run-provenance and rehash records verify their exact hashes and pinned commit; this manifest hashes those records and does not itself establish a clean committed snapshot."
+}

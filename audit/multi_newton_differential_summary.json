@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "solver_family": "multi_newton",
+  "subsystem": "1D Newton",
+  "campaign_timestamp_utc": "2026-11-05T13:24:35.913333+00:00",
+  "total_cases": 20,
+  "passed_cases": 20,
+  "pass_rate_pct": 100.0,
+  "tolerances": {
+    "rtol": 1e-09,
+    "atol": 1e-09
+  },
+  "max_errors": {
+    "max_x1_relative_error": 4.315568434794424e-16,
+    "max_x1_absolute_error": 4.547473508864641e-13,
+    "max_step_relative_error": 1.2991971564762473e-16,
+    "max_fbound_relative_error": 0.0,
+    "max_s1_relative_error": 0.0
+  },
+  "numerical_parity": true,
+  "cases": [
+    {
+      "case_id": "mn_01_linear_tridiagonal",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_02_mildly_nonlinear_quadratic",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_03_strong_arrhenius_damping",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_04_lower_bound_truncation",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_05_upper_bound_truncation",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_06_boundary_failure_minus3",
+      "mode": "dampStep",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_07_jacobian_aging_recompute",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_08_damping_recovery_poor_guess",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_09_singular_jacobian_minus4",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_10_pseudo_transient_rdt",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_11_coupled_block_banded",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_12_undamped_step_eval",
+      "mode": "step",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_13_bound_step_eval",
+      "mode": "boundStep",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_14_damp_step_eval",
+      "mode": "dampStep",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_15_multijac_operations",
+      "mode": "multijac_ops",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_16_flame_grid_20pts",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_17_ill_conditioned_boundary_layer",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_18_variable_tolerance_norm",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_19_asymptotic_boundary_approach",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    },
+    {
+      "case_id": "mn_20_already_converged_guess",
+      "mode": "solve",
+      "passed": true,
+      "discrepancies": []
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "campaign_total_cases": 3200,
+  "fluids": 8,
+  "cases_per_fluid": 400,
+  "setup_errors": 0,
+  "two_phase_cases": {
+    "count": 775,
+    "source_contract_verified_pass": 775,
+    "failed": 0,
+    "source_specification": "Sub.cpp:46, 84 requires cv == NaN and cp == +Inf in two-phase dome"
+  },
+  "single_phase_cases": {
+    "count": 2425,
+    "finite_numerical_pass": 2425,
+    "failed": 0,
+    "cv_relerr": {
+      "evaluated": 2425,
+      "median": 3.346754894980055e-09,
+      "p95": 1.3761431672033135e-08,
+      "p99": 2.315889134068446e-06,
+      "max": 6.375164557162944e-06
+    },
+    "cp_relerr": {
+      "evaluated": 2425,
+      "median": 2.1210170243995193e-08,
+      "p95": 9.173244579894535e-07,
+      "p99": 5.175197066913201e-06,
+      "max": 7.697210841588049e-05
+    }
+  },
+  "unexplained_nonfinite_cases": 0,
+  "total_campaign_success_rate_percent": 100.0
+}

@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "scope": "Numerical solver and iterative scientific-model families; source symbols are tracked separately.",
+  "allowed_statuses": [
+    "APPROXIMATE",
+    "EXACT_DIRECT_PORT",
+    "NATIVE_ALGORITHM_PORT",
+    "NOT_IMPLEMENTED",
+    "PARTIAL",
+    "SAME_SOLVER_FAMILY_PARITY",
+    "VALIDATED_NUMERICALLY_EQUIVALENT"
+  ],
+  "counts": {
+    "VALIDATED_NUMERICALLY_EQUIVALENT": 18,
+    "APPROXIMATE": 2,
+    "NOT_IMPLEMENTED": 8,
+    "PARTIAL": 4
+  },
+  "complete": false,
+  "completion_rule": "Only exact-pinned differential evidence can promote PARTIAL/APPROXIMATE/NOT_IMPLEMENTED.",
+  "inventory": "audit/complete_solver_inventory.jsonl",
+  "subsystems": [
+    {
+      "subsystem": "0D ODE integration",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/cvodes_integrator_frozen_manifest.json; audit/cvodes_integrator_differential_summary.json"
+    },
+    {
+      "subsystem": "0D forward sensitivity",
+      "status": "APPROXIMATE",
+      "evidence": "tests/test_reactor_conservation.py"
+    },
+    {
+      "subsystem": "0D adjoint sensitivity",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "subsystem": "DAE integration",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/idas_integrator_frozen_manifest.json; audit/idas_integrator_differential_summary.json; audit/idas_performance_benchmark.json; tests/test_idas_integrator.py"
+    },
+    {
+      "subsystem": "DAE sensitivity",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "subsystem": "reactor network",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/reactor_network_frozen_manifest.json; audit/reactor_network_differential_summary.json; tests/test_reactor_network_native_parity.py"
+    },
+    {
+      "subsystem": "flow reactor DAE",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/flow_reactor_frozen_manifest.json; audit/flow_reactor_differential_summary.json; audit/flow_reactor_performance_benchmark.json; tools/run_flow_reactor_campaign.py"
+    },
+    {
+      "subsystem": "steady reactor",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "subsystem": "1D Newton",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/multi_newton_frozen_manifest.json; audit/multi_newton_differential_summary.json; audit/multi_newton_performance_benchmark.json; tools/run_multi_newton_campaign.py; tests/test_onedim.py"
+    },
+    {
+      "subsystem": "1D residual",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/onedim_frozen_manifest.json; audit/onedim_differential_summary.json; audit/onedim_performance_benchmark.json; tools/run_onedim_campaign.py; tests/test_onedim_container.py"
+    },
+    {
+      "subsystem": "1D solve orchestration",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/sim1d_frozen_manifest.json; audit/sim1d_differential_summary.json; audit/sim1d_performance_benchmark.json; tools/run_sim1d_campaign.py; tests/test_sim1d.py"
+    },
+    {
+      "subsystem": "1D adjoint",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/sim1d_differential_summary.json; tools/run_sim1d_campaign.py; tests/test_sim1d.py"
+    },
+    {
+      "subsystem": "grid refinement",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/refiner_frozen_manifest.json; audit/refiner_differential_summary.json; audit/refiner_performance_benchmark.json; tools/run_refiner_campaign.py; tests/test_refiner.py"
+    },
+    {
+      "subsystem": "banded linear algebra",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/band_matrix_frozen_manifest.json; audit/band_matrix_differential_summary.json; audit/band_matrix_performance_benchmark.json; tools/run_band_matrix_campaign.py; tests/test_numerics.py"
+    },
+    {
+      "subsystem": "sparse direct linear algebra",
+      "status": "PARTIAL",
+      "evidence": null
+    },
+    {
+      "subsystem": "reactor preconditioning",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "subsystem": "single-phase equilibrium",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/chem_equil_frozen_manifest.json; audit/chem_equil_differential_summary.json"
+    },
+    {
+      "subsystem": "multiphase Gibbs equilibrium",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "subsystem": "VCS equilibrium",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/vcs_frozen_manifest.json; audit/vcs_differential_summary.json"
+    },
+    {
+      "subsystem": "surface transient",
+      "status": "APPROXIMATE",
+      "evidence": "tests/test_surface.py"
+    },
+    {
+      "subsystem": "surface steady",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "subsystem": "Peng-Robinson roots",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/wave2_internal_root_parity_summary.md; audit/waves_1_3_validation_gate.json (2000 exact-pinned cases)"
+    },
+    {
+      "subsystem": "Redlich-Kwong roots",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/wave2_internal_root_parity_summary.md; audit/waves_1_3_validation_gate.json (2000 exact-pinned cases)"
+    },
+    {
+      "subsystem": "generic fugacity roots",
+      "status": "PARTIAL",
+      "evidence": "audit/wave2_internal_root_parity_summary.md; audit/waves_1_3_validation_gate.json (2000 root cases; saturation scope remains open)"
+    },
+    {
+      "subsystem": "TPX pure fluids",
+      "status": "PARTIAL",
+      "evidence": "audit/solver_wave3_summary.json; audit/waves_1_3_validation_gate.json (exact-pinned tested scope; cp/cv discrepancy cause unresolved)"
+    },
+    {
+      "subsystem": "IAPWS water",
+      "status": "PARTIAL",
+      "evidence": "audit/solver_wave3_summary.json; audit/waves_1_3_validation_gate.json (water cases; cp/cv cause unresolved)"
+    },
+    {
+      "subsystem": "mixture transport",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/multicomponent_transport_frozen_manifest.json; audit/multicomponent_transport_differential_summary.json"
+    },
+    {
+      "subsystem": "porous transport",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/dusty_gas_transport_frozen_manifest.json; audit/dusty_gas_transport_differential_summary.json"
+    },
+    {
+      "subsystem": "high-pressure transport",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/high_pressure_gas_transport_frozen_manifest.json; audit/high_pressure_gas_transport_differential_summary.json"
+    },
+    {
+      "subsystem": "ionized 1D flow",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "subsystem": "electron energy distribution",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "subsystem": "thermodynamic state inversion",
+      "status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+      "evidence": "audit/waves_1_3_validation_gate.json; audit/wave1_failure_state_comparison.json (4100 exact-pinned cases plus 9/9 post-failure state probes)"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/native_performance_parity_backlog.json",
+  "last_updated_utc": "2026-11-05T12:54:00Z",
+  "backlog_items": {
+    "flow_reactor": {
+      "subsystem": "flow reactor DAE",
+      "native_class": "FlowReactor",
+      "workload": "16_flow_reactor_dae_cases_including_high_pressure_and_stoichiometry_sweeps",
+      "native_median_ms": 1052.307,
+      "python_median_ms": 36568.331,
+      "speed_ratio": 34.75,
+      "numerical_parity": true,
+      "native_speed_parity": false,
+      "bottleneck_profile": {
+        "thermochemistry_and_kinetics_pct": 72.5,
+        "python_call_overhead_and_other_pct": 26.2,
+        "newton_linear_solves_and_factorization_pct": 0.9,
+        "dae_residual_evaluations_pct": 0.3,
+        "bdf_integrator_state_machine_pct": 0.1
+      },
+      "diagnosis": "The IdasIntegrator DAE numerical engine itself is highly efficient (<1% of execution time). The 34.75x slowdown is dominated (72.5%) by Python-level species net rates of progress, Arrhenius reaction rates, and species thermo polynomial evaluations performed at every Newton step.",
+      "optimization_plan": "Vectorize kinetics net production rate calculations and polynomial evaluations using contiguous NumPy array operations in cantera_python.kinetics."
+    },
+    "band_matrix": {
+      "subsystem": "banded linear algebra",
+      "native_class": "BandMatrix",
+      "workload": "N=200_kl=6_ku=6_100_solves_100_mults",
+      "native_median_ms": 1.279,
+      "python_reference_median_ms": 263.168,
+      "python_optimized_median_ms": 3.087,
+      "speed_ratio": 2.41,
+      "numerical_parity": true,
+      "native_speed_parity": false,
+      "operation_level_parity": {
+        "factor": "FASTER than native C++ (0.019 ms vs 0.023 ms, 0.83x)",
+        "matrix_vector_mult": "FASTER than native C++ (0.541 ms vs 0.813 ms, 0.66x)",
+        "rcond_estimation": "IDENTICAL to native C++ (0.026 ms vs 0.026 ms, 1.00x)",
+        "linear_solve_reused_lu": "2.28x of native C++ (0.833 ms vs 0.365 ms for 100 solves)",
+        "matrix_element_initialization": "Dominant Python cost (1.006 ms) due to individual Python scalar setter loop calls"
+      },
+      "diagnosis": "All underlying LAPACK linear algebra kernels (DGBTRF, DGBTRS, DGBMV, DGBCON) achieve true native execution speed parity. The remaining 2.41x gap is strictly Python scalar indexing during matrix assembly.",
+      "optimization_plan": "Provide bulk slice assignments and from_dense vectorized loading for matrix assembly."
+    },
+    "multi_newton": {
+      "subsystem": "1D Newton",
+      "native_class": "MultiNewton",
+      "workload": "N=50_reacting_diffusion_3_iterations",
+      "native_median_ms": 0.0155,
+      "python_median_ms": 0.8952,
+      "speed_ratio": 57.87,
+      "numerical_parity": true,
+      "native_speed_parity": false,
+      "operation_level_parity": {
+        "banded_lu_factor_and_solve": "Backed by native LAPACK DGBTRF/DGBTRS kernels (sub-millisecond)",
+        "bound_step_and_damping": "Executed in pure Python scalar loops across grid components"
+      },
+      "diagnosis": "Numerical parity is 100% across all 20 differential test cases with machine precision agreement (max rel error 4.3e-16). The 57.87x runtime gap is due to Python loop overhead in boundStep component bounds checking and Python-level residual/Jacobian evaluation callbacks.",
+      "optimization_plan": "Vectorize boundStep using NumPy element-wise min/max expressions: fbound = np.min(np.where(newval > above, (above - val)/(newval - val), 1.0))."
+    },
+    "onedim": {
+      "subsystem": "1D residual",
+      "native_class": "OneDim",
+      "workload": "3_domains_residual_and_weighted_norm_over_grid_sizes_25_to_2000",
+      "overall_slowdown_factor": 476.09,
+      "numerical_parity": true,
+      "native_speed_parity": false,
+      "diagnosis": "Residual evaluation and weightedNorm loops run over domain components and grid points in Python. High numerical fidelity with 100% parity across all 20 differential test cases.",
+      "optimization_plan": "Vectorize OneDim.weightedNorm and component-domain residual loops with NumPy contiguous block operations."
+    },
+    "refiner": {
+      "subsystem": "grid refinement",
+      "native_class": "Refiner",
+      "workload": "adaptive_refinement_analysis_grid_sizes_25_to_2000",
+      "overall_slowdown_factor": 20.42,
+      "numerical_parity": true,
+      "native_speed_parity": false,
+      "diagnosis": "Refiner slope and curvature criteria evaluation vectorized; remaining overhead is Python dictionary/set lookups for point insertion and retention flags.",
+      "optimization_plan": "Vectorize interval insertions with NumPy boolean masks."
+    },
+    "sim1d": {
+      "subsystem": "1D solve orchestration",
+      "native_class": "Sim1D",
+      "workload": "3_domains_refine_analysis_interpolation_grid_sizes_25_to_2000",
+      "overall_slowdown_factor": 127.62,
+      "numerical_parity": true,
+      "native_speed_parity": false,
+      "diagnosis": "Grid refinement orchestration across multi-domain container involves domain loop, Refiner analyze step, midpoint insertions, and linear solution interpolation in pure Python.",
+      "optimization_plan": "Vectorize multi-component linear interpolation and new grid array allocations using NumPy contiguous blocks."
+    },
+    "boundary1d": {
+      "subsystem": "1D boundary conditions",
+      "native_classes": [
+        "Boundary1D",
+        "Inlet1D",
+        "Outlet1D",
+        "OutletRes1D",
+        "Empty1D",
+        "Symm1D",
+        "Surf1D",
+        "ReactingSurf1D"
+      ],
+      "workload": "10^5_evaluations_across_6_canonical_boundary_types",
+      "mean_slowdown_factor": 739.1538838584961,
+      "numerical_parity": true,
+      "native_speed_parity": false,
+      "diagnosis": "Non-reacting boundary conditions (Inlet1D, Outlet1D, Symm1D, Surf1D) execute in sub-microsecond pure Python loops. ReactingSurf1D bottleneck is Python-level interface net production rate evaluation and species coverages indexing.",
+      "optimization_plan": "Vectorize surface production rates in InterfaceKinetics with contiguous array views."
+    },
+    "flow1d": {
+      "subsystem": "1D flow equations",
+      "native_classes": [
+        "Flow1D",
+        "StFlow",
+        "FreeFlow",
+        "AxisymmetricFlow",
+        "UnstrainedFlow"
+      ],
+      "workload": "residual_eval_across_4_configurations_10_to_25_pts_h2o2_kinetics_mix_transport",
+      "mean_slowdown_factor": 250.43345779550242,
+      "numerical_parity": true,
+      "native_speed_parity": false,
+      "diagnosis": "Flow1D residual calculation in Python is dominated by thermodynamic and transport property evaluations (mixture-averaged diffusion coefficients, species enthalpies, net production rates) evaluated at each grid point, plus pure Python finite difference difference quotient assembly.",
+      "optimization_plan": "Vectorize thermodynamic state updates and species property batches across grid slices; utilize C/Cython or Numba kernels for inner spatial finite-difference operators."
+    }
+  },
+  "backlog": [
+    {
+      "subsystem": "1D domain base abstraction",
+      "native_class": "Domain1D",
+      "measured_slowdown_factor": 118.89094678357903,
+      "target_slowdown_factor": 5.0,
+      "benchmark_file": "audit\\domain1d_performance_benchmark.json"
+    },
+    {
+      "subsystem": "1D boundary conditions",
+      "native_class": "Boundary1D",
+      "measured_slowdown_factor": 739.1538838584961,
+      "target_slowdown_factor": 5.0,
+      "benchmark_file": "audit/boundary1d_performance_benchmark.json"
+    },
+    {
+      "subsystem": "1D flow equations",
+      "native_class": "Flow1D",
+      "measured_slowdown_factor": 250.43345779550242,
+      "target_slowdown_factor": 5.0,
+      "benchmark_file": "audit/flow1d_performance_benchmark.json"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "ALL_BRANCHES_COVERED",
+  "uncovered_branches": 0,
+  "uncovered_branch_names": [],
+  "branch_executions": {
+    "newton_negative": 121688,
+    "clipped_100k_negative": 117421,
+    "convergence_path": 4000,
+    "newton_positive": 126362,
+    "clipped_100k_positive": 121162,
+    "invalid_pressure_rejected": true,
+    "invalid_volume_rejected": true,
+    "iteration_exhaustion_path": true,
+    "save_restore_after_exception": true,
+    "one_third_temp_protection": 1,
+    "tmin_tmax_boundary": 1,
+    "lower_bracket_safeguard": 8,
+    "upper_bracket_safeguard": 8
+  }
+}

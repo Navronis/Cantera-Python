@@ -1,0 +1,98 @@
+{
+  "repository": "https://github.com/cantera/cantera",
+  "commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "submodule_history": "shallow; full tracked source at each pinned commit",
+  "submodules": [
+    {
+      "path": "data/example_data",
+      "url": "https://github.com/cantera/cantera-example-data",
+      "expected_commit": "622e02535961079bf4e55dd338294e244a31cffb",
+      "status": "verified",
+      "actual_commit": "622e02535961079bf4e55dd338294e244a31cffb"
+    },
+    {
+      "path": "ext/HighFive",
+      "url": "https://github.com/highfive-devs/highfive",
+      "expected_commit": "ede97c8d51905c1640038561d12d41da173012ac",
+      "status": "verified",
+      "actual_commit": "ede97c8d51905c1640038561d12d41da173012ac"
+    },
+    {
+      "path": "ext/HighFive/deps/catch2",
+      "url": "https://github.com/catchorg/Catch2.git",
+      "expected_commit": "3f0283de7a9c43200033da996ff9093be3ac84dc",
+      "status": "verified",
+      "actual_commit": "3f0283de7a9c43200033da996ff9093be3ac84dc"
+    },
+    {
+      "path": "ext/doxygen-awesome-css",
+      "url": "https://github.com/jothepro/doxygen-awesome-css.git",
+      "expected_commit": "df83fbf22cfff76b875c13d324baf584c74e96d0",
+      "status": "verified",
+      "actual_commit": "df83fbf22cfff76b875c13d324baf584c74e96d0"
+    },
+    {
+      "path": "ext/eigen",
+      "url": "https://gitlab.com/libeigen/eigen.git/",
+      "expected_commit": "3147391d946bb4b6c68edd901f2add6ac1f31f8c",
+      "status": "verified",
+      "actual_commit": "3147391d946bb4b6c68edd901f2add6ac1f31f8c"
+    },
+    {
+      "path": "ext/fmt",
+      "url": "https://github.com/fmtlib/fmt.git",
+      "expected_commit": "a33701196adfad74917046096bf5a2aa0ab0bb50",
+      "status": "verified",
+      "actual_commit": "a33701196adfad74917046096bf5a2aa0ab0bb50"
+    },
+    {
+      "path": "ext/googletest",
+      "url": "https://github.com/google/googletest.git",
+      "expected_commit": "e2239ee6043f73722e7aa812a459f54a28552929",
+      "status": "verified",
+      "actual_commit": "e2239ee6043f73722e7aa812a459f54a28552929"
+    },
+    {
+      "path": "ext/sundials",
+      "url": "https://github.com/LLNL/sundials",
+      "expected_commit": "c8dabcea90ca8bf195474da120e4f3dd39aa711f",
+      "status": "verified",
+      "actual_commit": "c8dabcea90ca8bf195474da120e4f3dd39aa711f"
+    },
+    {
+      "path": "ext/sundials/.gitlab/radiuss-spack-configs",
+      "url": "https://github.com/sundials-codes/radiuss-spack-configs.git",
+      "expected_commit": "89c2074e466d454c77ec17249cbdf8555d183388",
+      "status": "verified",
+      "actual_commit": "89c2074e466d454c77ec17249cbdf8555d183388"
+    },
+    {
+      "path": "ext/sundials/.gitlab/uberenv",
+      "url": "https://github.com/sundials-codes/uberenv.git",
+      "expected_commit": "ec6fd144c814ce30a6487db9fb8294def606afda",
+      "status": "verified",
+      "actual_commit": "ec6fd144c814ce30a6487db9fb8294def606afda"
+    },
+    {
+      "path": "ext/sundials/external/sundials-addon-example",
+      "url": "https://github.com/sundials-codes/sundials-addon-example.git",
+      "expected_commit": "839c00a919b3bbd43eafcf2c016e1b92616cfe00",
+      "status": "verified",
+      "actual_commit": "839c00a919b3bbd43eafcf2c016e1b92616cfe00"
+    },
+    {
+      "path": "ext/sundials/test/answers",
+      "url": "https://github.com/sundials-codes/answers.git",
+      "expected_commit": "779e974c8095d8b3c2837edf56632a990714d669",
+      "status": "verified",
+      "actual_commit": "779e974c8095d8b3c2837edf56632a990714d669"
+    },
+    {
+      "path": "ext/yaml-cpp",
+      "url": "https://github.com/jbeder/yaml-cpp.git",
+      "expected_commit": "0579ae3d976091d7d664aa9d2527e0d0cff25763",
+      "status": "verified",
+      "actual_commit": "0579ae3d976091d7d664aa9d2527e0d0cff25763"
+    }
+  ]
+}

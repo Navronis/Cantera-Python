@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/multi_newton_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T13:30:24.683235+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "solver_family": "multi_newton",
+  "subsystem": "1D Newton",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0, libcantera_shared.so.4.0.0"
+  },
+  "file_hashes": {
+    "oned_py": "6109ef7718cfe3177d677622505a67104a7b68b0c4860e588f4d53a947ab4498",
+    "test_onedim_py": "199d866e9a7944a878da7e8835a83c37fb53f08f72b71f8dbf1f523a84ddf493",
+    "corpus_multi_newton_jsonl": "7786a22ba1507d32f06b7adf101756e50f2c0e7fb95dd9b967fdf20fe6656788",
+    "run_native_multi_newton_oracle_cpp": "b4eacd39d8a8f6d0121552f801fffdc13a51030284b0e0cf4aeea90a496fc224",
+    "run_python_multi_newton_port_py": "6b5b000decf72a67be3515a11c5bca01f6427d18f6122fce344d37f03b79233f",
+    "run_multi_newton_campaign_py": "c3d37023f067ad5de2bec1d64efad71d13600c01358b4a2d0191cfd0b859a6ab",
+    "benchmark_native_multi_newton_cpp": "073d776d0b43b2cfcef319c4c91a7c5c790529d4c12672f57469bf6ee700e6a8",
+    "benchmark_multi_newton_performance_py": "6f04213bd3b0fdbcb6e9e6424b072a111c8281938fd4e094d3275ebe2928de5d",
+    "native_multi_newton_oracle_results_json": "27df453ad95d6a1468516ab4875bf1723bcf5a2719ae5bc38e964e5f8ddaa573",
+    "python_multi_newton_port_results_json": "b1b949c31d1a249b7af6de035361736f3e3aba520be9980b7c965b0d6f42de85",
+    "multi_newton_differential_summary_json": "6389568cc9e567b5b82bce17343b65ad1f49938aa55d9ae1473a374b77993a97",
+    "multi_newton_performance_benchmark_json": "e6ba10430088b13383497713bb84073cf89d8551ffbbd4b4d3052c3cdbdab5be",
+    "multi_newton_starting_snapshot_json": "a299f2d8d9d64081ccc5579cd22a717dd4e8a39db008e777ea1db8d5a3f7788f",
+    "multi_newton_closure_symbol_set_json": "db44f174bdb2c0b493ddba84a54f7ba7c4cc18f61e2e1e9973d272e4ba923272",
+    "multi_newton_runtime_call_graph_json": "4e42aa007d5857d52661a9486f15921023dfa58f6acecd8ca7a3ad5fc23e1681",
+    "pinned_MultiNewton_h": "a18e6b0bcba116326e8214b43f8bb88b8ba4717c92ecee4bd8a907772803a35f",
+    "pinned_MultiNewton_cpp": "04721fc00e23db0708bbd514b86aa76fca1d7e28e9ba6f914d33647d6ce2f549",
+    "pinned_MultiJac_h": "41fee6d78ec971eb226516747977fd47028a6dba597461681742cac70c460ce2",
+    "pinned_MultiJac_cpp": "f0d86f4372f46d053becc9a489b4c48fbaff720044a65dfe9dd170f25e9c969c",
+    "pinned_SteadyStateSystem_h": "823448b85bfb54bee59975a90687a1c2ff382938752745b6433f7a373e8ac6a3"
+  },
+  "campaign_summary": {
+    "total_cases": 20,
+    "passed_cases": 20,
+    "pass_rate_pct": 100.0,
+    "max_x1_relative_error": 4.315568434794424e-16,
+    "max_x1_absolute_error": 4.547473508864641e-13,
+    "max_step_relative_error": 1.2991971564762473e-16,
+    "max_fbound_relative_error": 0.0,
+    "max_s1_relative_error": 0.0,
+    "numerical_parity": true
+  },
+  "performance_benchmark": {
+    "native_median_ms": 0.01547,
+    "python_median_ms": 0.8951999989221804,
+    "speed_ratio": 57.87,
+    "native_speed_parity": false
+  },
+  "independent_status_flags": {
+    "MULTI_NEWTON_SOURCE_LOGIC_COMPLETE": true,
+    "MULTI_NEWTON_RUNTIME_INTEGRATED": true,
+    "MULTI_NEWTON_NUMERICAL_PARITY": true,
+    "MULTI_NEWTON_ADVERSARIAL_VALIDATED": true,
+    "MULTI_NEWTON_FAILURE_SEMANTICS_VALIDATED": true,
+    "MULTI_NEWTON_NATIVE_PERFORMANCE_BENCHMARKED": true,
+    "MULTI_NEWTON_NATIVE_SPEED_PARITY": false,
+    "MULTI_NEWTON_FULL_REGRESSION_CLEAN": true,
+    "MULTI_NEWTON_FULLY_FROZEN": false
+  },
+  "status": "VALIDATED_NUMERICALLY_EQUIVALENT"
+}

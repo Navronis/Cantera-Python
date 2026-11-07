@@ -1,0 +1,32 @@
+{
+  "canonical_total": 5784,
+  "pinned_native_validated": 2012,
+  "proven_non_runtime_cpp_only": 759,
+  "fully_dispositioned": 2771,
+  "unresolved": 3013,
+  "not_ported": 2630,
+  "partial": 383,
+  "status_counts": {
+    "NOT_PORTED": 2630,
+    "PARTIAL": 383,
+    "NON_RUNTIME_CPP_ONLY_PROVEN": 759,
+    "PINNED_NATIVE_VALIDATED": 2012
+  },
+  "subsystems": {
+    "transport": {
+      "total": 229,
+      "dispositioned": 229,
+      "percent": 100.0
+    },
+    "kinetics": {
+      "total": 749,
+      "dispositioned": 749,
+      "percent": 100.0
+    },
+    "thermodynamics": {
+      "total": 1661,
+      "dispositioned": 573,
+      "percent": 34.5
+    }
+  }
+}

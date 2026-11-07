@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/dusty_gas_transport_starting_snapshot.json",
+  "timestamp_utc": "2026-11-04T16:54:57.085148+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "pinned_native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "python_executable": "/home/nebula/cantera-oracle-env/bin/python3",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "target_family": {
+    "family": "dusty_gas_transport",
+    "native_class": "DustyGasTransport",
+    "native_file": "src/transport/DustyGasTransport.cpp",
+    "runtime_symbols_total": 18,
+    "status_before": "PARTIAL"
+  },
+  "file_hashes": {
+    "transport_py": "da26f34fb7e15fdb903991866fdd218899c50694e062452c8e159f1d6ea55d93",
+    "solution_py": "1a3a395a4d50eae73708d9d2aef0b63ef4df4ba6485f587361f41a7baf36ec4c",
+    "test_dusty_gas_transport_py": "c29d54441b18ba81492e4ed90a28ded2200d74983ddc61c35989dcefee5aa6a2",
+    "dusty_gas_closure_set_json": "845ed8012932d2684b0429f88ebcb2adca8b593c567f98f4d5ca17104a7b0cc2",
+    "dusty_gas_call_graph_json": "73b5d11cd56f76ae7ed8ac93959797b7ddd9edba47fe04eaa5658d0445e66657"
+  },
+  "frozen_dependencies": {
+    "mixture_transport_differential_summary_json": "9a6d2cb6a16615ae03c5fd3f637ff47f7e6c46043306956de4ad414c64203235",
+    "multicomponent_transport_frozen_manifest_json": "0ff63aaabcf1351d3c97bbb5056cc2ceeb784b6fec0d8609de05e28bad5015ce",
+    "multicomponent_transport_differential_summary_json": "67283555427dd5b9cbe07a6981015a1746328243ebb6e0b229cd3ad02bcb4af7"
+  },
+  "global_starting_state": {
+    "fully_dispositioned": 1015,
+    "remaining_without_final_disposition": 4769
+  }
+}

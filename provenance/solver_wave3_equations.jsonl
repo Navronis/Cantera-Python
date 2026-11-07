@@ -1,0 +1,26 @@
+{"id":"substance_two_phase","equation":"TwoPhase(strict): T<Tc and (Rhv<rho<Rhf) for strict; inclusive bounds otherwise","source":"src/tpx/Sub.cpp:271-281","python":"tpx.py:TwoPhase"}
+{"id":"quality_lever","equation":"x=(1/rho-1/Rhf)/(1/Rhv-1/Rhf)","source":"src/tpx/Sub.cpp:283-299","python":"tpx.py:x"}
+{"id":"property_lever","equation":"q=(1-x)q_f+xq_g","source":"src/tpx/Sub.cpp:742-766","python":"tpx.py:prop"}
+{"id":"water_helmholtz","equation":"P=rho*R*T+sum(C_i(T)H_i(rho)); u=sum((C_i-T C'_i)I_i)+u0+ideal(T); s=s0-R ln rho- sum(C'_i I_i)+ideal(T)","source":"src/tpx/Water.cpp:76-184","python":"tpx.py:Water"}
+{"id":"reynolds14","equation":"P=rho*R*T+sum(C_i(T)H_i(rho)); u=sum((C_i-T C'_i)I_i)+u0+u0(T); s=s0-R ln rho-sum(C'_iI_i)+s0(T)","source":"src/tpx/Hydrogen.cpp, Methane.cpp, Nitrogen.cpp, Oxygen.cpp","python":"tpx_exact.py:_Residual14"}
+{"id":"hfc134a","equation":"f=R*T*(phi0(tau,delta)+phir(tau,delta)); u=R*T*(tau*dphi/dtau); p=R*T*rho^2/Roc*dphi/ddelta; s=(u-f)/T","source":"src/tpx/HFC134a.cpp:65-169","python":"tpx_exact.py:HFC134a"}
+{"id":"density_inversion","equation":"safeguarded Newton rho_{n+1}=rho_n-(P(rho_n)-Ptarget)/(dP/drho), with physical lower bound and explicit failure","source":"src/tpx/Sub.cpp:787-817","python":"tpx.py:set_TPp"}
+{"id":"saturation_inversion","equation":"Newton/bisection over Tmin<=T<=Tc with Psat(T)=Ptarget and source pressure tolerance","source":"src/tpx/Sub.cpp:301-349","python":"tpx.py:Tsat"}
+{"id":"saturation_update","equation":"20-iteration Gibbs equality correction: dg=gv-gf; dp=dg/(1/Rhv-1/Rhf); pressure damping and critical/negative guards","source":"src/tpx/Sub.cpp:514-576","python":"tpx.py:_update_sat_source","status":"IMPLEMENTED_DIFFERENTLY_WITH_FINITE_UNDERFLOW_GUARD"}
+{"id":"density_bracket","equation":"specific-volume bracket, slope sign detection, bounded pressure secant/Newton step, step caps 0.2v/0.1v/0.05v, 200-iteration limit","source":"src/tpx/Sub.cpp:768-917","python":"tpx.py:set_TPp","status":"IMPLEMENTED_DIFFERENTLY"}
+{"id":"cp_finite_difference","equation":"cp=T*(s(T+dt,P)-s(T-dt,P))/(2dt), dt=1e-4T; infinity in strict two-phase","source":"src/tpx/Sub.cpp:82-133","python":"tpx.py:cp"}
+{"id":"cv_finite_difference","equation":"cv=T*(s(T+dt,v)-s(T-dt,v))/(2dt), dt=1e-4T; one-sided phase-boundary handling","source":"src/tpx/Sub.cpp:44-81","python":"tpx.py:cv"}
+{"id":"thermal_expansion","equation":"beta=-(drho/dT)_P/rho using finite-difference TP states","source":"src/tpx/Sub.cpp:134-186","python":"tpx.py:thermalExpansionCoeff"}
+{"id":"compressibility","equation":"kappa=(drho/dP)_T/rho using finite-difference TP states","source":"src/tpx/Sub.cpp:187-234","python":"tpx.py:isothermalCompressibility"}
+{"id":"internal_pressure","equation":"(du/dv)_T from finite differences in density/volume","source":"src/tpx/Sub.cpp:235-253","python":"tpx.py:internalPressure"}
+{"id":"enthalpy","equation":"h=u+P/rho","source":"src/tpx/Sub.cpp:578-595","python":"tpx.py:hp"}
+{"id":"gibbs","equation":"g=h-Ts","source":"src/tpx/Sub.cpp:531-545","python":"tpx.py:gp"}
+{"id":"water_psat","equation":"Psat=Pc exp((Tc/T-1) sum(F_i [a(T-Tp)]^i)","source":"src/tpx/Water.cpp:152-173","python":"tpx.py:Water.Psat,dPsatdT"}
+{"id":"liquid_density","equation":"rho_l=sum(D_i (1-T/Tc)^(i/3)) or fluid-specific source correlation","source":"src/tpx/*cpp:169-236","python":"tpx.py/tpx_exact.py:ldens"}
+{"id":"vapor_density","equation":"initial rho_v=Psat*MolWt/(GasConstant*T), then source set_TPp correction","source":"src/tpx/Sub.cpp:526-536","python":"tpx.py:update_sat"}
+{"id":"reference_offsets","equation":"energy_offset=h0-hp(T0,P0); entropy_offset=s0-sp(T0,P0)","source":"src/tpx/Sub.cpp:26-35","python":"tpx.py:setStdState"}
+{"id":"property_pair_reverse","equation":"negative enum codes reverse argument/property order to the positive pair","source":"include/cantera/tpx/Sub.h:18-24","python":"tpx.py:Set"}
+{"id":"critical_properties","equation":"Tc, Pc, Vc, Tmin, Tmax and molecular weight are fluid constants returned by source virtual methods","source":"src/tpx/*cpp:238-305","python":"tpx.py/tpx_exact.py fluid classes"}
+{"id":"water_dpsatdt","equation":"dPsat/dT=Psat*d[(Tc/T-1)S(T)]/dT","source":"include/cantera/tpx/Water.h:46-47 and Water.cpp:152-173","python":"tpx.py:Water.dPsatdT"}
+{"id":"maxwell_free_energy","equation":"f=u-Ts and g=h-Ts","source":"include/cantera/tpx/Sub.h:100-113","python":"tpx.py:f/g"}
+{"id":"two_phase_quality_endpoints","equation":"x=0 at rho>=Rhof and x=1 at rho<=Rhov; supercritical volume branch by Vc","source":"src/tpx/Sub.cpp:283-299","python":"tpx.py:x"}

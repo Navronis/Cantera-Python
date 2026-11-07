@@ -1,0 +1,85 @@
+{
+  "family": "THERMO_FAMILY_4_IDEAL_PHASES",
+  "root_classes": [
+    "IdealGasPhase",
+    "SingleSpeciesTP",
+    "IdealSolidSolnPhase",
+    "SurfPhase",
+    "CoverageDependentSurfPhase",
+    "EdgePhase",
+    "MetalPhase",
+    "StoichSubstance"
+  ],
+  "inherits_from": "ThermoPhase",
+  "primary_callers": [
+    "Kinetics (InterfaceKinetics, GasKinetics, SurfaceKinetics)",
+    "Transport (GasTransport, HighPressureGasTransport)",
+    "Reactor (IdealGasReactor, ConstVolumeReactor, SurfaceReactor)",
+    "Equilibrium / VCS (Ideal gas and ideal solution Gibbs minimization)",
+    "OneDim / Flow1D (flame solvers, stagnation flow, burner flame)"
+  ],
+  "core_model_clusters": {
+    "IdealGasPhase": [
+      "pressure",
+      "setPressure",
+      "calcDensity",
+      "enthalpy_mole",
+      "intEnergy_mole",
+      "entropy_mole",
+      "gibbs_mole",
+      "cp_mole",
+      "cv_mole",
+      "getChemPotentials",
+      "getPartialMolarEnthalpies",
+      "getPartialMolarEntropies",
+      "getPartialMolarIntEnergies",
+      "getPartialMolarCp",
+      "getPartialMolarVolumes",
+      "setState_TP",
+      "setState_TD",
+      "setState_DP",
+      "setState_HP",
+      "setState_UV",
+      "setState_SP",
+      "setState_SV"
+    ],
+    "SingleSpeciesTP": [
+      "eosType",
+      "pressure",
+      "setPressure",
+      "enthalpy_mole",
+      "intEnergy_mole",
+      "entropy_mole",
+      "gibbs_mole",
+      "cp_mole",
+      "cv_mole"
+    ],
+    "SurfPhase_and_CoverageDependent": [
+      "siteDensity",
+      "setSiteDensity",
+      "coverages",
+      "setCoverages",
+      "setCoveragesByName",
+      "getCoverages",
+      "standardConcentration",
+      "getActivityConcentrations",
+      "addInterpolativeDependency",
+      "coverageDependencyType"
+    ],
+    "StoichSubstance_and_IdealSolidSoln": [
+      "pressure",
+      "setPressure",
+      "enthalpy_mole",
+      "intEnergy_mole",
+      "entropy_mole",
+      "gibbs_mole",
+      "cp_mole",
+      "cv_mole"
+    ],
+    "MetalPhase_and_EdgePhase": [
+      "electronEnergyLevel",
+      "fermiLevel",
+      "siteDensity"
+    ]
+  }
+}

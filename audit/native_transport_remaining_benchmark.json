@@ -1,0 +1,9 @@
+{
+  "iterations": 10000,
+  "water_transport_seconds": 0.042863,
+  "water_transport_us_per_call": 4.2863,
+  "unity_lewis_seconds": 0.002766,
+  "unity_lewis_us_per_call": 0.2766,
+  "ion_gas_seconds": 0.0128,
+  "ion_gas_us_per_call": 1.28
+}

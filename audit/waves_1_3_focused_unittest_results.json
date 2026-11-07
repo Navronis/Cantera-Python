@@ -1,0 +1,20 @@
+{
+  "command": "python tools/run_waves_1_3_focused_unittest.py",
+  "started_at_utc": "2026-09-27T15:54:57.682844+00:00",
+  "test_modules": [
+    "tests.test_state",
+    "tests.test_state_failure_mutation",
+    "tests.test_cubic_inverse_source"
+  ],
+  "tests_run": 18,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "exit_code": 0,
+  "scope_note": "Focused inverse-state and cubic inverse tests; this is not the full repository pytest suite.",
+  "log_path": "audit/waves_1_3_focused_unittest.log",
+  "waves_1_3_snapshot_id": "fc63583ec6249d35444d7e68c5971a96b67aa7051af9d75904ffafd151bdc2ca",
+  "repository_snapshot_kind": "WORKING_TREE_SNAPSHOT_WITH_DIFF_HASH",
+  "evidence_binding_note": "Report generated for this repository snapshot. Raw-run freshness is separately established only when the execution-provenance file verifies its raw hashes and pinned identity.",
+  "evidence_binding_scope": "SAVED_RAW_RECORDS_NOT_REPROVEN"
+}

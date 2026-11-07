@@ -1,0 +1,1 @@
+{"status":"UNAVAILABLE","reason":"Live failure-path comparison requires an executable built from pinned commit 726522be4e2a13454d8415b7ef799d621f665cf3; only the source checkout and archived final-state fixture are available here.","required_cases":["zero/negative pressure","zero/negative volume","extreme H/U/S targets","out-of-range starting temperatures"]}

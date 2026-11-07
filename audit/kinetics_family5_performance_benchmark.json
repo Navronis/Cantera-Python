@@ -1,0 +1,34 @@
+{
+  "family": "FAMILY_5_PLASMA_VIBRATIONAL_AND_MULTIRATE",
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "benchmarks": [
+    {
+      "name": "twotemp_plasma_eval",
+      "iterations": 100000,
+      "python_avg_ms": 0.001030341000005137,
+      "native_avg_ms": 5.46175e-06,
+      "slowdown": 188.64667917885973
+    },
+    {
+      "name": "oxygen_plasma_rates",
+      "iterations": 10000,
+      "python_avg_ms": 0.02158419000043068,
+      "native_avg_ms": 2.46098e-05,
+      "slowdown": 877.0567010065372
+    },
+    {
+      "name": "vibrational_relaxation_rates",
+      "iterations": 10000,
+      "python_avg_ms": 0.017705410000053233,
+      "native_avg_ms": 2.5546e-05,
+      "slowdown": 693.0795427876471
+    },
+    {
+      "name": "kinetics_derivatives_ddT",
+      "iterations": 1000,
+      "python_avg_ms": 1.4716389999957755,
+      "native_avg_ms": 0.001591391,
+      "slowdown": 924.7501085501775
+    }
+  ]
+}

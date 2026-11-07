@@ -1,0 +1,372 @@
+{
+  "classification_counts": {
+    "POST_FAILURE_STATE_MATCH": 9
+  },
+  "wave1_post_failure_state_parity": true,
+  "cases": [
+    {
+      "case_id": "W1_STATE_HP_EXTREME_TARGET",
+      "solver": "HP",
+      "native_status": "FAILURE",
+      "python_status": "FAILURE",
+      "after_state_differences": [],
+      "classification": "POST_FAILURE_STATE_MATCH",
+      "native_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "native_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      }
+    },
+    {
+      "case_id": "W1_STATE_HP_ZERO_PRESSURE",
+      "solver": "HP",
+      "native_status": "FAILURE",
+      "python_status": "FAILURE",
+      "after_state_differences": [],
+      "classification": "POST_FAILURE_STATE_MATCH",
+      "native_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "native_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      }
+    },
+    {
+      "case_id": "W1_STATE_INVALID_TEMPERATURE_TPX",
+      "solver": "TPX_INVALID",
+      "native_status": "FAILURE",
+      "python_status": "FAILURE",
+      "after_state_differences": [],
+      "classification": "POST_FAILURE_STATE_MATCH",
+      "native_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "native_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      }
+    },
+    {
+      "case_id": "W1_STATE_SP_EXTREME_TARGET",
+      "solver": "SP",
+      "native_status": "FAILURE",
+      "python_status": "FAILURE",
+      "after_state_differences": [],
+      "classification": "POST_FAILURE_STATE_MATCH",
+      "native_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "native_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      }
+    },
+    {
+      "case_id": "W1_STATE_SP_NEGATIVE_PRESSURE",
+      "solver": "SP",
+      "native_status": "FAILURE",
+      "python_status": "FAILURE",
+      "after_state_differences": [],
+      "classification": "POST_FAILURE_STATE_MATCH",
+      "native_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "native_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      }
+    },
+    {
+      "case_id": "W1_STATE_SV_EXTREME_TARGET",
+      "solver": "SV",
+      "native_status": "FAILURE",
+      "python_status": "FAILURE",
+      "after_state_differences": [],
+      "classification": "POST_FAILURE_STATE_MATCH",
+      "native_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "native_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      }
+    },
+    {
+      "case_id": "W1_STATE_SV_NEGATIVE_VOLUME",
+      "solver": "SV",
+      "native_status": "FAILURE",
+      "python_status": "FAILURE",
+      "after_state_differences": [],
+      "classification": "POST_FAILURE_STATE_MATCH",
+      "native_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "native_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      }
+    },
+    {
+      "case_id": "W1_STATE_UV_EXTREME_TARGET",
+      "solver": "UV",
+      "native_status": "FAILURE",
+      "python_status": "FAILURE",
+      "after_state_differences": [],
+      "classification": "POST_FAILURE_STATE_MATCH",
+      "native_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "native_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      }
+    },
+    {
+      "case_id": "W1_STATE_UV_ZERO_VOLUME",
+      "solver": "UV",
+      "native_status": "FAILURE",
+      "python_status": "FAILURE",
+      "after_state_differences": [],
+      "classification": "POST_FAILURE_STATE_MATCH",
+      "native_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "native_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423648,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_before": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      },
+      "python_after": {
+        "T": 800.0,
+        "P": 101325.0,
+        "density": 0.24389949319423646,
+        "enthalpy_mass": 941236.9999717425,
+        "int_energy_mass": 525799.4823574403,
+        "entropy_mass": 12656.101405060423
+      }
+    }
+  ],
+  "waves_1_3_snapshot_id": "fc63583ec6249d35444d7e68c5971a96b67aa7051af9d75904ffafd151bdc2ca",
+  "repository_snapshot_kind": "WORKING_TREE_SNAPSHOT_WITH_DIFF_HASH",
+  "evidence_binding_scope": "SAVED_RAW_RECORDS_NOT_REPROVEN",
+  "evidence_binding_note": "Report generated for this repository snapshot. Raw-run freshness is separately established only when the execution-provenance file verifies its raw hashes and pinned identity."
+}

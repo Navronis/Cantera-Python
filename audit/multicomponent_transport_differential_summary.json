@@ -1,0 +1,151 @@
+{
+  "multitran_run_id": "566f6e013a60116c877bb95fc4ecb48f",
+  "total_cases": 65,
+  "passed_cases": 65,
+  "pass_rate_percent": 100.0,
+  "total_matrix_elements_compared": 229720,
+  "total_scalar_elements_compared": 7240,
+  "unexpected_nonfinite_native": 0,
+  "unexpected_nonfinite_python": 0,
+  "classification": "NUMERICALLY_EQUIVALENT_WITHIN_VALIDATED_TOLERANCE",
+  "tolerance_policy": {
+    "rtol_general": 1e-08,
+    "atol_visc": 1e-10,
+    "atol_cond": 1e-08,
+    "atol_diff": 1e-08,
+    "atol_flux": 1e-08,
+    "atol_tdiff": 1e-09
+  },
+  "flux_conservation": {
+    "description": "conserved to numerical tolerance",
+    "absolute_residual": {
+      "max": 5.177554089278539e-19,
+      "p50": 3.687876464795287e-20,
+      "p95": 2.981197171249146e-19,
+      "p99": 4.941334932319035e-19,
+      "worst_case_id": "MULTITRAN_GRI30_020"
+    },
+    "normalized_residual": {
+      "max": 9.733969937969922e-15,
+      "p50": 1.079979844402529e-15,
+      "p95": 5.0455682065311135e-15,
+      "p99": 8.312100660790813e-15,
+      "worst_case_id": "MULTITRAN_GRI30_027"
+    }
+  },
+  "statistics": {
+    "viscosity": {
+      "abs_err": {
+        "max": 2.371692252312041e-18,
+        "p50": 4.336808689942018e-19,
+        "p95": 1.3308581667259565e-18,
+        "p99": 1.9596954267675488e-18,
+        "worst_case_id": "MULTITRAN_ADV_P100BAR_T3200_062"
+      },
+      "rel_err": {
+        "max": 8.696900137934105e-14,
+        "p50": 1.3155777012030778e-14,
+        "p95": 6.024419273479366e-14,
+        "p99": 8.586224626317314e-14,
+        "worst_case_id": "MULTITRAN_GRI30_016"
+      }
+    },
+    "thermal_conductivity": {
+      "abs_err": {
+        "max": 6.356026815979021e-15,
+        "p50": 7.355227538141662e-16,
+        "p95": 2.6527391394637327e-15,
+        "p99": 4.295452882274729e-15,
+        "worst_case_id": "MULTITRAN_GRI30_018"
+      },
+      "rel_err": {
+        "max": 9.531581883583091e-14,
+        "p50": 7.34828259976001e-15,
+        "p95": 5.0765319353407096e-14,
+        "p99": 9.006960781351507e-14,
+        "worst_case_id": "MULTITRAN_GRI30_034"
+      }
+    },
+    "species_viscosities": {
+      "abs_err": {
+        "max": 1.6506978076091805e-17,
+        "p50": 2.253107639696439e-18,
+        "p95": 8.089164646278568e-18,
+        "p99": 1.1119577481011329e-17,
+        "worst_case_id": "MULTITRAN_ADV_P100BAR_T3200_062"
+      },
+      "rel_err": {
+        "max": 8.254020662184314e-13,
+        "p50": 1.0232035119623713e-13,
+        "p95": 8.254020662184314e-13,
+        "p99": 8.254020662184314e-13,
+        "worst_case_id": "MULTITRAN_GRI30_001"
+      }
+    },
+    "binary_diff_coeffs": {
+      "abs_err": {
+        "max": 4.7704895589362195e-17,
+        "p50": 4.689174395999807e-18,
+        "p95": 3.1008182133085427e-17,
+        "p99": 4.159866895392383e-17,
+        "worst_case_id": "MULTITRAN_ADV_TRACE_GRI_061"
+      },
+      "rel_err": {
+        "max": 8.26279820534927e-13,
+        "p50": 1.1934238491451595e-13,
+        "p95": 8.26279820534927e-13,
+        "p99": 8.26279820534927e-13,
+        "worst_case_id": "MULTITRAN_GRI30_001"
+      }
+    },
+    "multi_diff_coeffs": {
+      "abs_err": {
+        "max": 2.498001805406602e-16,
+        "p50": 1.441988889405721e-17,
+        "p95": 1.4222564098664837e-16,
+        "p99": 2.0594637106796649e-16,
+        "worst_case_id": "MULTITRAN_H2O2_057"
+      },
+      "rel_err": {
+        "max": 2.2574929312264423e-13,
+        "p50": 2.7568546496500107e-14,
+        "p95": 1.5995322522899227e-13,
+        "p99": 1.9946551411402955e-13,
+        "worst_case_id": "MULTITRAN_GRI30_034"
+      }
+    },
+    "thermal_diff_coeffs": {
+      "abs_err": {
+        "max": 7.872112453544654e-20,
+        "p50": 8.893845946170154e-21,
+        "p95": 4.207636165485736e-20,
+        "p99": 6.818403467160303e-20,
+        "worst_case_id": "MULTITRAN_ADV_P100BAR_T3200_062"
+      },
+      "rel_err": {
+        "max": 8.274325355858292e-09,
+        "p50": 3.639955948894202e-10,
+        "p95": 3.631289746536981e-09,
+        "p99": 7.892768538982823e-09,
+        "worst_case_id": "MULTITRAN_ADV_P100BAR_T3200_062"
+      }
+    },
+    "flux_vector": {
+      "abs_err": {
+        "max": 1.5873397431545588e-18,
+        "p50": 2.710505431213761e-19,
+        "p95": 8.171920757842047e-19,
+        "p99": 1.323878615240581e-18,
+        "worst_case_id": "MULTITRAN_ADV_P100BAR_T3200_062"
+      },
+      "rel_err": {
+        "max": 8.72224930342431e-05,
+        "p50": 1.1647083741112938e-05,
+        "p95": 4.322424055011641e-05,
+        "p99": 6.763685565814803e-05,
+        "worst_case_id": "MULTITRAN_GRI30_033"
+      }
+    }
+  },
+  "matrix_invertibility_statement": "All tested MultiTransport solves completed successfully with finite source-equivalent outputs."
+}

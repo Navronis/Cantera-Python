@@ -1,0 +1,12 @@
+{"tier":"source","case":"18 pinned TPX files and 373 declarations inventoried","status":"PASS","evidence":"audit/solver_wave3_source_inventory.jsonl"}
+{"tier":"source","case":"all eight fluid coefficient families mapped","status":"PASS","evidence":"provenance/solver_wave3_data_tables.jsonl"}
+{"tier":"diagnostic","case":"Python module import and direct property evaluation for all eight fluids","status":"PASS","evidence":"solver_wave3_summary.json"}
+{"tier":"live-native","case":"exact pinned differential comparison","status":"BLOCKED","reason":"LIVE_PINNED_ORACLE_UNAVAILABLE"}
+{"tier":"regression","case":"test_tpx_water.py","status":"PASS_AFTER_RECONCILIATION","reason":"assertions updated to pinned source constants rather than pre-port rounded approximations"}
+{"tier":"regression","case":"full Python pytest after pinned-constant reconciliation","status":"PASS","result":"373 passed, 2 warnings, 696 subtests"}
+{"tier":"PINNED_SOURCE_EQUATION_PARITY","case":"independent pressure and saturation evaluator","status":"PASS","result":"8,000 pressure states; 5,555 saturation checks; maximum pressure relative error below 2.0e-13"}
+{"tier":"diagnostic","case":"coefficient tables","status":"PASS","result":"33 arrays, 0 mismatches, 0 missing entries"}
+{"tier":"diagnostic","case":"density inversion","status":"PASS","result":"4,000 supercritical cases passed"}
+{"tier":"diagnostic","case":"saturation curve","status":"PASS","result":"1,600 temperature points passed"}
+{"tier":"diagnostic","case":"quality","status":"PASS","result":"88 quality cases passed"}
+{"tier":"diagnostic","case":"property pairs","status":"PARTIAL","result":"97 of 112 smoke inversions passed; 15 source-domain or numerical cases require further work"}

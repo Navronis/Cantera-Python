@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-09-29T08:33:27.6055547Z",
+  "scope": "Pinned VCS phase-local formula rows and elemental abundance support routines",
+  "pinned_source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "repository": {
+    "head": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+    "branch": "certified/waves-1-3-baseline",
+    "working_tree_dirty": true
+  },
+  "source_sha256": {
+    "cantera_python/vcs.py": "07E963B9F03A26F3CD4AB791EE86425317E5A002E9862C683C1B14252115F459",
+    "cantera_python/ideal_gas.py": "C1C8E9548837533451C3947623112AC4DBBE4DCF941E6E387149FD64075E6456",
+    "cantera_python/solution.py": "962D281A7CEADD85C5AA150D084DCEA087D3B0B16B73F3F80BDCDB3B3D4FB483",
+    "tests/test_vcs_multiphase.py": "3DC0A0E404851B4C22FE1F25E6149AC90371048A7CC63423C583B8A7F9072B8C",
+    "tests/test_multiphase_container.py": "1D6495A426DD256CC016B0BF5A628EF261E161185B5A74F7F926BAABDFAA4D72",
+    "../cantera-original/src/equil/vcs_VolPhase.cpp": "457504772AD44EB2266ABDBC14100444E640DE94D683E73428B68F868D9D0499",
+    "../cantera-original/src/equil/vcs_solve.cpp": "4259CEEB0ED244CA64D5CE71CA0BC6E44E5FAC1EFD52E5ED92348F58D6E105CA"
+  },
+  "implemented": {
+    "element_order": "Phase and Solution element index APIs preserve the declared canonical order",
+    "phase_formula_matrix": "Translated vcs_VolPhase::transferElementsFM atom, electron-charge, and charge-neutrality rows",
+    "vcs_elab": "Translated species-by-element abundance accumulation, excluding interfacial-voltage unknowns",
+    "vcs_elabcheck": "Translated active-row handling, component/full bounds, 1e-12 ordinary relative check, charge-neutrality error, 1e-140 minor cutoff, and mixed-sign scaled tolerance",
+    "vcs_basopt": "NOT_IMPLEMENTED",
+    "vcs_solve_TP": "NOT_IMPLEMENTED"
+  },
+  "validation": {
+    "targeted_command": "python -m pytest tests/test_vcs_multiphase.py -q",
+    "targeted_result": "11 passed",
+    "full_command": "python -m pytest tests/ -q",
+    "full_result": "492 passed, 3 skipped, 698 subtests passed",
+    "full_exit_code": 0,
+    "full_duration_seconds": 161.03,
+    "diff_check": "passed"
+  },
+  "limitations": [
+    "No pinned native differential probe directly exercised vcs_elab or vcs_elabcheck; tests cover source-derived cases.",
+    "Component-basis selection, stoichiometric reaction construction, deleted-species management, and the VCS active-set equilibrium loop remain unported.",
+    "Regression success does not certify full Cantera equivalence."
+  ]
+}

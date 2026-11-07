@@ -1,0 +1,62 @@
+{
+  "label": "PINNED_SOURCE_EQUATION_PARITY",
+  "fluids": {
+    "Water": {
+      "states": 1000,
+      "pressure_max_relative_error": 1.9852758248707646e-13,
+      "saturation_cases": 698,
+      "saturation_max_relative_error": 1.9634723073047927e-15,
+      "status": "PASS"
+    },
+    "CarbonDioxide": {
+      "states": 1000,
+      "pressure_max_relative_error": 2.2428027894277253e-14,
+      "saturation_cases": 535,
+      "saturation_max_relative_error": 0.0,
+      "status": "PASS"
+    },
+    "Nitrogen": {
+      "states": 1000,
+      "pressure_max_relative_error": 0.0,
+      "saturation_cases": 666,
+      "saturation_max_relative_error": 9.096577744181537e-13,
+      "status": "PASS"
+    },
+    "Oxygen": {
+      "states": 1000,
+      "pressure_max_relative_error": 0.0,
+      "saturation_cases": 722,
+      "saturation_max_relative_error": 4.2668939269490175e-14,
+      "status": "PASS"
+    },
+    "Hydrogen": {
+      "states": 1000,
+      "pressure_max_relative_error": 0.0,
+      "saturation_cases": 699,
+      "saturation_max_relative_error": 0.0,
+      "status": "PASS"
+    },
+    "Methane": {
+      "states": 1000,
+      "pressure_max_relative_error": 0.0,
+      "saturation_cases": 677,
+      "saturation_max_relative_error": 0.0,
+      "status": "PASS"
+    },
+    "Heptane": {
+      "states": 1000,
+      "pressure_max_relative_error": 3.5925645083270915e-13,
+      "saturation_cases": 725,
+      "saturation_max_relative_error": 0.0,
+      "status": "PASS"
+    },
+    "HFC134a": {
+      "states": 1000,
+      "pressure_max_relative_error": 0.0,
+      "saturation_cases": 716,
+      "saturation_max_relative_error": 0.0,
+      "status": "PASS"
+    }
+  },
+  "states": 8000
+}

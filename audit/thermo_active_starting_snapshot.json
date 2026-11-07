@@ -1,0 +1,17 @@
+{
+  "family": "THERMO_FAMILY_1_PHASE_CORE_STATE_FOUNDATION",
+  "subsystem": "thermo",
+  "total_symbols": 119,
+  "status_distribution": {
+    "NOT_PORTED": 103,
+    "PARTIAL": 7,
+    "NON_RUNTIME_CPP_ONLY_PROVEN": 9
+  },
+  "global_inventory_metrics": {
+    "total_canonical": 5784,
+    "pinned_native_validated": 1627,
+    "non_runtime_cpp_only_proven": 759,
+    "fully_dispositioned": 2386,
+    "unresolved": 3398
+  }
+}

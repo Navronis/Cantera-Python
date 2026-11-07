@@ -1,0 +1,1 @@
+{"case_id": "test_ord1", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 2.0, "lambda": 1.0, "y_init": [1.0], "max_order": 1, "max_steps": 50000}

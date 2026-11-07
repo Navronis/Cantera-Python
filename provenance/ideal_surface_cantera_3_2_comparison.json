@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-17",
+  "reference": "released Cantera 3.2.0 (supplementary, not the exact pinned commit)",
+  "mechanism": "cantera-original/data/diamond.yaml",
+  "phase": "diamond_100",
+  "state": {
+    "temperature_K": 1200.0,
+    "coverages": {
+      "c6HH": 0.9,
+      "c6H*": 0.1
+    }
+  },
+  "reference_values": {
+    "n_species": 8,
+    "site_density_kmol_per_m2": 3e-08,
+    "enthalpy_mole_J_per_kmol": 64559120.0,
+    "entropy_mole_J_per_kmol_K": 89939.2902300613
+  },
+  "pure_python_values": {
+    "n_species": 8,
+    "site_density_kmol_per_m2": 3e-08,
+    "enthalpy_mole_J_per_kmol": 64559120.0,
+    "entropy_mole_J_per_kmol_K": 89939.29023006129
+  },
+  "scope": "Ideal-surface thermodynamics only; interface kinetics remains unimplemented."
+}

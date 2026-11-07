@@ -1,0 +1,9 @@
+{"case_id":"W1_STATE_HP_EXTREME_TARGET","solver":"HP","failure_intent":"nonconvergence_or_bounds","target":1e40,"constraint":101325.0,"initial_T":800.0,"initial_P":101325.0,"initial_X":"H2:0.5, O2:0.25, N2:0.25"}
+{"case_id":"W1_STATE_UV_EXTREME_TARGET","solver":"UV","failure_intent":"nonconvergence_or_bounds","target":1e40,"constraint":5.0,"initial_T":800.0,"initial_P":101325.0,"initial_X":"H2:0.5, O2:0.25, N2:0.25"}
+{"case_id":"W1_STATE_SP_EXTREME_TARGET","solver":"SP","failure_intent":"nonconvergence_or_bounds","target":1e40,"constraint":101325.0,"initial_T":800.0,"initial_P":101325.0,"initial_X":"H2:0.5, O2:0.25, N2:0.25"}
+{"case_id":"W1_STATE_SV_EXTREME_TARGET","solver":"SV","failure_intent":"nonconvergence_or_bounds","target":1e40,"constraint":5.0,"initial_T":800.0,"initial_P":101325.0,"initial_X":"H2:0.5, O2:0.25, N2:0.25"}
+{"case_id":"W1_STATE_HP_ZERO_PRESSURE","solver":"HP","failure_intent":"invalid_pressure","target":500000.0,"constraint":0.0,"initial_T":800.0,"initial_P":101325.0,"initial_X":"H2:0.5, O2:0.25, N2:0.25"}
+{"case_id":"W1_STATE_SP_NEGATIVE_PRESSURE","solver":"SP","failure_intent":"invalid_pressure","target":1000.0,"constraint":-101325.0,"initial_T":800.0,"initial_P":101325.0,"initial_X":"H2:0.5, O2:0.25, N2:0.25"}
+{"case_id":"W1_STATE_UV_ZERO_VOLUME","solver":"UV","failure_intent":"invalid_volume","target":500000.0,"constraint":0.0,"initial_T":800.0,"initial_P":101325.0,"initial_X":"H2:0.5, O2:0.25, N2:0.25"}
+{"case_id":"W1_STATE_SV_NEGATIVE_VOLUME","solver":"SV","failure_intent":"invalid_volume","target":1000.0,"constraint":-1.0,"initial_T":800.0,"initial_P":101325.0,"initial_X":"H2:0.5, O2:0.25, N2:0.25"}
+{"case_id":"W1_STATE_INVALID_TEMPERATURE_TPX","solver":"TPX_INVALID","failure_intent":"invalid_temperature","target":-1.0,"constraint":101325.0,"initial_T":800.0,"initial_P":101325.0,"initial_X":"H2:0.5, O2:0.25, N2:0.25"}

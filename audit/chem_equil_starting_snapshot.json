@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/chem_equil_starting_snapshot.json",
+  "timestamp_utc": "2026-11-04T19:20:02.019103+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "pinned_native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "python_executable": "/home/nebula/cantera-oracle-env/bin/python3",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "target_family": {
+    "family": "chem_equil",
+    "native_classes": [
+      "ChemEquil"
+    ],
+    "native_file": "src/equil/ChemEquil.cpp",
+    "runtime_symbols_total": 42,
+    "runtime_symbols_open": 37,
+    "status_before": "APPROXIMATE"
+  },
+  "file_hashes": {
+    "equilibrium_py": "30f0439b2d839f997e463022f2f54b08c43b561de838cdc887860fdf18445c6a",
+    "solution_py": "ba2bb9efbc9496f67bf111cfeee29a07f5b7252f72d2f74c8f5543db80958916",
+    "test_equilibrium_py": "ad08fad97d04d87d307fcb63016a8dc3f6958de850837d4aa913d44b77ef6bdf",
+    "test_equilibrium_modes_py": "47476e4f0d93fb1a4aeff9dc5ca8f93c5f49de2fc6a60b7c9d6705dc1aeda86e",
+    "test_equilibrium_solver_py": "49d6eeee8abbc9d549a3ab9843484b439948c0d728806c1218c95bf1d1baac15",
+    "chem_equil_closure_set_json": "336a9023b7c378d7389f46f05587b87d488a3ec9f1e6bab3fa033234a089774d",
+    "chem_equil_call_graph_json": "a3c0c889c9e5360ddba9d0c25c56bd3d2a476220ab54bf2bb4d8a44f13208d6d"
+  },
+  "frozen_dependencies": {
+    "high_pressure_gas_transport_frozen_manifest_json": "d35010a16c047a2c9cba27d6aad7d3f3e8458b296e8fce76e31adc424799e756",
+    "dusty_gas_transport_frozen_manifest_json": "48d682b13408c666676fb3d65ddf384dd7de5ae31f4053ed8d3727e4fd85ae5a",
+    "multicomponent_transport_frozen_manifest_json": "0ff63aaabcf1351d3c97bbb5056cc2ceeb784b6fec0d8609de05e28bad5015ce",
+    "vcs_frozen_manifest_json": "72e0b5d8d5cffd806f5179d8161b5dca55d22c354d453f45b82000c7eebfc21d"
+  },
+  "global_starting_state": {
+    "fully_dispositioned": 1071,
+    "remaining_without_final_disposition": 4713
+  }
+}

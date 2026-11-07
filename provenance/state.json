@@ -1,0 +1,44 @@
+{
+  "module": "cantera_python.state",
+  "upstream_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "upstream_paths": [
+    "include/cantera/thermo/ThermoPhase.h",
+    "src/thermo/ThermoPhase.cpp"
+  ],
+  "status": "ideal-gas TD setter and bounded HP, SP, and UV inversions implemented; complete ThermoPhase state API not ported",
+  "native_cantera_required": false,
+  "translations": [
+    {
+      "python": "set_state_td",
+      "source": ["IdealGasPhase::setPressure density relation", "ThermoPhase::setState_TD dispatch"],
+      "equation": "P = rho * R * T / meanMW"
+    },
+    {
+      "python": "set_state_hp",
+      "source": ["ThermoPhase::setState_HP", "ThermoPhase::setState_HPorUV"],
+      "methods": ["set pressure before iteration", "dt = clip((Htarget-H)/Cp, -100 K, 100 K)", "temperature lower-step guard Tnew >= Told/3", "source relative enthalpy convergence form"]
+    },
+    {
+      "python": "set_state_sp",
+      "source": ["ThermoPhase::setState_SP", "ThermoPhase::setState_SPorSV"],
+      "methods": ["set pressure before iteration", "dt = clip((Starget-S)*T/Cp, -100 K, 100 K)", "source relative entropy convergence form"]
+    },
+    {
+      "python": "set_state_uv",
+      "source": ["ThermoPhase::setState_UV", "ThermoPhase::setState_HPorUV"],
+      "methods": ["set density = 1/v before iteration", "ideal-gas pressure P = R*T/(meanMW*v)", "dt = clip((Utarget-U)/Cv, -100 K, 100 K)", "temperature lower-step guard Tnew >= Told/3", "source relative internal-energy convergence form"]
+    }
+  ],
+  "behavioral_choices_and_limits": [
+    "Only immutable IdealGasMixture states are accepted; composition is held fixed.",
+    "The full source bracketing, phase-stability handling, temperature-limit policies, diagnostic text, and 500-iteration mutable state algorithm are not reproduced.",
+    "The helper requires finite positive cp_mass, as expected for the stable ideal-gas subset.",
+    "Runtime uses only the standard library and the pure-Python ideal-gas module."
+  ],
+  "excluded_methods_and_features": [
+    "DP, TV, SV and all other state pairs", "non-ideal/incompressible/pure-fluid phases", "temperature bound enforcement and phase-stability/spinodal behavior", "ThermoPhase mutable state and YAML state parsing"
+  ],
+  "test_coverage": [
+    "TD ideal-gas density-pressure relation", "recover known HP, SP and UV states", "large temperature changes exercising source 100 K caps", "UV density-pressure coupling", "pressure/composition retention", "invalid input and finite iteration failure"
+  ]
+}

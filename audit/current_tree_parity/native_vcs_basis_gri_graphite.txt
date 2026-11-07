@@ -1,0 +1,637 @@
+components 5
+species 54
+elements 5
+element 0 O
+element 1 H
+element 2 C
+element 3 N
+element 4 Ar
+species 0 N2
+species 1 C(gr)
+species 2 CH4
+species 3 O2
+species 4 AR
+species 5 H2O
+species 6 HO2
+species 7 H2O2
+species 8 C
+species 9 CH
+species 10 CH2
+species 11 CH2(S)
+species 12 CH3
+species 13 O
+species 14 CO
+species 15 CO2
+species 16 HCO
+species 17 CH2O
+species 18 CH2OH
+species 19 CH3O
+species 20 CH3OH
+species 21 C2H
+species 22 C2H2
+species 23 C2H3
+species 24 C2H4
+species 25 C2H5
+species 26 C2H6
+species 27 HCCO
+species 28 CH2CO
+species 29 HCCOH
+species 30 N
+species 31 NH
+species 32 NH2
+species 33 NH3
+species 34 NNH
+species 35 NO
+species 36 NO2
+species 37 N2O
+species 38 HNO
+species 39 CN
+species 40 HCN
+species 41 H2CN
+species 42 HCNN
+species 43 HCNO
+species 44 HOCN
+species 45 HNCO
+species 46 NCO
+species 47 H2
+species 48 OH
+species 49 C3H7
+species 50 C3H8
+species 51 CH2CHO
+species 52 CH3CHO
+species 53 H
+stoich N2 H2O 0
+stoich C(gr) H2O 0.5
+stoich CH4 H2O -0.5
+stoich O2 H2O -0.5
+stoich AR H2O 0
+stoich N2 HO2 0
+stoich C(gr) HO2 0.25
+stoich CH4 HO2 -0.25
+stoich O2 HO2 -1
+stoich AR HO2 0
+stoich N2 H2O2 0
+stoich C(gr) H2O2 0.5
+stoich CH4 H2O2 -0.5
+stoich O2 H2O2 -1
+stoich AR H2O2 0
+stoich N2 C 0
+stoich C(gr) C -1
+stoich CH4 C 0
+stoich O2 C 0
+stoich AR C 0
+stoich N2 CH 0
+stoich C(gr) CH -0.75
+stoich CH4 CH -0.25
+stoich O2 CH 0
+stoich AR CH 0
+stoich N2 CH2 0
+stoich C(gr) CH2 -0.5
+stoich CH4 CH2 -0.5
+stoich O2 CH2 0
+stoich AR CH2 0
+stoich N2 CH2(S) 0
+stoich C(gr) CH2(S) -0.5
+stoich CH4 CH2(S) -0.5
+stoich O2 CH2(S) 0
+stoich AR CH2(S) 0
+stoich N2 CH3 0
+stoich C(gr) CH3 -0.25
+stoich CH4 CH3 -0.75
+stoich O2 CH3 0
+stoich AR CH3 0
+stoich N2 O 0
+stoich C(gr) O 0
+stoich CH4 O 0
+stoich O2 O -0.5
+stoich AR O 0
+stoich N2 CO 0
+stoich C(gr) CO -1
+stoich CH4 CO 0
+stoich O2 CO -0.5
+stoich AR CO 0
+stoich N2 CO2 0
+stoich C(gr) CO2 -1
+stoich CH4 CO2 0
+stoich O2 CO2 -1
+stoich AR CO2 0
+stoich N2 HCO 0
+stoich C(gr) HCO -0.75
+stoich CH4 HCO -0.25
+stoich O2 HCO -0.5
+stoich AR HCO 0
+stoich N2 CH2O 0
+stoich C(gr) CH2O -0.5
+stoich CH4 CH2O -0.5
+stoich O2 CH2O -0.5
+stoich AR CH2O 0
+stoich N2 CH2OH 0
+stoich C(gr) CH2OH -0.25
+stoich CH4 CH2OH -0.75
+stoich O2 CH2OH -0.5
+stoich AR CH2OH 0
+stoich N2 CH3O 0
+stoich C(gr) CH3O -0.25
+stoich CH4 CH3O -0.75
+stoich O2 CH3O -0.5
+stoich AR CH3O 0
+stoich N2 CH3OH 0
+stoich C(gr) CH3OH 0
+stoich CH4 CH3OH -1
+stoich O2 CH3OH -0.5
+stoich AR CH3OH 0
+stoich N2 C2H 0
+stoich C(gr) C2H -1.75
+stoich CH4 C2H -0.25
+stoich O2 C2H 0
+stoich AR C2H 0
+stoich N2 C2H2 0
+stoich C(gr) C2H2 -1.5
+stoich CH4 C2H2 -0.5
+stoich O2 C2H2 0
+stoich AR C2H2 0
+stoich N2 C2H3 0
+stoich C(gr) C2H3 -1.25
+stoich CH4 C2H3 -0.75
+stoich O2 C2H3 0
+stoich AR C2H3 0
+stoich N2 C2H4 0
+stoich C(gr) C2H4 -1
+stoich CH4 C2H4 -1
+stoich O2 C2H4 0
+stoich AR C2H4 0
+stoich N2 C2H5 0
+stoich C(gr) C2H5 -0.75
+stoich CH4 C2H5 -1.25
+stoich O2 C2H5 0
+stoich AR C2H5 0
+stoich N2 C2H6 0
+stoich C(gr) C2H6 -0.5
+stoich CH4 C2H6 -1.5
+stoich O2 C2H6 0
+stoich AR C2H6 0
+stoich N2 HCCO 0
+stoich C(gr) HCCO -1.75
+stoich CH4 HCCO -0.25
+stoich O2 HCCO -0.5
+stoich AR HCCO 0
+stoich N2 CH2CO 0
+stoich C(gr) CH2CO -1.5
+stoich CH4 CH2CO -0.5
+stoich O2 CH2CO -0.5
+stoich AR CH2CO 0
+stoich N2 HCCOH 0
+stoich C(gr) HCCOH -1.5
+stoich CH4 HCCOH -0.5
+stoich O2 HCCOH -0.5
+stoich AR HCCOH 0
+stoich N2 N -0.5
+stoich C(gr) N 0
+stoich CH4 N 0
+stoich O2 N 0
+stoich AR N 0
+stoich N2 NH -0.5
+stoich C(gr) NH 0.25
+stoich CH4 NH -0.25
+stoich O2 NH 0
+stoich AR NH 0
+stoich N2 NH2 -0.5
+stoich C(gr) NH2 0.5
+stoich CH4 NH2 -0.5
+stoich O2 NH2 0
+stoich AR NH2 0
+stoich N2 NH3 -0.5
+stoich C(gr) NH3 0.75
+stoich CH4 NH3 -0.75
+stoich O2 NH3 0
+stoich AR NH3 0
+stoich N2 NNH -1
+stoich C(gr) NNH 0.25
+stoich CH4 NNH -0.25
+stoich O2 NNH 0
+stoich AR NNH 0
+stoich N2 NO -0.5
+stoich C(gr) NO 0
+stoich CH4 NO 0
+stoich O2 NO -0.5
+stoich AR NO 0
+stoich N2 NO2 -0.5
+stoich C(gr) NO2 0
+stoich CH4 NO2 0
+stoich O2 NO2 -1
+stoich AR NO2 0
+stoich N2 N2O -1
+stoich C(gr) N2O 0
+stoich CH4 N2O 0
+stoich O2 N2O -0.5
+stoich AR N2O 0
+stoich N2 HNO -0.5
+stoich C(gr) HNO 0.25
+stoich CH4 HNO -0.25
+stoich O2 HNO -0.5
+stoich AR HNO 0
+stoich N2 CN -0.5
+stoich C(gr) CN -1
+stoich CH4 CN 0
+stoich O2 CN 0
+stoich AR CN 0
+stoich N2 HCN -0.5
+stoich C(gr) HCN -0.75
+stoich CH4 HCN -0.25
+stoich O2 HCN 0
+stoich AR HCN 0
+stoich N2 H2CN -0.5
+stoich C(gr) H2CN -0.5
+stoich CH4 H2CN -0.5
+stoich O2 H2CN 0
+stoich AR H2CN 0
+stoich N2 HCNN -1
+stoich C(gr) HCNN -0.75
+stoich CH4 HCNN -0.25
+stoich O2 HCNN 0
+stoich AR HCNN 0
+stoich N2 HCNO -0.5
+stoich C(gr) HCNO -0.75
+stoich CH4 HCNO -0.25
+stoich O2 HCNO -0.5
+stoich AR HCNO 0
+stoich N2 HOCN -0.5
+stoich C(gr) HOCN -0.75
+stoich CH4 HOCN -0.25
+stoich O2 HOCN -0.5
+stoich AR HOCN 0
+stoich N2 HNCO -0.5
+stoich C(gr) HNCO -0.75
+stoich CH4 HNCO -0.25
+stoich O2 HNCO -0.5
+stoich AR HNCO 0
+stoich N2 NCO -0.5
+stoich C(gr) NCO -1
+stoich CH4 NCO 0
+stoich O2 NCO -0.5
+stoich AR NCO 0
+stoich N2 H2 0
+stoich C(gr) H2 0.5
+stoich CH4 H2 -0.5
+stoich O2 H2 0
+stoich AR H2 0
+stoich N2 OH 0
+stoich C(gr) OH 0.25
+stoich CH4 OH -0.25
+stoich O2 OH -0.5
+stoich AR OH 0
+stoich N2 C3H7 0
+stoich C(gr) C3H7 -1.25
+stoich CH4 C3H7 -1.75
+stoich O2 C3H7 0
+stoich AR C3H7 0
+stoich N2 C3H8 0
+stoich C(gr) C3H8 -1
+stoich CH4 C3H8 -2
+stoich O2 C3H8 0
+stoich AR C3H8 0
+stoich N2 CH2CHO 0
+stoich C(gr) CH2CHO -1.25
+stoich CH4 CH2CHO -0.75
+stoich O2 CH2CHO -0.5
+stoich AR CH2CHO 0
+stoich N2 CH3CHO 0
+stoich C(gr) CH3CHO -1
+stoich CH4 CH3CHO -1
+stoich O2 CH3CHO -0.5
+stoich AR CH3CHO 0
+stoich N2 H 0
+stoich C(gr) H 0.25
+stoich CH4 H -0.25
+stoich O2 H 0
+stoich AR H 0
+deltag -1 0 -9
+deltag -1 1 99
+deltag 0 0 -9
+deltag 0 1 -0.5
+deltag 1 0 99
+deltag 1 1 -0.5
+dfe_input 0 0 0 0 1 0 0 1 0 0
+dfe_input 1 0 0 1 1 0 1 1 0 1
+dfe_input 2 0 0 0.095057034220532313 1 0 0 1 0 0
+dfe_input 3 0 0 0.19011406844106463 1 0 0 1 0 0
+dfe_input 4 0 0 0 1 0 0 1 0 0
+dfe_input 5 0 0 0 1 0 0 1 0 0
+dfe_input 6 0 0 0 1 0 0 0 0 0
+dfe_input 7 0 0 0 1 0 0 1 0 0
+dfe_input 8 0 0 0 1 0 0 1 0 0
+dfe_input 9 0 0 0 1 0 0 1 0 0
+dfe_input 10 0 0 0 1 0 0 1 0 0
+dfe_input 11 0 0 0 1 0 0 1 0 0
+dfe_input 12 0 0 0 1 0 0 1 0 0
+dfe_input 13 0 0 0 1 0 0 1 0 0
+dfe_input 14 0 0 0 1 0 0 1 0 0
+dfe_input 15 0 0 0 1 0 0 1 0 0
+dfe_input 16 0 0 0 1 0 0 1 0 0
+dfe_input 17 0 0 0 1 0 0 1 0 0
+dfe_input 18 0 0 0 1 0 0 1 0 0
+dfe_input 19 0 0 0 1 0 0 1 0 0
+dfe_input 20 0 0 0 1 0 0 1 0 0
+dfe_input 21 0 0 0 1 0 0 1 0 0
+dfe_input 22 0 0 0 1 0 0 1 0 0
+dfe_input 23 0 0 0 1 0 0 1 0 0
+dfe_input 24 0 0 0 1 0 0 1 0 0
+dfe_input 25 0 0 0 1 0 0 1 0 0
+dfe_input 26 0 0 0 1 0 0 1 0 0
+dfe_input 27 0 0 0 1 0 0 1 0 0
+dfe_input 28 0 0 0 1 0 0 1 0 0
+dfe_input 29 0 0 0 1 0 0 1 0 0
+dfe_input 30 0 0 0 1 0 0 1 0 0
+dfe_input 31 0 0 0 1 0 0 1 0 0
+dfe_input 32 0 0 0 1 0 0 1 0 0
+dfe_input 33 0 0 0 1 0 0 1 0 0
+dfe_input 34 0 0 0 1 0 0 1 0 0
+dfe_input 35 0 0 0 1 0 0 1 0 0
+dfe_input 36 0 0 0 1 0 0 1 0 0
+dfe_input 37 0 0 0 1 0 0 1 0 0
+dfe_input 38 0 0 0 1 0 0 1 0 0
+dfe_input 39 0 0 0 1 0 0 1 0 0
+dfe_input 40 0 0 0 1 0 0 1 0 0
+dfe_input 41 0 0 0 1 0 0 1 0 0
+dfe_input 42 0 0 0 1 0 0 1 0 0
+dfe_input 43 0 0 0 1 0 0 1 0 0
+dfe_input 44 0 0 0 1 0 0 1 0 0
+dfe_input 45 0 0 0 1 0 0 1 0 0
+dfe_input 46 0 0 0 1 0 0 1 0 0
+dfe_input 47 0 0 0 1 0 0 1 0 0
+dfe_input 48 0 0 0 1 0 0 1 0 0
+dfe_input 49 0 0 0 1 0 0 1 0 0
+dfe_input 50 0 0 0 1 0 0 1 0 0
+dfe_input 51 0 0 0 1 0 0 1 0 0
+dfe_input 52 0 0 0 1 0 0 1 0 0
+dfe_input 53 0 0 0 1 0 0 1 0 0
+dfe_phase 0 0.28517110266159695 0
+dfe_phase 1 1 0
+dfe_reaction 0 5
+dfe_reaction 1 6
+dfe_reaction 2 7
+dfe_reaction 3 8
+dfe_reaction 4 9
+dfe_reaction 5 10
+dfe_reaction 6 11
+dfe_reaction 7 12
+dfe_reaction 8 13
+dfe_reaction 9 14
+dfe_reaction 10 15
+dfe_reaction 11 16
+dfe_reaction 12 17
+dfe_reaction 13 18
+dfe_reaction 14 19
+dfe_reaction 15 20
+dfe_reaction 16 21
+dfe_reaction 17 22
+dfe_reaction 18 23
+dfe_reaction 19 24
+dfe_reaction 20 25
+dfe_reaction 21 26
+dfe_reaction 22 27
+dfe_reaction 23 28
+dfe_reaction 24 29
+dfe_reaction 25 30
+dfe_reaction 26 31
+dfe_reaction 27 32
+dfe_reaction 28 33
+dfe_reaction 29 34
+dfe_reaction 30 35
+dfe_reaction 31 36
+dfe_reaction 32 37
+dfe_reaction 33 38
+dfe_reaction 34 39
+dfe_reaction 35 40
+dfe_reaction 36 41
+dfe_reaction 37 42
+dfe_reaction 38 43
+dfe_reaction 39 44
+dfe_reaction 40 45
+dfe_reaction 41 46
+dfe_reaction 42 47
+dfe_reaction 43 48
+dfe_reaction 44 49
+dfe_reaction 45 50
+dfe_reaction 46 51
+dfe_reaction 47 52
+dfe_reaction 48 53
+dfe_dimensions 5 49 54
+dfe_result -1 0 -321.10724710052494
+dfe_result -1 1 0
+dfe_result -1 2 -1.0986122886681096
+dfe_result -1 3 -0.40546510810816438
+dfe_result -1 4 -321.10724710052494
+dfe_result -1 5 -321.10724710052494
+dfe_result -1 6 -900
+dfe_result -1 7 -321.10724710052494
+dfe_result -1 8 -321.10724710052494
+dfe_result -1 9 -321.10724710052494
+dfe_result -1 10 -321.10724710052494
+dfe_result -1 11 -321.10724710052494
+dfe_result -1 12 -321.10724710052494
+dfe_result -1 13 -321.10724710052494
+dfe_result -1 14 -321.10724710052494
+dfe_result -1 15 -321.10724710052494
+dfe_result -1 16 -321.10724710052494
+dfe_result -1 17 -321.10724710052494
+dfe_result -1 18 -321.10724710052494
+dfe_result -1 19 -321.10724710052494
+dfe_result -1 20 -321.10724710052494
+dfe_result -1 21 -321.10724710052494
+dfe_result -1 22 -321.10724710052494
+dfe_result -1 23 -321.10724710052494
+dfe_result -1 24 -321.10724710052494
+dfe_result -1 25 -321.10724710052494
+dfe_result -1 26 -321.10724710052494
+dfe_result -1 27 -321.10724710052494
+dfe_result -1 28 -321.10724710052494
+dfe_result -1 29 -321.10724710052494
+dfe_result -1 30 -321.10724710052494
+dfe_result -1 31 -321.10724710052494
+dfe_result -1 32 -321.10724710052494
+dfe_result -1 33 -321.10724710052494
+dfe_result -1 34 -321.10724710052494
+dfe_result -1 35 -321.10724710052494
+dfe_result -1 36 -321.10724710052494
+dfe_result -1 37 -321.10724710052494
+dfe_result -1 38 -321.10724710052494
+dfe_result -1 39 -321.10724710052494
+dfe_result -1 40 -321.10724710052494
+dfe_result -1 41 -321.10724710052494
+dfe_result -1 42 -321.10724710052494
+dfe_result -1 43 -321.10724710052494
+dfe_result -1 44 -321.10724710052494
+dfe_result -1 45 -321.10724710052494
+dfe_result -1 46 -321.10724710052494
+dfe_result -1 47 -321.10724710052494
+dfe_result -1 48 -321.10724710052494
+dfe_result -1 49 -321.10724710052494
+dfe_result -1 50 -321.10724710052494
+dfe_result -1 51 -321.10724710052494
+dfe_result -1 52 -321.10724710052494
+dfe_result -1 53 -321.10724710052494
+dfe_result 0 0 -321.10724710052494
+dfe_result 0 1 0
+dfe_result 0 2 -1.0986122886681096
+dfe_result 0 3 -0.40546510810816438
+dfe_result 0 4 -321.10724710052494
+dfe_result 0 5 -321.10724710052494
+dfe_result 0 6 -321.10724710052494
+dfe_result 0 7 -321.10724710052494
+dfe_result 0 8 -321.10724710052494
+dfe_result 0 9 -321.10724710052494
+dfe_result 0 10 -321.10724710052494
+dfe_result 0 11 -321.10724710052494
+dfe_result 0 12 -321.10724710052494
+dfe_result 0 13 -321.10724710052494
+dfe_result 0 14 -321.10724710052494
+dfe_result 0 15 -321.10724710052494
+dfe_result 0 16 -321.10724710052494
+dfe_result 0 17 -321.10724710052494
+dfe_result 0 18 -321.10724710052494
+dfe_result 0 19 -321.10724710052494
+dfe_result 0 20 -321.10724710052494
+dfe_result 0 21 -321.10724710052494
+dfe_result 0 22 -321.10724710052494
+dfe_result 0 23 -321.10724710052494
+dfe_result 0 24 -321.10724710052494
+dfe_result 0 25 -321.10724710052494
+dfe_result 0 26 -321.10724710052494
+dfe_result 0 27 -321.10724710052494
+dfe_result 0 28 -321.10724710052494
+dfe_result 0 29 -321.10724710052494
+dfe_result 0 30 -321.10724710052494
+dfe_result 0 31 -321.10724710052494
+dfe_result 0 32 -321.10724710052494
+dfe_result 0 33 -321.10724710052494
+dfe_result 0 34 -321.10724710052494
+dfe_result 0 35 -321.10724710052494
+dfe_result 0 36 -321.10724710052494
+dfe_result 0 37 -321.10724710052494
+dfe_result 0 38 -321.10724710052494
+dfe_result 0 39 -321.10724710052494
+dfe_result 0 40 -321.10724710052494
+dfe_result 0 41 -321.10724710052494
+dfe_result 0 42 -321.10724710052494
+dfe_result 0 43 -321.10724710052494
+dfe_result 0 44 -321.10724710052494
+dfe_result 0 45 -321.10724710052494
+dfe_result 0 46 -321.10724710052494
+dfe_result 0 47 -321.10724710052494
+dfe_result 0 48 -321.10724710052494
+dfe_result 0 49 -321.10724710052494
+dfe_result 0 50 -321.10724710052494
+dfe_result 0 51 -321.10724710052494
+dfe_result 0 52 -321.10724710052494
+dfe_result 0 53 -321.10724710052494
+dfe_result 1 0 -321.10724710052494
+dfe_result 1 1 0
+dfe_result 1 2 -1.0986122886681096
+dfe_result 1 3 -0.40546510810816438
+dfe_result 1 4 -321.10724710052494
+dfe_result 1 5 -900
+dfe_result 1 6 -321.10724710052494
+dfe_result 1 7 -900
+dfe_result 1 8 -900
+dfe_result 1 9 -900
+dfe_result 1 10 -900
+dfe_result 1 11 -900
+dfe_result 1 12 -900
+dfe_result 1 13 -900
+dfe_result 1 14 -900
+dfe_result 1 15 -900
+dfe_result 1 16 -900
+dfe_result 1 17 -900
+dfe_result 1 18 -900
+dfe_result 1 19 -900
+dfe_result 1 20 -900
+dfe_result 1 21 -900
+dfe_result 1 22 -900
+dfe_result 1 23 -900
+dfe_result 1 24 -900
+dfe_result 1 25 -900
+dfe_result 1 26 -900
+dfe_result 1 27 -900
+dfe_result 1 28 -900
+dfe_result 1 29 -900
+dfe_result 1 30 -900
+dfe_result 1 31 -900
+dfe_result 1 32 -900
+dfe_result 1 33 -900
+dfe_result 1 34 -900
+dfe_result 1 35 -900
+dfe_result 1 36 -900
+dfe_result 1 37 -900
+dfe_result 1 38 -900
+dfe_result 1 39 -900
+dfe_result 1 40 -900
+dfe_result 1 41 -900
+dfe_result 1 42 -900
+dfe_result 1 43 -900
+dfe_result 1 44 -900
+dfe_result 1 45 -900
+dfe_result 1 46 -900
+dfe_result 1 47 -900
+dfe_result 1 48 -900
+dfe_result 1 49 -900
+dfe_result 1 50 -900
+dfe_result 1 51 -900
+dfe_result 1 52 -900
+dfe_result 1 53 -900
+dfe_phase_state 0 0.28517110266159695 0 2
+dfe_phase_species 0 0 47 H2 0 1
+dfe_phase_species 0 1 53 H 0 1
+dfe_phase_species 0 2 13 O 0 1
+dfe_phase_species 0 3 3 O2 0.66666666666666663 1
+dfe_phase_species 0 4 48 OH 0 1
+dfe_phase_species 0 5 5 H2O 0 1
+dfe_phase_species 0 6 6 HO2 0 1
+dfe_phase_species 0 7 7 H2O2 0 1
+dfe_phase_species 0 8 8 C 0 1
+dfe_phase_species 0 9 9 CH 0 1
+dfe_phase_species 0 10 10 CH2 0 1
+dfe_phase_species 0 11 11 CH2(S) 0 1
+dfe_phase_species 0 12 12 CH3 0 1
+dfe_phase_species 0 13 2 CH4 0.33333333333333331 1
+dfe_phase_species 0 14 14 CO 0 1
+dfe_phase_species 0 15 15 CO2 0 1
+dfe_phase_species 0 16 16 HCO 0 1
+dfe_phase_species 0 17 17 CH2O 0 1
+dfe_phase_species 0 18 18 CH2OH 0 1
+dfe_phase_species 0 19 19 CH3O 0 1
+dfe_phase_species 0 20 20 CH3OH 0 1
+dfe_phase_species 0 21 21 C2H 0 1
+dfe_phase_species 0 22 22 C2H2 0 1
+dfe_phase_species 0 23 23 C2H3 0 1
+dfe_phase_species 0 24 24 C2H4 0 1
+dfe_phase_species 0 25 25 C2H5 0 1
+dfe_phase_species 0 26 26 C2H6 0 1
+dfe_phase_species 0 27 27 HCCO 0 1
+dfe_phase_species 0 28 28 CH2CO 0 1
+dfe_phase_species 0 29 29 HCCOH 0 1
+dfe_phase_species 0 30 30 N 0 1
+dfe_phase_species 0 31 31 NH 0 1
+dfe_phase_species 0 32 32 NH2 0 1
+dfe_phase_species 0 33 33 NH3 0 1
+dfe_phase_species 0 34 34 NNH 0 1
+dfe_phase_species 0 35 35 NO 0 1
+dfe_phase_species 0 36 36 NO2 0 1
+dfe_phase_species 0 37 37 N2O 0 1
+dfe_phase_species 0 38 38 HNO 0 1
+dfe_phase_species 0 39 39 CN 0 1
+dfe_phase_species 0 40 40 HCN 0 1
+dfe_phase_species 0 41 41 H2CN 0 1
+dfe_phase_species 0 42 42 HCNN 0 1
+dfe_phase_species 0 43 43 HCNO 0 1
+dfe_phase_species 0 44 44 HOCN 0 1
+dfe_phase_species 0 45 45 HNCO 0 1
+dfe_phase_species 0 46 46 NCO 0 1
+dfe_phase_species 0 47 0 N2 0 1
+dfe_phase_species 0 48 4 AR 0 1
+dfe_phase_species 0 49 49 C3H7 0 1
+dfe_phase_species 0 50 50 C3H8 0 1
+dfe_phase_species 0 51 51 CH2CHO 0 1
+dfe_phase_species 0 52 52 CH3CHO 0 1
+dfe_phase_state 1 1 0 2
+dfe_phase_species 1 0 1 C(gr) 1 1

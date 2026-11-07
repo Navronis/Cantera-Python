@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/multicomponent_transport_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-04T16:46:47.941832+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "multitran_run_id": "566f6e013a60116c877bb95fc4ecb48f",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "python_executable": "/home/nebula/cantera-oracle-env/bin/python3",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "file_hashes": {
+    "transport_py": "569409544c811d9f500a0e037ef865ba7bb92bc319bb478cd9f5ac472c5d97bb",
+    "solution_py": "1a3a395a4d50eae73708d9d2aef0b63ef4df4ba6485f587361f41a7baf36ec4c",
+    "test_multicomponent_transport_py": "243c19a3e55792a9447c32d68c3058007b0a3c23409aca0a41bac3e3869b5e29",
+    "corpus_multicomponent_transport_jsonl": "8c97a19e27b491b140d3819688d8fbab50e1967e655bbb700b302228bd0b03bc",
+    "run_native_multicomponent_transport_oracle_py": "1c650a8e4107e04452e227a4a27165cb2c561886a66f27aedb29637ac1f614a3",
+    "run_multicomponent_transport_campaign_py": "02bf09d481ed4e4fc2ba7c50771b16f47df798392606ad0bd5646991d3bd6a9a",
+    "multicomponent_transport_differential_results_jsonl": "c7123d83464eba51528a5a99b586f56f9a09f9ce739434a104786efdc0d0f221",
+    "multicomponent_transport_differential_summary_json": "67283555427dd5b9cbe07a6981015a1746328243ebb6e0b229cd3ad02bcb4af7",
+    "multicomponent_transport_closure_symbol_set_json": "67ac84baba23b148340aac603f5fef5c05430427e3300f468eefcce215ec9981",
+    "multicomponent_transport_runtime_call_graph_json": "11a0a9294ac63b6ca15f1c14ab5a0139d6eb211a7ae39d23ff20c8dec5ed72c5"
+  },
+  "campaign_summary": {
+    "total_cases": 65,
+    "passed_cases": 65,
+    "pass_rate_percent": 100.0,
+    "total_matrix_elements_compared": 229720,
+    "total_scalar_elements_compared": 7240,
+    "unexpected_nonfinite_native": 0,
+    "unexpected_nonfinite_python": 0,
+    "max_binary_diff_rel_err": 8.26279820534927e-13,
+    "max_multi_diff_rel_err": 2.2574929312264423e-13,
+    "max_thermal_diff_rel_err": 8.274325355858292e-09,
+    "max_flux_rel_err": 8.72224930342431e-05,
+    "max_flux_residual": 5.177554089278539e-19,
+    "adversarial_cases": 5,
+    "adversarial_passed": 5,
+    "failure_semantics_cases": 6,
+    "failure_semantics_mismatches": 0
+  },
+  "status": "FROZEN_VALIDATED_NUMERICALLY_EQUIVALENT"
+}

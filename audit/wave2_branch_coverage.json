@@ -1,0 +1,13 @@
+{
+  "status": "ALL_SOLVER_BRANCHES_COVERED",
+  "unreached_solver_branches": 0,
+  "unreached_branch_codes": [],
+  "branch_counts": {
+    "3": 231,
+    "1": 991,
+    "-1": 782,
+    "2": 1,
+    "-2": 1
+  },
+  "evidence_level": "PINNED_SOURCE_BEHAVIOR_PARITY"
+}

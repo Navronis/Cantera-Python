@@ -1,0 +1,1431 @@
+{
+  "schema_version": "1.0.0",
+  "subsystem": "kinetics",
+  "closure_family": "FAMILY_4_REACTION_TOPOLOGY_AND_FACTORIES",
+  "implementation": "pure_python",
+  "results": [
+    {
+      "case_id": "fam4_001_h2o2_H_default",
+      "category": "reaction_path_diagram",
+      "maxFlow": 200592.66760368645,
+      "nNodes": 6,
+      "nPaths": 8,
+      "species": [
+        1,
+        6,
+        0,
+        5,
+        4,
+        7
+      ],
+      "reactions": [
+        15,
+        16,
+        17,
+        26,
+        27
+      ],
+      "data": "\nH HO2 H2 H2O OH H2O2 \nH HO2 0 -0.137182\nH H2 88170.8 -0\nH H2O 9325.54 -0\nH OH 200593 -0\nH H2O2 0 -0\nHO2 H2 87757.9 -0\nHO2 H2O 9325.54 -0\nHO2 OH 200593 -0\nHO2 H2O2 12824.9 -0\nH2 H2O 0 -0\nH2 OH 0 -0\nH2 H2O2 0 -0\nH2O OH 0 -0\nH2O H2O2 0 -0\nOH H2O2 0 -0\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns1 -> s0[fontname=\"Helvetica\", penwidth=5.38, arrowsize=2.69, color=\"0.7, 0.94, 0.9\"\n, label=\" 0.44\"];\ns1 -> s5[fontname=\"Helvetica\", penwidth=3.68, arrowsize=1.84, color=\"0.7, 0.546, 0.9\"\n, label=\" 0.0465\"];\ns1 -> s4[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns6 -> s0[fontname=\"Helvetica\", penwidth=5.38, arrowsize=2.69, color=\"0.7, 0.937, 0.9\"\n, label=\" 0.437\"];\ns6 -> s5[fontname=\"Helvetica\", penwidth=3.68, arrowsize=1.84, color=\"0.7, 0.546, 0.9\"\n, label=\" 0.0465\"];\ns6 -> s4[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns6 -> s7[fontname=\"Helvetica\", penwidth=3.92, arrowsize=1.96, color=\"0.7, 0.564, 0.9\"\n, label=\" 0.0639\"];\ns0 [ fontname=\"Helvetica\", label=\"H2\"];\ns1 [ fontname=\"Helvetica\", label=\"H\"];\ns4 [ fontname=\"Helvetica\", label=\"OH\"];\ns5 [ fontname=\"Helvetica\", label=\"H2O\"];\ns6 [ fontname=\"Helvetica\", label=\"HO2\"];\ns7 [ fontname=\"Helvetica\", label=\"H2O2\"];\n label = \"Scale = 2e+05\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 1,
+          "k2": 6,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.137181994711001,
+          "netFlow": -0.137181994711001
+        },
+        {
+          "k1": 1,
+          "k2": 0,
+          "flow_fwd": 88170.79476496304,
+          "flow_rev": 0.0,
+          "netFlow": 88170.79476496304
+        },
+        {
+          "k1": 1,
+          "k2": 5,
+          "flow_fwd": 9325.537601248143,
+          "flow_rev": 0.0,
+          "netFlow": 9325.537601248143
+        },
+        {
+          "k1": 1,
+          "k2": 4,
+          "flow_fwd": 200592.66760368645,
+          "flow_rev": 0.0,
+          "netFlow": 200592.66760368645
+        },
+        {
+          "k1": 1,
+          "k2": 7,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 6,
+          "k2": 0,
+          "flow_fwd": 87757.9236114321,
+          "flow_rev": 0.0,
+          "netFlow": 87757.9236114321
+        },
+        {
+          "k1": 6,
+          "k2": 5,
+          "flow_fwd": 9325.537601248143,
+          "flow_rev": 0.0,
+          "netFlow": 9325.537601248143
+        },
+        {
+          "k1": 6,
+          "k2": 4,
+          "flow_fwd": 200592.66760368645,
+          "flow_rev": 0.0,
+          "netFlow": 200592.66760368645
+        },
+        {
+          "k1": 6,
+          "k2": 7,
+          "flow_fwd": 12824.885489530068,
+          "flow_rev": 0.0,
+          "netFlow": 12824.885489530068
+        },
+        {
+          "k1": 0,
+          "k2": 5,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 0,
+          "k2": 4,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 0,
+          "k2": 7,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 5,
+          "k2": 4,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 5,
+          "k2": 7,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 4,
+          "k2": 7,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_002_h2o2_O_default",
+      "category": "reaction_path_diagram",
+      "maxFlow": 2.835565943297676e-05,
+      "nNodes": 3,
+      "nPaths": 2,
+      "species": [
+        2,
+        3,
+        6
+      ],
+      "reactions": [
+        -16
+      ],
+      "data": "\nO O2 HO2 \nO O2 0 -1.5272e-14\nO HO2 0 -0\nO2 HO2 2.83557e-05 -0\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns3 -> s6[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns3 [ fontname=\"Helvetica\", label=\"O2\"];\ns6 [ fontname=\"Helvetica\", label=\"HO2\"];\n label = \"Scale = 2.8e-05\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 2,
+          "k2": 3,
+          "flow_fwd": 0.0,
+          "flow_rev": 1.527204538596964e-14,
+          "netFlow": -1.527204538596964e-14
+        },
+        {
+          "k1": 2,
+          "k2": 6,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 3,
+          "k2": 6,
+          "flow_fwd": 2.835565943297676e-05,
+          "flow_rev": 0.0,
+          "netFlow": 2.835565943297676e-05
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_003_gri30_C_net",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.0009295920875335767,
+      "nNodes": 2,
+      "nPaths": 1,
+      "species": [
+        12,
+        13
+      ],
+      "reactions": [
+        -117,
+        -51
+      ],
+      "data": "\nCH3 CH4 \nCH3 CH4 0 -0.000929592\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns13 -> s12[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns12 [ fontname=\"Helvetica\", label=\"CH3\"];\ns13 [ fontname=\"Helvetica\", label=\"CH4\"];\n label = \"Scale = 0.00093\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 12,
+          "k2": 13,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0009295920875335767,
+          "netFlow": -0.0009295920875335767
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_004_gri30_H_net",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.0027887762626007304,
+      "nNodes": 5,
+      "nPaths": 4,
+      "species": [
+        1,
+        13,
+        12,
+        6,
+        34
+      ],
+      "reactions": [
+        -117,
+        -51
+      ],
+      "data": "\nH CH4 CH3 HO2 NNH \nH CH4 0 -0.000251475\nH CH3 0 -0\nH HO2 0 -0\nH NNH 0 -0\nCH4 CH3 0.00278878 -0\nCH4 HO2 0.000678116 -0\nCH4 NNH 1.11654e-09 -0\nCH3 HO2 0 -0\nCH3 NNH 0 -0\nHO2 NNH 0 -0\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns13 -> s1[fontname=\"Helvetica\", penwidth=4.18, arrowsize=2.09, color=\"0.7, 0.59, 0.9\"\n, label=\" 0.0902\"];\ns13 -> s12[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns13 -> s6[fontname=\"Helvetica\", penwidth=4.93, arrowsize=2.47, color=\"0.7, 0.743, 0.9\"\n, label=\" 0.243\"];\ns1 [ fontname=\"Helvetica\", label=\"H\"];\ns6 [ fontname=\"Helvetica\", label=\"HO2\"];\ns12 [ fontname=\"Helvetica\", label=\"CH3\"];\ns13 [ fontname=\"Helvetica\", label=\"CH4\"];\n label = \"Scale = 0.0028\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 1,
+          "k2": 13,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.00025147482396307936,
+          "netFlow": -0.00025147482396307936
+        },
+        {
+          "k1": 1,
+          "k2": 12,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 1,
+          "k2": 6,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 1,
+          "k2": 34,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 13,
+          "k2": 12,
+          "flow_fwd": 0.0027887762626007304,
+          "flow_rev": 0.0,
+          "netFlow": 0.0027887762626007304
+        },
+        {
+          "k1": 13,
+          "k2": 6,
+          "flow_fwd": 0.0006781161470306988,
+          "flow_rev": 0.0,
+          "netFlow": 0.0006781161470306988
+        },
+        {
+          "k1": 13,
+          "k2": 34,
+          "flow_fwd": 1.1165397985781974e-09,
+          "flow_rev": 0.0,
+          "netFlow": 1.1165397985781974e-09
+        },
+        {
+          "k1": 12,
+          "k2": 6,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 12,
+          "k2": 34,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 6,
+          "k2": 34,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_005_gri30_O_net",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.0013562322940613976,
+      "nNodes": 4,
+      "nPaths": 3,
+      "species": [
+        2,
+        3,
+        6,
+        37
+      ],
+      "reactions": [
+        -117
+      ],
+      "data": "\nO O2 HO2 N2O \nO O2 0 -6.03537e-10\nO HO2 0 -0\nO N2O 0 -0\nO2 HO2 0.00135623 -0\nO2 N2O 2.93343e-10 -0\nHO2 N2O 0 -0\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns3 -> s6[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns3 [ fontname=\"Helvetica\", label=\"O2\"];\ns6 [ fontname=\"Helvetica\", label=\"HO2\"];\n label = \"Scale = 0.0014\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 2,
+          "k2": 3,
+          "flow_fwd": 0.0,
+          "flow_rev": 6.035371375573558e-10,
+          "netFlow": -6.035371375573558e-10
+        },
+        {
+          "k1": 2,
+          "k2": 6,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 2,
+          "k2": 37,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 3,
+          "k2": 6,
+          "flow_fwd": 0.0013562322940613976,
+          "flow_rev": 0.0,
+          "netFlow": 0.0013562322940613976
+        },
+        {
+          "k1": 3,
+          "k2": 37,
+          "flow_fwd": 2.933432731896719e-10,
+          "flow_rev": 0.0,
+          "netFlow": 2.933432731896719e-10
+        },
+        {
+          "k1": 6,
+          "k2": 37,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_006_gri30_N_net",
+      "category": "reaction_path_diagram",
+      "maxFlow": 1.3083523961856356e-05,
+      "nNodes": 3,
+      "nPaths": 2,
+      "species": [
+        37,
+        47,
+        34
+      ],
+      "reactions": [
+        -210,
+        -180
+      ],
+      "data": "\nN2O N2 NNH \nN2O N2 0 -1.08002e-06\nN2O NNH 0 -0\nN2 NNH 1.30835e-05 -0\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns47 -> s37[fontname=\"Helvetica\", penwidth=4.12, arrowsize=2.06, color=\"0.7, 0.583, 0.9\"\n, label=\" 0.0825\"];\ns47 -> s34[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns34 [ fontname=\"Helvetica\", label=\"NNH\"];\ns37 [ fontname=\"Helvetica\", label=\"N2O\"];\ns47 [ fontname=\"Helvetica\", label=\"N2\"];\n label = \"Scale = 1.3e-05\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 37,
+          "k2": 47,
+          "flow_fwd": 0.0,
+          "flow_rev": 1.0800224718557732e-06,
+          "netFlow": -1.0800224718557732e-06
+        },
+        {
+          "k1": 37,
+          "k2": 34,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 47,
+          "k2": 34,
+          "flow_fwd": 1.3083523961856356e-05,
+          "flow_rev": 0.0,
+          "netFlow": 1.3083523961856356e-05
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_007_gri30_C_oneway",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.0009295920875335767,
+      "nNodes": 2,
+      "nPaths": 1,
+      "species": [
+        12,
+        13
+      ],
+      "reactions": [
+        -117,
+        -51
+      ],
+      "data": "\nCH3 CH4 \nCH3 CH4 0 -0.000929592\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns13 -> s12[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns12 [ fontname=\"Helvetica\", label=\"CH3\"];\ns13 [ fontname=\"Helvetica\", label=\"CH4\"];\n label = \"Scale = 0.00093\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 12,
+          "k2": 13,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0009295920875335767,
+          "netFlow": -0.0009295920875335767
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_008_gri30_C_unscaled",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.0009295920875335767,
+      "nNodes": 2,
+      "nPaths": 1,
+      "species": [
+        12,
+        13
+      ],
+      "reactions": [
+        -117,
+        -51
+      ],
+      "data": "\nCH3 CH4 \nCH3 CH4 0 -0.000929592\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\n label = \"Scale = 1\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 12,
+          "k2": 13,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0009295920875335767,
+          "netFlow": -0.0009295920875335767
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_009_gri30_C_oneway_unscaled",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.0009295920875335767,
+      "nNodes": 2,
+      "nPaths": 1,
+      "species": [
+        12,
+        13
+      ],
+      "reactions": [
+        -117,
+        -51
+      ],
+      "data": "\nCH3 CH4 \nCH3 CH4 0 -0.000929592\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\n label = \"Scale = 1\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 12,
+          "k2": 13,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0009295920875335767,
+          "netFlow": -0.0009295920875335767
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_010_gri30_C_high_threshold",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.0009295920875335767,
+      "nNodes": 2,
+      "nPaths": 1,
+      "species": [
+        12,
+        13
+      ],
+      "reactions": [
+        -117,
+        -51
+      ],
+      "data": "\nCH3 CH4 \nCH3 CH4 0 -0.000929592\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns13 -> s12[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns12 [ fontname=\"Helvetica\", label=\"CH3\"];\ns13 [ fontname=\"Helvetica\", label=\"CH4\"];\n label = \"Scale = 0.00093\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 12,
+          "k2": 13,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0009295920875335767,
+          "netFlow": -0.0009295920875335767
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_011_gri30_C_included",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.0009295920875335767,
+      "nNodes": 2,
+      "nPaths": 1,
+      "species": [
+        12,
+        13
+      ],
+      "reactions": [
+        -117,
+        -51
+      ],
+      "data": "\nCH3 CH4 \nCH3 CH4 0 -0.000929592\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns13 -> s12[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns12 [ fontname=\"Helvetica\", label=\"CH3\"];\ns13 [ fontname=\"Helvetica\", label=\"CH4\"];\n label = \"Scale = 0.00093\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 12,
+          "k2": 13,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0009295920875335767,
+          "netFlow": -0.0009295920875335767
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_012_gri30_C_excluded",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.0009295920875335767,
+      "nNodes": 2,
+      "nPaths": 1,
+      "species": [
+        12,
+        13
+      ],
+      "reactions": [
+        -117,
+        -51
+      ],
+      "data": "\nCH3 CH4 \nCH3 CH4 0 -0.000929592\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns13 -> s12[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns12 [ fontname=\"Helvetica\", label=\"CH3\"];\ns13 [ fontname=\"Helvetica\", label=\"CH4\"];\n label = \"Scale = 0.00093\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 12,
+          "k2": 13,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0009295920875335767,
+          "netFlow": -0.0009295920875335767
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_013_h2o2_H_display_only",
+      "category": "reaction_path_diagram",
+      "maxFlow": 200592.66760368645,
+      "nNodes": 6,
+      "nPaths": 8,
+      "species": [
+        1,
+        6,
+        0,
+        5,
+        4,
+        7
+      ],
+      "reactions": [
+        15,
+        16,
+        17,
+        26,
+        27
+      ],
+      "data": "\nH HO2 H2 H2O OH H2O2 \nH HO2 0 -0.137182\nH H2 88170.8 -0\nH H2O 9325.54 -0\nH OH 200593 -0\nH H2O2 0 -0\nHO2 H2 87757.9 -0\nHO2 H2O 9325.54 -0\nHO2 OH 200593 -0\nHO2 H2O2 12824.9 -0\nH2 H2O 0 -0\nH2 OH 0 -0\nH2 H2O2 0 -0\nH2O OH 0 -0\nH2O H2O2 0 -0\nOH H2O2 0 -0\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns1 -> s0[fontname=\"Helvetica\", penwidth=5.38, arrowsize=2.69, color=\"0.7, 0.94, 0.9\"\n, label=\" 0.44\"];\ns1 -> s5[fontname=\"Helvetica\", penwidth=3.68, arrowsize=1.84, color=\"0.7, 0.546, 0.9\"\n, label=\" 0.0465\"];\ns1 -> s4[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns0 [ fontname=\"Helvetica\", label=\"H2\"];\ns1 [ fontname=\"Helvetica\", label=\"H\"];\ns4 [ fontname=\"Helvetica\", label=\"OH\"];\ns5 [ fontname=\"Helvetica\", label=\"H2O\"];\n label = \"Scale = 2e+05\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 1,
+          "k2": 6,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.137181994711001,
+          "netFlow": -0.137181994711001
+        },
+        {
+          "k1": 1,
+          "k2": 0,
+          "flow_fwd": 88170.79476496304,
+          "flow_rev": 0.0,
+          "netFlow": 88170.79476496304
+        },
+        {
+          "k1": 1,
+          "k2": 5,
+          "flow_fwd": 9325.537601248143,
+          "flow_rev": 0.0,
+          "netFlow": 9325.537601248143
+        },
+        {
+          "k1": 1,
+          "k2": 4,
+          "flow_fwd": 200592.66760368645,
+          "flow_rev": 0.0,
+          "netFlow": 200592.66760368645
+        },
+        {
+          "k1": 1,
+          "k2": 7,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 6,
+          "k2": 0,
+          "flow_fwd": 87757.9236114321,
+          "flow_rev": 0.0,
+          "netFlow": 87757.9236114321
+        },
+        {
+          "k1": 6,
+          "k2": 5,
+          "flow_fwd": 9325.537601248143,
+          "flow_rev": 0.0,
+          "netFlow": 9325.537601248143
+        },
+        {
+          "k1": 6,
+          "k2": 4,
+          "flow_fwd": 200592.66760368645,
+          "flow_rev": 0.0,
+          "netFlow": 200592.66760368645
+        },
+        {
+          "k1": 6,
+          "k2": 7,
+          "flow_fwd": 12824.885489530068,
+          "flow_rev": 0.0,
+          "netFlow": 12824.885489530068
+        },
+        {
+          "k1": 0,
+          "k2": 5,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 0,
+          "k2": 4,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 0,
+          "k2": 7,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 5,
+          "k2": 4,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 5,
+          "k2": 7,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 4,
+          "k2": 7,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_014_ptcombust_C",
+      "category": "reaction_path_diagram",
+      "maxFlow": 1.1868733319998875e-07,
+      "nNodes": 2,
+      "nPaths": 1,
+      "species": [
+        12,
+        13
+      ],
+      "reactions": [
+        -117
+      ],
+      "data": "\nCH3 CH4 \nCH3 CH4 0 -1.18687e-07\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns13 -> s12[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns12 [ fontname=\"Helvetica\", label=\"CH3\"];\ns13 [ fontname=\"Helvetica\", label=\"CH4\"];\n label = \"Scale = 1.2e-07\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 12,
+          "k2": 13,
+          "flow_fwd": 0.0,
+          "flow_rev": 1.1868733319998875e-07,
+          "netFlow": -1.1868733319998875e-07
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_015_ptcombust_H",
+      "category": "reaction_path_diagram",
+      "maxFlow": 3.5606199959996627e-07,
+      "nNodes": 4,
+      "nPaths": 3,
+      "species": [
+        1,
+        13,
+        12,
+        6
+      ],
+      "reactions": [
+        -117
+      ],
+      "data": "\nH CH4 CH3 HO2 \nH CH4 0 -7.60065e-11\nH CH3 0 -0\nH HO2 0 -0\nCH4 CH3 3.56062e-07 -0\nCH4 HO2 1.18611e-07 -0\nCH3 HO2 0 -0\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns13 -> s12[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns13 -> s6[fontname=\"Helvetica\", penwidth=5.17, arrowsize=2.59, color=\"0.7, 0.833, 0.9\"\n, label=\" 0.333\"];\ns6 [ fontname=\"Helvetica\", label=\"HO2\"];\ns12 [ fontname=\"Helvetica\", label=\"CH3\"];\ns13 [ fontname=\"Helvetica\", label=\"CH4\"];\n label = \"Scale = 3.6e-07\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 1,
+          "k2": 13,
+          "flow_fwd": 0.0,
+          "flow_rev": 7.600647200726319e-11,
+          "netFlow": -7.600647200726319e-11
+        },
+        {
+          "k1": 1,
+          "k2": 12,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 1,
+          "k2": 6,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 13,
+          "k2": 12,
+          "flow_fwd": 3.5606199959996627e-07,
+          "flow_rev": 0.0,
+          "netFlow": 3.5606199959996627e-07
+        },
+        {
+          "k1": 13,
+          "k2": 6,
+          "flow_fwd": 1.186113267279815e-07,
+          "flow_rev": 0.0,
+          "netFlow": 1.186113267279815e-07
+        },
+        {
+          "k1": 12,
+          "k2": 6,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_016_ptcombust_O",
+      "category": "reaction_path_diagram",
+      "maxFlow": 2.37222653455963e-07,
+      "nNodes": 3,
+      "nPaths": 2,
+      "species": [
+        2,
+        3,
+        6
+      ],
+      "reactions": [
+        -117
+      ],
+      "data": "\nO O2 HO2 \nO O2 0 -2.10664e-18\nO HO2 0 -0\nO2 HO2 2.37223e-07 -0\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns3 -> s6[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns3 [ fontname=\"Helvetica\", label=\"O2\"];\ns6 [ fontname=\"Helvetica\", label=\"HO2\"];\n label = \"Scale = 2.4e-07\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 2,
+          "k2": 3,
+          "flow_fwd": 0.0,
+          "flow_rev": 2.106644484958347e-18,
+          "netFlow": -2.106644484958347e-18
+        },
+        {
+          "k1": 2,
+          "k2": 6,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 3,
+          "k2": 6,
+          "flow_fwd": 2.37222653455963e-07,
+          "flow_rev": 0.0,
+          "netFlow": 2.37222653455963e-07
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_017_gri30_ion_H",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.0027887762626007304,
+      "nNodes": 5,
+      "nPaths": 4,
+      "species": [
+        7,
+        3,
+        16,
+        10,
+        35
+      ],
+      "reactions": [
+        -117,
+        -51
+      ],
+      "data": "\nH CH4 CH3 HO2 NNH \nH CH4 0 -0.000251475\nH CH3 0 -0\nH HO2 0 -0\nH NNH 0 -0\nCH4 CH3 0.00278878 -0\nCH4 HO2 0.000678116 -0\nCH4 NNH 1.11654e-09 -0\nCH3 HO2 0 -0\nCH3 NNH 0 -0\nHO2 NNH 0 -0\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns3 -> s7[fontname=\"Helvetica\", penwidth=4.18, arrowsize=2.09, color=\"0.7, 0.59, 0.9\"\n, label=\" 0.0902\"];\ns3 -> s16[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns3 -> s10[fontname=\"Helvetica\", penwidth=4.93, arrowsize=2.47, color=\"0.7, 0.743, 0.9\"\n, label=\" 0.243\"];\ns3 [ fontname=\"Helvetica\", label=\"CH4\"];\ns7 [ fontname=\"Helvetica\", label=\"H\"];\ns10 [ fontname=\"Helvetica\", label=\"HO2\"];\ns16 [ fontname=\"Helvetica\", label=\"CH3\"];\n label = \"Scale = 0.0028\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 7,
+          "k2": 3,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.00025147482396307936,
+          "netFlow": -0.00025147482396307936
+        },
+        {
+          "k1": 7,
+          "k2": 16,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 7,
+          "k2": 10,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 7,
+          "k2": 35,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 3,
+          "k2": 16,
+          "flow_fwd": 0.0027887762626007304,
+          "flow_rev": 0.0,
+          "netFlow": 0.0027887762626007304
+        },
+        {
+          "k1": 3,
+          "k2": 10,
+          "flow_fwd": 0.0006781161470306988,
+          "flow_rev": 0.0,
+          "netFlow": 0.0006781161470306988
+        },
+        {
+          "k1": 3,
+          "k2": 35,
+          "flow_fwd": 1.1165397985781974e-09,
+          "flow_rev": 0.0,
+          "netFlow": 1.1165397985781974e-09
+        },
+        {
+          "k1": 16,
+          "k2": 10,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 16,
+          "k2": 35,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 10,
+          "k2": 35,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_018_nDodecane_C",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.002871426814716178,
+      "nNodes": 7,
+      "nPaths": 6,
+      "species": [
+        0,
+        20,
+        23,
+        70,
+        26,
+        46,
+        36
+      ],
+      "reactions": [
+        8,
+        18,
+        19,
+        20,
+        21
+      ],
+      "data": "\nc12h26 c12h25 c10h21 c2h5 c7h15-2 c5h11 c6h13 \nc12h26 c12h25 0.00287143 -0\nc12h26 c10h21 0.00132576 -0\nc12h26 c2h5 0.000265151 -0\nc12h26 c7h15-2 0.000928029 -0\nc12h26 c5h11 0.000662878 -0\nc12h26 c6h13 0.00159091 -0\nc12h25 c10h21 0 -0\nc12h25 c2h5 0 -0\nc12h25 c7h15-2 0 -0\nc12h25 c5h11 0 -0\nc12h25 c6h13 0 -0\nc10h21 c2h5 0 -0\nc10h21 c7h15-2 0 -0\nc10h21 c5h11 0 -0\nc10h21 c6h13 0 -0\nc2h5 c7h15-2 0 -0\nc2h5 c5h11 0 -0\nc2h5 c6h13 0 -0\nc7h15-2 c5h11 0 -0\nc7h15-2 c6h13 0 -0\nc5h11 c6h13 0 -0\n",
+      "dot": "digraph reaction_paths {\ncenter=1;\ns0 -> s20[fontname=\"Helvetica\", penwidth=6, arrowsize=3, color=\"0.7, 1.5, 0.9\"\n, label=\" 1\"];\ns0 -> s23[fontname=\"Helvetica\", penwidth=5.42, arrowsize=2.71, color=\"0.7, 0.962, 0.9\"\n, label=\" 0.462\"];\ns0 -> s70[fontname=\"Helvetica\", penwidth=4.2, arrowsize=2.1, color=\"0.7, 0.592, 0.9\"\n, label=\" 0.0923\"];\ns0 -> s26[fontname=\"Helvetica\", penwidth=5.15, arrowsize=2.57, color=\"0.7, 0.823, 0.9\"\n, label=\" 0.323\"];\ns0 -> s46[fontname=\"Helvetica\", penwidth=4.89, arrowsize=2.45, color=\"0.7, 0.731, 0.9\"\n, label=\" 0.231\"];\ns0 -> s36[fontname=\"Helvetica\", penwidth=5.55, arrowsize=2.78, color=\"0.7, 1.05, 0.9\"\n, label=\" 0.554\"];\ns0 [ fontname=\"Helvetica\", label=\"c12h26\"];\ns20 [ fontname=\"Helvetica\", label=\"c12h25\"];\ns23 [ fontname=\"Helvetica\", label=\"c10h21\"];\ns26 [ fontname=\"Helvetica\", label=\"c7h15-2\"];\ns36 [ fontname=\"Helvetica\", label=\"c6h13\"];\ns46 [ fontname=\"Helvetica\", label=\"c5h11\"];\ns70 [ fontname=\"Helvetica\", label=\"c2h5\"];\n label = \"Scale = 0.0029\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": [
+        {
+          "k1": 0,
+          "k2": 20,
+          "flow_fwd": 0.002871426814716178,
+          "flow_rev": 0.0,
+          "netFlow": 0.002871426814716178
+        },
+        {
+          "k1": 0,
+          "k2": 23,
+          "flow_fwd": 0.0013257553644053651,
+          "flow_rev": 0.0,
+          "netFlow": 0.0013257553644053651
+        },
+        {
+          "k1": 0,
+          "k2": 70,
+          "flow_fwd": 0.000265151072881073,
+          "flow_rev": 0.0,
+          "netFlow": 0.000265151072881073
+        },
+        {
+          "k1": 0,
+          "k2": 26,
+          "flow_fwd": 0.0009280287550837555,
+          "flow_rev": 0.0,
+          "netFlow": 0.0009280287550837555
+        },
+        {
+          "k1": 0,
+          "k2": 46,
+          "flow_fwd": 0.0006628776822026826,
+          "flow_rev": 0.0,
+          "netFlow": 0.0006628776822026826
+        },
+        {
+          "k1": 0,
+          "k2": 36,
+          "flow_fwd": 0.001590906437286438,
+          "flow_rev": 0.0,
+          "netFlow": 0.001590906437286438
+        },
+        {
+          "k1": 20,
+          "k2": 23,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 20,
+          "k2": 70,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 20,
+          "k2": 26,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 20,
+          "k2": 46,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 20,
+          "k2": 36,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 23,
+          "k2": 70,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 23,
+          "k2": 26,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 23,
+          "k2": 46,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 23,
+          "k2": 36,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 70,
+          "k2": 26,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 70,
+          "k2": 46,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 70,
+          "k2": 36,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 26,
+          "k2": 46,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 26,
+          "k2": 36,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        },
+        {
+          "k1": 46,
+          "k2": 36,
+          "flow_fwd": 0.0,
+          "flow_rev": 0.0,
+          "netFlow": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "fam4_019_blowers_masel_H",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.0,
+      "nNodes": 0,
+      "nPaths": 0,
+      "species": [],
+      "reactions": [],
+      "data": "\n \n",
+      "dot": "digraph reaction_paths {\ncenter=1;\n label = \"Scale = 1e-10\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": []
+    },
+    {
+      "case_id": "fam4_020_blowers_masel_C",
+      "category": "reaction_path_diagram",
+      "maxFlow": 0.0,
+      "nNodes": 0,
+      "nPaths": 0,
+      "species": [],
+      "reactions": [],
+      "data": "\n \n",
+      "dot": "digraph reaction_paths {\ncenter=1;\n label = \"Scale = 1e-10\\l \";\n fontname = \"Helvetica\";\n}\n",
+      "pairwise_flows": []
+    },
+    {
+      "case_id": "fam4_021_rxn_gri30_elementary",
+      "category": "reaction_inspection",
+      "equation": "2 O + M <=> O2 + M",
+      "reactantString": "2 O + M",
+      "productString": "O2 + M",
+      "type": "three-body-Arrhenius",
+      "reversible": true,
+      "duplicate": false,
+      "valid": true,
+      "usesThirdBody": true,
+      "usesElectrochemistry": false,
+      "reactants": {
+        "O": 2.0
+      },
+      "products": {
+        "O2": 1.0
+      }
+    },
+    {
+      "case_id": "fam4_022_rxn_gri30_threebody",
+      "category": "reaction_inspection",
+      "equation": "HO2 + O <=> O2 + OH",
+      "reactantString": "HO2 + O",
+      "productString": "O2 + OH",
+      "type": "Arrhenius",
+      "reversible": true,
+      "duplicate": false,
+      "valid": true,
+      "usesThirdBody": false,
+      "usesElectrochemistry": false,
+      "reactants": {
+        "O": 1.0,
+        "HO2": 1.0
+      },
+      "products": {
+        "OH": 1.0,
+        "O2": 1.0
+      }
+    },
+    {
+      "case_id": "fam4_023_rxn_gri30_troe",
+      "category": "reaction_inspection",
+      "equation": "CH + H <=> C + H2",
+      "reactantString": "CH + H",
+      "productString": "C + H2",
+      "type": "Arrhenius",
+      "reversible": true,
+      "duplicate": false,
+      "valid": true,
+      "usesThirdBody": false,
+      "usesElectrochemistry": false,
+      "reactants": {
+        "H": 1.0,
+        "CH": 1.0
+      },
+      "products": {
+        "C": 1.0,
+        "H2": 1.0
+      }
+    },
+    {
+      "case_id": "fam4_024_rxn_gri30_lindemann",
+      "category": "reaction_inspection",
+      "equation": "CH4 + H <=> CH3 + H2",
+      "reactantString": "CH4 + H",
+      "productString": "CH3 + H2",
+      "type": "Arrhenius",
+      "reversible": true,
+      "duplicate": false,
+      "valid": true,
+      "usesThirdBody": false,
+      "usesElectrochemistry": false,
+      "reactants": {
+        "H": 1.0,
+        "CH4": 1.0
+      },
+      "products": {
+        "CH3": 1.0,
+        "H2": 1.0
+      }
+    },
+    {
+      "case_id": "fam4_025_rxn_h2o2_elementary",
+      "category": "reaction_inspection",
+      "equation": "H2 + O <=> H + OH",
+      "reactantString": "H2 + O",
+      "productString": "H + OH",
+      "type": "Arrhenius",
+      "reversible": true,
+      "duplicate": false,
+      "valid": true,
+      "usesThirdBody": false,
+      "usesElectrochemistry": false,
+      "reactants": {
+        "O": 1.0,
+        "H2": 1.0
+      },
+      "products": {
+        "H": 1.0,
+        "OH": 1.0
+      }
+    },
+    {
+      "case_id": "fam4_026_rxn_h2o2_threebody",
+      "category": "reaction_inspection",
+      "equation": "H + O2 + M <=> HO2 + M",
+      "reactantString": "H + O2 + M",
+      "productString": "HO2 + M",
+      "type": "three-body-Arrhenius",
+      "reversible": true,
+      "duplicate": false,
+      "valid": true,
+      "usesThirdBody": true,
+      "usesElectrochemistry": false,
+      "reactants": {
+        "H": 1.0,
+        "O2": 1.0
+      },
+      "products": {
+        "HO2": 1.0
+      }
+    },
+    {
+      "case_id": "fam4_027_rxn_ptcombust_surf",
+      "category": "reaction_inspection",
+      "equation": "H2 + 2 PT(S) => 2 H(S)",
+      "reactantString": "H2 + 2 PT(S)",
+      "productString": "2 H(S)",
+      "type": "interface-Arrhenius",
+      "reversible": false,
+      "duplicate": false,
+      "valid": true,
+      "usesThirdBody": false,
+      "usesElectrochemistry": false,
+      "reactants": {
+        "H2": 1.0,
+        "PT(S)": 2.0
+      },
+      "products": {
+        "H(S)": 2.0
+      }
+    },
+    {
+      "case_id": "fam4_028_rxn_ptcombust_sticking",
+      "category": "reaction_inspection",
+      "equation": "H + PT(S) => H(S)",
+      "reactantString": "H + PT(S)",
+      "productString": "H(S)",
+      "type": "sticking-Arrhenius",
+      "reversible": false,
+      "duplicate": false,
+      "valid": true,
+      "usesThirdBody": false,
+      "usesElectrochemistry": false,
+      "reactants": {
+        "H": 1.0,
+        "PT(S)": 1.0
+      },
+      "products": {
+        "H(S)": 1.0
+      }
+    },
+    {
+      "case_id": "fam4_029_rxn_blowers_masel_surf",
+      "category": "reaction_inspection",
+      "equation": "H2 + 2 PT(s) => 2 H(s)",
+      "reactantString": "H2 + 2 PT(s)",
+      "productString": "2 H(s)",
+      "type": "interface-Blowers-Masel",
+      "reversible": false,
+      "duplicate": false,
+      "valid": true,
+      "usesThirdBody": false,
+      "usesElectrochemistry": false,
+      "reactants": {
+        "H2": 1.0,
+        "PT(s)": 2.0
+      },
+      "products": {
+        "H(s)": 2.0
+      }
+    },
+    {
+      "case_id": "fam4_030_rxn_sofc_electrochem",
+      "category": "reaction_inspection",
+      "equation": "2 (m) + H2 <=> 2 H(m)",
+      "reactantString": "2 (m) + H2",
+      "productString": "2 H(m)",
+      "type": "sticking-Arrhenius",
+      "reversible": true,
+      "duplicate": false,
+      "valid": true,
+      "usesThirdBody": false,
+      "usesElectrochemistry": false,
+      "reactants": {
+        "H2": 1.0,
+        "(m)": 2.0
+      },
+      "products": {
+        "H(m)": 2.0
+      }
+    },
+    {
+      "case_id": "fam4_031_rxn_sofc_oxide",
+      "category": "reaction_inspection",
+      "equation": "(ox) + Ox <=> O''(ox) + VO**",
+      "reactantString": "(ox) + Ox",
+      "productString": "O''(ox) + VO**",
+      "type": "interface-Arrhenius",
+      "reversible": true,
+      "duplicate": false,
+      "valid": true,
+      "usesThirdBody": false,
+      "usesElectrochemistry": true,
+      "reactants": {
+        "(ox)": 1.0,
+        "Ox": 1.0
+      },
+      "products": {
+        "VO**": 1.0,
+        "O''(ox)": 1.0
+      }
+    },
+    {
+      "case_id": "fam4_032_group_single_atom",
+      "category": "group_algebra",
+      "g1_valid": true,
+      "g1_sign": 1,
+      "g1_size": 3,
+      "g1_nAtoms": 1,
+      "g1_fmt": "(H)"
+    },
+    {
+      "case_id": "fam4_033_group_multi_atom",
+      "category": "group_algebra",
+      "g1_valid": true,
+      "g1_sign": 1,
+      "g1_size": 3,
+      "g1_nAtoms": 3,
+      "g1_fmt": "(H2-O)"
+    },
+    {
+      "case_id": "fam4_034_group_sum",
+      "category": "group_algebra",
+      "g1_valid": true,
+      "g1_sign": 1,
+      "g1_size": 3,
+      "g1_nAtoms": 2,
+      "g1_fmt": "(H-O)",
+      "sum_valid": true,
+      "sum_sign": 1,
+      "sum_nAtoms": 4,
+      "sum_fmt": "(H-O2-C)",
+      "diff_valid": false,
+      "diff_sign": -999,
+      "diff_nAtoms": 2,
+      "diff_fmt": "(H-C-1)"
+    },
+    {
+      "case_id": "fam4_035_group_diff",
+      "category": "group_algebra",
+      "g1_valid": true,
+      "g1_sign": 1,
+      "g1_size": 3,
+      "g1_nAtoms": 4,
+      "g1_fmt": "(H2-O2)",
+      "sum_valid": true,
+      "sum_sign": 1,
+      "sum_nAtoms": 6,
+      "sum_fmt": "(H3-O3)",
+      "diff_valid": true,
+      "diff_sign": 1,
+      "diff_nAtoms": 2,
+      "diff_fmt": "(H-O)"
+    },
+    {
+      "case_id": "fam4_036_group_negative",
+      "category": "group_algebra",
+      "g1_valid": true,
+      "g1_sign": -1,
+      "g1_size": 3,
+      "g1_nAtoms": 3,
+      "g1_fmt": "(H-1-O-2)"
+    },
+    {
+      "case_id": "fam4_037_group_mixed_sign",
+      "category": "group_algebra",
+      "g1_valid": false,
+      "g1_sign": -999,
+      "g1_size": 3,
+      "g1_nAtoms": 2,
+      "g1_fmt": "(H-O-1)"
+    },
+    {
+      "case_id": "fam4_038_group_empty",
+      "category": "group_algebra",
+      "g1_valid": false,
+      "g1_sign": -999,
+      "g1_size": 0,
+      "g1_nAtoms": 0,
+      "g1_fmt": "()"
+    },
+    {
+      "case_id": "fam4_039_kinetics_factory",
+      "category": "kinetics_factory",
+      "models": {
+        "gas": "bulk",
+        "Interface": "surface",
+        "Edge": "edge"
+      }
+    },
+    {
+      "case_id": "fam4_040_rate_factory",
+      "category": "rate_factory",
+      "rate_types": {
+        "Arrhenius": "Arrhenius",
+        "elementary": "Arrhenius",
+        "three-body": "Arrhenius",
+        "Troe": "falloff",
+        "Lindemann": "falloff",
+        "falloff": "falloff",
+        "Blowers-Masel": "Blowers-Masel",
+        "interface-Arrhenius": "interface-Arrhenius",
+        "sticking-Arrhenius": "sticking-Arrhenius"
+      }
+    }
+  ]
+}

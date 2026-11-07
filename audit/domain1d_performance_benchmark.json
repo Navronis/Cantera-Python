@@ -1,0 +1,56 @@
+{
+  "subsystem": "1D domain base abstraction",
+  "native_class": "Domain1D",
+  "benchmark_workload": "Domain1D construction, uniform grid setup, tolerances configuration, bounds, and locate across grid sizes",
+  "grid_sizes": [
+    25,
+    100,
+    500,
+    2000
+  ],
+  "nv": 5,
+  "repetitions": 1000,
+  "overall_slowdown_factor": 118.89094678357903,
+  "detailed_comparisons": [
+    {
+      "grid_points": 25,
+      "components": 5,
+      "repetitions": 1000,
+      "native_median_us": 0.198,
+      "native_median_ms": 0.00019800000000000002,
+      "python_median_us": 29.09999602707103,
+      "python_median_ms": 0.02909999602707103,
+      "slowdown_factor": 146.96967690439914
+    },
+    {
+      "grid_points": 100,
+      "components": 5,
+      "repetitions": 1000,
+      "native_median_us": 0.281,
+      "native_median_ms": 0.00028100000000000005,
+      "python_median_us": 35.80000338843092,
+      "python_median_ms": 0.03580000338843092,
+      "slowdown_factor": 127.40214728978975
+    },
+    {
+      "grid_points": 500,
+      "components": 5,
+      "repetitions": 1000,
+      "native_median_us": 0.697,
+      "native_median_ms": 0.0006969999999999999,
+      "python_median_us": 82.40000170189887,
+      "python_median_ms": 0.08240000170189887,
+      "slowdown_factor": 118.22094935710025
+    },
+    {
+      "grid_points": 2000,
+      "components": 5,
+      "repetitions": 1000,
+      "native_median_us": 2.76,
+      "native_median_ms": 0.00276,
+      "python_median_us": 228.99999748915434,
+      "python_median_ms": 0.22899999748915434,
+      "slowdown_factor": 82.97101358302695
+    }
+  ]
+}

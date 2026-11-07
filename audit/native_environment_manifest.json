@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "reference_kind": "archived exact-pinned fixture plus source checkout",
+  "cantera_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "sundials": {
+    "version": "7.5.0",
+    "commit": "c8dabcea90ca8bf195474da120e4f3dd39aa711f",
+    "source": "ext/sundials/CMakeLists.txt and git HEAD"
+  },
+  "archived_fixture": {
+    "path": "provenance/pinned_native_differential_results.jsonl",
+    "compiler": null,
+    "compiler_version": null,
+    "optimization_flags": null,
+    "floating_point_flags": null,
+    "architecture": null,
+    "blas_backend": null,
+    "lapack_backend": null,
+    "sundials_build_options": null,
+    "linear_solver": null,
+    "nonlinear_solver": null,
+    "index_precision": null,
+    "float_precision": "binary64 outputs",
+    "openmp_threads": null,
+    "limitation": "The archived fixture did not preserve its native build manifest; unknown fields are not inferred."
+  },
+  "current_host": {
+    "platform": "Windows-11-10.0.26100-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "parity_binding": {
+      "package": "scikit-sundae",
+      "version": "1.1.3",
+      "sundials_version": "7.5.0",
+      "configuration": {
+        "SUNDIALS_VERSION": "7.5.0",
+        "SUNDIALS_FLOAT_TYPE": "double",
+        "SUNDIALS_INT_TYPE": "int",
+        "SUNDIALS_SUPERLUMT_ENABLED": "True",
+        "SUNDIALS_SUPERLUMT_THREAD_TYPE": "OPENMP",
+        "SUNDIALS_BLAS_LAPACK_ENABLED": "True"
+      },
+      "role": "standalone numerical dependency; does not load native Cantera"
+    },
+    "thread_environment": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null
+    },
+    "tool_paths": {
+      "cl": null,
+      "gcc": null,
+      "clang": null,
+      "cmake": null,
+      "ninja": null,
+      "scons": null,
+      "msbuild": null,
+      "docker": null,
+      "podman": null,
+      "wsl": "C:\\WINDOWS\\system32\\wsl.EXE"
+    }
+  },
+  "fresh_exact_pinned_build": {
+    "available": false,
+    "reason": "No native Windows compiler/build toolchain is available and WSL launch previously failed with E_ACCESSDENIED.",
+    "reproducible_configuration_frozen": false
+  },
+  "released_cantera_is_authoritative": false,
+  "notes": [
+    "Released Cantera 3.2.0 comparisons are supplementary and are not exact-pinned proof.",
+    "Solver parity cannot be certified until an exact-pinned executable is rebuilt with all native configuration fields captured."
+  ]
+}

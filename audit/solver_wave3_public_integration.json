@@ -1,0 +1,7 @@
+{
+  "public_class": "cantera_python.phases.PureFluidPhase",
+  "factory_routes": ["water", "CO2", "N2", "O2", "H2", "CH4", "heptane", "HFC134a"],
+  "state_routes": ["TP", "TV", "PV", "UP", "VH", "TH", "SH", "Tsat", "Psat", "TPQ"],
+  "status": "PASS_DIAGNOSTIC",
+  "live_native_parity": false
+}

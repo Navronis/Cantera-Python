@@ -1,0 +1,48 @@
+{
+  "family": "THERMO_FAMILY_2_SPECIES_THERMO",
+  "subsystem": "thermodynamics",
+  "description": "Species standard-state thermodynamic property parameterizations (NASA-7, NASA-9, Shomate, ConstCp, Mu0) and multi-species thermo managers.",
+  "canonical_symbol_count": 137,
+  "source_files": [
+    "include/cantera/thermo/SpeciesThermoInterpType.h",
+    "src/thermo/SpeciesThermoInterpType.cpp",
+    "include/cantera/thermo/NasaPoly1.h",
+    "include/cantera/thermo/NasaPoly2.h",
+    "include/cantera/thermo/Nasa9Poly1.h",
+    "include/cantera/thermo/Nasa9PolyMultiTempRegion.h",
+    "include/cantera/thermo/ShomatePoly.h",
+    "include/cantera/thermo/ConstCpPoly.h",
+    "include/cantera/thermo/Mu0Poly.h",
+    "src/thermo/Mu0Poly.cpp",
+    "include/cantera/thermo/MultiSpeciesThermo.h",
+    "src/thermo/MultiSpeciesThermo.cpp",
+    "include/cantera/thermo/SpeciesThermoFactory.h",
+    "src/thermo/SpeciesThermoFactory.cpp",
+    "include/cantera/thermo/Species.h",
+    "include/cantera/thermo/Elements.h",
+    "src/thermo/Elements.cpp"
+  ],
+  "primary_classes": [
+    "SpeciesThermoInterpType",
+    "NasaPoly1",
+    "NasaPoly2",
+    "Nasa9Poly1",
+    "Nasa9PolyMultiTempRegion",
+    "ShomatePoly",
+    "ShomatePoly2",
+    "ConstCpPoly",
+    "Mu0Poly",
+    "MultiSpeciesThermo",
+    "Species",
+    "Elements"
+  ],
+  "scientific_governing_equations": [
+    "NASA-7: Cp0/R = a0 + a1*T + a2*T^2 + a3*T^3 + a4*T^4",
+    "NASA-7: H0/RT = a0 + a1/2*T + a2/3*T^2 + a3/4*T^3 + a4/5*T^4 + a5/T",
+    "NASA-7: S0/R  = a0*ln(T) + a1*T + a2/2*T^2 + a3/3*T^3 + a4/4*T^4 + a6",
+    "NASA-9: Cp0/R = a0/T^2 + a1/T + a2 + a3*T + a4*T^2 + a5*T^3 + a6*T^4",
+    "Shomate: Cp0   = A + B*t + C*t^2 + D*t^3 + E/t^2 (t = T/1000)",
+    "ConstCp: Cp0/R = c0, H0/RT = c0*(T-T0)/T + h0/RT, S0/R = c0*ln(T/T0) + s0/R"
+  ],
+  "validation_strategy": "Corpus evaluation against pinned native Cantera (726522be4e2a13454d8415b7ef799d621f665cf3) across temperature sweeps."
+}

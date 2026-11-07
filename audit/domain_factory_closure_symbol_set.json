@@ -1,0 +1,86 @@
+{
+  "include/cantera/oneD/DomainFactory.h:33:factory": {
+    "canonical_index": 1764,
+    "stable_symbol_id": "include/cantera/oneD/DomainFactory.h:33:factory",
+    "native_file": "include/cantera/oneD/DomainFactory.h",
+    "native_class": "DomainFactory",
+    "native_method": "factory",
+    "python_target": "cantera_python.oned.DomainFactory.factory",
+    "current_status": "PINNED_NATIVE_VALIDATED",
+    "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+    "callers": null,
+    "callees": null,
+    "remaining_validation_requirement": "Registration, creation, polymorphism dispatch, error handling, and thread-safe factory singleton lifecycle matching pinned native Cantera DomainFactory.",
+    "current_implementation_status": "PINNED_NATIVE_VALIDATED",
+    "final_disposition": "PINNED_NATIVE_VALIDATED",
+    "validation_status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+    "remaining_blocker": "NONE",
+    "validation_evidence": [
+      "cantera_python/oned.py",
+      "tests/test_ionflow_and_factory.py"
+    ]
+  },
+  "include/cantera/oneD/DomainFactory.h:35:deleteFactory": {
+    "canonical_index": 1765,
+    "stable_symbol_id": "include/cantera/oneD/DomainFactory.h:35:deleteFactory",
+    "native_file": "include/cantera/oneD/DomainFactory.h",
+    "native_class": "DomainFactory",
+    "native_method": "deleteFactory",
+    "python_target": "cantera_python.oned.DomainFactory.deleteFactory",
+    "current_status": "PINNED_NATIVE_VALIDATED",
+    "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+    "callers": null,
+    "callees": null,
+    "remaining_validation_requirement": "Registration, creation, polymorphism dispatch, error handling, and thread-safe factory singleton lifecycle matching pinned native Cantera DomainFactory.",
+    "current_implementation_status": "PINNED_NATIVE_VALIDATED",
+    "final_disposition": "PINNED_NATIVE_VALIDATED",
+    "validation_status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+    "remaining_blocker": "NONE",
+    "validation_evidence": [
+      "cantera_python/oned.py",
+      "tests/test_ionflow_and_factory.py"
+    ]
+  },
+  "src/oneD/DomainFactory.cpp:81:lock": {
+    "canonical_index": 4779,
+    "stable_symbol_id": "src/oneD/DomainFactory.cpp:81:lock",
+    "native_file": "src/oneD/DomainFactory.cpp",
+    "native_class": "DomainFactory",
+    "native_method": "lock",
+    "python_target": "cantera_python.oned.DomainFactory.factory",
+    "current_status": "PINNED_NATIVE_VALIDATED",
+    "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+    "callers": null,
+    "callees": null,
+    "remaining_validation_requirement": "Registration, creation, polymorphism dispatch, error handling, and thread-safe factory singleton lifecycle matching pinned native Cantera DomainFactory.",
+    "current_implementation_status": "PINNED_NATIVE_VALIDATED",
+    "final_disposition": "PINNED_NATIVE_VALIDATED",
+    "validation_status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+    "remaining_blocker": "NONE",
+    "validation_evidence": [
+      "cantera_python/oned.py",
+      "tests/test_ionflow_and_factory.py"
+    ]
+  },
+  "src/oneD/DomainFactory.cpp:90:lock": {
+    "canonical_index": 4780,
+    "stable_symbol_id": "src/oneD/DomainFactory.cpp:90:lock",
+    "native_file": "src/oneD/DomainFactory.cpp",
+    "native_class": "DomainFactory",
+    "native_method": "lock",
+    "python_target": "cantera_python.oned.DomainFactory.deleteFactory",
+    "current_status": "PINNED_NATIVE_VALIDATED",
+    "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+    "callers": null,
+    "callees": null,
+    "remaining_validation_requirement": "Registration, creation, polymorphism dispatch, error handling, and thread-safe factory singleton lifecycle matching pinned native Cantera DomainFactory.",
+    "current_implementation_status": "PINNED_NATIVE_VALIDATED",
+    "final_disposition": "PINNED_NATIVE_VALIDATED",
+    "validation_status": "VALIDATED_NUMERICALLY_EQUIVALENT",
+    "remaining_blocker": "NONE",
+    "validation_evidence": [
+      "cantera_python/oned.py",
+      "tests/test_ionflow_and_factory.py"
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "manifest_name": "thermodynamic_solver_waves_1_3_committed_manifest",
+  "status": "CERTIFIED_CLEAN_COMMITTED_BASELINE",
+  "generated_at_utc": "2026-09-28T07:01:54.567696+00:00",
+  "WAVES_1_3_CERTIFIED_BASE_COMMIT": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "branch": "certified/waves-1-3-baseline",
+  "clean": true,
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "waves_1_3_snapshot_id": "31276d0451e0deb1c2dba7419b05bf470e0541fd7215cb0d2e8a79f9cd3c325a",
+  "wave1_evidence": {
+    "implementation": {
+      "cantera_python/state.py": "a77be91837204dd6444e7b3daee4d0882b750003849093066886477418658bb9",
+      "cantera_python/ideal_gas.py": "b15cf73deca87ecc7f49d17d26475b9edd9865dfa3b9eb11206853689be5cb67"
+    },
+    "corpus": {
+      "audit/corpus_wave1.jsonl": "f3f536bc375331bc75bbb590fb334e094365f8b83606a84b816811ea78d1410f",
+      "audit/corpus_wave1_failure_state.jsonl": "27f4b14041e92c8b5b0b5443d90aaadb9abf5bce12164c60d7c5b97c388dc18c"
+    },
+    "results": {
+      "audit/raw_native_wave1.jsonl": "e9d356d9aa7cad0ab180cc35ffea1cf1419aecd699465c87502ed36e4c10b5cd",
+      "audit/raw_python_wave1.jsonl": "a61bc233cf9a0b0e028fdc251909231bffb1c30b9335aebe91a9441484a39533",
+      "audit/raw_native_wave1_failure_state.jsonl": "19e0c2b947334992b1cb15da8eb2943d5dda9088d306b835cf234c9feafcc959",
+      "audit/raw_python_wave1_failure_state.jsonl": "f49ac9e3ebc9347f62b554859d90e7e689bc679a39811a3ac3c02d89a704f4b4",
+      "audit/wave1_failure_state_comparison.json": "d017589db850c448d9d33dfbd380d1ae514509031af29d798fa3b089630cb150"
+    },
+    "tooling": {
+      "tools/compare_native_vs_python.py": "75ed6702c85fb9febaf3be408344319d961082a052fbb331975184e469523042",
+      "tools/wave1_failure_state_probe.py": "91f4882da31be44b36e84ca1c06a3d2a35d4d389e7c75c595b766842ae8921d1",
+      "tools/compare_wave1_failure_state.py": "1e8006d5c3186d65cd01affa8c49150b25bc12361929f1b4c8bd58a2e45b292b"
+    },
+    "documentation": {
+      "audit/wave1_source_mapping.md": "7be800af289f5da2d5bed8ff0ac720ba4cf9d50fd2771f70ad49088ed5e4bbd7",
+      "audit/wave1_metric_reconciliation.md": "ba9d8d889df440076c64d5d6ee193fc4b5662e4fb1200418fc0a115db9ba2102"
+    }
+  },
+  "wave2_evidence": {
+    "implementation": {
+      "cantera_python/cubic_eos.py": "c4e80227350e954e2d8f6fb5e2bda66dcda5c0ec0a0dcceeefee49ad835ec3c3"
+    },
+    "public_results": {
+      "audit/corpus_wave2.jsonl": "3af0b5f0a15abae357d9537f33d9bad0c68f1c0c4baa42a832a0e09e480fd492",
+      "audit/raw_native_wave2.jsonl": "f3f58f504d1a1acf4d29fc677c9dc35f1df76e87caa8866790a3df65a7f567c6",
+      "audit/raw_python_wave2.jsonl": "c3032d2d41a846156392c28f473498d1cbeb5a31c3c6c5035b078539b53760b6"
+    },
+    "internal_probe": {
+      "tools/run_native_cubic_internal_probe.cpp": "a5f27a96ac8724f808e13a855732fe69fa37553e2efe9fc1ac55e3341a61c0f4",
+      "tools/run_native_cubic_internal_probe": "6ae23ff6223c906d112f11956796fe349d74ef19760faa32b6e3cf6d64fb53f5",
+      "tools/run_python_cubic_internal_probe.py": "71019e5e8bbf809aafa8dfb7af627639a154453ddf27c8b6d0bb8a7461cf7a6e",
+      "audit/raw_native_wave2_internal.jsonl": "6da73a971df227877d549e6aa345dec99b7f915f4e802d13ef54626a4fe0a76a",
+      "audit/raw_python_wave2_internal.jsonl": "29d90f52df6e78263aecd9d49dcfa9dccc1aa3f1291955cbfba414c95867bdf8",
+      "audit/wave2_return_code_distribution.json": "f0f6399cd8e433477aa7358c5814c66211a75acfae5d1f266ed608b8c6c919fb",
+      "audit/wave2_internal_root_parity.jsonl": "3c0fa4745291d72c45b6840ad5f32348a550998dd06a9aed294dd7b41aa20f04",
+      "tools/compare_wave2_internals.py": "80809c31227595d0d170bbb6973caf2073bea511ae87f8c707223267cfe5bb8c",
+      "tools/build_wave2_return_code_distribution.py": "2dca6525145dd7409491ae7316742ea5b440e4901cc0466b88557e539ccf2bfc"
+    },
+    "documentation": {
+      "audit/wave2_evidence_reconciliation.md": "fd7db3eec5b0178fbf784884c1be4db3a585adaace387b99726428d4841df8b0",
+      "audit/wave2_internal_root_parity_summary.md": "5f4fa0c0dd5815272ff89520df73c359b2d40859d36d0552a5812dda95613158"
+    }
+  },
+  "wave3_evidence": {
+    "implementation": {
+      "cantera_python/tpx.py": "6e3fdaf90bb7af384ec44fffecd3515d6c854cfd30689bd0c939205e43a376b5"
+    },
+    "full_differential": {
+      "audit/corpus_wave3.jsonl": "b204c592a88a466b9fb1dbd3ae80a7f116df06b411bd88ec75753c891281c3be",
+      "audit/raw_native_wave3.jsonl": "6989d064c2bc3e2d4b216cbb4e82e272ae64f97d707cea8b5339b23c3a2a5724",
+      "audit/raw_python_wave3.jsonl": "4ee9f50b47f580433c06d637f1bd39a87bae6f06ab0a531c805d131d2604c34f"
+    },
+    "fallback_evidence": {
+      "audit/wave3_fallback_activation_probe.json": "b7759185c28f5d8e6d1022d9b25052f9bf1d5f580a96244b842bf7b61c75166f",
+      "tools/generate_wave3_fallback_activation_corpus.py": "4e7f1df73931fa7389f70781ab33fc95da5dec4a6ec1141b2a40a451bc52be01",
+      "audit/corpus_wave3_singular_jacobian.jsonl": "95759147d12a3dc480b48df4bb743f11f9de9eab3d32dfa73ff3f984ed4f49c1",
+      "audit/raw_native_wave3_singular.jsonl": "fd5314dce79874fdb5a6e0afd76032522d94fc21c6516c27e4efa2a56ba613f5",
+      "audit/raw_python_wave3_singular.jsonl": "a866d04c96c6cc10e19d35b61748ee643a508621f30c3da8f077e075c4c58cc7",
+      "audit/wave3_singular_jacobian_comparison.json": "7e61a37838e1959e27749ded5cfb710fca7ef77319093144757b859469f1845a",
+      "audit/wave3_singular_jacobian_audit.md": "a17519def3dbf5b28484494d64c4e07321b7bc948b82f46dd80249ad9f3f24f1"
+    },
+    "cp_cv_evidence": {
+      "audit/wave3_cp_cv_formula_audit.md": "68fce4c0ea04bf294789add66d7446bc8693782d65ff3c1cafea0238709bafbe",
+      "audit/wave3_cp_cv_step_sweep.jsonl": "e01dc718e49a2c355f698784163ae2d9075d0f3e233882e38fe0e84b3c83360b",
+      "audit/wave3_cp_cv_step_sweep_summary.md": "f839919adb57dd3e1e331d40356c1983852def850e22e56c701f6ab08593f3be",
+      "audit/wave3_cp_cv_perturbation_results.json": "dae38379cfcef1719f98166b95d9ccd5540f9c7b357faf3600000db46a88237c",
+      "tools/wave3_cp_cv_step_sweep.py": "b38d6197610f48b148bdd568e2769e6a554e35abb3ac8439c96b4e7e684fa2ae"
+    },
+    "dispositions": {
+      "audit/wave3_implemented_differently_audit.json": "d989e3b61ac4ed101baf0415907e8b465f0850d42c48866528d98ac15efe887c",
+      "audit/wave3_implemented_differently_disposition.md": "90f0dbd1650a30d702673115b6ba9cb1ab29ca209a7f0b51406e3f38dd1d762e"
+    }
+  },
+  "native_oracle_identity": {
+    "audit/native_oracle_identity.json": "5542764c437f32eb0841fe62b6be9ed0083febe57707bc290ce18cad10135362",
+    "audit/waves_1_3_native_oracle_identity.json": "74170f932ee7418396d284eb8ae4956952110e936f078c68e198d5ad319de6da"
+  },
+  "regression_results": {
+    "audit/waves_1_3_full_pytest.log": "79a163d8d96eb5cc89bcb629a8ab5f1d43d0989a70dbf5fbcf80fd21fa1e8d97",
+    "audit/waves_1_3_test_results.json": "1787de56de26e04f58bfc47808d1c6b5962f49a806fc2a1fdcd800412e141089"
+  },
+  "validation_gate": {
+    "audit/waves_1_3_validation_gate.json": "744ffda4eca1eaf72beb5a7506012624819b0f21118ce758241f85beb234f1cc",
+    "flags": {
+      "PINNED_NATIVE_ORACLE_RESTORED": true,
+      "FULL_PYTHON_TEST_ENV_RESTORED": true,
+      "WAVE_1_FRESH_NATIVE_PARITY": true,
+      "WAVE_1_SUCCESS_PATH_SOURCE_PARITY": true,
+      "WAVE_1_FAILURE_CATEGORY_PARITY": true,
+      "WAVE_1_POST_FAILURE_STATE_PARITY": "TRUE",
+      "WAVE_1_CURRENT_SNAPSHOT_CERTIFIED": true,
+      "WAVE_2_FRESH_NATIVE_PARITY": true,
+      "WAVE_2_RETURN_CODE_PARITY": true,
+      "WAVE_2_INTERNAL_ROOT_NUMERICAL_PARITY": true,
+      "WAVE_2_CURRENT_SNAPSHOT_CERTIFIED": true,
+      "WAVE_3_FRESH_NATIVE_PARITY": true,
+      "WAVE_3_FALLBACK_ACTIVATION_FOUND": false,
+      "WAVE_3_FALLBACK_BEHAVIOR_VALIDATED": "NOT_APPLICABLE_DIRECT_SOURCE_ALGORITHM_VERIFIED",
+      "WAVE_3_DIRECT_JACOBIAN_SOURCE_PARITY": true,
+      "WAVE_3_CP_CV_FORMULA_VERIFIED": true,
+      "WAVE_3_CP_CV_DIFFERENCE_CAUSE_ESTABLISHED": false,
+      "WAVE_3_DIFFERENT_IMPLEMENTATIONS_JUSTIFIED": true,
+      "WAVE_3_CURRENT_SNAPSHOT_CERTIFIED": true,
+      "FULL_REGRESSION_ZERO_FAILURES": true,
+      "WAVES_1_3_VALIDATION_GATE_DERIVED_FROM_FRESH_RAW_EVIDENCE": true,
+      "WAVES_1_3_CLEAN_COMMIT_CREATED": true,
+      "WAVES_1_3_COMMITTED_SNAPSHOT_CERTIFIED": true,
+      "THERMODYNAMIC_SOLVER_FOUNDATION_READY_FOR_WAVE_4_FINAL_FREEZE": true,
+      "WAVE_1_SUCCESS_PATH_NATIVE_PARITY": true,
+      "WAVE_2_BRANCH_REPORT_CORRECTED": true
+    }
+  },
+  "WAVES_1_3_COMMITTED_SNAPSHOT_CERTIFIED": true,
+  "THERMODYNAMIC_SOLVER_FOUNDATION_READY_FOR_WAVE_4_FINAL_FREEZE": true
+}

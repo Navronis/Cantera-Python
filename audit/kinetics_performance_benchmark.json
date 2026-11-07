@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "subsystem": "kinetics",
+  "benchmark_timestamp": "2026-11-06T03:17:21Z",
+  "mean_slowdown_vs_native": 329.1063431028059,
+  "configurations": [
+    {
+      "mechanism": "h2o2.yaml",
+      "temperature": 1500.0,
+      "pressure": 101325.0,
+      "mole_fractions": "H2:2, O2:1, N2:3.76",
+      "iterations": 1000,
+      "native_cpp_ms_per_eval": 0.001779,
+      "python_accelerated_ms_per_eval": 0.2809348000009777,
+      "python_scalar_ms_per_eval": 1.2971430001198314,
+      "slowdown_vs_native": 157.91725688644053,
+      "speedup_over_scalar": 4.617238591001603
+    },
+    {
+      "mechanism": "gri30.yaml",
+      "temperature": 1800.0,
+      "pressure": 101325.0,
+      "mole_fractions": "CH4:0.095, O2:0.21, N2:0.79",
+      "iterations": 1000,
+      "native_cpp_ms_per_eval": 0.003063,
+      "python_accelerated_ms_per_eval": 1.5324049000046216,
+      "python_scalar_ms_per_eval": 32.83778099998017,
+      "slowdown_vs_native": 500.29542931917126,
+      "speedup_over_scalar": 21.428919341018247
+    }
+  ]
+}

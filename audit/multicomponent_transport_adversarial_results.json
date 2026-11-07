@@ -1,0 +1,187 @@
+{
+  "multitran_run_id": "566f6e013a60116c877bb95fc4ecb48f",
+  "adversarial_cases_count": 5,
+  "all_adversarial_passed": true,
+  "results": [
+    {
+      "case_id": "MULTITRAN_ADV_TRACE_GRI_061",
+      "multitran_run_id": "566f6e013a60116c877bb95fc4ecb48f",
+      "mechanism": "gri30.yaml",
+      "T": 1000.0,
+      "P": 101325.0,
+      "passed": true,
+      "viscosity_error": {
+        "abs": 1.0164395367051604e-18,
+        "rel": 2.449361445431303e-14
+      },
+      "thermal_conductivity_error": {
+        "abs": 1.6930901125533637e-15,
+        "rel": 2.4622039176865034e-14
+      },
+      "species_viscosities_error": {
+        "abs": 5.481997234629832e-18,
+        "rel": 2.0303483713186806e-13
+      },
+      "binary_diff_error": {
+        "abs": 4.7704895589362195e-17,
+        "rel": 2.0258586050205444e-13
+      },
+      "multi_diff_error": {
+        "abs": 1.726049858596923e-16,
+        "rel": 3.08317821861452e-14
+      },
+      "thermal_diff_error": {
+        "abs": 1.3541694921472752e-35,
+        "rel": 1.3541694921472752e-23
+      },
+      "flux_error": {
+        "abs": 4.573977915173222e-19,
+        "rel": 3.018355615053445e-05
+      }
+    },
+    {
+      "case_id": "MULTITRAN_ADV_P100BAR_T3200_062",
+      "multitran_run_id": "566f6e013a60116c877bb95fc4ecb48f",
+      "mechanism": "gri30.yaml",
+      "T": 3200.0,
+      "P": 10000000.0,
+      "passed": true,
+      "viscosity_error": {
+        "abs": 2.371692252312041e-18,
+        "rel": 2.6830529919538428e-14
+      },
+      "thermal_conductivity_error": {
+        "abs": 2.1371793224034263e-15,
+        "rel": 1.0422667868143827e-14
+      },
+      "species_viscosities_error": {
+        "abs": 1.6506978076091805e-17,
+        "rel": 2.5097957801839176e-13
+      },
+      "binary_diff_error": {
+        "abs": 4.689174395999807e-18,
+        "rel": 2.514001344311749e-13
+      },
+      "multi_diff_error": {
+        "abs": 1.951563910473908e-17,
+        "rel": 4.7557263582924016e-14
+      },
+      "thermal_diff_error": {
+        "abs": 7.872112453544654e-20,
+        "rel": 8.274325355858292e-09
+      },
+      "flux_error": {
+        "abs": 1.5873397431545588e-18,
+        "rel": 4.967713510657981e-05
+      }
+    },
+    {
+      "case_id": "MULTITRAN_ADV_H2_AR_300K_063",
+      "multitran_run_id": "566f6e013a60116c877bb95fc4ecb48f",
+      "mechanism": "gri30.yaml",
+      "T": 300.0,
+      "P": 101325.0,
+      "passed": true,
+      "viscosity_error": {
+        "abs": 4.0657581468206416e-20,
+        "rel": 4.161641763752134e-15
+      },
+      "thermal_conductivity_error": {
+        "abs": 1.2490009027033011e-15,
+        "rel": 6.8148638966179085e-15
+      },
+      "species_viscosities_error": {
+        "abs": 8.089164646278568e-18,
+        "rel": 8.254020662184314e-13
+      },
+      "binary_diff_error": {
+        "abs": 3.1008182133085427e-17,
+        "rel": 8.26279820534927e-13
+      },
+      "multi_diff_error": {
+        "abs": 1.2522535092207576e-17,
+        "rel": 8.738301563609569e-14
+      },
+      "thermal_diff_error": {
+        "abs": 8.893845946170154e-21,
+        "rel": 1.8358210033286006e-10
+      },
+      "flux_error": {
+        "abs": 2.507217523872729e-19,
+        "rel": 3.031604994686055e-05
+      }
+    },
+    {
+      "case_id": "MULTITRAN_ADV_ZERO_GRAD_064",
+      "multitran_run_id": "566f6e013a60116c877bb95fc4ecb48f",
+      "mechanism": "gri30.yaml",
+      "T": 1500.0,
+      "P": 200000.0,
+      "passed": true,
+      "viscosity_error": {
+        "abs": 1.2874900798265365e-18,
+        "rel": 2.3750941610585526e-14
+      },
+      "thermal_conductivity_error": {
+        "abs": 3.1363800445660672e-15,
+        "rel": 2.7477160482620893e-14
+      },
+      "species_viscosities_error": {
+        "abs": 6.383240290508407e-18,
+        "rel": 1.684256043193469e-13
+      },
+      "binary_diff_error": {
+        "abs": 3.8163916471489756e-17,
+        "rel": 1.6782291350401877e-13
+      },
+      "multi_diff_error": {
+        "abs": 1.8127860323957634e-16,
+        "rel": 4.564566618642844e-14
+      },
+      "thermal_diff_error": {
+        "abs": 6.225692162319107e-20,
+        "rel": 2.7695277260973334e-09
+      },
+      "flux_error": {
+        "abs": 0.0,
+        "rel": 0.0
+      }
+    },
+    {
+      "case_id": "MULTITRAN_ADV_RADICAL_MIX_065",
+      "multitran_run_id": "566f6e013a60116c877bb95fc4ecb48f",
+      "mechanism": "h2o2.yaml",
+      "T": 2800.0,
+      "P": 3000000.0,
+      "passed": true,
+      "viscosity_error": {
+        "abs": 1.3552527156068805e-19,
+        "rel": 1.2519366264168484e-15
+      },
+      "thermal_conductivity_error": {
+        "abs": 5.551115123125783e-16,
+        "rel": 1.2230212174941958e-15
+      },
+      "species_viscosities_error": {
+        "abs": 3.537209587733958e-18,
+        "rel": 3.7869437324312186e-14
+      },
+      "binary_diff_error": {
+        "abs": 5.2583805365546965e-18,
+        "rel": 3.796917844417296e-14
+      },
+      "multi_diff_error": {
+        "abs": 8.239936510889834e-18,
+        "rel": 6.672330010947712e-15
+      },
+      "thermal_diff_error": {
+        "abs": 2.879912020664621e-20,
+        "rel": 1.6836376634041703e-09
+      },
+      "flux_error": {
+        "abs": 4.946672411965114e-19,
+        "rel": 7.050521588477792e-08
+      }
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+[
+  {
+    "file": "KOH.yaml",
+    "success": true,
+    "phases_count": 11,
+    "species_count": 758,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "SiF4_NH3_mec.yaml",
+    "success": true,
+    "phases_count": 4,
+    "species_count": 25,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "air.yaml",
+    "success": true,
+    "phases_count": 1,
+    "species_count": 8,
+    "reactions_count": 8,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": "'MechanismReaction' object has no attribute 'type'"
+  },
+  {
+    "file": "airNASA9.yaml",
+    "success": true,
+    "phases_count": 1,
+    "species_count": 11,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA9"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "critical-properties.yaml",
+    "success": true,
+    "phases_count": 0,
+    "species_count": 697,
+    "reactions_count": 0,
+    "thermo_models": [],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "diamond.yaml",
+    "success": true,
+    "phases_count": 3,
+    "species_count": 13,
+    "reactions_count": 20,
+    "thermo_models": [
+      "NASA7",
+      "constant-cp"
+    ],
+    "reaction_types": [],
+    "error": "'MechanismReaction' object has no attribute 'type'"
+  },
+  {
+    "file": "element-standard-entropies.yaml",
+    "success": true,
+    "phases_count": 0,
+    "species_count": 0,
+    "reactions_count": 0,
+    "thermo_models": [],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "example_data\\YZA.yaml",
+    "success": true,
+    "phases_count": 1,
+    "species_count": 1,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "example_data\\air-plasma-Phelps.yaml",
+    "success": false,
+    "phases_count": 0,
+    "species_count": 0,
+    "reactions_count": 0,
+    "thermo_models": [],
+    "reaction_types": [],
+    "error": "Invalid reaction 'O2 + Electron => Electron + Electron + O2+': Unknown reaction species 'O2'"
+  },
+  {
+    "file": "example_data\\ammonia-CO-H2-Alzueta-2023.yaml",
+    "success": true,
+    "phases_count": 2,
+    "species_count": 42,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "example_data\\ammonia-Ru-Ba-YSZ-CSM-2019.yaml",
+    "success": true,
+    "phases_count": 2,
+    "species_count": 10,
+    "reactions_count": 12,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": "'MechanismReaction' object has no attribute 'type'"
+  },
+  {
+    "file": "example_data\\co2-thermo.yaml",
+    "success": true,
+    "phases_count": 2,
+    "species_count": 1,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "example_data\\covdepsurf.yaml",
+    "success": true,
+    "phases_count": 5,
+    "species_count": 7,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "example_data\\methane-plasma-pavan-2023.yaml",
+    "success": false,
+    "phases_count": 0,
+    "species_count": 0,
+    "reactions_count": 0,
+    "thermo_models": [],
+    "reaction_types": [],
+    "error": "Cannot resolve imported reaction section 'gri30.yaml/reactions'"
+  },
+  {
+    "file": "example_data\\n-heptane-NUIG-2016.yaml",
+    "success": true,
+    "phases_count": 1,
+    "species_count": 1268,
+    "reactions_count": 5336,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": "'MechanismReaction' object has no attribute 'type'"
+  },
+  {
+    "file": "example_data\\n-hexane-NUIG-2015.yaml",
+    "success": true,
+    "phases_count": 1,
+    "species_count": 1268,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "example_data\\oxygen-plasma-itikawa.yaml",
+    "success": false,
+    "phases_count": 0,
+    "species_count": 0,
+    "reactions_count": 0,
+    "thermo_models": [],
+    "reaction_types": [],
+    "error": "Invalid reaction 'O2+ + e => O + O': Unknown reaction species 'O2+'"
+  },
+  {
+    "file": "example_data\\silicon-carbide.yaml",
+    "success": true,
+    "phases_count": 1,
+    "species_count": 1,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "graphite.yaml",
+    "success": true,
+    "phases_count": 1,
+    "species_count": 1,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "gri30.yaml",
+    "success": true,
+    "phases_count": 1,
+    "species_count": 53,
+    "reactions_count": 325,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": "'MechanismReaction' object has no attribute 'type'"
+  },
+  {
+    "file": "gri30_highT.yaml",
+    "success": true,
+    "phases_count": 1,
+    "species_count": 53,
+    "reactions_count": 325,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": "'MechanismReaction' object has no attribute 'type'"
+  },
+  {
+    "file": "gri30_ion.yaml",
+    "success": true,
+    "phases_count": 1,
+    "species_count": 56,
+    "reactions_count": 6,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": "'MechanismReaction' object has no attribute 'type'"
+  },
+  {
+    "file": "h2o2.yaml",
+    "success": true,
+    "phases_count": 2,
+    "species_count": 10,
+    "reactions_count": 29,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": "'MechanismReaction' object has no attribute 'type'"
+  },
+  {
+    "file": "liquidvapor.yaml",
+    "success": true,
+    "phases_count": 9,
+    "species_count": 8,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7",
+      "constant-cp"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "lithium_ion_battery.yaml",
+    "success": true,
+    "phases_count": 6,
+    "species_count": 10,
+    "reactions_count": 0,
+    "thermo_models": [
+      "constant-cp"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "methane_pox_on_pt.yaml",
+    "success": true,
+    "phases_count": 2,
+    "species_count": 18,
+    "reactions_count": 36,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": "'MechanismReaction' object has no attribute 'type'"
+  },
+  {
+    "file": "nDodecane_Reitz.yaml",
+    "success": true,
+    "phases_count": 2,
+    "species_count": 100,
+    "reactions_count": 553,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": "'MechanismReaction' object has no attribute 'type'"
+  },
+  {
+    "file": "nasa_condensed.yaml",
+    "success": true,
+    "phases_count": 0,
+    "species_count": 382,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7",
+      "NASA9"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "nasa_gas.yaml",
+    "success": true,
+    "phases_count": 0,
+    "species_count": 748,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "ohn.yaml",
+    "success": true,
+    "phases_count": 1,
+    "species_count": 53,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "ptcombust.yaml",
+    "success": true,
+    "phases_count": 2,
+    "species_count": 43,
+    "reactions_count": 24,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": "'MechanismReaction' object has no attribute 'type'"
+  },
+  {
+    "file": "silicon.yaml",
+    "success": true,
+    "phases_count": 1,
+    "species_count": 1,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "sofc.yaml",
+    "success": true,
+    "phases_count": 6,
+    "species_count": 17,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7",
+      "constant-cp"
+    ],
+    "reaction_types": [],
+    "error": null
+  },
+  {
+    "file": "water.yaml",
+    "success": true,
+    "phases_count": 2,
+    "species_count": 2,
+    "reactions_count": 0,
+    "thermo_models": [
+      "NASA7"
+    ],
+    "reaction_types": [],
+    "error": null
+  }
+]

@@ -1,0 +1,452 @@
+{
+  "wave": 3,
+  "total_cases": 9608,
+  "success_parity_cases": 9494,
+  "failure_parity_cases": 114,
+  "failure_category_matches": 114,
+  "mismatches": 0,
+  "forward_error_distributions": {
+    "temperature": {
+      "attempts": 8000,
+      "abs_error": {
+        "count": 8000,
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "rel_error": {
+        "count": 8000,
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "tolerance": {
+        "rtol": 1e-07,
+        "atol": 1e-05,
+        "unit": "K",
+        "rationale": "Independent state variable in forward evaluation."
+      }
+    },
+    "pressure": {
+      "attempts": 8000,
+      "abs_error": {
+        "count": 8000,
+        "p50": 8.940696716308594e-07,
+        "p95": 0.027601676993072033,
+        "p99": 0.10450626723468304,
+        "max": 0.5259569510817528
+      },
+      "rel_error": {
+        "count": 8000,
+        "p50": 6.86802432246922e-13,
+        "p95": 5.061510639327365e-09,
+        "p99": 8.789105695855745e-09,
+        "max": 1.2350777423390693e-08
+      },
+      "tolerance": {
+        "rtol": 5e-06,
+        "atol": 1.0,
+        "unit": "Pa",
+        "rationale": "BWR/Helmholtz algebraic pressure evaluation; observed max rel err 9.30e-7."
+      }
+    },
+    "density": {
+      "attempts": 8000,
+      "abs_error": {
+        "count": 8000,
+        "p50": 9.094947017729282e-13,
+        "p95": 7.117116354038444e-07,
+        "p99": 2.6318685399928654e-06,
+        "max": 1.2192962856261147e-05
+      },
+      "rel_error": {
+        "count": 8000,
+        "p50": 1.943488718213616e-15,
+        "p95": 5.83641534909081e-09,
+        "p99": 1.105928269160371e-08,
+        "max": 4.397482275883011e-08
+      },
+      "tolerance": {
+        "rtol": 5e-06,
+        "atol": 1e-05,
+        "unit": "kg/m^3",
+        "rationale": "Iterative 1D root solve for rho given (T, P); observed max rel err 1.13e-6."
+      }
+    },
+    "enthalpy": {
+      "attempts": 8000,
+      "abs_error": {
+        "count": 8000,
+        "p50": 5.8673322200775146e-08,
+        "p95": 0.0003836282412521541,
+        "p99": 0.0015043998137116432,
+        "max": 0.024937186390161514
+      },
+      "rel_error": {
+        "count": 8000,
+        "p50": 2.1309211216117128e-14,
+        "p95": 2.8353883801237814e-10,
+        "p99": 1.598217533217399e-09,
+        "max": 5.280863300016411e-09
+      },
+      "tolerance": {
+        "rtol": 5e-06,
+        "atol": 10.0,
+        "unit": "J/kg",
+        "rationale": "Helmholtz energy residual plus reference offsets; observed max rel err 1.89e-7."
+      }
+    },
+    "int_energy": {
+      "attempts": 8000,
+      "abs_error": {
+        "count": 8000,
+        "p50": 5.8673322200775146e-08,
+        "p95": 0.0003305576101411134,
+        "p99": 0.0012859422713518143,
+        "max": 0.02134641632437706
+      },
+      "rel_error": {
+        "count": 8000,
+        "p50": 2.081384438214744e-14,
+        "p95": 2.3658749287605125e-10,
+        "p99": 1.2864589523785312e-09,
+        "max": 5.245142534434875e-09
+      },
+      "tolerance": {
+        "rtol": 5e-06,
+        "atol": 10.0,
+        "unit": "J/kg",
+        "rationale": "Helmholtz u = h - P/rho."
+      }
+    },
+    "entropy": {
+      "attempts": 8000,
+      "abs_error": {
+        "count": 8000,
+        "p50": 1.9333128875587136e-08,
+        "p95": 2.896943442465272e-06,
+        "p99": 2.3496868379879743e-05,
+        "max": 9.546496221446432e-05
+      },
+      "rel_error": {
+        "count": 8000,
+        "p50": 4.127039095970781e-12,
+        "p95": 4.079393904017553e-10,
+        "p99": 1.2947463455425003e-09,
+        "max": 4.695920252393483e-09
+      },
+      "tolerance": {
+        "rtol": 5e-06,
+        "atol": 0.05,
+        "unit": "J/(kg*K)",
+        "rationale": "Helmholtz temperature derivative."
+      }
+    },
+    "gibbs": {
+      "attempts": 8000,
+      "abs_error": {
+        "count": 8000,
+        "p50": 2.987449988722801e-06,
+        "p95": 0.0007290095090866089,
+        "p99": 0.004208594560623169,
+        "max": 0.09790924191474915
+      },
+      "rel_error": {
+        "count": 8000,
+        "p50": 1.2786747726838345e-12,
+        "p95": 9.917396178028253e-11,
+        "p99": 3.3099548069299596e-10,
+        "max": 7.55418925850789e-10
+      },
+      "tolerance": {
+        "rtol": 5e-06,
+        "atol": 10.0,
+        "unit": "J/kg",
+        "rationale": "Helmholtz g = h - T*s."
+      }
+    },
+    "cp": {
+      "attempts": 8000,
+      "abs_error": {
+        "count": 8000,
+        "p50": 9.094947017729282e-09,
+        "p95": 1.3310454960446805e-05,
+        "p99": 7.648850441910326e-05,
+        "max": 0.0016980084255919792
+      },
+      "rel_error": {
+        "count": 8000,
+        "p50": 4.431618109688866e-12,
+        "p95": 2.405119447780652e-09,
+        "p99": 7.881742665235313e-09,
+        "max": 4.318749647767034e-08
+      },
+      "tolerance": {
+        "rtol": 0.0001,
+        "atol": 5.0,
+        "unit": "J/(kg*K)",
+        "rationale": "Second derivative of Helmholtz energy in single-phase region."
+      }
+    },
+    "cv": {
+      "attempts": 8000,
+      "abs_error": {
+        "count": 8000,
+        "p50": 4.547473508864641e-09,
+        "p95": 8.185451179087977e-07,
+        "p99": 3.725290116562974e-05,
+        "max": 7.450580778822768e-05
+      },
+      "rel_error": {
+        "count": 8000,
+        "p50": 4.413516987261955e-12,
+        "p95": 4.40914056132044e-10,
+        "p99": 2.7220112228408698e-09,
+        "max": 6.0708323956739105e-09
+      },
+      "tolerance": {
+        "rtol": 0.0001,
+        "atol": 5.0,
+        "unit": "J/(kg*K)",
+        "rationale": "Second temperature derivative of Helmholtz energy in single-phase region."
+      }
+    }
+  },
+  "saturation_error_distributions": {
+    "pressure": {
+      "attempts": 200,
+      "abs_error": {
+        "count": 200,
+        "p50": 2.1245796233415604e-09,
+        "p95": 1.327134668827057e-07,
+        "p99": 8.009374141693115e-07,
+        "max": 1.2852251529693604e-06
+      },
+      "rel_error": {
+        "count": 200,
+        "p50": 9.614707353952246e-15,
+        "p95": 1.1991206337139254e-13,
+        "p99": 2.187071095573594e-13,
+        "max": 2.364681722073891e-13
+      },
+      "tolerance": {
+        "rtol": 1e-05,
+        "atol": 10.0,
+        "unit": "Pa",
+        "rationale": "Vapor pressure equation iteration."
+      }
+    },
+    "rho_liq": {
+      "attempts": 200,
+      "abs_error": {
+        "count": 200,
+        "p50": 1.4210854715202004e-13,
+        "p95": 5.229594535194337e-12,
+        "p99": 1.0516032489249483e-11,
+        "max": 9.072209650184959e-11
+      },
+      "rel_error": {
+        "count": 200,
+        "p50": 4.4048787301578617e-16,
+        "p95": 9.106043614846822e-15,
+        "p99": 4.239859848939724e-14,
+        "max": 1.327520872904845e-13
+      },
+      "tolerance": {
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "unit": "kg/m^3",
+        "rationale": "Saturated liquid density root solve."
+      }
+    },
+    "rho_vap": {
+      "attempts": 200,
+      "abs_error": {
+        "count": 200,
+        "p50": 6.927791673660977e-14,
+        "p95": 5.7482907322992105e-12,
+        "p99": 2.701483481359901e-11,
+        "max": 1.9679191609611735e-10
+      },
+      "rel_error": {
+        "count": 200,
+        "p50": 1.3458747249256084e-14,
+        "p95": 1.470315007915855e-13,
+        "p99": 2.7985799872900835e-13,
+        "max": 7.454214831302864e-13
+      },
+      "tolerance": {
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "unit": "kg/m^3",
+        "rationale": "Saturated vapor density root solve."
+      }
+    },
+    "h_liq": {
+      "attempts": 200,
+      "abs_error": {
+        "count": 200,
+        "p50": 9.255018085241318e-09,
+        "p95": 1.0523945093154907e-07,
+        "p99": 1.126900315284729e-07,
+        "max": 1.1362135410308838e-07
+      },
+      "rel_error": {
+        "count": 200,
+        "p50": 5.974526813712081e-15,
+        "p95": 5.100218082746241e-14,
+        "p99": 6.309478184281401e-14,
+        "max": 6.368405523758628e-14
+      },
+      "tolerance": {
+        "rtol": 1e-05,
+        "atol": 20.0,
+        "unit": "J/kg",
+        "rationale": "Saturated liquid enthalpy evaluation."
+      }
+    },
+    "h_vap": {
+      "attempts": 200,
+      "abs_error": {
+        "count": 200,
+        "p50": 9.167706593871117e-09,
+        "p95": 1.0523945093154907e-07,
+        "p99": 1.434236764907837e-07,
+        "max": 1.5087425708770752e-07
+      },
+      "rel_error": {
+        "count": 200,
+        "p50": 1.1293412344010603e-14,
+        "p95": 1.002969550458986e-13,
+        "p99": 1.0354831518401003e-13,
+        "max": 1.048447994972415e-13
+      },
+      "tolerance": {
+        "rtol": 1e-05,
+        "atol": 20.0,
+        "unit": "J/kg",
+        "rationale": "Saturated vapor enthalpy evaluation."
+      }
+    }
+  },
+  "pair_error_distributions": {
+    "temperature": {
+      "attempts": 1294,
+      "abs_error": {
+        "count": 1294,
+        "p50": 8.526512829121202e-13,
+        "p95": 5.1507303169273655e-06,
+        "p99": 1.4232720758400319e-05,
+        "max": 3.7768060394682834e-05
+      },
+      "rel_error": {
+        "count": 1294,
+        "p50": 3.114026747822396e-15,
+        "p95": 2.64772929563192e-08,
+        "p99": 9.659978066310062e-08,
+        "max": 1.225967731442745e-07
+      },
+      "tolerance": {
+        "rtol": 0.0001,
+        "atol": 0.05,
+        "unit": "K",
+        "rationale": "Multidimensional 2D Newton inversion."
+      }
+    },
+    "pressure": {
+      "attempts": 1294,
+      "abs_error": {
+        "count": 1294,
+        "p50": 1.9371509552001953e-07,
+        "p95": 0.23464989196509123,
+        "p99": 1.259226313792169,
+        "max": 2.2954931808635592
+      },
+      "rel_error": {
+        "count": 1294,
+        "p50": 1.8367149594862793e-14,
+        "p95": 1.86360858753728e-07,
+        "p99": 6.654663969700947e-07,
+        "max": 9.444066206677307e-07
+      },
+      "tolerance": {
+        "rtol": 0.0001,
+        "atol": 10.0,
+        "unit": "Pa",
+        "rationale": "Multidimensional 2D Newton inversion."
+      }
+    },
+    "density": {
+      "attempts": 1294,
+      "abs_error": {
+        "count": 1294,
+        "p50": 2.2737367544323206e-13,
+        "p95": 8.621508840178649e-06,
+        "p99": 4.689123443313292e-05,
+        "max": 0.00023728690518964868
+      },
+      "rel_error": {
+        "count": 1294,
+        "p50": 1.653240103074248e-15,
+        "p95": 1.497389755775013e-07,
+        "p99": 5.823831736107965e-07,
+        "max": 8.921400701036045e-07
+      },
+      "tolerance": {
+        "rtol": 0.0001,
+        "atol": 0.001,
+        "unit": "kg/m^3",
+        "rationale": "Multidimensional 2D Newton inversion."
+      }
+    }
+  },
+  "schema_declaration": {
+    "observable_fields_by_subtype": {
+      "FORWARD": [
+        "status",
+        "temperature",
+        "pressure",
+        "density",
+        "specific_volume",
+        "enthalpy",
+        "int_energy",
+        "entropy",
+        "gibbs",
+        "cp",
+        "cv"
+      ],
+      "SATURATION": [
+        "status",
+        "temperature",
+        "pressure",
+        "rho_liq",
+        "rho_vap",
+        "h_liq",
+        "h_vap",
+        "s_liq",
+        "s_vap"
+      ],
+      "QUALITY": [
+        "status",
+        "temperature",
+        "pressure",
+        "density",
+        "enthalpy",
+        "entropy",
+        "quality"
+      ],
+      "PROPERTY_PAIR": [
+        "status",
+        "temperature",
+        "pressure",
+        "density",
+        "enthalpy",
+        "entropy"
+      ]
+    },
+    "unobservable_fields": {}
+  },
+  "WAVE_3_SAVED_NATIVE_RECORDS_MATCH": true
+}

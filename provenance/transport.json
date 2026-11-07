@@ -1,0 +1,43 @@
+{
+  "module": "cantera_python.transport",
+  "upstream_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "upstream_paths": [
+    "src/transport/GasTransport.cpp",
+    "src/transport/MixTransport.cpp",
+    "src/transport/IonGasTransport.cpp",
+    "include/cantera/transport/IonGasTransport.h"
+  ],
+  "implemented": [
+    "dilute-gas pure species viscosity approximation",
+    "Wilke mixture viscosity",
+    "modified-Eucken conductivity approximation",
+    "binary and mixture-averaged diffusion approximation",
+    "distinct mass-averaged, mole-averaged, and mass-fraction-gradient mixture diffusion rules",
+    "ion-neutral Stockmayer-(n,6,4) parameter and omega11 equations",
+    "neutral-only ionized-gas viscosity and conductivity mixture rules",
+    "Blanc-law ion mobilities",
+    "fixed electron mobility and diffusion rule",
+    "ionized-gas electrical conductivity"
+  ],
+  "validation": {
+    "tests": ["tests/test_solution_kinetics_reactor.py", "tests/test_transport.py"],
+    "supplementary_reference": "provenance/ion_transport_cantera_3_2_comparison.json"
+  },
+  "limitations": [
+    "Neutral collision integrals are approximate and do not yet reproduce native fitted transport exactly.",
+    "Multicomponent, thermal diffusion, unity-Lewis, high-pressure, water, liquid, and DustyGas models remain unported.",
+    "Released Cantera 3.2.0 comparison is supplementary; exact-pinned validation is unavailable."
+  ],
+  "source_evidence": {
+    "src/transport/GasTransport.cpp": [
+      "GasTransport::getMixDiffCoeffs",
+      "GasTransport::getMixDiffCoeffsMole",
+      "GasTransport::getMixDiffCoeffsMass"
+    ],
+    "interfaces/cython/cantera/transport.py": [
+      "Transport.mix_diff_coeffs",
+      "Transport.mix_diff_coeffs_mole",
+      "Transport.mix_diff_coeffs_mass"
+    ]
+  }
+}

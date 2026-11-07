@@ -1,0 +1,74 @@
+{
+  "Water": {
+    "states": 1000,
+    "finite_property_states": 1000,
+    "saturation_states": 743,
+    "identity_max_relative_error": 3.670959407952857e-15,
+    "cp_finite_cases": 266,
+    "cv_finite_cases": 266,
+    "status": "PASS"
+  },
+  "CarbonDioxide": {
+    "states": 1000,
+    "finite_property_states": 1000,
+    "saturation_states": 590,
+    "identity_max_relative_error": 2.1978049054020754e-16,
+    "cp_finite_cases": 492,
+    "cv_finite_cases": 492,
+    "status": "PASS"
+  },
+  "Nitrogen": {
+    "states": 1000,
+    "finite_property_states": 1000,
+    "saturation_states": 714,
+    "identity_max_relative_error": 2.1698679411397388e-16,
+    "cp_finite_cases": 320,
+    "cv_finite_cases": 320,
+    "status": "PASS"
+  },
+  "Oxygen": {
+    "states": 1000,
+    "finite_property_states": 1000,
+    "saturation_states": 764,
+    "identity_max_relative_error": 4.3876030241584294e-13,
+    "cp_finite_cases": 266,
+    "cv_finite_cases": 266,
+    "status": "PASS"
+  },
+  "Hydrogen": {
+    "states": 1000,
+    "finite_property_states": 1000,
+    "saturation_states": 744,
+    "identity_max_relative_error": 2.15941630744362e-16,
+    "cp_finite_cases": 295,
+    "cv_finite_cases": 295,
+    "status": "PASS"
+  },
+  "Methane": {
+    "states": 1000,
+    "finite_property_states": 1000,
+    "saturation_states": 724,
+    "identity_max_relative_error": 2.0765289792749245e-16,
+    "cp_finite_cases": 307,
+    "cv_finite_cases": 307,
+    "status": "PASS"
+  },
+  "Heptane": {
+    "states": 1000,
+    "finite_property_states": 1000,
+    "saturation_states": 768,
+    "identity_max_relative_error": 2.0644625421330143e-16,
+    "cp_finite_cases": 257,
+    "cv_finite_cases": 257,
+    "status": "PASS"
+  },
+  "HFC134a": {
+    "states": 1000,
+    "finite_property_states": 1000,
+    "saturation_states": 732,
+    "identity_max_relative_error": 5.7611863823400114e-15,
+    "cp_finite_cases": 283,
+    "cv_finite_cases": 283,
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "expected_pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "source_checkout": "C:\\Users\\Dell\\Documents\\Codex\\2026-09-11\\https-github-com-cantera-cantera-https\\outputs\\cantera-original",
+  "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "checks": [
+    {
+      "check": "source_commit_exact",
+      "pass": true,
+      "expected": "726522be4e2a13454d8415b7ef799d621f665cf3",
+      "actual": "726522be4e2a13454d8415b7ef799d621f665cf3"
+    }
+  ],
+  "fixtures": [
+    {
+      "fixture": "audit\\wsl_oracle_data.json",
+      "sha256": "72701a5579ed60d1b9c7b55d8e47c66804f526dc8da52131ef9ff88b8369c57a",
+      "expected_sha256": "72701a5579ed60d1b9c7b55d8e47c66804f526dc8da52131ef9ff88b8369c57a",
+      "hash_matches_record": true,
+      "reported_commit": "726522be4",
+      "resolved_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+      "commit_matches_checkout": true,
+      "reported_version": "4.0.0a2",
+      "observed_shape": {
+        "thermo_10000": 10050,
+        "state_setters": 8,
+        "reactor_trajectories": 2
+      },
+      "expected_shape": {
+        "thermo_10000": 10050,
+        "state_setters": 8,
+        "reactor_trajectories": 2
+      },
+      "shape_matches": true,
+      "pass": true
+    },
+    {
+      "fixture": "provenance\\oracle_baseline_pinned.json",
+      "sha256": "4ffc6b1d07add187e71940f1dcbc14af39328b26abee7990713f8fb208e3623e",
+      "expected_sha256": "4ffc6b1d07add187e71940f1dcbc14af39328b26abee7990713f8fb208e3623e",
+      "hash_matches_record": true,
+      "reported_commit": "726522be4",
+      "resolved_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+      "commit_matches_checkout": true,
+      "reported_version": "4.0.0a2",
+      "observed_shape": {
+        "species_thermo": 5,
+        "states": 2
+      },
+      "expected_shape": {
+        "species_thermo": 5,
+        "states": 2
+      },
+      "shape_matches": true,
+      "pass": true
+    }
+  ],
+  "passed": true,
+  "native_fixture_regenerated_this_run": false,
+  "evidentiary_limit": "This verifies checkout identity, recorded artifact hashes, reported commit prefixes, and fixture structure. It does not independently reproduce the native build or prove how the archived bytes were generated."
+}

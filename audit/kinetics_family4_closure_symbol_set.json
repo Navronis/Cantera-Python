@@ -1,0 +1,3462 @@
+{
+  "include/cantera/kinetics/Group.h:103:valid": {
+    "canonical_index": 734,
+    "canonical_symbol_id": "include/cantera/kinetics/Group.h:103:valid",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      103,
+      103
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Group",
+    "native_method": "valid",
+    "native_source_definition": "include/cantera/kinetics/Group.h:103",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Group.valid",
+    "required_native_differential_test": "test_kinetics_family4_Group_valid",
+    "required_performance_test": "benchmark_family4_Group",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Atom and element groups for identifying reaction pathways and atom transfers",
+    "signature": "bool valid() const",
+    "stable_symbol_id": "include/cantera/kinetics/Group.h:103:valid"
+  },
+  "include/cantera/kinetics/Group.h:109:sign": {
+    "canonical_index": 735,
+    "canonical_symbol_id": "include/cantera/kinetics/Group.h:109:sign",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      109,
+      109
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Group",
+    "native_method": "sign",
+    "native_source_definition": "include/cantera/kinetics/Group.h:109",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Group.sign",
+    "required_native_differential_test": "test_kinetics_family4_Group_sign",
+    "required_performance_test": "benchmark_family4_Group",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Atom and element groups for identifying reaction pathways and atom transfers",
+    "signature": "int sign() const",
+    "stable_symbol_id": "include/cantera/kinetics/Group.h:109:sign"
+  },
+  "include/cantera/kinetics/Group.h:112:size": {
+    "canonical_index": 736,
+    "canonical_symbol_id": "include/cantera/kinetics/Group.h:112:size",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      112,
+      112
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Group",
+    "native_method": "size",
+    "native_source_definition": "include/cantera/kinetics/Group.h:112",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Group.size",
+    "required_native_differential_test": "test_kinetics_family4_Group_size",
+    "required_performance_test": "benchmark_family4_Group",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Atom and element groups for identifying reaction pathways and atom transfers",
+    "signature": "size_t size() const",
+    "stable_symbol_id": "include/cantera/kinetics/Group.h:112:size"
+  },
+  "include/cantera/kinetics/Group.h:117:nAtoms": {
+    "canonical_index": 737,
+    "canonical_symbol_id": "include/cantera/kinetics/Group.h:117:nAtoms",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      117,
+      117
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Group",
+    "native_method": "nAtoms",
+    "native_source_definition": "include/cantera/kinetics/Group.h:117",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Group.nAtoms",
+    "required_native_differential_test": "test_kinetics_family4_Group_nAtoms",
+    "required_performance_test": "benchmark_family4_Group",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Atom and element groups for identifying reaction pathways and atom transfers",
+    "signature": "int nAtoms() const",
+    "stable_symbol_id": "include/cantera/kinetics/Group.h:117:nAtoms"
+  },
+  "include/cantera/kinetics/Group.h:125:nAtoms": {
+    "canonical_index": 738,
+    "canonical_symbol_id": "include/cantera/kinetics/Group.h:125:nAtoms",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      125,
+      125
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Group",
+    "native_method": "nAtoms",
+    "native_source_definition": "include/cantera/kinetics/Group.h:125",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Group.nAtoms",
+    "required_native_differential_test": "test_kinetics_family4_Group_nAtoms",
+    "required_performance_test": "benchmark_family4_Group",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Atom and element groups for identifying reaction pathways and atom transfers",
+    "signature": "int nAtoms(size_t m) const",
+    "stable_symbol_id": "include/cantera/kinetics/Group.h:125:nAtoms"
+  },
+  "include/cantera/kinetics/Group.h:132:fmt": {
+    "canonical_index": 739,
+    "canonical_symbol_id": "include/cantera/kinetics/Group.h:132:fmt",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      132,
+      132
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Group",
+    "native_method": "fmt",
+    "native_source_definition": "include/cantera/kinetics/Group.h:132",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Group.fmt",
+    "required_native_differential_test": "test_kinetics_family4_Group_fmt",
+    "required_performance_test": "benchmark_family4_Group",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Atom and element groups for identifying reaction pathways and atom transfers",
+    "signature": "std::ostream& fmt(std::ostream& s, span<const string> esymbols) const",
+    "stable_symbol_id": "include/cantera/kinetics/Group.h:132:fmt"
+  },
+  "include/cantera/kinetics/Group.h:83:diff": {
+    "canonical_index": 731,
+    "canonical_symbol_id": "include/cantera/kinetics/Group.h:83:diff",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      83,
+      83
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Group",
+    "native_method": "diff",
+    "native_source_definition": "include/cantera/kinetics/Group.h:83",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Group.diff",
+    "required_native_differential_test": "test_kinetics_family4_Group_diff",
+    "required_performance_test": "benchmark_family4_Group",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Atom and element groups for identifying reaction pathways and atom transfers",
+    "signature": "Group diff(g1)",
+    "stable_symbol_id": "include/cantera/kinetics/Group.h:83:diff"
+  },
+  "include/cantera/kinetics/Group.h:88:sum": {
+    "canonical_index": 732,
+    "canonical_symbol_id": "include/cantera/kinetics/Group.h:88:sum",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      88,
+      88
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Group",
+    "native_method": "sum",
+    "native_source_definition": "include/cantera/kinetics/Group.h:88",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Group.sum",
+    "required_native_differential_test": "test_kinetics_family4_Group_sum",
+    "required_performance_test": "benchmark_family4_Group",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Atom and element groups for identifying reaction pathways and atom transfers",
+    "signature": "Group sum(g1)",
+    "stable_symbol_id": "include/cantera/kinetics/Group.h:88:sum"
+  },
+  "include/cantera/kinetics/Group.h:98:validate": {
+    "canonical_index": 733,
+    "canonical_symbol_id": "include/cantera/kinetics/Group.h:98:validate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      98,
+      98
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Group",
+    "native_method": "validate",
+    "native_source_definition": "include/cantera/kinetics/Group.h:98",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Group.validate",
+    "required_native_differential_test": "test_kinetics_family4_Group_validate",
+    "required_performance_test": "benchmark_family4_Group",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Atom and element groups for identifying reaction pathways and atom transfers",
+    "signature": "void validate()",
+    "stable_symbol_id": "include/cantera/kinetics/Group.h:98:validate"
+  },
+  "include/cantera/kinetics/KineticsFactory.h:24:factory": {
+    "canonical_index": 937,
+    "canonical_symbol_id": "include/cantera/kinetics/KineticsFactory.h:24:factory",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      24,
+      24
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "KineticsFactory",
+    "native_method": "factory",
+    "native_source_definition": "include/cantera/kinetics/KineticsFactory.h:24",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.KineticsFactory.factory",
+    "required_native_differential_test": "test_kinetics_family4_KineticsFactory_factory",
+    "required_performance_test": "benchmark_family4_KineticsFactory",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Factory for instantiating Kinetics and BulkKinetics managers from models",
+    "signature": "static KineticsFactory* factory()",
+    "stable_symbol_id": "include/cantera/kinetics/KineticsFactory.h:24:factory"
+  },
+  "include/cantera/kinetics/KineticsFactory.h:26:deleteFactory": {
+    "canonical_index": 938,
+    "canonical_symbol_id": "include/cantera/kinetics/KineticsFactory.h:26:deleteFactory",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      26,
+      26
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "KineticsFactory",
+    "native_method": "deleteFactory",
+    "native_source_definition": "include/cantera/kinetics/KineticsFactory.h:26",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.KineticsFactory.deleteFactory",
+    "required_native_differential_test": "test_kinetics_family4_KineticsFactory_deleteFactory",
+    "required_performance_test": "benchmark_family4_KineticsFactory",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Factory for instantiating Kinetics and BulkKinetics managers from models",
+    "signature": "void deleteFactory() override",
+    "stable_symbol_id": "include/cantera/kinetics/KineticsFactory.h:26:deleteFactory"
+  },
+  "include/cantera/kinetics/KineticsFactory.h:31:newKinetics": {
+    "canonical_index": 939,
+    "canonical_symbol_id": "include/cantera/kinetics/KineticsFactory.h:31:newKinetics",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      31,
+      31
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "KineticsFactory",
+    "native_method": "newKinetics",
+    "native_source_definition": "include/cantera/kinetics/KineticsFactory.h:31",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.KineticsFactory.newKinetics",
+    "required_native_differential_test": "test_kinetics_family4_KineticsFactory_newKinetics",
+    "required_performance_test": "benchmark_family4_KineticsFactory",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Factory for instantiating Kinetics and BulkKinetics managers from models",
+    "signature": "Kinetics* newKinetics(const string& model)",
+    "stable_symbol_id": "include/cantera/kinetics/KineticsFactory.h:31:newKinetics"
+  },
+  "include/cantera/kinetics/KineticsFactory.h:45:newKinetics": {
+    "canonical_index": 940,
+    "canonical_symbol_id": "include/cantera/kinetics/KineticsFactory.h:45:newKinetics",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      45,
+      45
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "newKinetics",
+    "native_source_definition": "include/cantera/kinetics/KineticsFactory.h:45",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.newKinetics",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_newKinetics",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "shared_ptr<Kinetics> newKinetics(const string& model)",
+    "stable_symbol_id": "include/cantera/kinetics/KineticsFactory.h:45:newKinetics"
+  },
+  "include/cantera/kinetics/Reaction.h:104:checkSpecies": {
+    "canonical_index": 1002,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:104:checkSpecies",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      104,
+      104
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "checkSpecies",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:104",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.checkSpecies",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_checkSpecies",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "bool checkSpecies(const Kinetics& kin) const",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:104:checkSpecies"
+  },
+  "include/cantera/kinetics/Reaction.h:108:usesElectrochemistry": {
+    "canonical_index": 1003,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:108:usesElectrochemistry",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      108,
+      108
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "usesElectrochemistry",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:108",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.usesElectrochemistry",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_usesElectrochemistry",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "bool usesElectrochemistry(const Kinetics& kin) const",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:108:usesElectrochemistry"
+  },
+  "include/cantera/kinetics/Reaction.h:147:rate": {
+    "canonical_index": 1004,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:147:rate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      147,
+      147
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "rate",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:147",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.rate",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_rate",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "shared_ptr<ReactionRate> rate()",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:147:rate"
+  },
+  "include/cantera/kinetics/Reaction.h:152:setRate": {
+    "canonical_index": 1005,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:152:setRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      152,
+      152
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "setRate",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:152",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.setRate",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_setRate",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "void setRate(shared_ptr<ReactionRate> rate)",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:152:setRate"
+  },
+  "include/cantera/kinetics/Reaction.h:155:thirdBody": {
+    "canonical_index": 1006,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:155:thirdBody",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      155,
+      155
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "thirdBody",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:155",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.thirdBody",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_thirdBody",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "shared_ptr<ThirdBody> thirdBody()",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:155:thirdBody"
+  },
+  "include/cantera/kinetics/Reaction.h:161:usesThirdBody": {
+    "canonical_index": 1007,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:161:usesThirdBody",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      161,
+      161
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "usesThirdBody",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:161",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.usesThirdBody",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_usesThirdBody",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "bool usesThirdBody() const",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:161:usesThirdBody"
+  },
+  "include/cantera/kinetics/Reaction.h:162:bool": {
+    "canonical_index": 1008,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:162:bool",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      162,
+      162
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "Reaction",
+    "native_method": "bool",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:162",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.bool",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_bool",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "return bool(m_third_body)",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:162:bool"
+  },
+  "include/cantera/kinetics/Reaction.h:171:registerSetRateCallback": {
+    "canonical_index": 1009,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:171:registerSetRateCallback",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      171,
+      171
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "registerSetRateCallback",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:171",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.registerSetRateCallback",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_registerSetRateCallback",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "void registerSetRateCallback(void* id, const function<void()>& callback)",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:171:registerSetRateCallback"
+  },
+  "include/cantera/kinetics/Reaction.h:175:removeSetRateCallback": {
+    "canonical_index": 1010,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:175:removeSetRateCallback",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      175,
+      175
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "removeSetRateCallback",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:175",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.removeSetRateCallback",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_removeSetRateCallback",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "void removeSetRateCallback(void* id)",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:175:removeSetRateCallback"
+  },
+  "include/cantera/kinetics/Reaction.h:181:getParameters": {
+    "canonical_index": 1011,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:181:getParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      181,
+      181
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:181",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.getParameters",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_getParameters",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "void getParameters(AnyMap& reactionNode) const",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:181:getParameters"
+  },
+  "include/cantera/kinetics/Reaction.h:40:reactantString": {
+    "canonical_index": 989,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:40:reactantString",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      40,
+      40
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "reactantString",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:40",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.reactantString",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_reactantString",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "string reactantString() const",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:40:reactantString"
+  },
+  "include/cantera/kinetics/Reaction.h:43:productString": {
+    "canonical_index": 990,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:43:productString",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      43,
+      43
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "productString",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:43",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.productString",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_productString",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "string productString() const",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:43:productString"
+  },
+  "include/cantera/kinetics/Reaction.h:46:equation": {
+    "canonical_index": 991,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:46:equation",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      46,
+      46
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "equation",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:46",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.equation",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_equation",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "string equation() const",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:46:equation"
+  },
+  "include/cantera/kinetics/Reaction.h:50:setEquation": {
+    "canonical_index": 992,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:50:setEquation",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      50,
+      50
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "setEquation",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:50",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.setEquation",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_setEquation",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "void setEquation(const string& equation, const Kinetics* kin=0)",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:50:setEquation"
+  },
+  "include/cantera/kinetics/Reaction.h:53:type": {
+    "canonical_index": 993,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:53:type",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      53,
+      53
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "type",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:53",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.type",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_type",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "string type() const",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:53:type"
+  },
+  "include/cantera/kinetics/Reaction.h:58:calculateRateCoeffUnits": {
+    "canonical_index": 994,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:58:calculateRateCoeffUnits",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      58,
+      58
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "calculateRateCoeffUnits",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:58",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.calculateRateCoeffUnits",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_calculateRateCoeffUnits",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "UnitStack calculateRateCoeffUnits(const Kinetics& kin)",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:58:calculateRateCoeffUnits"
+  },
+  "include/cantera/kinetics/Reaction.h:62:check": {
+    "canonical_index": 995,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:62:check",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      62,
+      62
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "check",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:62",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.check",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_check",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "void check()",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:62:check"
+  },
+  "include/cantera/kinetics/Reaction.h:66:validate": {
+    "canonical_index": 996,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:66:validate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      66,
+      66
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "validate",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:66",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.validate",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_validate",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "void validate(Kinetics& kin)",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:66:validate"
+  },
+  "include/cantera/kinetics/Reaction.h:78:parameters": {
+    "canonical_index": 997,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:78:parameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      78,
+      78
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "parameters",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:78",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.parameters",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_parameters",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "AnyMap parameters(bool withInput=true) const",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:78:parameters"
+  },
+  "include/cantera/kinetics/Reaction.h:81:setParameters": {
+    "canonical_index": 998,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:81:setParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      81,
+      81
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "setParameters",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:81",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.setParameters",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_setParameters",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "void setParameters(const AnyMap& node, const Kinetics& kin)",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:81:setParameters"
+  },
+  "include/cantera/kinetics/Reaction.h:84:valid": {
+    "canonical_index": 999,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:84:valid",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      84,
+      84
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "valid",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:84",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.valid",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_valid",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "bool valid() const",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:84:valid"
+  },
+  "include/cantera/kinetics/Reaction.h:89:setValid": {
+    "canonical_index": 1000,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:89:setValid",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      89,
+      89
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "setValid",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:89",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.setValid",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_setValid",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "void setValid(bool valid)",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:89:setValid"
+  },
+  "include/cantera/kinetics/Reaction.h:97:checkBalance": {
+    "canonical_index": 1001,
+    "canonical_symbol_id": "include/cantera/kinetics/Reaction.h:97:checkBalance",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      97,
+      97
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Reaction",
+    "native_method": "checkBalance",
+    "native_source_definition": "include/cantera/kinetics/Reaction.h:97",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Reaction.checkBalance",
+    "required_native_differential_test": "test_kinetics_family4_Reaction_checkBalance",
+    "required_performance_test": "benchmark_family4_Reaction",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Reaction definition, equation parsing, stoichiometry, and rate/third-body linkage",
+    "signature": "void checkBalance(const Kinetics& kin) const",
+    "stable_symbol_id": "include/cantera/kinetics/Reaction.h:97:checkBalance"
+  },
+  "include/cantera/kinetics/ReactionPath.h:102:begin": {
+    "canonical_index": 1037,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:102:begin",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      102,
+      102
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Path",
+    "native_method": "begin",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:102",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Path.begin",
+    "required_native_differential_test": "test_kinetics_family4_Path_begin",
+    "required_performance_test": "benchmark_family4_Path",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Net flux and reaction contributions between species nodes in reaction path diagram",
+    "signature": "const SpeciesNode* begin() const",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:102:begin"
+  },
+  "include/cantera/kinetics/ReactionPath.h:105:begin": {
+    "canonical_index": 1038,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:105:begin",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      105,
+      105
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Path",
+    "native_method": "begin",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:105",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Path.begin",
+    "required_native_differential_test": "test_kinetics_family4_Path_begin",
+    "required_performance_test": "benchmark_family4_Path",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Net flux and reaction contributions between species nodes in reaction path diagram",
+    "signature": "SpeciesNode* begin()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:105:begin"
+  },
+  "include/cantera/kinetics/ReactionPath.h:110:end": {
+    "canonical_index": 1039,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:110:end",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      110,
+      110
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Path",
+    "native_method": "end",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:110",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Path.end",
+    "required_native_differential_test": "test_kinetics_family4_Path_end",
+    "required_performance_test": "benchmark_family4_Path",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Net flux and reaction contributions between species nodes in reaction path diagram",
+    "signature": "const SpeciesNode* end() const",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:110:end"
+  },
+  "include/cantera/kinetics/ReactionPath.h:113:end": {
+    "canonical_index": 1040,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:113:end",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      113,
+      113
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Path",
+    "native_method": "end",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:113",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Path.end",
+    "required_native_differential_test": "test_kinetics_family4_Path_end",
+    "required_performance_test": "benchmark_family4_Path",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Net flux and reaction contributions between species nodes in reaction path diagram",
+    "signature": "SpeciesNode* end()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:113:end"
+  },
+  "include/cantera/kinetics/ReactionPath.h:121:otherNode": {
+    "canonical_index": 1041,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:121:otherNode",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      121,
+      121
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Path",
+    "native_method": "otherNode",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:121",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Path.otherNode",
+    "required_native_differential_test": "test_kinetics_family4_Path_otherNode",
+    "required_performance_test": "benchmark_family4_Path",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Net flux and reaction contributions between species nodes in reaction path diagram",
+    "signature": "SpeciesNode* otherNode(SpeciesNode* n)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:121:otherNode"
+  },
+  "include/cantera/kinetics/ReactionPath.h:126:flow": {
+    "canonical_index": 1042,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:126:flow",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      126,
+      126
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Path",
+    "native_method": "flow",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:126",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Path.flow",
+    "required_native_differential_test": "test_kinetics_family4_Path_flow",
+    "required_performance_test": "benchmark_family4_Path",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Net flux and reaction contributions between species nodes in reaction path diagram",
+    "signature": "double flow()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:126:flow"
+  },
+  "include/cantera/kinetics/ReactionPath.h:129:setFlow": {
+    "canonical_index": 1043,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:129:setFlow",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      129,
+      129
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Path",
+    "native_method": "setFlow",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:129",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Path.setFlow",
+    "required_native_differential_test": "test_kinetics_family4_Path_setFlow",
+    "required_performance_test": "benchmark_family4_Path",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Net flux and reaction contributions between species nodes in reaction path diagram",
+    "signature": "void setFlow(double v)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:129:setFlow"
+  },
+  "include/cantera/kinetics/ReactionPath.h:134:nReactions": {
+    "canonical_index": 1044,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:134:nReactions",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      134,
+      134
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Path",
+    "native_method": "nReactions",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:134",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Path.nReactions",
+    "required_native_differential_test": "test_kinetics_family4_Path_nReactions",
+    "required_performance_test": "benchmark_family4_Path",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Net flux and reaction contributions between species nodes in reaction path diagram",
+    "signature": "int nReactions()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:134:nReactions"
+  },
+  "include/cantera/kinetics/ReactionPath.h:139:reactionMap": {
+    "canonical_index": 1045,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:139:reactionMap",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      139,
+      139
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Path",
+    "native_method": "reactionMap",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:139",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Path.reactionMap",
+    "required_native_differential_test": "test_kinetics_family4_Path_reactionMap",
+    "required_performance_test": "benchmark_family4_Path",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Net flux and reaction contributions between species nodes in reaction path diagram",
+    "signature": "const rxn_path_map& reactionMap()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:139:reactionMap"
+  },
+  "include/cantera/kinetics/ReactionPath.h:147:writeLabel": {
+    "canonical_index": 1046,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:147:writeLabel",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      147,
+      147
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Path",
+    "native_method": "writeLabel",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:147",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Path.writeLabel",
+    "required_native_differential_test": "test_kinetics_family4_Path_writeLabel",
+    "required_performance_test": "benchmark_family4_Path",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Net flux and reaction contributions between species nodes in reaction path diagram",
+    "signature": "void writeLabel(std::ostream& s, double threshold = 0.005)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:147:writeLabel"
+  },
+  "include/cantera/kinetics/ReactionPath.h:180:maxFlow": {
+    "canonical_index": 1047,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:180:maxFlow",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      180,
+      180
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "maxFlow",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:180",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.maxFlow",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_maxFlow",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "double maxFlow()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:180:maxFlow"
+  },
+  "include/cantera/kinetics/ReactionPath.h:185:netFlow": {
+    "canonical_index": 1048,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:185:netFlow",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      185,
+      185
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "netFlow",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:185",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.netFlow",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_netFlow",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "double netFlow(size_t k1, size_t k2)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:185:netFlow"
+  },
+  "include/cantera/kinetics/ReactionPath.h:186:flow": {
+    "canonical_index": 1049,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:186:flow",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      186,
+      186
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "flow",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:186",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.flow",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_flow",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "return flow(k1, k2) - flow(k2, k1)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:186:flow"
+  },
+  "include/cantera/kinetics/ReactionPath.h:190:flow": {
+    "canonical_index": 1050,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:190:flow",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      190,
+      190
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "flow",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:190",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.flow",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_flow",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "double flow(size_t k1, size_t k2)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:190:flow"
+  },
+  "include/cantera/kinetics/ReactionPath.h:195:hasNode": {
+    "canonical_index": 1051,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:195:hasNode",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      195,
+      195
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "hasNode",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:195",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.hasNode",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_hasNode",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "bool hasNode(size_t k)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:195:hasNode"
+  },
+  "include/cantera/kinetics/ReactionPath.h:199:writeData": {
+    "canonical_index": 1052,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:199:writeData",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      199,
+      199
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "writeData",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:199",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.writeData",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_writeData",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void writeData(std::ostream& s)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:199:writeData"
+  },
+  "include/cantera/kinetics/ReactionPath.h:205:getData": {
+    "canonical_index": 1053,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:205:getData",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      205,
+      205
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "getData",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:205",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.getData",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_getData",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "string getData()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:205:getData"
+  },
+  "include/cantera/kinetics/ReactionPath.h:219:exportToDot": {
+    "canonical_index": 1054,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:219:exportToDot",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      219,
+      219
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "exportToDot",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:219",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.exportToDot",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_exportToDot",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void exportToDot(std::ostream& s)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:219:exportToDot"
+  },
+  "include/cantera/kinetics/ReactionPath.h:227:getDot": {
+    "canonical_index": 1055,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:227:getDot",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      227,
+      227
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "getDot",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:227",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.getDot",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_getDot",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "string getDot()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:227:getDot"
+  },
+  "include/cantera/kinetics/ReactionPath.h:229:add": {
+    "canonical_index": 1056,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:229:add",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      229,
+      229
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "add",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:229",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.add",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_add",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void add(ReactionPathDiagram& d)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:229:add"
+  },
+  "include/cantera/kinetics/ReactionPath.h:232:add": {
+    "canonical_index": 1057,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:232:add",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      232,
+      232
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "add",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:232",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.add",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_add",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void add(shared_ptr<ReactionPathDiagram> d)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:232:add"
+  },
+  "include/cantera/kinetics/ReactionPath.h:234:node": {
+    "canonical_index": 1058,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:234:node",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      234,
+      234
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "node",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:234",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.node",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_node",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "SpeciesNode* node(size_t k)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:234:node"
+  },
+  "include/cantera/kinetics/ReactionPath.h:237:path": {
+    "canonical_index": 1059,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:237:path",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      237,
+      237
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "path",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:237",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.path",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_path",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "Path* path(size_t k1, size_t k2)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:237:path"
+  },
+  "include/cantera/kinetics/ReactionPath.h:240:path": {
+    "canonical_index": 1060,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:240:path",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      240,
+      240
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "path",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:240",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.path",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_path",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "Path* path(size_t n)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:240:path"
+  },
+  "include/cantera/kinetics/ReactionPath.h:243:nPaths": {
+    "canonical_index": 1061,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:243:nPaths",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      243,
+      243
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "nPaths",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:243",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.nPaths",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_nPaths",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "size_t nPaths()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:243:nPaths"
+  },
+  "include/cantera/kinetics/ReactionPath.h:246:nNodes": {
+    "canonical_index": 1062,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:246:nNodes",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      246,
+      246
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "nNodes",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:246",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.nNodes",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_nNodes",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "size_t nNodes()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:246:nNodes"
+  },
+  "include/cantera/kinetics/ReactionPath.h:250:addNode": {
+    "canonical_index": 1063,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:250:addNode",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      250,
+      250
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "addNode",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:250",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.addNode",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_addNode",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void addNode(size_t k, const string& nm, double x = 0.0)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:250:addNode"
+  },
+  "include/cantera/kinetics/ReactionPath.h:254:displayOnly": {
+    "canonical_index": 1064,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:254:displayOnly",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      254,
+      254
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "displayOnly",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:254",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.displayOnly",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_displayOnly",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void displayOnly(size_t k=npos)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:254:displayOnly"
+  },
+  "include/cantera/kinetics/ReactionPath.h:258:linkNodes": {
+    "canonical_index": 1065,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:258:linkNodes",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      258,
+      258
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "linkNodes",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:258",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.linkNodes",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_linkNodes",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void linkNodes(size_t k1, size_t k2, size_t rxn, double value, string legend = \"\")",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:258:linkNodes"
+  },
+  "include/cantera/kinetics/ReactionPath.h:260:include": {
+    "canonical_index": 1066,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:260:include",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      260,
+      260
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "include",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:260",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.include",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_include",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void include(const string& aaname)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:260:include"
+  },
+  "include/cantera/kinetics/ReactionPath.h:263:exclude": {
+    "canonical_index": 1067,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:263:exclude",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      263,
+      263
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "exclude",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:263",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.exclude",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_exclude",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void exclude(const string& aaname)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:263:exclude"
+  },
+  "include/cantera/kinetics/ReactionPath.h:266:include": {
+    "canonical_index": 1068,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:266:include",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      266,
+      266
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "include",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:266",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.include",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_include",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void include(span<string> names)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:266:include"
+  },
+  "include/cantera/kinetics/ReactionPath.h:271:exclude": {
+    "canonical_index": 1069,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:271:exclude",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      271,
+      271
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "exclude",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:271",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.exclude",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_exclude",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void exclude(span<string> names)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:271:exclude"
+  },
+  "include/cantera/kinetics/ReactionPath.h:276:included": {
+    "canonical_index": 1070,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:276:included",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      276,
+      276
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "included",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:276",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.included",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_included",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "const span<const string> included() const",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:276:included"
+  },
+  "include/cantera/kinetics/ReactionPath.h:279:excluded": {
+    "canonical_index": 1071,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:279:excluded",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      279,
+      279
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "excluded",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:279",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.excluded",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_excluded",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "const span<const string> excluded() const",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:279:excluded"
+  },
+  "include/cantera/kinetics/ReactionPath.h:282:species": {
+    "canonical_index": 1072,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:282:species",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      282,
+      282
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "species",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:282",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.species",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_species",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "vector<size_t> species()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:282:species"
+  },
+  "include/cantera/kinetics/ReactionPath.h:283:reactions": {
+    "canonical_index": 1073,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:283:reactions",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      283,
+      283
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "reactions",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:283",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.reactions",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_reactions",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "vector<int> reactions()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:283:reactions"
+  },
+  "include/cantera/kinetics/ReactionPath.h:289:findMajorPaths": {
+    "canonical_index": 1074,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:289:findMajorPaths",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      289,
+      289
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "findMajorPaths",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:289",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.findMajorPaths",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_findMajorPaths",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void findMajorPaths(double threshold, size_t lda, span<double> a)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:289:findMajorPaths"
+  },
+  "include/cantera/kinetics/ReactionPath.h:292:setFont": {
+    "canonical_index": 1075,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:292:setFont",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      292,
+      292
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "setFont",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:292",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.setFont",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_setFont",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void setFont(const string& font)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:292:setFont"
+  },
+  "include/cantera/kinetics/ReactionPath.h:297:flowType": {
+    "canonical_index": 1076,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:297:flowType",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      297,
+      297
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "flowType",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:297",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.flowType",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_flowType",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "const string flowType() const",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:297:flowType"
+  },
+  "include/cantera/kinetics/ReactionPath.h:300:setFlowType": {
+    "canonical_index": 1077,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:300:setFlowType",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      300,
+      300
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "setFlowType",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:300",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.setFlowType",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_setFlowType",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void setFlowType(const string& fType)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:300:setFlowType"
+  },
+  "include/cantera/kinetics/ReactionPath.h:307:build": {
+    "canonical_index": 1078,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:307:build",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      307,
+      307
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "build",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:307",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.build",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_build",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "void build()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:307:build"
+  },
+  "include/cantera/kinetics/ReactionPath.h:310:getLog": {
+    "canonical_index": 1079,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:310:getLog",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      310,
+      310
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathDiagram",
+    "native_method": "getLog",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:310",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram.getLog",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathDiagram_getLog",
+    "required_performance_test": "benchmark_family4_ReactionPathDiagram",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Reaction path analysis and diagram generation for flux visualization",
+    "signature": "string getLog()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:310:getLog"
+  },
+  "include/cantera/kinetics/ReactionPath.h:370:init": {
+    "canonical_index": 1080,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:370:init",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      370,
+      370
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathBuilder",
+    "native_method": "init",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:370",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathBuilder.init",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathBuilder_init",
+    "required_performance_test": "benchmark_family4_ReactionPathBuilder",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Builder algorithm for discovering reaction path topology and elemental flows",
+    "signature": "int init(std::ostream& logfile, Kinetics& s)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:370:init"
+  },
+  "include/cantera/kinetics/ReactionPath.h:376:findGroups": {
+    "canonical_index": 1081,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:376:findGroups",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      376,
+      376
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathBuilder",
+    "native_method": "findGroups",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:376",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathBuilder.findGroups",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathBuilder_findGroups",
+    "required_performance_test": "benchmark_family4_ReactionPathBuilder",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Builder algorithm for discovering reaction path topology and elemental flows",
+    "signature": "int findGroups(std::ostream& logfile, Kinetics& s)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:376:findGroups"
+  },
+  "include/cantera/kinetics/ReactionPath.h:379:findElements": {
+    "canonical_index": 1082,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:379:findElements",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      379,
+      379
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionPathBuilder",
+    "native_method": "findElements",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:379",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathBuilder.findElements",
+    "required_native_differential_test": "test_kinetics_family4_ReactionPathBuilder_findElements",
+    "required_performance_test": "benchmark_family4_ReactionPathBuilder",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Builder algorithm for discovering reaction path topology and elemental flows",
+    "signature": "void findElements(Kinetics& kin)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:379:findElements"
+  },
+  "include/cantera/kinetics/ReactionPath.h:47:path": {
+    "canonical_index": 1028,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:47:path",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      47,
+      47
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "SpeciesNode",
+    "native_method": "path",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:47",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.SpeciesNode.path",
+    "required_native_differential_test": "test_kinetics_family4_SpeciesNode_path",
+    "required_performance_test": "benchmark_family4_SpeciesNode",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Species node in reaction path diagram tracking inflows, outflows, and paths",
+    "signature": "Path* path(int n)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:47:path"
+  },
+  "include/cantera/kinetics/ReactionPath.h:50:path": {
+    "canonical_index": 1029,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:50:path",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      50,
+      50
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "SpeciesNode",
+    "native_method": "path",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:50",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.SpeciesNode.path",
+    "required_native_differential_test": "test_kinetics_family4_SpeciesNode_path",
+    "required_performance_test": "benchmark_family4_SpeciesNode",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Species node in reaction path diagram tracking inflows, outflows, and paths",
+    "signature": "const Path* path(int n) const",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:50:path"
+  },
+  "include/cantera/kinetics/ReactionPath.h:56:nPaths": {
+    "canonical_index": 1030,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:56:nPaths",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      56,
+      56
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "SpeciesNode",
+    "native_method": "nPaths",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:56",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.SpeciesNode.nPaths",
+    "required_native_differential_test": "test_kinetics_family4_SpeciesNode_nPaths",
+    "required_performance_test": "benchmark_family4_SpeciesNode",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Species node in reaction path diagram tracking inflows, outflows, and paths",
+    "signature": "int nPaths() const",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:56:nPaths"
+  },
+  "include/cantera/kinetics/ReactionPath.h:61:addPath": {
+    "canonical_index": 1031,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:61:addPath",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      61,
+      61
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "SpeciesNode",
+    "native_method": "addPath",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:61",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.SpeciesNode.addPath",
+    "required_native_differential_test": "test_kinetics_family4_SpeciesNode_addPath",
+    "required_performance_test": "benchmark_family4_SpeciesNode",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Species node in reaction path diagram tracking inflows, outflows, and paths",
+    "signature": "void addPath(Path* path)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:61:addPath"
+  },
+  "include/cantera/kinetics/ReactionPath.h:63:outflow": {
+    "canonical_index": 1032,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:63:outflow",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      63,
+      63
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "SpeciesNode",
+    "native_method": "outflow",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:63",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.SpeciesNode.outflow",
+    "required_native_differential_test": "test_kinetics_family4_SpeciesNode_outflow",
+    "required_performance_test": "benchmark_family4_SpeciesNode",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Species node in reaction path diagram tracking inflows, outflows, and paths",
+    "signature": "double outflow()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:63:outflow"
+  },
+  "include/cantera/kinetics/ReactionPath.h:66:inflow": {
+    "canonical_index": 1033,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:66:inflow",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      66,
+      66
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "SpeciesNode",
+    "native_method": "inflow",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:66",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.SpeciesNode.inflow",
+    "required_native_differential_test": "test_kinetics_family4_SpeciesNode_inflow",
+    "required_performance_test": "benchmark_family4_SpeciesNode",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Species node in reaction path diagram tracking inflows, outflows, and paths",
+    "signature": "double inflow()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:66:inflow"
+  },
+  "include/cantera/kinetics/ReactionPath.h:69:netOutflow": {
+    "canonical_index": 1034,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:69:netOutflow",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      69,
+      69
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "SpeciesNode",
+    "native_method": "netOutflow",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:69",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.SpeciesNode.netOutflow",
+    "required_native_differential_test": "test_kinetics_family4_SpeciesNode_netOutflow",
+    "required_performance_test": "benchmark_family4_SpeciesNode",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Species node in reaction path diagram tracking inflows, outflows, and paths",
+    "signature": "double netOutflow()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:69:netOutflow"
+  },
+  "include/cantera/kinetics/ReactionPath.h:73:printPaths": {
+    "canonical_index": 1035,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:73:printPaths",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      73,
+      73
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "SpeciesNode",
+    "native_method": "printPaths",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:73",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.SpeciesNode.printPaths",
+    "required_native_differential_test": "test_kinetics_family4_SpeciesNode_printPaths",
+    "required_performance_test": "benchmark_family4_SpeciesNode",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Species node in reaction path diagram tracking inflows, outflows, and paths",
+    "signature": "void printPaths()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:73:printPaths"
+  },
+  "include/cantera/kinetics/ReactionPath.h:99:addReaction": {
+    "canonical_index": 1036,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionPath.h:99:addReaction",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      99,
+      99
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "Path",
+    "native_method": "addReaction",
+    "native_source_definition": "include/cantera/kinetics/ReactionPath.h:99",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.Path.addReaction",
+    "required_native_differential_test": "test_kinetics_family4_Path_addReaction",
+    "required_performance_test": "benchmark_family4_Path",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Net flux and reaction contributions between species nodes in reaction path diagram",
+    "signature": "void addReaction(size_t rxnNumber, double value, const string& label = \"\")",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionPath.h:99:addReaction"
+  },
+  "include/cantera/kinetics/ReactionRateFactory.h:102:newReactionRate": {
+    "canonical_index": 1121,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionRateFactory.h:102:newReactionRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      102,
+      102
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "newReactionRate",
+    "native_source_definition": "include/cantera/kinetics/ReactionRateFactory.h:102",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.newReactionRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_newReactionRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "shared_ptr<ReactionRate> newReactionRate(const AnyMap& rate_node)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionRateFactory.h:102:newReactionRate"
+  },
+  "include/cantera/kinetics/ReactionRateFactory.h:65:factory": {
+    "canonical_index": 1118,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionRateFactory.h:65:factory",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      65,
+      65
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionRateFactory",
+    "native_method": "factory",
+    "native_source_definition": "include/cantera/kinetics/ReactionRateFactory.h:65",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.rates.ReactionRateFactory.factory",
+    "required_native_differential_test": "test_kinetics_family4_ReactionRateFactory_factory",
+    "required_performance_test": "benchmark_family4_ReactionRateFactory",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Factory for instantiating ReactionRate objects from type or AnyMap nodes",
+    "signature": "static ReactionRateFactory* factory()",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionRateFactory.h:65:factory"
+  },
+  "include/cantera/kinetics/ReactionRateFactory.h:67:deleteFactory": {
+    "canonical_index": 1119,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionRateFactory.h:67:deleteFactory",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      67,
+      67
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "ReactionRateFactory",
+    "native_method": "deleteFactory",
+    "native_source_definition": "include/cantera/kinetics/ReactionRateFactory.h:67",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.rates.ReactionRateFactory.deleteFactory",
+    "required_native_differential_test": "test_kinetics_family4_ReactionRateFactory_deleteFactory",
+    "required_performance_test": "benchmark_family4_ReactionRateFactory",
+    "runtime_callers": [
+      "cantera_python.kinetics.Kinetics",
+      "cantera_python.solution.Solution",
+      "cantera_python.mechanism.MechanismLoader"
+    ],
+    "scientific_responsibility": "Factory for instantiating ReactionRate objects from type or AnyMap nodes",
+    "signature": "void deleteFactory() override",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionRateFactory.h:67:deleteFactory"
+  },
+  "include/cantera/kinetics/ReactionRateFactory.h:87:newReactionRate": {
+    "canonical_index": 1120,
+    "canonical_symbol_id": "include/cantera/kinetics/ReactionRateFactory.h:87:newReactionRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      87,
+      87
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "newReactionRate",
+    "native_source_definition": "include/cantera/kinetics/ReactionRateFactory.h:87",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.newReactionRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_newReactionRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "shared_ptr<ReactionRate> newReactionRate(const string& type)",
+    "stable_symbol_id": "include/cantera/kinetics/ReactionRateFactory.h:87:newReactionRate"
+  },
+  "src/kinetics/KineticsFactory.cpp:105:newKinetics": {
+    "canonical_index": 4616,
+    "canonical_symbol_id": "src/kinetics/KineticsFactory.cpp:105:newKinetics",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      105,
+      105
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "newKinetics",
+    "native_source_definition": "src/kinetics/KineticsFactory.cpp:105",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.newKinetics",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_newKinetics",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return newKinetics(phases, phaseNode, root)",
+    "stable_symbol_id": "src/kinetics/KineticsFactory.cpp:105:newKinetics"
+  },
+  "src/kinetics/KineticsFactory.cpp:177:fileName": {
+    "canonical_index": 4617,
+    "canonical_symbol_id": "src/kinetics/KineticsFactory.cpp:177:fileName",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      177,
+      177
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "fileName",
+    "native_source_definition": "src/kinetics/KineticsFactory.cpp:177",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.fileName",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_fileName",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "string fileName (sections[i].begin(), slash.begin())",
+    "stable_symbol_id": "src/kinetics/KineticsFactory.cpp:177:fileName"
+  },
+  "src/kinetics/KineticsFactory.cpp:178:node": {
+    "canonical_index": 4618,
+    "canonical_symbol_id": "src/kinetics/KineticsFactory.cpp:178:node",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      178,
+      178
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "node",
+    "native_source_definition": "src/kinetics/KineticsFactory.cpp:178",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.node",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_node",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "string node(slash.end(), sections[i].end())",
+    "stable_symbol_id": "src/kinetics/KineticsFactory.cpp:178:node"
+  },
+  "src/kinetics/KineticsFactory.cpp:210:CanteraError": {
+    "canonical_index": 4619,
+    "canonical_symbol_id": "src/kinetics/KineticsFactory.cpp:210:CanteraError",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      210,
+      210
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "CanteraError",
+    "native_source_definition": "src/kinetics/KineticsFactory.cpp:210",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.CanteraError",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_CanteraError",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "throw CanteraError(\"addReactions\", to_string(add_rxn_err))",
+    "stable_symbol_id": "src/kinetics/KineticsFactory.cpp:210:CanteraError"
+  },
+  "src/kinetics/KineticsFactory.cpp:41:lock": {
+    "canonical_index": 4611,
+    "canonical_symbol_id": "src/kinetics/KineticsFactory.cpp:41:lock",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      41,
+      41
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "lock",
+    "native_source_definition": "src/kinetics/KineticsFactory.cpp:41",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.lock",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_lock",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "std::unique_lock<std::mutex> lock(kinetics_mutex)",
+    "stable_symbol_id": "src/kinetics/KineticsFactory.cpp:41:lock"
+  },
+  "src/kinetics/KineticsFactory.cpp:49:lock": {
+    "canonical_index": 4612,
+    "canonical_symbol_id": "src/kinetics/KineticsFactory.cpp:49:lock",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      49,
+      49
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "lock",
+    "native_source_definition": "src/kinetics/KineticsFactory.cpp:49",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.lock",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_lock",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "std::unique_lock<std::mutex> lock(kinetics_mutex)",
+    "stable_symbol_id": "src/kinetics/KineticsFactory.cpp:49:lock"
+  },
+  "src/kinetics/KineticsFactory.cpp:56:create": {
+    "canonical_index": 4613,
+    "canonical_symbol_id": "src/kinetics/KineticsFactory.cpp:56:create",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      56,
+      56
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "create",
+    "native_source_definition": "src/kinetics/KineticsFactory.cpp:56",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.create",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_create",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return create(toLowerCopy(model))",
+    "stable_symbol_id": "src/kinetics/KineticsFactory.cpp:56:create"
+  },
+  "src/kinetics/KineticsFactory.cpp:61:kin": {
+    "canonical_index": 4614,
+    "canonical_symbol_id": "src/kinetics/KineticsFactory.cpp:61:kin",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      61,
+      61
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "kin",
+    "native_source_definition": "src/kinetics/KineticsFactory.cpp:61",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.kin",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_kin",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "shared_ptr<Kinetics> kin(KineticsFactory::factory()->newKinetics(model))",
+    "stable_symbol_id": "src/kinetics/KineticsFactory.cpp:61:kin"
+  },
+  "src/kinetics/KineticsFactory.cpp:86:kin": {
+    "canonical_index": 4615,
+    "canonical_symbol_id": "src/kinetics/KineticsFactory.cpp:86:kin",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      86,
+      86
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "kin",
+    "native_source_definition": "src/kinetics/KineticsFactory.cpp:86",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.kin",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_kin",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "shared_ptr<Kinetics> kin(KineticsFactory::factory()->newKinetics(kinType))",
+    "stable_symbol_id": "src/kinetics/KineticsFactory.cpp:86:kin"
+  },
+  "src/kinetics/ReactionPath.cpp:31:CanteraError": {
+    "canonical_index": 4626,
+    "canonical_symbol_id": "src/kinetics/ReactionPath.cpp:31:CanteraError",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      31,
+      31
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "CanteraError",
+    "native_source_definition": "src/kinetics/ReactionPath.cpp:31",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.CanteraError",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_CanteraError",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "throw CanteraError(\"SpeciesNode::addPath\", \"path added to wrong node\")",
+    "stable_symbol_id": "src/kinetics/ReactionPath.cpp:31:CanteraError"
+  },
+  "src/kinetics/ReactionPath.cpp:611:allProducts": {
+    "canonical_index": 4627,
+    "canonical_symbol_id": "src/kinetics/ReactionPath.cpp:611:allProducts",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      611,
+      611
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "allProducts",
+    "native_source_definition": "src/kinetics/ReactionPath.cpp:611",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.allProducts",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_allProducts",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "vector<vector<size_t>> allProducts(m_nr)",
+    "stable_symbol_id": "src/kinetics/ReactionPath.cpp:611:allProducts"
+  },
+  "src/kinetics/ReactionPath.cpp:612:allReactants": {
+    "canonical_index": 4628,
+    "canonical_symbol_id": "src/kinetics/ReactionPath.cpp:612:allReactants",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      612,
+      612
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "allReactants",
+    "native_source_definition": "src/kinetics/ReactionPath.cpp:612",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.allReactants",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_allReactants",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "vector<vector<size_t>> allReactants(m_nr)",
+    "stable_symbol_id": "src/kinetics/ReactionPath.cpp:612:allReactants"
+  },
+  "src/kinetics/ReactionPath.cpp:677:comp": {
+    "canonical_index": 4629,
+    "canonical_symbol_id": "src/kinetics/ReactionPath.cpp:677:comp",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      677,
+      677
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "comp",
+    "native_source_definition": "src/kinetics/ReactionPath.cpp:677",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.comp",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_comp",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "vector<int> comp(m_nel)",
+    "stable_symbol_id": "src/kinetics/ReactionPath.cpp:677:comp"
+  },
+  "src/kinetics/ReactionPath.cpp:755:status": {
+    "canonical_index": 4630,
+    "canonical_symbol_id": "src/kinetics/ReactionPath.cpp:755:status",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      755,
+      755
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "status",
+    "native_source_definition": "src/kinetics/ReactionPath.cpp:755",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.status",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_status",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "vector<int> status(s.nTotalSpecies(), 0)",
+    "stable_symbol_id": "src/kinetics/ReactionPath.cpp:755:status"
+  },
+  "src/kinetics/ReactionPath.cpp:866:ReactionPathDiagram": {
+    "canonical_index": 4631,
+    "canonical_symbol_id": "src/kinetics/ReactionPath.cpp:866:ReactionPathDiagram",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      866,
+      866
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "ReactionPathDiagram",
+    "native_source_definition": "src/kinetics/ReactionPath.cpp:866",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ReactionPathDiagram",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_ReactionPathDiagram",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "new ReactionPathDiagram(kin, element))",
+    "stable_symbol_id": "src/kinetics/ReactionPath.cpp:866:ReactionPathDiagram"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:100:TsangRate": {
+    "canonical_index": 4646,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:100:TsangRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      100,
+      100
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "TsangRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:100",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.TsangRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_TsangRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new TsangRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:100:TsangRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:105:PlogRate": {
+    "canonical_index": 4647,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:105:PlogRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      105,
+      105
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "PlogRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:105",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.PlogRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_PlogRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new PlogRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:105:PlogRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:110:LinearBurkeRate": {
+    "canonical_index": 4648,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:110:LinearBurkeRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      110,
+      110
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "LinearBurkeRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:110",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.LinearBurkeRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_LinearBurkeRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new LinearBurkeRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:110:LinearBurkeRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:115:ChebyshevRate": {
+    "canonical_index": 4649,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:115:ChebyshevRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      115,
+      115
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "ChebyshevRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:115",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ChebyshevRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_ChebyshevRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new ChebyshevRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:115:ChebyshevRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:120:CustomFunc1Rate": {
+    "canonical_index": 4650,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:120:CustomFunc1Rate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      120,
+      120
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "CustomFunc1Rate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:120",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.CustomFunc1Rate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_CustomFunc1Rate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new CustomFunc1Rate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:120:CustomFunc1Rate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:125:InterfaceArrheniusRate": {
+    "canonical_index": 4651,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:125:InterfaceArrheniusRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      125,
+      125
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "InterfaceArrheniusRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:125",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.InterfaceArrheniusRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_InterfaceArrheniusRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new InterfaceArrheniusRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:125:InterfaceArrheniusRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:130:StickingArrheniusRate": {
+    "canonical_index": 4652,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:130:StickingArrheniusRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      130,
+      130
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "StickingArrheniusRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:130",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.StickingArrheniusRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_StickingArrheniusRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new StickingArrheniusRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:130:StickingArrheniusRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:135:InterfaceBlowersMaselRate": {
+    "canonical_index": 4653,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:135:InterfaceBlowersMaselRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      135,
+      135
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "InterfaceBlowersMaselRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:135",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.InterfaceBlowersMaselRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_InterfaceBlowersMaselRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new InterfaceBlowersMaselRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:135:InterfaceBlowersMaselRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:140:StickingBlowersMaselRate": {
+    "canonical_index": 4654,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:140:StickingBlowersMaselRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      140,
+      140
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "StickingBlowersMaselRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:140",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.StickingBlowersMaselRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_StickingBlowersMaselRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new StickingBlowersMaselRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:140:StickingBlowersMaselRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:145:lock": {
+    "canonical_index": 4655,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:145:lock",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      145,
+      145
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "lock",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:145",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.lock",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_lock",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "std::unique_lock<std::mutex> lock(rate_mutex)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:145:lock"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:153:lock": {
+    "canonical_index": 4656,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:153:lock",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      153,
+      153
+    ],
+    "missing_implementation_logic": "Exact differential parity against native ReactionPath / Reaction C++ oracle.",
+    "native_class": "FreeFunctions",
+    "native_method": "lock",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:153",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.lock",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_lock",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "std::unique_lock<std::mutex> lock(rate_mutex)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:153:lock"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:37:ArrheniusRate": {
+    "canonical_index": 4635,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:37:ArrheniusRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      37,
+      37
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "ArrheniusRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:37",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ArrheniusRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_ArrheniusRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new ArrheniusRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:37:ArrheniusRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:45:TwoTempPlasmaRate": {
+    "canonical_index": 4636,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:45:TwoTempPlasmaRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      45,
+      45
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "TwoTempPlasmaRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:45",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.TwoTempPlasmaRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_TwoTempPlasmaRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new TwoTempPlasmaRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:45:TwoTempPlasmaRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:51:ConstantVibrationalRelaxationRate": {
+    "canonical_index": 4637,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:51:ConstantVibrationalRelaxationRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      51,
+      51
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "ConstantVibrationalRelaxationRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:51",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ConstantVibrationalRelaxationRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_ConstantVibrationalRelaxationRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new ConstantVibrationalRelaxationRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:51:ConstantVibrationalRelaxationRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:57:MultiStateResolvedVibrationalRelaxationRate": {
+    "canonical_index": 4638,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:57:MultiStateResolvedVibrationalRelaxationRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      57,
+      57
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "MultiStateResolvedVibrationalRelaxationRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:57",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.MultiStateResolvedVibrationalRelaxationRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_MultiStateResolvedVibrationalRelaxationRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new MultiStateResolvedVibrationalRelaxationRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:57:MultiStateResolvedVibrationalRelaxationRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:63:StarikovskiyVibrationalRelaxationRate": {
+    "canonical_index": 4639,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:63:StarikovskiyVibrationalRelaxationRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      63,
+      63
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "StarikovskiyVibrationalRelaxationRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:63",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.StarikovskiyVibrationalRelaxationRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_StarikovskiyVibrationalRelaxationRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new StarikovskiyVibrationalRelaxationRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:63:StarikovskiyVibrationalRelaxationRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:69:CastelaVibrationalRelaxationRate": {
+    "canonical_index": 4640,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:69:CastelaVibrationalRelaxationRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      69,
+      69
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "CastelaVibrationalRelaxationRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:69",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.CastelaVibrationalRelaxationRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_CastelaVibrationalRelaxationRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new CastelaVibrationalRelaxationRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:69:CastelaVibrationalRelaxationRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:74:ElectronCollisionPlasmaRate": {
+    "canonical_index": 4641,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:74:ElectronCollisionPlasmaRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      74,
+      74
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "ElectronCollisionPlasmaRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:74",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.ElectronCollisionPlasmaRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_ElectronCollisionPlasmaRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new ElectronCollisionPlasmaRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:74:ElectronCollisionPlasmaRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:79:BlowersMaselRate": {
+    "canonical_index": 4642,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:79:BlowersMaselRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      79,
+      79
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "BlowersMaselRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:79",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.BlowersMaselRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_BlowersMaselRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new BlowersMaselRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:79:BlowersMaselRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:84:LindemannRate": {
+    "canonical_index": 4643,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:84:LindemannRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      84,
+      84
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "LindemannRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:84",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.LindemannRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_LindemannRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new LindemannRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:84:LindemannRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:90:TroeRate": {
+    "canonical_index": 4644,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:90:TroeRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      90,
+      90
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "TroeRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:90",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.TroeRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_TroeRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new TroeRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:90:TroeRate"
+  },
+  "src/kinetics/ReactionRateFactory.cpp:95:SriRate": {
+    "canonical_index": 4645,
+    "canonical_symbol_id": "src/kinetics/ReactionRateFactory.cpp:95:SriRate",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      95,
+      95
+    ],
+    "missing_implementation_logic": "Native C++ C-API / inline wrapper proven non-runtime",
+    "native_class": "FreeFunctions",
+    "native_method": "SriRate",
+    "native_source_definition": "src/kinetics/ReactionRateFactory.cpp:95",
+    "performance_bottleneck": "Reaction path traversal and net flux graph construction",
+    "python_target": "cantera_python.kinetics.SriRate",
+    "required_native_differential_test": "test_kinetics_family4_FreeFunctions_SriRate",
+    "required_performance_test": "benchmark_family4_FreeFunctions",
+    "runtime_callers": [
+      "cantera_python.kinetics.ReactionPathDiagram",
+      "cantera_python.kinetics.Kinetics"
+    ],
+    "scientific_responsibility": "Free factory and utility functions for kinetics and reaction topology",
+    "signature": "return new SriRate(node, rate_units)",
+    "stable_symbol_id": "src/kinetics/ReactionRateFactory.cpp:95:SriRate"
+  }
+}

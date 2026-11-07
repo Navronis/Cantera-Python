@@ -1,0 +1,9 @@
+{
+  "module": "cantera_python.elements",
+  "upstream_paths": ["src/thermo/Elements.cpp", "include/cantera/thermo/Elements.h", "src/thermo/Species.cpp", "include/cantera/thermo/Species.h"],
+  "translations": [{
+    "python_symbols": ["Element", "ElementRegistry", "COMMON_ELEMENTS"],
+    "translated_methods": ["Species::molecularWeight", "getElementWeight"],
+    "notes": "Ports molecular-weight summation in kg/kmol, lookup by symbol or element name, and ordered elemental composition vectors. COMMON_ELEMENTS is a bounded gas-phase subset of the pinned atomic-weight table; callers provide ElementRegistry for additional elements or isotopes."
+  }]
+}

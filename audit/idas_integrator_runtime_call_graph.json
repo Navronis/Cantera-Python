@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "solver_family": "idas_integrator",
+  "entry_points": [
+    "cantera_python.numerics.IdasIntegrator.__init__",
+    "cantera_python.numerics.IdasIntegrator.initialize",
+    "cantera_python.numerics.IdasIntegrator.reinitialize",
+    "cantera_python.numerics.IdasIntegrator.integrate",
+    "cantera_python.numerics.IdasIntegrator.step",
+    "cantera_python.numerics.IdasIntegrator.solution",
+    "cantera_python.numerics.IdasIntegrator.currentTime",
+    "cantera_python.numerics.IdasIntegrator.nEquations",
+    "cantera_python.numerics.IdasIntegrator.setTolerances",
+    "cantera_python.numerics.IdasIntegrator.setSensitivityTolerances",
+    "cantera_python.numerics.IdasIntegrator.setLinearSolverType",
+    "cantera_python.numerics.IdasIntegrator.setMaxOrder",
+    "cantera_python.numerics.IdasIntegrator.maxOrder",
+    "cantera_python.numerics.IdasIntegrator.setMaxStepSize",
+    "cantera_python.numerics.IdasIntegrator.setMaxSteps",
+    "cantera_python.numerics.IdasIntegrator.maxSteps",
+    "cantera_python.numerics.IdasIntegrator.setMaxErrTestFails",
+    "cantera_python.numerics.IdasIntegrator.setMaxNonlinIterations",
+    "cantera_python.numerics.IdasIntegrator.maxNonlinIterations",
+    "cantera_python.numerics.IdasIntegrator.setMaxNonlinConvFailures",
+    "cantera_python.numerics.IdasIntegrator.maxNonlinConvFailures",
+    "cantera_python.numerics.IdasIntegrator.includeAlgebraicInErrorTest",
+    "cantera_python.numerics.IdasIntegrator.algebraicInErrorTest",
+    "cantera_python.numerics.IdasIntegrator.solverStats",
+    "cantera_python.numerics.IdasIntegrator.nSensParams",
+    "cantera_python.numerics.IdasIntegrator.sensitivity",
+    "cantera_python.numerics.IdasIntegrator.getErrorInfo",
+    "cantera_python.numerics.IdasIntegrator.applyOptions",
+    "cantera_python.numerics.IdasIntegrator.sensInit",
+    "cantera_python.numerics.IdasIntegrator.checkError",
+    "cantera_python.numerics.IdasIntegrator.setMethod"
+  ],
+  "nodes": {
+    "IdasIntegrator.initialize": {
+      "calls": [
+        "FuncEval.neq",
+        "FuncEval.getStateDae",
+        "FuncEval.getConstraints",
+        "IdasIntegrator.applyOptions"
+      ],
+      "purpose": "Initialize IDA memory, consistent initial condition computation, and tolerance assignment"
+    },
+    "IdasIntegrator.reinitialize": {
+      "calls": [
+        "FuncEval.getStateDae",
+        "IdasIntegrator.applyOptions"
+      ],
+      "purpose": "Reinitialize DAE state and time without full re-allocation"
+    },
+    "IdasIntegrator.integrate": {
+      "calls": [
+        "IdasIntegrator.step",
+        "IdasIntegrator._ida_interpolate"
+      ],
+      "purpose": "Advance DAE solution to exact requested tout"
+    },
+    "IdasIntegrator.step": {
+      "calls": [
+        "FuncEval.evalDae",
+        "_python_dense_lu",
+        "_python_dense_solve"
+      ],
+      "purpose": "Take one internal variable-step BDF step with Newton-Raphson iteration"
+    },
+    "IdasIntegrator.sensitivity": {
+      "calls": [
+        "IdasIntegrator.sensInit"
+      ],
+      "purpose": "Evaluate forward sensitivity vectors for DAE systems"
+    }
+  }
+}

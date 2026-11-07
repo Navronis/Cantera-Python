@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/multi_newton_starting_snapshot.json",
+  "snapshot_timestamp_utc": "2026-11-05T13:02:59.397041+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "is_worktree_clean": false,
+  "solver_family": "multi_newton",
+  "subsystem": "1D Newton",
+  "native_source": {
+    "commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "headers": [
+      "include/cantera/oneD/MultiNewton.h",
+      "include/cantera/oneD/MultiJac.h",
+      "include/cantera/numerics/SystemJacobian.h"
+    ],
+    "sources": [
+      "src/oneD/MultiNewton.cpp",
+      "src/oneD/MultiJac.cpp"
+    ],
+    "MultiNewton_h_sha256": "a18e6b0bcba116326e8214b43f8bb88b8ba4717c92ecee4bd8a907772803a35f",
+    "MultiNewton_cpp_sha256": "04721fc00e23db0708bbd514b86aa76fca1d7e28e9ba6f914d33647d6ce2f549",
+    "MultiJac_h_sha256": "41fee6d78ec971eb226516747977fd47028a6dba597461681742cac70c460ce2",
+    "MultiJac_cpp_sha256": "f0d86f4372f46d053becc9a489b4c48fbaff720044a65dfe9dd170f25e9c969c",
+    "SystemJacobian_h_sha256": "110835a011737c09613d09c965beafdc609ceddbf35fcd9706bad618fe6b4365"
+  },
+  "python_files": {
+    "oned_py_sha256": "37888a727f7163a447c94b19d0bb09df964a21cdeaa474003bf855c65934fa8b",
+    "test_onedim_py_sha256": "199d866e9a7944a878da7e8835a83c37fb53f08f72b71f8dbf1f523a84ddf493"
+  },
+  "closure_set_sha256": "a88b4212e76d1f5c180236ff48101332254fab1da07596336b33bde33c930016",
+  "inventory_counts": {
+    "total_canonical_symbols": 15,
+    "open_runtime_symbols": 15,
+    "non_runtime_proven_symbols": 0,
+    "not_ported": 14,
+    "partial": 1,
+    "implemented_unvalidated": 0,
+    "final": 0
+  }
+}

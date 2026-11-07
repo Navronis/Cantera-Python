@@ -1,0 +1,65 @@
+{
+  "subsystem": "1D boundary conditions",
+  "native_classes": [
+    "Boundary1D",
+    "Inlet1D",
+    "Outlet1D",
+    "OutletRes1D",
+    "Empty1D",
+    "Symm1D",
+    "Surf1D",
+    "ReactingSurf1D"
+  ],
+  "benchmark_workload": "Residual evaluation across 6 canonical boundary domain types (10^5 evaluations)",
+  "mean_slowdown_factor": 739.1538838584961,
+  "comparisons": [
+    {
+      "domain": "Inlet1D",
+      "native_us_per_eval": 0.0136,
+      "python_us_per_eval": 8.094448000047123,
+      "slowdown_factor": 595.180000003465,
+      "native_reps": 100000,
+      "python_reps": 50000
+    },
+    {
+      "domain": "Outlet1D",
+      "native_us_per_eval": 0.0176,
+      "python_us_per_eval": 7.721460000029765,
+      "slowdown_factor": 438.71931818350936,
+      "native_reps": 100000,
+      "python_reps": 50000
+    },
+    {
+      "domain": "OutletRes1D",
+      "native_us_per_eval": 0.0141,
+      "python_us_per_eval": 10.18804999999702,
+      "slowdown_factor": 722.5567375884411,
+      "native_reps": 100000,
+      "python_reps": 50000
+    },
+    {
+      "domain": "Symm1D",
+      "native_us_per_eval": 0.0058,
+      "python_us_per_eval": 3.745690000068862,
+      "slowdown_factor": 645.808620701528,
+      "native_reps": 100000,
+      "python_reps": 50000
+    },
+    {
+      "domain": "Surf1D",
+      "native_us_per_eval": 0.0055,
+      "python_us_per_eval": 2.267775999935111,
+      "slowdown_factor": 412.3229090791111,
+      "native_reps": 100000,
+      "python_reps": 50000
+    },
+    {
+      "domain": "ReactingSurf1D",
+      "native_us_per_eval": 3.4532,
+      "python_us_per_eval": 5595.343299998785,
+      "slowdown_factor": 1620.3357175949222,
+      "native_reps": 100000,
+      "python_reps": 5000
+    }
+  ]
+}

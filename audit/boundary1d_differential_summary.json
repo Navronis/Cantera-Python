@@ -1,0 +1,112 @@
+{
+  "subsystem": "1D boundary conditions",
+  "class": "Boundary1D",
+  "total_cases": 20,
+  "passed_cases": 20,
+  "failed_cases": 0,
+  "pass_rate_pct": 100.0,
+  "max_abs_diff": 2.288818359375e-05,
+  "parity_achieved": true,
+  "case_summaries": [
+    {
+      "case_id": "boundary1d_01_base_defaults",
+      "status": "PASS",
+      "max_diff": 0.0
+    },
+    {
+      "case_id": "boundary1d_02_empty1d_lifecycle",
+      "status": "PASS",
+      "max_diff": 0.0
+    },
+    {
+      "case_id": "boundary1d_03_inlet1d_properties_gas",
+      "status": "PASS",
+      "max_diff": 1.1102230246251565e-16
+    },
+    {
+      "case_id": "boundary1d_04_inlet1d_properties_span",
+      "status": "PASS",
+      "max_diff": 1.1102230246251565e-16
+    },
+    {
+      "case_id": "boundary1d_05_inlet1d_unstrained_eval",
+      "status": "PASS",
+      "max_diff": 0.0
+    },
+    {
+      "case_id": "boundary1d_06_inlet1d_free_flow_eval",
+      "status": "PASS",
+      "max_diff": 0.0
+    },
+    {
+      "case_id": "boundary1d_07_inlet1d_strained_flow_left_eval",
+      "status": "PASS",
+      "max_diff": 1.1102230246251565e-16
+    },
+    {
+      "case_id": "boundary1d_08_inlet1d_strained_flow_right_eval",
+      "status": "PASS",
+      "max_diff": 1.1102230246251565e-16
+    },
+    {
+      "case_id": "boundary1d_09_outlet1d_unstrained_eval",
+      "status": "PASS",
+      "max_diff": 3.469446951953614e-18
+    },
+    {
+      "case_id": "boundary1d_10_outletres1d_unstrained_eval",
+      "status": "PASS",
+      "max_diff": 1.1102230246251565e-16
+    },
+    {
+      "case_id": "boundary1d_11_symm1d_right_eval",
+      "status": "PASS",
+      "max_diff": 0.0
+    },
+    {
+      "case_id": "boundary1d_12_symm1d_left_eval",
+      "status": "PASS",
+      "max_diff": 5.551115123125783e-17
+    },
+    {
+      "case_id": "boundary1d_13_surf1d_left_eval",
+      "status": "PASS",
+      "max_diff": 0.0
+    },
+    {
+      "case_id": "boundary1d_14_surf1d_right_eval",
+      "status": "PASS",
+      "max_diff": 0.0
+    },
+    {
+      "case_id": "boundary1d_15_reactingsurf1d_properties",
+      "status": "PASS",
+      "max_diff": 0.0
+    },
+    {
+      "case_id": "boundary1d_16_reactingsurf1d_bounds_resetbadvalues",
+      "status": "PASS",
+      "max_diff": 2.7755575615628914e-17
+    },
+    {
+      "case_id": "boundary1d_17_reactingsurf1d_eval_steady",
+      "status": "PASS",
+      "max_diff": 1.52587890625e-05
+    },
+    {
+      "case_id": "boundary1d_18_reactingsurf1d_eval_transient",
+      "status": "PASS",
+      "max_diff": 2.288818359375e-05
+    },
+    {
+      "case_id": "boundary1d_19_reactingsurf1d_eval_fixed_coverage",
+      "status": "PASS",
+      "max_diff": 0.0
+    },
+    {
+      "case_id": "boundary1d_20_topology_error_handling",
+      "status": "PASS",
+      "max_diff": 0.0
+    }
+  ]
+}

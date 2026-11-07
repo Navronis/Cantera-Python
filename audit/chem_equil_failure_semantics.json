@@ -1,0 +1,24 @@
+{
+  "total_failure_cases": 3,
+  "passed": 3,
+  "results": [
+    {
+      "case_id": "EQ_FAIL_INVALID_MODE",
+      "description": "Unrecognized equilibrium property pair",
+      "expected_error": "property",
+      "passed": true
+    },
+    {
+      "case_id": "EQ_FAIL_NEGATIVE_TEMPERATURE",
+      "description": "Negative absolute temperature must be rejected",
+      "expected_error": "temperature",
+      "passed": true
+    },
+    {
+      "case_id": "EQ_FAIL_NEGATIVE_PRESSURE",
+      "description": "Negative pressure must be rejected",
+      "expected_error": "pressure",
+      "passed": true
+    }
+  ]
+}

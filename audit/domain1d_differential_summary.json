@@ -1,0 +1,111 @@
+{
+  "subsystem": "1D domain base abstraction",
+  "native_class": "Domain1D",
+  "total_cases": 20,
+  "passed_cases": 20,
+  "failed_cases": 0,
+  "parity_achieved": true,
+  "max_abs_diff": 6.938893903907228e-18,
+  "cases": [
+    {
+      "case_id": "domain1d_01_default_construction",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_02_resize_and_defaults",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_03_component_names_and_indices",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_04_set_and_query_bounds",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_05_steady_tolerances_all_and_per_comp",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_06_transient_tolerances_all_and_per_comp",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_07_mode_switching_tolerances",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_08_prev_solution_caching",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_09_setup_custom_grid",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_10_setup_uniform_grid",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_11_reset_bad_values_clamping",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_12_topology_three_domains",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_13_topology_five_domains",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_14_refiner_criteria_delegation",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_15_jacobian_mode_configuration",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_16_metadata_uniform_tolerances",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_17_metadata_nonuniform_tolerances",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_18_element_indexing_and_access",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_19_initial_solution_loading",
+      "passed": true,
+      "diffs": {}
+    },
+    {
+      "case_id": "domain1d_20_set_flat_profile",
+      "passed": true,
+      "diffs": {}
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "total_cases": 130,
+  "passed_cases": 130,
+  "pass_rate_percent": 100.0,
+  "classification": "NUMERICALLY_EQUIVALENT_WITHIN_VALIDATED_TOLERANCE",
+  "tolerances": {
+    "relative_tolerance": 1e-09,
+    "absolute_tolerance_viscosity": 1e-10,
+    "absolute_tolerance_thermal_conductivity": 1e-08,
+    "absolute_tolerance_diffusion": 1e-10
+  },
+  "statistics": {
+    "viscosity": {
+      "absolute_error": {
+        "max": 3.1035287187397564e-18,
+        "p50": 3.7269449679189215e-19,
+        "p95": 1.5658251062942995e-18,
+        "p99": 2.410181429435276e-18,
+        "worst_case_id": "MIXTRAN_H2O2_095"
+      },
+      "relative_error": {
+        "max": 8.696900137934105e-14,
+        "p50": 1.1722941075038949e-14,
+        "p95": 5.94240559838479e-14,
+        "p99": 8.483669770031919e-14,
+        "worst_case_id": "MIXTRAN_GRI30_001"
+      }
+    },
+    "thermal_conductivity": {
+      "absolute_error": {
+        "max": 4.758415883543421e-13,
+        "p50": 3.941291737419306e-15,
+        "p95": 1.1293466162243243e-13,
+        "p99": 3.480238319752962e-13,
+        "worst_case_id": "MIXTRAN_GRI30_STRESS_085"
+      },
+      "relative_error": {
+        "max": 1.343264275437325e-12,
+        "p50": 5.159212105587002e-14,
+        "p95": 9.109873553652062e-13,
+        "p99": 1.3349122774096859e-12,
+        "worst_case_id": "MIXTRAN_GRI30_005"
+      }
+    },
+    "species_viscosities": {
+      "absolute_error": {
+        "max": 1.6506978076091805e-17,
+        "p50": 2.6630715861675203e-18,
+        "p95": 8.089164646278568e-18,
+        "p99": 1.6506978076091805e-17,
+        "worst_case_id": "MIXTRAN_GRI30_STRESS_083"
+      },
+      "relative_error": {
+        "max": 8.254020662184314e-13,
+        "p50": 1.6960904588147384e-13,
+        "p95": 8.254020662184314e-13,
+        "p99": 8.254020662184314e-13,
+        "worst_case_id": "MIXTRAN_GRI30_001"
+      }
+    },
+    "binary_diffusion_coefficients": {
+      "absolute_error": {
+        "max": 2.2690183065776637e-15,
+        "p50": 1.1411227865409934e-17,
+        "p95": 6.678685382510707e-17,
+        "p99": 2.2690183065776637e-15,
+        "worst_case_id": "MIXTRAN_GRI30_STRESS_080"
+      },
+      "relative_error": {
+        "max": 7.936220656066302e-13,
+        "p50": 1.2305092712683198e-13,
+        "p95": 7.934483304784327e-13,
+        "p99": 7.936220656066302e-13,
+        "worst_case_id": "MIXTRAN_GRI30_021"
+      }
+    },
+    "mixture_diffusion_coefficients": {
+      "absolute_error": {
+        "max": 5.162537064506978e-15,
+        "p50": 4.1809546276472265e-18,
+        "p95": 4.3964398094287205e-17,
+        "p99": 7.131448209740631e-16,
+        "worst_case_id": "MIXTRAN_GRI30_STRESS_082"
+      },
+      "relative_error": {
+        "max": 3.305618746081194e-13,
+        "p50": 2.2311210132457683e-14,
+        "p95": 1.5720357746171027e-13,
+        "p99": 2.4172179810255045e-13,
+        "worst_case_id": "MIXTRAN_GRI30_025"
+      }
+    },
+    "mixture_diffusion_mole": {
+      "absolute_error": {
+        "max": 1.4710455076283324e-15,
+        "p50": 3.9641141931501256e-18,
+        "p95": 3.486252085627135e-17,
+        "p99": 5.392561397421495e-16,
+        "worst_case_id": "MIXTRAN_GRI30_STRESS_082"
+      },
+      "relative_error": {
+        "max": 3.304136405836315e-13,
+        "p50": 2.2219395391636355e-14,
+        "p95": 1.5720357746171025e-13,
+        "p99": 2.4171850457813707e-13,
+        "worst_case_id": "MIXTRAN_GRI30_025"
+      }
+    },
+    "mixture_diffusion_mass": {
+      "absolute_error": {
+        "max": 1.4710455076283324e-15,
+        "p50": 3.9641141931501256e-18,
+        "p95": 3.486252085627135e-17,
+        "p99": 5.392561397421495e-16,
+        "worst_case_id": "MIXTRAN_GRI30_STRESS_082"
+      },
+      "relative_error": {
+        "max": 3.304136405836315e-13,
+        "p50": 2.2219395391636355e-14,
+        "p95": 1.5720357746171025e-13,
+        "p99": 2.420187032516409e-13,
+        "worst_case_id": "MIXTRAN_GRI30_025"
+      }
+    }
+  }
+}

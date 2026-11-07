@@ -1,0 +1,11 @@
+{
+  "solver_wave": "thermo_state_inverse",
+  "status": "PENDING_NATIVE_TRACE",
+  "python_cases_traced": 160,
+  "python_case_groups": "40 selected states x HP/UV/SP/SV",
+  "classification": {"EXACT_ITERATION_MATCH": 0, "NUMERICALLY_EQUIVALENT_ITERATION": 0, "SAME_FINAL_STATE_DIFFERENT_PATH": 0, "MISMATCH": 0},
+  "python_trace": "_inverse_native follows the pinned branch structure, but iteration counters are not exposed by the public Python API.",
+  "native_trace": "The archived pinned fixture contains final states and properties, not per-iteration traces.",
+  "required_next_action": "Instrument the exact pinned native executable and emit T, residual, derivative, proposed step, accepted step, and bounds for matched cases.",
+  "completion_impact": "Solver Wave 1 cannot be marked complete until iteration and failure-path parity are compared against the pinned executable."
+}

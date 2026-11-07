@@ -1,0 +1,8 @@
+{
+  "fluids": 8,
+  "pairs": 14,
+  "cases": 22400,
+  "successes": 22400,
+  "unexpected_failures": 0,
+  "cases_per_combination": 200
+}

@@ -1,0 +1,56 @@
+{
+  "module": "cantera_python.ideal_solid",
+  "upstream_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "upstream_paths": [
+    "include/cantera/thermo/IdealSolidSolnPhase.h",
+    "src/thermo/IdealSolidSolnPhase.cpp",
+    "include/cantera/thermo/Phase.h",
+    "src/thermo/Phase.cpp"
+  ],
+  "status": "selected scalar equations implemented; full phase API not ported",
+  "native_cantera_required": false,
+  "dependencies": ["Python standard library math", "cantera_python.constants", "cantera_python.ideal_gas.Species"],
+  "units": {
+    "temperature": "K",
+    "pressure": "Pa",
+    "molecular_weight": "kg/kmol",
+    "molar_volume": "m3/kmol",
+    "molar_properties": "J/kmol or J/kmol/K"
+  },
+  "translations": [
+    {
+      "python": "IdealSolidSolution.density and molar_volume",
+      "source": ["IdealSolidSolnPhase::calcDensity"],
+      "equation": "rho = sum(X_k W_k) / sum(X_k V_k)"
+    },
+    {
+      "python": "IdealSolidSolution.entropy_mole, gibbs_mole, cp_mole, cv_mole",
+      "source": ["IdealSolidSolnPhase::entropy_mole", "IdealSolidSolnPhase::gibbs_mole", "IdealSolidSolnPhase::cp_mole"],
+      "equations": ["s = R * (sum(X_k s^ref_k/R) - sum(X_k log(X_k)))", "g = R*T*(sum(X_k g^ref_k/(R*T)) + sum(X_k log(X_k))) + (P-Pref)*sum(X_k V_k)", "cv = cp"]
+    },
+    {
+      "python": "IdealSolidSolution activity, concentration, standard-state, and partial-molar properties",
+      "source": ["IdealSolidSolnPhase::getActivityConcentrations", "IdealSolidSolnPhase::standardConcentration", "IdealSolidSolnPhase::getChemPotentials", "IdealSolidSolnPhase::getPartialMolarEnthalpies", "IdealSolidSolnPhase::getPartialMolarEntropies", "IdealSolidSolnPhase::getStandardChemPotentials"],
+      "equations": ["a_k = X_k", "mu_k = g^ref_k + (P-Pref)V_k + R*T*log(max(X_k, SmallNumber))", "hbar_k = h^ref_k + (P-Pref)V_k"]
+    }
+  ],
+  "behavioral_choices_and_limits": [
+    "States are immutable Python values; upstream mutable ThermoPhase inheritance and cache machinery are not exposed.",
+    "Mole amounts are normalized and invalid finite-domain inputs raise ValueError.",
+    "The Phase::sum_xlogx mass-fraction implementation is represented by its algebraically identical sum(X_k log(X_k)) form.",
+    "Standard concentration supports the three source forms; solvent-volume means the final species is the solvent.",
+    "No Cantera, NumPy, SciPy, Cython, extension module, parser, or compiled solver is imported at runtime."
+  ],
+  "excluded_methods_and_features": [
+    "ThermoPhase and Phase mutable state API, species insertion, units, serialization, YAML parsing, and factory registration",
+    "setToEquilState and all equilibrium algorithms",
+    "Full derivative APIs, electric potentials, phase dimensions, and multisite models",
+    "Transport, kinetics coupling, reactors, numerical integration, and non-ideal condensed phases"
+  ],
+  "test_coverage": [
+    "incompressible density and three standard concentration forms",
+    "pressure corrections to h and g and pressure-independent u",
+    "ideal mixing entropy and g = h - T*s identity",
+    "partial/standard chemical potentials and input validation"
+  ]
+}

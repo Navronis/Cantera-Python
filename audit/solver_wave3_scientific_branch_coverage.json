@@ -1,0 +1,110 @@
+{
+  "branches": [
+    {
+      "branch": "gas_vapor",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "liquid",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "two_phase",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "supercritical",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "saturation",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "quality_zero",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "quality_one",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "quality_intermediate",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "density_retry",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "density_bound",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "saturation_damping",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "phase_swap",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "critical",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "pair_inversion",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "reversed_pair",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "invalid_temperature",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "invalid_density",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "invalid_pressure",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "invalid_quality",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "failed_bracket",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    },
+    {
+      "branch": "reference_state",
+      "executed": false,
+      "status": "REQUIRES_EXPLICIT_CASE_EVIDENCE"
+    }
+  ],
+  "UNCOVERED_SCIENTIFIC_BRANCHES": 21
+}

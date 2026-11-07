@@ -1,0 +1,773 @@
+{
+  "edges": [],
+  "nodes": [
+    {
+      "class": "EdgeKinetics",
+      "id": "include/cantera/kinetics/EdgeKinetics.h:28:kineticsType",
+      "method": "kineticsType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:61:resizeReactions",
+      "method": "resizeReactions",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:63:kineticsType",
+      "method": "kineticsType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:72:setElectricPotential",
+      "method": "setElectricPotential",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:77:getEquilibriumConstants",
+      "method": "getEquilibriumConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:78:getDeltaGibbs",
+      "method": "getDeltaGibbs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:80:getDeltaElectrochemPotentials",
+      "method": "getDeltaElectrochemPotentials",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:81:getDeltaEnthalpy",
+      "method": "getDeltaEnthalpy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:82:getDeltaEntropy",
+      "method": "getDeltaEntropy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:84:getDeltaSSGibbs",
+      "method": "getDeltaSSGibbs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:85:getDeltaSSEnthalpy",
+      "method": "getDeltaSSEnthalpy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:86:getDeltaSSEntropy",
+      "method": "getDeltaSSEntropy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:92:getFwdRateConstants",
+      "method": "getFwdRateConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:93:getRevRateConstants",
+      "method": "getRevRateConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:112:addThermo",
+      "method": "addThermo",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:114:init",
+      "method": "init",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:115:resizeSpecies",
+      "method": "resizeSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:116:addReaction",
+      "method": "addReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:117:modifyReaction",
+      "method": "modifyReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:118:setMultiplier",
+      "method": "setMultiplier",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:125:updateROP",
+      "method": "updateROP",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:131:updateKc",
+      "method": "updateKc",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:133:_update_rates_T",
+      "method": "_update_rates_T",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:136:_update_rates_phi",
+      "method": "_update_rates_phi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:145:_update_rates_C",
+      "method": "_update_rates_C",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:183:solvePseudoSteadyStateProblem",
+      "method": "solvePseudoSteadyStateProblem",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:191:updateMu0",
+      "method": "updateMu0",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:200:updateKc",
+      "method": "updateKc",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:213:setPhaseExistence",
+      "method": "setPhaseExistence",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:233:setPhaseStability",
+      "method": "setPhaseStability",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:242:phaseExistence",
+      "method": "phaseExistence",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:252:phaseStability",
+      "method": "phaseStability",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:263:interfaceCurrent",
+      "method": "interfaceCurrent",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:265:setDerivativeSettings",
+      "method": "setDerivativeSettings",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:266:getDerivativeSettings",
+      "method": "getDerivativeSettings",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:267:fwdRatesOfProgress_ddCi",
+      "method": "fwdRatesOfProgress_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:268:revRatesOfProgress_ddCi",
+      "method": "revRatesOfProgress_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:269:netRatesOfProgress_ddCi",
+      "method": "netRatesOfProgress_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:281:applyEquilibriumConstants",
+      "method": "applyEquilibriumConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:295:assertDerivativesValid",
+      "method": "assertDerivativesValid",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:299:buildNetwork",
+      "method": "buildNetwork",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceData",
+      "id": "include/cantera/kinetics/InterfaceRate.h:32:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceData",
+      "id": "include/cantera/kinetics/InterfaceRate.h:33:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceData",
+      "id": "include/cantera/kinetics/InterfaceRate.h:34:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceData",
+      "id": "include/cantera/kinetics/InterfaceRate.h:36:perturbTemperature",
+      "method": "perturbTemperature",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceData",
+      "id": "include/cantera/kinetics/InterfaceRate.h:37:resize",
+      "method": "resize",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:86:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:90:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:100:getCoverageDependencies",
+      "method": "getCoverageDependencies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:109:exchangeCurrentDensityFormulation",
+      "method": "exchangeCurrentDensityFormulation",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:116:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:120:setSpecies",
+      "method": "setSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:124:updateFromStruct",
+      "method": "updateFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:147:voltageCorrection",
+      "method": "voltageCorrection",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:182:usesElectrochemistry",
+      "method": "usesElectrochemistry",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:187:beta",
+      "method": "beta",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:199:siteDensity",
+      "method": "siteDensity",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:212:setSiteDensity",
+      "method": "setSiteDensity",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:261:setStickingParameters",
+      "method": "setStickingParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:265:getStickingParameters",
+      "method": "getStickingParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:270:motzWiseCorrection",
+      "method": "motzWiseCorrection",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:275:setMotzWiseCorrection",
+      "method": "setMotzWiseCorrection",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:281:stickingSpecies",
+      "method": "stickingSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:291:setStickingSpecies",
+      "method": "setStickingSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:297:stickingOrder",
+      "method": "stickingOrder",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:309:setStickingOrder",
+      "method": "setStickingOrder",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:314:stickingWeight",
+      "method": "stickingWeight",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:326:setStickingWeight",
+      "method": "setStickingWeight",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:335:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:363:InterfaceRate",
+      "method": "InterfaceRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:367:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:372:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:376:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:381:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:387:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:394:updateFromStruct",
+      "method": "updateFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:395:constexpr",
+      "method": "constexpr",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:403:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:415:ddTScaledFromStruct",
+      "method": "ddTScaledFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:416:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:419:preExponentialFactor",
+      "method": "preExponentialFactor",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:424:activationEnergy",
+      "method": "activationEnergy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:460:StickingRate",
+      "method": "StickingRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:464:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:469:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:473:setRateUnits",
+      "method": "setRateUnits",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:478:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:491:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:506:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:512:validate",
+      "method": "validate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:531:updateFromStruct",
+      "method": "updateFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:532:constexpr",
+      "method": "constexpr",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:541:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:558:ddTScaledFromStruct",
+      "method": "ddTScaledFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:559:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:562:preExponentialFactor",
+      "method": "preExponentialFactor",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:567:activationEnergy",
+      "method": "activationEnergy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:498:CanteraError",
+      "method": "CanteraError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:540:savedStates",
+      "method": "savedStates",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:568:savedStates",
+      "method": "savedStates",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:631:charges",
+      "method": "charges",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:632:netProdRates",
+      "method": "netProdRates",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:653:calculateCompositionDerivatives",
+      "method": "calculateCompositionDerivatives",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:664:calculateCompositionDerivatives",
+      "method": "calculateCompositionDerivatives",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:717:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:719:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceRate.cpp:91:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceRate.cpp:158:E",
+      "method": "E",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceRate.cpp:201:E_temp",
+      "method": "E_temp",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "solver_family": "FAMILY_3_HETEROGENEOUS_AND_SURFACE",
+  "subsystem": "kinetics",
+  "total_edges": 0,
+  "total_nodes": 109
+}

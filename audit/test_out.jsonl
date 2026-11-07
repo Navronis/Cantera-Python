@@ -1,0 +1,13 @@
+{"case_id": "decay_l1", "run_id": "test_run_02", "status": "PASS", "time": 1, "y": [0.3678794407139991], "ydot": [-0.3678794374081578], "last_order": 5, "n_evals": 86, "linear_solver": "DENSE"}
+{"case_id": "decay_l10", "run_id": "test_run_02", "status": "PASS", "time": 1, "y": [4.539993296620526e-05], "ydot": [-0.0004539993278742556], "last_order": 5, "n_evals": 364, "linear_solver": "DENSE"}
+{"case_id": "robertson", "run_id": "test_run_02", "status": "PASS", "time": 1, "y": [0.9664597374352983, 3.074626580559229e-05, 0.03350951629889593], "ydot": [-0.02835546433852667, -4.52127609073987e-06, 0.0283599856146174], "last_order": 5, "n_evals": 373, "linear_solver": "DENSE"}
+{"case_id": "param_sens", "run_id": "test_run_02", "status": "PASS", "time": 1, "y": [7.389056450806503], "sens": [[7.389057368768608]], "last_order": 5, "n_evals": 194}
+{"case_id": "step_decay", "run_id": "test_run_02", "status": "PASS", "time": 2.23606909553349e-05, "y": [0.999977639809034], "last_order": 1, "n_evals": 5}
+{"case_id": "reinit_decay", "run_id": "test_run_02", "status": "PASS", "time": 1, "y": [3.03265327611141], "last_order": 5, "n_evals": 68}
+{"case_id": "step_limit", "run_id": "test_run_02", "status": "ERROR", "error_message": "
+*******************************************************************************
+CanteraError thrown by CVodesIntegrator::integrate:
+Maximum number of timesteps (2) taken without reaching output time (10).
+Current integrator time: 4.472138191069166e-05
+*******************************************************************************
+"}

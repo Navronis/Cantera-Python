@@ -1,0 +1,39 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.dylib
+*.dll
+*.pyd
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Build & packaging
+dist/
+build/
+*.egg-info/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Compiled native binaries and object files
+*.exe
+*.o
+*.a
+
+# Large raw differential logs and batch chunk dumps (>20MB)
+*wave4*results.jsonl
+corpus_wave4.jsonl
+wsl_oracle_data.json
+full_port_starting_snapshot.patch
+*property_pair_validation*.jsonl
+audit/py_chunks/
+audit/py_adv_chunks/

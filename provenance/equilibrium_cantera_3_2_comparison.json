@@ -1,0 +1,80 @@
+{
+  "role": "SUPPLEMENTARY_RELEASED_REFERENCE",
+  "reference_cantera_version": "3.2.0",
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "note": "Released 3.2.0 is not the exact pinned oracle.",
+  "cases": [
+    {
+      "pressure_atm": 1.0,
+      "reference_temperature_K": 2380.806278078447,
+      "python_temperature_K": 2380.8062780933587,
+      "temperature_absolute_error_K": 1.4911620382918045e-08,
+      "enthalpy_residual_J_per_kg": -1.8753526092041284e-06,
+      "maximum_selected_species_absolute_error": 5.345390796662741e-12,
+      "reference_mole_fractions": {
+        "H2": 0.015177887626062776,
+        "O2": 0.004790562373717844,
+        "H2O": 0.3239432258781066,
+        "OH": 0.0068360620492839445,
+        "H": 0.001788689543857803,
+        "O": 0.0005409198963794267,
+        "N2": 0.6443912193630268,
+        "NO": 0.0025294829223540577
+      },
+      "python_mole_fractions": {
+        "H2": 0.015177887626915715,
+        "O2": 0.004790562373981602,
+        "H2O": 0.32394322588152025,
+        "OH": 0.006836062049743388,
+        "H": 0.0017886895440256455,
+        "O": 0.0005409198964346293,
+        "N2": 0.6443912193576814,
+        "NO": 0.002529482922486295
+      },
+      "python_diagnostics": {
+        "iterations": 2,
+        "max_residual": 1.3114509478384662e-11,
+        "element_residual": 1.3114509478384662e-11,
+        "mode": "HP",
+        "temperature_iterations": 24,
+        "enthalpy_residual": -1.8753526092041284e-06
+      }
+    },
+    {
+      "pressure_atm": 30.0,
+      "reference_temperature_K": 2460.770255633361,
+      "python_temperature_K": 2460.770255633475,
+      "temperature_absolute_error_K": 1.1368683772161603e-10,
+      "enthalpy_residual_J_per_kg": 3.5381162888370454e-08,
+      "maximum_selected_species_absolute_error": 2.475797344914099e-14,
+      "reference_mole_fractions": {
+        "H2": 0.00700768035494948,
+        "O2": 0.0018519414454392115,
+        "H2O": 0.33693553119757197,
+        "OH": 0.0030665821868392806,
+        "H": 0.00032278334215344554,
+        "O": 9.347678214976257e-05,
+        "N2": 0.6488845890951358,
+        "NO": 0.0018333880204016283
+      },
+      "python_mole_fractions": {
+        "H2": 0.00700768035495229,
+        "O2": 0.0018519414454399392,
+        "H2O": 0.33693553119759073,
+        "OH": 0.0030665821868407087,
+        "H": 0.00032278334215366666,
+        "O": 9.347678214983275e-05,
+        "N2": 0.648884589095111,
+        "NO": 0.001833388020402347
+      },
+      "python_diagnostics": {
+        "iterations": 2,
+        "max_residual": 7.105427357601002e-14,
+        "element_residual": 6.361577931102147e-14,
+        "mode": "HP",
+        "temperature_iterations": 25,
+        "enthalpy_residual": 3.5381162888370454e-08
+      }
+    }
+  ]
+}

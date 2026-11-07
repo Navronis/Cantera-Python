@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/sim1d_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T14:59:17.131671+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "solver_family": "sim1d",
+  "subsystem": "1D solve orchestration",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0, libcantera_shared.so.4.0.0"
+  },
+  "file_hashes": {
+    "oned_py": "40d7f4219f9b42654695b5a5d0322fb1bd42f99bb2b9224b4820bb22b376c3fb",
+    "corpus_sim1d_jsonl": "1c483c5c815a13183288694874448cb6ee9f641c9485ef64e4adc789e353e776",
+    "run_native_sim1d_oracle_cpp": "a357dddb0d42fc60af31a38d0836c2511497056fa239aa8187ecf86897230db1",
+    "run_python_sim1d_port_py": "2b48f514b50bd82c1acd7ce2af0c759ade5986f41b0de734e47bc4449860f4fe",
+    "run_sim1d_campaign_py": "5b8675504294e055ba864cd51930ad8398354dd6f62f3b2d6ee39c717262761b",
+    "benchmark_native_sim1d_cpp": "a3052455a637c2dde9e00605b6f8b7659955aab9798c3f76c8d92efb3f41b1bd",
+    "benchmark_sim1d_performance_py": "b4142d40a0ea44e2c5eb5123c1b3907b1663ae617352a3c6c88e381efe69bb3b",
+    "native_sim1d_oracle_results_json": "8504537a28f4df364822eea1ffafdcdaf1e43374b3bb1192687f3ccc8bca92b4",
+    "python_sim1d_port_results_json": "fb816442d8e8002843962662284b5c6ea0f99bb91c5b2760c8d286e3f1e13f44",
+    "sim1d_differential_summary_json": "a7107d90e2b24cfe12bb2559c9ac8534858d5f8562202043e82cfe2d2e05c51c",
+    "sim1d_performance_benchmark_json": "e7d672df6c088a9187383acf79083ff36c4f8500c9d9afc3c0f367a42e84ef3e",
+    "sim1d_starting_snapshot_json": "92d9eea91d2c85d6fcdb5a97c1f2f6ee39ca8360448ce5ae34ef711dc5fd8912",
+    "sim1d_closure_symbol_set_json": "ef9e13511470084e7d8aa615055b35461b2bfe5f8400a65719716d41fc15a7a0",
+    "sim1d_runtime_call_graph_json": "d853f77fca6ce17697106c7c1353d433a6351e52a439ba1a80704f99eabdbe30",
+    "pinned_sim1d_h": "04fb0ae52a9a1b86fe182f899b90d4cf166bce51d9c3655a358402451161a31f",
+    "pinned_sim1d_cpp": "a825eb2cd36c676866ec8c1ac5c2fa8da602d4a5d497dee988d1ad03c90b4086"
+  },
+  "campaign_summary": {
+    "total_cases": 20,
+    "passed_cases": 20,
+    "pass_rate_percent": 100.0,
+    "structure_mismatches": 0,
+    "refine_result_mismatches": 0,
+    "grid_mismatches": 0,
+    "value_mismatches": 0,
+    "jacobian_mismatches": 0,
+    "adjoint_mismatches": 0,
+    "exception_mismatches": 0,
+    "max_abs_grid_diff": 3.885780586188048e-16,
+    "max_abs_value_diff": 4.774847184307873e-12,
+    "max_abs_jacobian_diff": 1.1958212198237561e-11,
+    "max_abs_adjoint_diff": 1.4853895891064894e-09,
+    "parity_achieved": true
+  },
+  "performance_benchmark": {
+    "overall_slowdown_factor": 127.62,
+    "native_equivalent_speed_parity": false,
+    "comparisons": [
+      {
+        "grid_size": 25,
+        "n_components": 4,
+        "total_size": 100,
+        "native_median_ms": 0.006972,
+        "python_median_ms": 2.569699994637631,
+        "slowdown_factor": 368.57
+      },
+      {
+        "grid_size": 100,
+        "n_components": 4,
+        "total_size": 400,
+        "native_median_ms": 0.030478,
+        "python_median_ms": 5.689700003131293,
+        "slowdown_factor": 186.68
+      },
+      {
+        "grid_size": 500,
+        "n_components": 4,
+        "total_size": 2000,
+        "native_median_ms": 0.365624,
+        "python_median_ms": 25.072099997487385,
+        "slowdown_factor": 68.57
+      },
+      {
+        "grid_size": 2000,
+        "n_components": 4,
+        "total_size": 8000,
+        "native_median_ms": 1.94045,
+        "python_median_ms": 49.50589999498334,
+        "slowdown_factor": 25.51
+      }
+    ]
+  },
+  "independent_status_flags": {
+    "SIM1D_SOURCE_LOGIC_COMPLETE": true,
+    "SIM1D_RUNTIME_INTEGRATED": true,
+    "SIM1D_NUMERICAL_PARITY": true,
+    "SIM1D_ADVERSARIAL_VALIDATED": true,
+    "SIM1D_FAILURE_SEMANTICS_VALIDATED": true,
+    "SIM1D_NATIVE_PERFORMANCE_BENCHMARKED": true,
+    "SIM1D_NATIVE_SPEED_PARITY": false,
+    "SIM1D_FULL_REGRESSION_CLEAN": true,
+    "SIM1D_FULLY_FROZEN": false
+  },
+  "status": "VALIDATED_NUMERICALLY_EQUIVALENT"
+}

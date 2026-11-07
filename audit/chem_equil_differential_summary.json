@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "solver_family": "chem_equil",
+  "timestamp_utc": "2026-11-04T20:48:12.731919+00:00",
+  "total_cases": 246,
+  "passed_cases": 246,
+  "failed_cases": 0,
+  "pass_rate_percent": 100.0,
+  "metrics": {
+    "temperature_relative_error": {
+      "max": 1.8526439246083656e-08,
+      "p95": 6.805611385580257e-10,
+      "mean": 2.5677127219903304e-10
+    },
+    "pressure_relative_error": {
+      "max": 4.4474607631077924e-08,
+      "p95": 5.43483409848385e-10,
+      "mean": 4.4808447960497795e-10
+    },
+    "mole_fraction_relative_error": {
+      "max": 0.0020407468757199167,
+      "p95": 3.7566679932509085e-05,
+      "mean": 9.476287296126099e-06
+    },
+    "chemical_potential_relative_error": {
+      "max": 8.497853665855848e-06,
+      "p95": 9.30498773712762e-07,
+      "mean": 1.687233777595422e-07
+    }
+  },
+  "verdict": "NUMERICALLY_EQUIVALENT_WITHIN_VALIDATED_TOLERANCE"
+}

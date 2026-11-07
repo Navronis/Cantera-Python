@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/cvodes_integrator_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T06:37:26.932542+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "cvodes_integrator_run_id": "cvodes_diff_1793859978",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "file_hashes": {
+    "numerics_py": "4a85a40839c458b22abad14671654eb9f96f744d0cf7cb3c100aaa4ce6a1cf60",
+    "test_cvodes_integrator_py": "dd0ec15ff64e65f039fd37b9470ee4df074d192873b2fd49c777b5509f8b658f",
+    "corpus_cvodes_integrator_jsonl": "5304a94baba2e8cea8c6a8da1b70a598fdf7bda970e4df4d2869a31b9ab898cb",
+    "run_native_cvodes_oracle_cpp": "e7278a3e18df8c00dbd958ae5e15e45fc9613b12657c89d04d2a7e86bfa86faa",
+    "run_cvodes_campaign_py": "cc1a7ca28816aa379be557524453f180c0147fc88af087ccefd363fabca51059",
+    "cvodes_native_oracle_results_jsonl": "ad47910633ef7456c6bfcf2dc49f0e6f9fd0e7197fb39a7ac4850c87ebcef0ad",
+    "cvodes_python_port_results_jsonl": "b7bc504d6ab5607970eb0ec3d26d593204cd33c8b87ac32cbfe6400759cdd0ea",
+    "cvodes_integrator_differential_summary_json": "6c47dd83f4c131735abd700a40342804d2a0ba6e32cb143c11305bc1734c99de",
+    "cvodes_integrator_starting_snapshot_json": "d80a7bc18e9e97f83c260d32db05d48c6c04aaf55a09d0227951589ac9b9f61d",
+    "cvodes_integrator_closure_symbol_set_json": "c7555bdc43b0a91c25137e0c9c7f5c4233155aeaa150bd755bde8d3986d086e1",
+    "cvodes_integrator_runtime_call_graph_json": "9529e3d0d0db5de502f4da404f4170a2ed95ea33a9a7ac741597b230b345516f",
+    "cvodes_equivalence_contract_json": "a1617eb5c0e057334dd9fdbc62870e528680656cd73ce55c403b3835912479e5",
+    "pinned_CVodesIntegrator_h": "26ce79a41317e2d6ce57f9a93bf99a568158db1c82ca0de41d2666e5aaf3a0b3",
+    "pinned_CVodesIntegrator_cpp": "647e57d54c5f8a1e622f22aba1edfcf7d296dde7911d5f2e7abb03ac8adcd002"
+  },
+  "campaign_summary": {
+    "total_cases": 46,
+    "passed_cases": 46,
+    "pass_rate_percent": 100.0,
+    "max_state_relative_error": 0.00372579193871602,
+    "max_sensitivity_relative_error": 1.8526340566935412e-06,
+    "orders_reached": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "all_orders_1_to_5_reachable": true
+  },
+  "status": "VALIDATED_NUMERICALLY_EQUIVALENT"
+}

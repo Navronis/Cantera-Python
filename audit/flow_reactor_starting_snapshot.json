@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/flow_reactor_starting_snapshot.json",
+  "snapshot_timestamp_utc": "2026-11-05T11:41:23.350287+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "is_worktree_clean": false,
+  "active_solver_family": "flow_reactor",
+  "subsystem": "flow reactor DAE",
+  "file_hashes": {
+    "reactor_py": "f5df9385f3abf971cd79e60696d618dd6d43810e4a3f0c863d6e3517a8d039d1",
+    "numerics_py": "580a0986763bc4fa12b00fc3a3fb5a6af0d32138f14a2513dbf90d31352d4d46",
+    "idas_integrator_frozen_manifest_json": "acb407ba257f1d160482761659e0b48593a5997404486ccb4011d5566c473662",
+    "reactor_network_frozen_manifest_json": "7ba03b938ebdbadd0f956e1ef45a4e9210dca449b3fee2d9dcef1107bf32611d",
+    "pinned_FlowReactor_h": "6a15c66bb044a3523314e75f86e6b5b6578e54c30ef50269afa8cdb2c08601b8",
+    "pinned_FlowReactor_cpp": "c54677061fa6be557ac69c5decc3d9bd929ed81ca7f66c78a25bad6ffaff15f1"
+  },
+  "canonical_symbols_total": 18,
+  "open_runtime_symbols": 16,
+  "non_runtime_proven_symbols": 2,
+  "target": "End-to-end plug flow PFR DAE simulation coupled to IdasIntegrator"
+}

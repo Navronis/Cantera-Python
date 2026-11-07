@@ -1,0 +1,29 @@
+{
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "benchmarks": [
+    {
+      "name": "twotemp_plasma_eval",
+      "iterations": 100000,
+      "total_ms": 0.546175,
+      "avg_ms": 5.46175e-06
+    },
+    {
+      "name": "oxygen_plasma_rates",
+      "iterations": 10000,
+      "total_ms": 0.246098,
+      "avg_ms": 2.46098e-05
+    },
+    {
+      "name": "vibrational_relaxation_rates",
+      "iterations": 10000,
+      "total_ms": 0.25546,
+      "avg_ms": 2.5546e-05
+    },
+    {
+      "name": "kinetics_derivatives_ddT",
+      "iterations": 1000,
+      "total_ms": 1.591391,
+      "avg_ms": 0.001591391
+    }
+  ]
+}

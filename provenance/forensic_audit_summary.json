@@ -1,0 +1,34 @@
+{
+  "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "native_files_scanned": 471,
+  "symbols": 5784,
+  "symbol_status_counts": {
+    "NOT_PORTED": 5027,
+    "PARTIALLY_PORTED": 336,
+    "EQUIVALENT_PROVEN": 421
+  },
+  "code_math_candidates": 1915,
+  "code_math_status_counts": {
+    "VALIDATED_IN_PYTHON": 126,
+    "AUDITED_UNPORTED": 1789
+  },
+  "registry_candidates": 658,
+  "upstream_tests_inventoried": 5391,
+  "upstream_test_status_counts": {
+    "EXCLUDED_EXTERNAL_DEPENDENCY": 5050,
+    "UNPORTED_UPSTREAM_TEST": 205,
+    "PORTED_AND_VALIDATED": 136
+  },
+  "mechanism_files_discovered": 156,
+  "mechanism_compatibility_counts": {
+    "EXCLUDED_CI_CONFIG": 10,
+    "FULLY_COMPATIBLE": 66,
+    "LOAD_ERROR": 5,
+    "DATA_TABLE_YAML": 1,
+    "NOT_A_MECHANISM": 7,
+    "EXCLUDED_CODEGEN_CONFIG": 24,
+    "EXCLUDED_TEST_FIXTURE": 43
+  },
+  "python_runtime_modules": 16,
+  "note": "Comprehensive scientific audit with body-level equivalence classification."
+}

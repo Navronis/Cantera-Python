@@ -1,0 +1,199 @@
+{
+  "campaign": "transport_remaining_differential",
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "total_cases": 30,
+  "passed_cases": 30,
+  "failed_cases": 0,
+  "case_summaries": [
+    {
+      "case_id": "tr_wat_001_T298_P1atm",
+      "category": "water_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_wat_002_T350_P1atm",
+      "category": "water_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_wat_003_T400_P10atm",
+      "category": "water_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_wat_004_T500_P50atm",
+      "category": "water_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_wat_005_T600_P150atm",
+      "category": "water_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_wat_006_T647_P220atm_nearcrit",
+      "category": "water_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_wat_007_T700_P250atm_supercrit",
+      "category": "water_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ul_001_T300_P1atm_air",
+      "category": "unity_lewis_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ul_002_T800_P1atm_lean",
+      "category": "unity_lewis_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ul_003_T1200_P1atm_stoich",
+      "category": "unity_lewis_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ul_004_T1600_P5atm_rich",
+      "category": "unity_lewis_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ul_005_T2000_P10atm_prod",
+      "category": "unity_lewis_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ul_006_T2400_P20atm_dissoc",
+      "category": "unity_lewis_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ul_007_T3000_P1atm_plasma",
+      "category": "unity_lewis_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ion_001_T300_P1atm",
+      "category": "ion_gas_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ion_002_T800_P1atm",
+      "category": "ion_gas_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ion_003_T1200_P1atm",
+      "category": "ion_gas_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ion_004_T1500_P1atm",
+      "category": "ion_gas_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ion_005_T1800_P1atm",
+      "category": "ion_gas_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ion_006_T2000_P10atm",
+      "category": "ion_gas_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_ion_007_T2500_P1atm",
+      "category": "ion_gas_transport",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_fac_001_none",
+      "category": "transport_factory",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_fac_002_unity_lewis",
+      "category": "transport_factory",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_fac_003_mix",
+      "category": "transport_factory",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_fac_004_multi",
+      "category": "transport_factory",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_fac_005_ion",
+      "category": "transport_factory",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_fac_006_water",
+      "category": "transport_factory",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_fac_007_high_p",
+      "category": "transport_factory",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_fac_008_chung",
+      "category": "transport_factory",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "case_id": "tr_fac_009_dusty",
+      "category": "transport_factory",
+      "status": "PASS",
+      "failures": []
+    }
+  ],
+  "max_relative_errors": {
+    "viscosity": 7.347243953328807e-14,
+    "thermal_conductivity": 9.276381711861902e-14,
+    "bulk_viscosity": 0.0,
+    "electrical_conductivity": 1.732424915527451e-16,
+    "mobilities": 1.0184943939805545e-13,
+    "mix_diff_coeffs": 1.0195078528204256e-13,
+    "thermal_diff_coeffs": 0.0
+  },
+  "pass_rate": 1.0
+}

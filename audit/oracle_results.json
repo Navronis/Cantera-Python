@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "cantera_version": "4.0.0a2",
+    "cantera_commit": "726522be4",
+    "seed": 42
+  },
+  "summary": {
+    "thermo_10000_total": 10050,
+    "thermo_10000_passed": 10050,
+    "thermo_10000_failed": 0,
+    "max_rel_errors": {
+      "density": 1.0254059183485147e-15,
+      "mean_MW": 8.258236746758199e-16,
+      "cp_mass": 1.2773988527059093e-15,
+      "cv_mass": 1.3618256348873367e-15,
+      "enthalpy_mass": 2.6679572489231843e-13,
+      "int_energy_mass": 3.526124134532068e-13,
+      "entropy_mass": 1.1417597658083675e-15,
+      "gibbs_mass": 5.465637862225335e-13,
+      "chem_potentials": 0.0,
+      "partial_molar_enthalpies": 0.0,
+      "partial_molar_entropies": 9.379056559573425e-16,
+      "partial_molar_int_energies": 0.0,
+      "identity_cp_minus_cv": 1.0913936421275139e-11,
+      "identity_u_h_RT": 0.0,
+      "identity_g_h_Ts": 0.0,
+      "identity_euler_enthalpy": 4.76837158203125e-07
+    },
+    "state_setters_total": 8,
+    "state_setters_passed": 8,
+    "state_setters_failed": 0,
+    "kinetics_evaluations": 9,
+    "kinetics_passed": 9,
+    "kinetics_failed": 0,
+    "reactor_trajectories_total": 2,
+    "reactor_trajectories_passed": 2,
+    "reactor_trajectories_failed": 0,
+    "robustness_tests_passed": 4
+  },
+  "sample_passes": [
+    {
+      "tag": "pure_gri30_H2",
+      "T": 300.0,
+      "P": 101325.00000000001,
+      "density": 0.08189392763801236,
+      "max_prop_rel_err": 1.271051251536538e-16
+    },
+    {
+      "tag": "random_gri30",
+      "T": 2408.4972107648905,
+      "P": 1289300.8736954706,
+      "density": 1.605697701419248,
+      "max_prop_rel_err": 1.8503219891094022e-16
+    },
+    {
+      "tag": "random_gri30",
+      "T": 2031.8051845262867,
+      "P": 1680487.7473014412,
+      "density": 4.087808083160205,
+      "max_prop_rel_err": 1.9113302225910114e-16
+    },
+    {
+      "tag": "random_gri30",
+      "T": 2857.289568240467,
+      "P": 482481.2990437355,
+      "density": 0.5825973888166167,
+      "max_prop_rel_err": 2.507304777475649e-16
+    },
+    {
+      "tag": "random_gri30",
+      "T": 425.93162281439453,
+      "P": 615993.8350508015,
+      "density": 5.018640111831661,
+      "max_prop_rel_err": 8.177787685515103e-16
+    },
+    {
+      "tag": "random_gri30",
+      "T": 1498.7178817938511,
+      "P": 29709.68470221627,
+      "density": 0.06912903821942738,
+      "max_prop_rel_err": 2.023829191068315e-16
+    },
+    {
+      "tag": "random_gri30",
+      "T": 2930.0875461446526,
+      "P": 223568.79350543814,
+      "density": 0.23124314191194292,
+      "max_prop_rel_err": 3.2424561225256795e-16
+    },
+    {
+      "tag": "random_gri30",
+      "T": 796.6276490742293,
+      "P": 408593.10091475147,
+      "density": 1.6307584426863146,
+      "max_prop_rel_err": 5.277725667291224e-16
+    },
+    {
+      "tag": "random_air9",
+      "T": 2395.960150361681,
+      "P": 258346.87095049,
+      "density": 0.3285766231582111,
+      "max_prop_rel_err": 2.804419459649608e-16
+    },
+    {
+      "tag": "random_air9",
+      "T": 524.531174255596,
+      "P": 83061.82645196338,
+      "density": 0.42983649938093604,
+      "max_prop_rel_err": 2.10092594125148e-16
+    },
+    {
+      "tag": "random_air9",
+      "T": 952.5801565390817,
+      "P": 6139.169610408432,
+      "density": 0.018893403657254806,
+      "max_prop_rel_err": 1.9629903774276667e-16
+    }
+  ]
+}

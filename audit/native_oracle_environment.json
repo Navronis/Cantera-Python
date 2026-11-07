@@ -1,0 +1,15 @@
+{
+  "os": "Windows 11",
+  "python": "3.12.14",
+  "scons": {"status":"AVAILABLE","version":"4.11.1"},
+  "git": {"status":"AVAILABLE"},
+  "msvc": {"status":"UNAVAILABLE","evidence":"No Visual Studio installation or cl.exe found"},
+  "mingw": {"status":"UNAVAILABLE","evidence":"No C:/mingw64 or C:/msys64 and no g++/gcc found"},
+  "llvm": {"status":"UNAVAILABLE","evidence":"No LLVM installation and no clang/clang++ found"},
+  "cmake": {"status":"UNAVAILABLE"},
+  "wsl": {"status":"ATTEMPTED_FAILED","evidence":"wsl.exe -l -v returned Wsl/EnumerateDistros/Service/E_ACCESSDENIED"},
+  "docker": {"status":"UNAVAILABLE"},
+  "conda_mamba": {"status":"UNAVAILABLE"},
+  "oracle_venv": {"status":"AVAILABLE","path":"work/oracle-env","dependencies":"SCons and packaging installed; build stopped before compilation"},
+  "scons_build": {"status":"ATTEMPTED_FAILED","evidence":"SCons recognized pinned commit 726522be4 but reported incomplete C++ include paths because no compiler toolchain is installed"}
+}

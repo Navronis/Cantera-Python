@@ -1,0 +1,4 @@
+{"source":"src/thermo/PureFluidPhase.cpp","python":"cantera_python/phases.py:PureFluidPhase","scope":"public pure-fluid phase state/property bridge","status":"IMPLEMENTED_DIFFERENTLY"}
+{"source":"include/cantera/thermo/PureFluidPhase.h","python":"cantera_python/phases.py:PureFluidPhase","scope":"public pure-fluid phase API","status":"IMPLEMENTED_DIFFERENTLY"}
+{"source":"src/thermo/WaterPropsIAPWS.cpp","python":"cantera_python/electrolytes.py:WaterProps and cantera_python/thermo.py","scope":"separate IAPWS thermodynamic engine, not legacy TPX","status":"OUTSIDE_TPX_WAVE"}
+{"source":"src/thermo/WaterPropsIAPWSphi.cpp","python":"cantera_python/thermo.py","scope":"separate IAPWS phi formulation","status":"OUTSIDE_TPX_WAVE"}

@@ -1,0 +1,973 @@
+{
+  "edges": [
+    {
+      "source": "Flow1D.eval",
+      "target": "Flow1D.updateProperties"
+    },
+    {
+      "source": "Flow1D.eval",
+      "target": "Flow1D.computeRadiation"
+    },
+    {
+      "source": "Flow1D.eval",
+      "target": "Flow1D.evalContinuity"
+    },
+    {
+      "source": "Flow1D.eval",
+      "target": "Flow1D.evalMomentum"
+    },
+    {
+      "source": "Flow1D.eval",
+      "target": "Flow1D.evalEnergy"
+    },
+    {
+      "source": "Flow1D.eval",
+      "target": "Flow1D.evalLambda"
+    },
+    {
+      "source": "Flow1D.eval",
+      "target": "Flow1D.evalElectricField"
+    },
+    {
+      "source": "Flow1D.eval",
+      "target": "Flow1D.evalUo"
+    },
+    {
+      "source": "Flow1D.eval",
+      "target": "Flow1D.evalSpecies"
+    },
+    {
+      "source": "Flow1D.updateProperties",
+      "target": "Flow1D.updateThermo"
+    },
+    {
+      "source": "Flow1D.updateProperties",
+      "target": "Flow1D.updateTransport"
+    },
+    {
+      "source": "Flow1D.updateProperties",
+      "target": "Flow1D.updateDiffFluxes"
+    },
+    {
+      "source": "Flow1D.updateThermo",
+      "target": "Flow1D.setGas"
+    },
+    {
+      "source": "Flow1D.updateTransport",
+      "target": "Flow1D.setGasAtMidpoint"
+    },
+    {
+      "source": "Flow1D.computeRadiation",
+      "target": "Flow1D.radiationPolyFactor"
+    },
+    {
+      "source": "Flow1D.evalContinuity",
+      "target": "Flow1D.rho_u"
+    },
+    {
+      "source": "Flow1D.evalContinuity",
+      "target": "Flow1D.density"
+    },
+    {
+      "source": "Flow1D.evalContinuity",
+      "target": "Flow1D.V"
+    },
+    {
+      "source": "Flow1D.evalMomentum",
+      "target": "Flow1D.shear"
+    },
+    {
+      "source": "Flow1D.evalMomentum",
+      "target": "Flow1D.dVdz"
+    },
+    {
+      "source": "Flow1D.evalMomentum",
+      "target": "Flow1D.Lambda"
+    },
+    {
+      "source": "Flow1D.evalMomentum",
+      "target": "Flow1D.V_prev"
+    },
+    {
+      "source": "Flow1D.evalEnergy",
+      "target": "Flow1D.conduction"
+    },
+    {
+      "source": "Flow1D.evalEnergy",
+      "target": "Flow1D.grad_hk"
+    },
+    {
+      "source": "Flow1D.evalEnergy",
+      "target": "Flow1D.dTdz"
+    },
+    {
+      "source": "Flow1D.evalEnergy",
+      "target": "Flow1D.T_prev"
+    },
+    {
+      "source": "Flow1D.evalEnergy",
+      "target": "Flow1D.T_fixed"
+    },
+    {
+      "source": "Flow1D.evalSpecies",
+      "target": "Flow1D.dYdz"
+    },
+    {
+      "source": "Flow1D.evalSpecies",
+      "target": "Flow1D.flux"
+    },
+    {
+      "source": "Flow1D.evalSpecies",
+      "target": "Flow1D.Y_prev"
+    },
+    {
+      "source": "Flow1D.evalSpecies",
+      "target": "Flow1D.leftExcessSpecies"
+    },
+    {
+      "source": "Flow1D.evalSpecies",
+      "target": "Flow1D.rightExcessSpecies"
+    },
+    {
+      "source": "Flow1D.evalJacobianAnalytic",
+      "target": "Flow1D.usingAnalyticJacobian"
+    },
+    {
+      "source": "Flow1D.evalJacobianAnalytic",
+      "target": "Flow1D.updateThermo"
+    },
+    {
+      "source": "Flow1D.evalJacobianAnalytic",
+      "target": "Flow1D.updateDiffFluxes"
+    },
+    {
+      "source": "Flow1D.evalJacobianAnalytic",
+      "target": "Flow1D.setGas"
+    },
+    {
+      "source": "Flow1D.evalJacobianAnalytic",
+      "target": "Flow1D.computeWdotDerivatives"
+    },
+    {
+      "source": "Flow1D.evalJacobianAnalytic",
+      "target": "Flow1D.addSpeciesJacEntries"
+    },
+    {
+      "source": "Flow1D.evalJacobianAnalytic",
+      "target": "Flow1D.addEnergyJacEntries"
+    },
+    {
+      "source": "Flow1D.evalJacobianAnalytic",
+      "target": "Flow1D.addFlowJacEntries"
+    },
+    {
+      "source": "Flow1D.addSpeciesJacEntries",
+      "target": "Flow1D.fluxJacobian"
+    },
+    {
+      "source": "Flow1D.addEnergyJacEntries",
+      "target": "Flow1D.grad_hk"
+    },
+    {
+      "source": "Flow1D.addEnergyJacEntries",
+      "target": "Flow1D.conduction"
+    },
+    {
+      "source": "Flow1D.addEnergyJacEntries",
+      "target": "Flow1D.radiationPolyFactor"
+    },
+    {
+      "source": "Flow1D.addFlowJacEntries",
+      "target": "Flow1D.shear"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "include/cantera/oneD/Flow1D.h:58:domainType",
+      "label": "Flow1D.domainType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:63:setupGrid",
+      "label": "Flow1D.setupGrid",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:65:resetBadValues",
+      "label": "Flow1D.resetBadValues",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:69:phase",
+      "label": "Flow1D.phase",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:75:kinetics",
+      "label": "Flow1D.kinetics",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:80:_setKinetics",
+      "label": "Flow1D._setKinetics",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:81:_setTransport",
+      "label": "Flow1D._setTransport",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:87:setTransportModel",
+      "label": "Flow1D.setTransportModel",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:91:transportModel",
+      "label": "Flow1D.transportModel",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:96:enableSoret",
+      "label": "Flow1D.enableSoret",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:101:withSoret",
+      "label": "Flow1D.withSoret",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:111:setFluxGradientBasis",
+      "label": "Flow1D.setFluxGradientBasis",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:119:fluxGradientBasis",
+      "label": "Flow1D.fluxGradientBasis",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:125:setPressure",
+      "label": "Flow1D.setPressure",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:130:pressure",
+      "label": "Flow1D.pressure",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:135:_getInitialSoln",
+      "label": "Flow1D._getInitialSoln",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:137:_finalize",
+      "label": "Flow1D._finalize",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:147:setFixedTempProfile",
+      "label": "Flow1D.setFixedTempProfile",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:156:setTemperature",
+      "label": "Flow1D.setTemperature",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:162:T_fixed",
+      "label": "Flow1D.T_fixed",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:168:componentName",
+      "label": "Flow1D.componentName",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:170:componentIndex",
+      "label": "Flow1D.componentIndex",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:172:hasComponent",
+      "label": "Flow1D.hasComponent",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:175:componentActive",
+      "label": "Flow1D.componentActive",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:177:updateState",
+      "label": "Flow1D.updateState",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:178:show",
+      "label": "Flow1D.show",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:180:getValues",
+      "label": "Flow1D.getValues",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:181:setValues",
+      "label": "Flow1D.setValues",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:182:getResiduals",
+      "label": "Flow1D.getResiduals",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:185:setFlatProfile",
+      "label": "Flow1D.setFlatProfile",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:187:toArray",
+      "label": "Flow1D.toArray",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:188:fromArray",
+      "label": "Flow1D.fromArray",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:192:setFreeFlow",
+      "label": "Flow1D.setFreeFlow",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:200:setAxisymmetricFlow",
+      "label": "Flow1D.setAxisymmetricFlow",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:208:setUnstrainedFlow",
+      "label": "Flow1D.setUnstrainedFlow",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:217:solveEnergyEqn",
+      "label": "Flow1D.solveEnergyEqn",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:225:allOfEnergyEnabled",
+      "label": "Flow1D.allOfEnergyEnabled",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:236:noneOfEnergyEnabled",
+      "label": "Flow1D.noneOfEnergyEnabled",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:245:setEnergyEnabled",
+      "label": "Flow1D.setEnergyEnabled",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:254:solveElectricField",
+      "label": "Flow1D.solveElectricField",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:257:fixElectricField",
+      "label": "Flow1D.fixElectricField",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:261:doElectricField",
+      "label": "Flow1D.doElectricField",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:264:enableRadiation",
+      "label": "Flow1D.enableRadiation",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:269:radiationEnabled",
+      "label": "Flow1D.radiationEnabled",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:274:radiativeHeatLoss",
+      "label": "Flow1D.radiativeHeatLoss",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:284:setBoundaryEmissivities",
+      "label": "Flow1D.setBoundaryEmissivities",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:287:leftEmissivity",
+      "label": "Flow1D.leftEmissivity",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:292:rightEmissivity",
+      "label": "Flow1D.rightEmissivity",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:300:fixTemperature",
+      "label": "Flow1D.fixTemperature",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:327:leftControlPointTemperature",
+      "label": "Flow1D.leftControlPointTemperature",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:330:leftControlPointCoordinate",
+      "label": "Flow1D.leftControlPointCoordinate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:333:setLeftControlPointTemperature",
+      "label": "Flow1D.setLeftControlPointTemperature",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:336:setLeftControlPointCoordinate",
+      "label": "Flow1D.setLeftControlPointCoordinate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:339:rightControlPointTemperature",
+      "label": "Flow1D.rightControlPointTemperature",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:342:rightControlPointCoordinate",
+      "label": "Flow1D.rightControlPointCoordinate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:345:setRightControlPointTemperature",
+      "label": "Flow1D.setRightControlPointTemperature",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:348:setRightControlPointCoordinate",
+      "label": "Flow1D.setRightControlPointCoordinate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:351:enableTwoPointControl",
+      "label": "Flow1D.enableTwoPointControl",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:354:twoPointControlEnabled",
+      "label": "Flow1D.twoPointControlEnabled",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:361:doEnergy",
+      "label": "Flow1D.doEnergy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:366:resize",
+      "label": "Flow1D.resize",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:369:setGas",
+      "label": "Flow1D.setGas",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:373:setGasAtMidpoint",
+      "label": "Flow1D.setGasAtMidpoint",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:376:density",
+      "label": "Flow1D.density",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:386:isFree",
+      "label": "Flow1D.isFree",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:397:isStrained",
+      "label": "Flow1D.isStrained",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:402:setViscosityFlag",
+      "label": "Flow1D.setViscosityFlag",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:430:leftExcessSpecies",
+      "label": "Flow1D.leftExcessSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:435:rightExcessSpecies",
+      "label": "Flow1D.rightExcessSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:439:hasAnalyticJacobian",
+      "label": "Flow1D.hasAnalyticJacobian",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:440:evalJacobianAnalytic",
+      "label": "Flow1D.evalJacobianAnalytic",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:441:checkAnalyticJacobian",
+      "label": "Flow1D.checkAnalyticJacobian",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:444:getMeta",
+      "label": "Flow1D.getMeta",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:445:setMeta",
+      "label": "Flow1D.setMeta",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:466:updateThermo",
+      "label": "Flow1D.updateThermo",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:484:updateTransport",
+      "label": "Flow1D.updateTransport",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:487:updateDiffFluxes",
+      "label": "Flow1D.updateDiffFluxes",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:510:computeRadiation",
+      "label": "Flow1D.computeRadiation",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:516:radiationPolyFactor",
+      "label": "Flow1D.radiationPolyFactor",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:671:T",
+      "label": "Flow1D.T",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:675:T",
+      "label": "Flow1D.T",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:680:T_prev",
+      "label": "Flow1D.T_prev",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:681:prevSoln",
+      "label": "Flow1D.prevSoln",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:685:rho_u",
+      "label": "Flow1D.rho_u",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:690:u",
+      "label": "Flow1D.u",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:696:V",
+      "label": "Flow1D.V",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:701:V_prev",
+      "label": "Flow1D.V_prev",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:702:prevSoln",
+      "label": "Flow1D.prevSoln",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:707:Lambda",
+      "label": "Flow1D.Lambda",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:715:Uo",
+      "label": "Flow1D.Uo",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:721:Y",
+      "label": "Flow1D.Y",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:727:Y",
+      "label": "Flow1D.Y",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:732:Y",
+      "label": "Flow1D.Y",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:735:Y",
+      "label": "Flow1D.Y",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:740:Y_prev",
+      "label": "Flow1D.Y_prev",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:741:prevSoln",
+      "label": "Flow1D.prevSoln",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:746:X",
+      "label": "Flow1D.X",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:751:flux",
+      "label": "Flow1D.flux",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:752:m_flux",
+      "label": "Flow1D.m_flux",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:784:dVdz",
+      "label": "Flow1D.dVdz",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:799:dYdz",
+      "label": "Flow1D.dYdz",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:813:dTdz",
+      "label": "Flow1D.dTdz",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:841:shear",
+      "label": "Flow1D.shear",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:856:conduction",
+      "label": "Flow1D.conduction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:870:mindex",
+      "label": "Flow1D.mindex",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:884:grad_hk",
+      "label": "Flow1D.grad_hk",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:953:usingAnalyticJacobian",
+      "label": "Flow1D.usingAnalyticJacobian",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:957:analyticRequested",
+      "label": "Flow1D.analyticRequested",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:966:analyticJacobianSupported",
+      "label": "Flow1D.analyticJacobianSupported",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:971:probeAnalyticJacobian",
+      "label": "Flow1D.probeAnalyticJacobian",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:974:computeWdotDerivatives",
+      "label": "Flow1D.computeWdotDerivatives",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:980:fluxJacobian",
+      "label": "Flow1D.fluxJacobian",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:983:addSpeciesJacEntries",
+      "label": "Flow1D.addSpeciesJacEntries",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:986:addEnergyJacEntries",
+      "label": "Flow1D.addEnergyJacEntries",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "include/cantera/oneD/Flow1D.h:989:addFlowJacEntries",
+      "label": "Flow1D.addFlowJacEntries",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "src/oneD/DomainFactory.cpp:42:Flow1D",
+      "label": "Flow1D.Flow1D",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:136:CanteraError",
+      "label": "Flow1D.CanteraError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:140:CanteraError",
+      "label": "Flow1D.CanteraError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:833:IndexError",
+      "label": "Flow1D.IndexError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:851:componentIndex",
+      "label": "Flow1D.componentIndex",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:886:twoPointControlEnabled",
+      "label": "Flow1D.twoPointControlEnabled",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:906:energy_flags",
+      "label": "Flow1D.energy_flags",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:965:ArraySizeError",
+      "label": "Flow1D.ArraySizeError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:986:ArraySizeError",
+      "label": "Flow1D.ArraySizeError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:1007:ArraySizeError",
+      "label": "Flow1D.ArraySizeError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:1085:data",
+      "label": "Flow1D.data",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:1123:soln",
+      "label": "Flow1D.soln",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:1550:JY",
+      "label": "Flow1D.JY",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:1551:c",
+      "label": "Flow1D.c",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:1583:constexpr",
+      "label": "Flow1D.constexpr",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "id": "src/oneD/Flow1D.cpp:1624:constexpr",
+      "label": "Flow1D.constexpr",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    }
+  ],
+  "solver_family": "flow1d"
+}

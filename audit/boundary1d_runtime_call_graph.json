@@ -1,0 +1,118 @@
+{
+  "solver_family": "boundary1d",
+  "nodes": [
+    "include/cantera/oneD/Boundary1D.h:48:init",
+    "include/cantera/oneD/Boundary1D.h:52:domainType",
+    "include/cantera/oneD/Boundary1D.h:56:isConnector",
+    "include/cantera/oneD/Boundary1D.h:61:setTemperature",
+    "include/cantera/oneD/Boundary1D.h:66:temperature",
+    "include/cantera/oneD/Boundary1D.h:71:nSpecies",
+    "include/cantera/oneD/Boundary1D.h:76:setMoleFractions",
+    "include/cantera/oneD/Boundary1D.h:77:NotImplementedError",
+    "include/cantera/oneD/Boundary1D.h:81:setMoleFractions",
+    "include/cantera/oneD/Boundary1D.h:82:NotImplementedError",
+    "include/cantera/oneD/Boundary1D.h:86:massFraction",
+    "include/cantera/oneD/Boundary1D.h:87:NotImplementedError",
+    "include/cantera/oneD/Boundary1D.h:91:setMdot",
+    "include/cantera/oneD/Boundary1D.h:96:setSpreadRate",
+    "include/cantera/oneD/Boundary1D.h:97:NotImplementedError",
+    "include/cantera/oneD/Boundary1D.h:101:spreadRate",
+    "include/cantera/oneD/Boundary1D.h:102:NotImplementedError",
+    "include/cantera/oneD/Boundary1D.h:106:mdot",
+    "include/cantera/oneD/Boundary1D.h:110:setupGrid",
+    "include/cantera/oneD/Boundary1D.h:112:fromArray",
+    "include/cantera/oneD/Boundary1D.h:117:_init",
+    "include/cantera/oneD/Boundary1D.h:151:domainType",
+    "include/cantera/oneD/Boundary1D.h:155:setSpreadRate",
+    "include/cantera/oneD/Boundary1D.h:157:spreadRate",
+    "include/cantera/oneD/Boundary1D.h:161:setTemperature",
+    "include/cantera/oneD/Boundary1D.h:163:show",
+    "include/cantera/oneD/Boundary1D.h:165:nSpecies",
+    "include/cantera/oneD/Boundary1D.h:169:setMoleFractions",
+    "include/cantera/oneD/Boundary1D.h:170:setMoleFractions",
+    "include/cantera/oneD/Boundary1D.h:171:massFraction",
+    "include/cantera/oneD/Boundary1D.h:175:updateState",
+    "include/cantera/oneD/Boundary1D.h:176:init",
+    "include/cantera/oneD/Boundary1D.h:179:toArray",
+    "include/cantera/oneD/Boundary1D.h:180:fromArray",
+    "include/cantera/oneD/Boundary1D.h:214:domainType",
+    "include/cantera/oneD/Boundary1D.h:218:show",
+    "include/cantera/oneD/Boundary1D.h:220:init",
+    "include/cantera/oneD/Boundary1D.h:225:toArray",
+    "include/cantera/oneD/Boundary1D.h:248:domainType",
+    "include/cantera/oneD/Boundary1D.h:252:init",
+    "include/cantera/oneD/Boundary1D.h:257:toArray",
+    "include/cantera/oneD/Boundary1D.h:280:domainType",
+    "include/cantera/oneD/Boundary1D.h:284:init",
+    "include/cantera/oneD/Boundary1D.h:289:toArray",
+    "include/cantera/oneD/Boundary1D.h:308:domainType",
+    "include/cantera/oneD/Boundary1D.h:312:show",
+    "include/cantera/oneD/Boundary1D.h:314:nSpecies",
+    "include/cantera/oneD/Boundary1D.h:318:setMoleFractions",
+    "include/cantera/oneD/Boundary1D.h:319:setMoleFractions",
+    "include/cantera/oneD/Boundary1D.h:320:massFraction",
+    "include/cantera/oneD/Boundary1D.h:324:init",
+    "include/cantera/oneD/Boundary1D.h:327:toArray",
+    "include/cantera/oneD/Boundary1D.h:328:fromArray",
+    "include/cantera/oneD/Boundary1D.h:358:domainType",
+    "include/cantera/oneD/Boundary1D.h:362:init",
+    "include/cantera/oneD/Boundary1D.h:365:toArray",
+    "include/cantera/oneD/Boundary1D.h:366:fromArray",
+    "include/cantera/oneD/Boundary1D.h:367:show",
+    "include/cantera/oneD/Boundary1D.h:385:domainType",
+    "include/cantera/oneD/Boundary1D.h:390:enableCoverageEquations",
+    "include/cantera/oneD/Boundary1D.h:396:coverageEnabled",
+    "include/cantera/oneD/Boundary1D.h:400:componentName",
+    "include/cantera/oneD/Boundary1D.h:401:componentIndex",
+    "include/cantera/oneD/Boundary1D.h:403:init",
+    "include/cantera/oneD/Boundary1D.h:404:resetBadValues",
+    "include/cantera/oneD/Boundary1D.h:409:value",
+    "include/cantera/oneD/Boundary1D.h:410:toArray",
+    "include/cantera/oneD/Boundary1D.h:411:fromArray",
+    "include/cantera/oneD/Boundary1D.h:413:_getInitialSoln",
+    "include/cantera/oneD/Boundary1D.h:417:_finalize",
+    "include/cantera/oneD/Boundary1D.h:421:show",
+    "src/oneD/Boundary1D.cpp:182:CanteraError",
+    "src/oneD/Boundary1D.cpp:298:data",
+    "src/oneD/Boundary1D.cpp:416:CanteraError",
+    "src/oneD/Boundary1D.cpp:487:CanteraError",
+    "src/oneD/Boundary1D.cpp:538:data",
+    "src/oneD/Boundary1D.cpp:641:IndexError",
+    "src/oneD/Boundary1D.cpp:779:data",
+    "src/oneD/Boundary1D.cpp:798:soln"
+  ],
+  "edges": [
+    {
+      "from": "Boundary1D::init",
+      "to": "Boundary1D::_init"
+    },
+    {
+      "from": "Inlet1D::init",
+      "to": "Boundary1D::_init"
+    },
+    {
+      "from": "Inlet1D::setMoleFractions",
+      "to": "Inlet1D::massFraction"
+    },
+    {
+      "from": "OutletRes1D::setMoleFractions",
+      "to": "OutletRes1D::massFraction"
+    },
+    {
+      "from": "Inlet1D::eval",
+      "to": "Boundary1D::eval"
+    },
+    {
+      "from": "Outlet1D::eval",
+      "to": "Boundary1D::eval"
+    },
+    {
+      "from": "Symm1D::eval",
+      "to": "Boundary1D::eval"
+    },
+    {
+      "from": "Surf1D::eval",
+      "to": "Boundary1D::eval"
+    }
+  ]
+}

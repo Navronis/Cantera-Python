@@ -1,0 +1,1 @@
+{"status":"UNAVAILABLE","oracle_role":"NO_LIVE_PINNED_ORACLE","reason":"Pinned native SCons build cannot compile without a C++ toolchain."}

@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-18",
+  "reference_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "claims_reviewed": "user-provided solver and conversion status summary",
+  "native_cantera_runtime_import": {
+    "result": "not observed",
+    "evidence": [
+      "tests.test_runtime_purity.test_fresh_process_import_does_not_load_native_cantera",
+      "tests.test_runtime_purity.test_runtime_sources_do_not_import_native_cantera"
+    ],
+    "limit": "The source test checks Python imports and fresh-process sys.modules. It is not a binary loader or dynamic-import audit."
+  },
+  "numerical_backends": {
+    "numpy": "required runtime dependency; compiled numerical library may be used",
+    "scipy": "declared dependency used by ReactorNet BDF/LSODA and surface Radau",
+    "scipy_available_in_validation_environment": true,
+    "scipy_version": "1.18.1",
+    "reactor_fallback": "adaptive classical RK4 step-doubling implemented in Python; not CVODES"
+  },
+  "equilibrium": {
+    "modes_present_in_code": ["TP", "HP", "UV", "SP", "SV"],
+    "focused_tests": 9,
+    "focused_tests_passed": 9,
+    "pinned_native_equilibrium_cases_independently_found": 0,
+    "assessment": "solver implementation exists; broad numerical equivalence is not established"
+  },
+  "reactor_ode": {
+    "rhs_present_in_code": true,
+    "integrator_options": ["SciPy BDF", "SciPy LSODA retry", "adaptive RK4 step-doubling fallback"],
+    "assessment": "partial implementation; not equivalent to Cantera SUNDIALS/CVODES semantics",
+    "equation_scope_gaps": [
+      "source IdealGasReactor includes internal-pressure and intrinsic-heating terms absent from the Python RHS",
+      "source includes surface production and surface mass-flux terms absent from the Python RHS"
+    ]
+  },
+  "reactor_sensitivity": {
+    "implementation": "finite-difference re-integration after reaction-multiplier perturbation",
+    "full_test_suite": "218 passed, zero failures and zero errors in 289.779 seconds",
+    "released_cantera_3_2_comparison": {
+      "temperature_sensitivity_relative_difference": 0.005071785621538489,
+      "scope": "one supplementary case; not exact-pinned proof"
+    },
+    "limitations": [
+      "not simultaneous CVODES sensitivity equations",
+      "species-enthalpy sensitivity is unsupported",
+      "no pinned-native sensitivity corpus"
+    ]
+  },
+  "surface_coverage": {
+    "implementation_present": true,
+    "radau_path_present": true,
+    "no_scipy_fallback_test": "tests.test_interface_kinetics.InterfaceKineticsTests.test_advance_coverages_ptcombust",
+    "result": "PASS with SciPy Radau; 8.026 seconds",
+    "fallback_status": "rejects nonphysical or non-finite trial states and fails explicitly on exhausted step budget; not validated as a stiff-solver replacement"
+  },
+  "focused_command": "python -m unittest tests.test_equilibrium_modes tests.test_equilibrium_solver tests.test_runtime_purity -v",
+  "focused_result": "11 passed",
+  "surface_failure_command": "python -m unittest tests.test_interface_kinetics.InterfaceKineticsTests.test_advance_coverages_ptcombust -v",
+  "full_suite": {
+    "test_discovery_count": 218,
+    "completed_in_this_verification": true,
+    "result": "218 passed, zero failures and zero errors",
+    "duration_seconds": 289.779,
+    "environment": "Python 3.12 reference environment with SciPy 1.18.1",
+    "prior_run_manifest_count": 192,
+    "prior_manifest_scope": "historical result; does not cover the current 218-test tree"
+  },
+  "conversion_percentage": {
+    "single_percentage_is_defensible": false,
+    "latest_auditable_symbol_snapshot": {
+      "equivalent_proven": 421,
+      "partial": 336,
+      "not_ported": 5027,
+      "total": 5784,
+      "equivalent_proven_percent": 7.2786998616874135,
+      "touched_including_partial_percent": 13.087828199169433
+    },
+    "conflicting_port_status_claim": "782 proven / 5784; no matching generated audit was found, and it conflicts with the source-symbol JSONL and forensic summary"
+  }
+}

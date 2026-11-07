@@ -1,0 +1,480 @@
+{
+  "timestamp": "2026-09-27T14:49:00.458820+00:00",
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "git_head": "147b4c71476039634be17fa006066a254f6efc58",
+  "working_tree_clean": false,
+  "working_tree_status": [
+    " M PORT_STATUS.json",
+    " M PORT_STATUS.md",
+    " M VALIDATION.md",
+    " M audit/native_oracle_identity.json",
+    " M audit/native_parity_summary.json",
+    " M audit/native_wave1_summary.json",
+    " M audit/native_wave2_summary.json",
+    " M audit/native_wave3_summary.json",
+    " M cantera_python/cubic_eos.py",
+    " M cantera_python/ideal_gas.py",
+    " M cantera_python/solution.py",
+    " M cantera_python/state.py",
+    " M cantera_python/transport.py",
+    " M tests/test_multicomponent_transport.py",
+    " M tests/test_solution_kinetics_reactor.py",
+    " M tools/compare_native_vs_python.py",
+    " M tools/run_native_oracle_runner.py",
+    " M tools/run_python_port_runner.py",
+    "?? audit/adversarial_wave4_checkpoint.jsonl",
+    "?? audit/corpus_wave3_singular_jacobian.jsonl",
+    "?? audit/corpus_wave4.jsonl",
+    "?? audit/corpus_wave4_adversarial_diff.jsonl",
+    "?? audit/corpus_wave4_failures.jsonl",
+    "?? audit/native_failure_raw.jsonl",
+    "?? audit/native_failure_semantics_wave4.jsonl",
+    "?? audit/native_wave4_adversarial_results.jsonl",
+    "?? audit/native_wave4_results.jsonl",
+    "?? audit/py_adv_chunks/",
+    "?? audit/py_chunks/",
+    "?? audit/python_wave4_adversarial_results.jsonl",
+    "?? audit/python_wave4_results.jsonl",
+    "?? audit/raw_native_wave2_internal.jsonl",
+    "?? audit/raw_native_wave3_singular.jsonl",
+    "?? audit/raw_python_wave2_internal.jsonl",
+    "?? audit/raw_python_wave3_singular.jsonl",
+    "?? audit/solver_wave4_adversarial_validation.md",
+    "?? audit/solver_wave4_dependency_graph.md",
+    "?? audit/solver_wave4_differential_validation.md",
+    "?? audit/solver_wave4_existing_implementation_audit.jsonl",
+    "?? audit/solver_wave4_frozen_manifest.json",
+    "?? audit/solver_wave4_full_binary_matrix_validation.jsonl",
+    "?? audit/solver_wave4_full_multidiff_matrix_validation.jsonl",
+    "?? audit/solver_wave4_independent_audit.md",
+    "?? audit/solver_wave4_run_provenance.json",
+    "?? audit/solver_wave4_source_inventory.jsonl",
+    "?? audit/thermodynamic_solver_waves_1_3_current_head_manifest.json",
+    "?? audit/wave1_metric_reconciliation.md",
+    "?? audit/wave1_source_mapping.md",
+    "?? audit/wave2_evidence_reconciliation.md",
+    "?? audit/wave2_internal_root_parity.jsonl",
+    "?? audit/wave2_internal_root_parity_summary.md",
+    "?? audit/wave3_implemented_differently_disposition.md",
+    "?? audit/wave3_metric_reconciliation.md",
+    "?? audit/wave3_singular_jacobian_audit.md",
+    "?? audit/wave3_singular_jacobian_comparison.json",
+    "?? audit/waves_1_3_current_head_dependency_audit.md",
+    "?? audit/waves_1_3_current_head_gate.json",
+    "?? provenance/solver_wave4_data_tables.jsonl",
+    "?? provenance/solver_wave4_equations.jsonl",
+    "?? provenance/solver_wave4_stefan_maxwell_matrix.md",
+    "?? tests/test_cubic_inverse_source.py",
+    "?? tests/test_state_failure_mutation.py",
+    "?? tools/adversarial_worker.py",
+    "?? tools/build_wave4_existing_audit.py",
+    "?? tools/check_wsl_cond.py",
+    "?? tools/compare_internals.py",
+    "?? tools/compare_wave2_internals.py",
+    "?? tools/compare_wave4_adversarial_diff.py",
+    "?? tools/compare_wave4_full_matrix.py",
+    "?? tools/compare_wave4_results.py",
+    "?? tools/compare_wave4_rigorous.py",
+    "?? tools/dump_internals",
+    "?? tools/dump_internals.cpp",
+    "?? tools/execute_native_wave4.py",
+    "?? tools/generate_wave3_singular_corpus.py",
+    "?? tools/generate_wave4_adversarial_differential_corpus.py",
+    "?? tools/generate_wave4_corpus.py",
+    "?? tools/generate_wave4_data_tables.py",
+    "?? tools/generate_wave4_equations.py",
+    "?? tools/generate_wave4_run_provenance.py",
+    "?? tools/generate_wave4_source_inventory.py",
+    "?? tools/inventory_wave4_source.py",
+    "?? tools/parsed_raw_wave4_symbols.json",
+    "?? tools/run_failure_semantics.py",
+    "?? tools/run_native_cubic_internal_probe",
+    "?? tools/run_native_cubic_internal_probe.cpp",
+    "?? tools/run_native_failure_semantics",
+    "?? tools/run_native_failure_semantics.cpp",
+    "?? tools/run_native_wave4",
+    "?? tools/run_native_wave4.cpp",
+    "?? tools/run_python_cubic_internal_probe.py",
+    "?? tools/run_python_wave4.py",
+    "?? tools/run_python_wave4_checkpointed.py",
+    "?? tools/run_python_wave4_disk_chunked.py",
+    "?? tools/run_python_wave4_parallel.py",
+    "?? tools/run_wave4_adversarial.py",
+    "?? tools/run_wave4_adversarial_checkpointed.py",
+    "?? tools/test_bdiff",
+    "?? tools/test_bdiff.cpp",
+    "?? tools/test_compile_check",
+    "?? tools/test_cond_native",
+    "?? tools/test_cond_native.cpp",
+    "?? tools/test_native_cubic_probe",
+    "?? tools/test_native_cubic_probe.cpp",
+    "?? tools/test_python_fitting.py",
+    "?? tools/test_wave3_singular_differential.py",
+    "?? tools/test_wsl_native_multitransport.py",
+    "?? tools/test_wsl_om22.py",
+    "?? tools/test_wsl_visc.py",
+    "?? tools/update_frozen_manifest.py",
+    "?? tools/validate_waves_1_3_current_head.py",
+    "?? tools/verify_exact_multitransport.py",
+    "?? tools/verify_mm_collision_int.py",
+    "?? tools/verify_wave4_full_matrix_structures.py",
+    "?? tools/verify_wave4_matrix_cache_semantics.py"
+  ],
+  "evidence_gate_passed": false,
+  "saved_record_comparisons_recomputed": true,
+  "pinned_native_identity_record_matches": true,
+  "strict_closure_certified": false,
+  "overall_gate_passed": false,
+  "wave1_failure_state_semantics_verified": false,
+  "dependencies": {
+    "cantera_python/state.py": {
+      "current_hash": "159601567253c1a6fbb21c5c09d382fb9729ab59179509b294c3cc1cdf771ce8",
+      "expected_hash": "6fe015a744b915edaf2f1a8e3e538241e9cf8e28bf3aae2bd481464cf03b9bdc",
+      "bit_exact": false
+    },
+    "cantera_python/thermo.py": {
+      "current_hash": "1a034d833d2de4c6e9221b747a12319dd60db377f50c600c24781c0aaf4c1b68",
+      "expected_hash": "1a034d833d2de4c6e9221b747a12319dd60db377f50c600c24781c0aaf4c1b68",
+      "bit_exact": true
+    },
+    "cantera_python/ideal_gas.py": {
+      "current_hash": "c2e9f67156989993609d46eba3c2c59dd73fff0ee64760b959fc2f68ebdf8f20",
+      "expected_hash": "98445f219100be1d3417451e40a759c6c17b8823592f7b994dfae2087e0ca49d",
+      "bit_exact": false
+    },
+    "cantera_python/phases.py": {
+      "current_hash": "03f3cab9aa9a220b6f7c818460d1e6d33f59018866bb904f9ecf04d436f3f365",
+      "expected_hash": "03f3cab9aa9a220b6f7c818460d1e6d33f59018866bb904f9ecf04d436f3f365",
+      "bit_exact": true
+    },
+    "cantera_python/cubic_eos.py": {
+      "current_hash": "15508a0f40d691df6aacf79de2d484a86f420d0544a8b241bf24a978514d562b",
+      "expected_hash": "435e62df706c6700b54b3e6a8139421673749b2a5722a18c5d8124d8a84a3054",
+      "bit_exact": false
+    },
+    "cantera_python/tpx.py": {
+      "current_hash": "20e9b056719f4c664c4fd0c915c3c1a81acaed687acba898bd8efbbf39726e06",
+      "expected_hash": "20e9b056719f4c664c4fd0c915c3c1a81acaed687acba898bd8efbbf39726e06",
+      "bit_exact": true
+    },
+    "cantera_python/tpx_exact.py": {
+      "current_hash": "d61011adc5ff601decfb1196e8a022118da964d63ee9d78c918ef47f227d4c87",
+      "expected_hash": "d61011adc5ff601decfb1196e8a022118da964d63ee9d78c918ef47f227d4c87",
+      "bit_exact": true
+    },
+    "cantera_python/numerics.py": {
+      "current_hash": "69d58120fa2f9377b0105cf18d858ec31be4d20b6a7161a429e19098d5ecb284",
+      "expected_hash": "69d58120fa2f9377b0105cf18d858ec31be4d20b6a7161a429e19098d5ecb284",
+      "bit_exact": true
+    },
+    "cantera_python/state_revision.py": {
+      "current_hash": "b00b2df4d7392be6d7e4a5bad2edb36f36430bd4690ed11f5869548957bfa77b",
+      "expected_hash": "b00b2df4d7392be6d7e4a5bad2edb36f36430bd4690ed11f5869548957bfa77b",
+      "bit_exact": true
+    },
+    "cantera_python/solution.py": {
+      "current_hash": "861ad9f0abd2fa7af5af11e8991048ea9adcdbbbde8d55b950ff7a547ce1cca2",
+      "audited_for_wave4_transport_only": true,
+      "waves_1_3_impact": "NONE"
+    }
+  },
+  "wave1": {
+    "wave": 1,
+    "total_cases": 4100,
+    "success_parity_cases": 4000,
+    "failure_parity_cases": 100,
+    "failure_category_matches": 100,
+    "mismatches": 0,
+    "property_error_distributions": {
+      "temperature": {
+        "attempts": 4000,
+        "finite_comparisons": 4000,
+        "nan_count": 0,
+        "inf_count": 0,
+        "abs_error": {
+          "count": 4000,
+          "p50": 3.979039320256561e-13,
+          "p95": 4.3199065657972824e-07,
+          "p99": 1.156235555299645e-06,
+          "max": 2.45742933202564e-06
+        },
+        "rel_error": {
+          "count": 4000,
+          "p50": 4.448547000801612e-16,
+          "p95": 1.3157597462058929e-09,
+          "p99": 3.466468745117699e-09,
+          "max": 5.5953143784865005e-09
+        },
+        "tolerance_policy": {
+          "rtol": 1e-07,
+          "atol": 0.0001,
+          "unit": "K",
+          "rationale": "Newton-bisection iteration converges to rtol <= 1e-8. Tested with independent start points >=20% away."
+        }
+      },
+      "pressure": {
+        "attempts": 4000,
+        "finite_comparisons": 4000,
+        "nan_count": 0,
+        "inf_count": 0,
+        "abs_error": {
+          "count": 4000,
+          "p50": 2.3283064365386963e-10,
+          "p95": 0.00013187761942390352,
+          "p99": 0.013865790329873562,
+          "max": 0.0470279511064291
+        },
+        "rel_error": {
+          "count": 4000,
+          "p50": 1.5853307375996854e-16,
+          "p95": 1.1498457339499828e-09,
+          "p99": 3.87007745938783e-09,
+          "max": 9.692924458720665e-09
+        },
+        "tolerance_policy": {
+          "rtol": 1e-07,
+          "atol": 0.01,
+          "unit": "Pa",
+          "rationale": "Exact input for HP/SP. For UV/SV, calculated from ideal-gas state equation P = rho * R * T."
+        }
+      },
+      "density": {
+        "attempts": 4000,
+        "finite_comparisons": 4000,
+        "nan_count": 0,
+        "inf_count": 0,
+        "abs_error": {
+          "count": 4000,
+          "p50": 1.1102230246251565e-16,
+          "p95": 2.2026824808563106e-13,
+          "p99": 1.645653036064232e-08,
+          "max": 7.861450370683087e-07
+        },
+        "rel_error": {
+          "count": 4000,
+          "p50": 1.4903365469463348e-16,
+          "p95": 6.49769433257536e-15,
+          "p99": 1.9225413846877084e-09,
+          "max": 7.701719740018867e-09
+        },
+        "tolerance_policy": {
+          "rtol": 1e-07,
+          "atol": 1e-08,
+          "unit": "kg/m^3",
+          "rationale": "Inverted via specific volume in UV/SV, or computed from equation of state in HP/SP."
+        }
+      },
+      "enthalpy": {
+        "attempts": 4000,
+        "finite_comparisons": 4000,
+        "nan_count": 0,
+        "inf_count": 0,
+        "abs_error": {
+          "count": 4000,
+          "p50": 1.862645149230957e-09,
+          "p95": 0.00038727931678295135,
+          "p99": 0.0011058691889047623,
+          "max": 0.0024008918553590775
+        },
+        "rel_error": {
+          "count": 4000,
+          "p50": 2.1056415903002807e-16,
+          "p95": 4.3405502240460154e-11,
+          "p99": 1.245947723493309e-10,
+          "max": 2.725517523605849e-10
+        },
+        "tolerance_policy": {
+          "rtol": 1e-07,
+          "atol": 1.0,
+          "unit": "J/kg",
+          "rationale": "Direct target in setState_HP; computed from converged T and polynomial coefficients."
+        }
+      },
+      "int_energy": {
+        "attempts": 4000,
+        "finite_comparisons": 4000,
+        "nan_count": 0,
+        "inf_count": 0,
+        "abs_error": {
+          "count": 4000,
+          "p50": 1.862645149230957e-09,
+          "p95": 0.00029704347252845764,
+          "p99": 0.0008596982806921005,
+          "max": 0.0019305627793073654
+        },
+        "rel_error": {
+          "count": 4000,
+          "p50": 2.09772499965419e-16,
+          "p95": 3.2933623074891195e-11,
+          "p99": 9.610263314014215e-11,
+          "max": 2.1710007367554586e-10
+        },
+        "tolerance_policy": {
+          "rtol": 1e-07,
+          "atol": 1.0,
+          "unit": "J/kg",
+          "rationale": "Direct target in setState_UV; related to h by u = h - P*v."
+        }
+      },
+      "entropy": {
+        "attempts": 4000,
+        "finite_comparisons": 4000,
+        "nan_count": 0,
+        "inf_count": 0,
+        "abs_error": {
+          "count": 4000,
+          "p50": 9.094947017729282e-13,
+          "p95": 9.14722477318719e-07,
+          "p99": 2.7420155674917623e-06,
+          "max": 4.718277523352299e-06
+        },
+        "rel_error": {
+          "count": 4000,
+          "p50": 1.9567734215648255e-16,
+          "p95": 2.0464500275126136e-10,
+          "p99": 6.228464289551938e-10,
+          "max": 9.91498808154069e-10
+        },
+        "tolerance_policy": {
+          "rtol": 1e-07,
+          "atol": 0.001,
+          "unit": "J/(kg*K)",
+          "rationale": "Direct target in setState_SP and setState_SV; logarithmic T-dependence."
+        }
+      },
+      "cp": {
+        "attempts": 4000,
+        "finite_comparisons": 4000,
+        "nan_count": 0,
+        "inf_count": 0,
+        "abs_error": {
+          "count": 4000,
+          "p50": 2.2737367544323206e-13,
+          "p95": 2.473449285389506e-07,
+          "p99": 1.402096700076072e-06,
+          "max": 0.00019959294331783894
+        },
+        "rel_error": {
+          "count": 4000,
+          "p50": 2.0690258987736612e-16,
+          "p95": 2.5992104463207236e-10,
+          "p99": 1.4031352293536217e-09,
+          "max": 4.398623855704418e-08
+        },
+        "tolerance_policy": {
+          "rtol": 1e-06,
+          "atol": 0.0001,
+          "unit": "J/(kg*K)",
+          "rationale": "Algebraic polynomial evaluation (NASA-7 / NASA-9)."
+        }
+      },
+      "cv": {
+        "attempts": 4000,
+        "finite_comparisons": 4000,
+        "nan_count": 0,
+        "inf_count": 0,
+        "abs_error": {
+          "count": 4000,
+          "p50": 3.410605131648481e-13,
+          "p95": 4.007466714028851e-07,
+          "p99": 9.149742936642724e-07,
+          "max": 1.8988682768394938e-06
+        },
+        "rel_error": {
+          "count": 4000,
+          "p50": 2.716964898427366e-16,
+          "p95": 5.811820841440051e-10,
+          "p99": 1.2879467488127883e-09,
+          "max": 2.417086597003529e-09
+        },
+        "tolerance_policy": {
+          "rtol": 1e-06,
+          "atol": 0.0001,
+          "unit": "J/(kg*K)",
+          "rationale": "Algebraic evaluation: cv = cp - R/W for ideal gas mixtures."
+        }
+      },
+      "specific_volume": {
+        "attempts": 4000,
+        "finite_comparisons": 4000,
+        "nan_count": 0,
+        "inf_count": 0,
+        "abs_error": {
+          "count": 4000,
+          "p50": 7.806255641895632e-18,
+          "p95": 2.1649348980190553e-15,
+          "p99": 3.971816625591984e-11,
+          "max": 4.78343165077888e-09
+        },
+        "rel_error": {
+          "count": 4000,
+          "p50": 1.5173640148348472e-16,
+          "p95": 6.459022550237867e-15,
+          "p99": 1.922541401320475e-09,
+          "max": 7.70171970677062e-09
+        },
+        "tolerance_policy": {
+          "rtol": 1e-07,
+          "atol": 1e-08,
+          "unit": "kg/m^3",
+          "rationale": "Inverted via specific volume in UV/SV, or computed from equation of state in HP/SP."
+        }
+      }
+    },
+    "schema_declaration": {
+      "observable_fields": [
+        "status",
+        "temperature",
+        "pressure",
+        "density",
+        "specific_volume",
+        "enthalpy",
+        "int_energy",
+        "entropy",
+        "cp",
+        "cv",
+        "composition"
+      ],
+      "unobservable_fields": {
+        "restored_state_after_failure": "NOT_OBSERVABLE_WITH_CURRENT_ORACLE"
+      }
+    },
+    "WAVE_1_SAVED_NATIVE_RECORDS_MATCH": true
+  },
+  "wave2": {
+    "observable_passed": true,
+    "internal_root_passed": true,
+    "total_cases": 2000,
+    "success_cases": 1962,
+    "nsol_matches": 1962,
+    "three_root_cases": 225,
+    "branch_matches": 225,
+    "max_root_rel": 1.3587822982913996e-12,
+    "max_mv_rel": 4.670709822238042e-14
+  },
+  "wave3": {
+    "differential_passed": true,
+    "total_cases": 9608,
+    "mismatches": 0,
+    "implemented_differently_disposition_records": 21,
+    "implemented_differently_disposition_exists": true,
+    "singular_observable_parity_passed": true,
+    "singular_fallback_activation_verified": false,
+    "singular_fallback_activation_count": 0,
+    "singular_failure_messages_compared": false
+  },
+  "flags": {
+    "THERMODYNAMIC_INVERSE_SOLVERS_WAVE_1_OUTPUT_EVIDENCE_PASSED": true,
+    "CUBIC_EOS_WAVE_2_OUTPUT_AND_ROOT_EVIDENCE_PASSED": true,
+    "TPX_PURE_FLUIDS_WAVE_3_EVIDENCE_PASSED": true,
+    "WAVE_3_SINGULAR_FALLBACK_BRANCH_VERIFIED": false,
+    "WAVES_1_3_STRICT_CLOSURE_CERTIFIED": false
+  },
+  "waves_1_3_snapshot_id": "fc63583ec6249d35444d7e68c5971a96b67aa7051af9d75904ffafd151bdc2ca",
+  "repository_snapshot_kind": "WORKING_TREE_SNAPSHOT_WITH_DIFF_HASH",
+  "evidence_binding_note": "Report generated for this repository snapshot. Raw-run freshness is separately established only when the execution-provenance file verifies its raw hashes and pinned identity.",
+  "status": "SUPERSEDED_HISTORICAL_SAVED_RECORD_GATE",
+  "superseded_by": "audit/waves_1_3_validation_gate.json",
+  "supersession_note": "Its historical TRUE output-evidence flags are not current-snapshot certification; use the evidence-derived validation gate for present status.",
+  "evidence_binding_scope": "SAVED_RAW_RECORDS_NOT_REPROVEN"
+}

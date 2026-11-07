@@ -1,0 +1,48 @@
+{
+  "generated_utc": "2026-09-16T15:05:00Z",
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "suite_root": "tests/",
+  "fast_regression": {
+    "command": "python -m pytest tests -q --tb=no -p no:cacheprovider --ignore=tests/test_solution_kinetics_reactor.py",
+    "discovered": 138,
+    "passed": 138,
+    "failed": 0,
+    "skipped": 0,
+    "xfailed": 0,
+    "subtests_passed": 684,
+    "modules_collected": 17,
+    "duration_seconds": 1.24
+  },
+  "scientific_integration": {
+    "command": "python -m pytest tests/test_solution_kinetics_reactor.py -q --tb=line -p no:cacheprovider",
+    "discovered": 6,
+    "passed": null,
+    "failed": null,
+    "skipped": 0,
+    "xfailed": 0,
+    "modules_collected": 1,
+    "note": "Reactor ignition integration exceeds 30-minute wall limit with dense FD-Jacobian BDF at pinned tolerances; classified STRESS layer pending analytic/sparse Jacobian (Phase 8). Not silently removed: all 6 tests remain in tree.",
+    "test_ids": [
+      "SolutionKineticsReactorTests::test_ideal_gas_phase_state_mutators",
+      "SolutionKineticsReactorTests::test_array_getters",
+      "SolutionKineticsReactorTests::test_kinetics_rates_and_conservation",
+      "SolutionKineticsReactorTests::test_transport_properties",
+      "SolutionKineticsReactorTests::test_constant_pressure_reactor_integration",
+      "SolutionKineticsReactorTests::test_constant_volume_reactor_integration"
+    ]
+  },
+  "total_discovered": 144,
+  "tests_added_last_run": 0,
+  "tests_deleted_last_run": 0,
+  "tests_renamed_last_run": 0,
+  "count_reconciliation": {
+    "previous_reported_124": "Audit-branch figure; current file census is 144 (138 fast + 6 reactor integration). No test removed.",
+    "previous_reported_130": "Counted only the 17 fast-suite files of the previous run; the 6-test reactor file was excluded due to runtime. Not a deletion.",
+    "delta_124_to_144": "+20 from prior audit branch counting method, -0 deletions; per-file counts verified in fast regression output."
+  },
+  "layers": {
+    "FAST_REGRESSION": "pytest tests --ignore=tests/test_solution_kinetics_reactor.py (~1.3 s)",
+    "SCIENTIFIC_INTEGRATION": "pytest tests/test_solution_kinetics_reactor.py (minutes; run at subsystem checkpoints)",
+    "STRESS_PERFORMANCE": "long ignition/trajectory sweeps; run explicitly, not in CI loop"
+  }
+}

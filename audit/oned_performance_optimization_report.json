@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "subsystem": "1D flow equations (Flow1D / StFlow / IonFlow)",
+  "date_utc": "2026-11-06T02:15:00Z",
+  "native_pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "python_branch": "full-port/continuous-closure-20260930",
+  "summary": {
+    "initial_slowdown_factor": 40000.0,
+    "final_slowdown_factor": 239.7,
+    "overall_speedup": 166.9,
+    "initial_eval_time_25pts_ms": 2992.0,
+    "final_eval_time_25pts_ms": 7.74,
+    "initial_function_calls": 39600000,
+    "final_function_calls": 1302301,
+    "function_call_reduction_pct": 96.7,
+    "numerical_parity": true,
+    "native_speed_parity": false
+  },
+  "benchmarks": [
+    {
+      "configuration": "FreeFlow_10pts",
+      "points": 10,
+      "native_median_us": 13.2,
+      "python_initial_median_us": 340000.0,
+      "python_optimized_median_us": 3328.6,
+      "slowdown_factor": 252.2
+    },
+    {
+      "configuration": "AxisymmetricFlow_10pts_Rad",
+      "points": 10,
+      "native_median_us": 13.7,
+      "python_initial_median_us": 340000.0,
+      "python_optimized_median_us": 3188.0,
+      "slowdown_factor": 232.8
+    },
+    {
+      "configuration": "UnstrainedFlow_10pts",
+      "points": 10,
+      "native_median_us": 14.04,
+      "python_initial_median_us": 340000.0,
+      "python_optimized_median_us": 3105.3,
+      "slowdown_factor": 221.2
+    },
+    {
+      "configuration": "FreeFlow_25pts",
+      "points": 25,
+      "native_median_us": 30.64,
+      "python_initial_median_us": 2992000.0,
+      "python_optimized_median_us": 7742.1,
+      "slowdown_factor": 252.7
+    }
+  ],
+  "profiler_breakdown_ms_per_eval_25pts": {
+    "total_eval": 18.96,
+    "thermodynamic_state_updates": 1.6,
+    "nasa_polynomial_evaluation": 1.5,
+    "reaction_rate_evaluation_wdot": 6.5,
+    "transport_coefficient_evaluation": 5.3,
+    "species_diffusion_fluxes": 1.9,
+    "spatial_residual_assembly": 1.2,
+    "python_dispatch_and_indexing": 1.0
+  },
+  "applied_architectural_optimizations": [
+    "Persistent non-allocating component accessors (Callable1DComponent, CallableXComponent, CallableRhoU) with integer offset arithmetic",
+    "Direct NumPy vectorization of pure Arrhenius reaction rate constants with (A, b, Ea) arrays",
+    "Precomputed reversible stoichiometry matrices (nu_rev, delta_n_rev) in _VectorizedKinetics",
+    "Kinetics delegation to _VectorizedKinetics for net_production_rates, rop, creation/destruction, and delta_enthalpy",
+    "Temperature-cached _reference() in IdealGasMixture eliminating duplicate NASA polynomial sweeps",
+    "Vectorized _mass_to_mole calculation in IdealGasMixture.setState_TPY",
+    "Vectorized binary diffusion polynomial evaluation using Horner method on precomputed coefficient matrix",
+    "Vectorized mixture-averaged diffusion coefficients formulation in MixTransport.mix_diff_coeffs",
+    "Vectorized spatial finite difference stencils in grad_hk, updateDiffFluxes, evalEnergy, and evalSpecies"
+  ],
+  "validation_results": {
+    "pytest_results": "90/90 passed (100%)",
+    "flow1d_differential_campaign": "30/30 passed (FULL_PARITY)",
+    "ionflow_differential_campaign": "12/12 passed (FULL_PARITY)"
+  }
+}

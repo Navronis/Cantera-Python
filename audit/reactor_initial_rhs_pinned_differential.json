@@ -1,0 +1,531 @@
+{
+  "oracle": {
+    "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "native_version": "4.0.0a2",
+    "native_extension_sha256": "d686773fe369ba07c2ad78431240869a3679316c4bdbb77160062d86aa14c68c",
+    "python_runtime_path": "/mnt/c/Users/Dell/Documents/Codex/2026-09-11/https-github-com-cantera-cantera-https/outputs/cantera-python/cantera_python/__init__.py"
+  },
+  "case": {
+    "mechanism": "gri30.yaml",
+    "initial_T_K": 1500.0,
+    "initial_P_Pa": 101325.0,
+    "initial_composition": "H2:2, O2:1, N2:4",
+    "native_derivative_query_advance_s": 1e-12,
+    "rtol": 1e-08,
+    "atol": 1e-12
+  },
+  "state": {
+    "size": 56,
+    "max_absolute_error": 2.3635493562323973e-09,
+    "max_relative_error": 1.0
+  },
+  "phase_kinetics": {
+    "net_production_rates": {
+      "size": 53,
+      "max_absolute_error": 1.5178830414797062e-17,
+      "max_relative_error": 7.083235350774737e-15,
+      "rms_relative_error": 2.011921421294295e-15,
+      "largest_absolute_error_entries": [
+        {
+          "index": 6,
+          "native": 0.0021429233483166504,
+          "python": 0.0021429233483166352,
+          "absolute_error": 1.5178830414797062e-17,
+          "relative_error": 7.083235350774737e-15
+        },
+        {
+          "index": 3,
+          "native": -0.0021429236603595016,
+          "python": -0.0021429236603594864,
+          "absolute_error": 1.5178830414797062e-17,
+          "relative_error": 7.083234319346041e-15
+        },
+        {
+          "index": 1,
+          "native": 0.0021429992028496178,
+          "python": 0.0021429992028496026,
+          "absolute_error": 1.5178830414797062e-17,
+          "relative_error": 7.082984629491819e-15
+        },
+        {
+          "index": 0,
+          "native": -0.002142961404376966,
+          "python": -0.002142961404376951,
+          "absolute_error": 1.5178830414797062e-17,
+          "relative_error": 7.083109562213548e-15
+        },
+        {
+          "index": 37,
+          "native": 1.7104564034383208e-10,
+          "python": 1.710456403438315e-10,
+          "absolute_error": 5.686866711302065e-25,
+          "relative_error": 3.3247656589612305e-15
+        },
+        {
+          "index": 47,
+          "native": -4.2863330384721984e-10,
+          "python": -4.286333038472193e-10,
+          "absolute_error": 5.169878828456423e-25,
+          "relative_error": 1.2061309240448456e-15
+        },
+        {
+          "index": 2,
+          "native": 4.5304006249627204e-10,
+          "python": 4.530400624962715e-10,
+          "absolute_error": 5.169878828456423e-25,
+          "relative_error": 1.1411526830475317e-15
+        },
+        {
+          "index": 34,
+          "native": 2.5758766350338773e-10,
+          "python": 2.575876635033878e-10,
+          "absolute_error": 5.169878828456423e-26,
+          "relative_error": 2.0070366562366172e-16
+        },
+        {
+          "index": 50,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 48,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 49,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 45,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 44,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 40,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 41,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        }
+      ]
+    },
+    "forward_rates_of_progress": {
+      "size": 325,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "rms_relative_error": 0.0,
+      "largest_absolute_error_entries": [
+        {
+          "index": 0,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 324,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 323,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 322,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 321,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 39,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 38,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 37,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 36,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 35,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 34,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 33,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 32,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 47,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 46,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        }
+      ]
+    },
+    "reverse_rates_of_progress": {
+      "size": 325,
+      "max_absolute_error": 1.5178830414797062e-17,
+      "max_relative_error": 7.083235350774737e-15,
+      "rms_relative_error": 4.3454342817514614e-16,
+      "largest_absolute_error_entries": [
+        {
+          "index": 44,
+          "native": 0.0021429233483166504,
+          "python": 0.0021429233483166352,
+          "absolute_error": 1.5178830414797062e-17,
+          "relative_error": 7.083235350774737e-15
+        },
+        {
+          "index": 39,
+          "native": 1.5178546535233645e-08,
+          "python": 1.5178546535233648e-08,
+          "absolute_error": 3.308722450212111e-24,
+          "relative_error": 2.1798677775448666e-16
+        },
+        {
+          "index": 38,
+          "native": 2.2619926116824858e-08,
+          "python": 2.261992611682486e-08,
+          "absolute_error": 3.308722450212111e-24,
+          "relative_error": 1.4627467981652952e-16
+        },
+        {
+          "index": 180,
+          "native": 1.7104564034383208e-10,
+          "python": 1.710456403438315e-10,
+          "absolute_error": 5.686866711302065e-25,
+          "relative_error": 3.3247656589612305e-15
+        },
+        {
+          "index": 208,
+          "native": 2.5758766350338773e-10,
+          "python": 2.575876635033878e-10,
+          "absolute_error": 5.169878828456423e-26,
+          "relative_error": 2.0070366562366172e-16
+        },
+        {
+          "index": 0,
+          "native": 1.4099721107622e-10,
+          "python": 1.4099721107622002e-10,
+          "absolute_error": 2.5849394142282115e-26,
+          "relative_error": 1.8333266271705543e-16
+        },
+        {
+          "index": 103,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 104,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 105,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 106,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 107,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 108,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 102,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 110,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        },
+        {
+          "index": 111,
+          "native": 0.0,
+          "python": 0.0,
+          "absolute_error": 0.0,
+          "relative_error": 0.0
+        }
+      ]
+    }
+  },
+  "rhs": {
+    "size": 56,
+    "max_absolute_error": 0.0008817683487905015,
+    "max_relative_error": 1.0,
+    "rms_relative_error": 0.4383581527294834,
+    "largest_relative_error_components": [
+      {
+        "index": 33,
+        "component": "N",
+        "native_rhs": 3.2000473360279867e-21,
+        "python_rhs": 0.0,
+        "absolute_error": 3.2000473360279867e-21,
+        "relative_error": 1.0
+      },
+      {
+        "index": 38,
+        "component": "NO",
+        "native_rhs": 6.855599380353283e-21,
+        "python_rhs": 0.0,
+        "absolute_error": 6.855599380353283e-21,
+        "relative_error": 1.0
+      },
+      {
+        "index": 39,
+        "component": "NO2",
+        "native_rhs": 5.569726459532867e-33,
+        "python_rhs": 0.0,
+        "absolute_error": 5.569726459532867e-33,
+        "relative_error": 1.0
+      },
+      {
+        "index": 35,
+        "component": "NH2",
+        "native_rhs": 5.860510009396632e-31,
+        "python_rhs": 0.0,
+        "absolute_error": 5.860510009396632e-31,
+        "relative_error": 1.0
+      },
+      {
+        "index": 36,
+        "component": "NH3",
+        "native_rhs": 1.2707347773159774e-36,
+        "python_rhs": 0.0,
+        "absolute_error": 1.2707347773159774e-36,
+        "relative_error": 1.0
+      },
+      {
+        "index": 34,
+        "component": "NH",
+        "native_rhs": 8.998761092161132e-25,
+        "python_rhs": 0.0,
+        "absolute_error": 8.998761092161132e-25,
+        "relative_error": 1.0
+      },
+      {
+        "index": 41,
+        "component": "HNO",
+        "native_rhs": 5.896497349341999e-31,
+        "python_rhs": 0.0,
+        "absolute_error": 5.896497349341999e-31,
+        "relative_error": 1.0
+      },
+      {
+        "index": 10,
+        "component": "H2O2",
+        "native_rhs": 1.2165931260728399e-08,
+        "python_rhs": 0.0,
+        "absolute_error": 1.2165931260728399e-08,
+        "relative_error": 1.0
+      },
+      {
+        "index": 7,
+        "component": "OH",
+        "native_rhs": 3.060688603348762e-07,
+        "python_rhs": 0.0,
+        "absolute_error": 3.060688603348762e-07,
+        "relative_error": 1.0
+      },
+      {
+        "index": 8,
+        "component": "H2O",
+        "native_rhs": 7.14802863346713e-12,
+        "python_rhs": 0.0,
+        "absolute_error": 7.14802863346713e-12,
+        "relative_error": 1.0
+      },
+      {
+        "index": 5,
+        "component": "O",
+        "native_rhs": 3.3009340474074945e-07,
+        "python_rhs": 4.217181728790477e-08,
+        "absolute_error": 2.8792158745284466e-07,
+        "relative_error": 0.8722427752804516
+      },
+      {
+        "index": 37,
+        "component": "NNH",
+        "native_rhs": 4.37150070318355e-08,
+        "python_rhs": 4.3495594066838176e-08,
+        "absolute_error": 2.1941296499732246e-10,
+        "relative_error": 0.005019168013344588
+      },
+      {
+        "index": 50,
+        "component": "N2",
+        "native_rhs": -7.005722099168298e-08,
+        "python_rhs": -6.986407370949667e-08,
+        "absolute_error": 1.9314728218631092e-10,
+        "relative_error": 0.0027569932043013936
+      },
+      {
+        "index": 40,
+        "component": "N2O",
+        "native_rhs": 4.377110711146434e-08,
+        "python_rhs": 4.3801184019730304e-08,
+        "absolute_error": 3.007690826596355e-11,
+        "relative_error": 0.0006866688410161552
+      },
+      {
+        "index": 6,
+        "component": "O2",
+        "native_rhs": -0.3989542130933027,
+        "python_rhs": -0.3989536138091629,
+        "absolute_error": 5.992841398128057e-07,
+        "relative_error": 1.5021376392198976e-06
+      },
+      {
+        "index": 4,
+        "component": "H",
+        "native_rhs": 0.012568248838050185,
+        "python_rhs": 0.012568267365803762,
+        "absolute_error": 1.852775357615022e-08,
+        "relative_error": 1.4741692738460722e-06
+      },
+      {
+        "index": 2,
+        "component": "temperature",
+        "native_rhs": -2363.878621281413,
+        "python_rhs": -2363.877739513064,
+        "absolute_error": 0.0008817683487905015,
+        "relative_error": 3.7301760794829297e-07
+      },
+      {
+        "index": 9,
+        "component": "HO2",
+        "native_rhs": 0.4115213905617465,
+        "python_rhs": 0.41152137820928125,
+        "absolute_error": 1.235246527286904e-08,
+        "relative_error": 3.001658129121145e-08
+      },
+      {
+        "index": 3,
+        "component": "H2",
+        "native_rhs": -0.025136092090128712,
+        "python_rhs": -0.02513609137044372,
+        "absolute_error": 7.196849921564663e-10,
+        "relative_error": 2.8631538648726404e-08
+      },
+      {
+        "index": 51,
+        "component": "AR",
+        "native_rhs": 0.0,
+        "python_rhs": 0.0,
+        "absolute_error": 0.0,
+        "relative_error": 0.0
+      }
+    ]
+  }
+}

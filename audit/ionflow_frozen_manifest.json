@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/ionflow_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T20:08:59.963830+00:00",
+  "solver_family": "IonFlow",
+  "subsystem": "1D charged flow",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0, libcantera_shared.so.4.0.0"
+  },
+  "file_hashes": {
+    "oned_py": "8de43d4a3e88a88d2d9792dc84f3d72210f372e048a83bfe07da6dd76a8f5166",
+    "test_ionflow_and_factory_py": "809489cdf5c47205e1baa9d26b989d40c9d893bbfd06a4b29ab6633ba1745fec",
+    "corpus_ionflow_jsonl": "7354455b72595020901738d7f08733e0f7674220519048d2987992e7c1a4265e",
+    "run_native_ionflow_oracle_cpp": "f63e31ec142895560b89e4b3175da259b7c46dd8e17a216aebc541113d0d7cb9",
+    "run_python_ionflow_port_py": "89696c50461826d433183ee6504a718b512bff6d648206eedc84cbba3693f845",
+    "run_ionflow_campaign_py": "b13b1b285ce738a25edf3669af68e90aa77ce71995ad0d3b78ba0ce1b4370222",
+    "native_ionflow_oracle_results_json": "48277b8c5c2109c866cd793848f74b5055ad2a50183ad75f34f489c0f9871a64",
+    "python_ionflow_port_results_json": "47516bb4e786ca4fcd9e15e597681928f8710d85c0e9cc27d29eaf82d46c97c1",
+    "ionflow_differential_summary_json": "261300c9673284bad11beda41021c7b25a3b41095fc27e04195cf1667bd4a207",
+    "ionflow_closure_symbol_set_json": "09f7cc11e32f1b7fc118a996ce81961ca85a6d60a4b768047191ca76979a70de",
+    "pinned_ionflow_h": "1956b34ce3cf1b98fd9680c8352324613d0873c20e154f5df31645cc15f19c0c",
+    "pinned_ionflow_cpp": "49bb9a8ee6a9ae44563cace67a7eeb36c45ff2efb9f1f2aa978f1db0eb85cc22"
+  },
+  "closure_metrics": {
+    "total_symbols": 15,
+    "pinned_native_validated": 15,
+    "non_runtime_cpp_only": 0,
+    "remaining_open": 0,
+    "differential_cases_passed": 12,
+    "differential_cases_total": 12,
+    "parity_status": "FULL_PARITY"
+  }
+}

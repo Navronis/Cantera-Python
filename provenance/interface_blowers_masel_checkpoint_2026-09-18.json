@@ -1,0 +1,42 @@
+{
+  "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "implementation": [
+    "cantera_python/surface.py:Interface._parse_reaction_record",
+    "cantera_python/surface.py:Interface._reaction_enthalpy",
+    "cantera_python/surface.py:Interface._blowers_masel_coefficient",
+    "cantera_python/surface.py:Interface.forward_rate_constants",
+    "cantera_python/surface.py:Interface.advance_coverages"
+  ],
+  "pinned_source_mapping": [
+    "src/kinetics/InterfaceRate.cpp:InterfaceData::update",
+    "include/cantera/kinetics/BlowersMaselRate.h:BlowersMaselRate::updateFromStruct",
+    "include/cantera/kinetics/InterfaceRate.h:InterfaceRate::updateFromStruct/evalFromStruct",
+    "include/cantera/kinetics/InterfaceRate.h:StickingRate::updateFromStruct/evalFromStruct",
+    "src/kinetics/InterfaceRate.cpp:StickingCoverage::setContext"
+  ],
+  "covered_semantics": [
+    "live reaction enthalpy from all surface and adjacent-phase partial molar enthalpies",
+    "all three Blowers-Masel activation-energy branches",
+    "interface coverage dependency applied after base Blowers-Masel rate",
+    "sticking coverage dependency applied before Motz-Wise correction",
+    "site-density, sticking multiplier, and sqrt(T) factors",
+    "phase-level Motz-Wise default and explicit reaction override",
+    "mechanism factory construction for interface and sticking Blowers-Masel rates",
+    "coverage integration uses the same Blowers-Masel semantics"
+  ],
+  "focused_test": {
+    "command": "python -m unittest tests.test_interface_blowers_masel -v",
+    "result": "3 passed, 0 failed, 0 errors",
+    "environment_note": "Bundled Python runtime; test mechanism is an in-memory mapping and requires no YAML dependency"
+  },
+  "compatibility_test": {
+    "command": "python -m unittest tests.test_rates -v",
+    "result": "25 passed, 0 failed, 0 errors",
+    "interface_file_suite": "not executed in bundled runtime because neither ruamel.yaml nor PyYAML is installed"
+  },
+  "strict_status": "PARTIAL",
+  "remaining_validation": [
+    "fresh exact-pinned native differential values for interface and sticking rates",
+    "electrochemical voltage/exchange-current corrections are outside this checkpoint"
+  ]
+}

@@ -1,0 +1,521 @@
+{"type": "PASS_STUB", "symbol": "Application.thread_complete", "file": "anymap.py", "line": 311, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "CachedValue.validate", "file": "anymap.py", "line": 331, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "ValueCache.getScalar", "file": "anymap.py", "line": 336, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "EMPTY_CONTAINER_RETURN_STUB", "symbol": "ValueCache.getArray", "file": "anymap.py", "line": 337, "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "ExtensionManager.registerRateBuilders", "file": "anymap.py", "line": 360, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "ExtensionManager.wrapReactionData", "file": "anymap.py", "line": 361, "value": "None", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "FactoryBase.deleteFactories", "file": "anymap.py", "line": 377, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Factory.create", "file": "anymap.py", "line": 380, "value": "None", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Factory.reg", "file": "anymap.py", "line": 381, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Factory.addAlias", "file": "anymap.py", "line": 382, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Factory.exists", "file": "anymap.py", "line": 384, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Logger.write", "file": "anymap.py", "line": 388, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Logger.writeendl", "file": "anymap.py", "line": 389, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Logger.warn", "file": "anymap.py", "line": 390, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Logger.error", "file": "anymap.py", "line": 391, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "ExternalLogger.ExternalLogger", "file": "anymap.py", "line": 394, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Messages.addError", "file": "anymap.py", "line": 401, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Messages.getErrorCount", "file": "anymap.py", "line": 402, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Messages.popError", "file": "anymap.py", "line": 403, "value": "''", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Messages.lastErrorMessage", "file": "anymap.py", "line": 404, "value": "''", "classification": "PLACEHOLDER_RETURN"}
+{"type": "EMPTY_CONTAINER_RETURN_STUB", "symbol": "Messages.getErrors", "file": "anymap.py", "line": 405, "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Messages.logErrors", "file": "anymap.py", "line": 406, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "ThreadMessages.removeThreadMessages", "file": "anymap.py", "line": 410, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Storage.__init__", "file": "anymap.py", "line": 414, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Storage.setCompressionLevel", "file": "anymap.py", "line": 415, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Storage.hasGroup", "file": "anymap.py", "line": 416, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Storage.checkGroup", "file": "anymap.py", "line": 417, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Storage.deleteGroup", "file": "anymap.py", "line": 418, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Storage.hasAttribute", "file": "anymap.py", "line": 419, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Storage.writeAttributes", "file": "anymap.py", "line": 421, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Storage.writeData", "file": "anymap.py", "line": 422, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Storage.checkGroupRead", "file": "anymap.py", "line": 423, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Storage.checkGroupWrite", "file": "anymap.py", "line": 424, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "YamlWriter.__init__", "file": "anymap.py", "line": 428, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "YamlWriter.setHeader", "file": "anymap.py", "line": 429, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "YamlWriter.addPhase", "file": "anymap.py", "line": 430, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "YamlWriter.toYamlString", "file": "anymap.py", "line": 431, "value": "''", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "YamlWriter.toYamlFile", "file": "anymap.py", "line": 432, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "YamlWriter.setPrecision", "file": "anymap.py", "line": 433, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "YamlWriter.skipUserDefined", "file": "anymap.py", "line": 434, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "YamlWriter.setUnitSystem", "file": "anymap.py", "line": 435, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "do_hefty_calculations_atLeastgreaterThanAMillisecond", "file": "anymap.py", "line": 521, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "AssertTrace", "file": "anymap.py", "line": 522, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "AssertThrow", "file": "anymap.py", "line": 523, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "addDataDirectory", "file": "anymap.py", "line": 526, "classification": "EMPTY_PASS"}
+{"type": "EMPTY_CONTAINER_RETURN_STUB", "symbol": "getDataDirectories", "file": "anymap.py", "line": 527, "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "loadExtension", "file": "anymap.py", "line": 528, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "loadExtensions", "file": "anymap.py", "line": 529, "classification": "EMPTY_PASS"}
+{"type": "EMPTY_CONTAINER_RETURN_STUB", "symbol": "searchPythonVersions", "file": "anymap.py", "line": 530, "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "appdelete", "file": "anymap.py", "line": 531, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "thread_complete", "file": "anymap.py", "line": 532, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "usingSharedLibrary", "file": "anymap.py", "line": 533, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "debugModeEnabled", "file": "anymap.py", "line": 536, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "usesHDF5", "file": "anymap.py", "line": 537, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "writelog_direct", "file": "anymap.py", "line": 538, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "writelog", "file": "anymap.py", "line": 539, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "writelogf", "file": "anymap.py", "line": 540, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "writelogendl", "file": "anymap.py", "line": 541, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "_warn_deprecated", "file": "anymap.py", "line": 542, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "warn_deprecated", "file": "anymap.py", "line": 543, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "_warn", "file": "anymap.py", "line": 544, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "warn_user", "file": "anymap.py", "line": 545, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "suppress_deprecation_warnings", "file": "anymap.py", "line": 546, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "make_deprecation_warnings_fatal", "file": "anymap.py", "line": 547, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "make_warnings_fatal", "file": "anymap.py", "line": 548, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "suppress_thermo_warnings", "file": "anymap.py", "line": 549, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "thermo_warnings_suppressed", "file": "anymap.py", "line": 550, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "suppress_warnings", "file": "anymap.py", "line": 551, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "warnings_suppressed", "file": "anymap.py", "line": 552, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "use_legacy_rate_constants", "file": "anymap.py", "line": 553, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "legacy_rate_constants_used", "file": "anymap.py", "line": 554, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "setLogger", "file": "anymap.py", "line": 555, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "printStackTraceOnSegfault", "file": "anymap.py", "line": 556, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "checkFinite", "file": "anymap.py", "line": 569, "classification": "EMPTY_PASS"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "MixtureFugacityTP._eval_pressure", "file": "cubic_eos.py", "line": 241, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "MixtureFugacityTP.cp_mole", "file": "cubic_eos.py", "line": 571, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "MixtureFugacityTP.cv_mole", "file": "cubic_eos.py", "line": 575, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "getAtomicNumber", "file": "elements.py", "line": 275, "value": "1", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "ChemEquil.adjustEloc", "file": "equilibrium.py", "line": 372, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "ChemEquil.estimateEP_Brinkley", "file": "equilibrium.py", "line": 378, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "ChemEquil.setInitialMoles", "file": "equilibrium.py", "line": 381, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "ChemEquil.setToEquilState", "file": "equilibrium.py", "line": 384, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "ChemEquil.update", "file": "equilibrium.py", "line": 387, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "FixedStoichiometryPhase.n_species", "file": "fixed_stoichiometry.py", "line": 118, "value": "1", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "FixedStoichiometryPhase.standard_concentration", "file": "fixed_stoichiometry.py", "line": 200, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "FixedStoichiometryPhase.log_standard_conc", "file": "fixed_stoichiometry.py", "line": 203, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "FixedStoichiometryPhase.standard_concentration_units", "file": "fixed_stoichiometry.py", "line": 209, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "FixedStoichiometryPhase.standard_concentration", "file": "fixed_stoichiometry.py", "line": 279, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "FixedStoichiometryPhase.log_standard_conc", "file": "fixed_stoichiometry.py", "line": 282, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Func1.eval", "file": "functions.py", "line": 83, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Func1.derivative", "file": "functions.py", "line": 86, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Tabulated1.isIdentical", "file": "functions.py", "line": 263, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "_Advanced1.isIdentical", "file": "functions.py", "line": 431, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PHYSICAL_CONSTANT", "symbol": "IdealGasMixture.internal_pressure", "file": "ideal_gas.py", "line": 259, "value": "0.0", "classification": "PHYSICALLY_EXACT_ZERO"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "IdealSolidSolution.isothermal_compressibility", "file": "ideal_solid.py", "line": 147, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "IdealSolidSolution.thermal_expansion_coeff", "file": "ideal_solid.py", "line": 151, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "GeneralMatrix.nRows", "file": "numerics.py", "line": 32, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "GeneralMatrix.nColumns", "file": "numerics.py", "line": 35, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "GeneralMatrix.factor", "file": "numerics.py", "line": 38, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "GeneralMatrix.solve", "file": "numerics.py", "line": 41, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "GeneralMatrix.mult", "file": "numerics.py", "line": 44, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "GeneralMatrix.leftMult", "file": "numerics.py", "line": 47, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "GeneralMatrix.zero", "file": "numerics.py", "line": 50, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "GeneralMatrix.oneNorm", "file": "numerics.py", "line": 53, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "GeneralMatrix.rcond", "file": "numerics.py", "line": 56, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "GeneralMatrix.factorAlgorithm", "file": "numerics.py", "line": 59, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "GeneralMatrix.info", "file": "numerics.py", "line": 73, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "GeneralMatrix.factorQR", "file": "numerics.py", "line": 82, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "GeneralMatrix.rcondQR", "file": "numerics.py", "line": 85, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "GeneralMatrix.useFactorAlgorithm", "file": "numerics.py", "line": 88, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "GeneralMatrix.clearFactorFlag", "file": "numerics.py", "line": 91, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "GeneralMatrix.factored", "file": "numerics.py", "line": 94, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "FuncEval.evalRootFunctions", "file": "numerics.py", "line": 399, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "FuncEval.evalRootFunctionsNoThrow", "file": "numerics.py", "line": 402, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "FuncEval.getState", "file": "numerics.py", "line": 411, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "FuncEval.getStateDae", "file": "numerics.py", "line": 414, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "FuncEval.nRootFunctions", "file": "numerics.py", "line": 417, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "FuncEval.nparams", "file": "numerics.py", "line": 420, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "FuncEval.preconditionerSetup", "file": "numerics.py", "line": 423, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "FuncEval.preconditioner_setup_nothrow", "file": "numerics.py", "line": 429, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "FuncEval.updatePreconditioner", "file": "numerics.py", "line": 439, "classification": "EMPTY_PASS"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "FuncEval.eval", "file": "numerics.py", "line": 444, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "FuncEval.nEquations", "file": "numerics.py", "line": 453, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "PASS_STUB", "symbol": "FuncEval.getState", "file": "numerics.py", "line": 456, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SystemJacobian.updatePreconditioner", "file": "numerics.py", "line": 473, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SystemJacobian.updateTransient", "file": "numerics.py", "line": 476, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "SystemJacobian.info", "file": "numerics.py", "line": 511, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "SystemJacobian.printPreconditioner", "file": "numerics.py", "line": 520, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SystemJacobian.stateAdjustment", "file": "numerics.py", "line": 534, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SystemJacobian.factorize", "file": "numerics.py", "line": 537, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "AdaptivePreconditioner.prunePreconditioner", "file": "numerics.py", "line": 625, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Integrator.algebraicInErrorTest", "file": "numerics.py", "line": 718, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Integrator.includeAlgebraicInErrorTest", "file": "numerics.py", "line": 721, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.applyOptions", "file": "numerics.py", "line": 724, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.checkError", "file": "numerics.py", "line": 727, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Integrator.lastOrder", "file": "numerics.py", "line": 739, "value": "1", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Integrator.setMaxNonlinConvFailures", "file": "numerics.py", "line": 754, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.setMaxNonlinIterations", "file": "numerics.py", "line": 757, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.setMaxOrder", "file": "numerics.py", "line": 763, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Integrator.nSensParams", "file": "numerics.py", "line": 775, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Integrator.preconditioner", "file": "numerics.py", "line": 778, "value": "None", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Integrator.setPreconditioner", "file": "numerics.py", "line": 781, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.sensInit", "file": "numerics.py", "line": 790, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.setBandwidth", "file": "numerics.py", "line": 793, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.setMaxErrTestFails", "file": "numerics.py", "line": 796, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.setMaxStepSize", "file": "numerics.py", "line": 799, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.setMinStepSize", "file": "numerics.py", "line": 802, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.setMethod", "file": "numerics.py", "line": 805, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.setRootFunctionCount", "file": "numerics.py", "line": 808, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.setSensitivityTolerances", "file": "numerics.py", "line": 811, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Integrator.warn", "file": "numerics.py", "line": 822, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "SteadyStateSystem.bandwidth", "file": "numerics.py", "line": 1059, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "SteadyStateSystem.newton", "file": "numerics.py", "line": 1065, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.resetBadValues", "file": "numerics.py", "line": 1074, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.evalSSJacobian", "file": "numerics.py", "line": 1077, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.factorizeJacobian", "file": "numerics.py", "line": 1080, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "SteadyStateSystem.parseTimeStepGrowthStrategy", "file": "numerics.py", "line": 1089, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.recordFactorization", "file": "numerics.py", "line": 1095, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.recordLinearSolve", "file": "numerics.py", "line": 1098, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.saveStats", "file": "numerics.py", "line": 1101, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.clearDebugFile", "file": "numerics.py", "line": 1107, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.setInterrupt", "file": "numerics.py", "line": 1110, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.setJacAge", "file": "numerics.py", "line": 1113, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.setJacobianPerturbation", "file": "numerics.py", "line": 1116, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.setMaxTimeStep", "file": "numerics.py", "line": 1119, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.setMinTimeStep", "file": "numerics.py", "line": 1125, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.setTimeStepCallback", "file": "numerics.py", "line": 1131, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.setTimeStepFactor", "file": "numerics.py", "line": 1134, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.setTimeStepGrowthFactor", "file": "numerics.py", "line": 1137, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "SteadyStateSystem.setTimeStepGrowthStrategy", "file": "numerics.py", "line": 1140, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "SteadyStateSystem.timeStepGrowthStrategy", "file": "numerics.py", "line": 1149, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "EigenSparseJacobian.updatePreconditioner", "file": "numerics.py", "line": 1160, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "EigenSparseJacobian.updateTransient", "file": "numerics.py", "line": 1163, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "EigenSparseJacobian.printJacobian", "file": "numerics.py", "line": 1185, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "ResidEval.nEquations", "file": "numerics.py", "line": 1230, "value": "1", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "MultiJac.__init__", "file": "numerics.py", "line": 1311, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Refiner.value", "file": "oned.py", "line": 44, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Refiner.show", "file": "oned.py", "line": 237, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.Domain1D", "file": "oned.py", "line": 242, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.append", "file": "oned.py", "line": 257, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.appendResiduals", "file": "oned.py", "line": 260, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Domain1D.checkAnalyticJacobian", "file": "oned.py", "line": 269, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Domain1D.evalJacobianAnalytic", "file": "oned.py", "line": 275, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.forceFullUpdate", "file": "oned.py", "line": 281, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.fromArray", "file": "oned.py", "line": 284, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.getResiduals", "file": "oned.py", "line": 287, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.getValues", "file": "oned.py", "line": 290, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Domain1D.hasAnalyticJacobian", "file": "oned.py", "line": 296, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Domain1D.init", "file": "oned.py", "line": 302, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Domain1D.initialValue", "file": "oned.py", "line": 305, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Domain1D.locate", "file": "oned.py", "line": 320, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Domain1D.needJacUpdate", "file": "oned.py", "line": 323, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Domain1D.resetBadValues", "file": "oned.py", "line": 329, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.setData", "file": "oned.py", "line": 344, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.setMeta", "file": "oned.py", "line": 347, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.setValue", "file": "oned.py", "line": 350, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.setValues", "file": "oned.py", "line": 353, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.show", "file": "oned.py", "line": 359, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Domain1D.updateState", "file": "oned.py", "line": 377, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Domain1D.value", "file": "oned.py", "line": 380, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Domain1D.is_connector", "file": "oned.py", "line": 457, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Domain1D.eval", "file": "oned.py", "line": 729, "classification": "EMPTY_PASS"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Domain1D.__reduce__", "file": "oned.py", "line": 749, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Domain1D.__copy__", "file": "oned.py", "line": 752, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "PASS_STUB", "symbol": "Boundary1D._init", "file": "oned.py", "line": 758, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Boundary1D.fromArray", "file": "oned.py", "line": 761, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Boundary1D.init", "file": "oned.py", "line": 764, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Boundary1D.is_connector", "file": "oned.py", "line": 793, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "OutletRes1D.eval", "file": "oned.py", "line": 990, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Empty1D.eval", "file": "oned.py", "line": 1002, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Symm1D.eval", "file": "oned.py", "line": 1014, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "ReactingSurf1D.coverageEnabled", "file": "oned.py", "line": 1039, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "ReactingSurf1D.enableCoverageEquations", "file": "oned.py", "line": 1042, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "ReactingSurf1D.resetBadValues", "file": "oned.py", "line": 1045, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "ReactingSurf1D.value", "file": "oned.py", "line": 1048, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Flow1D.updateTransport", "file": "oned.py", "line": 1065, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.Uo", "file": "oned.py", "line": 1074, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.V_prev", "file": "oned.py", "line": 1077, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.Y_prev", "file": "oned.py", "line": 1080, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Flow1D.addEnergyJacEntries", "file": "oned.py", "line": 1083, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.addFlowJacEntries", "file": "oned.py", "line": 1086, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.addSpeciesJacEntries", "file": "oned.py", "line": 1089, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.allOfEnergyEnabled", "file": "oned.py", "line": 1092, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.analyticJacobianSupported", "file": "oned.py", "line": 1095, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.analyticRequested", "file": "oned.py", "line": 1098, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.checkAnalyticJacobian", "file": "oned.py", "line": 1101, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Flow1D.computeRadiation", "file": "oned.py", "line": 1104, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.computeWdotDerivatives", "file": "oned.py", "line": 1107, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.conduction", "file": "oned.py", "line": 1110, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.dTdz", "file": "oned.py", "line": 1113, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.dVdz", "file": "oned.py", "line": 1116, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.dYdz", "file": "oned.py", "line": 1119, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Flow1D.doElectricField", "file": "oned.py", "line": 1122, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.doEnergy", "file": "oned.py", "line": 1125, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.enableTwoPointControl", "file": "oned.py", "line": 1128, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.evalJacobianAnalytic", "file": "oned.py", "line": 1131, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.fixElectricField", "file": "oned.py", "line": 1134, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.flux", "file": "oned.py", "line": 1137, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Flow1D.fluxJacobian", "file": "oned.py", "line": 1143, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.grad_hk", "file": "oned.py", "line": 1146, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.hasAnalyticJacobian", "file": "oned.py", "line": 1149, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.isFree", "file": "oned.py", "line": 1152, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.isStrained", "file": "oned.py", "line": 1155, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.leftControlPointCoordinate", "file": "oned.py", "line": 1158, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.leftExcessSpecies", "file": "oned.py", "line": 1164, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.noneOfEnergyEnabled", "file": "oned.py", "line": 1170, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Flow1D.probeAnalyticJacobian", "file": "oned.py", "line": 1173, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.radiationEnabled", "file": "oned.py", "line": 1176, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.radiationPolyFactor", "file": "oned.py", "line": 1179, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.radiativeHeatLoss", "file": "oned.py", "line": 1182, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.rho_u", "file": "oned.py", "line": 1185, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.rightControlPointCoordinate", "file": "oned.py", "line": 1188, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.rightExcessSpecies", "file": "oned.py", "line": 1194, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Flow1D.setFluxGradientBasis", "file": "oned.py", "line": 1197, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.setGasAtMidpoint", "file": "oned.py", "line": 1203, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.setLeftControlPointCoordinate", "file": "oned.py", "line": 1206, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.setLeftControlPointTemperature", "file": "oned.py", "line": 1209, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.setRightControlPointCoordinate", "file": "oned.py", "line": 1212, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.setRightControlPointTemperature", "file": "oned.py", "line": 1215, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.setTemperature", "file": "oned.py", "line": 1218, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.setViscosityFlag", "file": "oned.py", "line": 1221, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.shear", "file": "oned.py", "line": 1224, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Flow1D.solveElectricField", "file": "oned.py", "line": 1227, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.twoPointControlEnabled", "file": "oned.py", "line": 1233, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Flow1D.updateDiffFluxes", "file": "oned.py", "line": 1236, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Flow1D.updateThermo", "file": "oned.py", "line": 1239, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.usingAnalyticJacobian", "file": "oned.py", "line": 1242, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Flow1D.withSoret", "file": "oned.py", "line": 1245, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "OneDim.checkDomainArraySize", "file": "oned.py", "line": 2033, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "OneDim.checkDomainIndex", "file": "oned.py", "line": 2036, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.evalCountStats", "file": "oned.py", "line": 2042, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "OneDim.evalJacobian", "file": "oned.py", "line": 2045, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.evalTimeStats", "file": "oned.py", "line": 2048, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.gridSize", "file": "oned.py", "line": 2051, "value": "1", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.gridSizeStats", "file": "oned.py", "line": 2054, "value": "1", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "OneDim.init", "file": "oned.py", "line": 2057, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.jacobianCountStats", "file": "oned.py", "line": 2060, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.jacobianTimeStats", "file": "oned.py", "line": 2063, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.left", "file": "oned.py", "line": 2066, "value": "None", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.nVars", "file": "oned.py", "line": 2069, "value": "1", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.pointDomain", "file": "oned.py", "line": 2072, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.points", "file": "oned.py", "line": 2075, "value": "1", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "OneDim.resetBadValues", "file": "oned.py", "line": 2078, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.right", "file": "oned.py", "line": 2081, "value": "None", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.start", "file": "oned.py", "line": 2084, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "OneDim.timeStepStats", "file": "oned.py", "line": 2087, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "OneDim.writeStats", "file": "oned.py", "line": 2090, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.show", "file": "oned.py", "line": 2194, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D._restore", "file": "oned.py", "line": 2197, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D._setValue", "file": "oned.py", "line": 2200, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Sim1D._value", "file": "oned.py", "line": 2203, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Sim1D._workValue", "file": "oned.py", "line": 2206, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Sim1D.clearDebugFile", "file": "oned.py", "line": 2209, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.evalSSJacobian", "file": "oned.py", "line": 2212, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.finalize", "file": "oned.py", "line": 2215, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.getResidual", "file": "oned.py", "line": 2227, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.restore", "file": "oned.py", "line": 2233, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.restoreSteadySolution", "file": "oned.py", "line": 2236, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.restoreTimeSteppingSolution", "file": "oned.py", "line": 2239, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.setFixedTemperature", "file": "oned.py", "line": 2242, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.setGridMin", "file": "oned.py", "line": 2245, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.setLeftControlPoint", "file": "oned.py", "line": 2248, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.setMaxGridPoints", "file": "oned.py", "line": 2251, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.setRightControlPoint", "file": "oned.py", "line": 2254, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.setSteadyCallback", "file": "oned.py", "line": 2257, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.setTimeStepRegridMax", "file": "oned.py", "line": 2260, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Sim1D.solveAdjoint", "file": "oned.py", "line": 2263, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "IonFlow.updateTransport", "file": "oned.py", "line": 2959, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "IonFlow.E", "file": "oned.py", "line": 2962, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "IonFlow.ND", "file": "oned.py", "line": 2965, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "IonFlow.dEdz", "file": "oned.py", "line": 2968, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "IonFlow.frozenIonMethod", "file": "oned.py", "line": 2974, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "IonFlow.rho_e", "file": "oned.py", "line": 2977, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "MultiNewton.__init__", "file": "oned.py", "line": 3017, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiNewton.lastIterations", "file": "oned.py", "line": 3020, "value": "1", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "MultiNewton.setOptions", "file": "oned.py", "line": 3023, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiJac.__init__", "file": "oned.py", "line": 3029, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiJac.factorize", "file": "oned.py", "line": 3032, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiJac.info", "file": "oned.py", "line": 3035, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "MultiJac.initialize", "file": "oned.py", "line": 3038, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiJac.reset", "file": "oned.py", "line": 3041, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiJac.setBandwidth", "file": "oned.py", "line": 3044, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiJac.setValue", "file": "oned.py", "line": 3047, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiJac.updateTransient", "file": "oned.py", "line": 3053, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiJac.value", "file": "oned.py", "line": 3056, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Reservoir.volume", "file": "reactor.py", "line": 588, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Reservoir.add_sensitivity_species_enthalpy", "file": "reactor.py", "line": 606, "classification": "UNSUPPORTED_BRANCH"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "StoichiometricSubstance.isothermal_compressibility", "file": "stoich.py", "line": 90, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "StoichiometricSubstance.thermal_expansion_coeff", "file": "stoich.py", "line": 94, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "StoichiometricSubstance.internal_pressure", "file": "stoich.py", "line": 98, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "StoichiometricSubstance.standard_concentration", "file": "stoich.py", "line": 114, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "StoichiometricSubstance.log_standard_concentration", "file": "stoich.py", "line": 118, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Substance.Pp", "file": "tpx.py", "line": 183, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Substance.Psat", "file": "tpx.py", "line": 187, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Substance.ldens", "file": "tpx.py", "line": 205, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Substance.sp", "file": "tpx.py", "line": 209, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Substance.up", "file": "tpx.py", "line": 213, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Substance.MolWt", "file": "tpx.py", "line": 230, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Substance.Tcrit", "file": "tpx.py", "line": 233, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Substance.Pcrit", "file": "tpx.py", "line": 236, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Substance.Vcrit", "file": "tpx.py", "line": 239, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Substance.Tmin", "file": "tpx.py", "line": 242, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "NOT_IMPLEMENTED_ERROR", "symbol": "Substance.Tmax", "file": "tpx.py", "line": 245, "classification": "ABSTRACT_VIRTUAL_METHOD"}
+{"type": "PASS_STUB", "symbol": "GasTransportData.validate", "file": "transport.py", "line": 322, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Transport.CKMode", "file": "transport.py", "line": 340, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Transport.bulkViscosity", "file": "transport.py", "line": 343, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "Transport.electricalConductivity", "file": "transport.py", "line": 353, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "Transport.getBinDiffusivityPolynomial", "file": "transport.py", "line": 359, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Transport.getConductivityPolynomial", "file": "transport.py", "line": 362, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Transport.getViscosityPolynomial", "file": "transport.py", "line": 365, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Transport.init", "file": "transport.py", "line": 368, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Transport.invalidateCache", "file": "transport.py", "line": 371, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Transport.setBinDiffusivityPolynomial", "file": "transport.py", "line": 377, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Transport.setConductivityPolynomial", "file": "transport.py", "line": 380, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "Transport.setViscosityPolynomial", "file": "transport.py", "line": 383, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "GasTransport.fitCollisionIntegrals", "file": "transport.py", "line": 395, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "GasTransport.fitDiffCoeffs", "file": "transport.py", "line": 398, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "GasTransport.fitProperties", "file": "transport.py", "line": 401, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "GasTransport.setupCollisionIntegral", "file": "transport.py", "line": 407, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "GasTransport.setupCollisionParameters", "file": "transport.py", "line": 410, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "GasTransport.updateDiff_T", "file": "transport.py", "line": 413, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "GasTransport.updateSpeciesViscosities", "file": "transport.py", "line": 416, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "GasTransport.updateViscosity_T", "file": "transport.py", "line": 419, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "GasTransport.update_T", "file": "transport.py", "line": 422, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MixTransport.update_C", "file": "transport.py", "line": 427, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MixTransport.updateCond_T", "file": "transport.py", "line": 430, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MixTransport.CK_mode", "file": "transport.py", "line": 675, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "IonGasTransport.electricalConductivity", "file": "transport.py", "line": 776, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "IonGasTransport.fitDiffCoeffs", "file": "transport.py", "line": 779, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "IonGasTransport.omega11_n64", "file": "transport.py", "line": 782, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "IonGasTransport.setupN64", "file": "transport.py", "line": 785, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiTransport.update_C", "file": "transport.py", "line": 963, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiTransport.updateThermal_T", "file": "transport.py", "line": 966, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiTransport.eval_L0000", "file": "transport.py", "line": 969, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiTransport.eval_L0010", "file": "transport.py", "line": 972, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiTransport.eval_L1000", "file": "transport.py", "line": 975, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiTransport.eval_L0100", "file": "transport.py", "line": 978, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiTransport.eval_L0001", "file": "transport.py", "line": 981, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiTransport.eval_L1010", "file": "transport.py", "line": 984, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiTransport.eval_L1001", "file": "transport.py", "line": 987, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiTransport.eval_L0110", "file": "transport.py", "line": 990, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiTransport.eval_L0101", "file": "transport.py", "line": 993, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiTransport.hasInternalModes", "file": "transport.py", "line": 996, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "MultiTransport.solveLMatrixEquation", "file": "transport.py", "line": 1002, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiTransport.CK_mode", "file": "transport.py", "line": 1142, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "DustyGasTransport.initialize", "file": "transport.py", "line": 1530, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "DustyGasTransport.eval_H_matrix", "file": "transport.py", "line": 1536, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "DustyGasTransport.setMeanParticleDiameter", "file": "transport.py", "line": 1539, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "DustyGasTransport.updateBinaryDiffCoeffs", "file": "transport.py", "line": 1554, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "DustyGasTransport.updateKnudsenDiffCoeffs", "file": "transport.py", "line": 1557, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "DustyGasTransport.updateMultiDiffCoeffs", "file": "transport.py", "line": 1560, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "DustyGasTransport.updateTransport_C", "file": "transport.py", "line": 1563, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "DustyGasTransport.updateTransport_T", "file": "transport.py", "line": 1566, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "DustyGasTransport.CK_mode", "file": "transport.py", "line": 1603, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "HighPressureGasTransport.init", "file": "transport.py", "line": 1739, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "HighPressureGasTransport.computeMixtureParameters", "file": "transport.py", "line": 1742, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "HighPressureGasTransport.lowPressureNondimensionalViscosity", "file": "transport.py", "line": 1751, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "HighPressureGasTransport.phiShapeFactor", "file": "transport.py", "line": 1754, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "HighPressureGasTransport.polarityCorrectionFactor", "file": "transport.py", "line": 1757, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "HighPressureGasTransport.quantumCorrectionFactor", "file": "transport.py", "line": 1760, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "HighPressureGasTransport.thetaShapeFactor", "file": "transport.py", "line": 1763, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MMCollisionInt.astar", "file": "transport.py", "line": 1840, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MMCollisionInt.bstar", "file": "transport.py", "line": 1843, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MMCollisionInt.cstar", "file": "transport.py", "line": 1846, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "MMCollisionInt.fitDelta", "file": "transport.py", "line": 1849, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MMCollisionInt.fit_omega22", "file": "transport.py", "line": 1852, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MMCollisionInt.init", "file": "transport.py", "line": 1855, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "TransportData.validate", "file": "transport.py", "line": 1880, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "HighPressureGasTransportBase.initializeCriticalProperties", "file": "transport.py", "line": 1910, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "HighPressureGasTransportBase.updateCorrectionFactors", "file": "transport.py", "line": 1913, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "ChungHighPressureGasTransport.init", "file": "transport.py", "line": 1922, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "ChungHighPressureGasTransport.initializePureFluidProperties", "file": "transport.py", "line": 1925, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "ChungHighPressureGasTransport.computeMixtureParameters", "file": "transport.py", "line": 1928, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "WaterTransport.init", "file": "transport.py", "line": 1940, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "WaterTransport.bulkViscosity", "file": "transport.py", "line": 1943, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhase.elementMoles", "file": "vcs.py", "line": 34, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "MultiPhase.init", "file": "vcs.py", "line": 52, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhase.phaseCharge", "file": "vcs.py", "line": 64, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhase.solutionSpecies", "file": "vcs.py", "line": 96, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhase.speciesMoles", "file": "vcs.py", "line": 99, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhase.speciesPhaseIndex", "file": "vcs.py", "line": 105, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhase.tempOK", "file": "vcs.py", "line": 108, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "MultiPhase.updatePhases", "file": "vcs.py", "line": 111, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "MultiPhase.uploadMoleFractionsFromPhases", "file": "vcs.py", "line": 114, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.G0_calc_one", "file": "vcs.py", "line": 258, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.GStar_calc_one", "file": "vcs.py", "line": 261, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase._updateActCoeff", "file": "vcs.py", "line": 264, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase._updateG0", "file": "vcs.py", "line": 267, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase._updateGStar", "file": "vcs.py", "line": 270, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase._updateLnActCoeffJac", "file": "vcs.py", "line": 273, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase._updateMoleFractionDependencies", "file": "vcs.py", "line": 276, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase._updateVolPM", "file": "vcs.py", "line": 279, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase._updateVolStar", "file": "vcs.py", "line": 282, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.creationMoleNumbers", "file": "vcs.py", "line": 285, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.d", "file": "vcs.py", "line": 288, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.electricPotential", "file": "vcs.py", "line": 291, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase.elemResize", "file": "vcs.py", "line": 297, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.elementActive", "file": "vcs.py", "line": 300, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.elementType", "file": "vcs.py", "line": 303, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.exists", "file": "vcs.py", "line": 309, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.isIdealSoln", "file": "vcs.py", "line": 315, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.moleFraction", "file": "vcs.py", "line": 318, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.nElemConstraints", "file": "vcs.py", "line": 327, "value": "1", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.phiVarIndex", "file": "vcs.py", "line": 333, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase.setElemGlobalIndex", "file": "vcs.py", "line": 348, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase.setExistence", "file": "vcs.py", "line": 351, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase.setMoleFractions", "file": "vcs.py", "line": 354, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase.setMolesCurrent", "file": "vcs.py", "line": 357, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase.setMolesOutOfDate", "file": "vcs.py", "line": 360, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase.setPhiVarIndex", "file": "vcs.py", "line": 363, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase.setSpGlobalIndexVCS", "file": "vcs.py", "line": 366, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase.setTotalMoles", "file": "vcs.py", "line": 369, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.speciesUnknownType", "file": "vcs.py", "line": 375, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "vcs_VolPhase.totalMoles", "file": "vcs.py", "line": 378, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase.transferElementsFM", "file": "vcs.py", "line": 381, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "vcs_VolPhase.updateFromVCS_MoleNumbers", "file": "vcs.py", "line": 384, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.addElement", "file": "vcs.py", "line": 459, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.addOnePhaseSpecies", "file": "vcs.py", "line": 462, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "VCS_SOLVE.check_tmoles", "file": "vcs.py", "line": 465, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "VCS_SOLVE.delta_species", "file": "vcs.py", "line": 468, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "VCS_SOLVE.l2normdg", "file": "vcs.py", "line": 471, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.prob_report", "file": "vcs.py", "line": 474, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "VCS_SOLVE.solve_TP", "file": "vcs.py", "line": 477, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "VCS_SOLVE.solve_tp_component_calc", "file": "vcs.py", "line": 480, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_CalcLnActCoeffJac", "file": "vcs.py", "line": 483, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_Hessian_actCoeff_diag", "file": "vcs.py", "line": 486, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_Hessian_diag_adj", "file": "vcs.py", "line": 489, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_RxnStepSizes", "file": "vcs.py", "line": 492, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_SSPhase", "file": "vcs.py", "line": 495, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_TCounters_report", "file": "vcs.py", "line": 498, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_add_all_deleted", "file": "vcs.py", "line": 501, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_basopt", "file": "vcs.py", "line": 504, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_counters_init", "file": "vcs.py", "line": 507, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_delete_multiphase", "file": "vcs.py", "line": 510, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_delete_species", "file": "vcs.py", "line": 513, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_dfe", "file": "vcs.py", "line": 516, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_elab", "file": "vcs.py", "line": 519, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_elabcheck", "file": "vcs.py", "line": 522, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_elcorr", "file": "vcs.py", "line": 525, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_elem_rearrange", "file": "vcs.py", "line": 528, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_evalSS_TP", "file": "vcs.py", "line": 531, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_evaluate_speciesType", "file": "vcs.py", "line": 534, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_globStepDamp", "file": "vcs.py", "line": 537, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_inest", "file": "vcs.py", "line": 540, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_minor_alt_calc", "file": "vcs.py", "line": 543, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "VCS_SOLVE.vcs_phaseStabilityTest", "file": "vcs.py", "line": 546, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "VCS_SOLVE.vcs_popPhaseID", "file": "vcs.py", "line": 549, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "VCS_SOLVE.vcs_popPhasePossible", "file": "vcs.py", "line": 552, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_popPhaseRxnStepSizes", "file": "vcs.py", "line": 555, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_prep", "file": "vcs.py", "line": 558, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_prob_specifyFully", "file": "vcs.py", "line": 561, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_recheck_deleted", "file": "vcs.py", "line": 564, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_reinsert_deleted", "file": "vcs.py", "line": 567, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_report", "file": "vcs.py", "line": 570, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_setFlagsVolPhases", "file": "vcs.py", "line": 573, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_setMolesLinProg", "file": "vcs.py", "line": 576, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "VCS_SOLVE.vcs_species_type", "file": "vcs.py", "line": 579, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_switch_elem_pos", "file": "vcs.py", "line": 582, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_switch_pos", "file": "vcs.py", "line": 585, "classification": "EMPTY_PASS"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "VCS_SOLVE.vcs_tmoles", "file": "vcs.py", "line": 588, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_updateMolNumVolPhases", "file": "vcs.py", "line": 591, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_updateVP", "file": "vcs.py", "line": 594, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "VCS_SOLVE.vcs_zero_species", "file": "vcs.py", "line": 597, "classification": "EMPTY_PASS"}
+{"type": "PASS_STUB", "symbol": "MultiPhaseEquil.computeN", "file": "vcs.py", "line": 621, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "MultiPhaseEquil.computeReactionSteps", "file": "vcs.py", "line": 624, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhaseEquil.constituent", "file": "vcs.py", "line": 627, "value": "0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhaseEquil.error", "file": "vcs.py", "line": 630, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "MultiPhaseEquil.finish", "file": "vcs.py", "line": 633, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhaseEquil.isStoichPhase", "file": "vcs.py", "line": 642, "value": "False", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhaseEquil.iterations", "file": "vcs.py", "line": 645, "value": "1", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhaseEquil.moles", "file": "vcs.py", "line": 648, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhaseEquil.mu", "file": "vcs.py", "line": 651, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhaseEquil.nFree", "file": "vcs.py", "line": 654, "value": "1", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhaseEquil.phaseMoles", "file": "vcs.py", "line": 657, "value": "1.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "MultiPhaseEquil.reportCSV", "file": "vcs.py", "line": 663, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "MultiPhaseEquil.setInitialMixMoles", "file": "vcs.py", "line": 666, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "MultiPhaseEquil.setInitialMoles", "file": "vcs.py", "line": 669, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhaseEquil.solutionSpecies", "file": "vcs.py", "line": 672, "value": "True", "classification": "PLACEHOLDER_RETURN"}
+{"type": "CONSTANT_RETURN_STUB", "symbol": "MultiPhaseEquil.stepComposition", "file": "vcs.py", "line": 678, "value": "0.0", "classification": "PLACEHOLDER_RETURN"}
+{"type": "PASS_STUB", "symbol": "MultiPhaseEquil.unsort", "file": "vcs.py", "line": 681, "classification": "ABSTRACT_PROTOCOL"}
+{"type": "PASS_STUB", "symbol": "MultiPhaseEquil.updateMixMoles", "file": "vcs.py", "line": 684, "classification": "ABSTRACT_PROTOCOL"}

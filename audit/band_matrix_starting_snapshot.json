@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/band_matrix_starting_snapshot.json",
+  "snapshot_timestamp_utc": "2026-11-05T12:33:58.017753+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "is_worktree_clean": false,
+  "solver_family": "band_matrix",
+  "subsystem": "banded linear algebra",
+  "native_source": {
+    "commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "header": "include/cantera/numerics/BandMatrix.h",
+    "source": "src/numerics/BandMatrix.cpp",
+    "header_sha256": "825900f7c711430c609bce0b521944df1e9250e2ac90f0918305feb056bec9cd",
+    "source_sha256": "c53fac749a8a30f81f46fae2f8a5577aec53ef7b9fcd42aeb3e88440dd3e63b6"
+  },
+  "python_files": {
+    "numerics_py_sha256": "2622bd6c3fc23b34e723759fe154e6bd26b566fbb2f882bd48d804b471c55d25",
+    "test_numerics_py_sha256": "8466c5d4eb8ed374e2b57a4b27a060cf92e59982e0397100d12c449c5e3b39f9",
+    "compare_band_matrix_native_probe_py_sha256": "3969a58fcedf56bd141ae15a347227ad91044d143481793c2b18d528a1a2eb0a"
+  },
+  "closure_set_sha256": "a58d1fd1e5fba833d9748397e6372a62fd45b5a962492894413c077aee9fbf43",
+  "inventory_counts": {
+    "total_canonical_symbols": 26,
+    "open_runtime_symbols": 26,
+    "non_runtime_proven_symbols": 0,
+    "not_ported": 26,
+    "partial": 0,
+    "implemented_unvalidated": 0,
+    "final": 0
+  }
+}

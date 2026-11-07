@@ -1,0 +1,1 @@
+{"status":"PENDING_PINNED_NATIVE_EXECUTABLE","oracle_role":"NO_LIVE_PINNED_NATIVE","required_cases":["negative temperature","negative pressure","invalid composition","nonphysical density","critical degeneracy","wrong requested branch"]}

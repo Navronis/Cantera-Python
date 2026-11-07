@@ -1,0 +1,2455 @@
+{
+  "solver_family": "flow1d",
+  "subsystem": "1D reacting flow domains",
+  "symbol_count": 131,
+  "symbols": {
+    "include/cantera/oneD/Flow1D.h:101:withSoret": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1775,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        101,
+        101
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "withSoret",
+      "python_target": "cantera_python.oned.Flow1D.withSoret",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries whether thermal diffusion (Soret effect) is active.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:101:withSoret"
+    },
+    "include/cantera/oneD/Flow1D.h:111:setFluxGradientBasis": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1776,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        111,
+        111
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setFluxGradientBasis",
+      "python_target": "cantera_python.oned.Flow1D.setFluxGradientBasis",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Sets mixture-averaged transport flux gradient basis to molar or mass fraction.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:111:setFluxGradientBasis"
+    },
+    "include/cantera/oneD/Flow1D.h:119:fluxGradientBasis": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1777,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        119,
+        119
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "fluxGradientBasis",
+      "python_target": "cantera_python.oned.Flow1D.fluxGradientBasis",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries active mixture-averaged transport flux gradient basis.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:119:fluxGradientBasis"
+    },
+    "include/cantera/oneD/Flow1D.h:125:setPressure": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1778,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        125,
+        125
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setPressure",
+      "python_target": "cantera_python.oned.Flow1D.setPressure",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Sets thermodynamic static pressure in domain and underlying thermo phase.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:125:setPressure"
+    },
+    "include/cantera/oneD/Flow1D.h:130:pressure": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1779,
+      "current_status": "PARTIAL",
+      "line_range": [
+        130,
+        130
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "pressure",
+      "python_target": "cantera_python.oned.Flow1D.pressure",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries domain static thermodynamic pressure.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:130:pressure"
+    },
+    "include/cantera/oneD/Flow1D.h:135:_getInitialSoln": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1780,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        135,
+        135
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "_getInitialSoln",
+      "python_target": "cantera_python.oned.Flow1D._getInitialSoln",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Extracts initial temperature, density, and mass fraction profile from associated thermo phase.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:135:_getInitialSoln"
+    },
+    "include/cantera/oneD/Flow1D.h:137:_finalize": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1781,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        137,
+        137
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "_finalize",
+      "python_target": "cantera_python.oned.Flow1D._finalize",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Finalizes domain initialization, interpolates fixed temperature profiles, and anchors free flame fixed point.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:137:_finalize"
+    },
+    "include/cantera/oneD/Flow1D.h:147:setFixedTempProfile": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1782,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        147,
+        147
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setFixedTempProfile",
+      "python_target": "cantera_python.oned.Flow1D.setFixedTempProfile",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Specifies spatial coordinate and temperature profile for fixed-temperature solving.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:147:setFixedTempProfile"
+    },
+    "include/cantera/oneD/Flow1D.h:156:setTemperature": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1783,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        156,
+        156
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setTemperature",
+      "python_target": "cantera_python.oned.Flow1D.setTemperature",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Sets fixed temperature value at specified grid point.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:156:setTemperature"
+    },
+    "include/cantera/oneD/Flow1D.h:162:T_fixed": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalEnergy"
+      ],
+      "canonical_index": 1784,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        162,
+        162
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "T_fixed",
+      "python_target": "cantera_python.oned.Flow1D.T_fixed",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns fixed temperature reference value at grid point j.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:162:T_fixed"
+    },
+    "include/cantera/oneD/Flow1D.h:168:componentName": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1785,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        168,
+        168
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "componentName",
+      "python_target": "cantera_python.oned.Flow1D.componentName",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Translates solution component index to canonical component name.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:168:componentName"
+    },
+    "include/cantera/oneD/Flow1D.h:170:componentIndex": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1786,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        170,
+        170
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "componentIndex",
+      "python_target": "cantera_python.oned.Flow1D.componentIndex",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Resolves component name or alias to canonical solution component index.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:170:componentIndex"
+    },
+    "include/cantera/oneD/Flow1D.h:172:hasComponent": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1787,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        172,
+        172
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "hasComponent",
+      "python_target": "cantera_python.oned.Flow1D.hasComponent",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries whether named component exists in domain representation.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:172:hasComponent"
+    },
+    "include/cantera/oneD/Flow1D.h:175:componentActive": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1788,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        175,
+        175
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "componentActive",
+      "python_target": "cantera_python.oned.Flow1D.componentActive",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Determines whether component is mathematically active in current flow configuration.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:175:componentActive"
+    },
+    "include/cantera/oneD/Flow1D.h:177:updateState": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1789,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        177,
+        177
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "updateState",
+      "python_target": "cantera_python.oned.Flow1D.updateState",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Loads solution vector values at specified grid point into thermodynamic phase.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:177:updateState"
+    },
+    "include/cantera/oneD/Flow1D.h:178:show": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1790,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        178,
+        178
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "show",
+      "python_target": "cantera_python.oned.Flow1D.show",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Prints formatted profile table of domain solution variables and radiative heat loss.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:178:show"
+    },
+    "include/cantera/oneD/Flow1D.h:180:getValues": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1791,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        180,
+        180
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "getValues",
+      "python_target": "cantera_python.oned.Flow1D.getValues",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Extracts spatial profile of specified solution component into output array.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:180:getValues"
+    },
+    "include/cantera/oneD/Flow1D.h:181:setValues": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1792,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        181,
+        181
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setValues",
+      "python_target": "cantera_python.oned.Flow1D.setValues",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Assigns spatial profile for specified solution component from input array.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:181:setValues"
+    },
+    "include/cantera/oneD/Flow1D.h:182:getResiduals": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1793,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        182,
+        182
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "getResiduals",
+      "python_target": "cantera_python.oned.Flow1D.getResiduals",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Extracts work residual vector for specified solution component.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:182:getResiduals"
+    },
+    "include/cantera/oneD/Flow1D.h:185:setFlatProfile": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1794,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        185,
+        185
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setFlatProfile",
+      "python_target": "cantera_python.oned.Flow1D.setFlatProfile",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Initializes specified solution component to uniform constant value across all grid points.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:185:setFlatProfile"
+    },
+    "include/cantera/oneD/Flow1D.h:187:toArray": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1795,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        187,
+        187
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "toArray",
+      "python_target": "cantera_python.oned.Flow1D.toArray",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Exports domain grid, solution variables, and metadata into SolutionArray structure.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:187:toArray"
+    },
+    "include/cantera/oneD/Flow1D.h:188:fromArray": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1796,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        188,
+        188
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "fromArray",
+      "python_target": "cantera_python.oned.Flow1D.fromArray",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Restores domain grid, solution variables, and metadata from SolutionArray structure.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:188:fromArray"
+    },
+    "include/cantera/oneD/Flow1D.h:192:setFreeFlow": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1797,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        192,
+        192
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setFreeFlow",
+      "python_target": "cantera_python.oned.Flow1D.setFreeFlow",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Configures domain for freely propagating laminar flame with fixed internal temperature anchor.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:192:setFreeFlow"
+    },
+    "include/cantera/oneD/Flow1D.h:200:setAxisymmetricFlow": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1798,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        200,
+        200
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setAxisymmetricFlow",
+      "python_target": "cantera_python.oned.Flow1D.setAxisymmetricFlow",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Configures domain for axisymmetric stagnation/counterflow with radial momentum and Lambda eigenvalue.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:200:setAxisymmetricFlow"
+    },
+    "include/cantera/oneD/Flow1D.h:208:setUnstrainedFlow": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1799,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        208,
+        208
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setUnstrainedFlow",
+      "python_target": "cantera_python.oned.Flow1D.setUnstrainedFlow",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Configures domain for unstrained flat burner-stabilized flame with fixed mass flux.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:208:setUnstrainedFlow"
+    },
+    "include/cantera/oneD/Flow1D.h:217:solveEnergyEqn": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1800,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        217,
+        217
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "solveEnergyEqn",
+      "python_target": "cantera_python.oned.Flow1D.solveEnergyEqn",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Enables thermal energy equation and activates grid refiner for U, V, and T.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:217:solveEnergyEqn"
+    },
+    "include/cantera/oneD/Flow1D.h:225:allOfEnergyEnabled": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1801,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        225,
+        225
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "allOfEnergyEnabled",
+      "python_target": "cantera_python.oned.Flow1D.allOfEnergyEnabled",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries whether thermal energy equation is active across all domain grid points.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:225:allOfEnergyEnabled"
+    },
+    "include/cantera/oneD/Flow1D.h:236:noneOfEnergyEnabled": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1802,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        236,
+        236
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "noneOfEnergyEnabled",
+      "python_target": "cantera_python.oned.Flow1D.noneOfEnergyEnabled",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries whether thermal energy equation is inactive across all domain grid points.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:236:noneOfEnergyEnabled"
+    },
+    "include/cantera/oneD/Flow1D.h:245:setEnergyEnabled": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1803,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        245,
+        245
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setEnergyEnabled",
+      "python_target": "cantera_python.oned.Flow1D.setEnergyEnabled",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Enables or disables thermal energy equation uniformly across domain.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:245:setEnergyEnabled"
+    },
+    "include/cantera/oneD/Flow1D.h:254:solveElectricField": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1804,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        254,
+        254
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "solveElectricField",
+      "python_target": "cantera_python.oned.Flow1D.solveElectricField",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Raises NotImplementedError for neutral flow (implemented in IonFlow subclass).",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:254:solveElectricField"
+    },
+    "include/cantera/oneD/Flow1D.h:257:fixElectricField": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1805,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        257,
+        257
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "fixElectricField",
+      "python_target": "cantera_python.oned.Flow1D.fixElectricField",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Raises NotImplementedError for neutral flow (implemented in IonFlow subclass).",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:257:fixElectricField"
+    },
+    "include/cantera/oneD/Flow1D.h:261:doElectricField": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1806,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        261,
+        261
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "doElectricField",
+      "python_target": "cantera_python.oned.Flow1D.doElectricField",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries electric field solver status (raises NotImplementedError for neutral Flow1D).",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:261:doElectricField"
+    },
+    "include/cantera/oneD/Flow1D.h:264:enableRadiation": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1807,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        264,
+        264
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "enableRadiation",
+      "python_target": "cantera_python.oned.Flow1D.enableRadiation",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Enables or disables Liu-Rogg optically thin radiative heat loss model.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:264:enableRadiation"
+    },
+    "include/cantera/oneD/Flow1D.h:269:radiationEnabled": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1808,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        269,
+        269
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "radiationEnabled",
+      "python_target": "cantera_python.oned.Flow1D.radiationEnabled",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries whether radiative heat loss model is active.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:269:radiationEnabled"
+    },
+    "include/cantera/oneD/Flow1D.h:274:radiativeHeatLoss": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1809,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        274,
+        274
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "radiativeHeatLoss",
+      "python_target": "cantera_python.oned.Flow1D.radiativeHeatLoss",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns evaluated radiative heat loss at grid point j [W/m^3].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:274:radiativeHeatLoss"
+    },
+    "include/cantera/oneD/Flow1D.h:284:setBoundaryEmissivities": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1810,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        284,
+        284
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setBoundaryEmissivities",
+      "python_target": "cantera_python.oned.Flow1D.setBoundaryEmissivities",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Specifies infrared surface emissivities at left and right boundaries in [0, 1].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:284:setBoundaryEmissivities"
+    },
+    "include/cantera/oneD/Flow1D.h:287:leftEmissivity": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1811,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        287,
+        287
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "leftEmissivity",
+      "python_target": "cantera_python.oned.Flow1D.leftEmissivity",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries surface infrared emissivity at left domain boundary.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:287:leftEmissivity"
+    },
+    "include/cantera/oneD/Flow1D.h:292:rightEmissivity": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1812,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        292,
+        292
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "rightEmissivity",
+      "python_target": "cantera_python.oned.Flow1D.rightEmissivity",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries surface infrared emissivity at right domain boundary.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:292:rightEmissivity"
+    },
+    "include/cantera/oneD/Flow1D.h:300:fixTemperature": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1813,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        300,
+        300
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "fixTemperature",
+      "python_target": "cantera_python.oned.Flow1D.fixTemperature",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Deactivates thermal energy equation to hold temperature profile fixed.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:300:fixTemperature"
+    },
+    "include/cantera/oneD/Flow1D.h:327:leftControlPointTemperature": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1814,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        327,
+        327
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "leftControlPointTemperature",
+      "python_target": "cantera_python.oned.Flow1D.leftControlPointTemperature",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries left control point temperature for two-point continuation control.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:327:leftControlPointTemperature"
+    },
+    "include/cantera/oneD/Flow1D.h:330:leftControlPointCoordinate": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1815,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        330,
+        330
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "leftControlPointCoordinate",
+      "python_target": "cantera_python.oned.Flow1D.leftControlPointCoordinate",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries left control point spatial coordinate for two-point continuation control.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:330:leftControlPointCoordinate"
+    },
+    "include/cantera/oneD/Flow1D.h:333:setLeftControlPointTemperature": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1816,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        333,
+        333
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setLeftControlPointTemperature",
+      "python_target": "cantera_python.oned.Flow1D.setLeftControlPointTemperature",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Sets left control point temperature for two-point continuation control.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:333:setLeftControlPointTemperature"
+    },
+    "include/cantera/oneD/Flow1D.h:336:setLeftControlPointCoordinate": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1817,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        336,
+        336
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setLeftControlPointCoordinate",
+      "python_target": "cantera_python.oned.Flow1D.setLeftControlPointCoordinate",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Sets left control point spatial coordinate for two-point continuation control.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:336:setLeftControlPointCoordinate"
+    },
+    "include/cantera/oneD/Flow1D.h:339:rightControlPointTemperature": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1818,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        339,
+        339
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "rightControlPointTemperature",
+      "python_target": "cantera_python.oned.Flow1D.rightControlPointTemperature",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries right control point temperature for two-point continuation control.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:339:rightControlPointTemperature"
+    },
+    "include/cantera/oneD/Flow1D.h:342:rightControlPointCoordinate": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1819,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        342,
+        342
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "rightControlPointCoordinate",
+      "python_target": "cantera_python.oned.Flow1D.rightControlPointCoordinate",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries right control point spatial coordinate for two-point continuation control.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:342:rightControlPointCoordinate"
+    },
+    "include/cantera/oneD/Flow1D.h:345:setRightControlPointTemperature": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1820,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        345,
+        345
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setRightControlPointTemperature",
+      "python_target": "cantera_python.oned.Flow1D.setRightControlPointTemperature",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Sets right control point temperature for two-point continuation control.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:345:setRightControlPointTemperature"
+    },
+    "include/cantera/oneD/Flow1D.h:348:setRightControlPointCoordinate": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1821,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        348,
+        348
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setRightControlPointCoordinate",
+      "python_target": "cantera_python.oned.Flow1D.setRightControlPointCoordinate",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Sets right control point spatial coordinate for two-point continuation control.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:348:setRightControlPointCoordinate"
+    },
+    "include/cantera/oneD/Flow1D.h:351:enableTwoPointControl": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1822,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        351,
+        351
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "enableTwoPointControl",
+      "python_target": "cantera_python.oned.Flow1D.enableTwoPointControl",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Enables two-point temperature continuation control in strained axisymmetric flames.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:351:enableTwoPointControl"
+    },
+    "include/cantera/oneD/Flow1D.h:354:twoPointControlEnabled": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1823,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        354,
+        354
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "twoPointControlEnabled",
+      "python_target": "cantera_python.oned.Flow1D.twoPointControlEnabled",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries whether two-point continuation control is active.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:354:twoPointControlEnabled"
+    },
+    "include/cantera/oneD/Flow1D.h:361:doEnergy": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1824,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        361,
+        361
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "doEnergy",
+      "python_target": "cantera_python.oned.Flow1D.doEnergy",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries whether thermal energy equation is solved at grid point j.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:361:doEnergy"
+    },
+    "include/cantera/oneD/Flow1D.h:366:resize": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1825,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        366,
+        366
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "resize",
+      "python_target": "cantera_python.oned.Flow1D.resize",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Allocates state vectors, thermo caches, transport properties, and Jacobian workspace arrays.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:366:resize"
+    },
+    "include/cantera/oneD/Flow1D.h:369:setGas": {
+      "callees": null,
+      "callers": [
+        "Flow1D.updateThermo",
+        "Flow1D.evalJacobianAnalytic"
+      ],
+      "canonical_index": 1826,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        369,
+        369
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setGas",
+      "python_target": "cantera_python.oned.Flow1D.setGas",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Synchronizes thermodynamic phase state with local state vector (T, P, Y) at grid point j.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:369:setGas"
+    },
+    "include/cantera/oneD/Flow1D.h:373:setGasAtMidpoint": {
+      "callees": null,
+      "callers": [
+        "Flow1D.updateTransport"
+      ],
+      "canonical_index": 1827,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        373,
+        373
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setGasAtMidpoint",
+      "python_target": "cantera_python.oned.Flow1D.setGasAtMidpoint",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Synchronizes thermodynamic phase state with cell-interface average state between j and j+1.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:373:setGasAtMidpoint"
+    },
+    "include/cantera/oneD/Flow1D.h:376:density": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalContinuity"
+      ],
+      "canonical_index": 1828,
+      "current_status": "PARTIAL",
+      "line_range": [
+        376,
+        376
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "density",
+      "python_target": "cantera_python.oned.Flow1D.density",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns cached gas mixture density at grid point j [kg/m^3].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:376:density"
+    },
+    "include/cantera/oneD/Flow1D.h:386:isFree": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1829,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        386,
+        386
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "isFree",
+      "python_target": "cantera_python.oned.Flow1D.isFree",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries whether domain is in freely propagating flame configuration.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:386:isFree"
+    },
+    "include/cantera/oneD/Flow1D.h:397:isStrained": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1830,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        397,
+        397
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "isStrained",
+      "python_target": "cantera_python.oned.Flow1D.isStrained",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries whether domain is in strained axisymmetric counterflow configuration.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:397:isStrained"
+    },
+    "include/cantera/oneD/Flow1D.h:402:setViscosityFlag": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1831,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        402,
+        402
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setViscosityFlag",
+      "python_target": "cantera_python.oned.Flow1D.setViscosityFlag",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Enables or disables viscous shear stress evaluation in radial momentum equation.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:402:setViscosityFlag"
+    },
+    "include/cantera/oneD/Flow1D.h:430:leftExcessSpecies": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalSpecies"
+      ],
+      "canonical_index": 1832,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        430,
+        430
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "leftExcessSpecies",
+      "python_target": "cantera_python.oned.Flow1D.leftExcessSpecies",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns index of dominant species at left boundary computed as 1 - sum(Y_k).",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:430:leftExcessSpecies"
+    },
+    "include/cantera/oneD/Flow1D.h:435:rightExcessSpecies": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalSpecies"
+      ],
+      "canonical_index": 1833,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        435,
+        435
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "rightExcessSpecies",
+      "python_target": "cantera_python.oned.Flow1D.rightExcessSpecies",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns index of dominant species at right boundary computed as 1 - sum(Y_k).",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:435:rightExcessSpecies"
+    },
+    "include/cantera/oneD/Flow1D.h:439:hasAnalyticJacobian": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1834,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        439,
+        439
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "hasAnalyticJacobian",
+      "python_target": "cantera_python.oned.Flow1D.hasAnalyticJacobian",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Checks if analytical Jacobian evaluation is supported for grid point j and component n.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:439:hasAnalyticJacobian"
+    },
+    "include/cantera/oneD/Flow1D.h:440:evalJacobianAnalytic": {
+      "callees": [
+        "Flow1D.usingAnalyticJacobian",
+        "Flow1D.updateThermo",
+        "Flow1D.updateDiffFluxes",
+        "Flow1D.setGas",
+        "Flow1D.computeWdotDerivatives",
+        "Flow1D.addSpeciesJacEntries",
+        "Flow1D.addEnergyJacEntries",
+        "Flow1D.addFlowJacEntries"
+      ],
+      "callers": null,
+      "canonical_index": 1835,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        440,
+        440
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "evalJacobianAnalytic",
+      "python_target": "cantera_python.oned.Flow1D.evalJacobianAnalytic",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Assembles exact analytical Jacobian entries for species, energy, and flow equations.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:440:evalJacobianAnalytic"
+    },
+    "include/cantera/oneD/Flow1D.h:441:checkAnalyticJacobian": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1836,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        441,
+        441
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "checkAnalyticJacobian",
+      "python_target": "cantera_python.oned.Flow1D.checkAnalyticJacobian",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Validates solver prerequisites when analytic Jacobian mode is explicitly requested.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:441:checkAnalyticJacobian"
+    },
+    "include/cantera/oneD/Flow1D.h:444:getMeta": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1837,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        444,
+        444
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "getMeta",
+      "python_target": "cantera_python.oned.Flow1D.getMeta",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Serializes domain physical flags, transport model, radiative settings, and refinement criteria.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:444:getMeta"
+    },
+    "include/cantera/oneD/Flow1D.h:445:setMeta": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1838,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        445,
+        445
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setMeta",
+      "python_target": "cantera_python.oned.Flow1D.setMeta",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Restores domain physical flags, transport model, radiative settings, and refinement criteria.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:445:setMeta"
+    },
+    "include/cantera/oneD/Flow1D.h:466:updateThermo": {
+      "callees": [
+        "Flow1D.setGas"
+      ],
+      "callers": [
+        "Flow1D.updateProperties",
+        "Flow1D.evalJacobianAnalytic"
+      ],
+      "canonical_index": 1839,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        466,
+        466
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "updateThermo",
+      "python_target": "cantera_python.oned.Flow1D.updateThermo",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Updates and caches density, mean molecular weight, specific heat, species enthalpies, and net production rates.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:466:updateThermo"
+    },
+    "include/cantera/oneD/Flow1D.h:484:updateTransport": {
+      "callees": [
+        "Flow1D.setGasAtMidpoint"
+      ],
+      "callers": [
+        "Flow1D.updateProperties"
+      ],
+      "canonical_index": 1840,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        484,
+        484
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "updateTransport",
+      "python_target": "cantera_python.oned.Flow1D.updateTransport",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Evaluates midpoint transport properties (viscosity, thermal conductivity, binary/multicomponent diffusion).",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:484:updateTransport"
+    },
+    "include/cantera/oneD/Flow1D.h:487:updateDiffFluxes": {
+      "callees": null,
+      "callers": [
+        "Flow1D.updateProperties",
+        "Flow1D.evalJacobianAnalytic"
+      ],
+      "canonical_index": 1841,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        487,
+        487
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "updateDiffFluxes",
+      "python_target": "cantera_python.oned.Flow1D.updateDiffFluxes",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Computes species diffusive mass fluxes with multicomponent, mixture-averaged, correction, and Soret terms.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:487:updateDiffFluxes"
+    },
+    "include/cantera/oneD/Flow1D.h:510:computeRadiation": {
+      "callees": [
+        "Flow1D.radiationPolyFactor"
+      ],
+      "callers": [
+        "Flow1D.eval"
+      ],
+      "canonical_index": 1842,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        510,
+        510
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "computeRadiation",
+      "python_target": "cantera_python.oned.Flow1D.computeRadiation",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Evaluates optically thin volumetric radiative heat loss from CO2 and H2O using RADCAL polynomials.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:510:computeRadiation"
+    },
+    "include/cantera/oneD/Flow1D.h:516:radiationPolyFactor": {
+      "callees": null,
+      "callers": [
+        "Flow1D.computeRadiation",
+        "Flow1D.addEnergyJacEntries"
+      ],
+      "canonical_index": 1843,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        516,
+        516
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "radiationPolyFactor",
+      "python_target": "cantera_python.oned.Flow1D.radiationPolyFactor",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Computes Planck-mean absorption polynomial factor for radiating species (CO2 or H2O).",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:516:radiationPolyFactor"
+    },
+    "include/cantera/oneD/Flow1D.h:58:domainType": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1765,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        58,
+        58
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "domainType",
+      "python_target": "cantera_python.oned.Flow1D.domainType",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns domain classification string: 'free-flow', 'axisymmetric-flow', or 'unstrained-flow'.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:58:domainType"
+    },
+    "include/cantera/oneD/Flow1D.h:63:setupGrid": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1766,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        63,
+        63
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setupGrid",
+      "python_target": "cantera_python.oned.Flow1D.setupGrid",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Configures domain grid coordinates, validates monotonic spacing, and resizes state storage vectors.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:63:setupGrid"
+    },
+    "include/cantera/oneD/Flow1D.h:65:resetBadValues": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1767,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        65,
+        65
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "resetBadValues",
+      "python_target": "cantera_python.oned.Flow1D.resetBadValues",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Projects unphysical species mass fractions into bounds and renormalizes via thermodynamic phase.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:65:resetBadValues"
+    },
+    "include/cantera/oneD/Flow1D.h:671:T": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1844,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        671,
+        671
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "T",
+      "python_target": "cantera_python.oned.Flow1D.T",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Accesses or mutates gas temperature at grid point j from local solution vector [K].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:671:T"
+    },
+    "include/cantera/oneD/Flow1D.h:675:T": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1845,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        675,
+        675
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "T",
+      "python_target": "cantera_python.oned.Flow1D.T",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Accesses or mutates gas temperature at grid point j from local solution vector [K].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:675:T"
+    },
+    "include/cantera/oneD/Flow1D.h:680:T_prev": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalEnergy"
+      ],
+      "canonical_index": 1846,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        680,
+        680
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "T_prev",
+      "python_target": "cantera_python.oned.Flow1D.T_prev",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns gas temperature at grid point j from previous time step [K].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:680:T_prev"
+    },
+    "include/cantera/oneD/Flow1D.h:681:prevSoln": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1847,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        681,
+        681
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "prevSoln",
+      "python_target": "cantera_python.oned.Flow1D.prevSoln",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Accesses previous time step solution vector for transient residual evaluation.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:681:prevSoln"
+    },
+    "include/cantera/oneD/Flow1D.h:685:rho_u": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalContinuity"
+      ],
+      "canonical_index": 1848,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        685,
+        685
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "rho_u",
+      "python_target": "cantera_python.oned.Flow1D.rho_u",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Computes axial mass flux (density * axial velocity) at grid point j [kg/m^2/s].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:685:rho_u"
+    },
+    "include/cantera/oneD/Flow1D.h:690:u": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1849,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        690,
+        690
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "u",
+      "python_target": "cantera_python.oned.Flow1D.u",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns axial flow velocity at grid point j from local solution vector [m/s].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:690:u"
+    },
+    "include/cantera/oneD/Flow1D.h:696:V": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalContinuity"
+      ],
+      "canonical_index": 1850,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        696,
+        696
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "V",
+      "python_target": "cantera_python.oned.Flow1D.V",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns radial velocity gradient / spread rate at grid point j [1/s].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:696:V"
+    },
+    "include/cantera/oneD/Flow1D.h:69:phase": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1768,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        69,
+        69
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "phase",
+      "python_target": "cantera_python.oned.Flow1D.phase",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns associated thermodynamic Solution / ThermoPhase object.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:69:phase"
+    },
+    "include/cantera/oneD/Flow1D.h:701:V_prev": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalMomentum"
+      ],
+      "canonical_index": 1851,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        701,
+        701
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "V_prev",
+      "python_target": "cantera_python.oned.Flow1D.V_prev",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns radial velocity gradient / spread rate at grid point j from previous time step [1/s].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:701:V_prev"
+    },
+    "include/cantera/oneD/Flow1D.h:702:prevSoln": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1852,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        702,
+        702
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "prevSoln",
+      "python_target": "cantera_python.oned.Flow1D.prevSoln",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Accesses previous time step solution vector for transient residual evaluation.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:702:prevSoln"
+    },
+    "include/cantera/oneD/Flow1D.h:707:Lambda": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalMomentum"
+      ],
+      "canonical_index": 1853,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        707,
+        707
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "Lambda",
+      "python_target": "cantera_python.oned.Flow1D.Lambda",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns radial pressure gradient eigenvalue at grid point j [(1/r) dP/dr, Pa/m^2].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:707:Lambda"
+    },
+    "include/cantera/oneD/Flow1D.h:715:Uo": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1854,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        715,
+        715
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "Uo",
+      "python_target": "cantera_python.oned.Flow1D.Uo",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns oxidizer inlet axial velocity variable for two-point control [m/s].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:715:Uo"
+    },
+    "include/cantera/oneD/Flow1D.h:721:Y": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1855,
+      "current_status": "PARTIAL",
+      "line_range": [
+        721,
+        721
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "Y",
+      "python_target": "cantera_python.oned.Flow1D.Y",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Accesses species mass fraction array or scalar at grid point j.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:721:Y"
+    },
+    "include/cantera/oneD/Flow1D.h:727:Y": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1856,
+      "current_status": "PARTIAL",
+      "line_range": [
+        727,
+        727
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "Y",
+      "python_target": "cantera_python.oned.Flow1D.Y",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Accesses species mass fraction array or scalar at grid point j.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:727:Y"
+    },
+    "include/cantera/oneD/Flow1D.h:732:Y": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1857,
+      "current_status": "PARTIAL",
+      "line_range": [
+        732,
+        732
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "Y",
+      "python_target": "cantera_python.oned.Flow1D.Y",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Accesses species mass fraction array or scalar at grid point j.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:732:Y"
+    },
+    "include/cantera/oneD/Flow1D.h:735:Y": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1858,
+      "current_status": "PARTIAL",
+      "line_range": [
+        735,
+        735
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "Y",
+      "python_target": "cantera_python.oned.Flow1D.Y",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Accesses species mass fraction array or scalar at grid point j.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:735:Y"
+    },
+    "include/cantera/oneD/Flow1D.h:740:Y_prev": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalSpecies"
+      ],
+      "canonical_index": 1859,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        740,
+        740
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "Y_prev",
+      "python_target": "cantera_python.oned.Flow1D.Y_prev",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns species mass fraction at grid point j from previous time step.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:740:Y_prev"
+    },
+    "include/cantera/oneD/Flow1D.h:741:prevSoln": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1860,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        741,
+        741
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "prevSoln",
+      "python_target": "cantera_python.oned.Flow1D.prevSoln",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Accesses previous time step solution vector for transient residual evaluation.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:741:prevSoln"
+    },
+    "include/cantera/oneD/Flow1D.h:746:X": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1861,
+      "current_status": "PARTIAL",
+      "line_range": [
+        746,
+        746
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "X",
+      "python_target": "cantera_python.oned.Flow1D.X",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Computes species mole fraction from cached mean molecular weight and mass fraction at grid point j.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:746:X"
+    },
+    "include/cantera/oneD/Flow1D.h:751:flux": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalSpecies"
+      ],
+      "canonical_index": 1862,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        751,
+        751
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "flux",
+      "python_target": "cantera_python.oned.Flow1D.flux",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns evaluated diffusive mass flux for species k at interface j [kg/m^2/s].",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:751:flux"
+    },
+    "include/cantera/oneD/Flow1D.h:752:m_flux": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1863,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        752,
+        752
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "m_flux",
+      "python_target": "cantera_python.oned.Flow1D.m_flux",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Internal storage array accessor for diffusive mass fluxes across species and interfaces.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:752:m_flux"
+    },
+    "include/cantera/oneD/Flow1D.h:75:kinetics": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1769,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        75,
+        75
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "kinetics",
+      "python_target": "cantera_python.oned.Flow1D.kinetics",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Returns associated Kinetics mechanism object.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:75:kinetics"
+    },
+    "include/cantera/oneD/Flow1D.h:784:dVdz": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalMomentum"
+      ],
+      "canonical_index": 1864,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        784,
+        784
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "dVdz",
+      "python_target": "cantera_python.oned.Flow1D.dVdz",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Evaluates first spatial derivative of radial velocity V using direction-dependent upwind differencing.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:784:dVdz"
+    },
+    "include/cantera/oneD/Flow1D.h:799:dYdz": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalSpecies"
+      ],
+      "canonical_index": 1865,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        799,
+        799
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "dYdz",
+      "python_target": "cantera_python.oned.Flow1D.dYdz",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Evaluates first spatial derivative of species mass fraction Y_k using upwind differencing.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:799:dYdz"
+    },
+    "include/cantera/oneD/Flow1D.h:80:_setKinetics": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1770,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        80,
+        80
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "_setKinetics",
+      "python_target": "cantera_python.oned.Flow1D._setKinetics",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Attaches Kinetics mechanism and synchronizes solution callback references.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:80:_setKinetics"
+    },
+    "include/cantera/oneD/Flow1D.h:813:dTdz": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalEnergy"
+      ],
+      "canonical_index": 1866,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        813,
+        813
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "dTdz",
+      "python_target": "cantera_python.oned.Flow1D.dTdz",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Evaluates first spatial derivative of gas temperature T using upwind differencing.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:813:dTdz"
+    },
+    "include/cantera/oneD/Flow1D.h:81:_setTransport": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1771,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        81,
+        81
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "_setTransport",
+      "python_target": "cantera_python.oned.Flow1D._setTransport",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Attaches Transport manager, detects multicomponent capability, and sizes transport caches.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:81:_setTransport"
+    },
+    "include/cantera/oneD/Flow1D.h:841:shear": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalMomentum",
+        "Flow1D.addFlowJacEntries"
+      ],
+      "canonical_index": 1867,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        841,
+        841
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "shear",
+      "python_target": "cantera_python.oned.Flow1D.shear",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Evaluates viscous shear stress divergence operator (d/dz)(mu dV/dz) using central 3-point differencing.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:841:shear"
+    },
+    "include/cantera/oneD/Flow1D.h:856:conduction": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalEnergy",
+        "Flow1D.addEnergyJacEntries"
+      ],
+      "canonical_index": 1868,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        856,
+        856
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "conduction",
+      "python_target": "cantera_python.oned.Flow1D.conduction",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Evaluates conductive heat flux divergence operator -(d/dz)(lambda dT/dz) using central 3-point differencing.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:856:conduction"
+    },
+    "include/cantera/oneD/Flow1D.h:870:mindex": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1869,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        870,
+        870
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "mindex",
+      "python_target": "cantera_python.oned.Flow1D.mindex",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Computes 1D linear storage index for 3D multicomponent diffusion coefficient tensor (k, j, m).",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:870:mindex"
+    },
+    "include/cantera/oneD/Flow1D.h:87:setTransportModel": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1772,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        87,
+        87
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "setTransportModel",
+      "python_target": "cantera_python.oned.Flow1D.setTransportModel",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Configures gas transport model ('mixture-averaged', 'multicomponent', etc.) and updates internal state.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:87:setTransportModel"
+    },
+    "include/cantera/oneD/Flow1D.h:884:grad_hk": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalEnergy",
+        "Flow1D.addEnergyJacEntries"
+      ],
+      "canonical_index": 1870,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        884,
+        884
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "grad_hk",
+      "python_target": "cantera_python.oned.Flow1D.grad_hk",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Computes upwinded spatial gradient of species molar enthalpies dh_k/dz at grid point j.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:884:grad_hk"
+    },
+    "include/cantera/oneD/Flow1D.h:91:transportModel": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1773,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        91,
+        91
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "transportModel",
+      "python_target": "cantera_python.oned.Flow1D.transportModel",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries active gas transport model identifier.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:91:transportModel"
+    },
+    "include/cantera/oneD/Flow1D.h:953:usingAnalyticJacobian": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalJacobianAnalytic"
+      ],
+      "canonical_index": 1871,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        953,
+        953
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "usingAnalyticJacobian",
+      "python_target": "cantera_python.oned.Flow1D.usingAnalyticJacobian",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Determines whether analytic Jacobian species columns can be evaluated for current flow state.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:953:usingAnalyticJacobian"
+    },
+    "include/cantera/oneD/Flow1D.h:957:analyticRequested": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1872,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        957,
+        957
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "analyticRequested",
+      "python_target": "cantera_python.oned.Flow1D.analyticRequested",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Checks whether analytic Jacobian evaluation mode is active or set to auto.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:957:analyticRequested"
+    },
+    "include/cantera/oneD/Flow1D.h:966:analyticJacobianSupported": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1873,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        966,
+        966
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "analyticJacobianSupported",
+      "python_target": "cantera_python.oned.Flow1D.analyticJacobianSupported",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Virtual predicate indicating whether flow domain physics supports analytic Jacobian.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:966:analyticJacobianSupported"
+    },
+    "include/cantera/oneD/Flow1D.h:96:enableSoret": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1774,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        96,
+        96
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "enableSoret",
+      "python_target": "cantera_python.oned.Flow1D.enableSoret",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Enables or disables thermal diffusion (Soret effect) in diffusive flux formulation.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:96:enableSoret"
+    },
+    "include/cantera/oneD/Flow1D.h:971:probeAnalyticJacobian": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 1874,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        971,
+        971
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "probeAnalyticJacobian",
+      "python_target": "cantera_python.oned.Flow1D.probeAnalyticJacobian",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Probes kinetics mechanism once for net production rate concentration derivative support.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:971:probeAnalyticJacobian"
+    },
+    "include/cantera/oneD/Flow1D.h:974:computeWdotDerivatives": {
+      "callees": null,
+      "callers": [
+        "Flow1D.evalJacobianAnalytic"
+      ],
+      "canonical_index": 1875,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        974,
+        974
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "computeWdotDerivatives",
+      "python_target": "cantera_python.oned.Flow1D.computeWdotDerivatives",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Transforms sparse dwdot/dC into dense dwdot/dY via chain rule at constant T and P.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:974:computeWdotDerivatives"
+    },
+    "include/cantera/oneD/Flow1D.h:980:fluxJacobian": {
+      "callees": null,
+      "callers": [
+        "Flow1D.addSpeciesJacEntries"
+      ],
+      "canonical_index": 1876,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        980,
+        980
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "fluxJacobian",
+      "python_target": "cantera_python.oned.Flow1D.fluxJacobian",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Computes partial derivatives of adjacent interface diffusive mass fluxes with respect to species mass fractions.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:980:fluxJacobian"
+    },
+    "include/cantera/oneD/Flow1D.h:983:addSpeciesJacEntries": {
+      "callees": [
+        "Flow1D.fluxJacobian"
+      ],
+      "callers": [
+        "Flow1D.evalJacobianAnalytic"
+      ],
+      "canonical_index": 1877,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        983,
+        983
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "addSpeciesJacEntries",
+      "python_target": "cantera_python.oned.Flow1D.addSpeciesJacEntries",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Assembles analytical Jacobian block entries for species conservation residual equations.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:983:addSpeciesJacEntries"
+    },
+    "include/cantera/oneD/Flow1D.h:986:addEnergyJacEntries": {
+      "callees": [
+        "Flow1D.grad_hk",
+        "Flow1D.conduction",
+        "Flow1D.radiationPolyFactor"
+      ],
+      "callers": [
+        "Flow1D.evalJacobianAnalytic"
+      ],
+      "canonical_index": 1878,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        986,
+        986
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "addEnergyJacEntries",
+      "python_target": "cantera_python.oned.Flow1D.addEnergyJacEntries",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Assembles analytical Jacobian entries for thermal energy conservation residual equation.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:986:addEnergyJacEntries"
+    },
+    "include/cantera/oneD/Flow1D.h:989:addFlowJacEntries": {
+      "callees": [
+        "Flow1D.shear"
+      ],
+      "callers": [
+        "Flow1D.evalJacobianAnalytic"
+      ],
+      "canonical_index": 1879,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        989,
+        989
+      ],
+      "native_class": "Flow1D",
+      "native_file": "include/cantera/oneD/Flow1D.h",
+      "native_method": "addFlowJacEntries",
+      "python_target": "cantera_python.oned.Flow1D.addFlowJacEntries",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Assembles analytical Jacobian chain-rule entries for continuity and momentum residual equations.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "include/cantera/oneD/Flow1D.h:989:addFlowJacEntries"
+    },
+    "src/oneD/DomainFactory.cpp:42:Flow1D": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4776,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        42,
+        42
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/DomainFactory.cpp",
+      "native_method": "Flow1D",
+      "python_target": "cantera_python.oned.Flow1D.Flow1D",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "DomainFactory registration symbol for instantiating 1D reacting flow domains.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "src/oneD/DomainFactory.cpp:42:Flow1D"
+    },
+    "src/oneD/Flow1D.cpp:1007:ArraySizeError": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4788,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        1007,
+        1007
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "ArraySizeError",
+      "python_target": "cantera_python.oned.Flow1D.ArraySizeError",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Native dimension checking error site for state profile array operations.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:1007:ArraySizeError"
+    },
+    "src/oneD/Flow1D.cpp:1085:data": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4789,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        1085,
+        1085
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "data",
+      "python_target": "cantera_python.oned.Flow1D.data",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Internal local variable in toArray() holding component array values across grid points.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:1085:data"
+    },
+    "src/oneD/Flow1D.cpp:1123:soln": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4790,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        1123,
+        1123
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "soln",
+      "python_target": "cantera_python.oned.Flow1D.soln",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Internal span reference in fromArray() pointing to contiguous domain state memory.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:1123:soln"
+    },
+    "src/oneD/Flow1D.cpp:136:CanteraError": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4780,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        136,
+        136
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "CanteraError",
+      "python_target": "cantera_python.oned.Flow1D.CanteraError",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Native error reporting site for invalid operations, domain states, or mismatched models.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:136:CanteraError"
+    },
+    "src/oneD/Flow1D.cpp:140:CanteraError": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4781,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        140,
+        140
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "CanteraError",
+      "python_target": "cantera_python.oned.Flow1D.CanteraError",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Native error reporting site for invalid operations, domain states, or mismatched models.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:140:CanteraError"
+    },
+    "src/oneD/Flow1D.cpp:1550:JY": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4791,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        1550,
+        1550
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "JY",
+      "python_target": "cantera_python.oned.Flow1D.JY",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Internal Eigen Map view in computeWdotDerivatives() for dense dwdot/dY matrix operations.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:1550:JY"
+    },
+    "src/oneD/Flow1D.cpp:1551:c": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4792,
+      "current_status": "PARTIAL",
+      "line_range": [
+        1551,
+        1551
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "c",
+      "python_target": "cantera_python.oned.Flow1D.c",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Internal Eigen Map view in computeWdotDerivatives() for molar concentration vector.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:1551:c"
+    },
+    "src/oneD/Flow1D.cpp:1583:constexpr": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4793,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        1583,
+        1583
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "constexpr",
+      "python_target": "cantera_python.oned.Flow1D.constexpr",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Compile-time branch construct in templated fluxJacobian() for left vs right endpoint flux evaluation.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:1583:constexpr"
+    },
+    "src/oneD/Flow1D.cpp:1624:constexpr": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4794,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        1624,
+        1624
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "constexpr",
+      "python_target": "cantera_python.oned.Flow1D.constexpr",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Compile-time branch construct in templated fluxJacobian() for left vs right endpoint flux evaluation.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:1624:constexpr"
+    },
+    "src/oneD/Flow1D.cpp:833:IndexError": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4782,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        833,
+        833
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "IndexError",
+      "python_target": "cantera_python.oned.Flow1D.IndexError",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Native bounds checking error site for component indexing.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:833:IndexError"
+    },
+    "src/oneD/Flow1D.cpp:851:componentIndex": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4783,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        851,
+        851
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "componentIndex",
+      "python_target": "cantera_python.oned.Flow1D.componentIndex",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Resolves component name or alias to canonical solution component index.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:851:componentIndex"
+    },
+    "src/oneD/Flow1D.cpp:886:twoPointControlEnabled": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4784,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        886,
+        886
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "twoPointControlEnabled",
+      "python_target": "cantera_python.oned.Flow1D.twoPointControlEnabled",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Queries whether two-point continuation control is active.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:886:twoPointControlEnabled"
+    },
+    "src/oneD/Flow1D.cpp:906:energy_flags": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4785,
+      "current_status": "NOT_PORTED",
+      "line_range": [
+        906,
+        906
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "energy_flags",
+      "python_target": "cantera_python.oned.Flow1D.energy_flags",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Internal unique set container used in getMeta() for compact energy equation flag serialization.",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:906:energy_flags"
+    },
+    "src/oneD/Flow1D.cpp:965:ArraySizeError": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4786,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        965,
+        965
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "ArraySizeError",
+      "python_target": "cantera_python.oned.Flow1D.ArraySizeError",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Native dimension checking error site for state profile array operations.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:965:ArraySizeError"
+    },
+    "src/oneD/Flow1D.cpp:986:ArraySizeError": {
+      "callees": null,
+      "callers": null,
+      "canonical_index": 4787,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "line_range": [
+        986,
+        986
+      ],
+      "native_class": "Flow1D",
+      "native_file": "src/oneD/Flow1D.cpp",
+      "native_method": "ArraySizeError",
+      "python_target": "cantera_python.oned.Flow1D.ArraySizeError",
+      "remaining_validation_requirement": "Differential parity against pinned native Cantera Flow1D oracle across flow types (unstrained-flow, free-flow, axisymmetric-flow), continuity, axial/radial momentum, energy equation, species conservation, multicomponent/mixture-averaged diffusion, Soret thermal diffusion, radiation models, and adaptive grid interpolation.",
+      "scientific_responsibility": "Native dimension checking error site for state profile array operations.",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "stable_symbol_id": "src/oneD/Flow1D.cpp:986:ArraySizeError"
+    }
+  }
+}

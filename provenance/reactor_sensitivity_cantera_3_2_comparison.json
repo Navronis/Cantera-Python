@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-18",
+  "reference": "released Cantera 3.2.0; supplementary, not the pinned source oracle",
+  "mechanism": "gri30.yaml",
+  "reactor": "IdealGasConstPressureReactor",
+  "initial_state": {
+    "temperature_K": 1400.0,
+    "pressure_Pa": 101325.0,
+    "composition": "CH4:1,O2:2,N2:7.52"
+  },
+  "target_time_s": 1e-06,
+  "reaction_index": 117,
+  "native_final_temperature_K": 1399.9998389965194,
+  "python_final_temperature_K": 1399.99984137483,
+  "native_normalized_temperature_sensitivity": -8.86484037948114e-08,
+  "python_normalized_temperature_sensitivity": -8.909800891524565e-08,
+  "relative_difference": 0.005071785621538489,
+  "python_backend": "integrated forward finite difference of reaction multiplier",
+  "scope_limit": "one released-version case; does not establish pinned CVODES equivalence"
+}

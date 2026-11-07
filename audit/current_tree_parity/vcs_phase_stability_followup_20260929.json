@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-29",
+  "pinned_cantera_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "native_source_mapping": {
+    "method": "src/equil/vcs_solve.cpp::VCS_SOLVE::vcs_phaseStabilityTest",
+    "phase_state_and_composition": "src/equil/vcs_VolPhase.cpp::setMoleFractionsState, sendToVCS_ActCoeff, setCreationMoleNumbers",
+    "norm": "src/equil/vcs_util.cpp::vcs_l2norm",
+    "cutoff": "include/cantera/equil/vcs_defs.h::VCS_DELETE_MINORSPECIES_CUTOFF"
+  },
+  "python_mapping": {
+    "path": "cantera_python/vcs.py",
+    "sha256": "dfe60b5967ccf1de03a9f73f26e78906d4ac9ca21af32c91e9b8498cffa5ba0d",
+    "function": "VCS_SOLVE.vcs_phase_stability_test -> vcs_phase_stability_successive_substitution",
+    "comparison_tool": "tools/compare_vcs_phase_stability_probe.py",
+    "comparison_sha256": "38492c4b743159c5648542dc28cee54ceacfc9c52fecc59f8d02dba7ed54a3eb"
+  },
+  "native_probe": {
+    "source": "tools/run_native_vcs_phase_stability_probe.cpp",
+    "source_sha256": "8e0a1f00574d742fdcc071c6266d5ee5539569f3b0c1b36242f408ca1951e964",
+    "binary": "tools/run_native_vcs_phase_stability_probe",
+    "binary_sha256": "249fe7e3a55955743214970f6f7fa48bbe96d2d16f4477a69d3a45b9ae612629",
+    "output": "audit/current_tree_parity/native_vcs_phase_stability_gri.txt",
+    "output_sha256": "d4fc2afb4e1af5194b3f871db393d9abbec5a393c5965682735026b916f0ce9a",
+    "fixture": "tests/fixtures/vcs_phase_stability_gri_pinned.txt",
+    "fixture_sha256": "d4fc2afb4e1af5194b3f871db393d9abbec5a393c5965682735026b916f0ce9a",
+    "oracle_build": "pinned Cantera shared library from commit 726522be4e2a13454d8415b7ef799d621f665cf3, compiled probe with g++ -std=c++20"
+  },
+  "case": {
+    "phase": "53-species ideal-gas GRI phase treated as absent, graphite phase retained",
+    "components": 5,
+    "global_species": 54,
+    "formation_reactions": 49,
+    "initial_creation_composition": "pinned native phase mole fractions captured after preparation",
+    "free_energies": "deterministic source-order inputs fe[k]=0.025*k and DeltaG[r]=0.1",
+    "native_phase_stability_function": -0.09516258196404048,
+    "python_phase_stability_function": -0.09516258196404048,
+    "iterations": 21,
+    "maximum_mole_fraction_error": 0.0,
+    "maximum_creation_mole_number_error": 0.0,
+    "maximum_activity_coefficient_error": 0.0,
+    "comparison": "exact equality for returned stability function and all recorded vectors in this fixture"
+  },
+  "validation": {
+    "targeted": "tests/test_vcs_multiphase.py: 21 passed",
+    "full_suite": "python -m pytest tests/ -q: 502 passed, 3 skipped, 698 subtests passed",
+    "full_suite_duration_seconds": 670.32,
+    "git_diff_check": "PASS"
+  },
+  "limitations": [
+    "The Python routine is now callable through prepared VCS_SOLVE phase/basis state, but its OLD free-energy and mole vectors are still supplied by the caller; the outer equilibrium driver does not construct or own a complete OLD/NEW iteration state.",
+    "Only one ideal-gas dead-phase fixture was compared against native.",
+    "Nonideal Margules phase loading is currently rejected by Solution with NotImplementedError; nonideal phase stability, phase birth/death orchestration, and the complete VCS active-set solver remain open."
+  ]
+}

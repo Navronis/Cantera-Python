@@ -1,0 +1,480 @@
+{
+  "cases": [
+    {
+      "case_id": "boundary1d_01_base_defaults",
+      "success": true,
+      "data": {
+        "domain_type": "boundary",
+        "is_connector": true,
+        "n_points": 1,
+        "n_components": 1,
+        "init_temp": 0.0,
+        "set_temp": 500.0,
+        "init_mdot": 0.0,
+        "set_mdot": 1.25,
+        "n_species": 0,
+        "caught_xin": true,
+        "caught_mass": true,
+        "caught_spread": true,
+        "caught_getspread": true
+      }
+    },
+    {
+      "case_id": "boundary1d_02_empty1d_lifecycle",
+      "success": true,
+      "data": {
+        "domain_type": "empty",
+        "is_connector": true,
+        "n_points": 1,
+        "n_components": 0,
+        "eval_rg_sum": 0.0
+      }
+    },
+    {
+      "case_id": "boundary1d_03_inlet1d_properties_gas",
+      "success": true,
+      "data": {
+        "domain_type": "inlet",
+        "is_connector": true,
+        "n_species": 10,
+        "temperature": 400.0,
+        "mdot": 2.5,
+        "spread_rate": 12.3,
+        "mass_fractions": [
+          0.20128800359442864,
+          0.0,
+          0.0,
+          0.7987119964055714,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_04_inlet1d_properties_span",
+      "success": true,
+      "data": {
+        "temperature": 320.0,
+        "mdot": 0.8,
+        "mass_fractions": [
+          0.038771467584668345,
+          0.0,
+          0.0,
+          0.30769082831701833,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.3841567782756698,
+          0.2693809258226436
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_05_inlet1d_unstrained_eval",
+      "success": true,
+      "data": {
+        "r_u": -0.15,
+        "r_T": 0.0,
+        "r_Y": [
+          0.0,
+          0.0,
+          0.0,
+          0.148957234187822,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_06_inlet1d_free_flow_eval",
+      "success": true,
+      "data": {
+        "computed_mdot": 0.0,
+        "r_T": 0.0,
+        "r_Y": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_07_inlet1d_strained_flow_left_eval",
+      "success": true,
+      "data": {
+        "r_L": 0.5,
+        "r_V": -20.0,
+        "r_T": 0.0,
+        "r_Y": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.4759805556879379,
+          0.0
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_08_inlet1d_strained_flow_right_eval",
+      "success": true,
+      "data": {
+        "r_U": 0.75,
+        "r_V": -15.0,
+        "r_T": 0.0,
+        "r_Y": [
+          0.0,
+          0.0,
+          0.0,
+          0.13165293802938757,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.6183470619706124,
+          0.0
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_09_outlet1d_unstrained_eval",
+      "success": true,
+      "data": {
+        "r_T": 1550.0,
+        "r_Y": [
+          0.0,
+          0.0040000000000000036,
+          0.006000000000000005,
+          0.008000000000000007,
+          0.010000000000000009,
+          0.01200000000000001,
+          0.014000000000000012,
+          0.016000000000000014,
+          0.018000000000000016,
+          0.020000000000000018
+        ],
+        "diag_Y": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_10_outletres1d_unstrained_eval",
+      "success": true,
+      "data": {
+        "r_T": 1250.0,
+        "r_Y": [
+          0.08,
+          0.16,
+          0.24,
+          0.32,
+          0.4,
+          0.37868683744341025,
+          0.56,
+          0.64,
+          -0.1786868374434104,
+          0.8
+        ],
+        "diag_Y": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_11_symm1d_right_eval",
+      "success": true,
+      "data": {
+        "r_V": 0.5,
+        "diag_V": 0,
+        "r_T": 0.0,
+        "diag_T": 0
+      }
+    },
+    {
+      "case_id": "boundary1d_12_symm1d_left_eval",
+      "success": true,
+      "data": {
+        "r_V": -0.19999999999999996,
+        "diag_V": 0,
+        "r_T": 0.0,
+        "diag_T": 0
+      }
+    },
+    {
+      "case_id": "boundary1d_13_surf1d_left_eval",
+      "success": true,
+      "data": {
+        "r_T": -50.0
+      }
+    },
+    {
+      "case_id": "boundary1d_14_surf1d_right_eval",
+      "success": true,
+      "data": {
+        "r_T": 30.0
+      }
+    },
+    {
+      "case_id": "boundary1d_15_reactingsurf1d_properties",
+      "success": true,
+      "data": {
+        "domain_type": "reacting-surface",
+        "is_connector": true,
+        "cov_enabled_init": true,
+        "cov_enabled_false": false,
+        "cov_enabled_true": true,
+        "species_names": [
+          "PT(S)",
+          "H(S)",
+          "H2O(S)",
+          "OH(S)",
+          "CO(S)",
+          "CO2(S)",
+          "CH3(S)",
+          "CH2(S)s",
+          "CH(S)",
+          "C(S)",
+          "O(S)"
+        ],
+        "species_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_16_reactingsurf1d_bounds_resetbadvalues",
+      "success": true,
+      "data": {
+        "lower_bounds": [
+          -1e-05,
+          -1e-05,
+          -1e-05,
+          -1e-05,
+          -1e-05,
+          -1e-05,
+          -1e-05,
+          -1e-05,
+          -1e-05,
+          -1e-05,
+          -1e-05
+        ],
+        "upper_bounds": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "normalized_cov": [
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_17_reactingsurf1d_eval_steady",
+      "success": true,
+      "data": {
+        "r_cov": [
+          0.0,
+          4741541466.59598,
+          2467323594.8469205,
+          16899075619.66192,
+          22768904.54386721,
+          -32300045059.50206,
+          -10373414310.171507,
+          0.0,
+          0.0,
+          10350726439.300213,
+          -21677959903.891216
+        ],
+        "diag_cov": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "r_gas_T": -20.0,
+        "r_gas_Y": [
+          0.0,
+          -1.6358708690120716,
+          -0.4106131612639788,
+          -0.003987376980988653,
+          -0.39825735689051206,
+          1116.7653413295577,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.0008615375447725532,
+          -0.12106480783001385,
+          38469.95254734178,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_18_reactingsurf1d_eval_transient",
+      "success": true,
+      "data": {
+        "r_cov": [
+          0.0,
+          6821386281.079763,
+          2466858343.258183,
+          16899112858.197847,
+          22824637.68748047,
+          -32300061191.39421,
+          -11064975078.936525,
+          0.0,
+          0.0,
+          11042287525.599693,
+          -21677353896.83003
+        ],
+        "diag_cov": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_19_reactingsurf1d_eval_fixed_coverage",
+      "success": true,
+      "data": {
+        "r_cov": [
+          -0.65,
+          0.1,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.1,
+          0.1
+        ],
+        "diag_cov": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "case_id": "boundary1d_20_topology_error_handling",
+      "success": true,
+      "data": {
+        "err_uninstalled": "\nCanteraError thrown by Boundary1D::_init:\ninstall in container before calling init.",
+        "err_connected_connector": "\nCanteraError thrown by Boundary1D::_init:\nBoundary domains can only be connected on the right to flow domains, not 'outlet' domains.",
+        "err_right_inlet_unstrained": "\nCanteraError thrown by Inlet1D::init:\nRight inlets with right-to-left flow are only supported for strained flow configurations.",
+        "err_left_outlet": "\nCanteraError thrown by Outlet1D::init:\nLeft outlets with right-to-left flow are not supported.",
+        "err_left_outlet_res": "\nCanteraError thrown by OutletRes1D::init:\nLeft outlets with right-to-left flow are not supported."
+      }
+    }
+  ]
+}

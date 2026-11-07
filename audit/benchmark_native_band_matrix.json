@@ -1,0 +1,11 @@
+{
+  "workload": "N=200_kl=6_ku=6_100_solves_100_mults",
+  "construction_median_ms": 0.016991,
+  "factor_median_ms": 0.023455,
+  "one_solve_median_ms": 0.004014,
+  "repeated_solve_median_ms": 0.364725,
+  "mult_median_ms": 0.812815,
+  "rcond_median_ms": 0.025958,
+  "total_lifecycle_median_ms": 1.279183,
+  "total_lifecycle_p95_ms": 2.913218
+}

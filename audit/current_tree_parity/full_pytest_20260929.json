@@ -1,0 +1,46 @@
+{
+  "schema": "current-tree-pytest-run-v1",
+  "date": "2026-09-29",
+  "command": "python -m pytest tests -q",
+  "exit_code": 0,
+  "collected": 507,
+  "passed": 504,
+  "skipped": 3,
+  "failed": 0,
+  "errors": 0,
+  "subtests_passed": 698,
+  "duration_seconds": 635.53,
+  "raw_console_log_persisted": false,
+  "observed_final_output": "504 passed, 3 skipped, 698 subtests passed in 635.53s (0:10:35)",
+  "environment": {
+    "python": "3.12.14",
+    "pytest": "9.1.1",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "ruamel_yaml": "0.19.1",
+    "execution": "Windows AMD64; temporary dependency target under %TEMP%"
+  },
+  "repository": {
+    "head": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+    "branch": "certified/waves-1-3-baseline",
+    "working_tree_dirty": true,
+    "porcelain_entries": 200
+  },
+  "source_hashing": {
+    "algorithm": "SHA-256",
+    "files_in_digest": 101,
+    "digest_method": "SHA-256 of compact JSON mapping from tools/run_waves_1_3_pytest.py::test_source_hashes",
+    "digest": "1cc315b9bfa3ec5ec88513a8fa7d2dce622ee36c3e3da2657b8e66971764791f",
+    "key_file_hashes": {
+      "cantera_python/vcs.py": "1e28d5108afbb4ca6be6172ce66213292c33f4b76f289e21b6ffec9e7ee87845",
+      "tests/test_vcs_multiphase.py": "ad9d517bf174754121add7bf21c95add6f778a53ea4dee174ead68dd2a5bb4bf",
+      "tests/test_canonical_inventory.py": "4e3c7c095846b06d5a3cd620bb5100ad3a886ae2d1c5710d1a597b74950efec9"
+    }
+  },
+  "scope_and_limitations": [
+    "This is a fresh full regression run against the current dirty working tree.",
+    "It does not establish that every solver matches the pinned native implementation.",
+    "The run used ruamel.yaml, which is a declared project dependency.",
+    "An isolated PyYAML-only mechanism probe fails because gri30.yaml loading reports undeclared species NO; this fallback result is not included in the passing run."
+  ]
+}

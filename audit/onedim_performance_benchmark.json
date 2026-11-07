@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "solver_family": "onedim",
+  "subsystem": "1D residual",
+  "overall_slowdown_factor": 476.09,
+  "native_equivalent_speed_parity": false,
+  "comparisons": [
+    {
+      "grid_size": 25,
+      "n_components": 4,
+      "total_size": 100,
+      "native_median_ms": 0.000468,
+      "python_median_ms": 0.18419999832985923,
+      "slowdown_factor": 393.59
+    },
+    {
+      "grid_size": 100,
+      "n_components": 4,
+      "total_size": 400,
+      "native_median_ms": 0.001672,
+      "python_median_ms": 0.7585999992443249,
+      "slowdown_factor": 453.71
+    },
+    {
+      "grid_size": 500,
+      "n_components": 4,
+      "total_size": 2000,
+      "native_median_ms": 0.008222,
+      "python_median_ms": 4.098400000657421,
+      "slowdown_factor": 498.47
+    },
+    {
+      "grid_size": 2000,
+      "n_components": 4,
+      "total_size": 8000,
+      "native_median_ms": 0.032837,
+      "python_median_ms": 18.500300000596326,
+      "slowdown_factor": 563.4
+    }
+  ]
+}

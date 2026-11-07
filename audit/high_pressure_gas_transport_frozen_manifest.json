@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/high_pressure_gas_transport_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-04T18:48:24.697264+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "hptran_run_id": "c7d392567f84e748a7a6fb33dcc8f41a",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "python_executable": "/home/nebula/cantera-oracle-env/bin/python3",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "file_hashes": {
+    "transport_py": "092c7fc2f028fa023e2e0d7f0fe12a5c8ee6d5fe1b98dc9c8610520eabf4ac1c",
+    "solution_py": "ba2bb9efbc9496f67bf111cfeee29a07f5b7252f72d2f74c8f5543db80958916",
+    "cubic_eos_py": "4167eabae3bc5422ebd8566e32c572951add37663db532219f6893856bdaf822",
+    "test_hp_transport_py": "db53353866480a4a3df47eb05efb78eb2d8b58ef815f48c4a588ccb4d9a9c0a1",
+    "corpus_high_pressure_gas_transport_jsonl": "8b2aff4f6b6ce8a24b63eeb03637d3ca5410919b555e7150b6dfc56adc0c2031",
+    "high_pressure_gas_transport_mechanism_schema_json": "e641e3bcfd11fe0ae68f596df1a3d1de2fb4f94112c1fca2acaee7cff8d245a6",
+    "run_native_high_pressure_transport_oracle_py": "7c5c3e6c40d57a47ff74272f4b62d0fc252316cda12ffb7209baf5f5868efd65",
+    "run_high_pressure_transport_campaign_py": "a082848ce8c35f273a6d8caefa48a1fdbedb8d737887e2628f0384f8ba15bdf5",
+    "native_high_pressure_transport_results_jsonl": "47f99ed419a7b24498b4534c6ea495063be91e413694b7c5cda8dd243da7b63e",
+    "python_high_pressure_transport_results_jsonl": "739d8e1896ef586779afd1fc34c47334e61b66063f05e03397d2c2aca594639e",
+    "high_pressure_gas_transport_differential_results_jsonl": "376c2761b784e9c2e213670c8c3b679d5635c6dbca0f238973a9e352c95d0a94",
+    "high_pressure_gas_transport_differential_summary_json": "2b5256f0d2d009dda89abd1540d102ad7feff9acdbf6231a9b92440e09575c7d",
+    "high_pressure_gas_transport_adversarial_results_json": "362ab195a71f1458e22a16fd42df13850d0b0008cc6dfc61d04e4e2defc447ed",
+    "high_pressure_gas_transport_failure_semantics_json": "315132da85723a1fa827c445fc657f7038d21474dc9f06c42ad119452c476431",
+    "high_pressure_gas_transport_closure_symbol_set_json": "3c70c7f761c573a25fad070ccddc849c5bc209afed9c1d21ded2efa7b7143436",
+    "high_pressure_gas_transport_runtime_call_graph_json": "d66677b2bddfd885c2e1a775c27143e3883368c87ba68233b21ddc64689aaaab"
+  },
+  "campaign_summary": {
+    "total_cases": 288,
+    "passed_cases": 288,
+    "pass_rate_percent": 100.0,
+    "max_viscosity_rel_err": 1.9941416174953444e-11,
+    "max_thermal_conductivity_rel_err": 2.4524694942019527e-11,
+    "max_binary_diff_rel_err": 1.2306647311199394e-10,
+    "max_mix_diff_rel_err": 5.976792942468355e-11,
+    "max_mix_diff_mole_rel_err": 1.8693417041754508e-09,
+    "max_mix_diff_mass_rel_err": 5.976792942468355e-11,
+    "adversarial_cases": 8,
+    "adversarial_passed": 8
+  },
+  "status": "VALIDATED_NUMERICALLY_EQUIVALENT"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "solver_family": "idas_integrator",
+  "timestamp_utc": "2026-11-05T10:52:29.689822+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "native_source": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "file_hashes": {
+    "numerics_py": "4a85a40839c458b22abad14671654eb9f96f744d0cf7cb3c100aaa4ce6a1cf60",
+    "pinned_IdasIntegrator_h": "521dd9adbc9624b4446950917d8ea5552095343ca8cab2e710aeeaf5b96cdc6b",
+    "pinned_IdasIntegrator_cpp": "addf243e62de64372ae64c366f0e474f12db8ed3df6f26c8ca92d25c28ed6df2",
+    "closure_symbol_set_json": "baf5fa5c53fab47bd40ee0e9c89bb83f62af71654f8bc57656cb428fa5e649a6",
+    "runtime_call_graph_json": "56fe1e3d37a618a2ba1bd96533e1f6327be120dbf5d4ab1cec250a4824ac6e41"
+  },
+  "closure_metrics": {
+    "total_canonical_symbols": 32,
+    "open_runtime_symbols": 32,
+    "non_runtime_cpp_only": 0
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/cvodes_integrator_starting_snapshot.json",
+  "snapshot_timestamp_utc": "2026-11-05T05:46:33.678773+00:00",
+  "repository_identity": {
+    "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+    "git_branch": "full-port/continuous-closure-20260930",
+    "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+    "is_worktree_clean": false
+  },
+  "python_environment": {
+    "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26100-SP0",
+    "numpy_version": "2.4.4",
+    "scipy_version": "1.17.1",
+    "scikit_sundae_installed": false,
+    "canonical_runtime_backend": "PURE_PYTHON_BDF"
+  },
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "python_executable": "/home/nebula/cantera-oracle-env/bin/python3",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "file_hashes": {
+    "numerics_py": "69096d2867b5c1d2b705e99373b46241066c1de13d81a7459dff13e166f64973",
+    "solution_py": "66f0cf32c214aa1875665f6c259c2b56f955e15dbc5ce71107bb147b7dc08d71",
+    "reactor_py": "f0e4b6958d2749ab412755d31846d009e4228df35597b4d6b5b78ed229c139d9",
+    "constants_py": "43b17585371daa7a54a93feed5eff32d3c490b8f970a22e6a671d48fa1bc6cb4",
+    "test_numerics_py": "8466c5d4eb8ed374e2b57a4b27a060cf92e59982e0397100d12c449c5e3b39f9",
+    "test_reactor_network_py": "1f06c6c4527ac96da30642bd9296dd24a805c619553b9cd145a8375c057c8989",
+    "test_reactor_conservation_py": "17f2dc607b46c9679415ad32b197da9719d6c0aa1f3eae2a80e4441beacfd978",
+    "closure_symbol_set_json": "58c48195f02d1fd01ba8cb1161f5f80d5f8d637e083131f2022a76cdb60f00ec",
+    "runtime_call_graph_json": "23b87af974628f6df23d047f93c8f31baf298fac277af0d339e25b5800de2776"
+  },
+  "frozen_solver_dependencies": {
+    "vcs_frozen_manifest_json": "72e0b5d8d5cffd806f5179d8161b5dca55d22c354d453f45b82000c7eebfc21d",
+    "mixture_transport_frozen_manifest_json": "FILE_NOT_FOUND",
+    "multicomponent_transport_frozen_manifest_json": "0ff63aaabcf1351d3c97bbb5056cc2ceeb784b6fec0d8609de05e28bad5015ce",
+    "dusty_gas_transport_frozen_manifest_json": "48d682b13408c666676fb3d65ddf384dd7de5ae31f4053ed8d3727e4fd85ae5a",
+    "high_pressure_gas_transport_frozen_manifest_json": "d35010a16c047a2c9cba27d6aad7d3f3e8458b296e8fce76e31adc424799e756",
+    "chem_equil_frozen_manifest_json": "cbcb06b40383b794dd61c23cd7ad163102f0b6b60a67bf551f3b559795985795"
+  }
+}

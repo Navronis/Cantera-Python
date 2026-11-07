@@ -1,0 +1,22 @@
+{
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "native_runner_cpp_sha256": "c0033eff7a8349dee2b0090518ab34c503d2bbaaf0b3762d32d52e64a76e003e",
+  "native_runner_binary_sha256": "c7dfae3539dff3967e7844fbeaf2dd16d7f95203e4624b4707c4845df64152e5",
+  "native_library_shared_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744",
+  "corpus_sha256": "832dbafaf132d5245d917be50283b37c409b1873dca9a7e847262f4e6417a4a1",
+  "python_runner_sha256": "1300c92b099f73f50b8620791cb8c3f25c6a5a7cf96ff310c1b998e97d55326f",
+  "python_transport_sha256": "d97538a6d08b05bc2567779e084327f1cfd62c9fed5a75bf234560624915da23",
+  "python_solution_sha256": "861ad9f0abd2fa7af5af11e8991048ea9adcdbbbde8d55b950ff7a547ce1cca2",
+  "comparator_sha256": "8fe1caf70703db03b0b405b32a35d06b6e5693fdc6967f31538d2d380794e47e",
+  "tolerance_policy": {
+    "viscosity": 1e-09,
+    "sp_visc": 1e-09,
+    "thermal_conductivity": 1e-09,
+    "bdiff": 1e-09,
+    "dmulti": 1e-08,
+    "dt": 1e-07,
+    "fluxes": 1e-08,
+    "molar_fluxes": 1e-08
+  },
+  "wave4_run_id": "w4_0e6da47414ae3487"
+}

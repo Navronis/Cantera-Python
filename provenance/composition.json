@@ -1,0 +1,21 @@
+{
+  "module": "cantera_python.composition",
+  "upstream_paths": [
+    "src/base/stringUtils.cpp",
+    "include/cantera/base/stringUtils.h",
+    "src/thermo/Phase.cpp",
+    "include/cantera/thermo/Phase.h"
+  ],
+  "translations": [
+    {
+      "python_symbols": ["parse_comp_string", "CompositionError"],
+      "translated_methods": ["Cantera::parseCompString"],
+      "notes": "Ports composition-map syntax, known-name zero fill, unknown-name validation, colon-containing names when no known-name filter is provided (matching upstream check order), and upstream's nonzero duplicate-key behavior. Python rejects nonfinite numeric values."
+    },
+    {
+      "python_symbols": ["SpeciesRegistry"],
+      "translated_methods": ["Phase::speciesIndex", "Phase::addSpeciesAlias"],
+      "notes": "Provides ordered names, aliases, and optional case-insensitive ambiguity detection. It is not a full Phase implementation."
+    }
+  ]
+}

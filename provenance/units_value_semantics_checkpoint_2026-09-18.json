@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-18",
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "scope": "Pinned Units value-object behavior, UnitSystem source-name exposure, and activation-energy To/From overload semantics after UnitStack.",
+  "source_files": [
+    "include/cantera/base/Units.h",
+    "src/base/Units.cpp",
+    "test/general/test_units.cpp"
+  ],
+  "python_files": [
+    "cantera_python/units.py",
+    "tests/test_units.py"
+  ],
+  "implemented": [
+    {
+      "canonical_symbol_ids": [
+        "include/cantera/base/Units.h:46:Units"
+      ],
+      "source_lines": [
+        "src/base/Units.cpp:112-200"
+      ],
+      "python_mapping": "cantera_python.units.Units.__init__",
+      "behavior": "String construction, force-unity validation, numeric dimensional construction, and pressure/energy pseudo-dimension inference."
+    },
+    {
+      "canonical_symbol_ids": [
+        "include/cantera/base/Units.h:61:str",
+        "include/cantera/base/Units.h:65:pow",
+        "include/cantera/base/Units.h:75:scale"
+      ],
+      "source_lines": [
+        "src/base/Units.cpp:226-304"
+      ],
+      "python_mapping": "cantera_python.units.Units.str / pow / scale",
+      "behavior": "Pinned base-dimension formatting, power reconstruction of pseudo-dimensions, and in-place factor scaling."
+    },
+    {
+      "canonical_symbol_ids": [
+        "include/cantera/base/Units.h:250:convertActivationEnergyTo",
+        "include/cantera/base/Units.h:251:convertActivationEnergyTo",
+        "include/cantera/base/Units.h:255:convertActivationEnergyFrom"
+      ],
+      "source_lines": [
+        "src/base/Units.cpp:708-740"
+      ],
+      "python_mapping": "cantera_python.units.UnitSystem.convert_activation_energy_to / convert_activation_energy_from",
+      "behavior": "The To/From overloads now reproduce the pinned treatment that ignores metric factors on temperature-dimension source or destination units while retaining factors for energy-per-quantity and eV units."
+    },
+    {
+      "canonical_symbol_ids": [
+        "include/cantera/base/Units.h:188:setDefaults",
+        "include/cantera/base/Units.h:203:setDefaults",
+        "include/cantera/base/Units.h:207:setDefaultActivationEnergy",
+        "include/cantera/base/Units.h:215:convertTo",
+        "include/cantera/base/Units.h:216:convertTo",
+        "include/cantera/base/Units.h:220:convertFrom",
+        "include/cantera/base/Units.h:221:convertFrom",
+        "include/cantera/base/Units.h:235:convertRateCoeff",
+        "include/cantera/base/Units.h:250:convertActivationEnergyTo",
+        "include/cantera/base/Units.h:251:convertActivationEnergyTo",
+        "include/cantera/base/Units.h:255:convertActivationEnergyFrom",
+        "include/cantera/base/Units.h:261:convertActivationEnergy",
+        "include/cantera/base/Units.h:264:getDelta"
+      ],
+      "source_lines": [
+        "include/cantera/base/Units.h:168-265"
+      ],
+      "python_mapping": "cantera_python.units.UnitSystem source-name aliases",
+      "behavior": "C++ source spellings are callable aliases of the editable snake_case Python implementations."
+    }
+  ],
+  "validation": {
+    "command": "python -m unittest tests.test_units -v",
+    "result": "13 tests passed",
+    "compile_command": "python -m py_compile cantera_python/units.py tests/test_units.py",
+    "compile_result": "passed",
+    "coverage": [
+      "Pinned test/general/test_units.cpp string formatting and force-unity cases",
+      "Direct pseudo-dimension inference",
+      "Power and scale behavior",
+      "Temperature-dimension distinction between explicit activation-energy conversion and To/From overloads",
+      "Source-name aliases"
+    ]
+  },
+  "canonical_status_policy": {
+    "status": "PARTIAL",
+    "reason": "Source review and Python regression tests are insufficient for final disposition under the strict closure standard; exact pinned-native differential validation and independent forensic review remain required."
+  },
+  "remaining_units_gaps": [
+    "AnyValue and InputFileError source-location semantics are represented only by Python decoded scalar/vector behavior and UnitError context.",
+    "The Python numeric Units constructor takes a six-exponent tuple rather than seven C++ scalar constructor parameters.",
+    "The parser accepts scientific notation in a leading numeric unit factor, which is broader than the pinned regular expression.",
+    "Exact pinned-native differential validation has not been run for this checkpoint."
+  ]
+}

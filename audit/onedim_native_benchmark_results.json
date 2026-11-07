@@ -1,0 +1,32 @@
+{
+  "benchmarks": [
+    {
+      "points": 25,
+      "size": 100,
+      "median_ms": 0.000468,
+      "min_ms": 0.000456,
+      "max_ms": 0.00051
+    },
+    {
+      "points": 100,
+      "size": 400,
+      "median_ms": 0.001672,
+      "min_ms": 0.001664,
+      "max_ms": 0.02591
+    },
+    {
+      "points": 500,
+      "size": 2000,
+      "median_ms": 0.008222,
+      "min_ms": 0.008186,
+      "max_ms": 0.023829
+    },
+    {
+      "points": 2000,
+      "size": 8000,
+      "median_ms": 0.032837,
+      "min_ms": 0.03276,
+      "max_ms": 0.04487
+    }
+  ]
+}

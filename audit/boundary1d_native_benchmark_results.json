@@ -1,0 +1,40 @@
+{
+  "benchmarks": [
+    {
+      "name": "Inlet1D",
+      "reps": 100000,
+      "mean_us": 0.0136,
+      "total_ms": 1.362
+    },
+    {
+      "name": "Outlet1D",
+      "reps": 100000,
+      "mean_us": 0.0176,
+      "total_ms": 1.762
+    },
+    {
+      "name": "OutletRes1D",
+      "reps": 100000,
+      "mean_us": 0.0141,
+      "total_ms": 1.414
+    },
+    {
+      "name": "Symm1D",
+      "reps": 100000,
+      "mean_us": 0.0058,
+      "total_ms": 0.577
+    },
+    {
+      "name": "Surf1D",
+      "reps": 100000,
+      "mean_us": 0.0055,
+      "total_ms": 0.553
+    },
+    {
+      "name": "ReactingSurf1D",
+      "reps": 100000,
+      "mean_us": 3.4532,
+      "total_ms": 345.324
+    }
+  ]
+}

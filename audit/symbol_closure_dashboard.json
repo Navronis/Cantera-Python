@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "pinned_source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "inventory": "provenance/canonical_5784_symbol_inventory.jsonl",
+  "TOTAL": 5784,
+  "PINNED_NATIVE_VALIDATED": 908,
+  "SEMANTIC_PYTHON_EQUIVALENT_VALIDATED": 0,
+  "NON_RUNTIME_CPP_ONLY_PROVEN": 759,
+  "PARTIAL": 612,
+  "NOT_PORTED": 3505,
+  "INCORRECT": 0,
+  "BLOCKED": 0,
+  "NOT_AUDITED": 0,
+  "fully_dispositioned": 1667,
+  "remaining_without_final_disposition": 4117,
+  "scientific_runtime_relevance_counts": {
+    "BINDING_RUNTIME_CANDIDATE": 8,
+    "NON_LIBRARY_EXAMPLE_CANDIDATE": 2,
+    "NON_LIBRARY_SAMPLE_CANDIDATE": 54,
+    "NON_SYMBOL_INVENTORY_ARTIFACT": 759,
+    "RUNTIME_UTILITY_CANDIDATE": 447,
+    "SCIENTIFIC_RUNTIME_CANDIDATE": 4070,
+    "VALIDATION_ONLY_CANDIDATE": 444
+  },
+  "required_scientific_runtime_symbols": 4517,
+  "validated_scientific_runtime_symbols": 907,
+  "validated_scientific_runtime_percent": 20.07969891520921,
+  "FULL_PORT_COMPLETE": false,
+  "closure_gate": {
+    "all_5784_final": false,
+    "temporary_statuses_zero": false,
+    "permitted_final_statuses": [
+      "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "PINNED_NATIVE_VALIDATED",
+      "SEMANTIC_PYTHON_EQUIVALENT_VALIDATED"
+    ]
+  },
+  "status_policy": "Legacy EQUIVALENT_PROVEN is counted as PARTIAL until independent revalidation assigns an allowed final status."
+}

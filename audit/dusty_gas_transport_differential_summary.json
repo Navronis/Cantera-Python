@@ -1,0 +1,68 @@
+{
+  "dusty_run_id": "a0f6357d731a18c658ed89201f122bf7",
+  "total_cases": 66,
+  "passed_cases": 66,
+  "pass_rate_percent": 100.0,
+  "total_matrix_elements_compared": 106833,
+  "total_scalar_elements_compared": 2317,
+  "unexpected_nonfinite_native": 0,
+  "unexpected_nonfinite_python": 0,
+  "classification": "NUMERICALLY_EQUIVALENT_WITHIN_VALIDATED_TOLERANCE",
+  "tolerance_policy": {
+    "rtol_general": 1e-08,
+    "atol_cond": 1e-08,
+    "atol_diff": 1e-08,
+    "atol_flux": 1e-08
+  },
+  "statistics": {
+    "thermal_conductivity": {
+      "abs_err": {
+        "max": 7.41073868937292e-15,
+        "p50": 9.037909309839165e-16,
+        "p95": 3.1155633628543455e-15,
+        "p99": 5.263844915504005e-15,
+        "worst_case_id": "DUSTY_ADV_P100BAR_T3200_065"
+      },
+      "rel_err": {
+        "max": 8.711861411346242e-14,
+        "p50": 5.82145637715295e-15,
+        "p95": 4.0674504981753794e-14,
+        "p99": 8.711861411346242e-14,
+        "worst_case_id": "DUSTY_GRI30_001"
+      }
+    },
+    "multi_diff_coeffs": {
+      "abs_err": {
+        "max": 2.2811613709095013e-15,
+        "p50": 1.6534083130403943e-18,
+        "p95": 2.5847379792054426e-16,
+        "p99": 1.3757224526233989e-15,
+        "worst_case_id": "DUSTY_GRI30_015"
+      },
+      "rel_err": {
+        "max": 2.581608754990329e-13,
+        "p50": 1.9591190380099644e-14,
+        "p95": 1.35616869727903e-13,
+        "p99": 1.859524347115261e-13,
+        "worst_case_id": "DUSTY_GRI30_015"
+      }
+    },
+    "molar_fluxes": {
+      "abs_err": {
+        "max": 3.5204261381038826e-14,
+        "p50": 1.0462550964485118e-17,
+        "p95": 4.2396641752873165e-15,
+        "p99": 3.397084046355413e-14,
+        "worst_case_id": "DUSTY_H2O2_038"
+      },
+      "rel_err": {
+        "max": 9.841407224266642e-11,
+        "p50": 1.2814226042824296e-14,
+        "p95": 2.5667197001498574e-12,
+        "p99": 5.386359123767225e-11,
+        "worst_case_id": "DUSTY_H2O2_038"
+      }
+    }
+  },
+  "h_matrix_invertibility_statement": "All tested DustyGasTransport H matrices inverted successfully with finite source-equivalent outputs."
+}

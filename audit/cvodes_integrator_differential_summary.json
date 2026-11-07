@@ -1,0 +1,20 @@
+{
+  "run_id": "cvodes_diff_1793859978",
+  "timestamp": "2026-11-05T06:26:32Z",
+  "solver_family": "cvodes_integrator",
+  "total_cases": 46,
+  "passed_cases": 46,
+  "pass_rate_percent": 100.0,
+  "max_state_relative_error": 0.00372579193871602,
+  "max_sensitivity_relative_error": 1.8526340566935412e-06,
+  "orders_reached": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "all_orders_1_to_5_reachable": true,
+  "status": "PASS",
+  "failures": []
+}

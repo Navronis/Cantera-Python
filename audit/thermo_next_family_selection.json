@@ -1,0 +1,20 @@
+{
+  "selected_family": "THERMO_FAMILY_1_PHASE_CORE_STATE_FOUNDATION",
+  "subsystem": "thermo",
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "symbol_count": 119,
+  "source_files": [
+    "include/cantera/thermo/Phase.h",
+    "src/thermo/Phase.cpp"
+  ],
+  "rationale": "Phase.h and Phase.cpp define the authoritative base multi-component state container (Phase) for all thermodynamic subsystems in Cantera. Every ThermoPhase, IdealGasPhase, SurfPhase, Cubic/Real gas phase, and electrolyte solution inherits state variables (T, P, rho, Y, X, C, V), element definitions, species definitions, molecular weights, and coordinate representations directly from Phase. Closing Phase first establishes the immutable multi-component base required by all downstream thermo models.",
+  "dependency_ordering": [
+    "THERMO_FAMILY_1_PHASE_CORE_STATE_FOUNDATION (Phase.h, Phase.cpp - 119 symbols)",
+    "THERMO_FAMILY_2_SPECIES_THERMO_POLYNOMIAL_MODELS (NasaPoly1/2, Shomate, MultiSpeciesThermo - ~70 symbols)",
+    "THERMO_FAMILY_3_THERMOPHASE_BASE_ARCH_RELATIONS (ThermoPhase.h, ThermoPhase.cpp - 188 symbols)",
+    "THERMO_FAMILY_4_IDEAL_GAS_AND_SOLUTION_PHASES (IdealGasPhase, IdealSolidSolnPhase, SurfPhase - ~160 symbols)",
+    "THERMO_FAMILY_5_REAL_GAS_AND_CUBIC_EOS (PengRobinson, RedlichKwong, MixtureFugacityTP - ~180 symbols)",
+    "THERMO_FAMILY_6_ELECTROLYTES_AND_LIQUIDS (WaterSSTP, DebyeHuckel, HMWSoln, PDSS - ~350 symbols)",
+    "THERMO_FAMILY_7_PLASMA_AND_NON_EQUILIBRIUM (PlasmaPhase, EEDF - ~120 symbols)"
+  ]
+}

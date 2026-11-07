@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/refiner_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T13:55:21.341437+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "solver_family": "refiner",
+  "subsystem": "grid refinement",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0, libcantera_shared.so.4.0.0"
+  },
+  "file_hashes": {
+    "oned_py": "fbcb4b4ef4b715960ffc6adebc814d73a103cd2f71f585c612eaef661051dca6",
+    "corpus_refiner_jsonl": "8cf4dc4d5b76354dd3b39f3fcbae595f5cc380fcb6618e3a2cf3004561bd2bac",
+    "run_native_refiner_oracle_cpp": "b7c390100c139e459adccf63250c4a91897bbb9c0df925832845d650dcc3a3e3",
+    "run_python_refiner_port_py": "febc953340a3740226ac6bcecbee39771f0c6e6b532034961637ee602f6058b7",
+    "run_refiner_campaign_py": "b3dedb0ebc35b9fc1e92986e86a3fea50ef46959cf394f10453638a40fde6367",
+    "benchmark_native_refiner_cpp": "9edb9c012fa53669670ae1b909145788ab71f656b6835c52cf4a2e44e9cb8593",
+    "benchmark_refiner_performance_py": "ce7645f72ee4ff4fb2b194857eb53cb1bc853fa6db4ec637e0928bc85bc210ba",
+    "native_refiner_oracle_results_json": "4decf3893f23507a3a6d0ea190c27c5126be342cd9db0d2eaf5bb4fa26424ce3",
+    "python_refiner_port_results_json": "a403af5324187e9eea56e974cfb12197b08466d303c43fa62f008d523bd17cab",
+    "refiner_differential_summary_json": "8d748309d306b89baa2c933ef5c41d0665b49154f76dc7498471d68d809c3fdf",
+    "refiner_performance_benchmark_json": "7d076475595ba07c9603b347ae71ef64140036e6ff0c3fb5a67b9615982bf637",
+    "refiner_starting_snapshot_json": "1b8839a2de9464aedfe3996bb9403faff537e48800d08bdbadcdf0cdf1bf4b38",
+    "refiner_closure_symbol_set_json": "43250573cfc1f3652dc9bdacd217eaf3dd205a1cd85c42a404e84c4438a55de8",
+    "refiner_runtime_call_graph_json": "422ec87f413538691020aac4d3c2825210dafd4fa8d23f35d7cb540dcc5a52e3",
+    "pinned_refine_h": "fa187c309dea8e2474c86ef2366530f9c2e95fa3661dc5d19c280c7d3f0e7446",
+    "pinned_refine_cpp": "e25706cd17fb61148c01f9812c130591586109a9d712c8edd9b1175ebcc01270"
+  },
+  "campaign_summary": {
+    "total_cases": 20,
+    "passed_cases": 20,
+    "pass_rate_pct": 100.0,
+    "insertion_flag_mismatches": 0,
+    "retention_flag_mismatches": 0,
+    "new_point_count_mismatches": 0,
+    "parity_achieved": true
+  },
+  "performance_benchmark": {
+    "overall_slowdown_factor": 20.42,
+    "native_equivalent_speed_parity": false,
+    "comparisons": [
+      {
+        "grid_size": 25,
+        "n_components": 4,
+        "native_median_ms": 0.002856,
+        "python_median_ms": 0.21299999934853986,
+        "slowdown_factor": 74.58
+      },
+      {
+        "grid_size": 100,
+        "n_components": 4,
+        "native_median_ms": 0.01329,
+        "python_median_ms": 0.40810000064084306,
+        "slowdown_factor": 30.71
+      },
+      {
+        "grid_size": 500,
+        "n_components": 4,
+        "native_median_ms": 0.15463,
+        "python_median_ms": 1.5673000016249716,
+        "slowdown_factor": 10.14
+      },
+      {
+        "grid_size": 2000,
+        "n_components": 4,
+        "native_median_ms": 0.894832,
+        "python_median_ms": 6.06809999953839,
+        "slowdown_factor": 6.78
+      }
+    ]
+  },
+  "independent_status_flags": {
+    "REFINER_SOURCE_LOGIC_COMPLETE": true,
+    "REFINER_RUNTIME_INTEGRATED": true,
+    "REFINER_NUMERICAL_PARITY": true,
+    "REFINER_ADVERSARIAL_VALIDATED": true,
+    "REFINER_FAILURE_SEMANTICS_VALIDATED": true,
+    "REFINER_NATIVE_PERFORMANCE_BENCHMARKED": true,
+    "REFINER_NATIVE_SPEED_PARITY": false,
+    "REFINER_FULL_REGRESSION_CLEAN": true,
+    "REFINER_FULLY_FROZEN": false
+  },
+  "status": "VALIDATED_NUMERICALLY_EQUIVALENT"
+}

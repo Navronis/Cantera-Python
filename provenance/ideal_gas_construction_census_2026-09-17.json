@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "scope": "Construction of every bundled ideal-gas phase through pure-Python Solution",
+  "results": [
+    {
+      "file": "..\\cantera-original\\data\\air.yaml",
+      "phase": "air",
+      "status": "constructed",
+      "species": 8,
+      "reactions": 8,
+      "seconds": 0.052
+    },
+    {
+      "file": "..\\cantera-original\\data\\airNASA9.yaml",
+      "phase": "airNASA9",
+      "status": "constructed",
+      "species": 11,
+      "reactions": 0,
+      "seconds": 0.048
+    },
+    {
+      "file": "..\\cantera-original\\data\\diamond.yaml",
+      "phase": "gas",
+      "status": "constructed",
+      "species": 4,
+      "reactions": 0,
+      "seconds": 0.359
+    },
+    {
+      "file": "..\\cantera-original\\data\\gri30.yaml",
+      "phase": "gri30",
+      "status": "constructed",
+      "species": 53,
+      "reactions": 325,
+      "seconds": 0.71
+    },
+    {
+      "file": "..\\cantera-original\\data\\gri30_highT.yaml",
+      "phase": "gri30",
+      "status": "constructed",
+      "species": 53,
+      "reactions": 325,
+      "seconds": 0.672
+    },
+    {
+      "file": "..\\cantera-original\\data\\gri30_ion.yaml",
+      "phase": "gas",
+      "status": "constructed",
+      "species": 56,
+      "reactions": 331,
+      "seconds": 0.727
+    },
+    {
+      "file": "..\\cantera-original\\data\\h2o2.yaml",
+      "phase": "ohmech",
+      "status": "constructed",
+      "species": 10,
+      "reactions": 29,
+      "seconds": 0.094
+    },
+    {
+      "file": "..\\cantera-original\\data\\KOH.yaml",
+      "phase": "KOH_plasma",
+      "status": "constructed",
+      "species": 758,
+      "reactions": 0,
+      "seconds": 6.31
+    },
+    {
+      "file": "..\\cantera-original\\data\\methane_pox_on_pt.yaml",
+      "phase": "gas",
+      "status": "constructed",
+      "species": 7,
+      "reactions": 0,
+      "seconds": 0.119
+    },
+    {
+      "file": "..\\cantera-original\\data\\nDodecane_Reitz.yaml",
+      "phase": "nDodecane_IG",
+      "status": "constructed",
+      "species": 100,
+      "reactions": 553,
+      "seconds": 1.194
+    },
+    {
+      "file": "..\\cantera-original\\data\\ohn.yaml",
+      "phase": "gas",
+      "status": "constructed",
+      "species": 53,
+      "reactions": 325,
+      "seconds": 0.9
+    },
+    {
+      "file": "..\\cantera-original\\data\\ptcombust.yaml",
+      "phase": "gas",
+      "status": "constructed",
+      "species": 32,
+      "reactions": 186,
+      "seconds": 1.132
+    },
+    {
+      "file": "..\\cantera-original\\data\\SiF4_NH3_mec.yaml",
+      "phase": "gas",
+      "status": "constructed",
+      "species": 17,
+      "reactions": 33,
+      "seconds": 0.256
+    },
+    {
+      "file": "..\\cantera-original\\data\\sofc.yaml",
+      "phase": "gas",
+      "status": "constructed",
+      "species": 4,
+      "reactions": 0,
+      "seconds": 0.554
+    },
+    {
+      "file": "..\\cantera-original\\data\\example_data\\ammonia-CO-H2-Alzueta-2023.yaml",
+      "phase": "baseline",
+      "status": "constructed",
+      "species": 42,
+      "reactions": 281,
+      "seconds": 1.147
+    },
+    {
+      "file": "..\\cantera-original\\data\\example_data\\ammonia-CO-H2-Alzueta-2023.yaml",
+      "phase": "linear-Burke",
+      "status": "constructed",
+      "species": 42,
+      "reactions": 281,
+      "seconds": 1.161
+    },
+    {
+      "file": "..\\cantera-original\\data\\example_data\\ammonia-Ru-Ba-YSZ-CSM-2019.yaml",
+      "phase": "gas",
+      "status": "constructed",
+      "species": 4,
+      "reactions": 0,
+      "seconds": 0.083
+    },
+    {
+      "file": "..\\cantera-original\\data\\example_data\\co2-thermo.yaml",
+      "phase": "CO2-Ideal",
+      "status": "constructed",
+      "species": 1,
+      "reactions": 0,
+      "seconds": 0.014
+    },
+    {
+      "file": "..\\cantera-original\\data\\example_data\\n-heptane-NUIG-2016.yaml",
+      "phase": "gas",
+      "status": "constructed",
+      "species": 1268,
+      "reactions": 5336,
+      "seconds": 25.656
+    },
+    {
+      "file": "..\\cantera-original\\data\\example_data\\n-hexane-NUIG-2015.yaml",
+      "phase": "gas",
+      "status": "constructed",
+      "species": 1268,
+      "reactions": 5336,
+      "seconds": 24.039
+    }
+  ],
+  "constructed": 20,
+  "errors": 0
+}

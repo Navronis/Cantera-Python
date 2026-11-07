@@ -1,0 +1,162 @@
+{
+  "case": "GRI-3.0 uniform X, 1800 K, 506625 Pa",
+  "matrix": {
+    "max_abs": 2.2737367544323206e-13,
+    "max_rel": 1.2641300002419612e-13
+  },
+  "rhs": {
+    "max_abs": 3.469446951953614e-18,
+    "max_rel": 1.8388068845354153e-16
+  },
+  "solution": {
+    "max_abs": 4.2327252813834093e-16,
+    "max_rel": 7.160267148247453e-13
+  },
+  "native_condition_2": 5411.8088952426,
+  "python_condition_2": 5411.80889524215,
+  "native_residual_inf": 4.5102810375396984e-17,
+  "python_residual_inf": 4.163336342344337e-17,
+  "native_matrix_python_solution_residual_inf": 1.457167719820518e-16,
+  "python_matrix_native_solution_residual_inf": 1.7694179454963432e-16,
+  "matrix_blocks": {
+    "L00_00": {
+      "max_abs": 1.1546319456101628e-14,
+      "max_rel": 1.3165884976177024e-14
+    },
+    "L00_10": {
+      "max_abs": 1.6792123247455493e-15,
+      "max_rel": 1.2641300002419612e-13
+    },
+    "L00_01": {
+      "max_abs": 0.0,
+      "max_rel": 0.0
+    },
+    "L10_00": {
+      "max_abs": 1.6792123247455493e-15,
+      "max_rel": 1.2641300002419612e-13
+    },
+    "L10_10": {
+      "max_abs": 2.042810365310288e-14,
+      "max_rel": 1.1741410761362837e-13
+    },
+    "L10_01": {
+      "max_abs": 4.718447854656915e-16,
+      "max_rel": 1.1746227600376538e-13
+    },
+    "L01_00": {
+      "max_abs": 0.0,
+      "max_rel": 0.0
+    },
+    "L01_10": {
+      "max_abs": 4.718447854656915e-16,
+      "max_rel": 1.1746227600376538e-13
+    },
+    "L01_01": {
+      "max_abs": 2.2737367544323206e-13,
+      "max_rel": 7.773881902983997e-15
+    }
+  },
+  "worst_matrix_entry": {
+    "row": 108,
+    "column": 108,
+    "native": -414.42447741900924,
+    "python": -414.42447741900946
+  },
+  "transport_inputs": {
+    "molefracs": {
+      "max_abs": 3.469446951953614e-18,
+      "max_rel": 1.8388068845354153e-16,
+      "worst_index": 0,
+      "native_at_worst": 0.018867924528301886,
+      "python_at_worst": 0.01886792452830189
+    },
+    "m_bdiff": {
+      "max_abs": 1.1709744285326451e-11,
+      "max_rel": 1.7742800563357754e-13,
+      "worst_index": 54,
+      "native_at_worst": 673.1025390252037,
+      "python_at_worst": 673.1025390252154
+    },
+    "astar": {
+      "max_abs": 6.661338147750939e-16,
+      "max_rel": 5.965982152886886e-16,
+      "worst_index": 703,
+      "native_at_worst": 1.1165534822338643,
+      "python_at_worst": 1.1165534822338636
+    },
+    "bstar": {
+      "max_abs": 1.1102230246251565e-15,
+      "max_rel": 1.0150345268107653e-15,
+      "worst_index": 10,
+      "native_at_worst": 1.0940675683548855,
+      "python_at_worst": 1.0940675683548866
+    },
+    "cstar": {
+      "max_abs": 1.2212453270876722e-15,
+      "max_rel": 1.2875554479373577e-15,
+      "worst_index": 0,
+      "native_at_worst": 0.9484992114662609,
+      "python_at_worst": 0.9484992114662597
+    },
+    "cinternal": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "worst_index": 0,
+      "native_at_worst": 1.5295835828417585,
+      "python_at_worst": 1.5295835828417585
+    },
+    "rotrelax": {
+      "max_abs": 7.105427357601002e-15,
+      "max_rel": 3.1357484091126727e-16,
+      "worst_index": 5,
+      "native_at_worst": 22.659430638479172,
+      "python_at_worst": 22.659430638479165
+    },
+    "viscosity": {
+      "max_abs": 7.752045533271357e-18,
+      "max_rel": 1.777485284075497e-13,
+      "worst_index": 40,
+      "native_at_worst": 4.361243157803886e-05,
+      "python_at_worst": 4.361243157803111e-05
+    },
+    "sigma": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "worst_index": 0,
+      "native_at_worst": 2.92e-10,
+      "python_at_worst": 2.92e-10
+    },
+    "epsilon": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "worst_index": 0,
+      "native_at_worst": 5.2464662e-22,
+      "python_at_worst": 5.2464662e-22
+    },
+    "delta": {
+      "max_abs": 1.1102230246251565e-16,
+      "max_rel": 1.4898025942350477e-16,
+      "worst_index": 283,
+      "native_at_worst": 0.745214855257525,
+      "python_at_worst": 0.7452148552575251
+    },
+    "tstar": {
+      "max_abs": 1.7763568394002505e-15,
+      "max_rel": 2.062547663525846e-16,
+      "worst_index": 1,
+      "native_at_worst": 12.413793103448278,
+      "python_at_worst": 12.413793103448276
+    },
+    "omega22": {
+      "max_abs": 2.220446049250313e-16,
+      "max_rel": 2.2006259441676355e-16,
+      "worst_index": 33,
+      "native_at_worst": 1.0090065761222196,
+      "python_at_worst": 1.0090065761222198
+    }
+  },
+  "native_fit_vs_python_raw_viscosity": {
+    "max_abs": 9.296147671773952e-09,
+    "max_rel": 0.00019377752000736414
+  }
+}

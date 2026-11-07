@@ -1,0 +1,323 @@
+{
+  "created_utc": "2026-09-16T07:24:32.922637+00:00",
+  "upstream_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "port_complete": false,
+  "source_preservation_verified": true,
+  "repositories": [
+    {
+      "repository": ".",
+      "commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+      "tracked_blob_files": 1451,
+      "tracked_tree_clean": true,
+      "working_tree_changes": [],
+      "working_tree_missing": [],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "data/example_data",
+      "commit": "622e02535961079bf4e55dd338294e244a31cffb",
+      "tracked_blob_files": 12,
+      "tracked_tree_clean": true,
+      "working_tree_changes": [],
+      "working_tree_missing": [],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "ext/HighFive",
+      "commit": "ede97c8d51905c1640038561d12d41da173012ac",
+      "tracked_blob_files": 181,
+      "tracked_tree_clean": true,
+      "working_tree_changes": [],
+      "working_tree_missing": [],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "ext/HighFive/deps/catch2",
+      "commit": "3f0283de7a9c43200033da996ff9093be3ac84dc",
+      "tracked_blob_files": 529,
+      "tracked_tree_clean": true,
+      "working_tree_changes": [],
+      "working_tree_missing": [],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "ext/doxygen-awesome-css",
+      "commit": "df83fbf22cfff76b875c13d324baf584c74e96d0",
+      "tracked_blob_files": 35,
+      "tracked_tree_clean": true,
+      "working_tree_changes": [],
+      "working_tree_missing": [],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "ext/eigen",
+      "commit": "3147391d946bb4b6c68edd901f2add6ac1f31f8c",
+      "tracked_blob_files": 1784,
+      "tracked_tree_clean": true,
+      "working_tree_changes": [],
+      "working_tree_missing": [],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "ext/fmt",
+      "commit": "a33701196adfad74917046096bf5a2aa0ab0bb50",
+      "tracked_blob_files": 210,
+      "tracked_tree_clean": true,
+      "working_tree_changes": [],
+      "working_tree_missing": [],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "ext/googletest",
+      "commit": "e2239ee6043f73722e7aa812a459f54a28552929",
+      "tracked_blob_files": 259,
+      "tracked_tree_clean": true,
+      "working_tree_changes": [],
+      "working_tree_missing": [],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "ext/sundials",
+      "commit": "c8dabcea90ca8bf195474da120e4f3dd39aa711f",
+      "tracked_blob_files": 3327,
+      "tracked_tree_clean": false,
+      "working_tree_changes": [
+        "examples/arkode/C_serial/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_PSEUDO_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out"
+      ],
+      "working_tree_missing": [
+        "ext/sundials/examples/arkode/C_serial/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_PSEUDO_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out"
+      ],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "ext/sundials/.gitlab/radiuss-spack-configs",
+      "commit": "89c2074e466d454c77ec17249cbdf8555d183388",
+      "tracked_blob_files": 56,
+      "tracked_tree_clean": true,
+      "working_tree_changes": [],
+      "working_tree_missing": [],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "ext/sundials/.gitlab/uberenv",
+      "commit": "ec6fd144c814ce30a6487db9fb8294def606afda",
+      "tracked_blob_files": 28,
+      "tracked_tree_clean": true,
+      "working_tree_changes": [],
+      "working_tree_missing": [],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "ext/sundials/external/sundials-addon-example",
+      "commit": "839c00a919b3bbd43eafcf2c016e1b92616cfe00",
+      "tracked_blob_files": 5,
+      "tracked_tree_clean": true,
+      "working_tree_changes": [],
+      "working_tree_missing": [],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "ext/sundials/test/answers",
+      "commit": "779e974c8095d8b3c2837edf56632a990714d669",
+      "tracked_blob_files": 3623,
+      "tracked_tree_clean": false,
+      "working_tree_changes": [
+        "darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--count-orbits_--use-compensated-sums.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_EULER_1_1_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_2_2_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_3_3_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_4_4_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_5_6_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_PSEUDO_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_RUTH_3_3_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_YOSHIDA_6_8_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--count-orbits_--use-compensated-sums.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_EULER_1_1_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_2_2_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_3_3_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_4_4_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_5_6_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_PSEUDO_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_RUTH_3_3_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_YOSHIDA_6_8_--tf_50_--check-order_--nout_1.out",
+        "darwin-monterey-m1/apple-clang-14.0.0/single/ark_kepler_--stepper_SPRK_--step-mode_fixed_--count-orbits_--use-compensated-sums.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_analytic_arkode.scalar_tolerances_1e-6_1e-8_arkode.table_names_ARKODE_ESDIRK547L2SA_7_4_5_ARKODE_ERK_NONE.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_analytic_lsrk_domeigest_arkid.dom_eig_est_init_preprocess_iters_1_sundomeigestimator.max_iters_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_EULER_1_1_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_2_2_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_3_3_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_4_4_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_5_6_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_PSEUDO_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_RUTH_3_3_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_YOSHIDA_6_8_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_analytic_arkode.scalar_tolerances_1e-6_1e-8_arkode.table_names_ARKODE_ESDIRK547L2SA_7_4_5_ARKODE_ERK_NONE.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_analytic_lsrk_domeigest_arkid.dom_eig_est_init_preprocess_iters_1_sundomeigestimator.max_iters_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--count-orbits_--use-compensated-sums.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_EULER_1_1_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_2_2_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_3_3_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_4_4_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_5_6_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_PSEUDO_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_RUTH_3_3_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_YOSHIDA_6_8_--tf_50_--check-order_--nout_1.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/single/ark_analytic_arkode.scalar_tolerances_1e-6_1e-8_arkode.table_names_ARKODE_ESDIRK547L2SA_7_4_5_ARKODE_ERK_NONE.out",
+        "linux-ubuntu20.04-x86_64/gcc-9.4.0/single/ark_analytic_lsrk_domeigest_arkid.dom_eig_est_init_preprocess_iters_1_sundomeigestimator.max_iters_1.out"
+      ],
+      "working_tree_missing": [
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--count-orbits_--use-compensated-sums.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_EULER_1_1_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_2_2_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_3_3_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_4_4_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_5_6_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_PSEUDO_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_RUTH_3_3_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_YOSHIDA_6_8_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--count-orbits_--use-compensated-sums.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_EULER_1_1_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_2_2_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_3_3_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_4_4_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_5_6_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_PSEUDO_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_RUTH_3_3_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_YOSHIDA_6_8_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/darwin-monterey-m1/apple-clang-14.0.0/single/ark_kepler_--stepper_SPRK_--step-mode_fixed_--count-orbits_--use-compensated-sums.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_analytic_arkode.scalar_tolerances_1e-6_1e-8_arkode.table_names_ARKODE_ESDIRK547L2SA_7_4_5_ARKODE_ERK_NONE.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_analytic_lsrk_domeigest_arkid.dom_eig_est_init_preprocess_iters_1_sundomeigestimator.max_iters_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_EULER_1_1_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_2_2_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_3_3_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_4_4_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_5_6_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_PSEUDO_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_RUTH_3_3_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/double/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_YOSHIDA_6_8_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_analytic_arkode.scalar_tolerances_1e-6_1e-8_arkode.table_names_ARKODE_ESDIRK547L2SA_7_4_5_ARKODE_ERK_NONE.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_analytic_lsrk_domeigest_arkid.dom_eig_est_init_preprocess_iters_1_sundomeigestimator.max_iters_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--count-orbits_--use-compensated-sums.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_EULER_1_1_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_2_2_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_3_3_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_4_4_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_MCLACHLAN_5_6_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_PSEUDO_LEAPFROG_2_2_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_RUTH_3_3_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/extended/ark_kepler_--stepper_SPRK_--step-mode_fixed_--method_ARKODE_SPRK_YOSHIDA_6_8_--tf_50_--check-order_--nout_1.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/single/ark_analytic_arkode.scalar_tolerances_1e-6_1e-8_arkode.table_names_ARKODE_ESDIRK547L2SA_7_4_5_ARKODE_ERK_NONE.out",
+        "ext/sundials/test/answers/linux-ubuntu20.04-x86_64/gcc-9.4.0/single/ark_analytic_lsrk_domeigest_arkid.dom_eig_est_init_preprocess_iters_1_sundomeigestimator.max_iters_1.out"
+      ],
+      "git_connectivity_checked": true
+    },
+    {
+      "repository": "ext/yaml-cpp",
+      "commit": "0579ae3d976091d7d664aa9d2527e0d0cff25763",
+      "tracked_blob_files": 399,
+      "tracked_tree_clean": true,
+      "working_tree_changes": [],
+      "working_tree_missing": [],
+      "git_connectivity_checked": true
+    }
+  ],
+  "tracked_files_including_dependencies": 11899,
+  "main_repository_code_files": 772,
+  "code_status_counts": {
+    "already_python_preserved_not_a_native_replacement": 155,
+    "not_ported": 597,
+    "selected_methods_ported_file_still_incomplete": 20
+  },
+  "core_native_subsystems": {
+    "base": {
+      "files": 43,
+      "physical_lines": 13363
+    },
+    "core.h": {
+      "files": 1,
+      "physical_lines": 20
+    },
+    "cython": {
+      "files": 6,
+      "physical_lines": 554
+    },
+    "equil": {
+      "files": 17,
+      "physical_lines": 15023
+    },
+    "extensions": {
+      "files": 6,
+      "physical_lines": 383
+    },
+    "fortran": {
+      "files": 7,
+      "physical_lines": 2965
+    },
+    "kinetics": {
+      "files": 55,
+      "physical_lines": 15958
+    },
+    "numerics": {
+      "files": 37,
+      "physical_lines": 8135
+    },
+    "oneD": {
+      "files": 20,
+      "physical_lines": 8909
+    },
+    "onedim.h": {
+      "files": 1,
+      "physical_lines": 23
+    },
+    "pch": {
+      "files": 2,
+      "physical_lines": 24
+    },
+    "reactionpaths.h": {
+      "files": 1,
+      "physical_lines": 6
+    },
+    "test": {
+      "files": 1,
+      "physical_lines": 17
+    },
+    "thermo": {
+      "files": 96,
+      "physical_lines": 42815
+    },
+    "tpx": {
+      "files": 20,
+      "physical_lines": 3698
+    },
+    "transport": {
+      "files": 23,
+      "physical_lines": 7952
+    },
+    "zeroD": {
+      "files": 38,
+      "physical_lines": 8211
+    },
+    "zerodim.h": {
+      "files": 1,
+      "physical_lines": 42
+    }
+  },
+  "documented_equation_excerpts": 1874,
+  "limitations": [
+    "Physical lines include comments and whitespace; they are not equation counts.",
+    "Equation excerpts index Doxygen f markup only; executable formulas and other math markup are not exhaustively identified.",
+    "File mappings mark selected ported methods, never whole-subsystem equivalence.",
+    "All excerpts remain unverified at equation-index level; module tests do not certify every equation.",
+    "Original Python files remain at their upstream paths; many depend on the native Cantera extension.",
+    "External dependency source is preserved; its native algorithms have not been ported.",
+    "Working-file SHA256 hashes may include checkout newline conversion; git_object identifies committed content."
+  ]
+}

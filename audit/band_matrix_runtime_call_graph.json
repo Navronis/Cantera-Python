@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "solver_family": "band_matrix",
+  "subsystem": "banded linear algebra",
+  "public_entry_points": {
+    "resize(n, kl, ku, v=0.0)": {
+      "callees": [
+        "_nrows_alloc calculation",
+        "np.full allocation"
+      ],
+      "scientific_purpose": "Allocate banded storage with 2*kl + ku + 1 rows for DGBTRF partial pivoting"
+    },
+    "bfill(v=0.0)": {
+      "callees": [
+        "self._data.fill"
+      ],
+      "scientific_purpose": "Fill banded matrix storage with scalar value"
+    },
+    "zero()": {
+      "callees": [
+        "self.bfill(0.0)"
+      ],
+      "scientific_purpose": "Zero all matrix entries"
+    },
+    "value(i, j)": {
+      "callees": [
+        "_band_row(i, j)"
+      ],
+      "scientific_purpose": "Read matrix element A(i, j) in band storage or return 0 outside band"
+    },
+    "setValue(i, j, v)": {
+      "callees": [
+        "_band_row(i, j)"
+      ],
+      "scientific_purpose": "Assign matrix element A(i, j) with boundary/bandwidth validation"
+    },
+    "mult(b, prod=None)": {
+      "callees": [
+        "value(i, j)"
+      ],
+      "scientific_purpose": "Matrix-vector product prod = A * b using band limits"
+    },
+    "leftMult(b, prod=None)": {
+      "callees": [
+        "value(i, j)"
+      ],
+      "scientific_purpose": "Transposed matrix-vector product prod = b * A"
+    },
+    "factor()": {
+      "callees": [
+        "_lu_value",
+        "_set_lu_value",
+        "DGBTRF partial pivoting"
+      ],
+      "scientific_purpose": "Compute LU factorization with partial row pivoting in compact band storage"
+    },
+    "solve(b)": {
+      "callees": [
+        "factor()",
+        "forward elimination with pivots (L*y = P*b)",
+        "backward substitution (U*x = y)"
+      ],
+      "scientific_purpose": "Solve linear system A * x = b for vector or multi-RHS matrix b"
+    },
+    "rcond(a1norm=0.0)": {
+      "callees": [
+        "to_dense()",
+        "_reciprocal_condition_one_norm()"
+      ],
+      "scientific_purpose": "Compute reciprocal 1-norm condition number estimate (LAPACK DGBCON / DGETRF)"
+    },
+    "oneNorm()": {
+      "callees": [
+        "to_dense()",
+        "_matrix_one_norm()"
+      ],
+      "scientific_purpose": "Compute matrix 1-norm (max column sum)"
+    },
+    "checkRows(value)": {
+      "callees": [
+        "abs(value(i, j))"
+      ],
+      "scientific_purpose": "Check that each row contains at least one entry exceeding threshold"
+    },
+    "checkColumns(value)": {
+      "callees": [
+        "abs(value(i, j))"
+      ],
+      "scientific_purpose": "Check that each column contains at least one entry exceeding threshold"
+    }
+  }
+}

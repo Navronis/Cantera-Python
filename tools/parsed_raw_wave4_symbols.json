@@ -1,0 +1,1040 @@
+[
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 31,
+    "symbol": "MultiTransport::transportModel",
+    "name": "transportModel",
+    "class": "MultiTransport",
+    "return_type": "string",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 45,
+    "symbol": "MultiTransport::getThermalDiffCoeffs",
+    "name": "getThermalDiffCoeffs",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "span<double> dt",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 47,
+    "symbol": "MultiTransport::thermalConductivity",
+    "name": "thermalConductivity",
+    "class": "MultiTransport",
+    "return_type": "double",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 49,
+    "symbol": "MultiTransport::getMultiDiffCoeffs",
+    "name": "getMultiDiffCoeffs",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "const size_t ld, span<double> d",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 105,
+    "symbol": "MultiTransport::init",
+    "name": "init",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "shared_ptr<ThermoPhase> thermo, int mode=0",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 107,
+    "symbol": "MultiTransport::invalidateCache",
+    "name": "invalidateCache",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 112,
+    "symbol": "MultiTransport::update_T",
+    "name": "update_T",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 116,
+    "symbol": "MultiTransport::update_C",
+    "name": "update_C",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 120,
+    "symbol": "MultiTransport::updateThermal_T",
+    "name": "updateThermal_T",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 163,
+    "symbol": "MultiTransport::eval_L0000",
+    "name": "eval_L0000",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "span<const double> x",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 169,
+    "symbol": "MultiTransport::eval_L0010",
+    "name": "eval_L0010",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "span<const double> x",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 172,
+    "symbol": "MultiTransport::eval_L1000",
+    "name": "eval_L1000",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 174,
+    "symbol": "MultiTransport::eval_L0100",
+    "name": "eval_L0100",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 175,
+    "symbol": "MultiTransport::eval_L0001",
+    "name": "eval_L0001",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 176,
+    "symbol": "MultiTransport::eval_L1010",
+    "name": "eval_L1010",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "span<const double> x",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 177,
+    "symbol": "MultiTransport::eval_L1001",
+    "name": "eval_L1001",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "span<const double> x",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 178,
+    "symbol": "MultiTransport::eval_L0110",
+    "name": "eval_L0110",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 179,
+    "symbol": "MultiTransport::eval_L0101",
+    "name": "eval_L0101",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "span<const double> x",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 180,
+    "symbol": "MultiTransport::hasInternalModes",
+    "name": "hasInternalModes",
+    "class": "MultiTransport",
+    "return_type": "bool",
+    "args": "size_t j",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 182,
+    "symbol": "MultiTransport::pressure_ig",
+    "name": "pressure_ig",
+    "class": "MultiTransport",
+    "return_type": "double",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/MultiTransport.h",
+    "line": 184,
+    "symbol": "MultiTransport::solveLMatrixEquation",
+    "name": "solveLMatrixEquation",
+    "class": "MultiTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 27,
+    "symbol": "::Frot",
+    "name": "Frot",
+    "class": "free_function",
+    "args": "double tr, double sqtr",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 37,
+    "symbol": "MultiTransport::init",
+    "name": "init",
+    "class": "MultiTransport",
+    "args": "shared_ptr<ThermoPhase> thermo, int mode",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 84,
+    "symbol": "MultiTransport::invalidateCache",
+    "name": "invalidateCache",
+    "class": "MultiTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 93,
+    "symbol": "MultiTransport::thermalConductivity",
+    "name": "thermalConductivity",
+    "class": "MultiTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 103,
+    "symbol": "MultiTransport::getThermalDiffCoeffs",
+    "name": "getThermalDiffCoeffs",
+    "class": "MultiTransport",
+    "args": "span<double> dt",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 113,
+    "symbol": "MultiTransport::pressure_ig",
+    "name": "pressure_ig",
+    "class": "MultiTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 118,
+    "symbol": "MultiTransport::solveLMatrixEquation",
+    "name": "solveLMatrixEquation",
+    "class": "MultiTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 372,
+    "symbol": "MultiTransport::getMultiDiffCoeffs",
+    "name": "getMultiDiffCoeffs",
+    "class": "MultiTransport",
+    "args": "const size_t ld, span<double> d",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 410,
+    "symbol": "MultiTransport::update_T",
+    "name": "update_T",
+    "class": "MultiTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 422,
+    "symbol": "MultiTransport::update_C",
+    "name": "update_C",
+    "class": "MultiTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 439,
+    "symbol": "MultiTransport::updateThermal_T",
+    "name": "updateThermal_T",
+    "class": "MultiTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 500,
+    "symbol": "MultiTransport::hasInternalModes",
+    "name": "hasInternalModes",
+    "class": "MultiTransport",
+    "args": "size_t j",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 505,
+    "symbol": "MultiTransport::eval_L0000",
+    "name": "eval_L0000",
+    "class": "MultiTransport",
+    "args": "span<const double> x",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 527,
+    "symbol": "MultiTransport::eval_L0010",
+    "name": "eval_L0010",
+    "class": "MultiTransport",
+    "args": "span<const double> x",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 547,
+    "symbol": "MultiTransport::eval_L1000",
+    "name": "eval_L1000",
+    "class": "MultiTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 556,
+    "symbol": "MultiTransport::eval_L1010",
+    "name": "eval_L1010",
+    "class": "MultiTransport",
+    "args": "span<const double> x",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 590,
+    "symbol": "MultiTransport::eval_L1001",
+    "name": "eval_L1001",
+    "class": "MultiTransport",
+    "args": "span<const double> x",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 613,
+    "symbol": "MultiTransport::eval_L0001",
+    "name": "eval_L0001",
+    "class": "MultiTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 622,
+    "symbol": "MultiTransport::eval_L0100",
+    "name": "eval_L0100",
+    "class": "MultiTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 631,
+    "symbol": "MultiTransport::eval_L0110",
+    "name": "eval_L0110",
+    "class": "MultiTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MultiTransport.cpp",
+    "line": 640,
+    "symbol": "MultiTransport::eval_L0101",
+    "name": "eval_L0101",
+    "class": "MultiTransport",
+    "args": "span<const double> x",
+    "is_definition": true
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 45,
+    "symbol": "GasTransport::viscosity",
+    "name": "viscosity",
+    "class": "GasTransport",
+    "return_type": "double",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 48,
+    "symbol": "GasTransport::getSpeciesViscosities",
+    "name": "getSpeciesViscosities",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "span<double> visc",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 55,
+    "symbol": "GasTransport::getBinaryDiffCoeffs",
+    "name": "getBinaryDiffCoeffs",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "const size_t ld, span<double> d",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 76,
+    "symbol": "GasTransport::getMixDiffCoeffs",
+    "name": "getMixDiffCoeffs",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "span<double> d",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 87,
+    "symbol": "GasTransport::getMixDiffCoeffsMole",
+    "name": "getMixDiffCoeffsMole",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "span<double> d",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 103,
+    "symbol": "GasTransport::getMixDiffCoeffsMass",
+    "name": "getMixDiffCoeffsMass",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "span<double> d",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 107,
+    "symbol": "GasTransport::getViscosityPolynomial",
+    "name": "getViscosityPolynomial",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "size_t i, span<double> coeffs",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 111,
+    "symbol": "GasTransport::getConductivityPolynomial",
+    "name": "getConductivityPolynomial",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "size_t i, span<double> coeffs",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 115,
+    "symbol": "GasTransport::getBinDiffusivityPolynomial",
+    "name": "getBinDiffusivityPolynomial",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "size_t i, size_t j, span<double> coeffs",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 126,
+    "symbol": "GasTransport::setViscosityPolynomial",
+    "name": "setViscosityPolynomial",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "size_t i, span<double> coeffs",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 130,
+    "symbol": "GasTransport::setConductivityPolynomial",
+    "name": "setConductivityPolynomial",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "size_t i, span<double> coeffs",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 134,
+    "symbol": "GasTransport::setBinDiffusivityPolynomial",
+    "name": "setBinDiffusivityPolynomial",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "size_t i, size_t j, span<double> coeffs",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 141,
+    "symbol": "GasTransport::init",
+    "name": "init",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "shared_ptr<ThermoPhase> thermo, int mode=0",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 143,
+    "symbol": "GasTransport::CKMode",
+    "name": "CKMode",
+    "class": "GasTransport",
+    "return_type": "bool",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 147,
+    "symbol": "GasTransport::invalidateCache",
+    "name": "invalidateCache",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 152,
+    "symbol": "GasTransport::update_T",
+    "name": "update_T",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 153,
+    "symbol": "GasTransport::update_C",
+    "name": "update_C",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 161,
+    "symbol": "GasTransport::updateViscosity_T",
+    "name": "updateViscosity_T",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 166,
+    "symbol": "GasTransport::updateSpeciesViscosities",
+    "name": "updateSpeciesViscosities",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 173,
+    "symbol": "GasTransport::updateDiff_T",
+    "name": "updateDiff_T",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 180,
+    "symbol": "GasTransport::setupCollisionParameters",
+    "name": "setupCollisionParameters",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 184,
+    "symbol": "GasTransport::setupCollisionIntegral",
+    "name": "setupCollisionIntegral",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 192,
+    "symbol": "GasTransport::getTransportData",
+    "name": "getTransportData",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 212,
+    "symbol": "GasTransport::fitCollisionIntegrals",
+    "name": "fitCollisionIntegrals",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "MMCollisionInt& integrals",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 236,
+    "symbol": "GasTransport::fitProperties",
+    "name": "fitProperties",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "MMCollisionInt& integrals",
+    "is_definition": false
+  },
+  {
+    "file": "include/cantera/transport/GasTransport.h",
+    "line": 251,
+    "symbol": "GasTransport::fitDiffCoeffs",
+    "name": "fitDiffCoeffs",
+    "class": "GasTransport",
+    "return_type": "void",
+    "args": "MMCollisionInt& integrals",
+    "is_definition": false
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 28,
+    "symbol": "GasTransport::update_T",
+    "name": "update_T",
+    "class": "GasTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 60,
+    "symbol": "GasTransport::viscosity",
+    "name": "viscosity",
+    "class": "GasTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 84,
+    "symbol": "GasTransport::updateViscosity_T",
+    "name": "updateViscosity_T",
+    "class": "GasTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 105,
+    "symbol": "GasTransport::updateSpeciesViscosities",
+    "name": "updateSpeciesViscosities",
+    "class": "GasTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 123,
+    "symbol": "GasTransport::updateDiff_T",
+    "name": "updateDiff_T",
+    "class": "GasTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 149,
+    "symbol": "GasTransport::getBinaryDiffCoeffs",
+    "name": "getBinaryDiffCoeffs",
+    "class": "GasTransport",
+    "args": "const size_t ld, span<double> d",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 168,
+    "symbol": "GasTransport::getMixDiffCoeffs",
+    "name": "getMixDiffCoeffs",
+    "class": "GasTransport",
+    "args": "span<double> d",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 200,
+    "symbol": "GasTransport::getMixDiffCoeffsMole",
+    "name": "getMixDiffCoeffsMole",
+    "class": "GasTransport",
+    "args": "span<double> d",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 231,
+    "symbol": "GasTransport::getMixDiffCoeffsMass",
+    "name": "getMixDiffCoeffsMass",
+    "class": "GasTransport",
+    "args": "span<double> d",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 265,
+    "symbol": "GasTransport::init",
+    "name": "init",
+    "class": "GasTransport",
+    "args": "shared_ptr<ThermoPhase> thermo, int mode",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 297,
+    "symbol": "GasTransport::setupCollisionParameters",
+    "name": "setupCollisionParameters",
+    "class": "GasTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 358,
+    "symbol": "GasTransport::invalidateCache",
+    "name": "invalidateCache",
+    "class": "GasTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 368,
+    "symbol": "GasTransport::setupCollisionIntegral",
+    "name": "setupCollisionIntegral",
+    "class": "GasTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 394,
+    "symbol": "GasTransport::getTransportData",
+    "name": "getTransportData",
+    "class": "GasTransport",
+    "args": "",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 456,
+    "symbol": "GasTransport::fitCollisionIntegrals",
+    "name": "fitCollisionIntegrals",
+    "class": "GasTransport",
+    "args": "MMCollisionInt& integrals",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 499,
+    "symbol": "GasTransport::fitProperties",
+    "name": "fitProperties",
+    "class": "GasTransport",
+    "args": "MMCollisionInt& integrals",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 635,
+    "symbol": "GasTransport::fitDiffCoeffs",
+    "name": "fitDiffCoeffs",
+    "class": "GasTransport",
+    "args": "MMCollisionInt& integrals",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 758,
+    "symbol": "GasTransport::getViscosityPolynomial",
+    "name": "getViscosityPolynomial",
+    "class": "GasTransport",
+    "args": "size_t i, span<double> coeffs",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 768,
+    "symbol": "GasTransport::getConductivityPolynomial",
+    "name": "getConductivityPolynomial",
+    "class": "GasTransport",
+    "args": "size_t i, span<double> coeffs",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 778,
+    "symbol": "GasTransport::getBinDiffusivityPolynomial",
+    "name": "getBinDiffusivityPolynomial",
+    "class": "GasTransport",
+    "args": "size_t i, size_t j, span<double> coeffs",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 818,
+    "symbol": "GasTransport::setViscosityPolynomial",
+    "name": "setViscosityPolynomial",
+    "class": "GasTransport",
+    "args": "size_t i, span<double> coeffs",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 829,
+    "symbol": "GasTransport::setConductivityPolynomial",
+    "name": "setConductivityPolynomial",
+    "class": "GasTransport",
+    "args": "size_t i, span<double> coeffs",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/GasTransport.cpp",
+    "line": 840,
+    "symbol": "GasTransport::setBinDiffusivityPolynomial",
+    "name": "setBinDiffusivityPolynomial",
+    "class": "GasTransport",
+    "args": "size_t i, size_t j, span<double> coeffs",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MMCollisionInt.h",
+    "line": 70,
+    "symbol": "MMCollisionInt::init",
+    "name": "init",
+    "class": "MMCollisionInt",
+    "return_type": "void",
+    "args": "double tsmin, double tsmax",
+    "is_definition": false
+  },
+  {
+    "file": "src/transport/MMCollisionInt.h",
+    "line": 72,
+    "symbol": "MMCollisionInt::omega22",
+    "name": "omega22",
+    "class": "MMCollisionInt",
+    "return_type": "double",
+    "args": "double ts, double deltastar",
+    "is_definition": false
+  },
+  {
+    "file": "src/transport/MMCollisionInt.h",
+    "line": 73,
+    "symbol": "MMCollisionInt::astar",
+    "name": "astar",
+    "class": "MMCollisionInt",
+    "return_type": "double",
+    "args": "double ts, double deltastar",
+    "is_definition": false
+  },
+  {
+    "file": "src/transport/MMCollisionInt.h",
+    "line": 74,
+    "symbol": "MMCollisionInt::bstar",
+    "name": "bstar",
+    "class": "MMCollisionInt",
+    "return_type": "double",
+    "args": "double ts, double deltastar",
+    "is_definition": false
+  },
+  {
+    "file": "src/transport/MMCollisionInt.h",
+    "line": 75,
+    "symbol": "MMCollisionInt::cstar",
+    "name": "cstar",
+    "class": "MMCollisionInt",
+    "return_type": "double",
+    "args": "double ts, double deltastar",
+    "is_definition": false
+  },
+  {
+    "file": "src/transport/MMCollisionInt.h",
+    "line": 78,
+    "symbol": "MMCollisionInt::fit_omega22",
+    "name": "fit_omega22",
+    "class": "MMCollisionInt",
+    "return_type": "void",
+    "args": "int degree, double deltastar, span<double> om22",
+    "is_definition": false
+  },
+  {
+    "file": "src/transport/MMCollisionInt.h",
+    "line": 79,
+    "symbol": "MMCollisionInt::omega11",
+    "name": "omega11",
+    "class": "MMCollisionInt",
+    "return_type": "double",
+    "args": "double ts, double deltastar",
+    "is_definition": false
+  },
+  {
+    "file": "src/transport/MMCollisionInt.h",
+    "line": 80,
+    "symbol": "MMCollisionInt::omega22",
+    "name": "omega22",
+    "class": "MMCollisionInt",
+    "return_type": "return",
+    "args": "ts, deltastar)/astar(ts, deltastar",
+    "is_definition": false
+  },
+  {
+    "file": "src/transport/MMCollisionInt.h",
+    "line": 84,
+    "symbol": "MMCollisionInt::fitDelta",
+    "name": "fitDelta",
+    "class": "MMCollisionInt",
+    "return_type": "double",
+    "args": "int table, int ntstar, int degree, span<double> c",
+    "is_definition": false
+  },
+  {
+    "file": "src/transport/MMCollisionInt.h",
+    "line": 85,
+    "symbol": "MMCollisionInt::quadInterp",
+    "name": "quadInterp",
+    "class": "MMCollisionInt",
+    "return_type": "double",
+    "args": "double x0, span<const double> x, span<const double> y",
+    "is_definition": false
+  },
+  {
+    "file": "src/transport/MMCollisionInt.cpp",
+    "line": 21,
+    "symbol": "MMCollisionInt::quadInterp",
+    "name": "quadInterp",
+    "class": "MMCollisionInt",
+    "args": "double x0, span<const double> x, span<const double> y",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MMCollisionInt.cpp",
+    "line": 217,
+    "symbol": "MMCollisionInt::init",
+    "name": "init",
+    "class": "MMCollisionInt",
+    "args": "double tstar_min, double tstar_max",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MMCollisionInt.cpp",
+    "line": 254,
+    "symbol": "MMCollisionInt::fitDelta",
+    "name": "fitDelta",
+    "class": "MMCollisionInt",
+    "args": "int table, int ntstar, int degree, span<double> c",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MMCollisionInt.cpp",
+    "line": 276,
+    "symbol": "MMCollisionInt::omega22",
+    "name": "omega22",
+    "class": "MMCollisionInt",
+    "args": "double ts, double deltastar",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MMCollisionInt.cpp",
+    "line": 301,
+    "symbol": "MMCollisionInt::astar",
+    "name": "astar",
+    "class": "MMCollisionInt",
+    "args": "double ts, double deltastar",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MMCollisionInt.cpp",
+    "line": 324,
+    "symbol": "MMCollisionInt::bstar",
+    "name": "bstar",
+    "class": "MMCollisionInt",
+    "args": "double ts, double deltastar",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MMCollisionInt.cpp",
+    "line": 347,
+    "symbol": "MMCollisionInt::cstar",
+    "name": "cstar",
+    "class": "MMCollisionInt",
+    "args": "double ts, double deltastar",
+    "is_definition": true
+  },
+  {
+    "file": "src/transport/MMCollisionInt.cpp",
+    "line": 370,
+    "symbol": "MMCollisionInt::fit_omega22",
+    "name": "fit_omega22",
+    "class": "MMCollisionInt",
+    "args": "int degree, double deltastar, span<double> o22",
+    "is_definition": true
+  }
+]

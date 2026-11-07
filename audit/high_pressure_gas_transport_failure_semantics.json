@@ -1,0 +1,35 @@
+{
+  "run_id": "c7d392567f84e748a7a6fb33dcc8f41a",
+  "failure_cases_total": 4,
+  "failure_cases_passed": 4,
+  "cases": [
+    {
+      "case_id": "HP_FAIL_MISSING_CRIT_PROPS",
+      "description": "Mechanism without species critical properties must be rejected",
+      "expected_error": "must have critical properties defined",
+      "caught_exception": "Species 'CO2' must have critical properties defined or non-zero cubic parameters. Check the species definition or the thermo data file.",
+      "passed": true
+    },
+    {
+      "case_id": "HP_FAIL_NEGATIVE_PRESSURE",
+      "description": "Negative or non-positive pressure must raise an exception",
+      "expected_error": "pressure",
+      "caught_exception": "Pressure must be positive, got -100000.0",
+      "passed": true
+    },
+    {
+      "case_id": "HP_FAIL_NEGATIVE_TEMPERATURE",
+      "description": "Negative or non-positive temperature must raise an exception",
+      "expected_error": "temperature",
+      "caught_exception": "Temperature must be positive, got -50.0",
+      "passed": true
+    },
+    {
+      "case_id": "HP_FAIL_UNKNOWN_MODEL",
+      "description": "Unknown transport model name must be rejected",
+      "expected_error": "No such type",
+      "caught_exception": "\nCanteraError thrown by TransportFactory::newTransport:\nInvalid Transport model 'non_existent_high_pressure_model'.",
+      "passed": true
+    }
+  ]
+}

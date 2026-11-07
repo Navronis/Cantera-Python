@@ -1,0 +1,15 @@
+{
+  "source_repository": "https://github.com/Cantera/cantera.git",
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "pinned_commit_date": "Sun Aug 9 10:29:51 2026 -0400",
+  "author": "Ray Speth <speth@mit.edu>",
+  "local_source_directory": "outputs/cantera-original",
+  "wsl_source_directory": "/home/nebula/cantera-pinned-oracle",
+  "wsl_python_environment": "/home/nebula/cantera-oracle-env",
+  "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744",
+  "python_extension_sha256": "cf70d89d5e1039fd35fcddfe05673a26a794ccb4c7fe320c5f2d2634ee2c5d96",
+  "oracle_identity_file": "audit/native_oracle_identity.json",
+  "oracle_build_metadata_file": "audit/native_oracle_build_metadata.json",
+  "reproducible_build_script": "tools/build_pinned_native_oracle.sh",
+  "ci_workflow": ".github/workflows/pinned-native-oracle.yml"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/refiner_starting_snapshot.json",
+  "snapshot_timestamp_utc": "2026-11-05T13:32:08.772258+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "is_worktree_clean": false,
+  "solver_family": "refiner",
+  "subsystem": "grid refinement",
+  "native_source": {
+    "commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "header": "include/cantera/oneD/refine.h",
+    "source": "src/oneD/refine.cpp",
+    "refine_h_sha256": "fa187c309dea8e2474c86ef2366530f9c2e95fa3661dc5d19c280c7d3f0e7446",
+    "refine_cpp_sha256": "e25706cd17fb61148c01f9812c130591586109a9d712c8edd9b1175ebcc01270"
+  },
+  "python_files": {
+    "oned_py_sha256": "6109ef7718cfe3177d677622505a67104a7b68b0c4860e588f4d53a947ab4498",
+    "test_onedim_py_sha256": "199d866e9a7944a878da7e8835a83c37fb53f08f72b71f8dbf1f523a84ddf493"
+  },
+  "closure_set_sha256": "d543b7822cbdb1adc0b2ba58745844820b8472ca595a6bf780aeec4545624b18",
+  "inventory_counts": {
+    "total_canonical_symbols": 20,
+    "open_runtime_symbols": 18,
+    "non_runtime_proven_symbols": 2,
+    "not_ported": 18,
+    "partial": 0,
+    "implemented_unvalidated": 0,
+    "final": 2
+  }
+}

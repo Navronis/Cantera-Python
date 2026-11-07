@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/flow_reactor_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T12:31:35.732553+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "solver_family": "flow_reactor",
+  "subsystem": "flow reactor DAE",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, python 3.12 / Cantera 3.1.0a4 commit 726522be"
+  },
+  "file_hashes": {
+    "reactor_py": "4c1ceefdf9640da05ad0bf4bd3ef0ece3354ac7faef742501d36953db5c59051",
+    "numerics_py": "2622bd6c3fc23b34e723759fe154e6bd26b566fbb2f882bd48d804b471c55d25",
+    "corpus_flow_reactor_jsonl": "25b97203012af2981a68c3ff7933dd22e3e1950df6de296a427ff6b547e4d2b6",
+    "run_native_flow_reactor_oracle_py": "f72d6b873a1398a002f6ea65d70aad63b22cb019457bd13a92f6e6507480980d",
+    "run_python_flow_reactor_port_py": "94eeef51a8c734e4f97c6c1c56008b3cb48f514f6c5dc522df4da781493db034",
+    "run_flow_reactor_campaign_py": "0af17923a344b4d066be6b221b053ba4c9f7379198bd91ccf1295742f390837d",
+    "benchmark_flow_reactor_performance_py": "de32a5c7aca58cba308d33b087b7c68341ae60d004dda93fb62a65fba10e3c83",
+    "flow_reactor_native_oracle_results_json": "f87bc36b0e7b427fa187c705340f2d5d0c30f715c5a833ed956e178e7ee8325b",
+    "flow_reactor_python_port_results_json": "085c7e36ccfdd2bf87b5f1b0d83cac186307bd123238e2efcddafa680d46ab6d",
+    "flow_reactor_differential_summary_json": "d091d698f22c58297758cfa0b634c0c787f83b5ce89a053f47cd5990afd52add",
+    "flow_reactor_performance_benchmark_json": "e0cc07f87f25190212093dae2568ad629ff9281db4417f51375df768060077e1",
+    "flow_reactor_starting_snapshot_json": "8221c2f69dff9aad06d2f0ef1997861c80c5df29e0a148066898724e9817785d",
+    "flow_reactor_closure_symbol_set_json": "251416e87ba67e733a7689b602ad595fd4325d5a917e08f59882928f0f90aba6",
+    "flow_reactor_runtime_call_graph_json": "1ba3c0aa55a1dd91694c32e724b4a1326331fe9383e69adb4f4899351883f044",
+    "pinned_FlowReactor_h": "6a15c66bb044a3523314e75f86e6b5b6578e54c30ef50269afa8cdb2c08601b8",
+    "pinned_FlowReactor_cpp": "c54677061fa6be557ac69c5decc3d9bd929ed81ca7f66c78a25bad6ffaff15f1"
+  },
+  "campaign_summary": {
+    "total_cases": 16,
+    "passed_cases": 16,
+    "pass_rate_pct": 100.0,
+    "speed_rel_error_max": 1.0262113533517053e-08,
+    "density_rel_error_max": 2.465663356432977e-09,
+    "temp_rel_error_max": 2.9722044612634954e-09,
+    "pressure_rel_error_max": 9.508759252118832e-11,
+    "mass_fraction_error_max": 8.967169229379124e-10,
+    "numerical_parity": true
+  },
+  "performance_benchmark": {
+    "native_median_ms": 1052.307,
+    "python_median_ms": 36568.331,
+    "speed_ratio": 34.75,
+    "native_speed_parity": false
+  },
+  "status": "VALIDATED_NUMERICALLY_EQUIVALENT"
+}

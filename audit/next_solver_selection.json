@@ -1,0 +1,14 @@
+{
+  "selected_subsystem": "1D reacting flow domains with ionized species (Poisson coupling)",
+  "selected_class": "IonFlow",
+  "closure_symbol_count": 19,
+  "subsystem_target": "oneD",
+  "dependencies": [
+    "Domain1D",
+    "Flow1D",
+    "Boundary1D",
+    "OneDim",
+    "Sim1D"
+  ],
+  "all_dependencies_validated": true
+}

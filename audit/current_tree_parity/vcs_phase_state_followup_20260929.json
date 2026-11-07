@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-29",
+  "pinned_cantera_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "implementation_scope": "vcs_VolPhase phase-state upload from basis-ordered mole vectors, phase mole aggregation, OLD/NEW state invalidation, ideal-phase activity-coefficient handling, and updates for the pinned native GRI-Mech plus graphite problem",
+  "native_source_mapping": {
+    "phase_upload": "src/equil/vcs_VolPhase.cpp::vcs_VolPhase::setMolesFromVCS",
+    "total_mole_check": "src/equil/vcs_VolPhase.cpp::vcs_VolPhase::setMolesFromVCSCheck",
+    "state_cache": "src/equil/vcs_VolPhase.cpp::vcs_VolPhase::updateFromVCS_MoleNumbers",
+    "activity_coefficients": "src/equil/vcs_VolPhase.cpp::vcs_VolPhase::sendToVCS_ActCoeff",
+    "phase_mole_totals": "src/equil/vcs_solve_TP.cpp::VCS_SOLVE::vcs_tmoles"
+  },
+  "native_oracle": {
+    "checkout_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "library": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "probe_source": "tools/run_native_vcs_basis_probe.cpp",
+    "probe_source_sha256": "334ccc87a8431ac7893396eac29cb5d65a8280a2a7d7b64bd5e456433105137b",
+    "probe_binary": "tools/run_native_vcs_basis_probe",
+    "probe_binary_sha256": "ebfc92af03f280f5cf4d9f009a2e9ef39ce20d775daa47cf188186f406fcb641",
+    "native_output": "audit/current_tree_parity/native_vcs_basis_gri_graphite.txt",
+    "native_output_sha256": "a7560bbb0b8d08cc50e6ef975d6190def9c28fd1347d633398f5dd463518bef4",
+    "build": "g++ -std=c++20 against pinned libcantera_shared.so.4.0.0"
+  },
+  "python": {
+    "implementation": "cantera_python/vcs.py",
+    "implementation_sha256": "5f355a200f1272b1fb55afd2ed0221a6ec5ef5601ba3be532a6d4b31ccde27c0",
+    "comparison": "tools/compare_vcs_basis_native_probe.py",
+    "comparison_sha256": "938693e0aff6ee93a7345f4bbdfdf160c68c0f55ac8c25017b42baaaebcb1b23",
+    "tests": "tests/test_vcs_multiphase.py",
+    "tests_sha256": "7931e1ca194fc0b2637b48884a59247d9917c2d074504c7b6ce71eacaa7958f2",
+    "targeted_pytest": "20 passed: tests/test_vcs_multiphase.py"
+  },
+  "result": {
+    "status": "PASS",
+    "case": "GRI-Mech ideal gas plus graphite; prepared VCS basis with deterministic OLD-state mole vector",
+    "phase_states_compared": 2,
+    "phase_species_mole_fraction_activity_records_compared": 54,
+    "phase_totals_potentials_existence_and_activity_coefficients": "exact match within stated comparator tolerances",
+    "phase_mole_aggregation_order": "checked against native vcs_tmoles; exact for recorded case",
+    "prior_kernels": "245 formation coefficients, 6 deltag outputs, and 162 dfe outputs all matched exactly",
+    "limitations": [
+      "Only this ideal-gas-plus-graphite fixture was compared.",
+      "Nonideal activity models, multi-species condensed phases, and charged/interfacial-voltage phase uploads are not covered by this native differential.",
+      "The VCS equilibrium active-set iteration, phase birth/death, and final state update remain unimplemented."
+    ]
+  }
+}

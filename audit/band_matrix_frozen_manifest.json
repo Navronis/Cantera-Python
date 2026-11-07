@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/band_matrix_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T12:56:42.814109+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "solver_family": "band_matrix",
+  "subsystem": "banded linear algebra",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0, libcantera_shared.so.4.0.0"
+  },
+  "file_hashes": {
+    "numerics_py": "a9d0a770572c111702a23baee32adfc6d7e82eabd82f26623fd85ed1011fc2dd",
+    "test_numerics_py": "8466c5d4eb8ed374e2b57a4b27a060cf92e59982e0397100d12c449c5e3b39f9",
+    "corpus_band_matrix_jsonl": "725727173c536b1e38a81f0c6623758c0d6d00bcae2ad7687b21b0cf44e24054",
+    "run_native_band_matrix_oracle_cpp": "092c1e37765fd801b98ecbb266fa1475a110ba6ca083f47be8636bf40bc15364",
+    "run_python_band_matrix_port_py": "be148131dd9f754a9ee786083eb7da96a1b5eba5ba4cce950fd881f983eefc53",
+    "run_band_matrix_campaign_py": "a78bc90ee6a6895c750a1a88589dd8070464bb17a86f1cd3b137357cbd9d3789",
+    "benchmark_band_matrix_performance_py": "ccb322416c0155632fddf85fed98ab37c244cb49d07269e1306cad286bc0881a",
+    "native_band_matrix_oracle_results_json": "be823c19c059e9f629bbd235987cb27aa9c957a24d6266090c1a88f273da1974",
+    "python_band_matrix_port_results_json": "42db66fa25fb4e25834523ac12e1ba3acde5f535f2365255651ad4bcbf0faee7",
+    "band_matrix_differential_summary_json": "f9b4fcf0c5ced01963c25a0356040f9ecca145e94a9e9046df4b9a1bb109b2f5",
+    "band_matrix_performance_benchmark_json": "3486b2471c0d15bd25d6b877c03fc51305244d62510d59714c41ed685a376d71",
+    "band_matrix_starting_snapshot_json": "87aa2b9a974b14603153da05376da106c5e81e97605ea8a2d25af20623626290",
+    "band_matrix_closure_symbol_set_json": "0a5680cdb1483f7508e28ac77d0bafd9e896a29e43f8926f5e093599e7b400fd",
+    "band_matrix_runtime_call_graph_json": "e3639ba1903b6bc9515345e766e7a6c1ebef57d1ca62e7f20d81214744474ef4",
+    "pinned_BandMatrix_h": "825900f7c711430c609bce0b521944df1e9250e2ac90f0918305feb056bec9cd",
+    "pinned_BandMatrix_cpp": "c53fac749a8a30f81f46fae2f8a5577aec53ef7b9fcd42aeb3e88440dd3e63b6"
+  },
+  "campaign_summary": {
+    "total_cases": 20,
+    "passed_cases": 20,
+    "pass_rate_pct": 100.0,
+    "max_solution_relative_error": 5.425456367936812e-16,
+    "max_solution_absolute_error": 6.103515625e-05,
+    "max_equation_residual": 7.508834211122917e-05,
+    "max_mult_relative_error": 0.0,
+    "max_rcond_relative_error": 6.356084786519723e-16,
+    "numerical_parity": true
+  },
+  "performance_benchmark": {
+    "native_median_ms": 1.279183,
+    "python_reference_median_ms": 263.168,
+    "python_optimized_median_ms": 3.087,
+    "speed_ratio": 2.41,
+    "native_speed_parity": false
+  },
+  "independent_status_flags": {
+    "BAND_MATRIX_SOURCE_LOGIC_COMPLETE": true,
+    "BAND_MATRIX_RUNTIME_INTEGRATED": true,
+    "BAND_MATRIX_NUMERICAL_PARITY": true,
+    "BAND_MATRIX_ADVERSARIAL_VALIDATED": true,
+    "BAND_MATRIX_FAILURE_SEMANTICS_VALIDATED": true,
+    "BAND_MATRIX_NATIVE_PERFORMANCE_BENCHMARKED": true,
+    "BAND_MATRIX_NATIVE_SPEED_PARITY": false,
+    "BAND_MATRIX_FULL_REGRESSION_CLEAN": true,
+    "BAND_MATRIX_FULLY_FROZEN": false
+  },
+  "status": "VALIDATED_NUMERICALLY_EQUIVALENT"
+}

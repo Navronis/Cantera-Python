@@ -1,0 +1,95 @@
+{
+  "active_closure_family": "FAMILY_2_FALLOFF_AND_PRESSURE_DEPENDENT_KINETICS",
+  "active_closure_symbols_closed": 124,
+  "artifact_hashes": {
+    "corpus_kinetics_family2.jsonl": {
+      "path": "audit/corpus_kinetics_family2.jsonl",
+      "sha256": "db3042afcf553fefdfd30c9083163d73ffec57596bd5e033b03af1a61dac39dc",
+      "size_bytes": 12268
+    },
+    "kinetics.py": {
+      "path": "cantera_python/kinetics.py",
+      "sha256": "22ee7c034e87a84c3af28d7bed455cae9057d1a855341c572b617b98595114c3",
+      "size_bytes": 118685
+    },
+    "kinetics_family2_closure_symbol_set.json": {
+      "path": "audit/kinetics_family2_closure_symbol_set.json",
+      "sha256": "aefa57acce4a1c21170f8b2fca396f7776291a223a70a917dce360783c15c7da",
+      "size_bytes": 172372
+    },
+    "kinetics_family2_differential_summary.json": {
+      "path": "audit/kinetics_family2_differential_summary.json",
+      "sha256": "a0151bd5000fd2bde52af2e2bf1f174583693f423ba4ed47b40c3ceb7ca85367",
+      "size_bytes": 115487
+    },
+    "kinetics_family2_performance_benchmark.json": {
+      "path": "audit/kinetics_family2_performance_benchmark.json",
+      "sha256": "5181d5d8cc86839bec639616e73015e151c77f0117f8ba8b4888871019815a6e",
+      "size_bytes": 1659
+    },
+    "kinetics_family2_runtime_call_graph.json": {
+      "path": "audit/kinetics_family2_runtime_call_graph.json",
+      "sha256": "3290b29c21ccf0d38fa79b74c81f3a0698e5fd9f2727a1eba20885d7b6eda8b7",
+      "size_bytes": 29469
+    },
+    "mechanism.py": {
+      "path": "cantera_python/mechanism.py",
+      "sha256": "328b16d581d6848796806b848c215018334bb2f0c562f966eabf372a8c06f716",
+      "size_bytes": 34656
+    },
+    "native_kinetics_family2_oracle_results.json": {
+      "path": "audit/native_kinetics_family2_oracle_results.json",
+      "sha256": "48878b3ab63ffd398b33c1d7f5ee92f8419d76d8096d6a03a6631df11e27e157",
+      "size_bytes": 548822
+    },
+    "python_kinetics_family2_port_results.json": {
+      "path": "audit/python_kinetics_family2_port_results.json",
+      "sha256": "236678b938f88b483af97f77532b4d51d504119eed586991b6a00969d8d5046c",
+      "size_bytes": 858801
+    },
+    "rates.py": {
+      "path": "cantera_python/rates.py",
+      "sha256": "479a6ac84ac46bf4fd685fab4d587f50c0913a00d3f956456928dc70f98dd8fc",
+      "size_bytes": 65716
+    }
+  },
+  "certification_flags": {
+    "FAMILY2_FAILURE_SEMANTICS_VALIDATED": true,
+    "FAMILY2_FULLY_FROZEN": false,
+    "FAMILY2_FULL_REGRESSION_CLEAN": true,
+    "FAMILY2_NATIVE_NUMERICAL_PARITY": true,
+    "FAMILY2_NATIVE_SPEED_PARITY": false,
+    "FAMILY2_PERFORMANCE_BENCHMARKED": true,
+    "FAMILY2_PUBLIC_INTEGRATION_COMPLETE": true,
+    "FAMILY2_RATE_DATA_COMPLETE": true,
+    "FAMILY2_RATE_MODELS_COMPLETE": true,
+    "FAMILY2_SOURCE_LOGIC_COMPLETE": true
+  },
+  "family2_proven_non_runtime_symbols": 5,
+  "family2_runtime_symbols_closed": 124,
+  "manifest_schema_version": "1.0.0",
+  "open_kinetics_symbols_remaining": 374,
+  "performance": {
+    "flow1d_slowdown_ratio": 233.1,
+    "mean_slowdown_vs_native": 888.24,
+    "vectorized_speedup_over_scalar": 25.65
+  },
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "pinned_native_validated_symbols_total": 293,
+  "proven_non_runtime_symbols": 82,
+  "subsystem": "kinetics",
+  "timestamp": "2026-11-06T09:50:00Z",
+  "total_family2_symbols": 129,
+  "total_kinetics_symbols": 749,
+  "validation_campaign": {
+    "bitwise_identical_ratio": 0.6541,
+    "cases_evaluated": 39,
+    "cases_failed": 0,
+    "cases_passed": 39,
+    "max_relative_error": 8.894e-12,
+    "p95_relative_error": 1.435e-14,
+    "p99_relative_error": 1.66e-13,
+    "status": "FULL_PARITY",
+    "total_comparisons": 31115
+  }
+}

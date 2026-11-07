@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/idas_integrator_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T11:34:05.316125+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "solver_family": "idas_integrator",
+  "subsystem": "DAE integration",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "file_hashes": {
+    "numerics_py": "580a0986763bc4fa12b00fc3a3fb5a6af0d32138f14a2513dbf90d31352d4d46",
+    "test_idas_integrator_py": "7fe3d313fff8324c21b4b2b62ea4d9b28463fc30a6f0f68464ac1e800979d56c",
+    "corpus_idas_integrator_jsonl": "4de1270df03076af23ca522c85f2f6418d5fc152e37615f5d77b8fb6c77d8796",
+    "run_native_idas_oracle_cpp": "82f58ba27272b4c1d0929399615d0ec1a6e62298fef9f92dee22c65aab9d79c8",
+    "run_python_idas_port_py": "c4c58d20b776a75ae846cdee879eaac30f46cf4d00fcb9d0cc3cfd9ab3116f05",
+    "run_idas_campaign_py": "fa367864bb179fbc677ef3c364d7848dc59d61ac0b396e34cf1f28e40cb50a13",
+    "benchmark_idas_performance_py": "95cdcd4c312debe0f70838d8a65f670de655488ef3a681827cfeaf928f6c4f02",
+    "idas_integrator_native_oracle_results_jsonl": "7763e85eb0cbd5e79d4ba89058689ff3b02c3c4845b682015a4619c9b3a9c71f",
+    "idas_integrator_python_port_results_jsonl": "3cde8cb00ebb6234ad2e513dc507bf490a0b491b186676f3da6606027e47776f",
+    "idas_integrator_differential_summary_json": "35ecbfe5a20f4201415d9919fdef061c206f0c37163aec17a4f687e0e4466af2",
+    "idas_performance_benchmark_json": "32ae8d1661a9bc55c6f83581525bfc680f6b6cbf00482dd4f5f25e0ba9c8182e",
+    "idas_integrator_starting_snapshot_json": "c70cb3f4ce1a45c35243293842400c1b87293864b4876dbda67d1922ee058388",
+    "idas_integrator_closure_symbol_set_json": "a1f38f503c5ca4caa912d683ce7eeeb730a847edff6717e4f3194169ef8ef0ed",
+    "idas_integrator_runtime_call_graph_json": "56fe1e3d37a618a2ba1bd96533e1f6327be120dbf5d4ab1cec250a4824ac6e41",
+    "pinned_IdasIntegrator_h": "521dd9adbc9624b4446950917d8ea5552095343ca8cab2e710aeeaf5b96cdc6b",
+    "pinned_IdasIntegrator_cpp": "addf243e62de64372ae64c366f0e474f12db8ed3df6f26c8ca92d25c28ed6df2"
+  },
+  "campaign_summary": {
+    "total_cases": 12,
+    "passed_cases": 12,
+    "pass_rate": 1.0,
+    "overall_max_relative_error": 0.08708860494394559,
+    "overall_max_absolute_error": 6.242597875782963e-05,
+    "overall_max_algebraic_residual": 1.8189894035458565e-12,
+    "numerical_parity": true
+  },
+  "performance_benchmark": {
+    "native_median_ms": 108.224,
+    "python_median_ms": 275.185,
+    "speed_ratio": 2.54,
+    "native_speed_parity": false
+  },
+  "status": "VALIDATED_NUMERICALLY_EQUIVALENT"
+}

@@ -1,0 +1,32 @@
+{
+  "reference_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "reference_version": "4.0.0a2",
+  "oracle": "Pinned native Cantera Python API backed by the source checkout at reference_commit",
+  "case": {
+    "equation": "A => B",
+    "rate": "k = 10 s^-1",
+    "initial_state": "1000 K, 101325 Pa, pure A",
+    "reactor": "IdealGasConstPressureReactor",
+    "end_time_s": 0.01,
+    "expected_analytic_Y_B": 0.09516258196404048
+  },
+  "native_result": {
+    "temperature_K": 1000.0,
+    "pressure_Pa": 101324.99999999999,
+    "Y_A": 0.904837417867084,
+    "Y_B": 0.09516258213291574
+  },
+  "native_solver_stats": {
+    "steps": 44,
+    "rhs_evals": 53,
+    "last_order": 4,
+    "jac_evals": 1,
+    "linear_setups": 25
+  },
+  "python_comparison_tolerances": {
+    "temperature_K_atol": 1e-8,
+    "pressure_Pa_atol": 1e-7,
+    "mass_fraction_atol": 2e-9
+  },
+  "scope": "Single controlled first-order reactor case. This does not establish general CVODE trajectory parity, sensitivity parity, large-mechanism accuracy, or performance parity."
+}

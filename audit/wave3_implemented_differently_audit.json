@@ -1,0 +1,216 @@
+{
+  "total_declarations": 395,
+  "breakdown": {
+    "IMPLEMENTED_EXACTLY": 286,
+    "IMPLEMENTED_DIFFERENTLY": 21,
+    "NON_RUNTIME": 88
+  },
+  "implemented_differently_disposition": "FULLY_DISPOSITIONED; all 21 declarations have an explicit disposition, with set_xy mapped to the pinned direct-determinant algorithm",
+  "audit_details": [
+    {
+      "name": "cv",
+      "cpp_source": "src/tpx/Sub.cpp:44",
+      "python_target": "cantera_python/tpx.py or cantera_python/tpx_exact.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Exact port of Substance::cv finite-difference formula T*(s2-s1)/(T2-T1) with one-sided boundary handling at pure phase edges and NaN return inside two-phase dome matching pinned C++.",
+      "source_symbol": "double Substance::cv()",
+      "inventory_record_kind": "method_implementation"
+    },
+    {
+      "name": "cp",
+      "cpp_source": "src/tpx/Sub.cpp:82",
+      "python_target": "cantera_python/tpx.py or cantera_python/tpx_exact.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Exact port of Substance::cp with Tsat saturation boundary clipping, phase branch selection, and +Inf return inside two-phase dome matching pinned C++.",
+      "source_symbol": "double Substance::cp()",
+      "inventory_record_kind": "method_implementation"
+    },
+    {
+      "name": "thermalExpansionCoeff",
+      "cpp_source": "src/tpx/Sub.cpp:134",
+      "python_target": "cantera_python/tpx.py or cantera_python/tpx_exact.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct translation of 2*(v2-v1)/((v2+v1)*(T2-T1)) with Tsat-bounded perturbation.",
+      "source_symbol": "double Substance::thermalExpansionCoeff()",
+      "inventory_record_kind": "method_implementation"
+    },
+    {
+      "name": "isothermalCompressibility",
+      "cpp_source": "src/tpx/Sub.cpp:187",
+      "python_target": "cantera_python/tpx.py or cantera_python/tpx_exact.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct translation of isothermal compressibility with infinite return in two-phase region and saturation pressure bounding.",
+      "source_symbol": "double Substance::isothermalCompressibility()",
+      "inventory_record_kind": "method_implementation"
+    },
+    {
+      "name": "internalPressure",
+      "cpp_source": "src/tpx/Sub.cpp:235",
+      "python_target": "cantera_python/tpx.py or cantera_python/tpx_exact.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct implementation of T*(dP/dT)_v - P via central finite differences.",
+      "source_symbol": "double Substance::internalPressure()",
+      "inventory_record_kind": "method_implementation"
+    },
+    {
+      "name": "dPsdT",
+      "cpp_source": "src/tpx/Sub.cpp:254",
+      "python_target": "cantera_python/tpx.py or cantera_python/tpx_exact.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct translation of finite-difference dPsat/dT with Tcrit boundary safeguarding.",
+      "source_symbol": "double Substance::dPsdT()",
+      "inventory_record_kind": "method_implementation"
+    },
+    {
+      "name": "Tsat",
+      "cpp_source": "src/tpx/Sub.cpp:301",
+      "python_target": "cantera_python/tpx.py or cantera_python/tpx_exact.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct port of Newton iteration for Tsat(P) using dPsdT with 0.1*T step limiting and [Tmin, Tcrit] clamping.",
+      "source_symbol": "double Substance::Tsat(double p)",
+      "inventory_record_kind": "method_implementation"
+    },
+    {
+      "name": "Set",
+      "cpp_source": "src/tpx/Sub.cpp:352",
+      "python_target": "cantera_python/tpx.py or cantera_python/tpx_exact.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct port of 14-pair dispatch (TV, HP, SP, PV, TP, UV, ST, SV, UP, VH, TH, SH, PX, TX), two-phase Lever rule, and iterative fallbacks.",
+      "source_symbol": "void Substance::Set(PropertyPair::type XY, double x0, double y0)",
+      "inventory_record_kind": "method_implementation"
+    },
+    {
+      "name": "set_xy",
+      "cpp_source": "src/tpx/Sub.cpp:639",
+      "python_target": "cantera_python/tpx.py or cantera_python/tpx_exact.py",
+      "classification": "SOURCE_EQUIVALENT",
+      "rationale": "The current Python implementation computes the same two Newton numerators and divides directly by the determinant, matching pinned Sub.cpp lines 701-704; _ieee_divide preserves C++ IEEE-754 infinity/NaN results where Python float division would raise. The former gradient-regularization branch has been removed. The 4,180 targeted records observed no fallback because no Python-only fallback branch remains; this finite corpus does not prove behavior for every degenerate state.",
+      "source_symbol": "void Substance::set_xy(propertyFlag::type ifx, propertyFlag::type ify,",
+      "inventory_record_kind": "method_implementation"
+    },
+    {
+      "name": "BracketSlope",
+      "cpp_source": "src/tpx/Sub.cpp:768",
+      "python_target": "cantera_python/tpx.py or cantera_python/tpx_exact.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct port of secant slope update between [Vmin, Pmin] and [Vmax, Pmax] with bracket damping.",
+      "source_symbol": "void Substance::BracketSlope(double Pressure)",
+      "inventory_record_kind": "method_implementation"
+    },
+    {
+      "name": "set_TPp",
+      "cpp_source": "src/tpx/Sub.cpp:787",
+      "python_target": "cantera_python/tpx.py or cantera_python/tpx_exact.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct port of 1D Newton-Raphson density/volume inversion at (T, P) with liquid/vapor trial roots and ULP step termination.",
+      "source_symbol": "void Substance::set_TPp(double Temp, double Pressure)",
+      "inventory_record_kind": "method_implementation"
+    },
+    {
+      "name": "cv",
+      "cpp_source": "include/cantera/tpx/Sub.h:123",
+      "python_target": "cantera_python/tpx.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Exact port of Substance::cv finite-difference formula T*(s2-s1)/(T2-T1) with one-sided boundary handling at pure phase edges and NaN return inside two-phase dome matching pinned C++.",
+      "source_symbol": "virtual double cv();",
+      "inventory_record_kind": "header_declaration"
+    },
+    {
+      "name": "cp",
+      "cpp_source": "include/cantera/tpx/Sub.h:126",
+      "python_target": "cantera_python/tpx.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Exact port of Substance::cp with Tsat saturation boundary clipping, phase branch selection, and +Inf return inside two-phase dome matching pinned C++.",
+      "source_symbol": "virtual double cp();",
+      "inventory_record_kind": "header_declaration"
+    },
+    {
+      "name": "thermalExpansionCoeff",
+      "cpp_source": "include/cantera/tpx/Sub.h:128",
+      "python_target": "cantera_python/tpx.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct translation of 2*(v2-v1)/((v2+v1)*(T2-T1)) with Tsat-bounded perturbation.",
+      "source_symbol": "virtual double thermalExpansionCoeff();",
+      "inventory_record_kind": "header_declaration"
+    },
+    {
+      "name": "isothermalCompressibility",
+      "cpp_source": "include/cantera/tpx/Sub.h:130",
+      "python_target": "cantera_python/tpx.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct translation of isothermal compressibility with infinite return in two-phase region and saturation pressure bounding.",
+      "source_symbol": "virtual double isothermalCompressibility();",
+      "inventory_record_kind": "header_declaration"
+    },
+    {
+      "name": "internalPressure",
+      "cpp_source": "include/cantera/tpx/Sub.h:134",
+      "python_target": "cantera_python/tpx.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct implementation of T*(dP/dT)_v - P via central finite differences.",
+      "source_symbol": "virtual double internalPressure();",
+      "inventory_record_kind": "header_declaration"
+    },
+    {
+      "name": "dPsdT",
+      "cpp_source": "include/cantera/tpx/Sub.h:143",
+      "python_target": "cantera_python/tpx.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct translation of finite-difference dPsat/dT with Tcrit boundary safeguarding.",
+      "source_symbol": "virtual double dPsdT();",
+      "inventory_record_kind": "header_declaration"
+    },
+    {
+      "name": "Tsat",
+      "cpp_source": "include/cantera/tpx/Sub.h:146",
+      "python_target": "cantera_python/tpx.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct port of Newton iteration for Tsat(P) using dPsdT with 0.1*T step limiting and [Tmin, Tcrit] clamping.",
+      "source_symbol": "double Tsat(double p);",
+      "inventory_record_kind": "header_declaration"
+    },
+    {
+      "name": "set_TPp",
+      "cpp_source": "include/cantera/tpx/Sub.h:173",
+      "python_target": "cantera_python/tpx.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct port of 1D Newton-Raphson density/volume inversion at (T, P) with liquid/vapor trial roots and ULP step termination.",
+      "source_symbol": "void set_TPp(double t0, double p0);",
+      "inventory_record_kind": "header_declaration"
+    },
+    {
+      "name": "Set",
+      "cpp_source": "include/cantera/tpx/Sub.h:178",
+      "python_target": "cantera_python/tpx.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct port of 14-pair dispatch (TV, HP, SP, PV, TP, UV, ST, SV, UP, VH, TH, SH, PX, TX), two-phase Lever rule, and iterative fallbacks.",
+      "source_symbol": "void Set(PropertyPair::type XY, double x0, double y0);",
+      "inventory_record_kind": "header_declaration"
+    },
+    {
+      "name": "BracketSlope",
+      "cpp_source": "include/cantera/tpx/Sub.h:222",
+      "python_target": "cantera_python/tpx.py",
+      "classification": "SEMANTICALLY_PROVEN_EQUIVALENT",
+      "rationale": "Direct port of secant slope update between [Vmin, Pmin] and [Vmax, Pmax] with bracket damping.",
+      "source_symbol": "void BracketSlope(double p);",
+      "inventory_record_kind": "header_declaration"
+    }
+  ],
+  "conclusion": "All 21 inventory declarations have explicit records linked to 11 method-level entries. Ten unique methods are dispositioned as semantically proven equivalent; set_xy is dispositioned as source-equivalent to direct determinant division. This disposition is source-mapped and supported by recorded differential tests, but finite targeted testing does not establish all degenerate-state outcomes.",
+  "record_accounting": {
+    "inventory_declarations": 21,
+    "implementation_method_records": 11,
+    "unique_methods_in_audit_details": 11,
+    "header_declaration_records": 10,
+    "unresolved_method_names": [],
+    "justified_declarations_count": 21,
+    "unresolved_declarations_count": 0,
+    "unjustified_declarations_count": 0,
+    "method_records_derived_from": "audit/solver_wave3_source_inventory.jsonl"
+  },
+  "waves_1_3_snapshot_id": "fc63583ec6249d35444d7e68c5971a96b67aa7051af9d75904ffafd151bdc2ca",
+  "repository_snapshot_kind": "WORKING_TREE_SNAPSHOT_WITH_DIFF_HASH",
+  "evidence_binding_note": "Report generated for this repository snapshot. Raw-run freshness is separately established only when the execution-provenance file verifies its raw hashes and pinned identity.",
+  "evidence_binding_scope": "SAVED_RAW_RECORDS_NOT_REPROVEN"
+}

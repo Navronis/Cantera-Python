@@ -1,0 +1,14 @@
+{"pair": "TV", "python_route": "Substance.Set/_set_xy_source", "source_route": "direct T,v", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "HP", "python_route": "Substance.Set/_set_xy_source", "source_route": "set_xy(H,P)", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "SP", "python_route": "Substance.Set/_set_xy_source", "source_route": "set_xy(S,P)", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "PV", "python_route": "Substance.Set/_set_xy_source", "source_route": "set_xy(P,V)", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "TP", "python_route": "Substance.Set/_set_xy_source", "source_route": "phase select then set_xy(T,P)", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "UV", "python_route": "Substance.Set/_set_xy_source", "source_route": "set_xy(U,V)", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "ST", "python_route": "Substance.Set/_set_xy_source", "source_route": "set_xy(S,T)", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "SV", "python_route": "Substance.Set/_set_xy_source", "source_route": "set_xy(S,V)", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "UP", "python_route": "Substance.Set/_set_xy_source", "source_route": "set_xy(U,P)", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "VH", "python_route": "Substance.Set/_set_xy_source", "source_route": "set_xy(V,H)", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "TH", "python_route": "Substance.Set/_set_xy_source", "source_route": "set_xy(T,H)", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "SH", "python_route": "Substance.Set/_set_xy_source", "source_route": "set_xy(S,H)", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "PX", "python_route": "Substance.Set/_set_xy_source", "source_route": "Tsat(P), quality lever", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}
+{"pair": "TX", "python_route": "Substance.Set/_set_xy_source", "source_route": "quality lever at T", "source_switch": true, "status": "IMPLEMENTED_SOURCE_MAPPED"}

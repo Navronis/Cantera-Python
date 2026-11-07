@@ -1,0 +1,395 @@
+{"declaration": "double CarbonDioxide::C(int j,double Tinverse, double T2inverse, double T3inverse, double T4inverse)", "disposition": "IMPLEMENTED_EXACTLY", "line": 90, "name": "C", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double CarbonDioxide::Cprime(int j, double T2inverse, double T3inverse, double T4inverse)", "disposition": "IMPLEMENTED_EXACTLY", "line": 122, "name": "Cprime", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double CarbonDioxide::I(int j, double ergho, double Gamma)", "disposition": "IMPLEMENTED_EXACTLY", "line": 154, "name": "I", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double CarbonDioxide::H(int i, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 176, "name": "H", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double CarbonDioxide::up()", "disposition": "IMPLEMENTED_EXACTLY", "line": 189, "name": "up", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double T2inverse = pow(T, -2);", "disposition": "NON_RUNTIME", "line": 192, "name": "pow", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double T3inverse = pow(T, -3);", "disposition": "NON_RUNTIME", "line": 193, "name": "pow", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double T4inverse = pow(T, -4);", "disposition": "NON_RUNTIME", "line": 194, "name": "pow", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 195, "name": "exp", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double CarbonDioxide::sp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 212, "name": "sp", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double T2inverse = pow(T, -2);", "disposition": "NON_RUNTIME", "line": 214, "name": "pow", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double T3inverse = pow(T, -3);", "disposition": "NON_RUNTIME", "line": 215, "name": "pow", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double T4inverse = pow(T, -4);", "disposition": "NON_RUNTIME", "line": 216, "name": "pow", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 217, "name": "exp", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double CarbonDioxide::Pp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 232, "name": "Pp", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tinverse = pow(T,-1);", "disposition": "NON_RUNTIME", "line": 234, "name": "pow", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double T2inverse = pow(T, -2);", "disposition": "NON_RUNTIME", "line": 235, "name": "pow", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double T3inverse = pow(T, -3);", "disposition": "NON_RUNTIME", "line": 236, "name": "pow", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double T4inverse = pow(T, -4);", "disposition": "NON_RUNTIME", "line": 237, "name": "pow", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 238, "name": "exp", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double CarbonDioxide::Psat()", "disposition": "IMPLEMENTED_EXACTLY", "line": 248, "name": "Psat", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double CarbonDioxide::ldens()", "disposition": "IMPLEMENTED_EXACTLY", "line": 264, "name": "ldens", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double xx=1-(T/Tc), sum=0;", "disposition": "NON_RUNTIME", "line": 266, "name": "", "path": "src/tpx/CarbonDioxide.cpp", "python": null}
+{"declaration": "double CarbonDioxide::Tcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 280, "name": "Tcrit", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double CarbonDioxide::Pcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 284, "name": "Pcrit", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double CarbonDioxide::Vcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 288, "name": "Vcrit", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double CarbonDioxide::Tmin()", "disposition": "IMPLEMENTED_EXACTLY", "line": 292, "name": "Tmin", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double CarbonDioxide::Tmax()", "disposition": "IMPLEMENTED_EXACTLY", "line": 296, "name": "Tmax", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double CarbonDioxide::MolWt()", "disposition": "IMPLEMENTED_EXACTLY", "line": 300, "name": "MolWt", "path": "src/tpx/CarbonDioxide.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double MolWt() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 24, "name": "MolWt", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 25, "name": "Tcrit", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 26, "name": "Pcrit", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Vcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 27, "name": "Vcrit", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmin() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 28, "name": "Tmin", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmax() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 29, "name": "Tmax", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 32, "name": "Pp", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double up() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 40, "name": "up", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double sp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 43, "name": "sp", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Psat() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 46, "name": "Psat", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double ldens() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 50, "name": "ldens", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double C(int jm, double, double, double, double);", "disposition": "IMPLEMENTED_EXACTLY", "line": 60, "name": "C", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Cprime(int i, double, double, double);", "disposition": "IMPLEMENTED_EXACTLY", "line": 63, "name": "Cprime", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double I(int i, double, double);", "disposition": "IMPLEMENTED_EXACTLY", "line": 69, "name": "I", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double H(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 78, "name": "H", "path": "src/tpx/CarbonDioxide.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Heptane::C(int j,double Tinverse, double T2inverse, double T3inverse, double T4inverse)", "disposition": "IMPLEMENTED_EXACTLY", "line": 79, "name": "C", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Heptane::Cprime(int j, double T2inverse, double T3inverse, double T4inverse)", "disposition": "IMPLEMENTED_EXACTLY", "line": 101, "name": "Cprime", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Heptane::I(int j, double ergho, double Gamma)", "disposition": "IMPLEMENTED_EXACTLY", "line": 121, "name": "I", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Heptane::H(int i, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 137, "name": "H", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Heptane::up()", "disposition": "IMPLEMENTED_EXACTLY", "line": 150, "name": "up", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double T2inverse = pow(T, -2);", "disposition": "NON_RUNTIME", "line": 153, "name": "pow", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double T3inverse = pow(T, -3);", "disposition": "NON_RUNTIME", "line": 154, "name": "pow", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double T4inverse = pow(T, -4);", "disposition": "NON_RUNTIME", "line": 155, "name": "pow", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 156, "name": "exp", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double Heptane::sp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 171, "name": "sp", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double T2inverse = pow(T, -2);", "disposition": "NON_RUNTIME", "line": 173, "name": "pow", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double T3inverse = pow(T, -3);", "disposition": "NON_RUNTIME", "line": 174, "name": "pow", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double T4inverse = pow(T, -4);", "disposition": "NON_RUNTIME", "line": 175, "name": "pow", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 176, "name": "exp", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double Heptane::Pp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 191, "name": "Pp", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tinverse = pow(T,-1);", "disposition": "NON_RUNTIME", "line": 193, "name": "pow", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double T2inverse = pow(T, -2);", "disposition": "NON_RUNTIME", "line": 194, "name": "pow", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double T3inverse = pow(T, -3);", "disposition": "NON_RUNTIME", "line": 195, "name": "pow", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double T4inverse = pow(T, -4);", "disposition": "NON_RUNTIME", "line": 196, "name": "pow", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 197, "name": "exp", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double Heptane::Psat()", "disposition": "IMPLEMENTED_EXACTLY", "line": 206, "name": "Psat", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Heptane::ldens()", "disposition": "IMPLEMENTED_EXACTLY", "line": 221, "name": "ldens", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double xx=1-(T/Tc), sum=0;", "disposition": "NON_RUNTIME", "line": 223, "name": "", "path": "src/tpx/Heptane.cpp", "python": null}
+{"declaration": "double Heptane::Tcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 238, "name": "Tcrit", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Heptane::Pcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 242, "name": "Pcrit", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Heptane::Vcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 246, "name": "Vcrit", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Heptane::Tmin()", "disposition": "IMPLEMENTED_EXACTLY", "line": 250, "name": "Tmin", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Heptane::Tmax()", "disposition": "IMPLEMENTED_EXACTLY", "line": 254, "name": "Tmax", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Heptane::MolWt()", "disposition": "IMPLEMENTED_EXACTLY", "line": 258, "name": "MolWt", "path": "src/tpx/Heptane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double MolWt() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 23, "name": "MolWt", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 24, "name": "Tcrit", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 25, "name": "Pcrit", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Vcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 26, "name": "Vcrit", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmin() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 27, "name": "Tmin", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmax() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 28, "name": "Tmax", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 31, "name": "Pp", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double up() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 39, "name": "up", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double sp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 42, "name": "sp", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Psat() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 45, "name": "Psat", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double ldens() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 49, "name": "ldens", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double C(int jm, double, double, double, double);", "disposition": "IMPLEMENTED_EXACTLY", "line": 58, "name": "C", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Cprime(int i, double, double, double);", "disposition": "IMPLEMENTED_EXACTLY", "line": 61, "name": "Cprime", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double I(int i, double, double);", "disposition": "IMPLEMENTED_EXACTLY", "line": 67, "name": "I", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double H(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 76, "name": "H", "path": "src/tpx/Heptane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double HFC134a::fp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 65, "name": "fp", "path": "src/tpx/HFC134a.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double phi0 = b134[0] + b134[1]*tau + b134[2]*log(tau)", "disposition": "NON_RUNTIME", "line": 72, "name": "", "path": "src/tpx/HFC134a.cpp", "python": null}
+{"declaration": "double phir = sum1 + exp(-delta)*sum2 + exp(-delta*delta)*sum3", "disposition": "NON_RUNTIME", "line": 88, "name": "exp", "path": "src/tpx/HFC134a.cpp", "python": null}
+{"declaration": "double HFC134a::up()", "disposition": "IMPLEMENTED_EXACTLY", "line": 94, "name": "up", "path": "src/tpx/HFC134a.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double phirt = sum1 + exp(-delta)*sum2 + exp(-delta*delta)*sum3", "disposition": "NON_RUNTIME", "line": 117, "name": "exp", "path": "src/tpx/HFC134a.cpp", "python": null}
+{"declaration": "double HFC134a::Pp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 123, "name": "Pp", "path": "src/tpx/HFC134a.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double HFC134a::Psat()", "disposition": "IMPLEMENTED_EXACTLY", "line": 156, "name": "Psat", "path": "src/tpx/HFC134a.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double f = -7.686556*x2 + 2.311791*pow(x2,1.5)", "disposition": "NON_RUNTIME", "line": 164, "name": "", "path": "src/tpx/HFC134a.cpp", "python": null}
+{"declaration": "double HFC134a::ldens()", "disposition": "IMPLEMENTED_EXACTLY", "line": 169, "name": "ldens", "path": "src/tpx/HFC134a.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double HFC134a::Tcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 181, "name": "Tcrit", "path": "src/tpx/HFC134a.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double HFC134a::Pcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 185, "name": "Pcrit", "path": "src/tpx/HFC134a.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double HFC134a::Vcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 189, "name": "Vcrit", "path": "src/tpx/HFC134a.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double HFC134a::Tmin()", "disposition": "IMPLEMENTED_EXACTLY", "line": 193, "name": "Tmin", "path": "src/tpx/HFC134a.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double HFC134a::Tmax()", "disposition": "IMPLEMENTED_EXACTLY", "line": 197, "name": "Tmax", "path": "src/tpx/HFC134a.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double HFC134a::MolWt()", "disposition": "IMPLEMENTED_EXACTLY", "line": 201, "name": "MolWt", "path": "src/tpx/HFC134a.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double MolWt() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 25, "name": "MolWt", "path": "src/tpx/HFC134a.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 26, "name": "Tcrit", "path": "src/tpx/HFC134a.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 27, "name": "Pcrit", "path": "src/tpx/HFC134a.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Vcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 28, "name": "Vcrit", "path": "src/tpx/HFC134a.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmin() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 29, "name": "Tmin", "path": "src/tpx/HFC134a.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmax() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 30, "name": "Tmax", "path": "src/tpx/HFC134a.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 32, "name": "Pp", "path": "src/tpx/HFC134a.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double fp();", "disposition": "IMPLEMENTED_EXACTLY", "line": 33, "name": "fp", "path": "src/tpx/HFC134a.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double up() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 34, "name": "up", "path": "src/tpx/HFC134a.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double sp() override {", "disposition": "IMPLEMENTED_EXACTLY", "line": 35, "name": "sp", "path": "src/tpx/HFC134a.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Psat() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 38, "name": "Psat", "path": "src/tpx/HFC134a.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double ldens() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 41, "name": "ldens", "path": "src/tpx/HFC134a.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::C(int i, double rt, double rt2)", "disposition": "IMPLEMENTED_EXACTLY", "line": 58, "name": "C", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::Cprime(int i, double rt, double rt2, double rt3)", "disposition": "IMPLEMENTED_EXACTLY", "line": 94, "name": "Cprime", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::W(int n, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 130, "name": "W", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::H(int i, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 136, "name": "H", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::I(int i, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 141, "name": "I", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::icv(int i, double x, double xlg)", "disposition": "IMPLEMENTED_EXACTLY", "line": 146, "name": "icv", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::up()", "disposition": "IMPLEMENTED_EXACTLY", "line": 151, "name": "up", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 156, "name": "exp", "path": "src/tpx/Hydrogen.cpp", "python": null}
+{"declaration": "double x = std::min(T, T2) / T1;", "disposition": "IMPLEMENTED_EXACTLY", "line": 165, "name": "min", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::sp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 179, "name": "sp", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 184, "name": "exp", "path": "src/tpx/Hydrogen.cpp", "python": null}
+{"declaration": "double sum = s0 - R*log(Rho);", "disposition": "NON_RUNTIME", "line": 185, "name": "", "path": "src/tpx/Hydrogen.cpp", "python": null}
+{"declaration": "double xlg = log(std::min(T, T2)/T1);", "disposition": "IMPLEMENTED_EXACTLY", "line": 193, "name": "log", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double xlg = log(T/T2);", "disposition": "NON_RUNTIME", "line": 199, "name": "log", "path": "src/tpx/Hydrogen.cpp", "python": null}
+{"declaration": "double hydrogen::Pp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 207, "name": "Pp", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 211, "name": "exp", "path": "src/tpx/Hydrogen.cpp", "python": null}
+{"declaration": "double hydrogen::ldens()", "disposition": "IMPLEMENTED_EXACTLY", "line": 220, "name": "ldens", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::Psat()", "disposition": "IMPLEMENTED_EXACTLY", "line": 235, "name": "Psat", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double x = (1.0 - Tt/T)/(1.0 - Tt/Tc);", "disposition": "NON_RUNTIME", "line": 237, "name": "", "path": "src/tpx/Hydrogen.cpp", "python": null}
+{"declaration": "double hydrogen::Tcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 248, "name": "Tcrit", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::Pcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 252, "name": "Pcrit", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::Vcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 256, "name": "Vcrit", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::Tmin()", "disposition": "IMPLEMENTED_EXACTLY", "line": 260, "name": "Tmin", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::Tmax()", "disposition": "IMPLEMENTED_EXACTLY", "line": 264, "name": "Tmax", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hydrogen::MolWt()", "disposition": "IMPLEMENTED_EXACTLY", "line": 268, "name": "MolWt", "path": "src/tpx/Hydrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double MolWt() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 24, "name": "MolWt", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 25, "name": "Tcrit", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 26, "name": "Pcrit", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Vcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 27, "name": "Vcrit", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmin() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 28, "name": "Tmin", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmax() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 29, "name": "Tmax", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 31, "name": "Pp", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double up() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 32, "name": "up", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double sp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 33, "name": "sp", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Psat() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 36, "name": "Psat", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double ldens() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 40, "name": "ldens", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double C(int i, double rt, double rt2);", "disposition": "IMPLEMENTED_EXACTLY", "line": 43, "name": "C", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Cprime(int i, double rt, double rt2, double rt3);", "disposition": "IMPLEMENTED_EXACTLY", "line": 44, "name": "Cprime", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double I(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 45, "name": "I", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double H(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 46, "name": "H", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double W(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 47, "name": "W", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double icv(int i, double x, double xlg);", "disposition": "IMPLEMENTED_EXACTLY", "line": 48, "name": "icv", "path": "src/tpx/Hydrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double methane::C(int i, double rt, double rt2)", "disposition": "IMPLEMENTED_EXACTLY", "line": 52, "name": "C", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double methane::Cprime(int i, double rt, double rt2, double rt3)", "disposition": "IMPLEMENTED_EXACTLY", "line": 88, "name": "Cprime", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double methane::W(int n, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 124, "name": "W", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double methane::H(int i, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 130, "name": "H", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double methane::I(int i, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 135, "name": "I", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double methane::up()", "disposition": "IMPLEMENTED_EXACTLY", "line": 140, "name": "up", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 145, "name": "exp", "path": "src/tpx/Methane.cpp", "python": null}
+{"declaration": "double t3 = pow(T,1.0/3.0);", "disposition": "NON_RUNTIME", "line": 146, "name": "pow", "path": "src/tpx/Methane.cpp", "python": null}
+{"declaration": "double methane::sp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 157, "name": "sp", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 162, "name": "exp", "path": "src/tpx/Methane.cpp", "python": null}
+{"declaration": "double t3 = pow(T,1.0/3.0);", "disposition": "NON_RUNTIME", "line": 163, "name": "pow", "path": "src/tpx/Methane.cpp", "python": null}
+{"declaration": "double methane::Pp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 175, "name": "Pp", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 179, "name": "exp", "path": "src/tpx/Methane.cpp", "python": null}
+{"declaration": "double methane::Psat()", "disposition": "IMPLEMENTED_EXACTLY", "line": 188, "name": "Psat", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double x = (1.0 - Tt/T)/(1.0 - Tt/Tc);", "disposition": "NON_RUNTIME", "line": 190, "name": "", "path": "src/tpx/Methane.cpp", "python": null}
+{"declaration": "double methane::ldens()", "disposition": "IMPLEMENTED_EXACTLY", "line": 201, "name": "ldens", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double methane::Tcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 219, "name": "Tcrit", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double methane::Pcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 223, "name": "Pcrit", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double methane::Vcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 227, "name": "Vcrit", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double methane::Tmin()", "disposition": "IMPLEMENTED_EXACTLY", "line": 231, "name": "Tmin", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double methane::Tmax()", "disposition": "IMPLEMENTED_EXACTLY", "line": 235, "name": "Tmax", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double methane::MolWt()", "disposition": "IMPLEMENTED_EXACTLY", "line": 239, "name": "MolWt", "path": "src/tpx/Methane.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double MolWt() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 24, "name": "MolWt", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 25, "name": "Tcrit", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 26, "name": "Pcrit", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Vcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 27, "name": "Vcrit", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmin() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 28, "name": "Tmin", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmax() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 29, "name": "Tmax", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 31, "name": "Pp", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double up() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 32, "name": "up", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double sp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 33, "name": "sp", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Psat() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 36, "name": "Psat", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double ldens() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 40, "name": "ldens", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double C(int i, double rt, double rt2);", "disposition": "IMPLEMENTED_EXACTLY", "line": 43, "name": "C", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Cprime(int i, double rt, double rt2, double rt3);", "disposition": "IMPLEMENTED_EXACTLY", "line": 44, "name": "Cprime", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double I(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 45, "name": "I", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double H(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 46, "name": "H", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double W(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 47, "name": "W", "path": "src/tpx/Methane.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::C(int i, double rt, double rt2)", "disposition": "IMPLEMENTED_EXACTLY", "line": 59, "name": "C", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::Cprime(int i, double rt, double rt2, double rt3)", "disposition": "IMPLEMENTED_EXACTLY", "line": 96, "name": "Cprime", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::W(int n, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 132, "name": "W", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::H(int i, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 138, "name": "H", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::I(int i, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 143, "name": "I", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::up()", "disposition": "IMPLEMENTED_EXACTLY", "line": 148, "name": "up", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 153, "name": "exp", "path": "src/tpx/Nitrogen.cpp", "python": null}
+{"declaration": "double nitrogen::sp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 167, "name": "sp", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 172, "name": "exp", "path": "src/tpx/Nitrogen.cpp", "python": null}
+{"declaration": "double nitrogen::Pp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 186, "name": "Pp", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 190, "name": "exp", "path": "src/tpx/Nitrogen.cpp", "python": null}
+{"declaration": "double nitrogen::Psat()", "disposition": "IMPLEMENTED_EXACTLY", "line": 199, "name": "Psat", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::ldens()", "disposition": "IMPLEMENTED_EXACTLY", "line": 218, "name": "ldens", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::Tcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 231, "name": "Tcrit", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::Pcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 235, "name": "Pcrit", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::Vcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 239, "name": "Vcrit", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::Tmin()", "disposition": "IMPLEMENTED_EXACTLY", "line": 243, "name": "Tmin", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::Tmax()", "disposition": "IMPLEMENTED_EXACTLY", "line": 247, "name": "Tmax", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double nitrogen::MolWt()", "disposition": "IMPLEMENTED_EXACTLY", "line": 251, "name": "MolWt", "path": "src/tpx/Nitrogen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double MolWt() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 24, "name": "MolWt", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 25, "name": "Tcrit", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 26, "name": "Pcrit", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Vcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 27, "name": "Vcrit", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmin() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 28, "name": "Tmin", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmax() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 29, "name": "Tmax", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 31, "name": "Pp", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double up() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 32, "name": "up", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double sp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 33, "name": "sp", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Psat() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 36, "name": "Psat", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double ldens() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 40, "name": "ldens", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double C(int i, double rt, double rt2);", "disposition": "IMPLEMENTED_EXACTLY", "line": 44, "name": "C", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Cprime(int i, double rt, double rt2, double rt3);", "disposition": "IMPLEMENTED_EXACTLY", "line": 45, "name": "Cprime", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double I(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 46, "name": "I", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double H(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 47, "name": "H", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double W(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 48, "name": "W", "path": "src/tpx/Nitrogen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::C(int i, double rt, double rt2)", "disposition": "IMPLEMENTED_EXACTLY", "line": 56, "name": "C", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::Cprime(int i, double rt, double rt2, double rt3)", "disposition": "IMPLEMENTED_EXACTLY", "line": 92, "name": "Cprime", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::W(int n, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 128, "name": "W", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::H(int i, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 134, "name": "H", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::I(int i, double egrho)", "disposition": "IMPLEMENTED_EXACTLY", "line": 139, "name": "I", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::up()", "disposition": "IMPLEMENTED_EXACTLY", "line": 144, "name": "up", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 149, "name": "exp", "path": "src/tpx/Oxygen.cpp", "python": null}
+{"declaration": "double oxygen::sp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 160, "name": "sp", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 165, "name": "exp", "path": "src/tpx/Oxygen.cpp", "python": null}
+{"declaration": "double oxygen::Pp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 179, "name": "Pp", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double egrho = exp(-Gamma*Rho*Rho);", "disposition": "NON_RUNTIME", "line": 183, "name": "exp", "path": "src/tpx/Oxygen.cpp", "python": null}
+{"declaration": "double oxygen::Psat()", "disposition": "IMPLEMENTED_EXACTLY", "line": 192, "name": "Psat", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::ldens()", "disposition": "IMPLEMENTED_EXACTLY", "line": 211, "name": "ldens", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::Tcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 224, "name": "Tcrit", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::Pcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 228, "name": "Pcrit", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::Vcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 232, "name": "Vcrit", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::Tmin()", "disposition": "IMPLEMENTED_EXACTLY", "line": 236, "name": "Tmin", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::Tmax()", "disposition": "IMPLEMENTED_EXACTLY", "line": 240, "name": "Tmax", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double oxygen::MolWt()", "disposition": "IMPLEMENTED_EXACTLY", "line": 244, "name": "MolWt", "path": "src/tpx/Oxygen.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double MolWt() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 23, "name": "MolWt", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 24, "name": "Tcrit", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 25, "name": "Pcrit", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Vcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 26, "name": "Vcrit", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmin() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 27, "name": "Tmin", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmax() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 28, "name": "Tmax", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 30, "name": "Pp", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double up() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 31, "name": "up", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double sp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 32, "name": "sp", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Psat() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 35, "name": "Psat", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double ldens() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 39, "name": "ldens", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double C(int i, double rt, double rt2);", "disposition": "IMPLEMENTED_EXACTLY", "line": 43, "name": "C", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Cprime(int i, double rt, double rt2, double rt3);", "disposition": "IMPLEMENTED_EXACTLY", "line": 44, "name": "Cprime", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double I(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 45, "name": "I", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double H(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 46, "name": "H", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double W(int i, double egrho);", "disposition": "IMPLEMENTED_EXACTLY", "line": 47, "name": "W", "path": "src/tpx/Oxygen.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "void Substance::setStdState(double h0, double s0, double t0, double p0)", "disposition": "IMPLEMENTED_EXACTLY", "line": 26, "name": "setStdState", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double hh = h();", "disposition": "IMPLEMENTED_EXACTLY", "line": 29, "name": "h", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double ss = s();", "disposition": "IMPLEMENTED_EXACTLY", "line": 30, "name": "s", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Substance::P()", "disposition": "IMPLEMENTED_EXACTLY", "line": 37, "name": "P", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Substance::cv()", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 44, "name": "cv", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double x0 = x();", "disposition": "IMPLEMENTED_EXACTLY", "line": 54, "name": "x", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double T1 = std::max(Tmin(), Tsave - dt);", "disposition": "IMPLEMENTED_EXACTLY", "line": 55, "name": "max", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double T2 = std::min(Tmax(), Tsave + dt);", "disposition": "IMPLEMENTED_EXACTLY", "line": 56, "name": "min", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double x1 = x();", "disposition": "IMPLEMENTED_EXACTLY", "line": 59, "name": "x", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double s1 = s();", "disposition": "IMPLEMENTED_EXACTLY", "line": 66, "name": "s", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double x2 = x();", "disposition": "IMPLEMENTED_EXACTLY", "line": 69, "name": "x", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double s2 = s();", "disposition": "IMPLEMENTED_EXACTLY", "line": 76, "name": "s", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Substance::cp()", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 82, "name": "cp", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double p0 = P();", "disposition": "IMPLEMENTED_EXACTLY", "line": 92, "name": "P", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Substance::thermalExpansionCoeff()", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 134, "name": "thermalExpansionCoeff", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double p0 = P();", "disposition": "IMPLEMENTED_EXACTLY", "line": 145, "name": "P", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Substance::isothermalCompressibility()", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 187, "name": "isothermalCompressibility", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Psave = P(), dp = 1.e-4 * Psave;", "disposition": "IMPLEMENTED_EXACTLY", "line": 194, "name": "P", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double v0 = v();", "disposition": "IMPLEMENTED_EXACTLY", "line": 197, "name": "v", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Substance::internalPressure()", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 235, "name": "internalPressure", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double vsave = v();", "disposition": "IMPLEMENTED_EXACTLY", "line": 240, "name": "v", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double dv = std::max(1.e-8, 1.e-6 * std::abs(vsave));", "disposition": "IMPLEMENTED_EXACTLY", "line": 241, "name": "max", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double v1 = std::max(1.e-300, vsave - dv);", "disposition": "IMPLEMENTED_EXACTLY", "line": 242, "name": "max", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double u1 = u();", "disposition": "IMPLEMENTED_EXACTLY", "line": 246, "name": "u", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double u2 = u();", "disposition": "IMPLEMENTED_EXACTLY", "line": 248, "name": "u", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Substance::dPsdT()", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 254, "name": "dPsdT", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double ps1 = Ps();", "disposition": "NON_RUNTIME", "line": 257, "name": "Ps", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "int Substance::TwoPhase(bool strict)", "disposition": "IMPLEMENTED_EXACTLY", "line": 271, "name": "TwoPhase", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Substance::x()", "disposition": "IMPLEMENTED_EXACTLY", "line": 283, "name": "x", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Substance::Tsat(double p)", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 301, "name": "Tsat", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pmin = Ps();", "disposition": "NON_RUNTIME", "line": 308, "name": "Ps", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dt = dp/dPsdT();", "disposition": "NON_RUNTIME", "line": 325, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dta = fabs(dt);", "disposition": "NON_RUNTIME", "line": 326, "name": "fabs", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "void Substance::Set(PropertyPair::type XY, double x0, double y0)", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 352, "name": "Set", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "void Substance::set_Rho(double r0)", "disposition": "IMPLEMENTED_EXACTLY", "line": 476, "name": "set_Rho", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "void Substance::set_T(double t0)", "disposition": "IMPLEMENTED_EXACTLY", "line": 485, "name": "set_T", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "void Substance::set_v(double v0)", "disposition": "IMPLEMENTED_EXACTLY", "line": 494, "name": "set_v", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Substance::Ps()", "disposition": "IMPLEMENTED_EXACTLY", "line": 504, "name": "Ps", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "void Substance::update_sat()", "disposition": "IMPLEMENTED_EXACTLY", "line": 514, "name": "update_sat", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double pp = Psat(); // illegal temperatures are caught by Psat()", "disposition": "IMPLEMENTED_EXACTLY", "line": 518, "name": "Psat", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double lps = log(pp);", "disposition": "NON_RUNTIME", "line": 519, "name": "log", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double gf = hp() - T*sp();", "disposition": "NON_RUNTIME", "line": 531, "name": "hp", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double gv = hp() - T*sp();", "disposition": "NON_RUNTIME", "line": 540, "name": "hp", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dp = dg/(1.0/Rhv - 1.0/Rhf);", "disposition": "NON_RUNTIME", "line": 550, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double Substance::vprop(propertyFlag::type ijob)", "disposition": "IMPLEMENTED_EXACTLY", "line": 578, "name": "vprop", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "int Substance::Lever(int itp, double sat, double val, propertyFlag::type ifunc)", "disposition": "IMPLEMENTED_EXACTLY", "line": 596, "name": "Lever", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Valg = vprop(ifunc);", "disposition": "NON_RUNTIME", "line": 624, "name": "vprop", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double Valf = vprop(ifunc);", "disposition": "NON_RUNTIME", "line": 626, "name": "vprop", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double xx = (val - Valf)/(Valg - Valf);", "disposition": "NON_RUNTIME", "line": 628, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double vv = (1.0 - xx)/Rhf + xx/Rhv;", "disposition": "NON_RUNTIME", "line": 629, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "void Substance::set_xy(propertyFlag::type ifx, propertyFlag::type ify,", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 639, "name": "set_xy", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double dvs1 = 2.0*Vcrit();", "disposition": "NON_RUNTIME", "line": 645, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dvs2 = 0.7*Vcrit();", "disposition": "NON_RUNTIME", "line": 646, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double Xa = fabs(X);", "disposition": "NON_RUNTIME", "line": 667, "name": "fabs", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double Ya = fabs(Y);", "disposition": "NON_RUNTIME", "line": 668, "name": "fabs", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double x_here = prop(ifx);", "disposition": "IMPLEMENTED_EXACTLY", "line": 670, "name": "prop", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double y_here = prop(ify);", "disposition": "IMPLEMENTED_EXACTLY", "line": 671, "name": "prop", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double err_x = fabs(X - x_here);", "disposition": "NON_RUNTIME", "line": 672, "name": "fabs", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double err_y = fabs(Y - y_here);", "disposition": "NON_RUNTIME", "line": 673, "name": "fabs", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dxdt = (prop(ifx) - x_here)/dt;", "disposition": "NON_RUNTIME", "line": 693, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dydt = (prop(ify) - y_here)/dt;", "disposition": "NON_RUNTIME", "line": 694, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dxdv = (prop(ifx) - x_here)/dv;", "disposition": "NON_RUNTIME", "line": 698, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dydv = (prop(ify) - y_here)/dv;", "disposition": "NON_RUNTIME", "line": 699, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dva = fabs(dv);", "disposition": "NON_RUNTIME", "line": 713, "name": "fabs", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dta = fabs(dt);", "disposition": "NON_RUNTIME", "line": 714, "name": "fabs", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double Substance::prop(propertyFlag::type ijob)", "disposition": "IMPLEMENTED_EXACTLY", "line": 742, "name": "prop", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double xx = x();", "disposition": "IMPLEMENTED_EXACTLY", "line": 750, "name": "x", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double vp = vprop(ijob);", "disposition": "NON_RUNTIME", "line": 754, "name": "vprop", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double lp = vprop(ijob);", "disposition": "NON_RUNTIME", "line": 756, "name": "vprop", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double pp = (1.0 - xx)*lp + xx*vp;", "disposition": "NON_RUNTIME", "line": 757, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "void Substance::BracketSlope(double Pressure)", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 768, "name": "BracketSlope", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double dpdv = (Pmax - Pmin)/(Vmax - Vmin);", "disposition": "NON_RUNTIME", "line": 779, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "void Substance::set_TPp(double Temp, double Pressure)", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 787, "name": "set_TPp", "path": "src/tpx/Sub.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double dvs1 = 2.0*Vcrit();", "disposition": "NON_RUNTIME", "line": 795, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dvs2 = 0.7*Vcrit();", "disposition": "NON_RUNTIME", "line": 796, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dpdv = (Pp() - P_here)/dv;", "disposition": "NON_RUNTIME", "line": 848, "name": "", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double dva = fabs(dv);", "disposition": "NON_RUNTIME", "line": 890, "name": "fabs", "path": "src/tpx/Sub.cpp", "python": null}
+{"declaration": "double water::C(int i)", "disposition": "IMPLEMENTED_EXACTLY", "line": 76, "name": "C", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::Cprime(int i)", "disposition": "IMPLEMENTED_EXACTLY", "line": 82, "name": "Cprime", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::I(int j)", "disposition": "IMPLEMENTED_EXACTLY", "line": 90, "name": "I", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::H(int j)", "disposition": "IMPLEMENTED_EXACTLY", "line": 105, "name": "H", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::up()", "disposition": "IMPLEMENTED_EXACTLY", "line": 122, "name": "up", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::sp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 136, "name": "sp", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::Pp()", "disposition": "IMPLEMENTED_EXACTLY", "line": 152, "name": "Pp", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::Psat()", "disposition": "IMPLEMENTED_EXACTLY", "line": 161, "name": "Psat", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::ldens()", "disposition": "IMPLEMENTED_EXACTLY", "line": 175, "name": "ldens", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::Tcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 189, "name": "Tcrit", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::Pcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 193, "name": "Pcrit", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::Vcrit()", "disposition": "IMPLEMENTED_EXACTLY", "line": 197, "name": "Vcrit", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::Tmin()", "disposition": "IMPLEMENTED_EXACTLY", "line": 201, "name": "Tmin", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::Tmax()", "disposition": "IMPLEMENTED_EXACTLY", "line": 205, "name": "Tmax", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double water::MolWt()", "disposition": "IMPLEMENTED_EXACTLY", "line": 209, "name": "MolWt", "path": "src/tpx/Water.cpp", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double MolWt() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 23, "name": "MolWt", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 24, "name": "Tcrit", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 25, "name": "Pcrit", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Vcrit() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 26, "name": "Vcrit", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmin() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 27, "name": "Tmin", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Tmax() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 28, "name": "Tmax", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Pp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 30, "name": "Pp", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double up() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 31, "name": "up", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double sp() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 32, "name": "sp", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Psat() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 33, "name": "Psat", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double dPsatdT();", "disposition": "NON_RUNTIME", "line": 34, "name": "dPsatdT", "path": "src/tpx/Water.h", "python": null}
+{"declaration": "double ldens() override;", "disposition": "IMPLEMENTED_EXACTLY", "line": 37, "name": "ldens", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double C(int i);", "disposition": "IMPLEMENTED_EXACTLY", "line": 40, "name": "C", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double Cprime(int i);", "disposition": "IMPLEMENTED_EXACTLY", "line": 41, "name": "Cprime", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double I(int i);", "disposition": "IMPLEMENTED_EXACTLY", "line": 42, "name": "I", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double H(int i);", "disposition": "IMPLEMENTED_EXACTLY", "line": 43, "name": "H", "path": "src/tpx/Water.h", "python": "cantera_python/tpx.py or cantera_python/tpx_exact.py"}
+{"declaration": "double P();", "disposition": "IMPLEMENTED_EXACTLY", "line": 85, "name": "P", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "virtual double cv();", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 123, "name": "cv", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "virtual double cp();", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 126, "name": "cp", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "virtual double thermalExpansionCoeff();", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 128, "name": "thermalExpansionCoeff", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "virtual double isothermalCompressibility();", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 130, "name": "isothermalCompressibility", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "virtual double internalPressure();", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 134, "name": "internalPressure", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "double Ps();", "disposition": "NON_RUNTIME", "line": 140, "name": "Ps", "path": "include/cantera/tpx/Sub.h", "python": null}
+{"declaration": "virtual double dPsdT();", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 143, "name": "dPsdT", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "double Tsat(double p);", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 146, "name": "Tsat", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "double x();", "disposition": "IMPLEMENTED_EXACTLY", "line": 150, "name": "x", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "int TwoPhase(bool strict=false);", "disposition": "IMPLEMENTED_EXACTLY", "line": 155, "name": "TwoPhase", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "double prop(propertyFlag::type ijob);", "disposition": "IMPLEMENTED_EXACTLY", "line": 170, "name": "prop", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "void set_TPp(double t0, double p0);", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 173, "name": "set_TPp", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "void Set(PropertyPair::type XY, double x0, double y0);", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 178, "name": "Set", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "int Lever(int itp, double sat, double val, propertyFlag::type ifunc);", "disposition": "IMPLEMENTED_EXACTLY", "line": 213, "name": "Lever", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "void update_sat();", "disposition": "IMPLEMENTED_EXACTLY", "line": 216, "name": "update_sat", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "void set_Rho(double r0);", "disposition": "NON_RUNTIME", "line": 219, "name": "set_Rho", "path": "include/cantera/tpx/Sub.h", "python": null}
+{"declaration": "void set_T(double t0);", "disposition": "NON_RUNTIME", "line": 220, "name": "set_T", "path": "include/cantera/tpx/Sub.h", "python": null}
+{"declaration": "void set_v(double v0);", "disposition": "NON_RUNTIME", "line": 221, "name": "set_v", "path": "include/cantera/tpx/Sub.h", "python": null}
+{"declaration": "void BracketSlope(double p);", "disposition": "IMPLEMENTED_DIFFERENTLY", "line": 222, "name": "BracketSlope", "path": "include/cantera/tpx/Sub.h", "python": "cantera_python/tpx.py"}
+{"declaration": "double vprop(propertyFlag::type ijob);", "disposition": "NON_RUNTIME", "line": 223, "name": "vprop", "path": "include/cantera/tpx/Sub.h", "python": null}
+{"declaration": "Substance* newSubstance(const std::string& name);", "disposition": "IMPLEMENTED_EXACTLY", "line": 23, "name": "newSubstance", "path": "include/cantera/tpx/utils.h", "python": "cantera_python/tpx.py"}

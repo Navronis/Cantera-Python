@@ -1,0 +1,46 @@
+{
+  "timestamp_utc": "2026-11-05T12:51:21.362871+00:00",
+  "workload": "N=200_kl=6_ku=6_100_solves_100_mults",
+  "NATIVE_CPP_MEDIAN_MS": 1.279183,
+  "PYTHON_REFERENCE_MEDIAN_MS": 263.168,
+  "PYTHON_OPTIMIZED_MEDIAN_MS": 3.087,
+  "NATIVE_CPP_P95_MS": 2.913218,
+  "PYTHON_OPTIMIZED_P95_MS": 3.743,
+  "SPEED_RATIO": 2.41,
+  "REFERENCE_SPEED_RATIO": 205.73,
+  "MEMORY_RATIO": 1.0,
+  "BAND_MATRIX_NATIVE_SPEED_PARITY": false,
+  "detailed_metrics": {
+    "native_cpp": {
+      "workload": "N=200_kl=6_ku=6_100_solves_100_mults",
+      "construction_median_ms": 0.016991,
+      "factor_median_ms": 0.023455,
+      "one_solve_median_ms": 0.004014,
+      "repeated_solve_median_ms": 0.364725,
+      "mult_median_ms": 0.812815,
+      "rcond_median_ms": 0.025958,
+      "total_lifecycle_median_ms": 1.279183,
+      "total_lifecycle_p95_ms": 2.913218
+    },
+    "reference_python": {
+      "construction_median_ms": 1.129,
+      "factor_median_ms": 5.942,
+      "one_solve_median_ms": 1.848,
+      "repeated_solve_median_ms": 214.219,
+      "mult_median_ms": 0.568,
+      "rcond_median_ms": 31.988,
+      "total_lifecycle_median_ms": 263.168,
+      "total_lifecycle_p95_ms": 904.708
+    },
+    "optimized_python": {
+      "construction_median_ms": 1.006,
+      "factor_median_ms": 0.019,
+      "one_solve_median_ms": 0.01,
+      "repeated_solve_median_ms": 0.833,
+      "mult_median_ms": 0.541,
+      "rcond_median_ms": 0.026,
+      "total_lifecycle_median_ms": 3.087,
+      "total_lifecycle_p95_ms": 3.743
+    }
+  }
+}

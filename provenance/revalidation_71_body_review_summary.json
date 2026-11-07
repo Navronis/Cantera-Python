@@ -1,0 +1,80 @@
+{
+  "artifacts": {
+    "input": "provenance/revalidation_421.jsonl",
+    "rows": "provenance/revalidation_71_body_review.jsonl"
+  },
+  "dependency_ordered_defects": [
+    {
+      "area": "source inventory",
+      "defect": "The method regex emits call expressions as symbols; 27 of these 71 rows are false positives.",
+      "priority": 1,
+      "python_location": "tools/forensic_audit.py:304",
+      "recommended_test": "Assert representative return/call expressions in Units.cpp, Func1.cpp, and Func1.h are absent from the symbol inventory.",
+      "source_location": "tools/forensic_audit.py:23"
+    },
+    {
+      "area": "unit-system semantics",
+      "defect": "UnitSystem default-state, Units-object, AnyValue, and vector conversion overloads are mapped to a scalar string conversion function.",
+      "priority": 2,
+      "python_location": "cantera_python/units.py:79",
+      "recommended_test": "Differentially test every overload, non-SI defaults, dimensioned strings, arrays, malformed input, and exception context.",
+      "source_location": "include/cantera/base/Units.h:210"
+    },
+    {
+      "area": "reaction-rate order",
+      "defect": "ArrheniusBase::order is falsely mapped to Func1 expression precedence; reaction-rate order is absent from the mapped class.",
+      "priority": 3,
+      "python_location": "cantera_python/functions.py:109",
+      "recommended_test": "Verify rate order derived from UnitStack quantity dimensions and its updates after rate-unit changes.",
+      "source_location": "include/cantera/kinetics/Arrhenius.h:121"
+    },
+    {
+      "area": "stoichiometric order",
+      "defect": "StoichManagerN::order is also falsely mapped to Func1 expression precedence.",
+      "priority": 4,
+      "python_location": "cantera_python/functions.py:109",
+      "recommended_test": "Verify integer, fractional, and nonreactant order handling through rates of progress.",
+      "source_location": "include/cantera/kinetics/StoichManager.h:650"
+    },
+    {
+      "area": "ideal-gas API",
+      "defect": "IdealGasPhase::internalPressure is mapped to another phase class and is absent on the ideal-gas implementation.",
+      "priority": 5,
+      "python_location": "cantera_python/stoich.py:98",
+      "recommended_test": "Assert zero internal pressure through both state and Solution ideal-gas APIs.",
+      "source_location": "include/cantera/thermo/IdealGasPhase.h:407"
+    },
+    {
+      "area": "state mutation and errors",
+      "defect": "setState_DP uses the same equation but differs in mutation atomicity and exceptional-input behavior.",
+      "priority": 6,
+      "python_location": "cantera_python/state.py:32",
+      "recommended_test": "Compare valid and invalid density/pressure cases, including the phase state after failure.",
+      "source_location": "include/cantera/thermo/IdealGasPhase.h:369"
+    },
+    {
+      "area": "stateful reaction rates",
+      "defect": "Blowers-Masel activation energy takes delta H as a Python argument instead of reading state updated by kinetics.",
+      "priority": 7,
+      "python_location": "cantera_python/rates.py:286",
+      "recommended_test": "Exercise all three branches while changing reaction enthalpy through the kinetics state-update path.",
+      "source_location": "include/cantera/kinetics/BlowersMaselRate.h:148"
+    }
+  ],
+  "equivalent_proven_promoted": 0,
+  "finding": "Unique name resolution is not semantic equivalence. Body review found false source symbols, wrong targets, missing overload semantics, and API/state differences. Rows whose valid-domain equations match remain unproven until symbol-linked exact-pinned evidence exists.",
+  "outcome_counts": {
+    "BODY_MATCH_CANDIDATE_UNPROVEN": 23,
+    "BODY_MATCH_EXCEPTION_DIFFERENCE": 8,
+    "FORMULA_MATCH_RESTRICTED_UNIT_PARSER": 1,
+    "FORMULA_MATCH_STATE_AND_EXCEPTION_DIFFERENCE": 1,
+    "FORMULA_MATCH_STATE_API_DIFFERENCE": 1,
+    "INVENTORY_FALSE_POSITIVE": 27,
+    "MISSING_OVERLOAD_SEMANTICS": 6,
+    "PARTIAL_STATE_AND_TYPE_SEMANTICS": 1,
+    "WRONG_PYTHON_TARGET": 3
+  },
+  "rows_reviewed": 71,
+  "schema_version": 1,
+  "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3"
+}

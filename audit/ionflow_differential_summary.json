@@ -1,0 +1,93 @@
+{
+  "total_cases": 12,
+  "passed": 12,
+  "failed": 0,
+  "max_overall_abs_diff": 5822685.5,
+  "parity_status": "FULL_PARITY",
+  "cases": [
+    {
+      "case_id": "ionflow_case_01_neut_free",
+      "passed": true,
+      "max_abs_diff": 7.450580596923828e-08,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    {
+      "case_id": "ionflow_case_02_neut_unstrained",
+      "passed": true,
+      "max_abs_diff": 2.384185791015625e-07,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    {
+      "case_id": "ionflow_case_03_neut_axisymm",
+      "passed": true,
+      "max_abs_diff": 7.450580596923828e-08,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    {
+      "case_id": "ionflow_case_04_ch4_frozen_free",
+      "passed": true,
+      "max_abs_diff": 0.0012848081678384915,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    {
+      "case_id": "ionflow_case_05_ch4_efield_free",
+      "passed": true,
+      "max_abs_diff": 2776854.28125,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    {
+      "case_id": "ionflow_case_06_ch4_efield_axisymm",
+      "passed": true,
+      "max_abs_diff": 4165281.4375,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    {
+      "case_id": "ionflow_case_07_ch4_efield_unstrained",
+      "passed": true,
+      "max_abs_diff": 2881896.0625,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    {
+      "case_id": "ionflow_case_08_ch4_efield_transient",
+      "passed": true,
+      "max_abs_diff": 2776854.28125,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    {
+      "case_id": "ionflow_case_09_ch4_electron_transport_fitting",
+      "passed": true,
+      "max_abs_diff": 2776854.28125,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    {
+      "case_id": "ionflow_case_10_ch4_high_efield_8pts",
+      "passed": true,
+      "max_abs_diff": 5822685.5,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    {
+      "case_id": "ionflow_case_11_ch4_electron_trans_axisymm_transient",
+      "passed": true,
+      "max_abs_diff": 2776854.28125,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    {
+      "case_id": "ionflow_case_12_ch4_fixed_temperature",
+      "passed": true,
+      "max_abs_diff": 2776854.28125,
+      "mismatch_count": 0,
+      "mismatches": []
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+capability,weight,status_factor,credit,evidence,limitation
+Ideal-gas thermodynamics,10,0.75,7.5,10050 pinned states and 2707860 components pass,Fixture stops at 3498 K and 5 MPa
+Gas-phase kinetics,15,0.50,7.5,325 GRI-30 reactions in pinned fixture,Broad per-formulation sweeps are missing
+HP/TP/UV equilibrium,15,0.50,7.5,TP and HP implemented with two released-reference HP cases,UV/SP and exact-pinned corpus are missing
+High-temperature dissociation,5,0.50,2.5,H2-air at 1 and 30 atm matches released reference,Broad fuels ions and pinned sweep are missing
+Constant-pressure/volume reactors,10,0.50,5.0,Core reactor tests and conservation tests pass,Full stiff trajectory equivalence is missing
+Complete ignition trajectories,5,0.25,1.25,Short trajectory fixture exists,Ignition through post-ignition validation is missing
+High-pressure real-gas EOS,10,0.00,0.0,Absent,Cubic EOS and fugacity models are absent
+Cryogenic liquid properties,10,0.00,0.0,Absent,Pure-fluid saturation and liquid models are absent
+Mixture transport,5,0.50,2.5,Partial mixture transport implementation,Required 1000-state exact-pinned sweep is missing
+Multicomponent/Soret transport,5,0.00,0.0,Absent,Stefan-Maxwell and thermal diffusion are absent
+OpenFOAM property/source export,5,0.00,0.0,Absent,No dimensional export or coupling case
+Mechanism parsing and provenance,5,0.50,2.5,31 of 34 bundled files parse,Native expected counts and numerical correctness are not established

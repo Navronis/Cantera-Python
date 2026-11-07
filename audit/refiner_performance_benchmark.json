@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "solver_family": "refiner",
+  "subsystem": "grid refinement",
+  "overall_slowdown_factor": 20.42,
+  "native_equivalent_speed_parity": false,
+  "comparisons": [
+    {
+      "grid_size": 25,
+      "n_components": 4,
+      "native_median_ms": 0.002856,
+      "python_median_ms": 0.21299999934853986,
+      "slowdown_factor": 74.58
+    },
+    {
+      "grid_size": 100,
+      "n_components": 4,
+      "native_median_ms": 0.01329,
+      "python_median_ms": 0.40810000064084306,
+      "slowdown_factor": 30.71
+    },
+    {
+      "grid_size": 500,
+      "n_components": 4,
+      "native_median_ms": 0.15463,
+      "python_median_ms": 1.5673000016249716,
+      "slowdown_factor": 10.14
+    },
+    {
+      "grid_size": 2000,
+      "n_components": 4,
+      "native_median_ms": 0.894832,
+      "python_median_ms": 6.06809999953839,
+      "slowdown_factor": 6.78
+    }
+  ]
+}

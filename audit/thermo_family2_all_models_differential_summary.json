@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "species_thermo_all_models_native_validated": true,
+  "max_rel_errors": {
+    "cp_R": 0.0,
+    "h_RT": 0.0,
+    "s_R": 0.0
+  },
+  "per_model_summary": {
+    "NasaPoly1": {
+      "max_rel_error_cp_R": 0.0,
+      "max_rel_error_h_RT": 0.0,
+      "max_rel_error_s_R": 0.0,
+      "status": "PASS"
+    },
+    "NasaPoly2": {
+      "max_rel_error_cp_R": 0.0,
+      "max_rel_error_h_RT": 0.0,
+      "max_rel_error_s_R": 0.0,
+      "status": "PASS"
+    },
+    "Nasa9Poly1": {
+      "max_rel_error_cp_R": 0.0,
+      "max_rel_error_h_RT": 0.0,
+      "max_rel_error_s_R": 0.0,
+      "status": "PASS"
+    },
+    "Nasa9PolyMultiTempRegion": {
+      "max_rel_error_cp_R": 0.0,
+      "max_rel_error_h_RT": 0.0,
+      "max_rel_error_s_R": 0.0,
+      "status": "PASS"
+    },
+    "ShomatePoly": {
+      "max_rel_error_cp_R": 0.0,
+      "max_rel_error_h_RT": 0.0,
+      "max_rel_error_s_R": 0.0,
+      "status": "PASS"
+    },
+    "ShomatePoly2": {
+      "max_rel_error_cp_R": 0.0,
+      "max_rel_error_h_RT": 0.0,
+      "max_rel_error_s_R": 0.0,
+      "status": "PASS"
+    },
+    "ConstCpPoly": {
+      "max_rel_error_cp_R": 0.0,
+      "max_rel_error_h_RT": 0.0,
+      "max_rel_error_s_R": 0.0,
+      "status": "PASS"
+    },
+    "Mu0Poly": {
+      "max_rel_error_cp_R": 0.0,
+      "max_rel_error_h_RT": 0.0,
+      "max_rel_error_s_R": 0.0,
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "source_inventory_sha256": "afda9f8430f45b4a97130ff937cbd0bdf0be8f6bb24265bb09d05e547a3ce30c",
+  "definition_status": "PROVISIONAL_BLOCKED_ON_DEPENDENCY_GRAPH",
+  "selection_rule": "Symbols required by more than one solver family, ranked by graph centrality.",
+  "selected_symbols": [],
+  "reason": "Canonical symbol callers/callees are unpopulated; cross-family dependency centrality cannot be measured faithfully yet.",
+  "next_required_step": "Extract pinned-source function call edges and connect them to Python runtime targets before declaring the shared base closed."
+}

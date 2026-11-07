@@ -1,0 +1,635 @@
+{
+  "include/cantera/transport/MultiTransport.h:105:init": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:105:init",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "init",
+    "source_lines": [
+      105,
+      105
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.init",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:107:invalidateCache": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:107:invalidateCache",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "invalidateCache",
+    "source_lines": [
+      107,
+      107
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.invalidateCache",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:112:update_T": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:112:update_T",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "update_T",
+    "source_lines": [
+      112,
+      112
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.update_T",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:116:update_C": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:116:update_C",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "update_C",
+    "source_lines": [
+      116,
+      116
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.update_C",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:120:updateThermal_T": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:120:updateThermal_T",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "updateThermal_T",
+    "source_lines": [
+      120,
+      120
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.updateThermal_T",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:163:eval_L0000": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:163:eval_L0000",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "eval_L0000",
+    "source_lines": [
+      163,
+      163
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.eval_L0000",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.updateThermal_T",
+      "cantera_python.transport.MultiTransport.hasInternalModes"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.MultiTransport.solveLMatrixEquation"
+    ],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:169:eval_L0010": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:169:eval_L0010",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "eval_L0010",
+    "source_lines": [
+      169,
+      169
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.eval_L0010",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.updateThermal_T",
+      "cantera_python.transport.MultiTransport.hasInternalModes"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.MultiTransport.solveLMatrixEquation"
+    ],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:172:eval_L1000": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:172:eval_L1000",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "eval_L1000",
+    "source_lines": [
+      172,
+      172
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.eval_L1000",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.updateThermal_T",
+      "cantera_python.transport.MultiTransport.hasInternalModes"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.MultiTransport.solveLMatrixEquation"
+    ],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:174:eval_L0100": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:174:eval_L0100",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "eval_L0100",
+    "source_lines": [
+      174,
+      174
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.eval_L0100",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.updateThermal_T",
+      "cantera_python.transport.MultiTransport.hasInternalModes"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.MultiTransport.solveLMatrixEquation"
+    ],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:175:eval_L0001": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:175:eval_L0001",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "eval_L0001",
+    "source_lines": [
+      175,
+      175
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.eval_L0001",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.updateThermal_T",
+      "cantera_python.transport.MultiTransport.hasInternalModes"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.MultiTransport.solveLMatrixEquation"
+    ],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:176:eval_L1010": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:176:eval_L1010",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "eval_L1010",
+    "source_lines": [
+      176,
+      176
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.eval_L1010",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.updateThermal_T",
+      "cantera_python.transport.MultiTransport.hasInternalModes"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.MultiTransport.solveLMatrixEquation"
+    ],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:177:eval_L1001": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:177:eval_L1001",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "eval_L1001",
+    "source_lines": [
+      177,
+      177
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.eval_L1001",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.updateThermal_T",
+      "cantera_python.transport.MultiTransport.hasInternalModes"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.MultiTransport.solveLMatrixEquation"
+    ],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:178:eval_L0110": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:178:eval_L0110",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "eval_L0110",
+    "source_lines": [
+      178,
+      178
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.eval_L0110",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.updateThermal_T",
+      "cantera_python.transport.MultiTransport.hasInternalModes"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.MultiTransport.solveLMatrixEquation"
+    ],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:179:eval_L0101": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:179:eval_L0101",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "eval_L0101",
+    "source_lines": [
+      179,
+      179
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.eval_L0101",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.updateThermal_T",
+      "cantera_python.transport.MultiTransport.hasInternalModes"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.MultiTransport.solveLMatrixEquation"
+    ],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:180:hasInternalModes": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:180:hasInternalModes",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "hasInternalModes",
+    "source_lines": [
+      180,
+      180
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.hasInternalModes",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:182:pressure_ig": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:182:pressure_ig",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "pressure_ig",
+    "source_lines": [
+      182,
+      182
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.pressure_ig",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:184:solveLMatrixEquation": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:184:solveLMatrixEquation",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "solveLMatrixEquation",
+    "source_lines": [
+      184,
+      184
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.solveLMatrixEquation",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.eval_L0000",
+      "cantera_python.transport.MultiTransport.eval_L0010",
+      "cantera_python.transport.MultiTransport.eval_L1000",
+      "cantera_python.transport.MultiTransport.eval_L1010",
+      "cantera_python.transport.MultiTransport.eval_L1001",
+      "cantera_python.transport.MultiTransport.eval_L0100",
+      "cantera_python.transport.MultiTransport.eval_L0001",
+      "cantera_python.transport.MultiTransport.eval_L0110",
+      "cantera_python.transport.MultiTransport.eval_L0101"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.MultiTransport.getMultiDiffCoeffs",
+      "cantera_python.transport.MultiTransport.getThermalDiffCoeffs",
+      "cantera_python.transport.MultiTransport.thermalConductivity"
+    ],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:31:transportModel": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:31:transportModel",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "transportModel",
+    "source_lines": [
+      31,
+      31
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.transportModel",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:45:getThermalDiffCoeffs": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:45:getThermalDiffCoeffs",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "getThermalDiffCoeffs",
+    "source_lines": [
+      45,
+      45
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.getThermalDiffCoeffs",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.update_T",
+      "cantera_python.transport.MultiTransport.update_C",
+      "cantera_python.transport.MultiTransport.updateThermal_T",
+      "cantera_python.transport.MultiTransport.solveLMatrixEquation"
+    ],
+    "caller_symbols": [
+      "cantera_python.solution.Solution.thermal_diff_coeffs",
+      "cantera_python.transport.MultiTransport.getSpeciesFluxes"
+    ],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:47:thermalConductivity": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:47:thermalConductivity",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "thermalConductivity",
+    "source_lines": [
+      47,
+      47
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.thermalConductivity",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.update_T",
+      "cantera_python.transport.MultiTransport.update_C",
+      "cantera_python.transport.MultiTransport.updateThermal_T",
+      "cantera_python.transport.MultiTransport.solveLMatrixEquation"
+    ],
+    "caller_symbols": [
+      "cantera_python.solution.Solution.thermal_conductivity"
+    ],
+    "current_status": "NOT_PORTED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "include/cantera/transport/MultiTransport.h:49:getMultiDiffCoeffs": {
+    "stable_symbol_id": "include/cantera/transport/MultiTransport.h:49:getMultiDiffCoeffs",
+    "source_file": "include/cantera/transport/MultiTransport.h",
+    "class": "MultiTransport",
+    "method": "getMultiDiffCoeffs",
+    "source_lines": [
+      49,
+      49
+    ],
+    "python_target": "cantera_python.transport.MultiTransport.getMultiDiffCoeffs",
+    "dependency_symbols": [
+      "cantera_python.transport.MultiTransport.update_T",
+      "cantera_python.transport.MultiTransport.update_C",
+      "cantera_python.transport.MultiTransport.eval_L0000",
+      "cantera_python.transport.MultiTransport.solveLMatrixEquation"
+    ],
+    "caller_symbols": [
+      "cantera_python.solution.Solution.multi_diff_coeffs",
+      "cantera_python.transport.MultiTransport.getSpeciesFluxes"
+    ],
+    "current_status": "IMPLEMENTED_UNVALIDATED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "src/transport/MultiTransport.cpp:180:CanteraError": {
+    "stable_symbol_id": "src/transport/MultiTransport.cpp:180:CanteraError",
+    "source_file": "src/transport/MultiTransport.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      180,
+      180
+    ],
+    "python_target": "cantera_python.transport.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "src/transport/MultiTransport.cpp:183:CanteraError": {
+    "stable_symbol_id": "src/transport/MultiTransport.cpp:183:CanteraError",
+    "source_file": "src/transport/MultiTransport.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      183,
+      183
+    ],
+    "python_target": "cantera_python.transport.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "src/transport/MultiTransport.cpp:233:gsave": {
+    "stable_symbol_id": "src/transport/MultiTransport.cpp:233:gsave",
+    "source_file": "src/transport/MultiTransport.cpp",
+    "class": "",
+    "method": "gsave",
+    "source_lines": [
+      233,
+      233
+    ],
+    "python_target": "cantera_python.transport.gsave",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "src/transport/MultiTransport.cpp:278:x1": {
+    "stable_symbol_id": "src/transport/MultiTransport.cpp:278:x1",
+    "source_file": "src/transport/MultiTransport.cpp",
+    "class": "",
+    "method": "x1",
+    "source_lines": [
+      278,
+      278
+    ],
+    "python_target": "cantera_python.transport.x1",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "src/transport/MultiTransport.cpp:279:x2": {
+    "stable_symbol_id": "src/transport/MultiTransport.cpp:279:x2",
+    "source_file": "src/transport/MultiTransport.cpp",
+    "class": "",
+    "method": "x2",
+    "source_lines": [
+      279,
+      279
+    ],
+    "python_target": "cantera_python.transport.x2",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "src/transport/MultiTransport.cpp:280:x3": {
+    "stable_symbol_id": "src/transport/MultiTransport.cpp:280:x3",
+    "source_file": "src/transport/MultiTransport.cpp",
+    "class": "",
+    "method": "x3",
+    "source_lines": [
+      280,
+      280
+    ],
+    "python_target": "cantera_python.transport.x3",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "src/transport/MultiTransport.cpp:375:CanteraError": {
+    "stable_symbol_id": "src/transport/MultiTransport.cpp:375:CanteraError",
+    "source_file": "src/transport/MultiTransport.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      375,
+      375
+    ],
+    "python_target": "cantera_python.transport.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  },
+  "src/transport/MultiTransport.cpp:489:cp": {
+    "stable_symbol_id": "src/transport/MultiTransport.cpp:489:cp",
+    "source_file": "src/transport/MultiTransport.cpp",
+    "class": "",
+    "method": "cp",
+    "source_lines": [
+      489,
+      489
+    ],
+    "python_target": "cantera_python.transport.cp",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "PARTIAL",
+    "tests": [
+      "tests/test_multicomponent_transport.py"
+    ],
+    "current_evidence": null,
+    "remaining_validation_requirement": "Pinned native oracle differential validation across full matrices, thermal diffusion, and fluxes."
+  }
+}

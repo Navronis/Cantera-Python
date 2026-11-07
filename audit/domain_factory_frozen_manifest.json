@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/domain_factory_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T20:08:59.963830+00:00",
+  "solver_family": "DomainFactory",
+  "subsystem": "1D domain instantiation & factory dispatch",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0, libcantera_shared.so.4.0.0"
+  },
+  "file_hashes": {
+    "oned_py": "8de43d4a3e88a88d2d9792dc84f3d72210f372e048a83bfe07da6dd76a8f5166",
+    "test_ionflow_and_factory_py": "809489cdf5c47205e1baa9d26b989d40c9d893bbfd06a4b29ab6633ba1745fec",
+    "domain_factory_closure_symbol_set_json": "9e25a27bb3cb01cc864d5bd520ce9eab82e77c7476f55679de08dc80d5e41b56",
+    "pinned_domain_factory_h": "f9eb47ddc082d722c7c37d1c728f729d38451ed5cd740f73a6ae65a45c51e597",
+    "pinned_domain_factory_cpp": "791c57805f5ff4003b0732b783c57099e1b8978ebd1c90129e66340ff9514a4e"
+  },
+  "closure_metrics": {
+    "total_symbols": 4,
+    "pinned_native_validated": 4,
+    "non_runtime_cpp_only": 0,
+    "remaining_open": 0,
+    "parity_status": "FULL_PARITY"
+  }
+}

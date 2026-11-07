@@ -1,0 +1,44 @@
+{
+  "benchmarks": [
+    {
+      "name": "FreeFlow_10pts",
+      "domain_type": "free-flow",
+      "points": 10,
+      "reps": 5000,
+      "median_us": 11.501,
+      "mean_us": 12.538,
+      "min_us": 10.817,
+      "max_us": 287.356
+    },
+    {
+      "name": "AxisymmetricFlow_10pts_Rad",
+      "domain_type": "axisymmetric-flow",
+      "points": 10,
+      "reps": 5000,
+      "median_us": 12.328,
+      "mean_us": 12.841,
+      "min_us": 11.404,
+      "max_us": 294.724
+    },
+    {
+      "name": "UnstrainedFlow_10pts",
+      "domain_type": "unstrained-flow",
+      "points": 10,
+      "reps": 5000,
+      "median_us": 11.940,
+      "mean_us": 12.429,
+      "min_us": 10.525,
+      "max_us": 318.212
+    },
+    {
+      "name": "FreeFlow_25pts",
+      "domain_type": "free-flow",
+      "points": 25,
+      "reps": 2000,
+      "median_us": 32.270,
+      "mean_us": 33.405,
+      "min_us": 28.324,
+      "max_us": 223.212
+    }
+  ]
+}

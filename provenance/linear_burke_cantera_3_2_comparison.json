@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-17",
+  "reference": "released Cantera 3.2.0 (supplementary, not the exact pinned oracle)",
+  "mechanism": "data/example_data/ammonia-CO-H2-Alzueta-2023.yaml",
+  "phase": "linear-Burke",
+  "state": {
+    "temperature_K": 1000.0,
+    "pressure_Pa": 101325.0,
+    "mole_composition": "NH3:0.05,O2:0.1,N2:0.85"
+  },
+  "reaction_indices": [275, 276, 277, 278, 279, 280],
+  "native_forward_rate_constants": [
+    151912438.38841602,
+    54834620.65122594,
+    99.26298897447236,
+    9.704495488783856e-10,
+    1385547364.2182477,
+    9.267852186955833
+  ],
+  "python_forward_rate_constants": [
+    151912438.38841602,
+    54834620.65122594,
+    99.26298897447236,
+    9.704495488783856e-10,
+    1385547364.2182477,
+    9.267852186955833
+  ],
+  "maximum_relative_error": 0.0
+}

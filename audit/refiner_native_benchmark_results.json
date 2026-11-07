@@ -1,0 +1,40 @@
+{
+  "benchmarks": [
+    {
+      "grid_size": 25,
+      "n_components": 4,
+      "repetitions": 200,
+      "median_ms": 0.002856,
+      "mean_ms": 0.00299496,
+      "min_ms": 0.002776,
+      "max_ms": 0.00453
+    },
+    {
+      "grid_size": 100,
+      "n_components": 4,
+      "repetitions": 200,
+      "median_ms": 0.01329,
+      "mean_ms": 0.0138805,
+      "min_ms": 0.012683,
+      "max_ms": 0.027433
+    },
+    {
+      "grid_size": 500,
+      "n_components": 4,
+      "repetitions": 200,
+      "median_ms": 0.15463,
+      "mean_ms": 0.162135,
+      "min_ms": 0.124931,
+      "max_ms": 0.363176
+    },
+    {
+      "grid_size": 2000,
+      "n_components": 4,
+      "repetitions": 200,
+      "median_ms": 0.894832,
+      "mean_ms": 0.920528,
+      "min_ms": 0.794263,
+      "max_ms": 2.24422
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "artifacts": {
+    "input": "provenance/original_cantera_symbols.jsonl",
+    "related_exact_pinned_files": [
+      "provenance/oracle_baseline_pinned.json",
+      "provenance/pinned_native_differential_results.jsonl"
+    ],
+    "rows": "provenance/revalidation_421.jsonl"
+  },
+  "equivalent_proven_retained": 0,
+  "legacy_421_finding": "All 421 claims were produced by broad name/class/file heuristics. None has an explicit per-symbol exact-pinned evidence link, so none is retained as EQUIVALENT_PROVEN by this revalidation.",
+  "legacy_claims_revalidated": 421,
+  "legacy_equivalent_proven": 421,
+  "proof_standard": "EQUIVALENT_PROVEN requires a stable C++ symbol id and source-body hash, a concrete Python definition and body hash, and exact-pinned differential evidence explicitly linking both implementations with inputs, tolerances, and pass/fail results.",
+  "python_mapping_counts": {
+    "AMBIGUOUS_NAME_MATCH": 111,
+    "RESOLVED_UNIQUE_NAME": 71,
+    "UNRESOLVED": 239
+  },
+  "revalidated_status_counts": {
+    "NOT_PORTED_MAPPING_UNRESOLVED": 239,
+    "PARTIAL_MAPPING_REQUIRES_REVIEW": 171,
+    "RELATED_BEHAVIOR_VALIDATED_MAPPING_UNREVIEWED": 11
+  },
+  "rows_with_explicit_per_symbol_exact_pinned_evidence": 0,
+  "rows_with_related_exact_pinned_behavior": 11,
+  "schema_version": 1,
+  "source_body_status_counts": {
+    "DECLARATION_ONLY_NO_DEFINITION_RESOLVED": 78,
+    "DEFINITION_AT_INVENTORY_ROW": 177,
+    "OUT_OF_LINE_DEFINITION_RESOLVED": 166
+  },
+  "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "source_files_missing": 0,
+  "source_fragment_form_counts": {
+    "declaration": 244,
+    "definition": 177
+  },
+  "source_hash_mismatches": 0,
+  "unsupported_782_reconciliation": {
+    "authoritative_inventory_total": 5784,
+    "authoritative_legacy_counts": {
+      "EQUIVALENT_PROVEN": 421,
+      "NOT_PORTED": 5027,
+      "PARTIALLY_PORTED": 336
+    },
+    "claimed_count": 782,
+    "matching_row_level_audit_found": false,
+    "note": "No 782-row equivalent-proven audit or derivation is present. Even 421 + 336 equals 757, not 782. The 782 claim is unsupported and must not be used as a conversion numerator."
+  }
+}

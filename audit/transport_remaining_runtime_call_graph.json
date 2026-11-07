@@ -1,0 +1,101 @@
+{
+  "subsystem": "transport",
+  "closure_name": "TRANSPORT_FINAL_REMAINING_CLOSURE",
+  "call_chains": {
+    "IonGasTransport": {
+      "init": [
+        "setupCollisionParameters",
+        "setupN64",
+        "setupCollisionIntegral"
+      ],
+      "viscosity": [
+        "update_T",
+        "update_C",
+        "updateViscosity_T",
+        "multiply"
+      ],
+      "thermalConductivity": [
+        "update_T",
+        "update_C",
+        "updateCond_T"
+      ],
+      "getMobilities": [
+        "update_T",
+        "update_C",
+        "updateDiff_T"
+      ],
+      "getMixDiffCoeffs": [
+        "update_T",
+        "update_C",
+        "updateDiff_T"
+      ],
+      "electricalConductivity": [
+        "getMobilities"
+      ],
+      "fitDiffCoeffs": [
+        "GasTransport::fitDiffCoeffs",
+        "omega11_n64",
+        "polyfit"
+      ],
+      "setupN64": [
+        "m_gamma.resize",
+        "Tang_C6_combination_rule"
+      ]
+    },
+    "UnityLewisTransport": {
+      "getMixDiffCoeffs": [
+        "thermalConductivity",
+        "thermo.density",
+        "thermo.cp_mass"
+      ],
+      "getMixDiffCoeffsMass": [
+        "thermalConductivity",
+        "thermo.density",
+        "thermo.cp_mass"
+      ],
+      "getThermalDiffCoeffs": [
+        "zeros"
+      ],
+      "getMixDiffCoeffsMole": [
+        "NotImplementedError"
+      ]
+    },
+    "WaterTransport": {
+      "init": [
+        "thermo_assignment"
+      ],
+      "viscosity": [
+        "thermo.temperature",
+        "thermo.density",
+        "thermo.isothermalCompressibility",
+        "SengersWatson1986"
+      ],
+      "bulkViscosity": [
+        "return 0.0"
+      ],
+      "thermalConductivity": [
+        "thermo.temperature",
+        "thermo.density",
+        "thermo.isothermalCompressibility",
+        "thermo.thermalExpansionCoeff",
+        "SengersWatson1986"
+      ]
+    },
+    "TransportFactory": {
+      "factory": [
+        "singleton_accessor"
+      ],
+      "deleteFactory": [
+        "singleton_destructor"
+      ],
+      "newTransport_model": [
+        "TransportFactory.create",
+        "tr.init"
+      ],
+      "newTransport_thermo": [
+        "phase.input",
+        "newTransport_model"
+      ]
+    }
+  }
+}

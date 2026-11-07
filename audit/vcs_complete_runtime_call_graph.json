@@ -1,0 +1,2054 @@
+{
+  "include/cantera/equil/vcs_VolPhase.h:123:updateFromVCS_MoleNumbers": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:123:updateFromVCS_MoleNumbers",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "updateFromVCS_MoleNumbers",
+    "source_lines": [
+      123,
+      123
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.updateFromVCS_MoleNumbers",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:137:sendToVCS_ActCoeff": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:137:sendToVCS_ActCoeff",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "sendToVCS_ActCoeff",
+    "source_lines": [
+      137,
+      137
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.sendToVCS_ActCoeff",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:143:setElectricPotential": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:143:setElectricPotential",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "setElectricPotential",
+    "source_lines": [
+      143,
+      143
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.setElectricPotential",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:149:electricPotential": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:149:electricPotential",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "electricPotential",
+    "source_lines": [
+      149,
+      149
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.electricPotential",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:159:GStar_calc_one": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:159:GStar_calc_one",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "GStar_calc_one",
+    "source_lines": [
+      159,
+      159
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.GStar_calc_one",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:167:G0_calc_one": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:167:G0_calc_one",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "G0_calc_one",
+    "source_lines": [
+      167,
+      167
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.G0_calc_one",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:179:sendToVCS_VolPM": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:179:sendToVCS_VolPM",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "sendToVCS_VolPM",
+    "source_lines": [
+      179,
+      179
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.sendToVCS_VolPM",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:191:sendToVCS_GStar": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:191:sendToVCS_GStar",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "sendToVCS_GStar",
+    "source_lines": [
+      191,
+      191
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.sendToVCS_GStar",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:199:setState_TP": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:199:setState_TP",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "setState_TP",
+    "source_lines": [
+      199,
+      199
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.setState_TP",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:207:d": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:207:d",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "d",
+    "source_lines": [
+      207,
+      207
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.d",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:213:sendToVCS_LnActCoeffJac": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:213:sendToVCS_LnActCoeffJac",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "sendToVCS_LnActCoeffJac",
+    "source_lines": [
+      213,
+      213
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.sendToVCS_LnActCoeffJac",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:216:totalMoles": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:216:totalMoles",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "totalMoles",
+    "source_lines": [
+      216,
+      216
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.totalMoles",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:224:molefraction": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:224:molefraction",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "molefraction",
+    "source_lines": [
+      224,
+      224
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.molefraction",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:233:setTotalMoles": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:233:setTotalMoles",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "setTotalMoles",
+    "source_lines": [
+      233,
+      233
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.setTotalMoles",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:240:setMolesOutOfDate": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:240:setMolesOutOfDate",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "setMolesOutOfDate",
+    "source_lines": [
+      240,
+      240
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.setMolesOutOfDate",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:243:setMolesCurrent": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:243:setMolesCurrent",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "setMolesCurrent",
+    "source_lines": [
+      243,
+      243
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.setMolesCurrent",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:246:elemResize": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:246:elemResize",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "elemResize",
+    "source_lines": [
+      246,
+      246
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.elemResize",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:253:setMoleFractions": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:253:setMoleFractions",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "setMoleFractions",
+    "source_lines": [
+      253,
+      253
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.setMoleFractions",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:257:moleFractions": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:257:moleFractions",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "moleFractions",
+    "source_lines": [
+      257,
+      257
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.moleFractions",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:259:moleFraction": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:259:moleFraction",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "moleFraction",
+    "source_lines": [
+      259,
+      259
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.moleFraction",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:273:creationMoleNumbers": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:273:creationMoleNumbers",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "creationMoleNumbers",
+    "source_lines": [
+      273,
+      273
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.creationMoleNumbers",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:276:isIdealSoln": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:276:isIdealSoln",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "isIdealSoln",
+    "source_lines": [
+      276,
+      276
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.isIdealSoln",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:280:phiVarIndex": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:280:phiVarIndex",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "phiVarIndex",
+    "source_lines": [
+      280,
+      280
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.phiVarIndex",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:282:setPhiVarIndex": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:282:setPhiVarIndex",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "setPhiVarIndex",
+    "source_lines": [
+      282,
+      282
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.setPhiVarIndex",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:303:exists": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:303:exists",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "exists",
+    "source_lines": [
+      303,
+      303
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.exists",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:314:setExistence": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:314:setExistence",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "setExistence",
+    "source_lines": [
+      314,
+      314
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.setExistence",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:324:spGlobalIndexVCS": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:324:spGlobalIndexVCS",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "spGlobalIndexVCS",
+    "source_lines": [
+      324,
+      324
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.spGlobalIndexVCS",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:333:setSpGlobalIndexVCS": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:333:setSpGlobalIndexVCS",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "setSpGlobalIndexVCS",
+    "source_lines": [
+      333,
+      333
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.setSpGlobalIndexVCS",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:336:elemGlobalIndex": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:336:elemGlobalIndex",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "elemGlobalIndex",
+    "source_lines": [
+      336,
+      336
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.elemGlobalIndex",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:343:setElemGlobalIndex": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:343:setElemGlobalIndex",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "setElemGlobalIndex",
+    "source_lines": [
+      343,
+      343
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.setElemGlobalIndex",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:346:nElemConstraints": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:346:nElemConstraints",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "nElemConstraints",
+    "source_lines": [
+      346,
+      346
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.nElemConstraints",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:352:elementName": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:352:elementName",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "elementName",
+    "source_lines": [
+      352,
+      352
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.elementName",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:358:elementType": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:358:elementType",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "elementType",
+    "source_lines": [
+      358,
+      358
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.elementType",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:368:transferElementsFM": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:368:transferElementsFM",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "transferElementsFM",
+    "source_lines": [
+      368,
+      368
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.transferElementsFM",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:375:getFormulaMatrix": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:375:getFormulaMatrix",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "getFormulaMatrix",
+    "source_lines": [
+      375,
+      375
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.getFormulaMatrix",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:386:speciesUnknownType": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:386:speciesUnknownType",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "speciesUnknownType",
+    "source_lines": [
+      386,
+      386
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.speciesUnknownType",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:388:elementActive": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:388:elementActive",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "elementActive",
+    "source_lines": [
+      388,
+      388
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.elementActive",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:391:nSpecies": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:391:nSpecies",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "nSpecies",
+    "source_lines": [
+      391,
+      391
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.nSpecies",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:394:eos_name": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:394:eos_name",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "eos_name",
+    "source_lines": [
+      394,
+      394
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.eos_name",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:402:_updateActCoeff": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:402:_updateActCoeff",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "_updateActCoeff",
+    "source_lines": [
+      402,
+      402
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase._updateActCoeff",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:409:_updateGStar": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:409:_updateGStar",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "_updateGStar",
+    "source_lines": [
+      409,
+      409
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase._updateGStar",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:413:_updateG0": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:413:_updateG0",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "_updateG0",
+    "source_lines": [
+      413,
+      413
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase._updateG0",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:420:_updateVolStar": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:420:_updateVolStar",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "_updateVolStar",
+    "source_lines": [
+      420,
+      420
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase._updateVolStar",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:429:_updateVolPM": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:429:_updateVolPM",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "_updateVolPM",
+    "source_lines": [
+      429,
+      429
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase._updateVolPM",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:441:_updateLnActCoeffJac": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:441:_updateLnActCoeffJac",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "_updateLnActCoeffJac",
+    "source_lines": [
+      441,
+      441
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase._updateLnActCoeffJac",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:447:_updateMoleFractionDependencies": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:447:_updateMoleFractionDependencies",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "_updateMoleFractionDependencies",
+    "source_lines": [
+      447,
+      447
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase._updateMoleFractionDependencies",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_VolPhase.h:650:np_dLnActCoeffdMolNumber": {
+    "stable_symbol_id": "include/cantera/equil/vcs_VolPhase.h:650:np_dLnActCoeffdMolNumber",
+    "source_file": "include/cantera/equil/vcs_VolPhase.h",
+    "class": "vcs_VolPhase",
+    "method": "np_dLnActCoeffdMolNumber",
+    "source_lines": [
+      650,
+      650
+    ],
+    "python_target": "cantera_python.vcs.vcs_VolPhase.np_dLnActCoeffdMolNumber",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_internal.h:54:vcs_l2norm": {
+    "stable_symbol_id": "include/cantera/equil/vcs_internal.h:54:vcs_l2norm",
+    "source_file": "include/cantera/equil/vcs_internal.h",
+    "class": "",
+    "method": "vcs_l2norm",
+    "source_lines": [
+      54,
+      54
+    ],
+    "python_target": "cantera_python.vcs.vcs_l2norm",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_internal.h:65:vcs_speciesType_string": {
+    "stable_symbol_id": "include/cantera/equil/vcs_internal.h:65:vcs_speciesType_string",
+    "source_file": "include/cantera/equil/vcs_internal.h",
+    "class": "",
+    "method": "vcs_speciesType_string",
+    "source_lines": [
+      65,
+      65
+    ],
+    "python_target": "cantera_python.vcs.vcs_speciesType_string",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_internal.h:76:vcs_doubleEqual": {
+    "stable_symbol_id": "include/cantera/equil/vcs_internal.h:76:vcs_doubleEqual",
+    "source_file": "include/cantera/equil/vcs_internal.h",
+    "class": "",
+    "method": "vcs_doubleEqual",
+    "source_lines": [
+      76,
+      76
+    ],
+    "python_target": "cantera_python.vcs.vcs_doubleEqual",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:126:vcs_basopt": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:126:vcs_basopt",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_basopt",
+    "source_lines": [
+      126,
+      126
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_basopt",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:135:vcs_species_type": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:135:vcs_species_type",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_species_type",
+    "source_lines": [
+      135,
+      135
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_species_type",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:168:vcs_evaluate_speciesType": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:168:vcs_evaluate_speciesType",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_evaluate_speciesType",
+    "source_lines": [
+      168,
+      168
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_evaluate_speciesType",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:254:vcs_dfe": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:254:vcs_dfe",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_dfe",
+    "source_lines": [
+      254,
+      254
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_dfe",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:263:vcs_updateVP": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:263:vcs_updateVP",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_updateVP",
+    "source_lines": [
+      263,
+      263
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_updateVP",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:279:vcs_popPhasePossible": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:279:vcs_popPhasePossible",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_popPhasePossible",
+    "source_lines": [
+      279,
+      279
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_popPhasePossible",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:286:vcs_popPhaseID": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:286:vcs_popPhaseID",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_popPhaseID",
+    "source_lines": [
+      286,
+      286
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_popPhaseID",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:304:vcs_popPhaseRxnStepSizes": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:304:vcs_popPhaseRxnStepSizes",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_popPhaseRxnStepSizes",
+    "source_lines": [
+      304,
+      304
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_popPhaseRxnStepSizes",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:325:vcs_RxnStepSizes": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:325:vcs_RxnStepSizes",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_RxnStepSizes",
+    "source_lines": [
+      325,
+      325
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_RxnStepSizes",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:332:vcs_tmoles": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:332:vcs_tmoles",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_tmoles",
+    "source_lines": [
+      332,
+      332
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_tmoles",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:334:check_tmoles": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:334:check_tmoles",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "check_tmoles",
+    "source_lines": [
+      334,
+      334
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.check_tmoles",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:380:vcs_switch_pos": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:380:vcs_switch_pos",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_switch_pos",
+    "source_lines": [
+      380,
+      380
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_switch_pos",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:387:vcs_phaseStabilityTest": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:387:vcs_phaseStabilityTest",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_phaseStabilityTest",
+    "source_lines": [
+      387,
+      387
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_phaseStabilityTest",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:399:vcs_evalSS_TP": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:399:vcs_evalSS_TP",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_evalSS_TP",
+    "source_lines": [
+      399,
+      399
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_evalSS_TP",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:429:vcs_prep": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:429:vcs_prep",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_prep",
+    "source_lines": [
+      429,
+      429
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_prep",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:456:vcs_elem_rearrange": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:456:vcs_elem_rearrange",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_elem_rearrange",
+    "source_lines": [
+      456,
+      456
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_elem_rearrange",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:467:vcs_switch_elem_pos": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:467:vcs_switch_elem_pos",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_switch_elem_pos",
+    "source_lines": [
+      467,
+      467
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_switch_elem_pos",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:478:vcs_Hessian_diag_adj": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:478:vcs_Hessian_diag_adj",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_Hessian_diag_adj",
+    "source_lines": [
+      478,
+      478
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_Hessian_diag_adj",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:485:vcs_Hessian_actCoeff_diag": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:485:vcs_Hessian_actCoeff_diag",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_Hessian_actCoeff_diag",
+    "source_lines": [
+      485,
+      485
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_Hessian_actCoeff_diag",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:494:vcs_CalcLnActCoeffJac": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:494:vcs_CalcLnActCoeffJac",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_CalcLnActCoeffJac",
+    "source_lines": [
+      494,
+      494
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_CalcLnActCoeffJac",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:504:vcs_report": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:504:vcs_report",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_report",
+    "source_lines": [
+      504,
+      504
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_report",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:511:vcs_elab": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:511:vcs_elab",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_elab",
+    "source_lines": [
+      511,
+      511
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_elab",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:534:vcs_elabcheck": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:534:vcs_elabcheck",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_elabcheck",
+    "source_lines": [
+      534,
+      534
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_elabcheck",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:569:vcs_elcorr": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:569:vcs_elcorr",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_elcorr",
+    "source_lines": [
+      569,
+      569
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_elcorr",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:572:vcs_inest": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:572:vcs_inest",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_inest",
+    "source_lines": [
+      572,
+      572
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_inest",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:584:vcs_setMolesLinProg": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:584:vcs_setMolesLinProg",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_setMolesLinProg",
+    "source_lines": [
+      584,
+      584
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_setMolesLinProg",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:594:vcs_prob_specifyFully": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:594:vcs_prob_specifyFully",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_prob_specifyFully",
+    "source_lines": [
+      594,
+      594
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_prob_specifyFully",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:609:vcs_zero_species": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:609:vcs_zero_species",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_zero_species",
+    "source_lines": [
+      609,
+      609
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_zero_species",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:625:vcs_delete_species": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:625:vcs_delete_species",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_delete_species",
+    "source_lines": [
+      625,
+      625
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_delete_species",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:641:vcs_delete_multiphase": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:641:vcs_delete_multiphase",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_delete_multiphase",
+    "source_lines": [
+      641,
+      641
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_delete_multiphase",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:654:delta_species": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:654:delta_species",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "delta_species",
+    "source_lines": [
+      654,
+      654
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.delta_species",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:666:vcs_add_all_deleted": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:666:vcs_add_all_deleted",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_add_all_deleted",
+    "source_lines": [
+      666,
+      666
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_add_all_deleted",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:683:vcs_recheck_deleted": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:683:vcs_recheck_deleted",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_recheck_deleted",
+    "source_lines": [
+      683,
+      683
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_recheck_deleted",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:720:vcs_minor_alt_calc": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:720:vcs_minor_alt_calc",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_minor_alt_calc",
+    "source_lines": [
+      720,
+      720
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_minor_alt_calc",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:742:vcs_globStepDamp": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:742:vcs_globStepDamp",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_globStepDamp",
+    "source_lines": [
+      742,
+      742
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_globStepDamp",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:74:solve_TP": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:74:solve_TP",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "solve_TP",
+    "source_lines": [
+      74,
+      74
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.solve_TP",
+    "dependency_symbols": [
+      "cantera_python.vcs.VCS_SOLVE.vcs_evalSS_TP",
+      "cantera_python.vcs.VCS_SOLVE.vcs_prep",
+      "cantera_python.vcs.VCS_SOLVE.solve_tp_component_calc",
+      "cantera_python.vcs.VCS_SOLVE.solve_tp_inner",
+      "cantera_python.vcs.VCS_SOLVE.solve_tp_equilib_check",
+      "cantera_python.vcs.VCS_SOLVE.solve_tp_elem_abund_check",
+      "cantera_python.vcs.VCS_SOLVE.vcs_recheck_deleted",
+      "cantera_python.vcs.VCS_SOLVE.vcs_add_all_deleted"
+    ],
+    "caller_symbols": [
+      "cantera_python.vcs.MultiPhase.equilibrate",
+      "cantera_python.vcs.vcs_equilibrate"
+    ],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:750:l2normdg": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:750:l2normdg",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "l2normdg",
+    "source_lines": [
+      750,
+      750
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.l2normdg",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:756:vcs_SSPhase": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:756:vcs_SSPhase",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_SSPhase",
+    "source_lines": [
+      756,
+      756
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_SSPhase",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:766:vcs_counters_init": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:766:vcs_counters_init",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_counters_init",
+    "source_lines": [
+      766,
+      766
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_counters_init",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:769:vcs_TCounters_report": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:769:vcs_TCounters_report",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_TCounters_report",
+    "source_lines": [
+      769,
+      769
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_TCounters_report",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:771:vcs_setFlagsVolPhases": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:771:vcs_setFlagsVolPhases",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_setFlagsVolPhases",
+    "source_lines": [
+      771,
+      771
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_setFlagsVolPhases",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:781:vcs_updateMolNumVolPhases": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:781:vcs_updateMolNumVolPhases",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_updateMolNumVolPhases",
+    "source_lines": [
+      781,
+      781
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_updateMolNumVolPhases",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:784:solve_tp_component_calc": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:784:solve_tp_component_calc",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "solve_tp_component_calc",
+    "source_lines": [
+      784,
+      784
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.solve_tp_component_calc",
+    "dependency_symbols": [
+      "cantera_python.vcs.VCS_SOLVE.vcs_basopt",
+      "cantera_python.vcs.VCS_SOLVE.vcs_updateVP",
+      "cantera_python.vcs.VCS_SOLVE.vcs_deltag",
+      "cantera_python.vcs.VCS_SOLVE.vcs_evaluate_speciesType",
+      "cantera_python.vcs.VCS_SOLVE.vcs_elabcheck",
+      "cantera_python.vcs.VCS_SOLVE.vcs_elcorr"
+    ],
+    "caller_symbols": [
+      "cantera_python.vcs.VCS_SOLVE.solve_TP",
+      "cantera_python.vcs.VCS_SOLVE.solve_tp_inner"
+    ],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:816:prob_report": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:816:prob_report",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "prob_report",
+    "source_lines": [
+      816,
+      816
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.prob_report",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:832:addOnePhaseSpecies": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:832:addOnePhaseSpecies",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "addOnePhaseSpecies",
+    "source_lines": [
+      832,
+      832
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.addOnePhaseSpecies",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:845:addElement": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:845:addElement",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "addElement",
+    "source_lines": [
+      845,
+      845
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.addElement",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:848:elementIndex": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:848:elementIndex",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "elementIndex",
+    "source_lines": [
+      848,
+      848
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.elementIndex",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "include/cantera/equil/vcs_solve.h:90:vcs_reinsert_deleted": {
+    "stable_symbol_id": "include/cantera/equil/vcs_solve.h:90:vcs_reinsert_deleted",
+    "source_file": "include/cantera/equil/vcs_solve.h",
+    "class": "VCS_SOLVE",
+    "method": "vcs_reinsert_deleted",
+    "source_lines": [
+      90,
+      90
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.vcs_reinsert_deleted",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/MultiPhase.cpp:623:eqsolve": {
+    "stable_symbol_id": "src/equil/MultiPhase.cpp:623:eqsolve",
+    "source_file": "src/equil/MultiPhase.cpp",
+    "class": "",
+    "method": "eqsolve",
+    "source_lines": [
+      623,
+      623
+    ],
+    "python_target": "cantera_python.vcs.MultiPhase.eqsolve",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_MultiPhaseEquil.cpp:363:equilibrate_TP": {
+    "stable_symbol_id": "src/equil/vcs_MultiPhaseEquil.cpp:363:equilibrate_TP",
+    "source_file": "src/equil/vcs_MultiPhaseEquil.cpp",
+    "class": "",
+    "method": "equilibrate_TP",
+    "source_lines": [
+      363,
+      363
+    ],
+    "python_target": "cantera_python.vcs.MultiPhase.equilibrate_TP",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_MultiPhaseEquil.cpp:432:mu": {
+    "stable_symbol_id": "src/equil/vcs_MultiPhaseEquil.cpp:432:mu",
+    "source_file": "src/equil/vcs_MultiPhaseEquil.cpp",
+    "class": "",
+    "method": "mu",
+    "source_lines": [
+      432,
+      432
+    ],
+    "python_target": "cantera_python.vcs.MultiPhase.mu",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_VolPhase.cpp:243:CanteraError": {
+    "stable_symbol_id": "src/equil/vcs_VolPhase.cpp:243:CanteraError",
+    "source_file": "src/equil/vcs_VolPhase.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      243,
+      243
+    ],
+    "python_target": "cantera_python.vcs.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_VolPhase.cpp:438:ActCoeff_Base": {
+    "stable_symbol_id": "src/equil/vcs_VolPhase.cpp:438:ActCoeff_Base",
+    "source_file": "src/equil/vcs_VolPhase.cpp",
+    "class": "",
+    "method": "ActCoeff_Base",
+    "source_lines": [
+      438,
+      438
+    ],
+    "python_target": "cantera_python.vcs.ActCoeff_Base",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_VolPhase.cpp:439:Xmol_Base": {
+    "stable_symbol_id": "src/equil/vcs_VolPhase.cpp:439:Xmol_Base",
+    "source_file": "src/equil/vcs_VolPhase.cpp",
+    "class": "",
+    "method": "Xmol_Base",
+    "source_lines": [
+      439,
+      439
+    ],
+    "python_target": "cantera_python.vcs.Xmol_Base",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_VolPhase.cpp:629:IndexError": {
+    "stable_symbol_id": "src/equil/vcs_VolPhase.cpp:629:IndexError",
+    "source_file": "src/equil/vcs_VolPhase.cpp",
+    "class": "",
+    "method": "IndexError",
+    "source_lines": [
+      629,
+      629
+    ],
+    "python_target": "cantera_python.vcs.IndexError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:1144:CanteraError": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:1144:CanteraError",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      1144,
+      1144
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:1285:awSpace": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:1285:awSpace",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "awSpace",
+    "source_lines": [
+      1285,
+      1285
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.awSpace",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:1286:aw": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:1286:aw",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "aw",
+    "source_lines": [
+      1286,
+      1286
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.aw",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:1287:sm": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:1287:sm",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "sm",
+    "source_lines": [
+      1287,
+      1287
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.sm",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:1565:CanteraError": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:1565:CanteraError",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      1565,
+      1565
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:1623:gaTPhase": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:1623:gaTPhase",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "gaTPhase",
+    "source_lines": [
+      1623,
+      1623
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.gaTPhase",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:1654:CanteraError": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:1654:CanteraError",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      1654,
+      1654
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:1831:ga_save": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:1831:ga_save",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "ga_save",
+    "source_lines": [
+      1831,
+      1831
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.ga_save",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:1960:A": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:1960:A",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "A",
+    "source_lines": [
+      1960,
+      1960
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.A",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:2164:sm": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:2164:sm",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "sm",
+    "source_lines": [
+      2164,
+      2164
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.sm",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:2165:ss": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:2165:ss",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "ss",
+    "source_lines": [
+      2165,
+      2165
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.ss",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:2166:sa": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:2166:sa",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "sa",
+    "source_lines": [
+      2166,
+      2166
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.sa",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:2167:wx": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:2167:wx",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "wx",
+    "source_lines": [
+      2167,
+      2167
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.wx",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:2168:aw": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:2168:aw",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "aw",
+    "source_lines": [
+      2168,
+      2168
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.aw",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:2392:sm": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:2392:sm",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "sm",
+    "source_lines": [
+      2392,
+      2392
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.sm",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:2393:ss": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:2393:ss",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "ss",
+    "source_lines": [
+      2393,
+      2393
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.ss",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:2394:sa": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:2394:sa",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "sa",
+    "source_lines": [
+      2394,
+      2394
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.sa",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:2395:aw": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:2395:aw",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "aw",
+    "source_lines": [
+      2395,
+      2395
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.aw",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:2535:exp": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:2535:exp",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "exp",
+    "source_lines": [
+      2535,
+      2535
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.exp",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:257:numPhSp": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:257:numPhSp",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "numPhSp",
+    "source_lines": [
+      257,
+      257
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.numPhSp",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:2711:numPhSpecies": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:2711:numPhSpecies",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "numPhSpecies",
+    "source_lines": [
+      2711,
+      2711
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.numPhSpecies",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:2853:CanteraError": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:2853:CanteraError",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      2853,
+      2853
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:518:creationGlobalRxnNumbers": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:518:creationGlobalRxnNumbers",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "creationGlobalRxnNumbers",
+    "source_lines": [
+      518,
+      518
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.creationGlobalRxnNumbers",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:574:fracDelta": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:574:fracDelta",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "fracDelta",
+    "source_lines": [
+      574,
+      574
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.fracDelta",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:575:X_est": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:575:X_est",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "X_est",
+    "source_lines": [
+      575,
+      575
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.X_est",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:911:X_est": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:911:X_est",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "X_est",
+    "source_lines": [
+      911,
+      911
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.X_est",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:912:delFrac": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:912:delFrac",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "delFrac",
+    "source_lines": [
+      912,
+      912
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.delFrac",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:913:E_phi": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:913:E_phi",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "E_phi",
+    "source_lines": [
+      913,
+      913
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.E_phi",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:914:fracDelta_old": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:914:fracDelta_old",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "fracDelta_old",
+    "source_lines": [
+      914,
+      914
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.fracDelta_old",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:915:fracDelta_raw": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:915:fracDelta_raw",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "fracDelta_raw",
+    "source_lines": [
+      915,
+      915
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.fracDelta_raw",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:916:creationGlobalRxnNumbers": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:916:creationGlobalRxnNumbers",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "creationGlobalRxnNumbers",
+    "source_lines": [
+      916,
+      916
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.creationGlobalRxnNumbers",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve.cpp:925:fracDelta_new": {
+    "stable_symbol_id": "src/equil/vcs_solve.cpp:925:fracDelta_new",
+    "source_file": "src/equil/vcs_solve.cpp",
+    "class": "",
+    "method": "fracDelta_new",
+    "source_lines": [
+      925,
+      925
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.fracDelta_new",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve_TP.cpp:2062:ipiv": {
+    "stable_symbol_id": "src/equil/vcs_solve_TP.cpp:2062:ipiv",
+    "source_file": "src/equil/vcs_solve_TP.cpp",
+    "class": "",
+    "method": "ipiv",
+    "source_lines": [
+      2062,
+      2062
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.ipiv",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve_TP.cpp:2089:CanteraError": {
+    "stable_symbol_id": "src/equil/vcs_solve_TP.cpp:2089:CanteraError",
+    "source_file": "src/equil/vcs_solve_TP.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      2089,
+      2089
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve_TP.cpp:2099:CanteraError": {
+    "stable_symbol_id": "src/equil/vcs_solve_TP.cpp:2099:CanteraError",
+    "source_file": "src/equil/vcs_solve_TP.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      2099,
+      2099
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve_TP.cpp:2218:CanteraError": {
+    "stable_symbol_id": "src/equil/vcs_solve_TP.cpp:2218:CanteraError",
+    "source_file": "src/equil/vcs_solve_TP.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      2218,
+      2218
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve_TP.cpp:2479:CanteraError": {
+    "stable_symbol_id": "src/equil/vcs_solve_TP.cpp:2479:CanteraError",
+    "source_file": "src/equil/vcs_solve_TP.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      2479,
+      2479
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve_TP.cpp:2989:CanteraError": {
+    "stable_symbol_id": "src/equil/vcs_solve_TP.cpp:2989:CanteraError",
+    "source_file": "src/equil/vcs_solve_TP.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      2989,
+      2989
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "src/equil/vcs_solve_TP.cpp:31:dchange": {
+    "stable_symbol_id": "src/equil/vcs_solve_TP.cpp:31:dchange",
+    "source_file": "src/equil/vcs_solve_TP.cpp",
+    "class": "",
+    "method": "dchange",
+    "source_lines": [
+      31,
+      31
+    ],
+    "python_target": "cantera_python.vcs.VCS_SOLVE.dchange",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  },
+  "test_problems/VCSnonideal/NaCl_equil/nacl_equil.cpp:87:Xmol": {
+    "stable_symbol_id": "test_problems/VCSnonideal/NaCl_equil/nacl_equil.cpp:87:Xmol",
+    "source_file": "test_problems/VCSnonideal/NaCl_equil/nacl_equil.cpp",
+    "class": "",
+    "method": "Xmol",
+    "source_lines": [
+      87,
+      87
+    ],
+    "python_target": "cantera_python.vcs.Xmol",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "EQUIVALENT_PROVEN"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "phases": [
+    {
+      "file": "gri30.yaml",
+      "nElements": 5,
+      "nSpecies": 53,
+      "temperature": 1200,
+      "density": 0.34999999999999998,
+      "molarDensity": 0.1736111111111111,
+      "meanMolecularWeight": 2.016,
+      "elementNames": ["O", "H", "C", "N", "Ar"],
+      "atomicWeights": [15.999000000000001, 1.008, 12.010999999999999, 14.007, 39.950000000000003],
+      "nAtoms_sample": [0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 1, 0, 0, 0]
+    },
+    {
+      "file": "air.yaml",
+      "nElements": 3,
+      "nSpecies": 8,
+      "temperature": 1200,
+      "density": 0.34999999999999998,
+      "molarDensity": 0.012081463583016917,
+      "meanMolecularWeight": 28.969999999999992,
+      "elementNames": ["O", "N", "Ar"],
+      "atomicWeights": [15.999000000000001, 14.007, 39.950000000000003],
+      "nAtoms_sample": [1, 0, 0, 2, 0, 0, 0, 1, 0, 1, 1, 0, 2, 1, 0]
+    },
+    {
+      "file": "h2o2.yaml",
+      "nElements": 4,
+      "nSpecies": 10,
+      "temperature": 1200,
+      "density": 0.34999999999999998,
+      "molarDensity": 0.1736111111111111,
+      "meanMolecularWeight": 2.016,
+      "elementNames": ["O", "H", "Ar", "N"],
+      "atomicWeights": [15.999000000000001, 1.008, 39.950000000000003, 14.007],
+      "nAtoms_sample": [0, 2, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 1, 1, 0, 0]
+    }
+  ]
+}

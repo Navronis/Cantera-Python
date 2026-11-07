@@ -1,0 +1,13 @@
+{"case_id": 0, "name": "negative_temperature", "api_target": "state_tpx", "mech": "h2o2.yaml", "T": -50.0, "P": 101325.0, "X": {"H2": 0.5, "O2": 0.5}, "expected_category": "INVALID_TEMPERATURE"}
+{"case_id": 1, "name": "zero_temperature", "api_target": "state_tpx", "mech": "h2o2.yaml", "T": 0.0, "P": 101325.0, "X": {"H2": 0.5, "O2": 0.5}, "expected_category": "INVALID_TEMPERATURE"}
+{"case_id": 2, "name": "negative_pressure", "api_target": "state_tpx", "mech": "h2o2.yaml", "T": 300.0, "P": -101325.0, "X": {"H2": 0.5, "O2": 0.5}, "expected_category": "INVALID_PRESSURE"}
+{"case_id": 3, "name": "zero_pressure", "api_target": "state_tpx", "mech": "h2o2.yaml", "T": 300.0, "P": 0.0, "X": {"H2": 0.5, "O2": 0.5}, "expected_category": "INVALID_PRESSURE"}
+{"case_id": 4, "name": "nan_temperature", "api_target": "state_tpx", "mech": "h2o2.yaml", "T": NaN, "P": 101325.0, "X": {"H2": 0.5, "O2": 0.5}, "expected_category": "NONFINITE_STATE"}
+{"case_id": 5, "name": "inf_temperature", "api_target": "state_tpx", "mech": "h2o2.yaml", "T": Infinity, "P": 101325.0, "X": {"H2": 0.5, "O2": 0.5}, "expected_category": "NONFINITE_STATE"}
+{"case_id": 6, "name": "nan_pressure", "api_target": "state_tpx", "mech": "h2o2.yaml", "T": 300.0, "P": NaN, "X": {"H2": 0.5, "O2": 0.5}, "expected_category": "NONFINITE_STATE"}
+{"case_id": 7, "name": "all_zero_composition", "api_target": "state_tpx", "mech": "h2o2.yaml", "T": 300.0, "P": 101325.0, "X": {"H2": 0.0, "O2": 0.0}, "expected_category": "INVALID_COMPOSITION"}
+{"case_id": 8, "name": "all_negative_composition", "api_target": "state_tpx", "mech": "h2o2.yaml", "T": 300.0, "P": 101325.0, "X": {"H2": -1.0, "O2": -1.0}, "expected_category": "INVALID_COMPOSITION"}
+{"case_id": 9, "name": "nan_mole_fraction", "api_target": "state_tpx", "mech": "h2o2.yaml", "T": 300.0, "P": 101325.0, "X": {"H2": NaN, "O2": 1.0}, "expected_category": "NONFINITE_STATE"}
+{"case_id": 10, "name": "invalid_leading_dim_ldx", "api_target": "flux_dimensions", "mech": "h2o2.yaml", "ndir": 1, "ldx": 2, "ldf": 10, "expected_category": "INVALID_LEADING_DIMENSION"}
+{"case_id": 11, "name": "invalid_leading_dim_ldf", "api_target": "flux_dimensions", "mech": "h2o2.yaml", "ndir": 1, "ldx": 10, "ldf": 2, "expected_category": "INVALID_LEADING_DIMENSION"}
+{"case_id": 12, "name": "unsupported_transport_model", "api_target": "transport_model", "mech": "h2o2.yaml", "model": "bogus_transport_model", "expected_category": "UNSUPPORTED_OPERATION"}

@@ -1,0 +1,21 @@
+{
+  "wave": 1,
+  "campaign_description": "GENUINE_INDEPENDENT_START_INVERSE_SOLVE",
+  "start_state_independence": "VERIFIED_SEPARATED (|Tb-Ta|/Ta >= 0.15 guaranteed)",
+  "cases": 4000,
+  "passed": 4000,
+  "failed": 0,
+  "cubic_eos_cross_phase_checks": 84,
+  "relative_error_mean": 3.779243031277646e-10,
+  "relative_error_median": 5.512712424023368e-13,
+  "relative_error_p95": 7.960428118114186e-10,
+  "relative_error_p99": 1.4716799626507564e-09,
+  "relative_error_max": 5.340363131250286e-07,
+  "SOLVER_WAVE_1_SOURCE_ACCOUNTED": true,
+  "SOLVER_WAVE_1_IMPLEMENTATION_COMPLETE": true,
+  "SOLVER_WAVE_1_INDEPENDENTLY_VALIDATED": true,
+  "SOLVER_WAVE_1_ADVERSARIAL_VALIDATED": true,
+  "SOLVER_WAVE_1_LIVE_NATIVE_VALIDATED": true,
+  "live_native_reason": "VALIDATED_AGAINST_EXACT_PINNED_WSL_BUILD",
+  "native_differential_artifact": "audit/native_wave1_summary.json"
+}

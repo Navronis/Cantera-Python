@@ -1,0 +1,18 @@
+{
+  "last_completed_block": "MultiTransport::getMassFluxes source-state semantics; 16 direct MultiTransport methods inventoried as IMPLEMENTED_UNVALIDATED",
+  "exact_next_source_file": "../cantera-original/src/transport/MultiTransport.cpp",
+  "exact_next_symbol_id": "include/cantera/transport/MultiTransport.h:31:transportModel",
+  "exact_next_dependency_block": "Finish MultiTransport state/cache/public API mapping, then binary and multicomponent coefficient/flux semantics",
+  "active_solver_family": "MultiTransport",
+  "open_runtime_symbols": 5009,
+  "partially_ported": 678,
+  "not_ported": 4331,
+  "implemented_unvalidated": 16,
+  "tests_required": [
+    "python -m pytest tests/test_multicomponent_transport.py -v",
+    "python -m pytest tests/"
+  ],
+  "native_validation_pending": "Rebuild and execute the exact pinned Cantera oracle, then compare MultiTransport full call paths; current environment lacks pytest and YAML dependencies.",
+  "dependency_graph_pending": "Canonical callers/callees are null; build pinned-source call graph before claiming base-ready or selecting by centrality.",
+  "next_solver_selection": "MultiTransport remains active Wave 4 family; no family closure yet."
+}

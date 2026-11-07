@@ -1,0 +1,15 @@
+{
+  "schema": "pinned-native-oracle-rehash-v1",
+  "verified_at_utc": "2026-09-27T20:22:50Z",
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "source_checkout_path": "/home/nebula/cantera-pinned-oracle",
+  "source_checkout_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "source_checkout_clean": true,
+  "native_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera.a",
+  "native_library_sha256": "0f9948c9d3eea3f12547f11949a9cc6cbf28893ec98d6aa5425860b9d6d14e02",
+  "native_extension_path": "/home/nebula/cantera-oracle-env/lib/python3.12/site-packages/cantera/_cantera.cpython-312-x86_64-linux-gnu.so",
+  "native_extension_sha256": "d686773fe369ba07c2ad78431240869a3679316c4bdbb77160062d86aa14c68c",
+  "verified": true,
+  "verification_command": "wsl.exe -d Ubuntu -- bash -lc 'git -C /home/nebula/cantera-pinned-oracle rev-parse HEAD; git -C /home/nebula/cantera-pinned-oracle status --porcelain; sha256sum /home/nebula/cantera-pinned-oracle/build/lib/libcantera.a /home/nebula/cantera-oracle-env/lib/python3.12/site-packages/cantera/_cantera.cpython-312-x86_64-linux-gnu.so'",
+  "generated_install_prefix_note": "A 898 MiB generated C:UsersDell/cantera-pinned-install directory was moved intact to /home/nebula/cantera-pinned-install-backup-20260928 after verification that the oracle extension links to build/lib/libcantera_shared.so. The pinned source checkout is clean after relocation."
+}

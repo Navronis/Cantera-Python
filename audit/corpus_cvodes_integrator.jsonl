@@ -1,0 +1,46 @@
+{"case_id": "decay_lam_0.1", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 0.1, "y_init": [1.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "decay_lam_1.0", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "decay_lam_5.0", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 5.0, "y_init": [1.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "decay_lam_10.0", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 10.0, "y_init": [1.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "decay_lam_50.0", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 50.0, "y_init": [1.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "decay_lam_100.0", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 100.0, "y_init": [1.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "decay_lam_500.0", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 500.0, "y_init": [1.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "decay_lam_1000.0", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1000.0, "y_init": [1.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "sens_param_exp_p_0.5", "problem_type": "param_exp", "mode": "sens", "t0": 0.0, "tout": 1.0, "y_init": [1.0], "p_val": 0.5, "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "sens_param_exp_p_1.0", "problem_type": "param_exp", "mode": "sens", "t0": 0.0, "tout": 1.0, "y_init": [1.0], "p_val": 1.0, "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "sens_param_exp_p_2.0", "problem_type": "param_exp", "mode": "sens", "t0": 0.0, "tout": 1.0, "y_init": [1.0], "p_val": 2.0, "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "sens_param_exp_p_-1.0", "problem_type": "param_exp", "mode": "sens", "t0": 0.0, "tout": 1.0, "y_init": [1.0], "p_val": -1.0, "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "sens_multi_param", "problem_type": "multi_param_sens", "mode": "sens", "t0": 0.0, "tout": 1.0, "y_init": [1.0, 2.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "coupled_linear_multiscale", "problem_type": "coupled_linear", "mode": "integrate", "t0": 0.0, "tout": 1.0, "y_init": [1.0, 1.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "oscillator_w_0.5", "problem_type": "oscillator", "mode": "integrate", "t0": 0.0, "tout": 2.0, "omega": 0.5, "y_init": [1.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "oscillator_w_1.0", "problem_type": "oscillator", "mode": "integrate", "t0": 0.0, "tout": 2.0, "omega": 1.0, "y_init": [1.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "oscillator_w_2.0", "problem_type": "oscillator", "mode": "integrate", "t0": 0.0, "tout": 2.0, "omega": 2.0, "y_init": [1.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "oscillator_w_5.0", "problem_type": "oscillator", "mode": "integrate", "t0": 0.0, "tout": 2.0, "omega": 5.0, "y_init": [1.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "robertson_t_0.0001", "problem_type": "robertson", "mode": "integrate", "t0": 0.0, "tout": 0.0001, "y_init": [1.0, 0.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "robertson_t_0.01", "problem_type": "robertson", "mode": "integrate", "t0": 0.0, "tout": 0.01, "y_init": [1.0, 0.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "robertson_t_1.0", "problem_type": "robertson", "mode": "integrate", "t0": 0.0, "tout": 1.0, "y_init": [1.0, 0.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "robertson_t_10.0", "problem_type": "robertson", "mode": "integrate", "t0": 0.0, "tout": 10.0, "y_init": [1.0, 0.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "robertson_t_100.0", "problem_type": "robertson", "mode": "integrate", "t0": 0.0, "tout": 100.0, "y_init": [1.0, 0.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "robertson_t_1000.0", "problem_type": "robertson", "mode": "integrate", "t0": 0.0, "tout": 1000.0, "y_init": [1.0, 0.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "vanderpol_mu10_t_0.5", "problem_type": "vanderpol", "mode": "integrate", "t0": 0.0, "tout": 0.5, "mu": 10.0, "y_init": [2.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "vanderpol_mu10_t_1.0", "problem_type": "vanderpol", "mode": "integrate", "t0": 0.0, "tout": 1.0, "mu": 10.0, "y_init": [2.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "vanderpol_mu10_t_2.0", "problem_type": "vanderpol", "mode": "integrate", "t0": 0.0, "tout": 2.0, "mu": 10.0, "y_init": [2.0, 0.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "step_advancement_t_0.1", "problem_type": "decay", "mode": "step", "t0": 0.0, "tout": 0.1, "lambda": 2.0, "y_init": [1.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "step_advancement_t_1.0", "problem_type": "decay", "mode": "step", "t0": 0.0, "tout": 1.0, "lambda": 2.0, "y_init": [1.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "step_advancement_t_5.0", "problem_type": "decay", "mode": "step", "t0": 0.0, "tout": 5.0, "lambda": 2.0, "y_init": [1.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "reinit_state_reset", "problem_type": "decay", "mode": "reinit", "t0": 0.0, "tout": 2.0, "t_reinit": 1.0, "lambda": 1.0, "y_init": [1.0], "y_reinit": [5.0], "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "tol_sweep_rtol_0.0001", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0], "reltol": 0.0001, "abstol": 1e-15}
+{"case_id": "tol_sweep_rtol_1e-06", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0], "reltol": 1e-06, "abstol": 1e-15}
+{"case_id": "tol_sweep_rtol_1e-08", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0], "reltol": 1e-08, "abstol": 1e-15}
+{"case_id": "tol_sweep_rtol_1e-10", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0], "reltol": 1e-10, "abstol": 1e-15}
+{"case_id": "vector_abstol_multiscale", "problem_type": "coupled_linear", "mode": "integrate", "t0": 0.0, "tout": 1.0, "y_init": [1.0, 1.0], "reltol": 1e-08, "abstol_vec": [1e-12, 1e-06]}
+{"case_id": "max_step_size_limit", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0], "hmax": 0.05, "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "step_limit_failure", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 10.0, "lambda": 1.0, "y_init": [1.0], "max_steps": 3, "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "max_order_setting_1", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 0.02, "lambda": 1.0, "y_init": [1.0], "max_order": 1, "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "max_order_setting_2", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0], "max_order": 2, "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "max_order_setting_3", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0], "max_order": 3, "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "max_order_setting_4", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0], "max_order": 4, "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "max_order_setting_5", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0], "max_order": 5, "reltol": 1e-09, "abstol": 1e-15}
+{"case_id": "linear_solver_dense", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0], "linear_solver": "DENSE"}
+{"case_id": "linear_solver_band", "problem_type": "coupled_linear", "mode": "integrate", "t0": 0.0, "tout": 1.0, "y_init": [1.0, 1.0], "linear_solver": "BAND", "bandwidth_upper": 1, "bandwidth_lower": 1}
+{"case_id": "rhs_failure_propagation", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 2.0, "fail_time": 0.5, "lambda": 1.0, "y_init": [1.0]}

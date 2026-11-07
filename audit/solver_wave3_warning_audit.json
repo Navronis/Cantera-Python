@@ -1,0 +1,7 @@
+{
+  "warnings": 2,
+  "records": [
+    {"source":"tests/test_onedim.py::TestOnedim::test_switch_transport","warning":"numpy.linalg RuntimeWarning overflow encountered in dot","classification":"SCIENTIFIC_NUMERICAL_DEFECT_OUTSIDE_WAVE3","action":"not changed because Wave 4 one-dimensional solver work is explicitly prohibited"},
+    {"source":"tests/test_onedim.py::TestFreeFlame::test_fixed_temperature","warning":"numpy.linalg RuntimeWarning overflow encountered in dot","classification":"SCIENTIFIC_NUMERICAL_DEFECT_OUTSIDE_WAVE3","action":"not changed because Wave 4 one-dimensional solver work is explicitly prohibited"}
+  ]
+}

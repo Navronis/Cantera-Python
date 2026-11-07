@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-11-05T12:29:09Z",
+  "workload": "16_flow_reactor_dae_cases_including_high_pressure_and_stoichiometry_sweeps",
+  "native_median_ms": 1052.307,
+  "python_median_ms": 36568.331,
+  "speed_ratio": 34.75,
+  "native_speed_parity": false,
+  "native_runs_ms": [
+    1212.612,
+    1052.307,
+    1000.478,
+    1028.481,
+    1371.455
+  ],
+  "python_runs_ms": [
+    71717.908,
+    39203.619,
+    36038.631,
+    36568.331,
+    35715.125
+  ]
+}

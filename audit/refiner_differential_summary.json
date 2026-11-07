@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "solver_family": "refiner",
+  "subsystem": "grid refinement",
+  "total_cases": 20,
+  "passed_cases": 20,
+  "failed_cases": 0,
+  "pass_rate_pct": 100.0,
+  "parity_achieved": true,
+  "metrics": {
+    "insertion_flag_mismatches": 0,
+    "retention_flag_mismatches": 0,
+    "new_point_count_mismatches": 0,
+    "exception_mismatches": 0,
+    "criteria_mismatches": 0
+  },
+  "detailed_comparisons": [
+    {
+      "case_id": "ref_01_uniform_grid_constant",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 0,
+      "python_n_new": 0,
+      "native_insert_points": [],
+      "python_insert_points": [],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_02_uniform_grid_linear",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 0,
+      "python_n_new": 0,
+      "native_insert_points": [],
+      "python_insert_points": [],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_03_steep_gradient_slope",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 3,
+      "python_n_new": 3,
+      "native_insert_points": [
+        4,
+        5,
+        6
+      ],
+      "python_insert_points": [
+        4,
+        5,
+        6
+      ],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_04_sharp_gaussian_peak_curvature",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 6,
+      "python_n_new": 6,
+      "native_insert_points": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "python_insert_points": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_05_grid_ratio_left",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 1,
+      "python_n_new": 1,
+      "native_insert_points": [
+        2
+      ],
+      "python_insert_points": [
+        2
+      ],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_06_grid_ratio_right",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 2,
+      "python_n_new": 2,
+      "native_insert_points": [
+        1,
+        4
+      ],
+      "python_insert_points": [
+        1,
+        4
+      ],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_07_prune_flat_regions",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 0,
+      "python_n_new": 0,
+      "native_insert_points": [],
+      "python_insert_points": [],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_08_adjacent_prune_protection",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 0,
+      "python_n_new": 0,
+      "native_insert_points": [],
+      "python_insert_points": [],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_09_prune_ratio_guard_left",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 2,
+      "python_n_new": 2,
+      "native_insert_points": [
+        2,
+        4
+      ],
+      "python_insert_points": [
+        2,
+        4
+      ],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_10_prune_ratio_guard_right",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 2,
+      "python_n_new": 2,
+      "native_insert_points": [
+        0,
+        2
+      ],
+      "python_insert_points": [
+        0,
+        2
+      ],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_11_gridmin_spacing_clamp",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 2,
+      "python_n_new": 2,
+      "native_insert_points": [
+        0,
+        2
+      ],
+      "python_insert_points": [
+        0,
+        2
+      ],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_12_multicomponent_flame",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 3,
+      "python_n_new": 3,
+      "native_insert_points": [
+        4,
+        5,
+        6
+      ],
+      "python_insert_points": [
+        4,
+        5,
+        6
+      ],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_13_active_deactive_components",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 3,
+      "python_n_new": 3,
+      "native_insert_points": [
+        4,
+        5,
+        6
+      ],
+      "python_insert_points": [
+        4,
+        5,
+        6
+      ],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_14_small_fluctuation_min_range",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 8,
+      "python_n_new": 8,
+      "native_insert_points": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "python_insert_points": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_15_set_criteria_custom",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 14,
+      "python_n_new": 14,
+      "native_insert_points": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "python_insert_points": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_16_boundary_points_kept",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 0,
+      "python_n_new": 0,
+      "native_insert_points": [],
+      "python_insert_points": [],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_17_max_points_exception",
+      "passed": true,
+      "native_exception": true,
+      "python_exception": true,
+      "native_n_new": -1,
+      "python_n_new": -1,
+      "native_insert_points": [],
+      "python_insert_points": [],
+      "notes": "Expected exception triggered and matched in both."
+    },
+    {
+      "case_id": "ref_18_mismatched_grid_size_exception",
+      "passed": true,
+      "native_exception": true,
+      "python_exception": true,
+      "native_n_new": -1,
+      "python_n_new": -1,
+      "native_insert_points": [],
+      "python_insert_points": [],
+      "notes": "Expected exception triggered and matched in both."
+    },
+    {
+      "case_id": "ref_19_single_point_domain",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 0,
+      "python_n_new": 0,
+      "native_insert_points": [],
+      "python_insert_points": [],
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "ref_20_two_peaks_localized",
+      "passed": true,
+      "native_exception": false,
+      "python_exception": false,
+      "native_n_new": 4,
+      "python_n_new": 4,
+      "native_insert_points": [
+        5,
+        6,
+        17,
+        18
+      ],
+      "python_insert_points": [
+        5,
+        6,
+        17,
+        18
+      ],
+      "notes": "Exact match"
+    }
+  ]
+}

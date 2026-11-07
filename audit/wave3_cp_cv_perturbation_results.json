@@ -1,0 +1,97 @@
+{
+  "schema": "wave3-cp-cv-measurement-only-v1",
+  "status": "RUN_COMPLETE_MEASUREMENT_ONLY",
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "method_scope": "manual entropy-difference estimators; not production Sub::cp/cv endpoint parity",
+  "requested_relative_steps": [
+    0.001,
+    0.0005,
+    0.0001,
+    5e-05,
+    1e-05
+  ],
+  "record_count": 120,
+  "relative_error_distributions": {
+    "1.0e-03": {
+      "cv": {
+        "p50": 1.5102069437655572e-12,
+        "p95": 1.396842690615977e-09,
+        "p99": 2.1413382310109716e-09,
+        "max": 2.298090087556792e-09
+      },
+      "cp": {
+        "p50": 3.3263645712523546e-12,
+        "p95": 8.7100294569329e-09,
+        "p99": 1.2855541783205771e-08,
+        "max": 1.3675312807373316e-08
+      }
+    },
+    "5.0e-04": {
+      "cv": {
+        "p50": 9.95929649938043e-13,
+        "p95": 1.3978762868344325e-09,
+        "p99": 2.1400257592181677e-09,
+        "max": 2.296022399326576e-09
+      },
+      "cp": {
+        "p50": 2.767788611447957e-12,
+        "p95": 8.70913654834927e-09,
+        "p99": 1.2853678013588662e-08,
+        "max": 1.3672964829551806e-08
+      }
+    },
+    "1.0e-04": {
+      "cv": {
+        "p50": 5.2413931876590105e-12,
+        "p95": 1.4004428973495446e-09,
+        "p99": 2.1473073599429774e-09,
+        "max": 2.3046400654124668e-09
+      },
+      "cp": {
+        "p50": 6.433948580549258e-12,
+        "p95": 8.705999518111264e-09,
+        "p99": 1.2852241562868361e-08,
+        "max": 1.3672447536576767e-08
+      }
+    },
+    "5.0e-05": {
+      "cv": {
+        "p50": 3.4961526486471733e-12,
+        "p95": 1.4090701801597763e-09,
+        "p99": 2.1300767221371096e-09,
+        "max": 2.2822626100270924e-09
+      },
+      "cp": {
+        "p50": 1.0489015513313961e-11,
+        "p95": 8.788207643042193e-09,
+        "p99": 1.2857643642019677e-08,
+        "max": 1.367605439403095e-08
+      }
+    },
+    "1.0e-05": {
+      "cv": {
+        "p50": 2.5764608682152432e-11,
+        "p95": 2.148612978315837e-09,
+        "p99": 7.197430027149677e-09,
+        "max": 8.678965282818211e-09
+      },
+      "cp": {
+        "p50": 4.45069096510733e-11,
+        "p95": 9.558698190290573e-09,
+        "p99": 1.282684572060431e-08,
+        "max": 1.3629244580712427e-08
+      }
+    }
+  },
+  "cause_conclusion": "CAUSE_NOT_FULLY_ESTABLISHED",
+  "sweep_records": "audit/wave3_cp_cv_step_sweep.jsonl",
+  "summary_report": "audit/wave3_cp_cv_step_sweep_summary.md",
+  "limitations": [
+    "Native evaluation uses centered finite differences rather than Sub.cpp saturation-aware endpoints.",
+    "This sweep does not attribute production 9,608-case cp/cv discrepancies."
+  ],
+  "waves_1_3_snapshot_id": "fc63583ec6249d35444d7e68c5971a96b67aa7051af9d75904ffafd151bdc2ca",
+  "repository_snapshot_kind": "WORKING_TREE_SNAPSHOT_WITH_DIFF_HASH",
+  "evidence_binding_scope": "SAVED_RAW_RECORDS_NOT_REPROVEN",
+  "evidence_binding_note": "Report generated for this repository snapshot. Raw-run freshness is separately established only when the execution-provenance file verifies its raw hashes and pinned identity."
+}

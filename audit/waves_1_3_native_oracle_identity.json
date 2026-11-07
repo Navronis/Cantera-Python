@@ -1,0 +1,23 @@
+{
+  "exact_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "source_checkout_path": "/home/nebula/cantera-pinned-oracle",
+  "source_commit_hash": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "distro": "Ubuntu 24.04.4 LTS",
+  "kernel": "6.6.87.2-microsoft-standard-WSL2",
+  "architecture": "x86_64",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "python_executable": "/home/nebula/cantera-oracle-env/bin/python3",
+  "python_version": "Python 3.12.3",
+  "scons_version": "4.11.1.b97f32b9adab83a96af767ec1d7dc8d7a41c7c74",
+  "cantera_version": "4.0.0a2",
+  "build_command": "scons build python_package=full prefix=/home/nebula/cantera-oracle-env",
+  "native_extension_path": "/home/nebula/cantera-oracle-env/lib/python3.12/site-packages/cantera/_cantera.cpython-312-x86_64-linux-gnu.so",
+  "native_extension_sha256": "d686773fe369ba07c2ad78431240869a3679316c4bdbb77160062d86aa14c68c",
+  "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+  "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744",
+  "static_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera.a",
+  "static_library_sha256": "0f9948c9d3eea3f12547f11949a9cc6cbf28893ec98d6aa5425860b9d6d14e02",
+  "timestamp": "2026-09-27T23:10:00+05:30",
+  "NATIVE_ORACLE_COMMIT": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "NATIVE_ORACLE_RESTORED": true
+}

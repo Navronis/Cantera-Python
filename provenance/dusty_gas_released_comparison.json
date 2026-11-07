@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "reference": "released Cantera 3.2.0",
+  "pinned_source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "authoritative_for_pinned_commit": false,
+  "runtime_dependency": false,
+  "mechanism": "C:\\Users\\Dell\\Documents\\Codex\\2026-09-11\\https-github-com-cantera-cantera-https\\outputs\\cantera-original\\data\\h2o2.yaml",
+  "state": {
+    "temperature_K": 500.0,
+    "pressure_Pa": 101325.0
+  },
+  "multi_diff_coeffs": {
+    "shape": [
+      10,
+      10
+    ],
+    "max_absolute_error": 1.5590706131142495e-07,
+    "max_relative_error_significant": 0.00025823752208019806
+  },
+  "molar_fluxes": {
+    "max_absolute_error": 9.478020240096538e-09,
+    "max_relative_error_significant": 0.02737088614610914,
+    "reference": [
+      -9.78381045611682e-06,
+      -3.414083007708426e-26,
+      -4.795573869492228e-27,
+      8.256967175570032e-08,
+      -4.297957556176199e-27,
+      3.162882240691228e-06,
+      1.1418246747487645e-27,
+      1.2895880797935369e-27,
+      2.6435533982405872e-27,
+      7.297198685781767e-28
+    ],
+    "candidate": [
+      -9.774332435876724e-06,
+      -3.4138813984590236e-26,
+      -4.8860558173862094e-27,
+      8.030966667095345e-08,
+      -4.387737329236637e-27,
+      3.1627235568478136e-06,
+      1.0984563728329939e-27,
+      1.2462680363879444e-27,
+      2.6222625848294987e-27,
+      6.725987799896099e-28
+    ]
+  },
+  "interpretation": "The dusty-gas matrix and Darcy/Knudsen equations are ported from the pinned source. Remaining differences include the subordinate gas transport implementation and released-versus-pinned source drift."
+}

@@ -1,0 +1,49 @@
+{
+  "canonical_inventory": {
+    "FULL_PORT_COMPLETE": false,
+    "non_runtime_cpp_only_proven": 759,
+    "not_ported": 4347,
+    "partial": 678,
+    "rows_without_final_disposition": 5025,
+    "total": 5784
+  },
+  "implemented": {
+    "public_solve_tp": "Still raises explicitly; full active-set inner/outer iteration is not connected.",
+    "solve_tp_component_calc": "Source order: basis optimization; OLD phase upload; activity/chemical-potential and reaction-Gibbs refresh; species type evaluation; element check; on failure, element correction, cache invalidation, and thermodynamic refresh.",
+    "vcs_basopt": "Dynamic material-species basis selection from the current OLD state, source-order slot remapping, element-coordinate reorder, formation stoichiometry rebuild, and phase-reaction delta/participation rebuild. The native voltage-unknown path is rejected by preparation.",
+    "vcs_elcorr": "Now called from the component calculation when the element check fails.",
+    "vcs_setFlagsVolPhases": "OLD/NEW phase-cache current/stale flag transition.",
+    "vcs_updateVP": "OLD and NEW state upload through the phase-local checked mole-vector setter."
+  },
+  "limitations": [
+    "No claim of full VCS equilibrium solver completion is made.",
+    "The VCS TP active-set iteration, phase birth/death convergence loop, and exact pinned-native differential validation remain outside this change."
+  ],
+  "pinned_source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "recorded_at_utc": "2026-09-30T10:37:54.693894+00:00",
+  "repository": {
+    "branch": "certified/waves-1-3-baseline",
+    "head": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+    "working_tree_dirty": true
+  },
+  "schema_version": 1,
+  "scope": "VCS component-basis reoptimization and initial component-calculation call chain",
+  "source_sha256": {
+    "../cantera-original/src/equil/vcs_solve.cpp": "4259ceeb0ed244ca64d5ce71ca0bc6e44e5fac1efd52e5ed92348f58d6e105ca",
+    "../cantera-original/src/equil/vcs_solve_TP.cpp": "daa7a8300d22ff739c2f4166bd42b8d00297f22eb6e1eb0263f43182247f3154",
+    "cantera_python/vcs.py": "15d37aaea742414d5966874c525acfe9b035c7f52e1c4e4bfa15add4737af4ba",
+    "provenance/canonical_5784_symbol_inventory.jsonl": "56a6e24a6d2d1c729ef490bc3575788f8077ec11cd60594d04c8f8972bd7894e",
+    "provenance/symbol_implementation_evidence.jsonl": "8da68060e920c2e9c8eb79408c8d09bb4fd0cd075e9cca1be39859aa44bc1f01",
+    "tests/test_canonical_inventory.py": "3496a9ad2f500cb6479146a32a1ffa34e49522640f34659efd366aa16efc06f6",
+    "tests/test_vcs_multiphase.py": "bc8fc2c3caa7003a8b1bfe81ae4e4e80cafc0f3a8adacd718b1e3c88856be895"
+  },
+  "validation": {
+    "canonical_inventory_tests": "PASS: 5 unittest cases.",
+    "focused_component_call_chain": "PASS: test_vcs_component_calculation_reoptimizes_basis_and_rebuilds_reactions executed with synthetic ideal phase objects; basis, element balance, stoichiometry, species status synchronization, and phase cache upload checked.",
+    "focused_dynamic_basis": "PASS: test_vcs_basopt_reselects_basis_from_current_species_amounts executed directly with the bundled Python runtime and a pytest import shim; basis permutation, just-components return behavior, and element-conserving formation matrix checked.",
+    "focused_element_correction": "PASS: three focused source-body regression functions executed directly through a minimal pytest compatibility shim; this did not use pytest.",
+    "full_runtime_suite": "NOT_RUN: the bundled Python runtime lacks ruamel.yaml and PyYAML, so importing the package fails before mechanism-backed tests can run.",
+    "pinned_native_differential": "NOT_RUN_FOR_THIS_CHANGE: existing pinned VCS probe artifacts cover the earlier prepared initial state, not the new live reoptimization/component call chain.",
+    "syntax": "PASS: bundled Python py_compile on cantera_python/vcs.py and tests/test_vcs_multiphase.py."
+  }
+}

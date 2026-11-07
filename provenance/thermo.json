@@ -1,0 +1,99 @@
+{
+  "upstream_repository": "https://github.com/cantera/cantera",
+  "upstream_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "python_module": "cantera_python/thermo.py",
+  "scope": "Scalar species reference-state cp/R, h/(R*T), s/R evaluators and dimensional cp/h/s conveniences only. This is not a translation of complete source files or the complete Cantera API.",
+  "status": "implemented; analytical tests in tests/test_thermo.py",
+  "native_cantera_required": false,
+  "dependencies": ["Python standard library math"],
+  "units": {
+    "temperature": "K",
+    "reference_pressure": "Pa; stored as metadata, no pressure correction",
+    "gas_constant": "J/kmol/K; 6.02214076e26 * 1.380649e-23 as in ct_defs.h",
+    "properties": ["cp/R", "h/(R*T)", "s/R"],
+    "cp": "J/kmol/K",
+    "h": "J/kmol",
+    "s": "J/kmol/K",
+    "Shomate_coefficients": "Conventional A..G: cp and s expressions in J/mol/K; enthalpy expression in kJ/mol; reduced t = T/1000",
+    "ConstCp_inputs": "t0 K, h0 J/kmol, s0 J/kmol/K, cp0 J/kmol/K",
+    "Mu0_inputs": "h0 at 298.15 K in J/kmol; mapping of temperature K to Gibbs energy J/kmol"
+  },
+  "translations": [
+    {
+      "python": "NasaPoly1.properties",
+      "source": ["include/cantera/thermo/NasaPoly1.h"],
+      "methods": ["NasaPoly1::updateTemperaturePoly", "NasaPoly1::updateProperties", "NasaPoly1::updatePropertiesTemp"],
+      "equations": ["Fourth-order cp/R polynomial", "Integrated h/(R*T) including a5/T", "Integrated s/R including a0*log(T) and a6"]
+    },
+    {
+      "python": "NasaPoly2.properties and from_coeffs",
+      "source": ["include/cantera/thermo/NasaPoly2.h"],
+      "methods": ["NasaPoly2::NasaPoly2 coefficient ordering", "NasaPoly2::updatePropertiesTemp"],
+      "boundary": "T <= Tmid selects low interval; packed order is Tmid, high coefficients, low coefficients"
+    },
+    {
+      "python": "Nasa9Poly1.properties",
+      "source": ["src/thermo/Nasa9Poly1.cpp", "include/cantera/thermo/Nasa9Poly1.h"],
+      "methods": ["Nasa9Poly1::updateTemperaturePoly", "Nasa9Poly1::updateProperties", "Nasa9Poly1::updatePropertiesTemp"],
+      "equations": ["Seven-term cp/R with T^-2 and T^-1", "Integrated h/(R*T) with log(T)/T and a7/T", "Integrated s/R with inverse-temperature terms and a8"]
+    },
+    {
+      "python": "Nasa9PolyMultiTempRegion.properties and from_coeffs",
+      "source": ["src/thermo/Nasa9PolyMultiTempRegion.cpp", "include/cantera/thermo/Nasa9PolyMultiTempRegion.h"],
+      "methods": ["Nasa9PolyMultiTempRegion::updatePropertiesTemp", "Packed constructor coefficient layout and adjacent-bound check"],
+      "boundary": "T equal to a region lower bound selects that upper region; extrapolation selects first or last region"
+    },
+    {
+      "python": "ShomatePoly.properties",
+      "source": ["include/cantera/thermo/ShomatePoly.h"],
+      "methods": ["ShomatePoly coefficient scaling", "ShomatePoly::updateTemperaturePoly", "ShomatePoly::updateProperties", "ShomatePoly::updatePropertiesTemp"],
+      "equations": ["cp/R with E/t^2", "h/(R*T) including -E/t^2 and F/t", "s/R including A*log(t), -E/(2*t^2) and G"]
+    },
+    {
+      "python": "ShomatePoly2.properties and from_coeffs",
+      "source": ["include/cantera/thermo/ShomatePoly.h"],
+      "methods": ["ShomatePoly2 constructor coefficient ordering", "ShomatePoly2::updatePropertiesTemp"],
+      "boundary": "T <= Tmid selects low interval; packed order is Tmid, low coefficients, high coefficients"
+    },
+    {
+      "python": "ConstCpPoly.properties",
+      "source": ["src/thermo/ConstCpPoly.cpp", "include/cantera/thermo/ConstCpPoly.h"],
+      "methods": ["ConstCpPoly::setParameters scaling", "ConstCpPoly::updatePropertiesTemp"],
+      "equations": ["cp(T) = cp0", "h(T) = h0 + cp0*(T-T0)", "s(T) = s0 + cp0*(log(T)-log(T0))"]
+    },
+    {
+      "python": "Mu0Poly.__init__ and properties",
+      "source": ["src/thermo/Mu0Poly.cpp", "include/cantera/thermo/Mu0Poly.h"],
+      "methods": ["Mu0Poly::setParameters upward recurrence", "Mu0Poly::setParameters downward recurrence", "Mu0Poly::updateProperties", "Mu0Poly::updatePropertiesTemp"],
+      "equations": ["s(298.15) = (h0-mu0)/298.15", "Interval cp inferred from Gibbs changes", "h and s propagated with interval-constant cp", "h and s evaluated from interval anchor"],
+      "boundary": "T equal to an internal knot selects preceding interval; nearest-interval cp used for extrapolation"
+    }
+  ],
+  "behavioral_choices_and_limits": [
+    "Public Python constructors differ from Cantera C++ and Cython constructor signatures; documented packed helpers are provided for NASA7, NASA9 and Shomate.",
+    "All evaluators require positive finite temperatures, finite coefficients and sensible metadata; these explicit Python validation checks are stricter than unchecked C++ evaluation paths.",
+    "Out-of-range positive finite temperatures extrapolate; min/max temperatures do not clamp or reject evaluations.",
+    "Normal-domain mathematical expressions and evaluation order are preserved; cross-language floating-point or math-library equality is not guaranteed bit-for-bit.",
+    "NASA9 packed input preserves the upstream 0.0001 K adjacent-bound tolerance; its Python normalized metadata uses successive lower boundaries, which does not alter property region selection.",
+    "Mu0 initialization corresponds to a fresh source object; source repeated-setParameters accumulation behavior is not exposed. Reconstruct the Python object after changing Gibbs data.",
+    "Standard-library math is used; the module imports no Cantera, NumPy, SciPy, Cython or extension bindings. This does not mean the Python interpreter or its math library are written in Python."
+  ],
+  "excluded_methods_and_features": [
+    "reportHf298, modifyOneHf298, resetHf298 and corresponding mutable enthalpy-offset APIs",
+    "NasaPoly2::validate discontinuity warning logic",
+    "Native reportType, reportParameters, getParameters, nCoeffs and temperature-polynomial buffer APIs",
+    "Native setParameters and metadata setter API compatibility",
+    "SpeciesThermoFactory YAML parsing, arbitrary input-unit conversion and serialization",
+    "Species and MultiSpeciesThermo management, mixtures, phase equations of state, pressure corrections, equilibrium, kinetics, transport and solvers"
+  ],
+  "test_coverage": [
+    "Independent NASA7 constant-cp and all-term values",
+    "NASA9 inverse-temperature terms, NASA7 reduction, one/multiple regions and packed ordering",
+    "Exact internal-boundary interval selection and outer-range extrapolation",
+    "Shomate dimensional factors and all-term evaluation",
+    "Constant-cp reference values and temperature changes",
+    "Independent finite-difference dh/dT = cp and ds/dT = cp/T identities",
+    "Mu0 known piecewise-cp reconstruction, Gibbs knots and anchors at first/middle/last temperature",
+    "Invalid temperature and input-data rejection"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "kinetics_models": {
+    "bulk": 1,
+    "edge": 1,
+    "gas": 17,
+    "none": 47,
+    "surface": 9
+  },
+  "parse_errors": [],
+  "reaction_types": {
+    "Arrhenius": 6395,
+    "Chebyshev": 41,
+    "electron-collision-plasma": 40,
+    "falloff": 153,
+    "linear-Burke": 6,
+    "pressure-dependent-Arrhenius": 412,
+    "three-body": 75,
+    "two-temperature-plasma": 21
+  },
+  "schema_version": 1,
+  "scope": "Bundled upstream YAML data registry inventory",
+  "thermo_models": {
+    "Redlich-Kwong": 3,
+    "binary-solution-tabulated": 2,
+    "coverage-dependent-surface": 5,
+    "edge": 1,
+    "electron-cloud": 2,
+    "fixed-stoichiometry": 19,
+    "ideal-condensed": 2,
+    "ideal-gas": 20,
+    "ideal-surface": 9,
+    "liquid-water-IAPWS95": 1,
+    "plasma": 3,
+    "pure-fluid": 8
+  },
+  "transport_models": {
+    "Ion": 1,
+    "ionized-gas": 1,
+    "mixture-averaged": 12,
+    "none": 61
+  },
+  "yaml_files": 34
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "subsystem": "kinetics",
+  "closure_family": "FAMILY_2_FALLOFF_AND_PRESSURE_DEPENDENT",
+  "benchmarks": {
+    "gri30_falloff": {
+      "mechanism": "gri30.yaml",
+      "reactions": 325,
+      "species": 53,
+      "native_cpp_median_ms": 0.000931,
+      "python_reference_median_ms": 21.2088,
+      "python_accelerated_median_ms": 0.8267,
+      "python_accelerated_p95_ms": 1.4913,
+      "vectorized_speedup_over_scalar": 25.65,
+      "slowdown_vs_native": 888.02
+    },
+    "pdep_plog_chebyshev": {
+      "mechanism": "pdep-test.yaml",
+      "reactions": 7,
+      "species": 21,
+      "native_cpp_median_ms": 7.2e-05,
+      "python_reference_median_ms": 0.2903,
+      "python_accelerated_median_ms": 0.2986,
+      "python_accelerated_p95_ms": 0.3399,
+      "vectorized_speedup_over_scalar": 0.97,
+      "slowdown_vs_native": 4147.22
+    },
+    "sri_falloff": {
+      "mechanism": "sri-falloff.yaml",
+      "reactions": 2,
+      "species": 8,
+      "native_cpp_median_ms": 5.7e-05,
+      "python_reference_median_ms": 0.0505,
+      "python_accelerated_median_ms": 0.1959,
+      "python_accelerated_p95_ms": 0.2574,
+      "vectorized_speedup_over_scalar": 0.26,
+      "slowdown_vs_native": 3436.84
+    },
+    "linear_burke": {
+      "mechanism": "linearBurke-test.yaml",
+      "reactions": 3,
+      "species": 6,
+      "native_cpp_median_ms": 8.3e-05,
+      "python_reference_median_ms": 0.1139,
+      "python_accelerated_median_ms": 0.2521,
+      "python_accelerated_p95_ms": 0.2663,
+      "vectorized_speedup_over_scalar": 0.45,
+      "slowdown_vs_native": 3037.35
+    }
+  }
+}

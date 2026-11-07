@@ -1,0 +1,56 @@
+{
+  "status": "PARTIAL",
+  "upstream_repository": "https://github.com/cantera/cantera",
+  "upstream_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "python_module": "cantera_python/multi_species_thermo.py",
+  "source_files": [
+    {
+      "path": "include/cantera/thermo/MultiSpeciesThermo.h",
+      "sha256": "1369d590ed682767fc5a73ed55ed8db11e7f74378eafe73d515c04ee4cf7e376"
+    },
+    {
+      "path": "src/thermo/MultiSpeciesThermo.cpp",
+      "sha256": "420b3c3ada37566f2d2c0acd0c7238ca5a4c77bd555bc8cb3bc0fff4bb971a7d"
+    },
+    {
+      "path": "include/cantera/thermo/speciesThermoTypes.h",
+      "sha256": "0854a3cf2eea119ed18497cfd7f9371a35e24577a167652eca0097ac3ba4c549"
+    }
+  ],
+  "canonical_inventory": "provenance/canonical_5784_symbol_inventory.jsonl",
+  "canonical_symbols_implemented": [
+    "include/cantera/thermo/MultiSpeciesThermo.h:109:minTemp",
+    "include/cantera/thermo/MultiSpeciesThermo.h:120:maxTemp",
+    "include/cantera/thermo/MultiSpeciesThermo.h:123:refPressure",
+    "include/cantera/thermo/MultiSpeciesThermo.h:130:reportType",
+    "include/cantera/thermo/MultiSpeciesThermo.h:180:ready",
+    "include/cantera/thermo/MultiSpeciesThermo.h:188:provideSTIT",
+    "include/cantera/thermo/MultiSpeciesThermo.h:189:provideSTIT",
+    "include/cantera/thermo/MultiSpeciesThermo.h:193:markInstalled"
+  ],
+  "additional_source_methods_implemented": [
+    "MultiSpeciesThermo::install_STIT",
+    "MultiSpeciesThermo::modifySpecies",
+    "MultiSpeciesThermo::update_single",
+    "MultiSpeciesThermo::update"
+  ],
+  "behavioral_evidence": [
+    "Reference pressure is fixed by the first installation and later installs use the source's > 1e-6 Pa mismatch test.",
+    "Sparse installation state and ready(nSpecies) follow the source bitmap semantics.",
+    "Aggregate Tmin is the maximum lower bound and aggregate Tmax is the minimum upper bound.",
+    "Replacement preserves the parameterization type and cannot narrow the stored aggregate validity envelope.",
+    "All-species evaluation mutates only installed species positions in caller-owned arrays."
+  ],
+  "focused_tests": "tests/test_multi_species_thermo.py",
+  "remaining_canonical_gaps": [
+    "include/cantera/thermo/MultiSpeciesThermo.h:157:reportOneHf298",
+    "include/cantera/thermo/MultiSpeciesThermo.h:170:modifyOneHf298",
+    "include/cantera/thermo/MultiSpeciesThermo.h:177:resetHf298"
+  ],
+  "limitations": [
+    "Mutable heat-of-formation offsets require model-level report/modify/reset support not present in the scalar thermo classes.",
+    "Native reportParams coefficient-buffer serialization is outside the strict canonical inventory and is not included.",
+    "Python update_single returns a tuple instead of writing C++ output references.",
+    "Python validates array sizes and nonnegative integer indices rather than exposing undefined span or size_t behavior."
+  ]
+}

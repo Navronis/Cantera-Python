@@ -1,0 +1,377 @@
+{
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "oracle_type": "native_cpp_oracle",
+  "family": "FAMILY_5_PLASMA_VIBRATIONAL_AND_MULTIRATE",
+  "results": [
+    {
+      "case_id": "fam5_vib_001_T300_P101325",
+      "category": "vibrational_relaxation",
+      "nReactions": 4,
+      "forward_rate_constants": [10000000.000000002, 2137078.142328545, 0.0029406917171643544, 42236416346.973633],
+      "net_rates_of_progress": [0, 0, 0, 0],
+      "rate_types": ["constant-vibrational-relaxation", "Starikovskiy-vibrational-relaxation", "Castela-vibrational-relaxation", "multi-state-resolved-vibrational-relaxation"]
+    },
+    {
+      "case_id": "fam5_vib_002_T500_P50662",
+      "category": "vibrational_relaxation",
+      "nReactions": 4,
+      "forward_rate_constants": [10000000.000000002, 7726404.4201231534, 1.0382943989484812, 32450958383.666302],
+      "net_rates_of_progress": [0, 0, 0, 0],
+      "rate_types": ["constant-vibrational-relaxation", "Starikovskiy-vibrational-relaxation", "Castela-vibrational-relaxation", "multi-state-resolved-vibrational-relaxation"]
+    },
+    {
+      "case_id": "fam5_vib_003_T800_P202650",
+      "category": "vibrational_relaxation",
+      "nReactions": 4,
+      "forward_rate_constants": [10000000.000000002, 22636852.149099939, 109.01634627833636, 28354950600.102398],
+      "net_rates_of_progress": [0, 0, 0, 0],
+      "rate_types": ["constant-vibrational-relaxation", "Starikovskiy-vibrational-relaxation", "Castela-vibrational-relaxation", "multi-state-resolved-vibrational-relaxation"]
+    },
+    {
+      "case_id": "fam5_vib_004_T1000_P101325",
+      "category": "vibrational_relaxation",
+      "nReactions": 4,
+      "forward_rate_constants": [10000000.000000002, 36539336.221468389, 798.64663512292054, 27447595300.921627],
+      "net_rates_of_progress": [0, 0, 0, 0],
+      "rate_types": ["constant-vibrational-relaxation", "Starikovskiy-vibrational-relaxation", "Castela-vibrational-relaxation", "multi-state-resolved-vibrational-relaxation"]
+    },
+    {
+      "case_id": "fam5_vib_005_T1200_P1013250",
+      "category": "vibrational_relaxation",
+      "nReactions": 4,
+      "forward_rate_constants": [10000000.000000002, 53300230.201942824, 3697.8804548087783, 27095574437.384796],
+      "net_rates_of_progress": [0, 0, 0, 0],
+      "rate_types": ["constant-vibrational-relaxation", "Starikovskiy-vibrational-relaxation", "Castela-vibrational-relaxation", "multi-state-resolved-vibrational-relaxation"]
+    },
+    {
+      "case_id": "fam5_vib_006_T1500_P101325",
+      "category": "vibrational_relaxation",
+      "nReactions": 4,
+      "forward_rate_constants": [10000000.000000002, 83298419.411896631, 21663.650756515282, 27090106517.829689],
+      "net_rates_of_progress": [0, 0, 0, 0],
+      "rate_types": ["constant-vibrational-relaxation", "Starikovskiy-vibrational-relaxation", "Castela-vibrational-relaxation", "multi-state-resolved-vibrational-relaxation"]
+    },
+    {
+      "case_id": "fam5_vib_007_T1800_P506625",
+      "category": "vibrational_relaxation",
+      "nReactions": 4,
+      "forward_rate_constants": [10000000.000000002, 118545871.92385793, 84565.902436746619, 27410914829.338932],
+      "net_rates_of_progress": [0, 0, 0, 0],
+      "rate_types": ["constant-vibrational-relaxation", "Starikovskiy-vibrational-relaxation", "Castela-vibrational-relaxation", "multi-state-resolved-vibrational-relaxation"]
+    },
+    {
+      "case_id": "fam5_vib_008_T2200_P101325",
+      "category": "vibrational_relaxation",
+      "nReactions": 4,
+      "forward_rate_constants": [10000000.000000002, 172790847.19594729, 349410.23499396315, 28092447826.497543],
+      "net_rates_of_progress": [0, 0, 0, 0],
+      "rate_types": ["constant-vibrational-relaxation", "Starikovskiy-vibrational-relaxation", "Castela-vibrational-relaxation", "multi-state-resolved-vibrational-relaxation"]
+    },
+    {
+      "case_id": "fam5_vib_009_T2600_P2026500",
+      "category": "vibrational_relaxation",
+      "nReactions": 4,
+      "forward_rate_constants": [10000000.000000002, 234398211.83778492, 1071659.2251057909, 28923933676.290234],
+      "net_rates_of_progress": [0, 0, 0, 0],
+      "rate_types": ["constant-vibrational-relaxation", "Starikovskiy-vibrational-relaxation", "Castela-vibrational-relaxation", "multi-state-resolved-vibrational-relaxation"]
+    },
+    {
+      "case_id": "fam5_vib_010_T3000_P101325",
+      "category": "vibrational_relaxation",
+      "nReactions": 4,
+      "forward_rate_constants": [10000000.000000002, 302560874.20675224, 2685983.9887861777, 29832846835.220634],
+      "net_rates_of_progress": [0, 0, 0, 0],
+      "rate_types": ["constant-vibrational-relaxation", "Starikovskiy-vibrational-relaxation", "Castela-vibrational-relaxation", "multi-state-resolved-vibrational-relaxation"]
+    },
+    {
+      "case_id": "fam5_plasma2t_001_T300_Te11604",
+      "category": "two_temp_plasma",
+      "nReactions": 2,
+      "forward_rate_constants": [251006077783.87064, 62085108825637.539],
+      "twotemp_eval": 85334170177577568,
+      "twotemp_ddT_scaled": -0.013030261671414006,
+      "rate_type": "two-temperature-plasma"
+    },
+    {
+      "case_id": "fam5_plasma2t_002_T400_Te23209",
+      "category": "two_temp_plasma",
+      "nReactions": 2,
+      "forward_rate_constants": [230936739903.06351, 62085108825637.539],
+      "twotemp_eval": 50566534962177640,
+      "twotemp_ddT_scaled": -0.0072670221901703774,
+      "rate_type": "two-temperature-plasma"
+    },
+    {
+      "case_id": "fam5_plasma2t_003_T600_Te34813",
+      "category": "two_temp_plasma",
+      "nReactions": 2,
+      "forward_rate_constants": [212472057680.51859, 62085108825637.539],
+      "twotemp_eval": 24504261766855660,
+      "twotemp_ddT_scaled": -0.0031742320845201681,
+      "rate_type": "two-temperature-plasma"
+    },
+    {
+      "case_id": "fam5_plasma2t_004_T800_Te46418",
+      "category": "two_temp_plasma",
+      "nReactions": 2,
+      "forward_rate_constants": [203800957657.4379, 62085108825637.539],
+      "twotemp_eval": 17950092939679990,
+      "twotemp_ddT_scaled": -0.0017542555475425943,
+      "rate_type": "two-temperature-plasma"
+    },
+    {
+      "case_id": "fam5_plasma2t_005_T1000_Te58022",
+      "category": "two_temp_plasma",
+      "nReactions": 2,
+      "forward_rate_constants": [198769094084.16595, 62085108825637.539],
+      "twotemp_eval": 15350757504481026,
+      "twotemp_ddT_scaled": -0.0011027235504272603,
+      "rate_type": "two-temperature-plasma"
+    },
+    {
+      "case_id": "fam5_plasma2t_006_T1200_Te11604",
+      "category": "two_temp_plasma",
+      "nReactions": 2,
+      "forward_rate_constants": [195483729933.76044, 62085108825637.539],
+      "twotemp_eval": 4847172390073830,
+      "twotemp_ddT_scaled": -0.00075189135446337529,
+      "rate_type": "two-temperature-plasma"
+    },
+    {
+      "case_id": "fam5_plasma2t_007_T1500_Te23209",
+      "category": "two_temp_plasma",
+      "nReactions": 2,
+      "forward_rate_constants": [192252668076.42764, 62085108825637.539],
+      "twotemp_eval": 6362824619531252,
+      "twotemp_ddT_scaled": -0.00046787713352322677,
+      "rate_type": "two-temperature-plasma"
+    },
+    {
+      "case_id": "fam5_plasma2t_008_T1800_Te34813",
+      "category": "two_temp_plasma",
+      "nReactions": 2,
+      "forward_rate_constants": [190128350936.97833, 62085108825637.539],
+      "twotemp_eval": 7187538628311831,
+      "twotemp_ddT_scaled": -0.00031565541679853717,
+      "rate_type": "two-temperature-plasma"
+    },
+    {
+      "case_id": "fam5_plasma2t_009_T2000_Te46418",
+      "category": "two_temp_plasma",
+      "nReactions": 2,
+      "forward_rate_constants": [189075010974.20898, 62085108825637.539],
+      "twotemp_eval": 7981941702553319,
+      "twotemp_ddT_scaled": -0.00025068088760681507,
+      "rate_type": "two-temperature-plasma"
+    },
+    {
+      "case_id": "fam5_plasma2t_010_T2500_Te58022",
+      "category": "two_temp_plasma",
+      "nReactions": 2,
+      "forward_rate_constants": [187193683181.13812, 62085108825637.539],
+      "twotemp_eval": 8175646241220462,
+      "twotemp_ddT_scaled": -0.00015243576806836168,
+      "rate_type": "two-temperature-plasma"
+    },
+    {
+      "case_id": "fam5_airplasma_001_T300",
+      "category": "air_plasma",
+      "nReactions": 3,
+      "forward_rate_constants": [0, 0, 0]
+    },
+    {
+      "case_id": "fam5_airplasma_002_T500",
+      "category": "air_plasma",
+      "nReactions": 3,
+      "forward_rate_constants": [0, 0, 0]
+    },
+    {
+      "case_id": "fam5_airplasma_003_T1000",
+      "category": "air_plasma",
+      "nReactions": 3,
+      "forward_rate_constants": [0, 0, 0]
+    },
+    {
+      "case_id": "fam5_airplasma_004_T1500",
+      "category": "air_plasma",
+      "nReactions": 3,
+      "forward_rate_constants": [0, 0, 0]
+    },
+    {
+      "case_id": "fam5_airplasma_005_T2000",
+      "category": "air_plasma",
+      "nReactions": 3,
+      "forward_rate_constants": [0, 0, 0]
+    },
+    {
+      "case_id": "fam5_custom_delegator_001_T300",
+      "category": "custom_delegator",
+      "custom_rate_type": "custom-rate-function",
+      "temperature": 300,
+      "valid": true
+    },
+    {
+      "case_id": "fam5_custom_delegator_002_T500",
+      "category": "custom_delegator",
+      "custom_rate_type": "custom-rate-function",
+      "temperature": 500,
+      "valid": true
+    },
+    {
+      "case_id": "fam5_custom_delegator_003_T1000",
+      "category": "custom_delegator",
+      "custom_rate_type": "custom-rate-function",
+      "temperature": 1000,
+      "valid": true
+    },
+    {
+      "case_id": "fam5_custom_delegator_004_T1500",
+      "category": "custom_delegator",
+      "custom_rate_type": "custom-rate-function",
+      "temperature": 1500,
+      "valid": true
+    },
+    {
+      "case_id": "fam5_custom_delegator_005_T2000",
+      "category": "custom_delegator",
+      "custom_rate_type": "custom-rate-function",
+      "temperature": 2000,
+      "valid": true
+    },
+    {
+      "case_id": "fam5_multirate_001_Arrhenius",
+      "category": "multirate_ops",
+      "rate_type": "Arrhenius",
+      "multi_type": "Arrhenius",
+      "caught_empty": true,
+      "replace_ok": true,
+      "caught_mismatch": true
+    },
+    {
+      "case_id": "fam5_multirate_002_Blowers_Masel",
+      "category": "multirate_ops",
+      "rate_type": "Blowers-Masel",
+      "multi_type": "Blowers-Masel",
+      "caught_empty": true,
+      "replace_ok": true,
+      "caught_mismatch": true
+    },
+    {
+      "case_id": "fam5_multirate_003_two_temperature_plasma",
+      "category": "multirate_ops",
+      "rate_type": "two-temperature-plasma",
+      "multi_type": "two-temperature-plasma",
+      "caught_empty": true,
+      "replace_ok": true,
+      "caught_mismatch": true
+    },
+    {
+      "case_id": "fam5_multirate_004_constant_vibrational_relaxation",
+      "category": "multirate_ops",
+      "rate_type": "constant-vibrational-relaxation",
+      "multi_type": "constant-vibrational-relaxation",
+      "caught_empty": true,
+      "replace_ok": true,
+      "caught_mismatch": true
+    },
+    {
+      "case_id": "fam5_multirate_005_custom_rate_function",
+      "category": "multirate_ops",
+      "rate_type": "custom-rate-function",
+      "multi_type": "custom-rate-function",
+      "caught_empty": true,
+      "replace_ok": true,
+      "caught_mismatch": true
+    },
+    {
+      "case_id": "fam5_deriv_001_h2o2_T500",
+      "category": "kinetics_derivatives",
+      "nTotalSpecies": 10,
+      "netProductionRates_ddT": [-5.3763328374763494e-19, 5.3763328374763494e-19, 1.8818496564661553e-43, -5.3763328374763494e-19, 0, 0, 5.3763328374763494e-19, 0, 0, 0],
+      "creationRates_ddT": [0, 5.3763328374763504e-19, 1.8818496564661553e-43, 0, 0, 0, 5.3763328374763504e-19, 0, 0, 0],
+      "destructionRates_ddT": [5.3763328374763504e-19, 0, 0, 5.3763328374763504e-19, 0, 0, 0, 0, 0, 0],
+      "netProductionRates_ddP": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "case_id": "fam5_deriv_002_gri30_T800",
+      "category": "kinetics_derivatives",
+      "nTotalSpecies": 53,
+      "netProductionRates_ddT": [0, 4.0843606841662318e-17, 6.9636731288379067e-22, -2.6597532418279814e-11, 0, 0, 2.6597532417583719e-11, 0, 0, 0, 0, 0, 2.6597573261195373e-11, -2.6597573261195373e-11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.8098709058020233e-24, 0, 0, 6.9581927909250608e-22, 0, 0, 0, 0, 0, 0, 0, 0, 0, -7.0062914999830808e-22, 0, 0, 0, 0, 0],
+      "creationRates_ddT": [0, 4.0843606855675643e-17, 6.96367301946826e-22, 0, 0, 0, 2.6597532417583712e-11, 0, 0, 0, 0, 0, 2.6597573261195379e-11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.8098709058020219e-24, 0, 0, 6.9581926815554141e-22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "destructionRates_ddT": [0, 0, 0, 2.6597532418279807e-11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.6597573261195379e-11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7.0062913906134342e-22, 0, 0, 0, 0, 0],
+      "netProductionRates_ddP": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "case_id": "fam5_deriv_003_vibrational-relaxation_T1000",
+      "category": "kinetics_derivatives",
+      "nTotalSpecies": 5,
+      "netProductionRates_ddT": [0, 0, 0, 0, 0],
+      "creationRates_ddT": [0, 0, 0, 0, 0],
+      "destructionRates_ddT": [0, 0, 0, 0, 0],
+      "netProductionRates_ddP": [0, 0, 0, 0, 0]
+    },
+    {
+      "case_id": "fam5_deriv_004_h2o2_T1200",
+      "category": "kinetics_derivatives",
+      "nTotalSpecies": 10,
+      "netProductionRates_ddT": [-8.7509805331379252e-05, 8.7509824630527605e-05, 1.13630678536233e-13, -8.7509786089046238e-05, 0, 0, 8.75097860322309e-05, 0, 0, 0],
+      "creationRates_ddT": [0, 8.7509824630527605e-05, 1.13630678536233e-13, 0, 0, 0, 8.75097860322309e-05, 0, 0, 0],
+      "destructionRates_ddT": [8.7509805331379252e-05, 0, 0, 8.7509786089046238e-05, 0, 0, 0, 0, 0, 0],
+      "netProductionRates_ddP": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "case_id": "fam5_deriv_005_gri30_T1500",
+      "category": "kinetics_derivatives",
+      "nTotalSpecies": 53,
+      "netProductionRates_ddT": [0, 0.00031112073488163386, 1.4054485355860125e-09, -0.00085016467283501442, 0, 0, 0.00085016366815302772, 0, 0, 0, 0, 0, 0.0011612872305933096, -0.0011612872305933096, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.8275586480871089e-09, 0, 0, 6.0391543787786263e-10, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3.4314740859649718e-09, 0, 0, 0, 0, 0],
+      "creationRates_ddT": [0, 0.00031112073488163386, 1.4054485355860121e-09, 0, 0, 0, 0.0008501636681530274, 0, 0, 0, 0, 0, 0.0011612872305933094, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.8275586480871085e-09, 0, 0, 6.0391543787786253e-10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "destructionRates_ddT": [0, 0, 0, 0.00085016467283501409, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0011612872305933094, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.431474085964971e-09, 0, 0, 0, 0, 0],
+      "netProductionRates_ddP": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "case_id": "fam5_deriv_006_h2o2_T1800",
+      "category": "kinetics_derivatives",
+      "nTotalSpecies": 10,
+      "netProductionRates_ddT": [-0.0019526076868727799, 0.0019528531416505297, 9.2650639930025313e-09, -0.0019523668646270265, 0, 0, 0.0019523622320950301, 0, 0, 0],
+      "creationRates_ddT": [0, 0.0019528531416505303, 9.2650639930025346e-09, 0, 0, 0, 0.0019523622320950307, 0, 0, 0],
+      "destructionRates_ddT": [0.0019526076868727805, 0, 0, 0.0019523668646270272, 0, 0, 0, 0, 0, 0],
+      "netProductionRates_ddP": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "case_id": "fam5_deriv_007_gri30_T2000",
+      "category": "kinetics_derivatives",
+      "nTotalSpecies": 53,
+      "netProductionRates_ddT": [0, 0.012094268299031589, 1.7137437105009711e-07, -0.0011260290404714389, 0, 0, 0.0011259343076266727, 0, 0, 0, 0, 0, 0.013220662881898436, -0.013220662881898436, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.6027524017320752e-07, 0, 0, 1.8091318482134997e-08, 0, 0, 0, 0, 0, 0, 0, 0, 0, -4.7836655865534248e-07, 0, 0, 0, 0, 0],
+      "creationRates_ddT": [0, 0.012094268299031588, 1.7137437105009708e-07, 0, 0, 0, 0.0011259343076266723, 0, 0, 0, 0, 0, 0.013220662881898434, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.6027524017320752e-07, 0, 0, 1.8091318482134993e-08, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "destructionRates_ddT": [0, 0, 0, 0.0011260290404714384, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.013220662881898434, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.7836655865534248e-07, 0, 0, 0, 0, 0],
+      "netProductionRates_ddP": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "case_id": "fam5_deriv_008_vibrational-relaxation_T2200",
+      "category": "kinetics_derivatives",
+      "nTotalSpecies": 5,
+      "netProductionRates_ddT": [0, 0, 0, 0, 0],
+      "creationRates_ddT": [0, 0, 0, 0, 0],
+      "destructionRates_ddT": [0, 0, 0, 0, 0],
+      "netProductionRates_ddP": [0, 0, 0, 0, 0]
+    },
+    {
+      "case_id": "fam5_deriv_009_h2o2_T2500",
+      "category": "kinetics_derivatives",
+      "nTotalSpecies": 10,
+      "netProductionRates_ddT": [-1.1967546045817403, 1.2012980964834161, 0.00044869059257145541, -1.1924354579763505, 0, 0, 1.1922111126800647, 0, 0, 0],
+      "creationRates_ddT": [0, 1.2012980964834166, 0.00044869059257145541, 0, 0, 0, 1.1922111126800652, 0, 0, 0],
+      "destructionRates_ddT": [1.1967546045817408, 0, 0, 1.192435457976351, 0, 0, 0, 0, 0, 0],
+      "netProductionRates_ddP": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "case_id": "fam5_deriv_010_gri30_T3000",
+      "category": "kinetics_derivatives",
+      "nTotalSpecies": 53,
+      "netProductionRates_ddT": [0, 0.50283204665168646, 9.5938197419936371e-05, -0.0049781999060514674, 0, 0, 0.0049290334955591521, 0, 0, 0, 0, 0, 0.5080142037177402, -0.5080142037177402, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.00025312357049452755, 0, 0, 2.3946235646949285e-06, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.00025551819405922246, 0, 0, 0, 0, 0],
+      "creationRates_ddT": [0, 0.50283204755459665, 9.5938197419936385e-05, 0, 0, 0, 0.0049290334955591503, 0, 0, 0, 0, 0, 0.50801420462065039, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0002531235704945275, 0, 0, 2.3946235646949281e-06, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "destructionRates_ddT": [0, 0, 0, 0.0049781999060514656, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.50801420462065039, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0002555181940592224, 0, 0, 0, 0, 0],
+      "netProductionRates_ddP": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }
+  ]
+}

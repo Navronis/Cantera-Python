@@ -1,0 +1,3422 @@
+{
+  "schema_version": "1.0.0",
+  "subsystem": "kinetics",
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "validation_campaign": "KINETICS_HOMOGENEOUS_BULK_PARITY",
+  "total_cases_evaluated": 37,
+  "cases_passed": 37,
+  "cases_failed": 0,
+  "total_vector_comparisons": 50552,
+  "bitwise_identical_elements": 34310,
+  "bitwise_identical_ratio": 0.6787070739040988,
+  "global_status": "FULL_PARITY",
+  "property_metrics": {
+    "fwd_rate_constants": {
+      "comparisons": 3949,
+      "bitwise_identical": 1786,
+      "max_abs_error": 0.00390625,
+      "max_rel_error": 1.4310543058814308e-14,
+      "mean_rel_error": 1.8038929212947165e-16
+    },
+    "rev_rate_constants": {
+      "comparisons": 3949,
+      "bitwise_identical": 655,
+      "max_abs_error": 0.09619140625,
+      "max_rel_error": 4.243878337254667e-14,
+      "mean_rel_error": 3.619640795709365e-15
+    },
+    "equilibrium_constants": {
+      "comparisons": 3949,
+      "bitwise_identical": 1486,
+      "max_abs_error": 1.2188219424570209e+123,
+      "max_rel_error": 5.688039080863333e-14,
+      "mean_rel_error": 3.845314535850088e-15
+    },
+    "fwd_rates_of_progress": {
+      "comparisons": 3949,
+      "bitwise_identical": 3943,
+      "max_abs_error": 5.329070518200751e-15,
+      "max_rel_error": 1.1421005617545594e-15,
+      "mean_rel_error": 6.265468813968829e-16
+    },
+    "rev_rates_of_progress": {
+      "comparisons": 3949,
+      "bitwise_identical": 3782,
+      "max_abs_error": 6.28642737865448e-09,
+      "max_rel_error": 2.859887751657881e-14,
+      "mean_rel_error": 3.017867737391395e-15
+    },
+    "net_rates_of_progress": {
+      "comparisons": 3949,
+      "bitwise_identical": 3776,
+      "max_abs_error": 6.28642737865448e-09,
+      "max_rel_error": 2.859887751657881e-14,
+      "mean_rel_error": 2.928750189963029e-15
+    },
+    "creation_rates": {
+      "comparisons": 792,
+      "bitwise_identical": 642,
+      "max_abs_error": 6.402842700481415e-09,
+      "max_rel_error": 2.859887751657881e-14,
+      "mean_rel_error": 3.913476074465379e-15
+    },
+    "destruction_rates": {
+      "comparisons": 792,
+      "bitwise_identical": 708,
+      "max_abs_error": 6.402842700481415e-09,
+      "max_rel_error": 2.859691829645972e-14,
+      "mean_rel_error": 3.9591696550711214e-15
+    },
+    "net_production_rates": {
+      "comparisons": 792,
+      "bitwise_identical": 564,
+      "max_abs_error": 6.402842700481415e-09,
+      "max_rel_error": 2.859887751657881e-14,
+      "mean_rel_error": 3.9578364628613566e-15
+    },
+    "delta_gibbs": {
+      "comparisons": 3949,
+      "bitwise_identical": 3889,
+      "max_abs_error": 1.52587890625e-05,
+      "max_rel_error": 2.993191554289125e-13,
+      "mean_rel_error": 1.5072409790467888e-16
+    },
+    "delta_enthalpy": {
+      "comparisons": 3949,
+      "bitwise_identical": 3924,
+      "max_abs_error": 1.1920928955078125e-07,
+      "max_rel_error": 4.515841865930353e-15,
+      "mean_rel_error": 4.641125450544927e-18
+    },
+    "delta_entropy": {
+      "comparisons": 3949,
+      "bitwise_identical": 1749,
+      "max_abs_error": 7.450580596923828e-09,
+      "max_rel_error": 1.0109691997837187e-11,
+      "mean_rel_error": 7.572373001119088e-14
+    },
+    "delta_standard_gibbs": {
+      "comparisons": 3949,
+      "bitwise_identical": 2892,
+      "max_abs_error": 4.76837158203125e-07,
+      "max_rel_error": 4.188645039708951e-13,
+      "mean_rel_error": 7.809664829214558e-16
+    },
+    "delta_standard_enthalpy": {
+      "comparisons": 3949,
+      "bitwise_identical": 2880,
+      "max_abs_error": 1.7881393432617188e-07,
+      "max_rel_error": 6.455810706421932e-14,
+      "mean_rel_error": 2.325278414449228e-16
+    },
+    "delta_standard_entropy": {
+      "comparisons": 3949,
+      "bitwise_identical": 1065,
+      "max_abs_error": 4.0745362639427185e-10,
+      "max_rel_error": 2.1476128285779768e-11,
+      "mean_rel_error": 1.3925801824017481e-14
+    },
+    "third_body_concentrations": {
+      "comparisons": 788,
+      "bitwise_identical": 569,
+      "max_abs_error": 1.1102230246251565e-16,
+      "max_rel_error": 3.5586709829366015e-15,
+      "mean_rel_error": 7.133350078642891e-17
+    }
+  },
+  "case_evaluations": [
+    {
+      "case_id": "kinetics_h2o2_001",
+      "mechanism": "h2o2.yaml",
+      "temperature": 300,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 3.0517578125e-05,
+          "max_rel_error": 3.883764676160515e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 3.814697265625e-06,
+          "max_rel_error": 1.09688030681414e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 3.3592302255780284e+57,
+          "max_rel_error": 2.8391444020075486e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 2.635549485807631e-82,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.635549485807631e-82,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.5340917079055395e-92,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.5340917079055395e-92,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 1.5970877247153539e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.8542137592237e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 1.1997153376682632e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_002",
+      "mechanism": "h2o2.yaml",
+      "temperature": 300,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 3.0517578125e-05,
+          "max_rel_error": 3.883764676160515e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 3.814697265625e-06,
+          "max_rel_error": 1.09688030681414e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 3.3592302255780284e+57,
+          "max_rel_error": 2.8391444020075486e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 7.483741188258148e-50,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 7.483741188258148e-50,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 7.483741188258148e-50,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 7.483741188258148e-50,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 7.483741188258148e-50,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 1.5970877247153539e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.8542137592237e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 1.1997153376682632e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 6.938893903907228e-18,
+          "max_rel_error": 4.270405179523913e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_003",
+      "mechanism": "h2o2.yaml",
+      "temperature": 300,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 3.0517578125e-05,
+          "max_rel_error": 3.883764676160515e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.0002288818359375,
+          "max_rel_error": 1.4446467568773786e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 3.1846437000571693e+68,
+          "max_rel_error": 2.8403232015671226e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 2.3108497891561307e-78,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.3108497891561307e-78,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 6.872730851416817e-89,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 6.872730851416817e-89,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 7.985438623576769e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.974332411789482e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.8542137592237e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.6007106751203537e-10,
+          "max_rel_error": 9.225457569319354e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 4.618870242173061e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_004",
+      "mechanism": "h2o2.yaml",
+      "temperature": 300,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 3.0517578125e-05,
+          "max_rel_error": 3.883764676160515e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.0002288818359375,
+          "max_rel_error": 1.4446467568773786e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 3.1846437000571693e+68,
+          "max_rel_error": 2.8403232015671226e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 4.1053665947016125e-48,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 4.1053665947016125e-48,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 4.1053665947016125e-48,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 4.1053665947016125e-48,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 4.1053665947016125e-48,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 7.985438623576769e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.974332411789482e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.8542137592237e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.6007106751203537e-10,
+          "max_rel_error": 9.225457569319354e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 2.1864474519162425e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_005",
+      "mechanism": "h2o2.yaml",
+      "temperature": 1000,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 7.62939453125e-06,
+          "max_rel_error": 1.7535343485832095e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 1.9073486328125e-06,
+          "max_rel_error": 1.3927814120683432e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2.78125,
+          "max_rel_error": 1.4222066093153964e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.2705494208814505e-21,
+          "max_rel_error": 3.2304419963534618e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.2705494208814505e-21,
+          "max_rel_error": 3.2304419963534618e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.2705494208814505e-21,
+          "max_rel_error": 3.2304419963534618e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.2705494208814505e-21,
+          "max_rel_error": 3.230441996344237e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.2705494208814505e-21,
+          "max_rel_error": 3.2304419963534618e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 1.591864176272604e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 3.664297426333691e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 5.820766091346741e-11,
+          "max_rel_error": 9.957522959016682e-15,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 3.469446951953614e-18,
+          "max_rel_error": 4.811323168930272e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_006",
+      "mechanism": "h2o2.yaml",
+      "temperature": 1000,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 7.62939453125e-06,
+          "max_rel_error": 1.7535343485832095e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 1.9073486328125e-06,
+          "max_rel_error": 1.3927814120683432e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2.78125,
+          "max_rel_error": 1.4222066093153964e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.4293680984916318e-21,
+          "max_rel_error": 3.976409314600378e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.4293680984916318e-21,
+          "max_rel_error": 3.976409314600378e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.4293680984916318e-21,
+          "max_rel_error": 3.976409314600378e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.4293680984916318e-21,
+          "max_rel_error": 3.976409314591618e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.4293680984916318e-21,
+          "max_rel_error": 3.976409314600378e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 1.591864176272604e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 3.664297426333691e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 5.820766091346741e-11,
+          "max_rel_error": 9.957522959016682e-15,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 1.734723475976807e-18,
+          "max_rel_error": 2.846936786349274e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_007",
+      "mechanism": "h2o2.yaml",
+      "temperature": 1000,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 7.62939453125e-06,
+          "max_rel_error": 1.7535343485832095e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 2.47955322265625e-05,
+          "max_rel_error": 8.934150155168633e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 23592960.0,
+          "max_rel_error": 7.167661139657853e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.1519648082658485e-19,
+          "max_rel_error": 7.243319509442089e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.1519648082658485e-19,
+          "max_rel_error": 7.243319509442089e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.1519648082658485e-19,
+          "max_rel_error": 7.243319509442089e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.1519648082658485e-19,
+          "max_rel_error": 2.9289340766854634e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.1519648082658485e-19,
+          "max_rel_error": 7.243319509442089e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 1.591864176272604e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 9.564621582677971e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 3.664297426333691e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 5.820766091346741e-11,
+          "max_rel_error": 2.9789844946248067e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_008",
+      "mechanism": "h2o2.yaml",
+      "temperature": 1000,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 7.62939453125e-06,
+          "max_rel_error": 1.7535343485832095e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 2.47955322265625e-05,
+          "max_rel_error": 8.934150155168633e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 23592960.0,
+          "max_rel_error": 7.167661139657853e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.3552527156068805e-19,
+          "max_rel_error": 6.8488690684510114e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.3552527156068805e-19,
+          "max_rel_error": 6.8488690684510114e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.3552527156068805e-19,
+          "max_rel_error": 6.8488690684510114e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.3552527156068805e-19,
+          "max_rel_error": 3.770225127909118e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.3552527156068805e-19,
+          "max_rel_error": 6.8488690684510114e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 1.591864176272604e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 9.564621582677971e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 3.664297426333691e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 5.820766091346741e-11,
+          "max_rel_error": 2.9789844946248067e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 3.9133151702395534e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_009",
+      "mechanism": "h2o2.yaml",
+      "temperature": 1500,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 1.52587890625e-05,
+          "max_rel_error": 3.182584182370338e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 4.00543212890625e-05,
+          "max_rel_error": 7.184450956864006e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.05078125,
+          "max_rel_error": 7.243631533213592e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.6046192152785466e-17,
+          "max_rel_error": 6.983331582114198e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.6046192152785466e-17,
+          "max_rel_error": 6.983331582114198e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.6046192152785466e-17,
+          "max_rel_error": 6.983331582114198e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.6046192152785466e-17,
+          "max_rel_error": 6.983331133886863e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.6046192152785466e-17,
+          "max_rel_error": 6.983331582114198e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 1.717689375952369e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.2488755544201636e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 9.73516320956372e-15,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 1.734723475976807e-18,
+          "max_rel_error": 7.216984753395414e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_010",
+      "mechanism": "h2o2.yaml",
+      "temperature": 1500,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 1.52587890625e-05,
+          "max_rel_error": 3.994271057383164e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 4.00543212890625e-05,
+          "max_rel_error": 7.184450956864006e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.05078125,
+          "max_rel_error": 7.243631533213592e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.6046192152785466e-17,
+          "max_rel_error": 7.640807812789072e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.6046192152785466e-17,
+          "max_rel_error": 7.640807812789072e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.6046192152785466e-17,
+          "max_rel_error": 7.640807812789072e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.6046192152785466e-17,
+          "max_rel_error": 7.640807434451835e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.6046192152785466e-17,
+          "max_rel_error": 7.640807812789072e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 1.717689375952369e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.2488755544201636e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 9.73516320956372e-15,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 3.469446951953614e-18,
+          "max_rel_error": 1.0676012948809784e-15,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_011",
+      "mechanism": "h2o2.yaml",
+      "temperature": 1500,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 1.52587890625e-05,
+          "max_rel_error": 3.182584182370338e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 9.5367431640625e-06,
+          "max_rel_error": 1.2655922706947512e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.052734375,
+          "max_rel_error": 1.2498732445280646e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 9.43689570931383e-16,
+          "max_rel_error": 7.17902208559465e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 9.43689570931383e-16,
+          "max_rel_error": 7.17902208559465e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 9.43689570931383e-16,
+          "max_rel_error": 7.17902208559465e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 9.43689570931383e-16,
+          "max_rel_error": 4.1069536614426676e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 9.43689570931383e-16,
+          "max_rel_error": 7.17902208559465e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 8.919233101679162e-15,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.7881393432617188e-07,
+          "max_rel_error": 1.6705151424400337e-14,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.2488755544201636e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 6.70972412481142e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 2.886793901358165e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_012",
+      "mechanism": "h2o2.yaml",
+      "temperature": 1500,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 1.52587890625e-05,
+          "max_rel_error": 3.583620892503486e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 9.5367431640625e-06,
+          "max_rel_error": 1.2655922706947512e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.052734375,
+          "max_rel_error": 1.2498732445280646e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 7.494005416219807e-16,
+          "max_rel_error": 7.159295845764336e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 7.494005416219807e-16,
+          "max_rel_error": 7.159295845764336e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 7.494005416219807e-16,
+          "max_rel_error": 7.159295845764336e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 7.494005416219807e-16,
+          "max_rel_error": 3.568463580198059e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 7.494005416219807e-16,
+          "max_rel_error": 7.159295845764336e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 8.64954872847389e-15,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.7881393432617188e-07,
+          "max_rel_error": 1.6705151424400337e-14,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.2488755544201636e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 6.70972412481142e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 2.1352025897619565e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_013",
+      "mechanism": "h2o2.yaml",
+      "temperature": 2000,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 0.0001220703125,
+          "max_rel_error": 9.556668561204203e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 5.125999450683594e-06,
+          "max_rel_error": 8.003812013362845e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 6.556510925292969e-07,
+          "max_rel_error": 7.986543805851707e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 2.7457779444547537e-16,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 2.7457779444547537e-16,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 1.7963228585308247e-16,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 1.796308099692496e-16,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 1.7963228585308247e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 1.1508693382265556e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 3.4328164607256955e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.4551915228366852e-10,
+          "max_rel_error": 1.8330354009328405e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 1.734723475976807e-18,
+          "max_rel_error": 4.811323168930272e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_014",
+      "mechanism": "h2o2.yaml",
+      "temperature": 2000,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 0.0001220703125,
+          "max_rel_error": 9.556668561204203e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 5.125999450683594e-06,
+          "max_rel_error": 8.003812013362845e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 6.556510925292969e-07,
+          "max_rel_error": 7.986543805851707e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 5.896336542392241e-16,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 5.896336542392241e-16,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 5.896336542392241e-16,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 5.896299169647855e-16,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 5.896336542392241e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 1.1508693382265556e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 3.4328164607256955e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.4551915228366852e-10,
+          "max_rel_error": 1.8330354009328405e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 8.673617379884035e-19,
+          "max_rel_error": 2.846936786349274e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_015",
+      "mechanism": "h2o2.yaml",
+      "temperature": 2000,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 0.0001220703125,
+          "max_rel_error": 9.556668561204203e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 4.5299530029296875e-06,
+          "max_rel_error": 7.361965946617589e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 6.556510925292969e-07,
+          "max_rel_error": 7.145854984182998e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 3.907985046680551e-14,
+          "max_rel_error": 2.5292225848114106e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 3.907985046680551e-14,
+          "max_rel_error": 2.5292225848114106e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 3.907985046680551e-14,
+          "max_rel_error": 2.5292225848114106e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 3.907985046680551e-14,
+          "max_rel_error": 2.529201804367044e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 3.907985046680551e-14,
+          "max_rel_error": 2.5292225848114106e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 2.7939677238464355e-09,
+          "max_rel_error": 7.930809394831166e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 3.4328164607256955e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 2.478377935884125e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_016",
+      "mechanism": "h2o2.yaml",
+      "temperature": 2000,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 0.0001220703125,
+          "max_rel_error": 9.556668561204203e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 4.5299530029296875e-06,
+          "max_rel_error": 7.361965946617589e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 6.556510925292969e-07,
+          "max_rel_error": 7.145854984182998e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 4.973799150320701e-14,
+          "max_rel_error": 3.5220783613223124e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 4.973799150320701e-14,
+          "max_rel_error": 3.5220783613223124e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 4.973799150320701e-14,
+          "max_rel_error": 3.5220783613223124e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 4.973799150320701e-14,
+          "max_rel_error": 3.522056037336332e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 4.973799150320701e-14,
+          "max_rel_error": 3.5220783613223124e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 2.7939677238464355e-09,
+          "max_rel_error": 7.930809394831166e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 3.4328164607256955e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 2.478377935884125e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 3.9133151702395534e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_017",
+      "mechanism": "h2o2.yaml",
+      "temperature": 2800,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 0.0009765625,
+          "max_rel_error": 3.9659435096654256e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 6.103515625e-05,
+          "max_rel_error": 8.857090991039635e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 9.080395102500916e-09,
+          "max_rel_error": 8.90370670793398e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.687538997430238e-14,
+          "max_rel_error": 3.3807097517276173e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.687538997430238e-14,
+          "max_rel_error": 3.3807097517276173e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.687538997430238e-14,
+          "max_rel_error": 3.3807097517276173e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.687538997430238e-14,
+          "max_rel_error": 3.379236272163085e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.687538997430238e-14,
+          "max_rel_error": 3.3807097517276173e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 2.345474802081685e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.1794922739183687e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 4.8140209303358264e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_018",
+      "mechanism": "h2o2.yaml",
+      "temperature": 2800,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 0.0009765625,
+          "max_rel_error": 4.10027683712597e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 6.103515625e-05,
+          "max_rel_error": 8.857090991039635e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 9.080395102500916e-09,
+          "max_rel_error": 8.90370670793398e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.9539925233402755e-14,
+          "max_rel_error": 4.28305428328423e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.9539925233402755e-14,
+          "max_rel_error": 4.28305428328423e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.9539925233402755e-14,
+          "max_rel_error": 4.28305428328423e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.9539925233402755e-14,
+          "max_rel_error": 4.2816140355301514e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.9539925233402755e-14,
+          "max_rel_error": 4.28305428328423e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 2.345474802081685e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.1794922739183687e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 4.8140209303358264e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_019",
+      "mechanism": "h2o2.yaml",
+      "temperature": 2800,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 0.0009765625,
+          "max_rel_error": 3.4769376118977855e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.0006256103515625,
+          "max_rel_error": 1.083914525412181e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 7.334165275096893e-09,
+          "max_rel_error": 1.0671024309064497e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 3.126388037344441e-12,
+          "max_rel_error": 6.2632096453059024e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 3.126388037344441e-12,
+          "max_rel_error": 6.2632096453059024e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 3.183231456205249e-12,
+          "max_rel_error": 6.2632096453059024e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 3.126388037344441e-12,
+          "max_rel_error": 6.260479830533716e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 3.183231456205249e-12,
+          "max_rel_error": 6.2632096453059024e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 3.1634045540321146e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 2.384185791015625e-07,
+          "max_rel_error": 2.201296683117141e-14,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.1794922739183687e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 1.63447559571966e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_020",
+      "mechanism": "h2o2.yaml",
+      "temperature": 2800,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 0.0009765625,
+          "max_rel_error": 3.4769376118977855e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.0006256103515625,
+          "max_rel_error": 1.083914525412181e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 7.334165275096893e-09,
+          "max_rel_error": 1.0671024309064497e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 3.353761712787673e-12,
+          "max_rel_error": 7.351278624400569e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 3.353761712787673e-12,
+          "max_rel_error": 7.351278624400569e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 3.467448550509289e-12,
+          "max_rel_error": 7.351278624400569e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 3.410605131648481e-12,
+          "max_rel_error": 7.348806635528113e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 3.467448550509289e-12,
+          "max_rel_error": 7.351278624400569e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 3.1634045540321146e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 2.384185791015625e-07,
+          "max_rel_error": 2.201296683117141e-14,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.1794922739183687e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 1.63447559571966e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 3.469446951953614e-18,
+          "max_rel_error": 1.9928557504444924e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_021",
+      "mechanism": "h2o2.yaml",
+      "temperature": 1400,
+      "pressure": 202650,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 7.62939453125e-06,
+          "max_rel_error": 3.4769376118977855e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 1.52587890625e-05,
+          "max_rel_error": 9.675466023396556e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.90625,
+          "max_rel_error": 9.81992497709996e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.1275702593849246e-17,
+          "max_rel_error": 7.730301394676028e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.1275702593849246e-17,
+          "max_rel_error": 7.730301394676028e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.1275702593849246e-17,
+          "max_rel_error": 7.730301394676028e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.1275702593849246e-17,
+          "max_rel_error": 4.1637832088403005e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.1275702593849246e-17,
+          "max_rel_error": 7.730301394676028e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 2.6115081814515156e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 2.1444321180506218e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.2666577420688675e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.7462298274040222e-10,
+          "max_rel_error": 1.1810221078580052e-13,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_h2o2_022",
+      "mechanism": "h2o2.yaml",
+      "temperature": 1800,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 6.103515625e-05,
+          "max_rel_error": 2.7383569281262776e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 1.1444091796875e-05,
+          "max_rel_error": 8.60172911759918e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 3.62396240234375e-05,
+          "max_rel_error": 8.876635154215273e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.3530843112619095e-16,
+          "max_rel_error": 5.532909743701266e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.3530843112619095e-16,
+          "max_rel_error": 5.532909743701266e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.3530843112619095e-16,
+          "max_rel_error": 5.532909743701266e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.3530843112619095e-16,
+          "max_rel_error": 5.532896821183971e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.3530843112619095e-16,
+          "max_rel_error": 5.532909743701266e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 9.71721130508176e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 3.4731692500178252e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 1.518314266418979e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_gri30_023",
+      "mechanism": "gri30.yaml",
+      "temperature": 300,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 6.103515625e-05,
+          "max_rel_error": 1.4310543058814308e-14,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.09619140625,
+          "max_rel_error": 4.243878337254667e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1.2188219424570209e+123,
+          "max_rel_error": 5.688039080863333e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 2.1382117680737565e-50,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.1382117680737565e-50,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 2.1382117680737565e-50,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 2.1382117680737565e-50,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 2.1382117680737565e-50,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 9.5367431640625e-07,
+          "max_rel_error": 2.9143609158644244e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.060836948958321e-15,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 6.302849848484771e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 3.4787505895841946e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 6.1825108468749624e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 4.0745362639427185e-10,
+          "max_rel_error": 2.1797613927409768e-13,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 1.9688815459278648e-15,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_gri30_024",
+      "mechanism": "gri30.yaml",
+      "temperature": 600,
+      "pressure": 50662.5,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 1.52587890625e-05,
+          "max_rel_error": 1.4281797319273524e-14,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.01611328125,
+          "max_rel_error": 2.847949575457237e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1.3469199089641601e+54,
+          "max_rel_error": 2.848195517584496e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 9.860761315262648e-32,
+          "max_rel_error": 2.859887751657881e-14,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 9.860761315262648e-32,
+          "max_rel_error": 2.859887751657881e-14,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 9.860761315262648e-32,
+          "max_rel_error": 2.859887751657881e-14,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 9.860761315262648e-32,
+          "max_rel_error": 2.859691829645972e-14,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 9.860761315262648e-32,
+          "max_rel_error": 2.859887751657881e-14,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 1.9073486328125e-06,
+          "max_rel_error": 5.469927245651297e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 3.4942776043175186e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 5.587935447692871e-09,
+          "max_rel_error": 2.6035465730908035e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 1.1458298843656004e-14,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 2.265762401747521e-14,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.6193447411060333e-10,
+          "max_rel_error": 1.821395251030675e-13,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_gri30_025",
+      "mechanism": "gri30.yaml",
+      "temperature": 1000,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 1.52587890625e-05,
+          "max_rel_error": 7.243236663667684e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.00244140625,
+          "max_rel_error": 1.431480269891183e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 4.565569158243114e+20,
+          "max_rel_error": 1.4300561240771638e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 6.617444900424222e-24,
+          "max_rel_error": 6.9738441273296875e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 6.617444900424222e-24,
+          "max_rel_error": 6.9738441273296875e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 6.617444900424222e-24,
+          "max_rel_error": 6.9738441273296875e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 6.617444900424222e-24,
+          "max_rel_error": 1.1450701313474995e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 6.617444900424222e-24,
+          "max_rel_error": 6.9738441273296875e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 3.814697265625e-06,
+          "max_rel_error": 2.725599499492817e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.515841865930353e-15,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 1.591864176272604e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 2.0149665900801734e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 1.716179765827232e-14,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.3283064365386963e-10,
+          "max_rel_error": 3.5259804176435947e-13,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 6.938893903907228e-18,
+          "max_rel_error": 3.5586709829366015e-15,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_gri30_026",
+      "mechanism": "gri30.yaml",
+      "temperature": 1400,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 1.52587890625e-05,
+          "max_rel_error": 1.6598593175515927e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.000244140625,
+          "max_rel_error": 1.787546869133781e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 321057395310592.0,
+          "max_rel_error": 1.7706975929235958e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 3.5357931102787224e-16,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 2.914335439641036e-16,
+          "max_rel_error": 1.440186690275208e-14,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.914335439641036e-16,
+          "max_rel_error": 1.440186690275208e-14,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 2.914335439641036e-16,
+          "max_rel_error": 1.440186690275208e-14,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 2.914335439641036e-16,
+          "max_rel_error": 1.1321658432877768e-14,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 3.0531133177191805e-16,
+          "max_rel_error": 1.440186690275208e-14,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 3.814697265625e-06,
+          "max_rel_error": 4.644370056270803e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 1.948377265170588e-15,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 2.700443193945812e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 2.384185791015625e-07,
+          "max_rel_error": 2.313219517276526e-14,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 6.154264028406809e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.3283064365386963e-10,
+          "max_rel_error": 1.5213341954306684e-12,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_gri30_027",
+      "mechanism": "gri30.yaml",
+      "temperature": 1800,
+      "pressure": 2026500,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 6.103515625e-05,
+          "max_rel_error": 5.778145240819337e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.000640869140625,
+          "max_rel_error": 2.130987795787827e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 299892736.0,
+          "max_rel_error": 2.1196647232608725e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 2.2168933355715126e-12,
+          "max_rel_error": 8.720052882439645e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.2168933355715126e-12,
+          "max_rel_error": 8.720052882439645e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 4.320099833421409e-12,
+          "max_rel_error": 8.650337165071011e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 2.2737367544323206e-12,
+          "max_rel_error": 6.822340858147681e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 4.320099833421409e-12,
+          "max_rel_error": 8.650337165071011e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 7.62939453125e-06,
+          "max_rel_error": 4.7662224609195145e-14,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 1.3054993124277478e-15,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 5.637240315977283e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 2.384185791015625e-07,
+          "max_rel_error": 1.1938419566472722e-13,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.7881393432617188e-07,
+          "max_rel_error": 7.93432697130816e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.0372681319713593e-10,
+          "max_rel_error": 1.3074706372811536e-12,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_gri30_028",
+      "mechanism": "gri30.yaml",
+      "temperature": 2200,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 0.000244140625,
+          "max_rel_error": 4.915400684871572e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.0008087158203125,
+          "max_rel_error": 1.324369537416942e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2944.0,
+          "max_rel_error": 1.3121264605023627e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 5.329070518200751e-15,
+          "max_rel_error": 1.1421005617545594e-15,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 2.42861286636753e-17,
+          "max_rel_error": 7.48905251587432e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 5.329070518200751e-15,
+          "max_rel_error": 7.48905251587432e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 5.329070518200751e-15,
+          "max_rel_error": 5.05890997148709e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 8.881784197001252e-15,
+          "max_rel_error": 4.835601656854983e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 7.105427357601002e-15,
+          "max_rel_error": 4.835601656854983e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 3.814697265625e-06,
+          "max_rel_error": 9.098516216944984e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.5263686470738223e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 4.3648815629730956e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 2.384185791015625e-07,
+          "max_rel_error": 1.0958085006025107e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 1.2587739105686573e-14,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.3283064365386963e-10,
+          "max_rel_error": 2.1476128285779768e-11,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 8.673617379884035e-19,
+          "max_rel_error": 9.348150641743894e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_gri30_029",
+      "mechanism": "gri30.yaml",
+      "temperature": 2500,
+      "pressure": 3039750,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 0.000152587890625,
+          "max_rel_error": 3.4238487679625916e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.0018310546875,
+          "max_rel_error": 2.1493142563381567e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 39.0,
+          "max_rel_error": 2.1362865850324026e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 3.9108272176235914e-11,
+          "max_rel_error": 7.21291160750969e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 3.9108272176235914e-11,
+          "max_rel_error": 7.21291160750969e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 4.001776687800884e-11,
+          "max_rel_error": 7.21291160750969e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 4.001776687800884e-11,
+          "max_rel_error": 7.066056332260008e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 4.001776687800884e-11,
+          "max_rel_error": 7.21291160750969e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 7.62939453125e-06,
+          "max_rel_error": 2.993191554289125e-13,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.0441909965642205e-15,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 6.09294720632357e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 4.76837158203125e-07,
+          "max_rel_error": 4.424349689980574e-14,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 9.538246763396153e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 3.4924596548080444e-10,
+          "max_rel_error": 1.155166551841443e-12,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_gri30_030",
+      "mechanism": "gri30.yaml",
+      "temperature": 3000,
+      "pressure": 5066250,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 0.001953125,
+          "max_rel_error": 3.351411157511605e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.0011749267578125,
+          "max_rel_error": 2.1225131933974908e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.0234375,
+          "max_rel_error": 2.1334322679865998e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.5133991837501526e-09,
+          "max_rel_error": 8.808845640205346e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.5133991837501526e-09,
+          "max_rel_error": 8.808845640205346e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.57160684466362e-09,
+          "max_rel_error": 8.808845640205346e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.57160684466362e-09,
+          "max_rel_error": 8.779872971598818e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.57160684466362e-09,
+          "max_rel_error": 8.808845640205346e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 1.52587890625e-05,
+          "max_rel_error": 1.708209603505637e-14,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 6.542849961511913e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 5.587935447692871e-09,
+          "max_rel_error": 4.657524163104435e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 4.76837158203125e-07,
+          "max_rel_error": 5.56010390221315e-14,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 6.455810706421932e-14,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-10,
+          "max_rel_error": 1.9255037282982965e-13,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_gri30_031",
+      "mechanism": "gri30.yaml",
+      "temperature": 1500,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 3.0517578125e-05,
+          "max_rel_error": 3.6516474607855956e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.0003509521484375,
+          "max_rel_error": 1.4254688170531332e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 3710851743744.0,
+          "max_rel_error": 1.420368558071418e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 9.75781955236954e-19,
+          "max_rel_error": 4.561716835307681e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 9.75781955236954e-19,
+          "max_rel_error": 4.561716835307681e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.5178830414797062e-18,
+          "max_rel_error": 4.561716835307681e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.5178830414797062e-18,
+          "max_rel_error": 1.9508807346648964e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.5178830414797062e-18,
+          "max_rel_error": 4.561716835307681e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 7.62939453125e-06,
+          "max_rel_error": 9.731021267176688e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 7.450580596923828e-09,
+          "max_rel_error": 1.0109691997837187e-11,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 2.737666855137854e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 1.2986336067492574e-14,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.0372681319713593e-10,
+          "max_rel_error": 1.579639374657569e-13,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 3.469446951953614e-18,
+          "max_rel_error": 2.95955295669537e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_air_032",
+      "mechanism": "air.yaml",
+      "temperature": 500,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 5.7220458984375e-06,
+          "max_rel_error": 3.449794122650303e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 4.336808689942018e-19,
+          "max_rel_error": 7.31104501379637e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2752.0,
+          "max_rel_error": 7.227519018299844e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.6437502967067003e-49,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.6437502967067003e-49,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.6437502967067003e-49,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.6437502967067003e-49,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.6437502967067003e-49,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 6.696140306385332e-15,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 1.7969917381584838e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 8.40831065125644e-15,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 3.469446951953614e-18,
+          "max_rel_error": 1.4277516481189943e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_air_033",
+      "mechanism": "air.yaml",
+      "temperature": 1500,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 3.814697265625e-06,
+          "max_rel_error": 2.7063433664070864e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 3.637978807091713e-12,
+          "max_rel_error": 3.680841419622667e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 7.450580596923828e-08,
+          "max_rel_error": 3.648238112219495e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.4475660719677984e-24,
+          "max_rel_error": 4.217706939360614e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.4475660719677984e-24,
+          "max_rel_error": 4.217706939360614e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.4475660719677984e-24,
+          "max_rel_error": 4.217706939360614e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.4475660719677984e-24,
+          "max_rel_error": 4.217706939360614e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.4475660719677984e-24,
+          "max_rel_error": 4.217706939360614e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 6.223792881095445e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.2435003233745904e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 1.3326308798956113e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_air_034",
+      "mechanism": "air.yaml",
+      "temperature": 2500,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 4.76837158203125e-06,
+          "max_rel_error": 1.3052578954173248e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 1.7881393432617188e-07,
+          "max_rel_error": 2.8796231359371437e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 7.73070496506989e-12,
+          "max_rel_error": 2.7636313640175353e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 1.2874900798265365e-19,
+          "max_rel_error": 4.025918537549601e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.2874900798265365e-19,
+          "max_rel_error": 4.025918537549601e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 1.2874900798265365e-19,
+          "max_rel_error": 4.025918537549601e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 1.2874900798265365e-19,
+          "max_rel_error": 4.025918537549601e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 1.2874900798265365e-19,
+          "max_rel_error": 4.025918537549601e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 3.254060905552298e-16,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 7.450580596923828e-08,
+          "max_rel_error": 5.563503097559872e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 4.906508647632623e-13,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_air_035",
+      "mechanism": "air.yaml",
+      "temperature": 3500,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 3.814697265625e-06,
+          "max_rel_error": 4.586635738631369e-16,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 2.384185791015625e-06,
+          "max_rel_error": 5.4958716387339536e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 5.529727786779404e-10,
+          "max_rel_error": 5.367022002619303e-15,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 8.673617379884035e-18,
+          "max_rel_error": 2.278468797081024e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 8.673617379884035e-18,
+          "max_rel_error": 2.278468797081024e-15,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 8.673617379884035e-18,
+          "max_rel_error": 2.278468797081024e-15,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 8.673617379884035e-18,
+          "max_rel_error": 2.278468797081024e-15,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 8.673617379884035e-18,
+          "max_rel_error": 2.278468797081024e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 3.236885535459589e-16,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 3.4129878659252924e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.4551915228366852e-10,
+          "max_rel_error": 3.9862304155527236e-14,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 4.336808689942018e-19,
+          "max_rel_error": 1.250223180956394e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_adversarial_036",
+      "mechanism": "h2o2.yaml",
+      "temperature": 300,
+      "pressure": 1000,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 3.0517578125e-05,
+          "max_rel_error": 3.883764676160515e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.00014495849609375,
+          "max_rel_error": 2.8235091596505588e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 3.962420470462842e+58,
+          "max_rel_error": 2.842971419640058e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 2.088097429759528e-53,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.088097429759528e-53,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 2.088097429759528e-53,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 2.088097429759528e-53,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 2.088097429759528e-53,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 5.24338311880536e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.841479113202083e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.8542137592237e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.4551915228366852e-10,
+          "max_rel_error": 1.638557224628823e-13,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 1.0842021724855044e-19,
+          "max_rel_error": 1.5908044294678694e-16,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "kinetics_adversarial_037",
+      "mechanism": "gri30.yaml",
+      "temperature": 3200,
+      "pressure": 10000000,
+      "passed": true,
+      "properties": {
+        "fwd_rate_constants": {
+          "max_abs_error": 0.00390625,
+          "max_rel_error": 1.9022629688091775e-15,
+          "passed": true
+        },
+        "rev_rate_constants": {
+          "max_abs_error": 0.003173828125,
+          "max_rel_error": 1.4409066845323192e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.0048828125,
+          "max_rel_error": 1.427157904288254e-14,
+          "passed": true
+        },
+        "fwd_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "rev_rates_of_progress": {
+          "max_abs_error": 6.28642737865448e-09,
+          "max_rel_error": 1.0776450645071668e-14,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 6.28642737865448e-09,
+          "max_rel_error": 1.0776450645071668e-14,
+          "passed": true
+        },
+        "creation_rates": {
+          "max_abs_error": 6.402842700481415e-09,
+          "max_rel_error": 1.0776450645071668e-14,
+          "passed": true
+        },
+        "destruction_rates": {
+          "max_abs_error": 6.402842700481415e-09,
+          "max_rel_error": 1.0675969605833983e-14,
+          "passed": true
+        },
+        "net_production_rates": {
+          "max_abs_error": 6.402842700481415e-09,
+          "max_rel_error": 1.0776450645071668e-14,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 1.52587890625e-05,
+          "max_rel_error": 1.7545530808422846e-14,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 1.4811427694609386e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 4.76837158203125e-07,
+          "max_rel_error": 4.188645039708951e-13,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 6.425869335934636e-14,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.3283064365386963e-10,
+          "max_rel_error": 3.28328587153286e-13,
+          "passed": true
+        },
+        "third_body_concentrations": {
+          "max_abs_error": 6.938893903907228e-18,
+          "max_rel_error": 1.8461815672117779e-16,
+          "passed": true
+        }
+      }
+    }
+  ]
+}

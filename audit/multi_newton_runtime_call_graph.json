@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "solver_family": "multi_newton",
+  "subsystem": "1D Newton",
+  "public_entry_points": {
+    "MultiNewton.step(x, step, r, loglevel)": {
+      "callees": [
+        "SteadyStateSystem.eval(x, step)",
+        "SteadyStateSystem.linearSolver()",
+        "SystemJacobian.solve(step, step)",
+        "SystemJacobian.info()",
+        "SteadyStateSystem.componentName(row)"
+      ],
+      "scientific_purpose": "Compute undamped Newton correction step delta_x = -J^{-1} F(x)"
+    },
+    "MultiNewton.boundStep(x0, step0, r, loglevel)": {
+      "callees": [
+        "SteadyStateSystem.upperBound(i)",
+        "SteadyStateSystem.lowerBound(i)",
+        "SteadyStateSystem.componentName(i)"
+      ],
+      "scientific_purpose": "Compute multiplier fbound in [0, 1] ensuring x0 + fbound*step0 stays within [lower, upper] bounds"
+    },
+    "MultiNewton.dampStep(x0, step0, x1, step1, s1, r, loglevel, writetitle)": {
+      "callees": [
+        "SteadyStateSystem.weightedNorm(step0)",
+        "boundStep(x0, step0, r, loglevel-1)",
+        "step(x1, step1, r, loglevel-1)",
+        "SteadyStateSystem.weightedNorm(step1)",
+        "SteadyStateSystem.ssnorm(x1, step1)"
+      ],
+      "scientific_purpose": "Find damping factor alpha_k such that norm(delta x_{k+1}) < norm(delta x_k) or converges"
+    },
+    "MultiNewton.solve(x0, x1, r, loglevel)": {
+      "callees": [
+        "SystemJacobian.age()",
+        "SteadyStateSystem.evalJacobian(x)",
+        "SteadyStateSystem.factorizeJacobian()",
+        "step(x, stp, r, loglevel-1)",
+        "SystemJacobian.incrementAge()",
+        "dampStep(x, stp, x1, stp1, s1, r, loglevel-1, write_header)"
+      ],
+      "scientific_purpose": "Top-level bounded damped Newton iteration solving F(x) = 0 for 1D multi-domain networks"
+    },
+    "MultiJac.reset()": {
+      "callees": [
+        "BandMatrix.bfill(0.0)"
+      ],
+      "scientific_purpose": "Zero out Jacobian elements and reset age counter"
+    },
+    "MultiJac.initialize(nVars)": {
+      "callees": [
+        "BandMatrix.resize(nVars, kl, ku)"
+      ],
+      "scientific_purpose": "Dimension Jacobian for nVars variables and allocate steady-state diagonal cache"
+    },
+    "MultiJac.setBandwidth(bw)": {
+      "callees": [
+        "BandMatrix.resize(nVars, bw, bw)"
+      ],
+      "scientific_purpose": "Configure banded storage bandwidth kl=bw, ku=bw"
+    },
+    "MultiJac.setValue(row, col, value)": {
+      "callees": [
+        "BandMatrix.setValue(row, col, value)"
+      ],
+      "scientific_purpose": "Set individual element J(row, col) and cache steady diagonal"
+    },
+    "MultiJac.updateTransient(rdt, mask)": {
+      "callees": [
+        "BandMatrix.setValue(n, n, v)",
+        "MultiJac.factorize()"
+      ],
+      "scientific_purpose": "Update diagonal terms M = J - mask * rdt and factorize system matrix"
+    },
+    "MultiJac.solve(b, x)": {
+      "callees": [
+        "BandMatrix.solve(b, x)"
+      ],
+      "scientific_purpose": "Solve linear system M * x = b using banded LU factorization"
+    }
+  }
+}

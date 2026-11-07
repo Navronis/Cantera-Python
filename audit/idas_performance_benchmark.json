@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-11-05T11:32:00Z",
+  "workload": "12_diverse_index1_dae_systems_including_stiff_robertson",
+  "native_median_ms": 108.224,
+  "python_median_ms": 275.185,
+  "speed_ratio": 2.54,
+  "native_speed_parity": false,
+  "native_runs_ms": [
+    119.205,
+    109.318,
+    108.224,
+    107.755,
+    107.142
+  ],
+  "python_runs_ms": [
+    287.907,
+    239.613,
+    247.039,
+    275.185,
+    282.097
+  ]
+}

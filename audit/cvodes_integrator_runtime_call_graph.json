@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "solver_family": "cvodes_integrator",
+  "entry_points": [
+    "cantera_python.numerics.CVodesIntegrator.__init__",
+    "cantera_python.numerics.CVodesIntegrator.initialize",
+    "cantera_python.numerics.CVodesIntegrator.reinitialize",
+    "cantera_python.numerics.CVodesIntegrator.integrate",
+    "cantera_python.numerics.CVodesIntegrator.step",
+    "cantera_python.numerics.CVodesIntegrator.solution",
+    "cantera_python.numerics.CVodesIntegrator.derivative",
+    "cantera_python.numerics.CVodesIntegrator.setTolerances",
+    "cantera_python.numerics.CVodesIntegrator.setSensitivityTolerances",
+    "cantera_python.numerics.CVodesIntegrator.sensitivity",
+    "cantera_python.numerics.CVodesIntegrator.lastOrder",
+    "cantera_python.numerics.CVodesIntegrator.nEquations",
+    "cantera_python.numerics.CVodesIntegrator.nEvals",
+    "cantera_python.numerics.CVodesIntegrator.setMaxOrder",
+    "cantera_python.numerics.CVodesIntegrator.setMethod",
+    "cantera_python.numerics.CVodesIntegrator.setMaxStepSize",
+    "cantera_python.numerics.CVodesIntegrator.setMinStepSize",
+    "cantera_python.numerics.CVodesIntegrator.setMaxSteps",
+    "cantera_python.numerics.CVodesIntegrator.maxSteps",
+    "cantera_python.numerics.CVodesIntegrator.setMaxErrTestFails",
+    "cantera_python.numerics.CVodesIntegrator.solverStats",
+    "cantera_python.numerics.CVodesIntegrator.setLinearSolverType",
+    "cantera_python.numerics.CVodesIntegrator.linearSolverType",
+    "cantera_python.numerics.CVodesIntegrator.setBandwidth",
+    "cantera_python.numerics.CVodesIntegrator.nSensParams",
+    "cantera_python.numerics.CVodesIntegrator.getErrorInfo",
+    "cantera_python.numerics.CVodesIntegrator.currentTime",
+    "cantera_python.numerics.CVodesIntegrator.setRootFunctionCount"
+  ],
+  "nodes": {
+    "cantera_python.numerics.CVodesIntegrator.initialize": {
+      "callees": [
+        "cantera_python.numerics.FuncEval.getState",
+        "cantera_python.numerics.FuncEval.nparams",
+        "cantera_python.numerics.CVodesIntegrator.sensInit",
+        "cantera_python.numerics.CVodesIntegrator.applyOptions"
+      ],
+      "description": "Allocates state/derivative vectors, initializes BDF Nordsieck history, resets sensitivity if nparams > 0, and configures solver options"
+    },
+    "cantera_python.numerics.CVodesIntegrator.reinitialize": {
+      "callees": [
+        "cantera_python.numerics.FuncEval.getState",
+        "cantera_python.numerics.CVodesIntegrator.applyOptions"
+      ],
+      "description": "Reloads initial state, clears old BDF step history to prevent contamination, and restarts integration at t0"
+    },
+    "cantera_python.numerics.CVodesIntegrator.integrate": {
+      "callees": [
+        "cantera_python.numerics.CVodesIntegrator.step",
+        "cantera_python.numerics.CVodesIntegrator._cv_interpolate"
+      ],
+      "description": "Advances solution through internal variable-step BDF steps until tInteg >= tout, then interpolates exactly to tout"
+    },
+    "cantera_python.numerics.CVodesIntegrator.step": {
+      "callees": [
+        "cantera_python.numerics.CVodesIntegrator._cv_step"
+      ],
+      "description": "Performs exactly one internal BDF step towards tout and returns the current internal time reached"
+    },
+    "cantera_python.numerics.CVodesIntegrator.derivative": {
+      "callees": [
+        "cantera_python.numerics.CVodesIntegrator._cv_dky"
+      ],
+      "description": "Evaluates the n-th derivative vector at tout using the Nordsieck polynomial interpolation"
+    },
+    "cantera_python.numerics.CVodesIntegrator.sensitivity": {
+      "callees": [
+        "cantera_python.numerics.CVodesIntegrator._cv_get_sens"
+      ],
+      "description": "Returns sensitivity of state component k with respect to parameter p (dy_k / dp_p) at current time"
+    },
+    "cantera_python.numerics.CVodesIntegrator._cv_step": {
+      "callees": [
+        "cantera_python.numerics.CVodesIntegrator._cv_nordsieck_predict",
+        "cantera_python.numerics.CVodesIntegrator._cv_newton_corrector",
+        "cantera_python.numerics.CVodesIntegrator._cv_complete_step",
+        "cantera_python.numerics.CVodesIntegrator._cv_prepare_next_step"
+      ],
+      "description": "Core BDF variable-order (1-5) variable-step algorithm matching SUNDIALS cvStep"
+    }
+  }
+}

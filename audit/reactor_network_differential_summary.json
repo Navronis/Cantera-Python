@@ -1,0 +1,199 @@
+{
+  "run_id": "rnet_diff_7b71db564f2f60b4",
+  "timestamp_utc": "2026-11-05T10:44:32.359069+00:00",
+  "total_cases": 24,
+  "passed_cases": 24,
+  "pass_rate_percent": 100.0,
+  "metrics": {
+    "temperature_relative_error": {
+      "max": 1.218387997050836e-05,
+      "p50": 2.081026814835874e-11,
+      "p95": 7.3584561009850044e-09,
+      "p99": 7.562383498774666e-06
+    },
+    "pressure_relative_error": {
+      "max": 1.1527114586693048e-05,
+      "p50": 1.14318846296654e-13,
+      "p95": 5.112756170458892e-09,
+      "p99": 7.1491960755247915e-06
+    },
+    "mass_relative_error": {
+      "max": 3.900705374258646e-16,
+      "p50": 0.0,
+      "p95": 1.9508067708911956e-16,
+      "p99": 3.159831837887182e-16
+    },
+    "sensitivity_relative_error": {
+      "max": 0.0007516298488278403,
+      "p50": 0.0007497743092607042
+    },
+    "ignition_delay_difference": {
+      "max_abs_s": 0.0,
+      "max_rel": 0.0
+    }
+  },
+  "case_comparisons": [
+    {
+      "case_id": "cv_inert_argon_300k",
+      "category": "constant_volume",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 0.0,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "cv_inert_n2_o2_800k",
+      "category": "constant_volume",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 1.4361623714154305e-16,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "cv_h2_air_ignition_1000k",
+      "category": "ignition",
+      "passed": true,
+      "max_T_rel_err": 1.218387997050836e-05,
+      "max_P_rel_err": 1.1527114586693048e-05,
+      "max_mass_rel_err": 1.3614129359582628e-16
+    },
+    {
+      "case_id": "cv_ch4_air_ignition_1300k",
+      "category": "ignition",
+      "passed": true,
+      "max_T_rel_err": 3.680393691052406e-12,
+      "max_P_rel_err": 3.5789345227113772e-12,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "cp_inert_n2_600k",
+      "category": "constant_pressure",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 1.4361623714154305e-16,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "cp_h2_o2_reacting_1100k",
+      "category": "constant_pressure",
+      "passed": true,
+      "max_T_rel_err": 3.9213247351001293e-10,
+      "max_P_rel_err": 4.3084871142462923e-16,
+      "max_mass_rel_err": 1.3037595607761042e-16
+    },
+    {
+      "case_id": "flow_mfc_mass_addition",
+      "category": "flow_devices",
+      "passed": true,
+      "max_T_rel_err": 4.983462565356036e-09,
+      "max_P_rel_err": 4.983462477372058e-09,
+      "max_mass_rel_err": 3.900705374258646e-16
+    },
+    {
+      "case_id": "flow_valve_pressure_driven",
+      "category": "flow_devices",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 0.0,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "flow_pressure_controller_coupling",
+      "category": "flow_devices",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 1.4361623714154303e-16,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "wall_thermal_heat_exchange",
+      "category": "walls",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 0.0,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "wall_moving_expansion_work",
+      "category": "walls",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 0.0,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "multi_reactor_cascade_flow",
+      "category": "multi_reactor",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 0.0,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "advance_vs_step_mechanics",
+      "category": "advance_step",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 0.0,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "advance_limits_temperature_trigger",
+      "category": "advance_limits",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 0.0,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "reinitialization_trajectory",
+      "category": "reinitialization",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 0.0,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "derivative_and_estimate_queries",
+      "category": "derivatives_estimates",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 0.0,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "sensitivity_reaction_multipliers",
+      "category": "sensitivities",
+      "passed": true,
+      "max_T_rel_err": 2.2047150156615297e-08,
+      "max_P_rel_err": 0.0,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "rocket_hp_h2_o2_50atm",
+      "category": "rocket_high_pressure",
+      "passed": true,
+      "max_T_rel_err": 1.0901582015393554e-10,
+      "max_P_rel_err": 2.1370516524849348e-10,
+      "max_mass_rel_err": 1.8205224412291778e-16
+    },
+    {
+      "case_id": "rocket_hp_ch4_o2_30atm",
+      "category": "rocket_high_pressure",
+      "passed": true,
+      "max_T_rel_err": 2.984097057552068e-11,
+      "max_P_rel_err": 3.034361743360695e-11,
+      "max_mass_rel_err": 0.0
+    },
+    {
+      "case_id": "long_horizon_inert_approach",
+      "category": "long_horizon",
+      "passed": true,
+      "max_T_rel_err": 0.0,
+      "max_P_rel_err": 1.4361623714154308e-16,
+      "max_mass_rel_err": 1.140199964495329e-16
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

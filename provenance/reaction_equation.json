@@ -1,0 +1,9 @@
+{
+  "module": "cantera_python.reaction_equation",
+  "upstream_paths": ["src/kinetics/Reaction.cpp", "include/cantera/kinetics/Reaction.h", "src/kinetics/Kinetics.cpp"],
+  "translations": [{
+    "python_symbols": ["parse_reaction_equation", "ParsedReactionEquation", "duplicate_stoichiometry_ratio", "are_duplicate_reactions"],
+    "translated_methods": ["parseReactionEquation", "Kinetics::checkDuplicateStoich", "Kinetics::checkDuplicates direction rule"],
+    "notes": "Ports whitespace-token reaction syntax, stoichiometry accumulation, reversible arrows, scalar-multiple duplicate comparison, and the exception for irreversible reactions written in opposite directions. Third-body resolution and rate-type validation remain in kinetics construction work."
+  }]
+}

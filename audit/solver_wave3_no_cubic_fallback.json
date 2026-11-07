@@ -1,0 +1,6 @@
+{
+  "runtime_files_scanned": ["cantera_python/tpx.py", "cantera_python/tpx_exact.py", "cantera_python/solution.py", "cantera_python/thermo.py"],
+  "forbidden_runtime_routes": ["PengRobinson", "RedlichKwong", "cubic_eos.py", "CoolProp", "REFPROP", "cantera", "_cantera"],
+  "matches_in_TPX_fluid_paths": 0,
+  "status": "PASS"
+}

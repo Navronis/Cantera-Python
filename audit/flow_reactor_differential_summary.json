@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "solver_family": "flow_reactor",
+  "subsystem": "flow reactor DAE",
+  "evaluation_timestamp_utc": "2026-11-05T12:17:43.882346+00:00",
+  "total_cases": 16,
+  "passed_cases": 16,
+  "pass_rate_pct": 100.0,
+  "speed_rel_error_mean": 3.1673357994974255e-10,
+  "speed_rel_error_max": 1.0262113533517053e-08,
+  "density_rel_error_mean": 1.9302454040588967e-10,
+  "density_rel_error_max": 2.465663356432977e-09,
+  "temp_rel_error_mean": 2.034910406918125e-10,
+  "temp_rel_error_max": 2.9722044612634954e-09,
+  "pressure_rel_error_mean": 4.004550112914795e-12,
+  "pressure_rel_error_max": 9.508759252118832e-11,
+  "mass_fraction_error_max": 8.967169229379124e-10,
+  "case_comparisons": [
+    {
+      "case_id": "flow_inert_argon_300k",
+      "category": "flow_hydrodynamics",
+      "passed": true,
+      "max_speed_rel_err": 3.343999146900384e-15,
+      "max_density_rel_err": 2.1891839318310312e-15,
+      "max_temp_rel_err": 0.0,
+      "max_pressure_rel_err": 2.297859794264689e-15,
+      "max_mass_fraction_err": 2.965405349901071e-26
+    },
+    {
+      "case_id": "flow_inert_n2_o2_800k",
+      "category": "flow_hydrodynamics",
+      "passed": true,
+      "max_speed_rel_err": 1.6956566810552664e-13,
+      "max_density_rel_err": 1.299713760261772e-13,
+      "max_temp_rel_err": 0.0,
+      "max_pressure_rel_err": 2.4414760314062265e-15,
+      "max_mass_fraction_err": 1.0847711617856248e-12
+    },
+    {
+      "case_id": "flow_h2_air_1000k_standard",
+      "category": "flow_reacting",
+      "passed": true,
+      "max_speed_rel_err": 1.2358769716725786e-12,
+      "max_density_rel_err": 4.950715706898832e-11,
+      "max_temp_rel_err": 4.856553914578399e-11,
+      "max_pressure_rel_err": 5.812149117114871e-13,
+      "max_mass_fraction_err": 6.685263453931611e-12
+    },
+    {
+      "case_id": "flow_h2_air_1200k_fast",
+      "category": "flow_reacting",
+      "passed": true,
+      "max_speed_rel_err": 5.6335918878068704e-11,
+      "max_density_rel_err": 1.6848110515551988e-09,
+      "max_temp_rel_err": 1.5889833093751803e-09,
+      "max_pressure_rel_err": 9.508759252118832e-11,
+      "max_mass_fraction_err": 2.564547268937037e-10
+    },
+    {
+      "case_id": "flow_h2_o2_ar_dilute",
+      "category": "flow_reacting",
+      "passed": true,
+      "max_speed_rel_err": 9.832746408830934e-11,
+      "max_density_rel_err": 2.339347413990715e-10,
+      "max_temp_rel_err": 2.3260016942830672e-10,
+      "max_pressure_rel_err": 1.393939197693874e-12,
+      "max_mass_fraction_err": 2.5604471401849718e-11
+    },
+    {
+      "case_id": "flow_ch4_air_1200k",
+      "category": "flow_reacting",
+      "passed": true,
+      "max_speed_rel_err": 3.5652877432138787e-13,
+      "max_density_rel_err": 1.2343875965482024e-09,
+      "max_temp_rel_err": 1.2334868415564415e-09,
+      "max_pressure_rel_err": 4.282348959068192e-12,
+      "max_mass_fraction_err": 2.8163786258382696e-10
+    },
+    {
+      "case_id": "flow_high_pressure_10atm",
+      "category": "flow_extreme_pressure",
+      "passed": true,
+      "max_speed_rel_err": 1.0262113533517053e-08,
+      "max_density_rel_err": 2.465663356432977e-09,
+      "max_temp_rel_err": 2.9722044612634954e-09,
+      "max_pressure_rel_err": 1.8169177393250898e-12,
+      "max_mass_fraction_err": 8.967169229379124e-10
+    },
+    {
+      "case_id": "flow_low_pressure_05atm",
+      "category": "flow_extreme_pressure",
+      "passed": true,
+      "max_speed_rel_err": 6.898454286101899e-13,
+      "max_density_rel_err": 1.4988846752936352e-12,
+      "max_temp_rel_err": 1.391905849838319e-12,
+      "max_pressure_rel_err": 2.498922526262787e-14,
+      "max_mass_fraction_err": 3.6193270602780103e-13
+    },
+    {
+      "case_id": "flow_area_change_preserves_mdot",
+      "category": "flow_geometry",
+      "passed": true,
+      "max_speed_rel_err": 2.5408534660193516e-11,
+      "max_density_rel_err": 1.8072428568487826e-10,
+      "max_temp_rel_err": 1.80001052285661e-10,
+      "max_pressure_rel_err": 1.3341948430447574e-13,
+      "max_mass_fraction_err": 2.4921512507269868e-11
+    },
+    {
+      "case_id": "flow_fuel_rich_phi2",
+      "category": "flow_stoichiometry",
+      "passed": true,
+      "max_speed_rel_err": 1.1429813695680172e-12,
+      "max_density_rel_err": 4.331908996475863e-11,
+      "max_temp_rel_err": 4.2782517084560825e-11,
+      "max_pressure_rel_err": 6.340656869795106e-13,
+      "max_mass_fraction_err": 7.361139978147166e-12
+    },
+    {
+      "case_id": "flow_fuel_lean_phi05",
+      "category": "flow_stoichiometry",
+      "passed": true,
+      "max_speed_rel_err": 1.022854056737471e-11,
+      "max_density_rel_err": 3.799721540892022e-11,
+      "max_temp_rel_err": 3.7524841900449246e-11,
+      "max_pressure_rel_err": 3.8446066682776306e-13,
+      "max_mass_fraction_err": 4.18046153249918e-12
+    },
+    {
+      "case_id": "flow_energy_disabled_isothermal",
+      "category": "flow_switches",
+      "passed": true,
+      "max_speed_rel_err": 2.1593228795137373e-11,
+      "max_density_rel_err": 2.63464424432966e-13,
+      "max_temp_rel_err": 0.0,
+      "max_pressure_rel_err": 1.2925461342738863e-15,
+      "max_mass_fraction_err": 6.632140443103209e-11
+    },
+    {
+      "case_id": "flow_chemistry_disabled_frozen",
+      "category": "flow_switches",
+      "passed": true,
+      "max_speed_rel_err": 3.9023376805135363e-13,
+      "max_density_rel_err": 3.960026121150835e-13,
+      "max_temp_rel_err": 0.0,
+      "max_pressure_rel_err": 5.7446494856617234e-15,
+      "max_mass_fraction_err": 5.206945985491984e-14
+    },
+    {
+      "case_id": "flow_step_mode",
+      "category": "flow_stepping",
+      "passed": true,
+      "max_speed_rel_err": 2.4261022750868513e-11,
+      "max_density_rel_err": 2.4122275804216283e-11,
+      "max_temp_rel_err": 2.3699726625636686e-11,
+      "max_pressure_rel_err": 2.236104812293326e-13,
+      "max_mass_fraction_err": 3.1001435486057634e-12
+    },
+    {
+      "case_id": "flow_component_introspection",
+      "category": "flow_introspection",
+      "passed": true,
+      "max_speed_rel_err": 0.0,
+      "max_density_rel_err": 0.0,
+      "max_temp_rel_err": 0.0,
+      "max_pressure_rel_err": 0.0,
+      "max_mass_fraction_err": 0.0
+    },
+    {
+      "case_id": "flow_source_contracts",
+      "category": "flow_contracts",
+      "passed": true,
+      "max_speed_rel_err": 0.0,
+      "max_density_rel_err": 0.0,
+      "max_temp_rel_err": 0.0,
+      "max_pressure_rel_err": 0.0,
+      "max_mass_fraction_err": 0.0
+    }
+  ],
+  "failures": []
+}

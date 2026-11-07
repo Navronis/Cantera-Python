@@ -1,0 +1,6 @@
+{
+  "single_eval_us": 0.017964,
+  "batch_eval_us": 0.276204,
+  "checksum_scalar": 2.29441e+06,
+  "checksum_batch": 237865
+}

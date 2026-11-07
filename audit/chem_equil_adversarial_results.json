@@ -1,0 +1,60 @@
+{
+  "total_adversarial_cases": 6,
+  "passed": 6,
+  "cases": [
+    {
+      "case_id": "EQ_ADV_HIGH_T_DISSOC_0241",
+      "status": "PASS",
+      "mode": "TP",
+      "t_rel_error": 1.2992781453898976e-16,
+      "p_rel_error": 2.2246155133220074e-13,
+      "max_x_rel_error": 2.333778916798687e-13,
+      "max_mu_rel_error": 1.576418072703373e-14
+    },
+    {
+      "case_id": "EQ_ADV_HIGH_T_H2O_0242",
+      "status": "PASS",
+      "mode": "TP",
+      "t_rel_error": 8.526512829121195e-16,
+      "p_rel_error": 1.1078843765450175e-11,
+      "max_x_rel_error": 0.00019552157841028916,
+      "max_mu_rel_error": 5.851657138289056e-06
+    },
+    {
+      "case_id": "EQ_ADV_PURE_N2_0243",
+      "status": "PASS",
+      "mode": "TP",
+      "t_rel_error": 0.0,
+      "p_rel_error": 3.373296955502505e-10,
+      "max_x_rel_error": 2.220446049250448e-16,
+      "max_mu_rel_error": 1.2973355607928615e-11
+    },
+    {
+      "case_id": "EQ_ADV_HP_HIGH_P_0244",
+      "status": "PASS",
+      "mode": "HP",
+      "t_rel_error": 3.121226692232174e-12,
+      "p_rel_error": 7.706856303464624e-11,
+      "max_x_rel_error": 1.1690555135461694e-10,
+      "max_mu_rel_error": 6.716969944016275e-12
+    },
+    {
+      "case_id": "EQ_ADV_UV_HIGH_P_0245",
+      "status": "PASS",
+      "mode": "UV",
+      "t_rel_error": 1.4766669057154435e-12,
+      "p_rel_error": 2.197345532207967e-12,
+      "max_x_rel_error": 1.9347269847749882e-10,
+      "max_mu_rel_error": 1.5508978595359767e-11
+    },
+    {
+      "case_id": "EQ_ADV_TRACE_DILUTION_0246",
+      "status": "PASS",
+      "mode": "TP",
+      "t_rel_error": 0.0,
+      "p_rel_error": 7.180811857077205e-15,
+      "max_x_rel_error": 0.000210107759314503,
+      "max_mu_rel_error": 2.0846363772043236e-11
+    }
+  ]
+}

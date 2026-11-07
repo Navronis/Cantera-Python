@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "solver_family": "sim1d",
+  "subsystem": "1D solve orchestration",
+  "overall_slowdown_factor": 127.62,
+  "native_equivalent_speed_parity": false,
+  "comparisons": [
+    {
+      "grid_size": 25,
+      "n_components": 4,
+      "total_size": 100,
+      "native_median_ms": 0.006972,
+      "python_median_ms": 2.569699994637631,
+      "slowdown_factor": 368.57
+    },
+    {
+      "grid_size": 100,
+      "n_components": 4,
+      "total_size": 400,
+      "native_median_ms": 0.030478,
+      "python_median_ms": 5.689700003131293,
+      "slowdown_factor": 186.68
+    },
+    {
+      "grid_size": 500,
+      "n_components": 4,
+      "total_size": 2000,
+      "native_median_ms": 0.365624,
+      "python_median_ms": 25.072099997487385,
+      "slowdown_factor": 68.57
+    },
+    {
+      "grid_size": 2000,
+      "n_components": 4,
+      "total_size": 8000,
+      "native_median_ms": 1.94045,
+      "python_median_ms": 49.50589999498334,
+      "slowdown_factor": 25.51
+    }
+  ]
+}

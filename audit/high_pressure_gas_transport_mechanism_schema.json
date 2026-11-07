@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-11-04T23:30:00Z",
+  "mechanisms": {
+    "methane_co2.yaml": {
+      "phase_name": "methane_co2",
+      "n_species": 2,
+      "species": [
+        "CH4",
+        "CO2"
+      ],
+      "binary_diff_shape": [
+        2,
+        2
+      ],
+      "mix_diff_shape": [
+        2
+      ],
+      "models_supported": [
+        "high-pressure",
+        "high-pressure-Chung"
+      ],
+      "verified": true
+    },
+    "co2_RK_example.yaml": {
+      "phase_name": "carbondioxide",
+      "n_species": 7,
+      "species": [
+        "CO2",
+        "H2O",
+        "H2",
+        "CO",
+        "CH4",
+        "O2",
+        "N2"
+      ],
+      "binary_diff_shape": [
+        7,
+        7
+      ],
+      "mix_diff_shape": [
+        7
+      ],
+      "models_supported": [
+        "high-pressure",
+        "high-pressure-Chung"
+      ],
+      "verified": true
+    }
+  }
+}

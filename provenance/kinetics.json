@@ -1,0 +1,11 @@
+{
+  "module": "cantera_python.kinetics",
+  "upstream_paths": ["src/kinetics.cpp", "include/cantera/kinetics/Kinetics.h"],
+  "translations": [{
+    "python_symbols": ["ElementaryReaction"],
+    "translated_methods": ["mass-action progress rates", "reversible progress", "stoichiometric species source terms", "ThirdBodyCalc default-compensated effective concentration", "Reaction::check empirical reaction-order validation", "BulkKinetics::processThirdBodies mass-action scaling", "falloff/collider integration for Lindemann, Troe, SRI, and Tsang", "BulkKinetics concentration-unit equilibrium constant", "BulkKinetics equilibrium-derived reverse rate coefficient"],
+    "upstream_symbols": ["ThirdBodyCalc::update", "ThirdBodyCalc::multiply", "ThirdBody::efficiency", "Reaction::check", "BulkKinetics::processThirdBodies", "FalloffData::update", "FalloffRate", "BulkKinetics::getEquilibriumConstants", "BulkKinetics::applyEquilibriumConstants", "Kinetics::getReactionDelta"],
+    "upstream_locations": ["include/cantera/kinetics/ThirdBodyCalc.h", "src/kinetics/Reaction.cpp:134-180", "src/kinetics/Reaction.cpp:810-850", "src/kinetics/BulkKinetics.cpp:163-199", "src/kinetics/BulkKinetics.cpp:487-567", "src/kinetics/Falloff.cpp:22-88", "include/cantera/kinetics/Falloff.h", "include/cantera/kinetics/Kinetics.h:369-418", "src/kinetics/Kinetics.cpp:408-425"],
+    "notes": "Scalar elementary, three-body mass-action, concrete Lindemann/Troe/SRI/Tsang falloff, P-log, Chebyshev, P-log-form Linear-Burke, and bounded ideal-gas detailed-balance pathways. The mechanism factory now applies live pressure/composition and reaction-local unit overrides. Interface/multiphase kinetics, complete derivatives, remaining rate parser families, duplicate semantics, and full Kinetics manager behavior remain pending."
+  }]
+}

@@ -1,0 +1,61 @@
+name: Pinned Native Oracle Build and Validation
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential g++ gfortran libblas-dev liblapack-dev git
+
+      - name: Check out Pinned Cantera Commit
+        run: |
+          git clone https://github.com/Cantera/cantera.git cantera-pinned
+          cd cantera-pinned
+          git checkout 726522be4e2a13454d8415b7ef799d621f665cf3
+          git submodule update --init --recursive
+          echo "COMMIT_HASH=$(git rev-parse HEAD)" >> $GITHUB_ENV
+
+      - name: Verify Exact Commit
+        run: |
+          if [ "$COMMIT_HASH" != "726522be4e2a13454d8415b7ef799d621f665cf3" ]; then
+            echo "Error: Commit $COMMIT_HASH does not match pinned commit 726522be4e2a13454d8415b7ef799d621f665cf3" >&2
+            exit 1
+          fi
+
+      - name: Install Python Build Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install scons numpy cython scipy ruamel.yaml pyyaml pytest
+
+      - name: Build Cantera
+        working-directory: cantera-pinned
+        run: |
+          cat << 'EOF' > cantera.conf
+          prefix = '/tmp/cantera-install'
+          python_package = 'y'
+          f90_interface = 'n'
+          system_sundials = 'n'
+          cxx_flags = '-O3 -std=c++20'
+          EOF
+          python -m SCons build -j$(nproc)
+          python -m SCons install
+
+      - name: Run Native Oracle Differential Campaigns
+        run: |
+          export PYTHONPATH="/tmp/cantera-install/lib/python3.12/site-packages:$PYTHONPATH"
+          python tools/run_native_differential_campaigns.py

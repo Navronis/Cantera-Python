@@ -1,0 +1,7 @@
+{"case_id": "decay_l1", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0]}
+{"case_id": "decay_l10", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 1.0, "lambda": 10.0, "y_init": [1.0]}
+{"case_id": "robertson", "problem_type": "robertson", "mode": "integrate", "t0": 0.0, "tout": 1.0, "y_init": [1.0, 0.0, 0.0]}
+{"case_id": "param_sens", "problem_type": "param_exp", "mode": "sens", "t0": 0.0, "tout": 1.0, "y_init": [1.0]}
+{"case_id": "step_decay", "problem_type": "decay", "mode": "step", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0]}
+{"case_id": "reinit_decay", "problem_type": "decay", "mode": "reinit", "t0": 0.0, "tout": 1.0, "lambda": 1.0, "y_init": [1.0], "y_reinit": [5.0]}
+{"case_id": "step_limit", "problem_type": "decay", "mode": "integrate", "t0": 0.0, "tout": 10.0, "lambda": 1.0, "y_init": [1.0], "max_steps": 2}

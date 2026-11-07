@@ -1,0 +1,3283 @@
+{
+  "family": "THERMO_FAMILY_4_IDEAL_PHASES",
+  "subsystem": "thermodynamics",
+  "symbol_count": 252,
+  "symbols": [
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:223:type",
+      "canonical_index": 2011,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        223,
+        223
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:231:addInterpolativeDependency",
+      "canonical_index": 2012,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        231,
+        231
+      ],
+      "signature": "void addInterpolativeDependency(const InterpolativeDependency& int_deps)",
+      "function_or_method": "addInterpolativeDependency",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:233:initThermo",
+      "canonical_index": 2013,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        233,
+        233
+      ],
+      "signature": "void initThermo() override",
+      "function_or_method": "initThermo",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:234:addSpecies",
+      "canonical_index": 2014,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        234,
+        234
+      ],
+      "signature": "bool addSpecies(shared_ptr<Species> spec) override",
+      "function_or_method": "addSpecies",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:235:getParameters",
+      "canonical_index": 2015,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        235,
+        235
+      ],
+      "signature": "void getParameters(AnyMap& phaseNode) const override",
+      "function_or_method": "getParameters",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:236:getSpeciesParameters",
+      "canonical_index": 2016,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        236,
+        236
+      ],
+      "signature": "void getSpeciesParameters(const string& name, AnyMap& speciesNode) const override",
+      "function_or_method": "getSpeciesParameters",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:243:getEnthalpy_RT_ref",
+      "canonical_index": 2017,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        243,
+        243
+      ],
+      "signature": "void getEnthalpy_RT_ref(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT_ref",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:244:getEntropy_R_ref",
+      "canonical_index": 2018,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        244,
+        244
+      ],
+      "signature": "void getEntropy_R_ref(span<double> sr) const override",
+      "function_or_method": "getEntropy_R_ref",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:245:getCp_R_ref",
+      "canonical_index": 2019,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        245,
+        245
+      ],
+      "signature": "void getCp_R_ref(span<double> cpr) const override",
+      "function_or_method": "getCp_R_ref",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:246:getGibbs_RT_ref",
+      "canonical_index": 2020,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        246,
+        246
+      ],
+      "signature": "void getGibbs_RT_ref(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT_ref",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:262:getEnthalpy_RT",
+      "canonical_index": 2021,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        262,
+        262
+      ],
+      "signature": "void getEnthalpy_RT(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:273:getEntropy_R",
+      "canonical_index": 2022,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        273,
+        273
+      ],
+      "signature": "void getEntropy_R(span<double> sr) const override",
+      "function_or_method": "getEntropy_R",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:282:getCp_R",
+      "canonical_index": 2023,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        282,
+        282
+      ],
+      "signature": "void getCp_R(span<double> cpr) const override",
+      "function_or_method": "getCp_R",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:291:getGibbs_RT",
+      "canonical_index": 2024,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        291,
+        291
+      ],
+      "signature": "void getGibbs_RT(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:299:getStandardChemPotentials",
+      "canonical_index": 2025,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        299,
+        299
+      ],
+      "signature": "void getStandardChemPotentials(span<double> mu0) const override",
+      "function_or_method": "getStandardChemPotentials",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:313:getPartialMolarEnthalpies",
+      "canonical_index": 2026,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        313,
+        313
+      ],
+      "signature": "void getPartialMolarEnthalpies(span<double> hbar) const override",
+      "function_or_method": "getPartialMolarEnthalpies",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:321:getPartialMolarEntropies",
+      "canonical_index": 2027,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        321,
+        321
+      ],
+      "signature": "void getPartialMolarEntropies(span<double> sbar) const override",
+      "function_or_method": "getPartialMolarEntropies",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:329:getPartialMolarCp",
+      "canonical_index": 2028,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        329,
+        329
+      ],
+      "signature": "void getPartialMolarCp(span<double> cpbar) const override",
+      "function_or_method": "getPartialMolarCp",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:337:getChemPotentials",
+      "canonical_index": 2029,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        337,
+        337
+      ],
+      "signature": "void getChemPotentials(span<double> mu) const override",
+      "function_or_method": "getChemPotentials",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:352:enthalpy_mole",
+      "canonical_index": 2030,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        352,
+        352
+      ],
+      "signature": "double enthalpy_mole() const override",
+      "function_or_method": "enthalpy_mole",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:360:entropy_mole",
+      "canonical_index": 2031,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        360,
+        360
+      ],
+      "signature": "double entropy_mole() const override",
+      "function_or_method": "entropy_mole",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:368:cp_mole",
+      "canonical_index": 2032,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        368,
+        368
+      ],
+      "signature": "double cp_mole() const override",
+      "function_or_method": "cp_mole",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:428:_updateCovDepThermo",
+      "canonical_index": 2033,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        428,
+        428
+      ],
+      "signature": "void _updateCovDepThermo() const",
+      "function_or_method": "_updateCovDepThermo",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/CoverageDependentSurfPhase.h:436:_updateTotalThermo",
+      "canonical_index": 2034,
+      "source_file": "include/cantera/thermo/CoverageDependentSurfPhase.h",
+      "line_range": [
+        436,
+        436
+      ],
+      "signature": "void _updateTotalThermo() const",
+      "function_or_method": "_updateTotalThermo",
+      "class": "CoverageDependentSurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/EdgePhase.h:39:EdgePhase",
+      "canonical_index": 2069,
+      "source_file": "include/cantera/thermo/EdgePhase.h",
+      "line_range": [
+        39,
+        39
+      ],
+      "signature": "explicit EdgePhase(const string& infile=\"\", const string& id=\"\")",
+      "function_or_method": "EdgePhase",
+      "class": "EdgePhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/EdgePhase.h:41:type",
+      "canonical_index": 2070,
+      "source_file": "include/cantera/thermo/EdgePhase.h",
+      "line_range": [
+        41,
+        41
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "EdgePhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:261:IdealGasPhase",
+      "canonical_index": 2177,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        261,
+        261
+      ],
+      "signature": "explicit IdealGasPhase(const string& inputFile=\"\", const string& id=\"\")",
+      "function_or_method": "IdealGasPhase",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:263:type",
+      "canonical_index": 2178,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        263,
+        263
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:267:isIdeal",
+      "canonical_index": 2179,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        267,
+        267
+      ],
+      "signature": "bool isIdeal() const override",
+      "function_or_method": "isIdeal",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:275:phaseOfMatter",
+      "canonical_index": 2180,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        275,
+        275
+      ],
+      "signature": "string phaseOfMatter() const override",
+      "function_or_method": "phaseOfMatter",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:294:enthalpy_mole",
+      "canonical_index": 2181,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        294,
+        294
+      ],
+      "signature": "double enthalpy_mole() const override",
+      "function_or_method": "enthalpy_mole",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:295:RT",
+      "canonical_index": 2182,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        295,
+        295
+      ],
+      "signature": "return RT() * mean_X(enthalpy_RT_ref())",
+      "function_or_method": "RT",
+      "class": "IdealGasPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:308:entropy_mole",
+      "canonical_index": 2183,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        308,
+        308
+      ],
+      "signature": "double entropy_mole() const override",
+      "function_or_method": "entropy_mole",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:320:cp_mole",
+      "canonical_index": 2184,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        320,
+        320
+      ],
+      "signature": "double cp_mole() const override",
+      "function_or_method": "cp_mole",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:327:cv_mole",
+      "canonical_index": 2185,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        327,
+        327
+      ],
+      "signature": "double cv_mole() const override",
+      "function_or_method": "cv_mole",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:338:pressure",
+      "canonical_index": 2186,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        338,
+        338
+      ],
+      "signature": "double pressure() const override",
+      "function_or_method": "pressure",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:339:molarDensity",
+      "canonical_index": 2187,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        339,
+        339
+      ],
+      "signature": "return GasConstant * molarDensity() * temperature()",
+      "function_or_method": "molarDensity",
+      "class": "IdealGasPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:352:setPressure",
+      "canonical_index": 2188,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        352,
+        352
+      ],
+      "signature": "void setPressure(double p) override",
+      "function_or_method": "setPressure",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:369:setState_DP",
+      "canonical_index": 2189,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        369,
+        369
+      ],
+      "signature": "void setState_DP(double rho, double p) override",
+      "function_or_method": "setState_DP",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:386:isothermalCompressibility",
+      "canonical_index": 2190,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        386,
+        386
+      ],
+      "signature": "double isothermalCompressibility() const override",
+      "function_or_method": "isothermalCompressibility",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:398:thermalExpansionCoeff",
+      "canonical_index": 2191,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        398,
+        398
+      ],
+      "signature": "double thermalExpansionCoeff() const override",
+      "function_or_method": "thermalExpansionCoeff",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:407:internalPressure",
+      "canonical_index": 2192,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        407,
+        407
+      ],
+      "signature": "double internalPressure() const override",
+      "function_or_method": "internalPressure",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:411:soundSpeed",
+      "canonical_index": 2193,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        411,
+        411
+      ],
+      "signature": "double soundSpeed() const override",
+      "function_or_method": "soundSpeed",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:450:getActivityConcentrations",
+      "canonical_index": 2194,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        450,
+        450
+      ],
+      "signature": "void getActivityConcentrations(span<double> c) const override",
+      "function_or_method": "getActivityConcentrations",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:468:standardConcentration",
+      "canonical_index": 2195,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        468,
+        468
+      ],
+      "signature": "double standardConcentration(size_t k=0) const override",
+      "function_or_method": "standardConcentration",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:477:getActivityCoefficients",
+      "canonical_index": 2196,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        477,
+        477
+      ],
+      "signature": "void getActivityCoefficients(span<double> ac) const override",
+      "function_or_method": "getActivityCoefficients",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:483:getChemPotentials",
+      "canonical_index": 2197,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        483,
+        483
+      ],
+      "signature": "void getChemPotentials(span<double> mu) const override",
+      "function_or_method": "getChemPotentials",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:484:getPartialMolarEnthalpies",
+      "canonical_index": 2198,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        484,
+        484
+      ],
+      "signature": "void getPartialMolarEnthalpies(span<double> hbar) const override",
+      "function_or_method": "getPartialMolarEnthalpies",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:485:getPartialMolarEntropies",
+      "canonical_index": 2199,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        485,
+        485
+      ],
+      "signature": "void getPartialMolarEntropies(span<double> sbar) const override",
+      "function_or_method": "getPartialMolarEntropies",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:486:getPartialMolarIntEnergies",
+      "canonical_index": 2200,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        486,
+        486
+      ],
+      "signature": "void getPartialMolarIntEnergies(span<double> ubar) const override",
+      "function_or_method": "getPartialMolarIntEnergies",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:487:getPartialMolarIntEnergies_TV",
+      "canonical_index": 2201,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        487,
+        487
+      ],
+      "signature": "void getPartialMolarIntEnergies_TV(span<double> utilde) const override",
+      "function_or_method": "getPartialMolarIntEnergies_TV",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:488:getPartialMolarCp",
+      "canonical_index": 2202,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        488,
+        488
+      ],
+      "signature": "void getPartialMolarCp(span<double> cpbar) const override",
+      "function_or_method": "getPartialMolarCp",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:489:getPartialMolarCv_TV",
+      "canonical_index": 2203,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        489,
+        489
+      ],
+      "signature": "void getPartialMolarCv_TV(span<double> cvtilde) const override",
+      "function_or_method": "getPartialMolarCv_TV",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:490:getPartialMolarVolumes",
+      "canonical_index": 2204,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        490,
+        490
+      ],
+      "signature": "void getPartialMolarVolumes(span<double> vbar) const override",
+      "function_or_method": "getPartialMolarVolumes",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:496:getStandardChemPotentials",
+      "canonical_index": 2205,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        496,
+        496
+      ],
+      "signature": "void getStandardChemPotentials(span<double> mu) const override",
+      "function_or_method": "getStandardChemPotentials",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:497:getEnthalpy_RT",
+      "canonical_index": 2206,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        497,
+        497
+      ],
+      "signature": "void getEnthalpy_RT(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:498:getEntropy_R",
+      "canonical_index": 2207,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        498,
+        498
+      ],
+      "signature": "void getEntropy_R(span<double> sr) const override",
+      "function_or_method": "getEntropy_R",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:499:getGibbs_RT",
+      "canonical_index": 2208,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        499,
+        499
+      ],
+      "signature": "void getGibbs_RT(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:500:getIntEnergy_RT",
+      "canonical_index": 2209,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        500,
+        500
+      ],
+      "signature": "void getIntEnergy_RT(span<double> urt) const override",
+      "function_or_method": "getIntEnergy_RT",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:501:getCp_R",
+      "canonical_index": 2210,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        501,
+        501
+      ],
+      "signature": "void getCp_R(span<double> cpr) const override",
+      "function_or_method": "getCp_R",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:502:getStandardVolumes",
+      "canonical_index": 2211,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        502,
+        502
+      ],
+      "signature": "void getStandardVolumes(span<double> vol) const override",
+      "function_or_method": "getStandardVolumes",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:508:getEnthalpy_RT_ref",
+      "canonical_index": 2212,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        508,
+        508
+      ],
+      "signature": "void getEnthalpy_RT_ref(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT_ref",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:509:getGibbs_RT_ref",
+      "canonical_index": 2213,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        509,
+        509
+      ],
+      "signature": "void getGibbs_RT_ref(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT_ref",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:510:getGibbs_ref",
+      "canonical_index": 2214,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        510,
+        510
+      ],
+      "signature": "void getGibbs_ref(span<double> g) const override",
+      "function_or_method": "getGibbs_ref",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:511:getEntropy_R_ref",
+      "canonical_index": 2215,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        511,
+        511
+      ],
+      "signature": "void getEntropy_R_ref(span<double> er) const override",
+      "function_or_method": "getEntropy_R_ref",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:512:getIntEnergy_RT_ref",
+      "canonical_index": 2216,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        512,
+        512
+      ],
+      "signature": "void getIntEnergy_RT_ref(span<double> urt) const override",
+      "function_or_method": "getIntEnergy_RT_ref",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:513:getCp_R_ref",
+      "canonical_index": 2217,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        513,
+        513
+      ],
+      "signature": "void getCp_R_ref(span<double> cprt) const override",
+      "function_or_method": "getCp_R_ref",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:514:getStandardVolumes_ref",
+      "canonical_index": 2218,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        514,
+        514
+      ],
+      "signature": "void getStandardVolumes_ref(span<double> vol) const override",
+      "function_or_method": "getStandardVolumes_ref",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:518:addSpecies",
+      "canonical_index": 2219,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        518,
+        518
+      ],
+      "signature": "bool addSpecies(shared_ptr<Species> spec) override",
+      "function_or_method": "addSpecies",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:519:setToEquilState",
+      "canonical_index": 2220,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        519,
+        519
+      ],
+      "signature": "void setToEquilState(span<const double> mu_RT) override",
+      "function_or_method": "setToEquilState",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:530:enthalpy_RT_ref",
+      "canonical_index": 2221,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        530,
+        530
+      ],
+      "signature": "span<const double> enthalpy_RT_ref() const",
+      "function_or_method": "enthalpy_RT_ref",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:540:gibbs_RT_ref",
+      "canonical_index": 2222,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        540,
+        540
+      ],
+      "signature": "span<const double> gibbs_RT_ref() const",
+      "function_or_method": "gibbs_RT_ref",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:550:entropy_R_ref",
+      "canonical_index": 2223,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        550,
+        550
+      ],
+      "signature": "span<const double> entropy_R_ref() const",
+      "function_or_method": "entropy_R_ref",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:560:cp_R_ref",
+      "canonical_index": 2224,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        560,
+        560
+      ],
+      "signature": "span<const double> cp_R_ref() const",
+      "function_or_method": "cp_R_ref",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealGasPhase.h:603:updateThermo",
+      "canonical_index": 2225,
+      "source_file": "include/cantera/thermo/IdealGasPhase.h",
+      "line_range": [
+        603,
+        603
+      ],
+      "signature": "virtual void updateThermo() const",
+      "function_or_method": "updateThermo",
+      "class": "IdealGasPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:56:IdealSolidSolnPhase",
+      "canonical_index": 2253,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        56,
+        56
+      ],
+      "signature": "explicit IdealSolidSolnPhase(const string& infile=\"\", const string& id=\"\")",
+      "function_or_method": "IdealSolidSolnPhase",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:58:type",
+      "canonical_index": 2254,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        58,
+        58
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:62:isIdeal",
+      "canonical_index": 2255,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        62,
+        62
+      ],
+      "signature": "bool isIdeal() const override",
+      "function_or_method": "isIdeal",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:66:isCompressible",
+      "canonical_index": 2256,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        66,
+        66
+      ],
+      "signature": "bool isCompressible() const override",
+      "function_or_method": "isCompressible",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:86:entropy_mole",
+      "canonical_index": 2257,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        86,
+        86
+      ],
+      "signature": "double entropy_mole() const override",
+      "function_or_method": "entropy_mole",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:101:gibbs_mole",
+      "canonical_index": 2258,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        101,
+        101
+      ],
+      "signature": "double gibbs_mole() const override",
+      "function_or_method": "gibbs_mole",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:117:cp_mole",
+      "canonical_index": 2259,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        117,
+        117
+      ],
+      "signature": "double cp_mole() const override",
+      "function_or_method": "cp_mole",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:128:cv_mole",
+      "canonical_index": 2260,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        128,
+        128
+      ],
+      "signature": "double cv_mole() const override",
+      "function_or_method": "cv_mole",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:129:cp_mole",
+      "canonical_index": 2261,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        129,
+        129
+      ],
+      "signature": "return cp_mole()",
+      "function_or_method": "cp_mole",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:146:pressure",
+      "canonical_index": 2262,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        146,
+        146
+      ],
+      "signature": "double pressure() const override",
+      "function_or_method": "pressure",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:157:setPressure",
+      "canonical_index": 2263,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        157,
+        157
+      ],
+      "signature": "void setPressure(double p) override",
+      "function_or_method": "setPressure",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:177:calcDensity",
+      "canonical_index": 2264,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        177,
+        177
+      ],
+      "signature": "virtual void calcDensity()",
+      "function_or_method": "calcDensity",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:208:standardConcentrationUnits",
+      "canonical_index": 2265,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        208,
+        208
+      ],
+      "signature": "Units standardConcentrationUnits() const override",
+      "function_or_method": "standardConcentrationUnits",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:245:getActivityConcentrations",
+      "canonical_index": 2266,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        245,
+        245
+      ],
+      "signature": "void getActivityConcentrations(span<double> c) const override",
+      "function_or_method": "getActivityConcentrations",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:257:standardConcentration",
+      "canonical_index": 2267,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        257,
+        257
+      ],
+      "signature": "double standardConcentration(size_t k) const override",
+      "function_or_method": "standardConcentration",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:263:getActivityCoefficients",
+      "canonical_index": 2268,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        263,
+        263
+      ],
+      "signature": "void getActivityCoefficients(span<double> ac) const override",
+      "function_or_method": "getActivityCoefficients",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:281:getChemPotentials",
+      "canonical_index": 2269,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        281,
+        281
+      ],
+      "signature": "void getChemPotentials(span<double> mu) const override",
+      "function_or_method": "getChemPotentials",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:304:getPartialMolarEnthalpies",
+      "canonical_index": 2270,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        304,
+        304
+      ],
+      "signature": "void getPartialMolarEnthalpies(span<double> hbar) const override",
+      "function_or_method": "getPartialMolarEnthalpies",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:323:getPartialMolarEntropies",
+      "canonical_index": 2271,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        323,
+        323
+      ],
+      "signature": "void getPartialMolarEntropies(span<double> sbar) const override",
+      "function_or_method": "getPartialMolarEntropies",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:332:getPartialMolarCp",
+      "canonical_index": 2272,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        332,
+        332
+      ],
+      "signature": "void getPartialMolarCp(span<double> cpbar) const override",
+      "function_or_method": "getPartialMolarCp",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:343:getPartialMolarVolumes",
+      "canonical_index": 2273,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        343,
+        343
+      ],
+      "signature": "void getPartialMolarVolumes(span<double> vbar) const override",
+      "function_or_method": "getPartialMolarVolumes",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:362:getStandardChemPotentials",
+      "canonical_index": 2274,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        362,
+        362
+      ],
+      "signature": "void getStandardChemPotentials(span<double> mu0) const override",
+      "function_or_method": "getStandardChemPotentials",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:378:getEnthalpy_RT",
+      "canonical_index": 2275,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        378,
+        378
+      ],
+      "signature": "void getEnthalpy_RT(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:389:getEntropy_R",
+      "canonical_index": 2276,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        389,
+        389
+      ],
+      "signature": "void getEntropy_R(span<double> sr) const override",
+      "function_or_method": "getEntropy_R",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:405:getGibbs_RT",
+      "canonical_index": 2277,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        405,
+        405
+      ],
+      "signature": "void getGibbs_RT(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:407:getIntEnergy_RT",
+      "canonical_index": 2278,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        407,
+        407
+      ],
+      "signature": "void getIntEnergy_RT(span<double> urt) const override",
+      "function_or_method": "getIntEnergy_RT",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:422:getCp_R",
+      "canonical_index": 2279,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        422,
+        422
+      ],
+      "signature": "void getCp_R(span<double> cpr) const override",
+      "function_or_method": "getCp_R",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:424:getStandardVolumes",
+      "canonical_index": 2280,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        424,
+        424
+      ],
+      "signature": "void getStandardVolumes(span<double> vol) const override",
+      "function_or_method": "getStandardVolumes",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:430:getEnthalpy_RT_ref",
+      "canonical_index": 2281,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        430,
+        430
+      ],
+      "signature": "void getEnthalpy_RT_ref(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT_ref",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:431:getGibbs_RT_ref",
+      "canonical_index": 2282,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        431,
+        431
+      ],
+      "signature": "void getGibbs_RT_ref(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT_ref",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:432:getGibbs_ref",
+      "canonical_index": 2283,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        432,
+        432
+      ],
+      "signature": "void getGibbs_ref(span<double> g) const override",
+      "function_or_method": "getGibbs_ref",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:433:getEntropy_R_ref",
+      "canonical_index": 2284,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        433,
+        433
+      ],
+      "signature": "void getEntropy_R_ref(span<double> er) const override",
+      "function_or_method": "getEntropy_R_ref",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:434:getIntEnergy_RT_ref",
+      "canonical_index": 2285,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        434,
+        434
+      ],
+      "signature": "void getIntEnergy_RT_ref(span<double> urt) const override",
+      "function_or_method": "getIntEnergy_RT_ref",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:435:getCp_R_ref",
+      "canonical_index": 2286,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        435,
+        435
+      ],
+      "signature": "void getCp_R_ref(span<double> cprt) const override",
+      "function_or_method": "getCp_R_ref",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:441:addSpecies",
+      "canonical_index": 2287,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        441,
+        441
+      ],
+      "signature": "bool addSpecies(shared_ptr<Species> spec) override",
+      "function_or_method": "addSpecies",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:442:initThermo",
+      "canonical_index": 2288,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        442,
+        442
+      ],
+      "signature": "void initThermo() override",
+      "function_or_method": "initThermo",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:443:getParameters",
+      "canonical_index": 2289,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        443,
+        443
+      ],
+      "signature": "void getParameters(AnyMap& phaseNode) const override",
+      "function_or_method": "getParameters",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:444:getSpeciesParameters",
+      "canonical_index": 2290,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        444,
+        444
+      ],
+      "signature": "void getSpeciesParameters(const string& name, AnyMap& speciesNode) const override",
+      "function_or_method": "getSpeciesParameters",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:445:setToEquilState",
+      "canonical_index": 2291,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        445,
+        445
+      ],
+      "signature": "void setToEquilState(span<const double> mu_RT) override",
+      "function_or_method": "setToEquilState",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:461:setStandardConcentrationModel",
+      "canonical_index": 2292,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        461,
+        461
+      ],
+      "signature": "void setStandardConcentrationModel(const string& model)",
+      "function_or_method": "setStandardConcentrationModel",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:470:speciesMolarVolume",
+      "canonical_index": 2293,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        470,
+        470
+      ],
+      "signature": "double speciesMolarVolume(int k) const",
+      "function_or_method": "speciesMolarVolume",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:480:getSpeciesMolarVolumes",
+      "canonical_index": 2294,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        480,
+        480
+      ],
+      "signature": "void getSpeciesMolarVolumes(span<double> smv) const",
+      "function_or_method": "getSpeciesMolarVolumes",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:485:compositionChanged",
+      "canonical_index": 2295,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        485,
+        485
+      ],
+      "signature": "void compositionChanged() override",
+      "function_or_method": "compositionChanged",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:493:enthalpy_RT_ref",
+      "canonical_index": 2296,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        493,
+        493
+      ],
+      "signature": "span<const double> enthalpy_RT_ref() const",
+      "function_or_method": "enthalpy_RT_ref",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:501:gibbs_RT_ref",
+      "canonical_index": 2297,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        501,
+        501
+      ],
+      "signature": "span<const double> gibbs_RT_ref() const",
+      "function_or_method": "gibbs_RT_ref",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:512:entropy_R_ref",
+      "canonical_index": 2298,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        512,
+        512
+      ],
+      "signature": "span<const double> entropy_R_ref() const",
+      "function_or_method": "entropy_R_ref",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:520:cp_R_ref",
+      "canonical_index": 2299,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        520,
+        520
+      ],
+      "signature": "span<const double> cp_R_ref() const",
+      "function_or_method": "cp_R_ref",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/IdealSolidSolnPhase.h:586:_updateThermo",
+      "canonical_index": 2300,
+      "source_file": "include/cantera/thermo/IdealSolidSolnPhase.h",
+      "line_range": [
+        586,
+        586
+      ],
+      "signature": "virtual void _updateThermo() const",
+      "function_or_method": "_updateThermo",
+      "class": "IdealSolidSolnPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:28:type",
+      "canonical_index": 2349,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        28,
+        28
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "MetalPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:32:isCompressible",
+      "canonical_index": 2350,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        32,
+        32
+      ],
+      "signature": "bool isCompressible() const override",
+      "function_or_method": "isCompressible",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:36:enthalpy_mole",
+      "canonical_index": 2351,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        36,
+        36
+      ],
+      "signature": "double enthalpy_mole() const override",
+      "function_or_method": "enthalpy_mole",
+      "class": "MetalPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:39:intEnergy_mole",
+      "canonical_index": 2352,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        39,
+        39
+      ],
+      "signature": "double intEnergy_mole() const override",
+      "function_or_method": "intEnergy_mole",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:42:entropy_mole",
+      "canonical_index": 2353,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        42,
+        42
+      ],
+      "signature": "double entropy_mole() const override",
+      "function_or_method": "entropy_mole",
+      "class": "MetalPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:45:gibbs_mole",
+      "canonical_index": 2354,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        45,
+        45
+      ],
+      "signature": "double gibbs_mole() const override",
+      "function_or_method": "gibbs_mole",
+      "class": "MetalPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:48:cp_mole",
+      "canonical_index": 2355,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        48,
+        48
+      ],
+      "signature": "double cp_mole() const override",
+      "function_or_method": "cp_mole",
+      "class": "MetalPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:51:cv_mole",
+      "canonical_index": 2356,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        51,
+        51
+      ],
+      "signature": "double cv_mole() const override",
+      "function_or_method": "cv_mole",
+      "class": "MetalPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:55:setPressure",
+      "canonical_index": 2357,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        55,
+        55
+      ],
+      "signature": "void setPressure(double pres) override",
+      "function_or_method": "setPressure",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:58:pressure",
+      "canonical_index": 2358,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        58,
+        58
+      ],
+      "signature": "double pressure() const override",
+      "function_or_method": "pressure",
+      "class": "MetalPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:62:getChemPotentials",
+      "canonical_index": 2359,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        62,
+        62
+      ],
+      "signature": "void getChemPotentials(span<double> mu) const override",
+      "function_or_method": "getChemPotentials",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:68:getEnthalpy_RT",
+      "canonical_index": 2360,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        68,
+        68
+      ],
+      "signature": "void getEnthalpy_RT(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:74:getEntropy_R",
+      "canonical_index": 2361,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        74,
+        74
+      ],
+      "signature": "void getEntropy_R(span<double> sr) const override",
+      "function_or_method": "getEntropy_R",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:80:getStandardChemPotentials",
+      "canonical_index": 2362,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        80,
+        80
+      ],
+      "signature": "void getStandardChemPotentials(span<double> mu0) const override",
+      "function_or_method": "getStandardChemPotentials",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:86:getActivityConcentrations",
+      "canonical_index": 2363,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        86,
+        86
+      ],
+      "signature": "void getActivityConcentrations(span<double> c) const override",
+      "function_or_method": "getActivityConcentrations",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:91:getPartialMolarEnthalpies",
+      "canonical_index": 2364,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        91,
+        91
+      ],
+      "signature": "void getPartialMolarEnthalpies(span<double> h) const override",
+      "function_or_method": "getPartialMolarEnthalpies",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:97:standardConcentrationUnits",
+      "canonical_index": 2365,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        97,
+        97
+      ],
+      "signature": "Units standardConcentrationUnits() const override",
+      "function_or_method": "standardConcentrationUnits",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:98:Units",
+      "canonical_index": 2366,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        98,
+        98
+      ],
+      "signature": "return Units(1.0)",
+      "function_or_method": "Units",
+      "class": "MetalPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:101:standardConcentration",
+      "canonical_index": 2367,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        101,
+        101
+      ],
+      "signature": "double standardConcentration(size_t k=0) const override",
+      "function_or_method": "standardConcentration",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:105:logStandardConc",
+      "canonical_index": 2368,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        105,
+        105
+      ],
+      "signature": "double logStandardConc(size_t k=0) const override",
+      "function_or_method": "logStandardConc",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:109:initThermo",
+      "canonical_index": 2369,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        109,
+        109
+      ],
+      "signature": "void initThermo() override",
+      "function_or_method": "initThermo",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MetalPhase.h:115:getParameters",
+      "canonical_index": 2370,
+      "source_file": "include/cantera/thermo/MetalPhase.h",
+      "line_range": [
+        115,
+        115
+      ],
+      "signature": "void getParameters(AnyMap& phaseNode) const override",
+      "function_or_method": "getParameters",
+      "class": "MetalPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:62:type",
+      "canonical_index": 3006,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        62,
+        62
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "SingleSpeciesTP",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:66:isPure",
+      "canonical_index": 3007,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        66,
+        66
+      ],
+      "signature": "bool isPure() const override",
+      "function_or_method": "isPure",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:77:enthalpy_mole",
+      "canonical_index": 3008,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        77,
+        77
+      ],
+      "signature": "double enthalpy_mole() const override",
+      "function_or_method": "enthalpy_mole",
+      "class": "SingleSpeciesTP",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:78:intEnergy_mole",
+      "canonical_index": 3009,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        78,
+        78
+      ],
+      "signature": "double intEnergy_mole() const override",
+      "function_or_method": "intEnergy_mole",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:79:entropy_mole",
+      "canonical_index": 3010,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        79,
+        79
+      ],
+      "signature": "double entropy_mole() const override",
+      "function_or_method": "entropy_mole",
+      "class": "SingleSpeciesTP",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:80:gibbs_mole",
+      "canonical_index": 3011,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        80,
+        80
+      ],
+      "signature": "double gibbs_mole() const override",
+      "function_or_method": "gibbs_mole",
+      "class": "SingleSpeciesTP",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:81:cp_mole",
+      "canonical_index": 3012,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        81,
+        81
+      ],
+      "signature": "double cp_mole() const override",
+      "function_or_method": "cp_mole",
+      "class": "SingleSpeciesTP",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:82:cv_mole",
+      "canonical_index": 3013,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        82,
+        82
+      ],
+      "signature": "double cv_mole() const override",
+      "function_or_method": "cv_mole",
+      "class": "SingleSpeciesTP",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:101:getActivities",
+      "canonical_index": 3014,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        101,
+        101
+      ],
+      "signature": "void getActivities(span<double> a) const override",
+      "function_or_method": "getActivities",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:105:getActivityCoefficients",
+      "canonical_index": 3015,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        105,
+        105
+      ],
+      "signature": "void getActivityCoefficients(span<double> ac) const override",
+      "function_or_method": "getActivityCoefficients",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:126:getChemPotentials",
+      "canonical_index": 3016,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        126,
+        126
+      ],
+      "signature": "void getChemPotentials(span<double> mu) const override",
+      "function_or_method": "getChemPotentials",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:135:getPartialMolarEnthalpies",
+      "canonical_index": 3017,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        135,
+        135
+      ],
+      "signature": "void getPartialMolarEnthalpies(span<double> hbar) const override",
+      "function_or_method": "getPartialMolarEnthalpies",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:144:getPartialMolarIntEnergies",
+      "canonical_index": 3018,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        144,
+        144
+      ],
+      "signature": "void getPartialMolarIntEnergies(span<double> ubar) const override",
+      "function_or_method": "getPartialMolarIntEnergies",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:153:getPartialMolarEntropies",
+      "canonical_index": 3019,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        153,
+        153
+      ],
+      "signature": "void getPartialMolarEntropies(span<double> sbar) const override",
+      "function_or_method": "getPartialMolarEntropies",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:162:getPartialMolarCp",
+      "canonical_index": 3020,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        162,
+        162
+      ],
+      "signature": "void getPartialMolarCp(span<double> cpbar) const override",
+      "function_or_method": "getPartialMolarCp",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:171:getPartialMolarVolumes",
+      "canonical_index": 3021,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        171,
+        171
+      ],
+      "signature": "void getPartialMolarVolumes(span<double> vbar) const override",
+      "function_or_method": "getPartialMolarVolumes",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:193:getStandardVolumes",
+      "canonical_index": 3022,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        193,
+        193
+      ],
+      "signature": "void getStandardVolumes(span<double> vbar) const override",
+      "function_or_method": "getStandardVolumes",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:203:getEnthalpy_RT_ref",
+      "canonical_index": 3023,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        203,
+        203
+      ],
+      "signature": "void getEnthalpy_RT_ref(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT_ref",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:204:getGibbs_RT_ref",
+      "canonical_index": 3024,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        204,
+        204
+      ],
+      "signature": "void getGibbs_RT_ref(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT_ref",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:205:getGibbs_ref",
+      "canonical_index": 3025,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        205,
+        205
+      ],
+      "signature": "void getGibbs_ref(span<double> g) const override",
+      "function_or_method": "getGibbs_ref",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:206:getEntropy_R_ref",
+      "canonical_index": 3026,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        206,
+        206
+      ],
+      "signature": "void getEntropy_R_ref(span<double> er) const override",
+      "function_or_method": "getEntropy_R_ref",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:207:getCp_R_ref",
+      "canonical_index": 3027,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        207,
+        207
+      ],
+      "signature": "void getCp_R_ref(span<double> cprt) const override",
+      "function_or_method": "getCp_R_ref",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:216:setMassFractions",
+      "canonical_index": 3028,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        216,
+        216
+      ],
+      "signature": "void setMassFractions(span<const double> y) override {}",
+      "function_or_method": "setMassFractions",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:219:setMoleFractions",
+      "canonical_index": 3029,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        219,
+        219
+      ],
+      "signature": "void setMoleFractions(span<const double> x) override {}",
+      "function_or_method": "setMoleFractions",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:223:addSpecies",
+      "canonical_index": 3030,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        223,
+        223
+      ],
+      "signature": "bool addSpecies(shared_ptr<Species> spec) override",
+      "function_or_method": "addSpecies",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SingleSpeciesTP.h:242:_updateThermo",
+      "canonical_index": 3031,
+      "source_file": "include/cantera/thermo/SingleSpeciesTP.h",
+      "line_range": [
+        242,
+        242
+      ],
+      "signature": "void _updateThermo() const",
+      "function_or_method": "_updateThermo",
+      "class": "SingleSpeciesTP",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:99:StoichSubstance",
+      "canonical_index": 3057,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        99,
+        99
+      ],
+      "signature": "explicit StoichSubstance(const string& infile=\"\", const string& id=\"\")",
+      "function_or_method": "StoichSubstance",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:101:type",
+      "canonical_index": 3058,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        101,
+        101
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "StoichSubstance",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:105:isCompressible",
+      "canonical_index": 3059,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        105,
+        105
+      ],
+      "signature": "bool isCompressible() const override",
+      "function_or_method": "isCompressible",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:117:pressure",
+      "canonical_index": 3060,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        117,
+        117
+      ],
+      "signature": "double pressure() const override",
+      "function_or_method": "pressure",
+      "class": "StoichSubstance",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:127:setPressure",
+      "canonical_index": 3061,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        127,
+        127
+      ],
+      "signature": "void setPressure(double p) override",
+      "function_or_method": "setPressure",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:129:isothermalCompressibility",
+      "canonical_index": 3062,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        129,
+        129
+      ],
+      "signature": "double isothermalCompressibility() const override",
+      "function_or_method": "isothermalCompressibility",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:130:thermalExpansionCoeff",
+      "canonical_index": 3063,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        130,
+        130
+      ],
+      "signature": "double thermalExpansionCoeff() const override",
+      "function_or_method": "thermalExpansionCoeff",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:131:internalPressure",
+      "canonical_index": 3064,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        131,
+        131
+      ],
+      "signature": "double internalPressure() const override",
+      "function_or_method": "internalPressure",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:140:standardConcentrationUnits",
+      "canonical_index": 3065,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        140,
+        140
+      ],
+      "signature": "Units standardConcentrationUnits() const override",
+      "function_or_method": "standardConcentrationUnits",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:157:getActivityConcentrations",
+      "canonical_index": 3066,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        157,
+        157
+      ],
+      "signature": "void getActivityConcentrations(span<double> c) const override",
+      "function_or_method": "getActivityConcentrations",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:171:standardConcentration",
+      "canonical_index": 3067,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        171,
+        171
+      ],
+      "signature": "double standardConcentration(size_t k=0) const override",
+      "function_or_method": "standardConcentration",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:172:logStandardConc",
+      "canonical_index": 3068,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        172,
+        172
+      ],
+      "signature": "double logStandardConc(size_t k=0) const override",
+      "function_or_method": "logStandardConc",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:188:getStandardChemPotentials",
+      "canonical_index": 3069,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        188,
+        188
+      ],
+      "signature": "void getStandardChemPotentials(span<double> mu0) const override",
+      "function_or_method": "getStandardChemPotentials",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:194:getEnthalpy_RT",
+      "canonical_index": 3070,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        194,
+        194
+      ],
+      "signature": "void getEnthalpy_RT(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:195:getEntropy_R",
+      "canonical_index": 3071,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        195,
+        195
+      ],
+      "signature": "void getEntropy_R(span<double> sr) const override",
+      "function_or_method": "getEntropy_R",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:196:getGibbs_RT",
+      "canonical_index": 3072,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        196,
+        196
+      ],
+      "signature": "void getGibbs_RT(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:197:getCp_R",
+      "canonical_index": 3073,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        197,
+        197
+      ],
+      "signature": "void getCp_R(span<double> cpr) const override",
+      "function_or_method": "getCp_R",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:211:getIntEnergy_RT",
+      "canonical_index": 3074,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        211,
+        211
+      ],
+      "signature": "void getIntEnergy_RT(span<double> urt) const override",
+      "function_or_method": "getIntEnergy_RT",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:224:getIntEnergy_RT_ref",
+      "canonical_index": 3075,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        224,
+        224
+      ],
+      "signature": "void getIntEnergy_RT_ref(span<double> urt) const override",
+      "function_or_method": "getIntEnergy_RT_ref",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:227:initThermo",
+      "canonical_index": 3076,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        227,
+        227
+      ],
+      "signature": "void initThermo() override",
+      "function_or_method": "initThermo",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/StoichSubstance.h:228:getSpeciesParameters",
+      "canonical_index": 3077,
+      "source_file": "include/cantera/thermo/StoichSubstance.h",
+      "line_range": [
+        228,
+        228
+      ],
+      "signature": "void getSpeciesParameters(const string& name, AnyMap& speciesNode) const override",
+      "function_or_method": "getSpeciesParameters",
+      "class": "StoichSubstance",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:123:SurfPhase",
+      "canonical_index": 3078,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        123,
+        123
+      ],
+      "signature": "explicit SurfPhase(const string& infile=\"\", const string& id=\"\")",
+      "function_or_method": "SurfPhase",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:125:type",
+      "canonical_index": 3079,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        125,
+        125
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "SurfPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:129:isCompressible",
+      "canonical_index": 3080,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        129,
+        129
+      ],
+      "signature": "bool isCompressible() const override",
+      "function_or_method": "isCompressible",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:145:enthalpy_mole",
+      "canonical_index": 3081,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        145,
+        145
+      ],
+      "signature": "double enthalpy_mole() const override",
+      "function_or_method": "enthalpy_mole",
+      "class": "SurfPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:152:intEnergy_mole",
+      "canonical_index": 3082,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        152,
+        152
+      ],
+      "signature": "double intEnergy_mole() const override",
+      "function_or_method": "intEnergy_mole",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:160:entropy_mole",
+      "canonical_index": 3083,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        160,
+        160
+      ],
+      "signature": "double entropy_mole() const override",
+      "function_or_method": "entropy_mole",
+      "class": "SurfPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:162:cp_mole",
+      "canonical_index": 3084,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        162,
+        162
+      ],
+      "signature": "double cp_mole() const override",
+      "function_or_method": "cp_mole",
+      "class": "SurfPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:163:cv_mole",
+      "canonical_index": 3085,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        163,
+        163
+      ],
+      "signature": "double cv_mole() const override",
+      "function_or_method": "cv_mole",
+      "class": "SurfPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:165:getChemPotentials",
+      "canonical_index": 3086,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        165,
+        165
+      ],
+      "signature": "void getChemPotentials(span<double> mu) const override",
+      "function_or_method": "getChemPotentials",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:166:getPartialMolarEnthalpies",
+      "canonical_index": 3087,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        166,
+        166
+      ],
+      "signature": "void getPartialMolarEnthalpies(span<double> hbar) const override",
+      "function_or_method": "getPartialMolarEnthalpies",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:167:getPartialMolarEntropies",
+      "canonical_index": 3088,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        167,
+        167
+      ],
+      "signature": "void getPartialMolarEntropies(span<double> sbar) const override",
+      "function_or_method": "getPartialMolarEntropies",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:168:getPartialMolarCp",
+      "canonical_index": 3089,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        168,
+        168
+      ],
+      "signature": "void getPartialMolarCp(span<double> cpbar) const override",
+      "function_or_method": "getPartialMolarCp",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:169:getPartialMolarVolumes",
+      "canonical_index": 3090,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        169,
+        169
+      ],
+      "signature": "void getPartialMolarVolumes(span<double> vbar) const override",
+      "function_or_method": "getPartialMolarVolumes",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:170:getStandardChemPotentials",
+      "canonical_index": 3091,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        170,
+        170
+      ],
+      "signature": "void getStandardChemPotentials(span<double> mu0) const override",
+      "function_or_method": "getStandardChemPotentials",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:196:getActivityConcentrations",
+      "canonical_index": 3092,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        196,
+        196
+      ],
+      "signature": "void getActivityConcentrations(span<double> c) const override",
+      "function_or_method": "getActivityConcentrations",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:215:standardConcentration",
+      "canonical_index": 3093,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        215,
+        215
+      ],
+      "signature": "double standardConcentration(size_t k=0) const override",
+      "function_or_method": "standardConcentration",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:216:logStandardConc",
+      "canonical_index": 3094,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        216,
+        216
+      ],
+      "signature": "double logStandardConc(size_t k=0) const override",
+      "function_or_method": "logStandardConc",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:218:initThermo",
+      "canonical_index": 3095,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        218,
+        218
+      ],
+      "signature": "void initThermo() override",
+      "function_or_method": "initThermo",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:219:getParameters",
+      "canonical_index": 3096,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        219,
+        219
+      ],
+      "signature": "void getParameters(AnyMap& phaseNode) const override",
+      "function_or_method": "getParameters",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:221:addSpecies",
+      "canonical_index": 3097,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        221,
+        221
+      ],
+      "signature": "bool addSpecies(shared_ptr<Species> spec) override",
+      "function_or_method": "addSpecies",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:224:molarVolume",
+      "canonical_index": 3098,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        224,
+        224
+      ],
+      "signature": "double molarVolume() const override",
+      "function_or_method": "molarVolume",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:232:siteDensity",
+      "canonical_index": 3099,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        232,
+        232
+      ],
+      "signature": "double siteDensity() const",
+      "function_or_method": "siteDensity",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:237:size",
+      "canonical_index": 3100,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        237,
+        237
+      ],
+      "signature": "double size(size_t k) const",
+      "function_or_method": "size",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:245:setSiteDensity",
+      "canonical_index": 3101,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        245,
+        245
+      ],
+      "signature": "void setSiteDensity(double n0)",
+      "function_or_method": "setSiteDensity",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:247:getGibbs_RT",
+      "canonical_index": 3102,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        247,
+        247
+      ],
+      "signature": "void getGibbs_RT(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:248:getEnthalpy_RT",
+      "canonical_index": 3103,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        248,
+        248
+      ],
+      "signature": "void getEnthalpy_RT(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:249:getEntropy_R",
+      "canonical_index": 3104,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        249,
+        249
+      ],
+      "signature": "void getEntropy_R(span<double> sr) const override",
+      "function_or_method": "getEntropy_R",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:250:getCp_R",
+      "canonical_index": 3105,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        250,
+        250
+      ],
+      "signature": "void getCp_R(span<double> cpr) const override",
+      "function_or_method": "getCp_R",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:251:getStandardVolumes",
+      "canonical_index": 3106,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        251,
+        251
+      ],
+      "signature": "void getStandardVolumes(span<double> vol) const override",
+      "function_or_method": "getStandardVolumes",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:254:pressure",
+      "canonical_index": 3107,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        254,
+        254
+      ],
+      "signature": "double pressure() const override",
+      "function_or_method": "pressure",
+      "class": "SurfPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:263:setPressure",
+      "canonical_index": 3108,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        263,
+        263
+      ],
+      "signature": "void setPressure(double p) override",
+      "function_or_method": "setPressure",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:267:getGibbs_RT_ref",
+      "canonical_index": 3109,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        267,
+        267
+      ],
+      "signature": "void getGibbs_RT_ref(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT_ref",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:268:getEnthalpy_RT_ref",
+      "canonical_index": 3110,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        268,
+        268
+      ],
+      "signature": "void getEnthalpy_RT_ref(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT_ref",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:269:getEntropy_R_ref",
+      "canonical_index": 3111,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        269,
+        269
+      ],
+      "signature": "void getEntropy_R_ref(span<double> er) const override",
+      "function_or_method": "getEntropy_R_ref",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:270:getCp_R_ref",
+      "canonical_index": 3112,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        270,
+        270
+      ],
+      "signature": "void getCp_R_ref(span<double> cprt) const override",
+      "function_or_method": "getCp_R_ref",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:284:setCoverages",
+      "canonical_index": 3113,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        284,
+        284
+      ],
+      "signature": "void setCoverages(span<const double> theta)",
+      "function_or_method": "setCoverages",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:296:setCoveragesNoNorm",
+      "canonical_index": 3114,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        296,
+        296
+      ],
+      "signature": "void setCoveragesNoNorm(span<const double> theta)",
+      "function_or_method": "setCoveragesNoNorm",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:302:setCoveragesByName",
+      "canonical_index": 3115,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        302,
+        302
+      ],
+      "signature": "void setCoveragesByName(const string& cov)",
+      "function_or_method": "setCoveragesByName",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:305:setCoveragesByName",
+      "canonical_index": 3116,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        305,
+        305
+      ],
+      "signature": "void setCoveragesByName(const Composition& cov)",
+      "function_or_method": "setCoveragesByName",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:317:getCoverages",
+      "canonical_index": 3117,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        317,
+        317
+      ],
+      "signature": "void getCoverages(span<double> theta) const",
+      "function_or_method": "getCoverages",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:323:setState",
+      "canonical_index": 3118,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        323,
+        323
+      ],
+      "signature": "void setState(const AnyMap& state) override",
+      "function_or_method": "setState",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:326:compositionChanged",
+      "canonical_index": 3119,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        326,
+        326
+      ],
+      "signature": "void compositionChanged() override",
+      "function_or_method": "compositionChanged",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/SurfPhase.h:370:_updateThermo",
+      "canonical_index": 3120,
+      "source_file": "include/cantera/thermo/SurfPhase.h",
+      "line_range": [
+        370,
+        370
+      ],
+      "signature": "void _updateThermo(bool force=false) const",
+      "function_or_method": "_updateThermo",
+      "class": "SurfPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/CoverageDependentSurfPhase.cpp:188:poly_deps",
+      "canonical_index": 4814,
+      "source_file": "src/thermo/CoverageDependentSurfPhase.cpp",
+      "line_range": [
+        188,
+        188
+      ],
+      "signature": "PolynomialDependency poly_deps(k, j, dep_map)",
+      "function_or_method": "poly_deps",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/CoverageDependentSurfPhase.cpp:204:cpcov_deps",
+      "canonical_index": 4815,
+      "source_file": "src/thermo/CoverageDependentSurfPhase.cpp",
+      "line_range": [
+        204,
+        204
+      ],
+      "signature": "HeatCapacityDependency cpcov_deps(k, j)",
+      "function_or_method": "cpcov_deps",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/CoverageDependentSurfPhase.cpp:444:mean_X",
+      "canonical_index": 4816,
+      "source_file": "src/thermo/CoverageDependentSurfPhase.cpp",
+      "line_range": [
+        444,
+        444
+      ],
+      "signature": "return mean_X(m_enthalpy)",
+      "function_or_method": "mean_X",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/CoverageDependentSurfPhase.cpp:453:log",
+      "canonical_index": 4817,
+      "source_file": "src/thermo/CoverageDependentSurfPhase.cpp",
+      "line_range": [
+        453,
+        453
+      ],
+      "signature": "GasConstant * log(std::max(m_cov[k], SmallNumber) / m_theta_ref))",
+      "function_or_method": "log",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/CoverageDependentSurfPhase.cpp:461:mean_X",
+      "canonical_index": 4818,
+      "source_file": "src/thermo/CoverageDependentSurfPhase.cpp",
+      "line_range": [
+        461,
+        461
+      ],
+      "signature": "return mean_X(m_heatcapacity)",
+      "function_or_method": "mean_X",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/IdealGasPhase.cpp:32:mean_X",
+      "canonical_index": 4876,
+      "source_file": "src/thermo/IdealGasPhase.cpp",
+      "line_range": [
+        32,
+        32
+      ],
+      "signature": "return GasConstant * mean_X(cp_R_ref())",
+      "function_or_method": "mean_X",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/IdealGasPhase.cpp:48:pressure",
+      "canonical_index": 4877,
+      "source_file": "src/thermo/IdealGasPhase.cpp",
+      "line_range": [
+        48,
+        48
+      ],
+      "signature": "return pressure() / RT()",
+      "function_or_method": "pressure",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/IdealSolidSolnPhase.cpp:40:mean_X",
+      "canonical_index": 4881,
+      "source_file": "src/thermo/IdealSolidSolnPhase.cpp",
+      "line_range": [
+        40,
+        40
+      ],
+      "signature": "return GasConstant * mean_X(cp_R_ref())",
+      "function_or_method": "mean_X",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/IdealSolidSolnPhase.cpp:72:Units",
+      "canonical_index": 4882,
+      "source_file": "src/thermo/IdealSolidSolnPhase.cpp",
+      "line_range": [
+        72,
+        72
+      ],
+      "signature": "return Units(1.0); // dimensionless",
+      "function_or_method": "Units",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/IdealSolidSolnPhase.cpp:75:Units",
+      "canonical_index": 4883,
+      "source_file": "src/thermo/IdealSolidSolnPhase.cpp",
+      "line_range": [
+        75,
+        75
+      ],
+      "signature": "return Units(1.0, 0, -static_cast<double>(nDim()), 0, 0, 0, 1)",
+      "function_or_method": "Units",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/StoichSubstance.cpp:58:Units",
+      "canonical_index": 5007,
+      "source_file": "src/thermo/StoichSubstance.cpp",
+      "line_range": [
+        58,
+        58
+      ],
+      "signature": "return Units(1.0)",
+      "function_or_method": "Units",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/SurfPhase.cpp:34:mean_X",
+      "canonical_index": 5008,
+      "source_file": "src/thermo/SurfPhase.cpp",
+      "line_range": [
+        34,
+        34
+      ],
+      "signature": "return mean_X(m_h0)",
+      "function_or_method": "mean_X",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/SurfPhase.cpp:39:enthalpy_mole",
+      "canonical_index": 5009,
+      "source_file": "src/thermo/SurfPhase.cpp",
+      "line_range": [
+        39,
+        39
+      ],
+      "signature": "return enthalpy_mole()",
+      "function_or_method": "enthalpy_mole",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/SurfPhase.cpp:48:log",
+      "canonical_index": 5010,
+      "source_file": "src/thermo/SurfPhase.cpp",
+      "line_range": [
+        48,
+        48
+      ],
+      "signature": "GasConstant * log(std::max(concentration(k) * size(k)/m_n0, SmallNumber)))",
+      "function_or_method": "log",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/SurfPhase.cpp:56:mean_X",
+      "canonical_index": 5011,
+      "source_file": "src/thermo/SurfPhase.cpp",
+      "line_range": [
+        56,
+        56
+      ],
+      "signature": "return mean_X(m_cp0)",
+      "function_or_method": "mean_X",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/SurfPhase.cpp:61:cp_mole",
+      "canonical_index": 5012,
+      "source_file": "src/thermo/SurfPhase.cpp",
+      "line_range": [
+        61,
+        61
+      ],
+      "signature": "return cp_mole()",
+      "function_or_method": "cp_mole",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/SurfPhase.cpp:274:cv",
+      "canonical_index": 5013,
+      "source_file": "src/thermo/SurfPhase.cpp",
+      "line_range": [
+        274,
+        274
+      ],
+      "signature": "vector<double> cv(m_kk, 0.0)",
+      "function_or_method": "cv",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    }
+  ]
+}

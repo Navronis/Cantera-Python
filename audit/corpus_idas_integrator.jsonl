@@ -1,0 +1,12 @@
+{"case_id": "idas_poly_tol_standard", "system_type": "polynomial", "mode": "integrate", "rtol": 1e-06, "atol": 1e-08, "max_order": 5, "include_algebraic_in_error_test": true, "sample_times": [0.01, 0.05, 0.1, 0.2, 0.5]}
+{"case_id": "idas_poly_tol_tight", "system_type": "polynomial", "mode": "integrate", "rtol": 1e-08, "atol": 1e-10, "max_order": 5, "include_algebraic_in_error_test": true, "sample_times": [0.05, 0.1, 0.5, 1.0]}
+{"case_id": "idas_time_dep_standard", "system_type": "timedep", "mode": "integrate", "rtol": 1e-06, "atol": 1e-08, "max_order": 5, "include_algebraic_in_error_test": true, "sample_times": [0.1, 0.5, 1.0, 2.0]}
+{"case_id": "idas_time_dep_tight", "system_type": "timedep", "mode": "integrate", "rtol": 1e-08, "atol": 1e-10, "max_order": 5, "include_algebraic_in_error_test": true, "sample_times": [0.2, 0.8, 1.5, 3.0]}
+{"case_id": "idas_robertson_stiff_short", "system_type": "robertson", "mode": "integrate", "rtol": 0.0001, "atol": 1e-06, "max_order": 5, "include_algebraic_in_error_test": true, "sample_times": [0.0001, 0.001, 0.01, 0.1, 1.0]}
+{"case_id": "idas_robertson_stiff_long", "system_type": "robertson", "mode": "integrate", "rtol": 1e-05, "atol": 1e-07, "max_order": 5, "include_algebraic_in_error_test": true, "sample_times": [0.01, 1.0, 10.0, 100.0]}
+{"case_id": "idas_robertson_tight", "system_type": "robertson", "mode": "integrate", "rtol": 1e-07, "atol": 1e-09, "max_order": 5, "include_algebraic_in_error_test": true, "sample_times": [0.001, 0.1, 1.0, 10.0]}
+{"case_id": "idas_coupled_5var", "system_type": "coupled5", "mode": "integrate", "rtol": 1e-06, "atol": 1e-08, "max_order": 5, "include_algebraic_in_error_test": true, "sample_times": [0.05, 0.1, 0.2, 0.5]}
+{"case_id": "idas_step_mode", "system_type": "polynomial", "mode": "step", "rtol": 1e-06, "atol": 1e-08, "max_order": 4, "include_algebraic_in_error_test": true, "sample_times": [0.02, 0.05, 0.1]}
+{"case_id": "idas_suppress_alg_false", "system_type": "robertson", "mode": "integrate", "rtol": 1e-05, "atol": 1e-07, "max_order": 5, "include_algebraic_in_error_test": true, "sample_times": [0.001, 0.1, 1.0]}
+{"case_id": "idas_suppress_alg_true", "system_type": "robertson", "mode": "integrate", "rtol": 1e-05, "atol": 1e-07, "max_order": 5, "include_algebraic_in_error_test": false, "sample_times": [0.001, 0.1, 1.0]}
+{"case_id": "idas_reinit", "system_type": "reinit_poly", "mode": "integrate", "rtol": 1e-06, "atol": 1e-08, "max_order": 5, "include_algebraic_in_error_test": true, "sample_times": [0.05, 0.1, 0.15, 0.2]}

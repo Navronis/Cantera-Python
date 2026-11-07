@@ -1,0 +1,311 @@
+{
+  "subsystem": "transport",
+  "closure_name": "TRANSPORT_FINAL_REMAINING_CLOSURE",
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "symbol_count": 33,
+  "classes": {
+    "IonGasTransport": 15,
+    "TransportFactory": 7,
+    "UnityLewisTransport": 5,
+    "WaterTransport": 6
+  },
+  "symbols": [
+    {
+      "canonical_index": 3508,
+      "stable_symbol_id": "include/cantera/transport/IonGasTransport.h:39:transportModel",
+      "class": "IonGasTransport",
+      "signature": "string transportModel() const override",
+      "native_file": "include/cantera/transport/IonGasTransport.h",
+      "python_target": "cantera_python.transport.IonGasTransport.transportModel",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 3509,
+      "stable_symbol_id": "include/cantera/transport/IonGasTransport.h:43:init",
+      "class": "IonGasTransport",
+      "signature": "void init(shared_ptr<ThermoPhase> thermo, int mode) override",
+      "native_file": "include/cantera/transport/IonGasTransport.h",
+      "python_target": "cantera_python.transport.IonGasTransport.init",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 3510,
+      "stable_symbol_id": "include/cantera/transport/IonGasTransport.h:47:viscosity",
+      "class": "IonGasTransport",
+      "signature": "double viscosity() override",
+      "native_file": "include/cantera/transport/IonGasTransport.h",
+      "python_target": "cantera_python.transport.IonGasTransport.viscosity",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 3511,
+      "stable_symbol_id": "include/cantera/transport/IonGasTransport.h:51:thermalConductivity",
+      "class": "IonGasTransport",
+      "signature": "double thermalConductivity() override",
+      "native_file": "include/cantera/transport/IonGasTransport.h",
+      "python_target": "cantera_python.transport.IonGasTransport.thermalConductivity",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 3512,
+      "stable_symbol_id": "include/cantera/transport/IonGasTransport.h:55:getMobilities",
+      "class": "IonGasTransport",
+      "signature": "void getMobilities(span<double> mobi) override",
+      "native_file": "include/cantera/transport/IonGasTransport.h",
+      "python_target": "cantera_python.transport.IonGasTransport.getMobilities",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 3513,
+      "stable_symbol_id": "include/cantera/transport/IonGasTransport.h:59:getMixDiffCoeffs",
+      "class": "IonGasTransport",
+      "signature": "void getMixDiffCoeffs(span<double> d) override",
+      "native_file": "include/cantera/transport/IonGasTransport.h",
+      "python_target": "cantera_python.transport.IonGasTransport.getMixDiffCoeffs",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 3514,
+      "stable_symbol_id": "include/cantera/transport/IonGasTransport.h:67:electricalConductivity",
+      "class": "IonGasTransport",
+      "signature": "double electricalConductivity() override",
+      "native_file": "include/cantera/transport/IonGasTransport.h",
+      "python_target": "cantera_python.transport.IonGasTransport.electricalConductivity",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 3515,
+      "stable_symbol_id": "include/cantera/transport/IonGasTransport.h:71:setupN64",
+      "class": "IonGasTransport",
+      "signature": "void setupN64()",
+      "native_file": "include/cantera/transport/IonGasTransport.h",
+      "python_target": "cantera_python.transport.IonGasTransport.setupN64",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 3516,
+      "stable_symbol_id": "include/cantera/transport/IonGasTransport.h:75:fitDiffCoeffs",
+      "class": "IonGasTransport",
+      "signature": "void fitDiffCoeffs(MMCollisionInt& integrals) override",
+      "native_file": "include/cantera/transport/IonGasTransport.h",
+      "python_target": "cantera_python.transport.IonGasTransport.fitDiffCoeffs",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 3517,
+      "stable_symbol_id": "include/cantera/transport/IonGasTransport.h:84:omega11_n64",
+      "class": "IonGasTransport",
+      "signature": "double omega11_n64(const double tstar, const double gamma)",
+      "native_file": "include/cantera/transport/IonGasTransport.h",
+      "python_target": "cantera_python.transport.IonGasTransport.omega11_n64",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 3580,
+      "stable_symbol_id": "include/cantera/transport/TransportFactory.h:45:factory",
+      "class": "TransportFactory",
+      "signature": "static TransportFactory* factory()",
+      "native_file": "include/cantera/transport/TransportFactory.h",
+      "python_target": "cantera_python.transport.TransportFactory.factory",
+      "scientific_category": "transport_factory"
+    },
+    {
+      "canonical_index": 3581,
+      "stable_symbol_id": "include/cantera/transport/TransportFactory.h:48:deleteFactory",
+      "class": "TransportFactory",
+      "signature": "void deleteFactory() override",
+      "native_file": "include/cantera/transport/TransportFactory.h",
+      "python_target": "cantera_python.transport.TransportFactory.deleteFactory",
+      "scientific_category": "transport_factory"
+    },
+    {
+      "canonical_index": 3582,
+      "stable_symbol_id": "include/cantera/transport/TransportFactory.h:58:newTransport",
+      "class": "TransportFactory",
+      "signature": "Transport* newTransport(const string& model, shared_ptr<ThermoPhase> thermo)",
+      "native_file": "include/cantera/transport/TransportFactory.h",
+      "python_target": "cantera_python.transport.TransportFactory.newTransport",
+      "scientific_category": "transport_factory"
+    },
+    {
+      "canonical_index": 3583,
+      "stable_symbol_id": "include/cantera/transport/TransportFactory.h:64:newTransport",
+      "class": "TransportFactory",
+      "signature": "Transport* newTransport(shared_ptr<ThermoPhase> thermo)",
+      "native_file": "include/cantera/transport/TransportFactory.h",
+      "python_target": "cantera_python.transport.TransportFactory.newTransport",
+      "scientific_category": "transport_factory"
+    },
+    {
+      "canonical_index": 3584,
+      "stable_symbol_id": "include/cantera/transport/UnityLewisTransport.h:30:transportModel",
+      "class": "UnityLewisTransport",
+      "signature": "string transportModel() const override",
+      "native_file": "include/cantera/transport/UnityLewisTransport.h",
+      "python_target": "cantera_python.transport.UnityLewisTransport.transportModel",
+      "scientific_category": "unity_lewis_transport"
+    },
+    {
+      "canonical_index": 3585,
+      "stable_symbol_id": "include/cantera/transport/UnityLewisTransport.h:55:getMixDiffCoeffs",
+      "class": "UnityLewisTransport",
+      "signature": "void getMixDiffCoeffs(span<double> d) override",
+      "native_file": "include/cantera/transport/UnityLewisTransport.h",
+      "python_target": "cantera_python.transport.UnityLewisTransport.getMixDiffCoeffs",
+      "scientific_category": "unity_lewis_transport"
+    },
+    {
+      "canonical_index": 3586,
+      "stable_symbol_id": "include/cantera/transport/UnityLewisTransport.h:67:getThermalDiffCoeffs",
+      "class": "UnityLewisTransport",
+      "signature": "void getThermalDiffCoeffs(span<double> dt) override",
+      "native_file": "include/cantera/transport/UnityLewisTransport.h",
+      "python_target": "cantera_python.transport.UnityLewisTransport.getThermalDiffCoeffs",
+      "scientific_category": "unity_lewis_transport"
+    },
+    {
+      "canonical_index": 3587,
+      "stable_symbol_id": "include/cantera/transport/UnityLewisTransport.h:75:getMixDiffCoeffsMole",
+      "class": "UnityLewisTransport",
+      "signature": "void getMixDiffCoeffsMole(span<double> d) override",
+      "native_file": "include/cantera/transport/UnityLewisTransport.h",
+      "python_target": "cantera_python.transport.UnityLewisTransport.getMixDiffCoeffsMole",
+      "scientific_category": "unity_lewis_transport"
+    },
+    {
+      "canonical_index": 3589,
+      "stable_symbol_id": "include/cantera/transport/UnityLewisTransport.h:91:getMixDiffCoeffsMass",
+      "class": "UnityLewisTransport",
+      "signature": "void getMixDiffCoeffsMass(span<double> d) override",
+      "native_file": "include/cantera/transport/UnityLewisTransport.h",
+      "python_target": "cantera_python.transport.UnityLewisTransport.getMixDiffCoeffsMass",
+      "scientific_category": "unity_lewis_transport"
+    },
+    {
+      "canonical_index": 3590,
+      "stable_symbol_id": "include/cantera/transport/WaterTransport.h:25:transportModel",
+      "class": "WaterTransport",
+      "signature": "string transportModel() const override",
+      "native_file": "include/cantera/transport/WaterTransport.h",
+      "python_target": "cantera_python.transport.WaterTransport.transportModel",
+      "scientific_category": "water_liquid_transport"
+    },
+    {
+      "canonical_index": 3591,
+      "stable_symbol_id": "include/cantera/transport/WaterTransport.h:40:viscosity",
+      "class": "WaterTransport",
+      "signature": "double viscosity() override",
+      "native_file": "include/cantera/transport/WaterTransport.h",
+      "python_target": "cantera_python.transport.WaterTransport.viscosity",
+      "scientific_category": "water_liquid_transport"
+    },
+    {
+      "canonical_index": 3592,
+      "stable_symbol_id": "include/cantera/transport/WaterTransport.h:42:bulkViscosity",
+      "class": "WaterTransport",
+      "signature": "double bulkViscosity() override",
+      "native_file": "include/cantera/transport/WaterTransport.h",
+      "python_target": "cantera_python.transport.WaterTransport.bulkViscosity",
+      "scientific_category": "water_liquid_transport"
+    },
+    {
+      "canonical_index": 3593,
+      "stable_symbol_id": "include/cantera/transport/WaterTransport.h:57:thermalConductivity",
+      "class": "WaterTransport",
+      "signature": "double thermalConductivity() override",
+      "native_file": "include/cantera/transport/WaterTransport.h",
+      "python_target": "cantera_python.transport.WaterTransport.thermalConductivity",
+      "scientific_category": "water_liquid_transport"
+    },
+    {
+      "canonical_index": 3594,
+      "stable_symbol_id": "include/cantera/transport/WaterTransport.h:59:init",
+      "class": "WaterTransport",
+      "signature": "void init(shared_ptr<ThermoPhase> thermo, int mode=0) override",
+      "native_file": "include/cantera/transport/WaterTransport.h",
+      "python_target": "cantera_python.transport.WaterTransport.init",
+      "scientific_category": "water_liquid_transport"
+    },
+    {
+      "canonical_index": 5237,
+      "stable_symbol_id": "src/transport/IonGasTransport.cpp:139:mobi",
+      "class": null,
+      "signature": "vector<double> mobi(m_nsp)",
+      "native_file": "src/transport/IonGasTransport.cpp",
+      "python_target": "cantera_python.transport.mobi",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 5238,
+      "stable_symbol_id": "src/transport/IonGasTransport.cpp:162:tlog",
+      "class": null,
+      "signature": "vector<double> tlog(np)",
+      "native_file": "src/transport/IonGasTransport.cpp",
+      "python_target": "cantera_python.transport.tlog",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 5239,
+      "stable_symbol_id": "src/transport/IonGasTransport.cpp:163:w",
+      "class": null,
+      "signature": "vector<double> w(np)",
+      "native_file": "src/transport/IonGasTransport.cpp",
+      "python_target": "cantera_python.transport.w",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 5240,
+      "stable_symbol_id": "src/transport/IonGasTransport.cpp:172:c",
+      "class": null,
+      "signature": "vector<double> c(degree + 1)",
+      "native_file": "src/transport/IonGasTransport.cpp",
+      "python_target": "cantera_python.transport.c",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 5241,
+      "stable_symbol_id": "src/transport/IonGasTransport.cpp:176:diff",
+      "class": null,
+      "signature": "vector<double> diff(np + 1)",
+      "native_file": "src/transport/IonGasTransport.cpp",
+      "python_target": "cantera_python.transport.diff",
+      "scientific_category": "ion_charged_species_transport"
+    },
+    {
+      "canonical_index": 5278,
+      "stable_symbol_id": "src/transport/TransportFactory.cpp:55:transportLock",
+      "class": null,
+      "signature": "std::unique_lock<std::mutex> transportLock(transport_mutex)",
+      "native_file": "src/transport/TransportFactory.cpp",
+      "python_target": "cantera_python.transport.transportLock",
+      "scientific_category": "transport_factory"
+    },
+    {
+      "canonical_index": 5279,
+      "stable_symbol_id": "src/transport/TransportFactory.cpp:64:transportLock",
+      "class": null,
+      "signature": "std::unique_lock<std::mutex> transportLock(transport_mutex)",
+      "native_file": "src/transport/TransportFactory.cpp",
+      "python_target": "cantera_python.transport.transportLock",
+      "scientific_category": "transport_factory"
+    },
+    {
+      "canonical_index": 5281,
+      "stable_symbol_id": "src/transport/TransportFactory.cpp:81:state",
+      "class": null,
+      "signature": "vector<double> state(phase->stateSize())",
+      "native_file": "src/transport/TransportFactory.cpp",
+      "python_target": "cantera_python.transport.state",
+      "scientific_category": "transport_factory"
+    },
+    {
+      "canonical_index": 5283,
+      "stable_symbol_id": "src/transport/WaterTransport.cpp:153:sqrt",
+      "class": null,
+      "signature": "xsipow * sqrt(rhobar) * exp(-18.66*temp2 - rfac4)",
+      "native_file": "src/transport/WaterTransport.cpp",
+      "python_target": "cantera_python.transport.sqrt",
+      "scientific_category": "water_liquid_transport"
+    }
+  ]
+}

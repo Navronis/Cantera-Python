@@ -1,0 +1,9 @@
+{"source":"src/tpx/Sub.cpp","python":"cantera_python/tpx.py","status":"ported","scope":"state, saturation cache, quality, property pairs, finite-difference derivatives"}
+{"source":"src/tpx/Water.cpp","python":"cantera_python/tpx.py:Water","status":"ported","scope":"coefficient tables, pressure, u, s, saturation, liquid density"}
+{"source":"src/tpx/CarbonDioxide.cpp","python":"cantera_python/tpx_exact.py:CarbonDioxide","status":"ported","scope":"coefficient tables and analytical equations"}
+{"source":"src/tpx/Nitrogen.cpp","python":"cantera_python/tpx_exact.py:Nitrogen","status":"ported","scope":"14-term residual and saturation correlations"}
+{"source":"src/tpx/Oxygen.cpp","python":"cantera_python/tpx_exact.py:Oxygen","status":"ported","scope":"14-term residual and saturation correlations"}
+{"source":"src/tpx/Hydrogen.cpp","python":"cantera_python/tpx_exact.py:Hydrogen","status":"ported","scope":"14-term residual, piecewise ideal cv, saturation"}
+{"source":"src/tpx/Methane.cpp","python":"cantera_python/tpx_exact.py:Methane","status":"ported","scope":"14-term residual and saturation correlations"}
+{"source":"src/tpx/Heptane.cpp","python":"cantera_python/tpx_exact.py:Heptane","status":"ported","scope":"coefficient tables and analytical equations"}
+{"source":"src/tpx/HFC134a.cpp","python":"cantera_python/tpx_exact.py:HFC134a","status":"ported","scope":"Tillner-Roth Helmholtz terms and saturation"}

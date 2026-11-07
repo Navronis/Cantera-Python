@@ -1,0 +1,93 @@
+{
+  "manifest_version": "2.0",
+  "timestamp": "2026-09-26T01:30:00+05:30",
+  "pinned_source": {
+    "exact_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "git_ref": "HEAD",
+    "verified_commit_hash": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "checkout_status": "CLEAN"
+  },
+  "native_oracle_binaries": {
+    "native_extension": {
+      "path": "/home/nebula/cantera-oracle-env/lib/python3.12/site-packages/cantera/_cantera.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "d686773fe369ba07c2ad78431240869a3679316c4bdbb77160062d86aa14c68c"
+    },
+    "libcantera_shared": {
+      "path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so",
+      "sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+    },
+    "libcantera_static": {
+      "path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera.a",
+      "sha256": "0f9948c9d3eea3f12547f11949a9cc6cbf28893ec98d6aa5425860b9d6d14e02"
+    },
+    "libcantera_python": {
+      "path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_python3_12.so",
+      "sha256": "cf70d89d5e1039fd35fcddfe05673a26a794ccb4c7fe320c5f2d2634ee2c5d96"
+    }
+  },
+  "serialized_input_corpus": {
+    "corpus_wave1.jsonl": {
+      "cases": 4100,
+      "sha256": "f3f536bc375331bc75bbb590fb334e094365f8b83606a84b816811ea78d1410f"
+    },
+    "corpus_wave2.jsonl": {
+      "cases": 2000,
+      "sha256": "3af0b5f0a15abae357d9537f33d9bad0c68f1c0c4baa42a832a0e09e480fd492"
+    },
+    "corpus_wave3.jsonl": {
+      "cases": 9608,
+      "sha256": "b204c592a88a466b9fb1dbd3ae80a7f116df06b411bd88ec75753c891281c3be"
+    },
+    "corpus_wave3_forward.jsonl": {
+      "cases": 8000,
+      "sha256": "d844bc2a0bb21633018af14d146ac475bc0998b5215eda493570be5eaa933f30"
+    },
+    "corpus_wave3_saturation.jsonl": {
+      "cases": 200,
+      "sha256": "3c4fbd07bfb180e19b32823215d73b86f0c41dc0593bffe1d4a062c4bb980f90"
+    },
+    "corpus_wave3_quality.jsonl": {
+      "cases": 208,
+      "sha256": "ba1463c3f65ea91859d9b86a4e9c5b53dec8fc4442bb6d56ac2f9edab03d4f8d"
+    },
+    "corpus_wave3_failures.jsonl": {
+      "cases": 80,
+      "sha256": "6b6776a61acda35d6fc4473f58a10203e74cb38ab75308bb2a51cd86894959c9"
+    }
+  },
+  "python_implementation_tree_waves_1_to_3": {
+    "cantera_python/state.py": "6fe015a744b915edaf2f1a8e3e538241e9cf8e28bf3aae2bd481464cf03b9bdc",
+    "cantera_python/thermo.py": "1a034d833d2de4c6e9221b747a12319dd60db377f50c600c24781c0aaf4c1b68",
+    "cantera_python/ideal_gas.py": "98445f219100be1d3417451e40a759c6c17b8823592f7b994dfae2087e0ca49d",
+    "cantera_python/phases.py": "03f3cab9aa9a220b6f7c818460d1e6d33f59018866bb904f9ecf04d436f3f365",
+    "cantera_python/cubic_eos.py": "435e62df706c6700b54b3e6a8139421673749b2a5722a18c5d8124d8a84a3054",
+    "cantera_python/tpx.py": "20e9b056719f4c664c4fd0c915c3c1a81acaed687acba898bd8efbbf39726e06",
+    "cantera_python/tpx_exact.py": "d61011adc5ff601decfb1196e8a022118da964d63ee9d78c918ef47f227d4c87",
+    "cantera_python/numerics.py": "69d58120fa2f9377b0105cf18d858ec31be4d20b6a7161a429e19098d5ecb284",
+    "cantera_python/solution.py": "3b50978c5dfa6e47236b11080f2b5046da39a55f56a236bca5d0ad22d04011f8",
+    "cantera_python/state_revision.py": "b00b2df4d7392be6d7e4a5bad2edb36f36430bd4690ed11f5869548957bfa77b"
+  },
+  "validation_runners_and_harness": {
+    "native_runner": {
+      "path": "tools/run_native_oracle_runner.py",
+      "sha256": "21eb38e27f7bde64e555a0a5d2d712991ea394c6b601f61e103b14d7852e63ca"
+    },
+    "python_runner": {
+      "path": "tools/run_python_port_runner.py",
+      "sha256": "4da042b70f8d90211c452a1bf53a9512cca7f58d5efbf0be2333913cfaf3ddca"
+    },
+    "comparator": {
+      "path": "tools/compare_native_vs_python.py",
+      "sha256": "41f00f6737d2e5f57113802b42977c795ebcb9e551e7793cf237abf73950ff4e"
+    },
+    "tolerance_policy": {
+      "path": "audit/native_parity_tolerance_policy.json",
+      "sha256": "5a499091b30b667d5beefc45cf580eee0b5c5e0d991bd51b1e345ddd39a3b137"
+    }
+  },
+  "reproducibility_verdict": {
+    "chain_intact": true,
+    "total_corpus_cases": 15708,
+    "oracle_identity_verified": true
+  }
+}

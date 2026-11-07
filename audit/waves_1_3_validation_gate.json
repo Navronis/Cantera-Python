@@ -1,0 +1,1005 @@
+{
+  "waves_1_3_snapshot_id": "fc63583ec6249d35444d7e68c5971a96b67aa7051af9d75904ffafd151bdc2ca",
+  "repository_identity": {
+    "commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+    "branch": "certified/waves-1-3-baseline",
+    "clean": false,
+    "snapshot_kind": "WORKING_TREE_SNAPSHOT_WITH_DIFF_HASH",
+    "working_tree_diff_sha256": "be6a89c42d5d5887add4cd6aed8904547e45e6e979078e0185189d0952cbe5a4",
+    "tracked_worktree_tree_sha256": "9f7082a7a1733b2aa930992ac3913303e32dd13a843e5a4bb0e95583361c1a6f"
+  },
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "native_identity_file_matches_pin": true,
+  "native_oracle_revalidated_in_this_run": false,
+  "native_rerun_provenance": {
+    "verified": false,
+    "checks": {
+      "provenance_file_present": true,
+      "repository_snapshot_matches": false,
+      "git_commit_matches_live_head": true,
+      "pinned_source_matches": true,
+      "run_is_recent": false,
+      "all_required_runs_complete": true,
+      "raw_native_hashes_match": true,
+      "execution_source_hashes_match": false,
+      "native_probe_binary_hash_matches": true,
+      "native_binary_hash_matches": true,
+      "native_binary_hashes_rehashed": true
+    },
+    "path": "audit\\waves_1_3_native_rerun_provenance.json",
+    "expected_raw_result_sha256": {
+      "audit/raw_native_wave1.jsonl": "e9d356d9aa7cad0ab180cc35ffea1cf1419aecd699465c87502ed36e4c10b5cd",
+      "audit/raw_python_wave1.jsonl": "a61bc233cf9a0b0e028fdc251909231bffb1c30b9335aebe91a9441484a39533",
+      "audit/raw_native_wave2.jsonl": "f3f58f504d1a1acf4d29fc677c9dc35f1df76e87caa8866790a3df65a7f567c6",
+      "audit/raw_python_wave2.jsonl": "c3032d2d41a846156392c28f473498d1cbeb5a31c3c6c5035b078539b53760b6",
+      "audit/raw_native_wave2_internal.jsonl": "6da73a971df227877d549e6aa345dec99b7f915f4e802d13ef54626a4fe0a76a",
+      "audit/raw_python_wave2_internal.jsonl": "29d90f52df6e78263aecd9d49dcfa9dccc1aa3f1291955cbfba414c95867bdf8",
+      "audit/raw_native_wave3.jsonl": "ace18e38c8cfee27b96997d9e5e6e2f02869b13a9045ffdc03d8e0318cc02c55",
+      "audit/raw_python_wave3.jsonl": "f4b14c4615694d88598db016d934d535b0522fd569274fbaf6c60f88683f80f8",
+      "audit/raw_native_wave3_singular.jsonl": "fd5314dce79874fdb5a6e0afd76032522d94fc21c6516c27e4efa2a56ba613f5",
+      "audit/raw_python_wave3_singular.jsonl": "3c316bc70418c9668bb1467a1e0dc26c702f488152b79e0e07a26bf78cc03abc",
+      "audit/wave3_cp_cv_step_sweep.jsonl": "e01dc718e49a2c355f698784163ae2d9075d0f3e233882e38fe0e84b3c83360b"
+    }
+  },
+  "test_run_provenance": {
+    "verified": false,
+    "checks": {
+      "provenance_file_present": true,
+      "git_commit_matches_live_head": true,
+      "source_hashes_match_live_tree": false,
+      "test_exit_code_zero": true,
+      "log_hash_matches": true,
+      "parsed_test_counts_match": true
+    },
+    "path": "audit\\waves_1_3_test_run_provenance.json",
+    "test_source_sha256": "c0a96dd2c1a64dc70764685fa134b6cc83564511f59262d2ba2bec115f15cf3a"
+  },
+  "git_identity_matches_live_worktree": true,
+  "live_git_head": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "live_git_branch": "certified/waves-1-3-baseline",
+  "live_git_status_porcelain": "M PORT_STATUS.json\n M PORT_STATUS.md\n M VALIDATION.md\n M audit/canonical_full_pytest_results.json\n M audit/complete_solver_inventory.jsonl\n M audit/corpus_wave3.jsonl\n M audit/native_failure_semantics.jsonl\n M audit/native_parity_summary.json\n M audit/native_wave2_summary.json\n M audit/native_wave3_results.jsonl\n M audit/native_wave3_summary.json\n M audit/raw_native_wave3.jsonl\n M audit/raw_python_wave3.jsonl\n M audit/raw_python_wave3_singular.jsonl\n M audit/scientific_status.json\n M audit/solver_wave3_final_adversarial_audit.md\n M audit/solver_wave3_property_pair_matrix.jsonl\n M audit/solver_wave3_property_pair_validation.jsonl\n M audit/solver_wave3_summary.json\n M audit/solver_wave4_full_binary_matrix_validation.jsonl\n M audit/thermodynamic_solver_waves_1_3_committed_manifest.json\n M audit/thermodynamic_solver_waves_1_3_current_head_manifest.json\n M audit/wave1_failure_state_comparison.json\n M audit/wave1_source_mapping.md\n M audit/wave2_evidence_reconciliation.md\n M audit/wave2_internal_root_parity.jsonl\n M audit/wave2_internal_root_parity_summary.md\n M audit/wave2_return_code_distribution.json\n M audit/wave3_cp_cv_formula_audit.md\n M audit/wave3_cp_cv_perturbation_results.json\n M audit/wave3_cp_cv_step_sweep_summary.md\n M audit/wave3_fallback_activation_probe.json\n M audit/wave3_implemented_differently_audit.json\n M audit/wave3_implemented_differently_disposition.md\n M audit/wave3_metric_reconciliation.md\n M audit/wave3_singular_jacobian_audit.md\n M audit/wave3_singular_jacobian_comparison.json\n M audit/waves_1_3_current_head_gate.json\n M audit/waves_1_3_evidence_hash_manifest.json\n M audit/waves_1_3_focused_unittest_results.json\n M audit/waves_1_3_native_rerun_provenance.json\n M audit/waves_1_3_repository_identity.json\n M audit/waves_1_3_test_results.json\n M audit/waves_1_3_test_run_provenance.json\n M audit/waves_1_3_validation_gate.json\n M cantera_python/equilibrium.py\n M cantera_python/fixed_stoichiometry.py\n M cantera_python/ideal_gas.py\n M cantera_python/kinetics.py\n M cantera_python/numerics.py\n M cantera_python/oned.py\n M cantera_python/phases.py\n M cantera_python/rates.py\n M cantera_python/reactor.py\n M cantera_python/solution.py\n M cantera_python/state.py\n M cantera_python/tpx.py\n M cantera_python/tpx_exact.py\n M cantera_python/transport.py\n M cantera_python/vcs.py\n M cantera_python/vpss.py\n M provenance/canonical_5784_symbol_inventory.jsonl\n M provenance/canonical_inventory_report.md\n M provenance/symbol_closure_dashboard.json\n M provenance/symbol_implementation_evidence.jsonl\n M tests/test_canonical_inventory.py\n M tests/test_dusty_gas_transport.py\n M tests/test_hp_transport.py\n M tests/test_multicomponent_transport.py\n M tests/test_numerics.py\n M tests/test_onedim.py\n M tests/test_reactor_conservation.py\n M tests/test_reactor_network.py\n M tests/test_runtime_purity.py\n M tests/test_solution_kinetics_reactor.py\n M tests/test_tpx_ieee_arithmetic.py\n M tests/test_transport.py\n M tests/test_vcs_multiphase.py\n M tests/test_vpss.py\n M tools/bind_waves_1_3_outputs.py\n M tools/build_complete_solver_inventory.py\n M tools/build_waves_1_3_repository_identity.py\n M tools/close_wave3_audit.py\n M tools/compare_native_vs_python.py\n M tools/generate_authoritative_port_status.py\n M tools/generate_wave3_fallback_activation_corpus.py\n M tools/run_native_oracle_runner.py\n M tools/run_python_port_runner.py\n M tools/test_wave3_singular_differential.py\n M tools/validate_waves_1_3_current_head.py\n M tools/verify_wave4_full_matrix_structures.py\n M tools/verify_wave4_matrix_cache_semantics.py\n?? audit/corpus_wave3_pre_current_pair_sample.jsonl\n?? audit/current_tree_parity/README.md\n?? audit/current_tree_parity/compare_wave12.py\n?? audit/current_tree_parity/compare_wave4_trace_heavy.py\n?? audit/current_tree_parity/corpus_wave1.jsonl\n?? audit/current_tree_parity/corpus_wave2.jsonl\n?? audit/current_tree_parity/corpus_wave3.jsonl\n?? audit/current_tree_parity/corpus_wave3_failures.jsonl\n?? audit/current_tree_parity/corpus_wave3_forward.jsonl\n?? audit/current_tree_parity/corpus_wave3_quality.jsonl\n?? audit/current_tree_parity/corpus_wave3_saturation.jsonl\n?? audit/current_tree_parity/current_raw_native_wave1.jsonl\n?? audit/current_tree_parity/current_raw_native_wave2.jsonl\n?? audit/current_tree_parity/current_raw_native_wave3.jsonl\n?? audit/current_tree_parity/current_raw_python_wave1.jsonl\n?? audit/current_tree_parity/current_raw_python_wave2.jsonl\n?? audit/current_tree_parity/current_raw_python_wave3.jsonl\n?? audit/current_tree_parity/current_tree_parity_manifest.json\n?? audit/current_tree_parity/experiment_blocked_dgetrf.py\n?? audit/current_tree_parity/full_pytest_20260929.json\n?? audit/current_tree_parity/generate_native_multiphase_reference.py\n?? audit/current_tree_parity/generate_wave4_thermal_reference.py\n?? audit/current_tree_parity/head_raw_python_wave3.jsonl\n?? audit/current_tree_parity/native_parity_tolerance_policy.json\n?? audit/current_tree_parity/native_vcs_basis_gri_graphite.txt\n?? audit/current_tree_parity/native_vcs_initial_state_gri.txt\n?? audit/current_tree_parity/native_vcs_phase_stability_gri.txt\n?? audit/current_tree_parity/native_wave1_results.jsonl\n?? audit/current_tree_parity/native_wave1_summary.json\n?? audit/current_tree_parity/native_wave2_results.jsonl\n?? audit/current_tree_parity/native_wave2_summary.json\n?? audit/current_tree_parity/native_wave3_results.jsonl\n?? audit/current_tree_parity/native_wave3_summary.json\n?? audit/current_tree_parity/raw_native_wave1.jsonl\n?? audit/current_tree_parity/raw_native_wave2.jsonl\n?? audit/current_tree_parity/raw_native_wave3.jsonl\n?? audit/current_tree_parity/raw_python_wave1.jsonl\n?? audit/current_tree_parity/raw_python_wave2.jsonl\n?? audit/current_tree_parity/raw_python_wave3.jsonl\n?? audit/current_tree_parity/run_native_wave12.py\n?? audit/current_tree_parity/run_native_wave3.py\n?? audit/current_tree_parity/run_python_wave12.py\n?? audit/current_tree_parity/run_python_wave3.py\n?? audit/current_tree_parity/sensitivity_fd_diagnostic.py\n?? audit/current_tree_parity/solver_wave3_property_pair_validation.jsonl\n?? audit/current_tree_parity/vcs_basis_preparation_followup_20260929.json\n?? audit/current_tree_parity/vcs_followup_20260929.json\n?? audit/current_tree_parity/vcs_initial_state_followup_20260929.json\n?? audit/current_tree_parity/vcs_phase_local_followup_20260929.json\n?? audit/current_tree_parity/vcs_phase_stability_followup_20260929.json\n?? audit/current_tree_parity/vcs_phase_state_followup_20260929.json\n?? audit/current_tree_parity/vcs_preparation_followup_20260929.json\n?? audit/current_tree_parity/vcs_stoichiometry_followup_20260929.json\n?? audit/current_tree_parity/wave4_native_trace_heavy.txt\n?? audit/current_tree_parity/wave4_native_trace_heavy.txt.diag\n?? audit/current_tree_parity/wave4_python_trace_heavy.txt\n?? audit/current_tree_parity/wave4_python_trace_heavy.txt.diag\n?? audit/current_tree_parity/wave4_trace_heavy_comparison.json\n?? audit/current_tree_parity/write_manifest.py\n?? audit/current_tree_parity/write_vcs_followup_manifest.py\n?? audit/dusty_transport_comparison.json\n?? audit/dusty_transport_native.json\n?? audit/dusty_transport_python.json\n?? audit/native_band_matrix_probe.txt\n?? audit/raw_native_wave3_pre_canonical_case_ids.jsonl\n?? audit/raw_native_wave3_pre_current_tpx.jsonl\n?? audit/raw_native_wave3_pre_global_ids.jsonl\n?? audit/raw_native_wave3_pre_pair_local_ids.jsonl\n?? audit/raw_python_wave3_pre_canonical_case_ids.jsonl\n?? audit/raw_python_wave3_pre_current_tpx.jsonl\n?? audit/raw_python_wave3_pre_global_ids.jsonl\n?? audit/raw_python_wave3_pre_pair_local_ids.jsonl\n?? audit/reactor_initial_rhs_pinned_differential.json\n?? audit/reactor_network_python_pinned_differential.json\n?? audit/solver_wave3_property_pair_campaign_harness_bug_diagnostic.json\n?? audit/solver_wave3_property_pair_campaign_pre_stress.json\n?? audit/solver_wave3_property_pair_campaign_pre_tpp_fix.json\n?? audit/solver_wave3_property_pair_campaign_pre_tsat_seed.json\n?? audit/solver_wave3_property_pair_campaign_pre_x_branch_order.json\n?? audit/solver_wave3_property_pair_campaign_runtime_pilot.json\n?? audit/solver_wave3_property_pair_campaign_stratified_pilot.json\n?? audit/solver_wave3_property_pair_campaign_summary.json\n?? audit/solver_wave3_property_pair_campaign_summary_pre_roundoff_guard.json\n?? audit/solver_wave3_property_pair_campaign_tpx_exact_diagnostic.json\n?? audit/solver_wave3_property_pair_campaign_verification.json\n?? audit/solver_wave3_property_pair_campaign_verification_pre_roundoff_guard.json\n?? audit/solver_wave3_property_pair_campaign_verification_pre_tpp_fix.json\n?? audit/solver_wave3_property_pair_campaign_verification_pre_tsat_seed.json\n?? audit/solver_wave3_property_pair_campaign_verification_pre_x_branch_order.json\n?? audit/solver_wave3_property_pair_validation_harness_bug_diagnostic.jsonl\n?? audit/solver_wave3_property_pair_validation_pre_roundoff_guard.jsonl\n?? audit/solver_wave3_property_pair_validation_pre_stress.jsonl\n?? audit/solver_wave3_property_pair_validation_pre_tpp_fix.jsonl\n?? audit/solver_wave3_property_pair_validation_pre_tsat_seed.jsonl\n?? audit/solver_wave3_property_pair_validation_pre_x_branch_order.jsonl\n?? audit/solver_wave3_property_pair_validation_runtime_pilot.jsonl\n?? audit/solver_wave3_property_pair_validation_stratified_pilot.jsonl\n?? audit/solver_wave3_property_pair_validation_tpx_exact_diagnostic.jsonl\n?? audit/wave4_internal_matrix_native.txt\n?? audit/wave4_internal_matrix_native.txt.diag\n?? audit/wave4_internal_matrix_native_uniform.txt\n?? audit/wave4_internal_matrix_native_uniform.txt.diag\n?? audit/wave4_internal_matrix_python.txt\n?? audit/wave4_internal_matrix_python.txt.diag\n?? audit/wave4_internal_matrix_python_current.txt\n?? audit/wave4_internal_matrix_python_current.txt.diag\n?? audit/wave4_internal_matrix_python_qr.txt\n?? audit/wave4_internal_matrix_python_qr.txt.diag\n?? audit/wave4_internal_matrix_python_uniform.txt\n?? audit/wave4_internal_matrix_python_uniform.txt.diag\n?? audit/wave4_matrix_harmonic_comparison.json\n?? audit/wave4_matrix_native_harmonic.txt\n?? audit/wave4_matrix_native_harmonic.txt.diag\n?? audit/wave4_matrix_native_uniform_1800.txt\n?? audit/wave4_matrix_native_uniform_1800.txt.diag\n?? audit/wave4_matrix_native_uniform_2500.txt\n?? audit/wave4_matrix_native_uniform_2500.txt.diag\n?? audit/wave4_matrix_native_uniform_300.txt\n?? audit/wave4_matrix_native_uniform_300.txt.diag\n?? audit/wave4_matrix_python_harmonic.txt\n?? audit/wave4_matrix_python_harmonic.txt.diag\n?? audit/wave4_matrix_python_profiled.txt\n?? audit/wave4_matrix_python_profiled.txt.diag\n?? audit/wave4_matrix_python_uniform_1800.txt\n?? audit/wave4_matrix_python_uniform_1800.txt.diag\n?? audit/wave4_matrix_python_uniform_2500.txt\n?? audit/wave4_matrix_python_uniform_2500.txt.diag\n?? audit/wave4_matrix_python_uniform_300.txt\n?? audit/wave4_matrix_python_uniform_300.txt.diag\n?? audit/wave4_matrix_trace_heavy_comparison.json\n?? audit/wave4_matrix_uniform_1800_comparison.json\n?? audit/wave4_matrix_uniform_2500_comparison.json\n?? audit/wave4_matrix_uniform_300_comparison.json\n?? audit/wave4_matrix_uniform_comparison.json\n?? provenance/pinned_native_gri_reactor_t2e-5.json\n?? provenance/pinned_native_reactor_first_order.json\n?? tests/fixtures/pinned_multiphase_container.json\n?? tests/fixtures/pinned_multitransport_trace_heavy.json\n?? tests/fixtures/vcs_initial_state_gri_pinned.txt\n?? tests/fixtures/vcs_phase_stability_gri_pinned.txt\n?? tests/test_multiphase_container.py\n?? tests/test_solver_inventory.py\n?? tests/test_tpx_exact_hfc134a_terms.py\n?? tests/test_tpx_property_pair_bounds.py\n?? tests/test_tpx_set_xy_undefined_temperature.py\n?? tests/test_tpx_source_branch_precedence.py\n?? tests/test_tpx_tpp_source_iteration_limit.py\n?? tools/build_solver_wave3_property_pair_matrix.py\n?? tools/compare_band_matrix_native_probe.py\n?? tools/compare_dusty_transport_probe.py\n?? tools/compare_multitransport_matrix_probe.py\n?? tools/compare_reactor_initial_rhs_pinned.py\n?? tools/compare_reactor_network_pinned.py\n?? tools/compare_vcs_basis_native_probe.py\n?? tools/compare_vcs_initial_state_probe.py\n?? tools/compare_vcs_phase_stability_probe.py\n?? tools/run_dusty_transport_probe.py\n?? tools/run_native_band_matrix_probe\n?? tools/run_native_band_matrix_probe.cpp\n?? tools/run_native_multitransport_matrix_probe\n?? tools/run_native_multitransport_matrix_probe.cpp\n?? tools/run_native_vcs_basis_probe\n?? tools/run_native_vcs_basis_probe.cpp\n?? tools/run_native_vcs_initial_state_probe\n?? tools/run_native_vcs_initial_state_probe.cpp\n?? tools/run_native_vcs_margules_probe\n?? tools/run_native_vcs_margules_probe.cpp\n?? tools/run_native_vcs_phase_stability_probe\n?? tools/run_native_vcs_phase_stability_probe.cpp\n?? tools/run_python_multitransport_matrix_probe.py\n?? tools/run_solver_wave3_property_pair_campaign.py\n?? tools/validate_solver_wave3_property_pair_campaign.py",
+  "live_git_status_excluding_identity_hash_exclusions": "M PORT_STATUS.json\n M PORT_STATUS.md\n M VALIDATION.md\n M audit/complete_solver_inventory.jsonl\n M audit/corpus_wave3.jsonl\n M audit/native_failure_semantics.jsonl\n M audit/native_wave2_summary.json\n M audit/native_wave3_results.jsonl\n M audit/native_wave3_summary.json\n M audit/raw_native_wave3.jsonl\n M audit/raw_python_wave3.jsonl\n M audit/raw_python_wave3_singular.jsonl\n M audit/scientific_status.json\n M audit/solver_wave3_property_pair_matrix.jsonl\n M audit/solver_wave3_property_pair_validation.jsonl\n M audit/solver_wave3_summary.json\n M audit/solver_wave4_full_binary_matrix_validation.jsonl\n M cantera_python/equilibrium.py\n M cantera_python/fixed_stoichiometry.py\n M cantera_python/ideal_gas.py\n M cantera_python/kinetics.py\n M cantera_python/numerics.py\n M cantera_python/oned.py\n M cantera_python/phases.py\n M cantera_python/rates.py\n M cantera_python/reactor.py\n M cantera_python/solution.py\n M cantera_python/state.py\n M cantera_python/tpx.py\n M cantera_python/tpx_exact.py\n M cantera_python/transport.py\n M cantera_python/vcs.py\n M cantera_python/vpss.py\n M provenance/canonical_5784_symbol_inventory.jsonl\n M provenance/canonical_inventory_report.md\n M provenance/symbol_closure_dashboard.json\n M provenance/symbol_implementation_evidence.jsonl\n M tests/test_canonical_inventory.py\n M tests/test_dusty_gas_transport.py\n M tests/test_hp_transport.py\n M tests/test_multicomponent_transport.py\n M tests/test_numerics.py\n M tests/test_onedim.py\n M tests/test_reactor_conservation.py\n M tests/test_reactor_network.py\n M tests/test_runtime_purity.py\n M tests/test_solution_kinetics_reactor.py\n M tests/test_tpx_ieee_arithmetic.py\n M tests/test_transport.py\n M tests/test_vcs_multiphase.py\n M tests/test_vpss.py\n M tools/bind_waves_1_3_outputs.py\n M tools/build_complete_solver_inventory.py\n M tools/build_waves_1_3_repository_identity.py\n M tools/close_wave3_audit.py\n M tools/compare_native_vs_python.py\n M tools/generate_authoritative_port_status.py\n M tools/generate_wave3_fallback_activation_corpus.py\n M tools/run_native_oracle_runner.py\n M tools/run_python_port_runner.py\n M tools/test_wave3_singular_differential.py\n M tools/validate_waves_1_3_current_head.py\n M tools/verify_wave4_full_matrix_structures.py\n M tools/verify_wave4_matrix_cache_semantics.py\n?? audit/corpus_wave3_pre_current_pair_sample.jsonl\n?? audit/current_tree_parity/README.md\n?? audit/current_tree_parity/compare_wave12.py\n?? audit/current_tree_parity/compare_wave4_trace_heavy.py\n?? audit/current_tree_parity/corpus_wave1.jsonl\n?? audit/current_tree_parity/corpus_wave2.jsonl\n?? audit/current_tree_parity/corpus_wave3.jsonl\n?? audit/current_tree_parity/corpus_wave3_failures.jsonl\n?? audit/current_tree_parity/corpus_wave3_forward.jsonl\n?? audit/current_tree_parity/corpus_wave3_quality.jsonl\n?? audit/current_tree_parity/corpus_wave3_saturation.jsonl\n?? audit/current_tree_parity/current_raw_native_wave1.jsonl\n?? audit/current_tree_parity/current_raw_native_wave2.jsonl\n?? audit/current_tree_parity/current_raw_native_wave3.jsonl\n?? audit/current_tree_parity/current_raw_python_wave1.jsonl\n?? audit/current_tree_parity/current_raw_python_wave2.jsonl\n?? audit/current_tree_parity/current_raw_python_wave3.jsonl\n?? audit/current_tree_parity/current_tree_parity_manifest.json\n?? audit/current_tree_parity/experiment_blocked_dgetrf.py\n?? audit/current_tree_parity/full_pytest_20260929.json\n?? audit/current_tree_parity/generate_native_multiphase_reference.py\n?? audit/current_tree_parity/generate_wave4_thermal_reference.py\n?? audit/current_tree_parity/head_raw_python_wave3.jsonl\n?? audit/current_tree_parity/native_parity_tolerance_policy.json\n?? audit/current_tree_parity/native_vcs_basis_gri_graphite.txt\n?? audit/current_tree_parity/native_vcs_initial_state_gri.txt\n?? audit/current_tree_parity/native_vcs_phase_stability_gri.txt\n?? audit/current_tree_parity/native_wave1_results.jsonl\n?? audit/current_tree_parity/native_wave1_summary.json\n?? audit/current_tree_parity/native_wave2_results.jsonl\n?? audit/current_tree_parity/native_wave2_summary.json\n?? audit/current_tree_parity/native_wave3_results.jsonl\n?? audit/current_tree_parity/native_wave3_summary.json\n?? audit/current_tree_parity/raw_native_wave1.jsonl\n?? audit/current_tree_parity/raw_native_wave2.jsonl\n?? audit/current_tree_parity/raw_native_wave3.jsonl\n?? audit/current_tree_parity/raw_python_wave1.jsonl\n?? audit/current_tree_parity/raw_python_wave2.jsonl\n?? audit/current_tree_parity/raw_python_wave3.jsonl\n?? audit/current_tree_parity/run_native_wave12.py\n?? audit/current_tree_parity/run_native_wave3.py\n?? audit/current_tree_parity/run_python_wave12.py\n?? audit/current_tree_parity/run_python_wave3.py\n?? audit/current_tree_parity/sensitivity_fd_diagnostic.py\n?? audit/current_tree_parity/solver_wave3_property_pair_validation.jsonl\n?? audit/current_tree_parity/vcs_basis_preparation_followup_20260929.json\n?? audit/current_tree_parity/vcs_followup_20260929.json\n?? audit/current_tree_parity/vcs_initial_state_followup_20260929.json\n?? audit/current_tree_parity/vcs_phase_local_followup_20260929.json\n?? audit/current_tree_parity/vcs_phase_stability_followup_20260929.json\n?? audit/current_tree_parity/vcs_phase_state_followup_20260929.json\n?? audit/current_tree_parity/vcs_preparation_followup_20260929.json\n?? audit/current_tree_parity/vcs_stoichiometry_followup_20260929.json\n?? audit/current_tree_parity/wave4_native_trace_heavy.txt\n?? audit/current_tree_parity/wave4_native_trace_heavy.txt.diag\n?? audit/current_tree_parity/wave4_python_trace_heavy.txt\n?? audit/current_tree_parity/wave4_python_trace_heavy.txt.diag\n?? audit/current_tree_parity/wave4_trace_heavy_comparison.json\n?? audit/current_tree_parity/write_manifest.py\n?? audit/current_tree_parity/write_vcs_followup_manifest.py\n?? audit/dusty_transport_comparison.json\n?? audit/dusty_transport_native.json\n?? audit/dusty_transport_python.json\n?? audit/native_band_matrix_probe.txt\n?? audit/raw_native_wave3_pre_canonical_case_ids.jsonl\n?? audit/raw_native_wave3_pre_current_tpx.jsonl\n?? audit/raw_native_wave3_pre_global_ids.jsonl\n?? audit/raw_native_wave3_pre_pair_local_ids.jsonl\n?? audit/raw_python_wave3_pre_canonical_case_ids.jsonl\n?? audit/raw_python_wave3_pre_current_tpx.jsonl\n?? audit/raw_python_wave3_pre_global_ids.jsonl\n?? audit/raw_python_wave3_pre_pair_local_ids.jsonl\n?? audit/reactor_initial_rhs_pinned_differential.json\n?? audit/reactor_network_python_pinned_differential.json\n?? audit/solver_wave3_property_pair_campaign_harness_bug_diagnostic.json\n?? audit/solver_wave3_property_pair_campaign_pre_stress.json\n?? audit/solver_wave3_property_pair_campaign_pre_tpp_fix.json\n?? audit/solver_wave3_property_pair_campaign_pre_tsat_seed.json\n?? audit/solver_wave3_property_pair_campaign_pre_x_branch_order.json\n?? audit/solver_wave3_property_pair_campaign_runtime_pilot.json\n?? audit/solver_wave3_property_pair_campaign_stratified_pilot.json\n?? audit/solver_wave3_property_pair_campaign_summary.json\n?? audit/solver_wave3_property_pair_campaign_summary_pre_roundoff_guard.json\n?? audit/solver_wave3_property_pair_campaign_tpx_exact_diagnostic.json\n?? audit/solver_wave3_property_pair_campaign_verification.json\n?? audit/solver_wave3_property_pair_campaign_verification_pre_roundoff_guard.json\n?? audit/solver_wave3_property_pair_campaign_verification_pre_tpp_fix.json\n?? audit/solver_wave3_property_pair_campaign_verification_pre_tsat_seed.json\n?? audit/solver_wave3_property_pair_campaign_verification_pre_x_branch_order.json\n?? audit/solver_wave3_property_pair_validation_harness_bug_diagnostic.jsonl\n?? audit/solver_wave3_property_pair_validation_pre_roundoff_guard.jsonl\n?? audit/solver_wave3_property_pair_validation_pre_stress.jsonl\n?? audit/solver_wave3_property_pair_validation_pre_tpp_fix.jsonl\n?? audit/solver_wave3_property_pair_validation_pre_tsat_seed.jsonl\n?? audit/solver_wave3_property_pair_validation_pre_x_branch_order.jsonl\n?? audit/solver_wave3_property_pair_validation_runtime_pilot.jsonl\n?? audit/solver_wave3_property_pair_validation_stratified_pilot.jsonl\n?? audit/solver_wave3_property_pair_validation_tpx_exact_diagnostic.jsonl\n?? audit/wave4_internal_matrix_native.txt\n?? audit/wave4_internal_matrix_native.txt.diag\n?? audit/wave4_internal_matrix_native_uniform.txt\n?? audit/wave4_internal_matrix_native_uniform.txt.diag\n?? audit/wave4_internal_matrix_python.txt\n?? audit/wave4_internal_matrix_python.txt.diag\n?? audit/wave4_internal_matrix_python_current.txt\n?? audit/wave4_internal_matrix_python_current.txt.diag\n?? audit/wave4_internal_matrix_python_qr.txt\n?? audit/wave4_internal_matrix_python_qr.txt.diag\n?? audit/wave4_internal_matrix_python_uniform.txt\n?? audit/wave4_internal_matrix_python_uniform.txt.diag\n?? audit/wave4_matrix_harmonic_comparison.json\n?? audit/wave4_matrix_native_harmonic.txt\n?? audit/wave4_matrix_native_harmonic.txt.diag\n?? audit/wave4_matrix_native_uniform_1800.txt\n?? audit/wave4_matrix_native_uniform_1800.txt.diag\n?? audit/wave4_matrix_native_uniform_2500.txt\n?? audit/wave4_matrix_native_uniform_2500.txt.diag\n?? audit/wave4_matrix_native_uniform_300.txt\n?? audit/wave4_matrix_native_uniform_300.txt.diag\n?? audit/wave4_matrix_python_harmonic.txt\n?? audit/wave4_matrix_python_harmonic.txt.diag\n?? audit/wave4_matrix_python_profiled.txt\n?? audit/wave4_matrix_python_profiled.txt.diag\n?? audit/wave4_matrix_python_uniform_1800.txt\n?? audit/wave4_matrix_python_uniform_1800.txt.diag\n?? audit/wave4_matrix_python_uniform_2500.txt\n?? audit/wave4_matrix_python_uniform_2500.txt.diag\n?? audit/wave4_matrix_python_uniform_300.txt\n?? audit/wave4_matrix_python_uniform_300.txt.diag\n?? audit/wave4_matrix_trace_heavy_comparison.json\n?? audit/wave4_matrix_uniform_1800_comparison.json\n?? audit/wave4_matrix_uniform_2500_comparison.json\n?? audit/wave4_matrix_uniform_300_comparison.json\n?? audit/wave4_matrix_uniform_comparison.json\n?? provenance/pinned_native_gri_reactor_t2e-5.json\n?? provenance/pinned_native_reactor_first_order.json\n?? tests/fixtures/pinned_multiphase_container.json\n?? tests/fixtures/pinned_multitransport_trace_heavy.json\n?? tests/fixtures/vcs_initial_state_gri_pinned.txt\n?? tests/fixtures/vcs_phase_stability_gri_pinned.txt\n?? tests/test_multiphase_container.py\n?? tests/test_solver_inventory.py\n?? tests/test_tpx_exact_hfc134a_terms.py\n?? tests/test_tpx_property_pair_bounds.py\n?? tests/test_tpx_set_xy_undefined_temperature.py\n?? tests/test_tpx_source_branch_precedence.py\n?? tests/test_tpx_tpp_source_iteration_limit.py\n?? tools/build_solver_wave3_property_pair_matrix.py\n?? tools/compare_band_matrix_native_probe.py\n?? tools/compare_dusty_transport_probe.py\n?? tools/compare_multitransport_matrix_probe.py\n?? tools/compare_reactor_initial_rhs_pinned.py\n?? tools/compare_reactor_network_pinned.py\n?? tools/compare_vcs_basis_native_probe.py\n?? tools/compare_vcs_initial_state_probe.py\n?? tools/compare_vcs_phase_stability_probe.py\n?? tools/run_dusty_transport_probe.py\n?? tools/run_native_band_matrix_probe\n?? tools/run_native_band_matrix_probe.cpp\n?? tools/run_native_multitransport_matrix_probe\n?? tools/run_native_multitransport_matrix_probe.cpp\n?? tools/run_native_vcs_basis_probe\n?? tools/run_native_vcs_basis_probe.cpp\n?? tools/run_native_vcs_initial_state_probe\n?? tools/run_native_vcs_initial_state_probe.cpp\n?? tools/run_native_vcs_margules_probe\n?? tools/run_native_vcs_margules_probe.cpp\n?? tools/run_native_vcs_phase_stability_probe\n?? tools/run_native_vcs_phase_stability_probe.cpp\n?? tools/run_python_multitransport_matrix_probe.py\n?? tools/run_solver_wave3_property_pair_campaign.py\n?? tools/validate_solver_wave3_property_pair_campaign.py",
+  "current_python_hashes": {
+    "cantera_python/state.py": "ee59e054264dcdbb00f974db9eb533786ee7fd3431138d340c83ad8510f8523f",
+    "cantera_python/ideal_gas.py": "c1c8e9548837533451c3947623112ac4dbbe4dcf941e6e387149fd64075e6456",
+    "cantera_python/cubic_eos.py": "c4e80227350e954e2d8f6fb5e2bda66dcda5c0ec0a0dcceeefee49ad835ec3c3",
+    "cantera_python/tpx.py": "64264b5d7c8680d6bdbeaacde5f78714e5f0dd4c9d3ed0df89c6662e7e332b45"
+  },
+  "wave1_raw": {
+    "corpus_records": 4100,
+    "native_records": 4100,
+    "python_records": 4100,
+    "case_id_sets_match": true,
+    "successes": 4000,
+    "failures": 100,
+    "status_mismatches": [],
+    "failure_category_mismatches": [],
+    "failure_category_parity_observed_in_saved_records": true,
+    "property_mismatches": [],
+    "compared_field_counts": {
+      "temperature": 4000,
+      "pressure": 4000,
+      "density": 4000,
+      "enthalpy": 4000,
+      "int_energy": 4000,
+      "entropy": 4000,
+      "cp": 4000,
+      "cv": 4000
+    },
+    "max_relative_error": {
+      "temperature": 4.3225133127825085e-10,
+      "pressure": 4.158306611767803e-14,
+      "density": 1.9225413846877084e-09,
+      "enthalpy": 2.4167941147137116e-11,
+      "int_energy": 1.7202961770432054e-11,
+      "entropy": 2.0180328840756923e-10,
+      "cp": 3.9897053442913636e-09,
+      "cv": 3.8376491039840163e-11
+    },
+    "raw_sha256": {
+      "corpus": "f3f536bc375331bc75bbb590fb334e094365f8b83606a84b816811ea78d1410f",
+      "native": "e9d356d9aa7cad0ab180cc35ffea1cf1419aecd699465c87502ed36e4c10b5cd",
+      "python": "a61bc233cf9a0b0e028fdc251909231bffb1c30b9335aebe91a9441484a39533"
+    }
+  },
+  "wave1_saved_record_evidence": {
+    "successful_observable_parity_in_saved_records": true,
+    "failure_category_parity_in_saved_records": true,
+    "native_rerun_current_snapshot": false,
+    "failure_category_counts_native": {
+      "INVALID_PRESSURE_OR_DENSITY": 50,
+      "INVALID_TEMPERATURE": 25,
+      "NO_CONVERGENCE": 25
+    },
+    "failure_category_counts_python": {
+      "INVALID_PRESSURE_OR_DENSITY": 50,
+      "INVALID_TEMPERATURE": 25,
+      "NO_CONVERGENCE": 25
+    }
+  },
+  "wave1_post_failure_state": {
+    "classification_counts": {
+      "POST_FAILURE_STATE_MATCH": 9
+    },
+    "wave1_post_failure_state_parity": true,
+    "cases": [
+      {
+        "case_id": "W1_STATE_HP_EXTREME_TARGET",
+        "solver": "HP",
+        "native_status": "FAILURE",
+        "python_status": "FAILURE",
+        "after_state_differences": [],
+        "classification": "POST_FAILURE_STATE_MATCH",
+        "native_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "native_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        }
+      },
+      {
+        "case_id": "W1_STATE_HP_ZERO_PRESSURE",
+        "solver": "HP",
+        "native_status": "FAILURE",
+        "python_status": "FAILURE",
+        "after_state_differences": [],
+        "classification": "POST_FAILURE_STATE_MATCH",
+        "native_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "native_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        }
+      },
+      {
+        "case_id": "W1_STATE_INVALID_TEMPERATURE_TPX",
+        "solver": "TPX_INVALID",
+        "native_status": "FAILURE",
+        "python_status": "FAILURE",
+        "after_state_differences": [],
+        "classification": "POST_FAILURE_STATE_MATCH",
+        "native_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "native_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        }
+      },
+      {
+        "case_id": "W1_STATE_SP_EXTREME_TARGET",
+        "solver": "SP",
+        "native_status": "FAILURE",
+        "python_status": "FAILURE",
+        "after_state_differences": [],
+        "classification": "POST_FAILURE_STATE_MATCH",
+        "native_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "native_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        }
+      },
+      {
+        "case_id": "W1_STATE_SP_NEGATIVE_PRESSURE",
+        "solver": "SP",
+        "native_status": "FAILURE",
+        "python_status": "FAILURE",
+        "after_state_differences": [],
+        "classification": "POST_FAILURE_STATE_MATCH",
+        "native_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "native_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        }
+      },
+      {
+        "case_id": "W1_STATE_SV_EXTREME_TARGET",
+        "solver": "SV",
+        "native_status": "FAILURE",
+        "python_status": "FAILURE",
+        "after_state_differences": [],
+        "classification": "POST_FAILURE_STATE_MATCH",
+        "native_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "native_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        }
+      },
+      {
+        "case_id": "W1_STATE_SV_NEGATIVE_VOLUME",
+        "solver": "SV",
+        "native_status": "FAILURE",
+        "python_status": "FAILURE",
+        "after_state_differences": [],
+        "classification": "POST_FAILURE_STATE_MATCH",
+        "native_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "native_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        }
+      },
+      {
+        "case_id": "W1_STATE_UV_EXTREME_TARGET",
+        "solver": "UV",
+        "native_status": "FAILURE",
+        "python_status": "FAILURE",
+        "after_state_differences": [],
+        "classification": "POST_FAILURE_STATE_MATCH",
+        "native_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "native_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        }
+      },
+      {
+        "case_id": "W1_STATE_UV_ZERO_VOLUME",
+        "solver": "UV",
+        "native_status": "FAILURE",
+        "python_status": "FAILURE",
+        "after_state_differences": [],
+        "classification": "POST_FAILURE_STATE_MATCH",
+        "native_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "native_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423648,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_before": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        },
+        "python_after": {
+          "T": 800.0,
+          "P": 101325.0,
+          "density": 0.24389949319423646,
+          "enthalpy_mass": 941236.9999717425,
+          "int_energy_mass": 525799.4823574403,
+          "entropy_mass": 12656.101405060423
+        }
+      }
+    ],
+    "waves_1_3_snapshot_id": "fc63583ec6249d35444d7e68c5971a96b67aa7051af9d75904ffafd151bdc2ca",
+    "repository_snapshot_kind": "WORKING_TREE_SNAPSHOT_WITH_DIFF_HASH",
+    "evidence_binding_scope": "SAVED_RAW_RECORDS_NOT_REPROVEN",
+    "evidence_binding_note": "Report generated for this repository snapshot. Raw-run freshness is separately established only when the execution-provenance file verifies its raw hashes and pinned identity."
+  },
+  "wave1_source_mapping": {
+    "verified": true,
+    "verification_method": "normalized source-pattern checks for mapped algorithm branches; empirical parity is separately gate-checked",
+    "checks": {
+      "native_and_python_hp_uv_newton_step": true,
+      "native_and_python_sp_sv_newton_step": true,
+      "distinct_hp_uv_and_sp_sv_bracket_rules": true,
+      "negative_heat_capacity_retry": true,
+      "hp_uv_only_one_third_temperature_floor": true,
+      "source_temperature_bounds_and_convergence_tests": true,
+      "fixed_pressure_or_specific_volume_constraints": true,
+      "native_and_python_default_iteration_limit": true,
+      "wrapper_failure_state_restoration": true,
+      "python_domain_is_explicitly_ideal_gas": true
+    },
+    "native_source_sha256": "fb30f7569ff966648f2ce9e0f1e989145f60f1bed33225ebc7df9eae0fcaa274",
+    "python_state_sha256": "ee59e054264dcdbb00f974db9eb533786ee7fd3431138d340c83ad8510f8523f",
+    "python_phase_sha256": "c1c8e9548837533451c3947623112ac4dbbe4dcf941e6e387149fd64075e6456",
+    "native_source_path": "cantera-original\\src\\thermo\\ThermoPhase.cpp",
+    "python_state_path": "cantera_python\\state.py",
+    "python_phase_path": "cantera_python\\ideal_gas.py"
+  },
+  "wave2_raw": {
+    "corpus_records": 2000,
+    "native_records": 2000,
+    "python_records": 2000,
+    "case_id_sets_match": true,
+    "successes": 1962,
+    "failures": 38,
+    "status_mismatches": [],
+    "failure_category_mismatches": [],
+    "failure_category_parity_observed_in_saved_records": true,
+    "property_mismatches": [],
+    "compared_field_counts": {
+      "density": 1962,
+      "enthalpy": 1962,
+      "int_energy": 1962,
+      "entropy": 1962,
+      "cp": 1962,
+      "cv": 1962,
+      "molar_volume": 1962
+    },
+    "max_relative_error": {
+      "density": 4.6797664725718987e-14,
+      "enthalpy": 8.213870134232311e-16,
+      "int_energy": 6.222396032087689e-16,
+      "entropy": 4.2859052243434606e-15,
+      "cp": 4.2576789828218463e-13,
+      "cv": 1.3339927852670135e-14,
+      "molar_volume": 4.6829689031363046e-14
+    },
+    "raw_sha256": {
+      "corpus": "3af0b5f0a15abae357d9537f33d9bad0c68f1c0c4baa42a832a0e09e480fd492",
+      "native": "f3f58f504d1a1acf4d29fc677c9dc35f1df76e87caa8866790a3df65a7f567c6",
+      "python": "c3032d2d41a846156392c28f473498d1cbeb5a31c3c6c5035b078539b53760b6"
+    }
+  },
+  "wave2_internal_raw": {
+    "case_ids_match": true,
+    "native_return_code_counts": {
+      "-1": 420,
+      "1": 1317,
+      "3": 225
+    },
+    "python_return_code_counts": {
+      "-1": 420,
+      "1": 1317,
+      "3": 225
+    },
+    "native_single_root_return_code_counts": {
+      "-1": 420,
+      "1": 1317
+    },
+    "python_single_root_return_code_counts": {
+      "-1": 420,
+      "1": 1317
+    },
+    "native_three_root_selected_index_counts": {
+      "0": 1,
+      "2": 224
+    },
+    "native_source_defined_physical_branch_counts": {
+      "single_root_liquid_or_dense_supercritical": 420,
+      "single_root_gas_default": 1317,
+      "three_root_selected_vapor_highest_volume": 224,
+      "three_root_selected_liquid_lowest_volume": 1
+    },
+    "python_source_defined_physical_branch_counts": {
+      "single_root_liquid_or_dense_supercritical": 420,
+      "single_root_gas_default": 1317,
+      "three_root_selected_vapor_highest_volume": 224,
+      "three_root_selected_liquid_lowest_volume": 1
+    },
+    "return_code_count_dictionaries_match": true,
+    "return_code_mismatches": 0,
+    "root_count_mismatches": 0,
+    "root_value_mismatch_cases": 0,
+    "selected_root_mismatches": 0,
+    "root_order_mismatches": 0,
+    "selected_volume_density_mismatches": 0,
+    "root_tolerance": {
+      "rtol": 1e-06,
+      "atol": 1e-07
+    },
+    "max_root_relative_error": 1.358782298293246e-12,
+    "max_selected_volume_relative_error": 4.670709822238042e-14,
+    "max_selected_density_relative_error": 4.6797664725718987e-14,
+    "records": 2000,
+    "raw_sha256": {
+      "raw_native_wave2_internal.jsonl": "6da73a971df227877d549e6aa345dec99b7f915f4e802d13ef54626a4fe0a76a",
+      "raw_python_wave2_internal.jsonl": "29d90f52df6e78263aecd9d49dcfa9dccc1aa3f1291955cbfba414c95867bdf8"
+    }
+  },
+  "wave3_raw": {
+    "corpus_records": 9608,
+    "native_records": 9608,
+    "python_records": 9608,
+    "case_id_sets_match": true,
+    "successes": 9494,
+    "failures": 114,
+    "status_mismatches": [],
+    "failure_category_mismatches": [],
+    "failure_category_parity_observed_in_saved_records": true,
+    "property_mismatches": [],
+    "compared_field_counts": {
+      "temperature": 9494,
+      "pressure": 9494,
+      "density": 9294,
+      "enthalpy": 9294,
+      "int_energy": 8000,
+      "entropy": 9294,
+      "cp": 8000,
+      "cv": 8000,
+      "gibbs": 8000
+    },
+    "max_relative_error": {
+      "temperature": 1.225967731442745e-07,
+      "pressure": 9.444066206677307e-07,
+      "density": 8.921400701036045e-07,
+      "enthalpy": 5.56838383869919e-07,
+      "int_energy": 5.245142534434875e-09,
+      "entropy": 1.1126446545759694e-07,
+      "cp": 4.318749647767034e-08,
+      "cv": 6.0708323956739105e-09,
+      "gibbs": 7.55418925850789e-10
+    },
+    "raw_sha256": {
+      "corpus": "e698bd547b2bbdac26b901fc45880da46cc45b05e25295aaf84cbb2e7cce48f4",
+      "native": "ace18e38c8cfee27b96997d9e5e6e2f02869b13a9045ffdc03d8e0318cc02c55",
+      "python": "f4b14c4615694d88598db016d934d535b0522fd569274fbaf6c60f88683f80f8"
+    }
+  },
+  "wave3_fluid_coverage": {
+    "observed_names": {
+      "corpus": [
+        "CarbonDioxide",
+        "HFC134a",
+        "Heptane",
+        "Hydrogen",
+        "Methane",
+        "Nitrogen",
+        "Oxygen",
+        "Water"
+      ],
+      "native": [
+        "carbon_dioxide",
+        "heptane",
+        "hfc134a",
+        "hydrogen",
+        "methane",
+        "nitrogen",
+        "oxygen",
+        "water"
+      ],
+      "python": [
+        "carbon_dioxide",
+        "heptane",
+        "hfc134a",
+        "hydrogen",
+        "methane",
+        "nitrogen",
+        "oxygen",
+        "water"
+      ]
+    },
+    "normalized_names": {
+      "corpus": [
+        "carbondioxide",
+        "heptane",
+        "hfc134a",
+        "hydrogen",
+        "methane",
+        "nitrogen",
+        "oxygen",
+        "water"
+      ],
+      "native": [
+        "carbondioxide",
+        "heptane",
+        "hfc134a",
+        "hydrogen",
+        "methane",
+        "nitrogen",
+        "oxygen",
+        "water"
+      ],
+      "python": [
+        "carbondioxide",
+        "heptane",
+        "hfc134a",
+        "hydrogen",
+        "methane",
+        "nitrogen",
+        "oxygen",
+        "water"
+      ]
+    },
+    "sets_match": true
+  },
+  "wave3_different_implementation_disposition_count_computed": 21,
+  "wave3_different_implementation_disposition_source": "audit/wave3_implemented_differently_audit.json",
+  "wave3_different_implementation_dispositions": {
+    "declared_count_from_breakdown": 21,
+    "inventory_count_from_source_rows": 21,
+    "roster_rows_in_disposition_document": 21,
+    "detailed_records_count": 21,
+    "all_declared_records_present": true,
+    "all_have_accepted_classification": true,
+    "set_xy_disposition_matches_current_source": true,
+    "set_xy_source_mapping_verified": true,
+    "unresolved_method_names": []
+  },
+  "wave3_unresolved_different_implementation_records": [],
+  "wave3_singular": {
+    "native_records": 88,
+    "python_records": 88,
+    "common_observables_count": {
+      "T": 85,
+      "P": 85,
+      "v": 85,
+      "h": 85,
+      "s": 85,
+      "rho": 85
+    },
+    "max_relative_error": {
+      "T": 0,
+      "P": 9.095662946963122e-09,
+      "v": 8.006736202009065e-06,
+      "h": 2.568007835344687e-06,
+      "s": 1.0112148015061335e-06,
+      "rho": 8.006736201939306e-06
+    },
+    "native_unavailable_observables": {
+      "u": 85,
+      "quality": 85
+    },
+    "fallback_activations_existing_88": 0,
+    "targeted_fallback_cases": 4180,
+    "targeted_fallback_activations": 0,
+    "fallback_instrumentation_records_complete": true,
+    "saved_all_observable_comparison_complete": true,
+    "saved_error_distributions": {
+      "T": {
+        "count": 85,
+        "p50_absolute": 0.0,
+        "p95_absolute": 0.0,
+        "p99_absolute": 0.0,
+        "max_absolute": 0.0,
+        "p50_relative": 0.0,
+        "p95_relative": 0.0,
+        "p99_relative": 0.0,
+        "max_relative": 0.0
+      },
+      "P": {
+        "count": 85,
+        "p50_absolute": 5.587935447692871e-08,
+        "p95_absolute": 0.020261675119400024,
+        "p99_absolute": 0.027418585494160652,
+        "max_absolute": 0.031195922754704952,
+        "p50_relative": 3.035243198195454e-14,
+        "p95_relative": 5.719070589067496e-09,
+        "p99_relative": 8.074263943428104e-09,
+        "max_relative": 9.095662946963122e-09
+      },
+      "v": {
+        "count": 85,
+        "p50_absolute": 2.0816681711721685e-15,
+        "p95_absolute": 2.1050711798697996e-09,
+        "p99_absolute": 3.5786642603279073e-09,
+        "max_absolute": 1.6129268374902306e-08,
+        "p50_relative": 1.1542134010621538e-13,
+        "p95_relative": 3.5594238345096686e-07,
+        "p99_relative": 1.6025382886136378e-06,
+        "max_relative": 8.006736202009065e-06
+      },
+      "rho": {
+        "count": 85,
+        "p50_absolute": 2.091837814077735e-11,
+        "p95_absolute": 7.731513017006364e-05,
+        "p99_absolute": 0.0007176233631298601,
+        "max_absolute": 0.003974658764207106,
+        "p50_relative": 1.1552044208636167e-13,
+        "p95_relative": 3.559423835112819e-07,
+        "p99_relative": 1.6025382886166483e-06,
+        "max_relative": 8.006736201939306e-06
+      },
+      "h": {
+        "count": 85,
+        "p50_absolute": 6.100162863731384e-08,
+        "p95_absolute": 0.03240947052836418,
+        "p99_absolute": 0.11383439987548627,
+        "max_absolute": 0.4915573795733508,
+        "p50_relative": 2.3766653609239353e-14,
+        "p95_relative": 7.16296693712978e-08,
+        "p99_relative": 4.7458236531870394e-07,
+        "max_relative": 2.568007835344687e-06
+      },
+      "u": {
+        "count": 0,
+        "p50_absolute": null,
+        "p95_absolute": null,
+        "p99_absolute": null,
+        "max_absolute": null,
+        "p50_relative": null,
+        "p95_relative": null,
+        "p99_relative": null,
+        "max_relative": null
+      },
+      "s": {
+        "count": 85,
+        "p50_absolute": 1.9330400391481817e-08,
+        "p95_absolute": 0.0002826033996825572,
+        "p99_absolute": 0.0007365011515503284,
+        "max_absolute": 0.0013136383231540094,
+        "p50_relative": 4.6438052182396765e-12,
+        "p95_relative": 4.259497616414008e-08,
+        "p99_relative": 1.7545512574398232e-07,
+        "max_relative": 1.0112148015061335e-06
+      },
+      "quality": {
+        "count": 0,
+        "p50_absolute": null,
+        "p95_absolute": null,
+        "p99_absolute": null,
+        "max_absolute": null,
+        "p50_relative": null,
+        "p95_relative": null,
+        "p99_relative": null,
+        "max_relative": null
+      }
+    },
+    "saved_property_residuals": {
+      "T": {
+        "native": {
+          "count": 85,
+          "max_abs": 0.0
+        },
+        "python": {
+          "count": 85,
+          "max_abs": 0.0
+        }
+      },
+      "P": {
+        "native": {
+          "count": 54,
+          "max_abs": 0.12982601672410965
+        },
+        "python": {
+          "count": 54,
+          "max_abs": 0.12982642278075218
+        }
+      },
+      "quality": {
+        "native": {
+          "count": 0,
+          "max_abs": null
+        },
+        "python": {
+          "count": 31,
+          "max_abs": 1.1102230246251565e-16
+        }
+      }
+    },
+    "native_missing_observable_counts": {
+      "internal_energy": 85,
+      "quality": 85
+    },
+    "targeted_min_abs_determinant": 2.9973050341116143
+  },
+  "wave3_jacobian_source_mapping": {
+    "verified": true,
+    "checks": {
+      "native_direct_determinant": true,
+      "native_direct_temperature_division": true,
+      "native_direct_volume_division": true,
+      "python_source_translated_method_present": true,
+      "python_uses_ieee_division_for_both_updates": true,
+      "python_gradient_regularization_absent": true,
+      "fallback_probe_says_branch_absent": true,
+      "ieee_edge_tests_present_in_fresh_log": true
+    },
+    "disposition": "SOURCE_EQUIVALENT_DIRECT_DIVISION",
+    "native_source_sha256": "7a6dea14d6901ee2e00bef7ab4bbd94caec5f781d8037b5f9f709685725afbaf",
+    "python_source_sha256": "64264b5d7c8680d6bdbeaacde5f78714e5f0dd4c9d3ed0df89c6662e7e332b45",
+    "native_source_path": "cantera-original\\src\\tpx\\Sub.cpp",
+    "python_source_path": "cantera_python\\tpx.py"
+  },
+  "wave3_cp_cv": {
+    "verified": true,
+    "checks": {
+      "native_nominal_step": true,
+      "python_nominal_step": true,
+      "native_cv_entropy_difference": true,
+      "python_cv_entropy_difference": true,
+      "native_cp_entropy_difference": true,
+      "python_cp_entropy_difference": true,
+      "audit_records_source_line_mapping": true,
+      "audit_states_held_and_restored": true
+    },
+    "native_source_sha256": "7a6dea14d6901ee2e00bef7ab4bbd94caec5f781d8037b5f9f709685725afbaf",
+    "python_source_sha256": "64264b5d7c8680d6bdbeaacde5f78714e5f0dd4c9d3ed0df89c6662e7e332b45",
+    "audit_sha256": "386c8611dfb8ea2d3f5d0505cde1f56c8e3e2d409be0a0909c8ee7c7aca73b89",
+    "native_source_path": "cantera-original\\src\\tpx\\Sub.cpp",
+    "python_source_path": "cantera_python\\tpx.py",
+    "perturbation_status": "RUN_COMPLETE_MEASUREMENT_ONLY",
+    "cause_conclusion": "CAUSE_NOT_FULLY_ESTABLISHED"
+  },
+  "regression": {
+    "command": [
+      "C:\\Users\\Dell\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "pytest",
+      "tests/"
+    ],
+    "cwd": "C:\\Users\\Dell\\Documents\\Codex\\2026-09-11\\https-github-com-cantera-cantera-https\\outputs\\cantera-python",
+    "started_at_utc": "2026-09-30T06:20:10.557489+00:00",
+    "exit_code": 0,
+    "log_path": "audit\\waves_1_3_full_pytest.log",
+    "pytest_available": true,
+    "collected": 510,
+    "passed": 507,
+    "skipped": 3,
+    "failed": 0,
+    "errors": 0,
+    "summary_parsed": true,
+    "log_sha256": "123f9e1c0097b52e7045698d386e93fe8b9b3d81984148e56005e752f24eedfa",
+    "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+    "branch": "certified/waves-1-3-baseline",
+    "test_source_sha256": "585a4c47fa60b6aa09b5cba0807c3bfcb240bcb70abd26443cd46710ad547c19",
+    "waves_1_3_snapshot_id": "fc63583ec6249d35444d7e68c5971a96b67aa7051af9d75904ffafd151bdc2ca",
+    "repository_snapshot_kind": "WORKING_TREE_SNAPSHOT_WITH_DIFF_HASH",
+    "evidence_binding_scope": "SAVED_RAW_RECORDS_NOT_REPROVEN",
+    "evidence_binding_note": "Report generated for this repository snapshot. Raw-run freshness is separately established only when the execution-provenance file verifies its raw hashes and pinned identity.",
+    "log_exists": true,
+    "summary_parsed_from_log": [
+      507,
+      3,
+      0,
+      0
+    ],
+    "fresh_run_record_present": false,
+    "full_suite_passed": false
+  },
+  "native_identity_validation": {
+    "identity_commit_matches_pin": true,
+    "pinned_source_checkout_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "pinned_source_checkout_matches": true,
+    "library_recorded_hash_valid": true,
+    "extension_recorded_hash_valid": true,
+    "native_library_bytes_rehashed_here": true,
+    "native_binary_files_exist_and_rehashed_here": true,
+    "native_probe_source_sha256": "a5f27a96ac8724f808e13a855732fe69fa37553e2efe9fc1ac55e3341a61c0f4",
+    "native_probe_binary_sha256": "6ae23ff6223c906d112f11956796fe349d74ef19760faa32b6e3cf6d64fb53f5",
+    "identity_artifacts_present": true
+  },
+  "flags": {
+    "PINNED_NATIVE_ORACLE_RESTORED": true,
+    "FULL_PYTHON_TEST_ENV_RESTORED": false,
+    "WAVE_1_FRESH_NATIVE_PARITY": false,
+    "WAVE_1_SUCCESS_PATH_SOURCE_PARITY": true,
+    "WAVE_1_FAILURE_CATEGORY_PARITY": false,
+    "WAVE_1_POST_FAILURE_STATE_PARITY": "TRUE",
+    "WAVE_1_CURRENT_SNAPSHOT_CERTIFIED": false,
+    "WAVE_2_FRESH_NATIVE_PARITY": false,
+    "WAVE_2_RETURN_CODE_PARITY": true,
+    "WAVE_2_INTERNAL_ROOT_NUMERICAL_PARITY": true,
+    "WAVE_2_CURRENT_SNAPSHOT_CERTIFIED": false,
+    "WAVE_3_FRESH_NATIVE_PARITY": false,
+    "WAVE_3_FALLBACK_ACTIVATION_FOUND": false,
+    "WAVE_3_FALLBACK_ACTIVATION_VALIDATED": false,
+    "WAVE_3_FALLBACK_BEHAVIOR_VALIDATED": "NOT_APPLICABLE_DIRECT_SOURCE_ALGORITHM_VERIFIED",
+    "WAVE_3_FAILURE_CATEGORY_PARITY": false,
+    "WAVE_3_DIRECT_JACOBIAN_SOURCE_PARITY": true,
+    "WAVE_3_CP_CV_FORMULA_VERIFIED": true,
+    "WAVE_3_CP_CV_DIFFERENCE_CAUSE_ESTABLISHED": false,
+    "WAVE_3_DIFFERENT_IMPLEMENTATIONS_JUSTIFIED": true,
+    "WAVE_3_CURRENT_SNAPSHOT_CERTIFIED": false,
+    "FULL_REGRESSION_ZERO_FAILURES": false,
+    "WAVES_1_3_VALIDATION_GATE_DERIVED_FROM_FRESH_RAW_EVIDENCE": false,
+    "WAVES_1_3_VALIDATION_GATE_DERIVED_FROM_RAW_EVIDENCE": false,
+    "WAVES_1_3_CLEAN_COMMIT_CREATED": false,
+    "WAVES_1_3_COMMITTED_SNAPSHOT_BOUND": false,
+    "WAVES_1_3_COMMITTED_SNAPSHOT_CERTIFIED": false,
+    "THERMODYNAMIC_SOLVER_FOUNDATION_READY_FOR_WAVE_4_FINAL_FREEZE": false,
+    "WAVE_1_SUCCESS_PATH_NATIVE_PARITY": false,
+    "WAVE_2_BRANCH_REPORT_CORRECTED": true
+  },
+  "WAVES_1_3_COMMITTED_SNAPSHOT_CERTIFIED": false,
+  "limitations": [
+    "Repository identity and live Git status are included in this report; a dirty worktree is not represented as a committed snapshot.",
+    "The Python-only gradient fallback is absent and the direct determinant division is source-mapped; finite targeted samples do not establish coverage of every singular thermodynamic state.",
+    "The cp/cv step sweep measures manual estimators and does not establish the cause of production cp/cv differences."
+  ]
+}

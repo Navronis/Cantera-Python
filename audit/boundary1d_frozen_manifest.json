@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/boundary1d_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T17:13:27.533412+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "solver_family": "boundary1d",
+  "subsystem": "1D boundary conditions",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0, libcantera_shared.so.4.0.0"
+  },
+  "file_hashes": {
+    "oned_py": "c68a9d0b38e38fa163471d232586eab6dc15234d1a58ed3511cf39f2dc231572",
+    "test_boundary1d_py": "16656e823b71114f69a30bc58041dacd80d8c32a487df00614a8c483ddb5acb7",
+    "corpus_boundary1d_jsonl": "e97ecdec57007bd1904ed35707d75871a6c7ed9168614e07a4cb162d8d315386",
+    "run_native_boundary1d_oracle_cpp": "e092c5009d007fd48e368dd7ed31e50247840b77adc2d8e2033b9ab66f2da87e",
+    "run_python_boundary1d_port_py": "4100f9592dc75cc7e3e4870ad30d10ebf48cc3de0eeb2f4da73cfd1e2fc2557a",
+    "run_boundary1d_campaign_py": "98aa1e962428277c5e6327461e0173dcd6ff24be97f2f908af7c8aa0ecd6b2ed",
+    "benchmark_native_boundary1d_cpp": "2e28a4a9f5565ba6810341d56058941b99df4e2b12451860f6358576361bf9af",
+    "benchmark_boundary1d_performance_py": "747cda4fe42917d58f2cf8f0d40898e9fbb3f96987d592fa1c19b85c394cf2df",
+    "native_boundary1d_oracle_results_json": "cbd355765ca8e3a7a0abfc82952c162339fc8a1a8bddf9f05be01bf5d8d30890",
+    "python_boundary1d_port_results_json": "79abbc15b35a149e3d63f1973e649b506f1be0089c695072ccad1bc7c03e1785",
+    "boundary1d_differential_summary_json": "b4f43bf4e82b8ba448bd59a043b02041b6dbc554be66c372bd4ff05dc41058f8",
+    "boundary1d_performance_benchmark_json": "6f9499baa5c2430481437910a6617f59350c01dd2b74781a4dd3c5c713f9bb68",
+    "boundary1d_starting_snapshot_json": "60bed9073f97fe587b13fbd9e964571789f7c1d502ceac9bbc9c208793c7ed4d",
+    "boundary1d_closure_symbol_set_json": "03dd540bbd711254c064873871b814c333efc1a33241f02fae4f6489b9515f1a",
+    "boundary1d_runtime_call_graph_json": "8a7d3867a8d211164d9c3e977b8bf5e5e3242e7cd30af9dca1228fb4b9a147c6",
+    "pinned_boundary1d_h": "e6335b80217af432e17a342ce8b43a6e9df856b2a758607330d25a4f7d0dbad9",
+    "pinned_boundary1d_cpp": "0e79543b1519809fe2e0bf24b3c107a19bedd2c632539947dc1f98af5a917d93"
+  },
+  "campaign_summary": {
+    "total_cases": 20,
+    "passed_cases": 20,
+    "failed_cases": 0,
+    "pass_rate_pct": 100.0,
+    "max_abs_diff": 2.288818359375e-05,
+    "parity_achieved": true
+  },
+  "performance_benchmark": {
+    "mean_slowdown_factor": 739.1538838584961,
+    "comparisons": [
+      {
+        "domain": "Inlet1D",
+        "native_us_per_eval": 0.0136,
+        "python_us_per_eval": 8.094448000047123,
+        "slowdown_factor": 595.180000003465,
+        "native_reps": 100000,
+        "python_reps": 50000
+      },
+      {
+        "domain": "Outlet1D",
+        "native_us_per_eval": 0.0176,
+        "python_us_per_eval": 7.721460000029765,
+        "slowdown_factor": 438.71931818350936,
+        "native_reps": 100000,
+        "python_reps": 50000
+      },
+      {
+        "domain": "OutletRes1D",
+        "native_us_per_eval": 0.0141,
+        "python_us_per_eval": 10.18804999999702,
+        "slowdown_factor": 722.5567375884411,
+        "native_reps": 100000,
+        "python_reps": 50000
+      },
+      {
+        "domain": "Symm1D",
+        "native_us_per_eval": 0.0058,
+        "python_us_per_eval": 3.745690000068862,
+        "slowdown_factor": 645.808620701528,
+        "native_reps": 100000,
+        "python_reps": 50000
+      },
+      {
+        "domain": "Surf1D",
+        "native_us_per_eval": 0.0055,
+        "python_us_per_eval": 2.267775999935111,
+        "slowdown_factor": 412.3229090791111,
+        "native_reps": 100000,
+        "python_reps": 50000
+      },
+      {
+        "domain": "ReactingSurf1D",
+        "native_us_per_eval": 3.4532,
+        "python_us_per_eval": 5595.343299998785,
+        "slowdown_factor": 1620.3357175949222,
+        "native_reps": 100000,
+        "python_reps": 5000
+      }
+    ]
+  },
+  "independent_status_flags": {
+    "BOUNDARY1D_SOURCE_LOGIC_COMPLETE": true,
+    "BOUNDARY1D_RUNTIME_INTEGRATED": true,
+    "BOUNDARY1D_NUMERICAL_PARITY": true,
+    "BOUNDARY1D_ADVERSARIAL_VALIDATED": true,
+    "BOUNDARY1D_FAILURE_SEMANTICS_VALIDATED": true,
+    "BOUNDARY1D_NATIVE_PERFORMANCE_BENCHMARKED": true,
+    "BOUNDARY1D_NATIVE_SPEED_PARITY": false,
+    "BOUNDARY1D_FULL_REGRESSION_CLEAN": true,
+    "BOUNDARY1D_FULLY_FROZEN": true
+  }
+}

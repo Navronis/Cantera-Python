@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/onedim_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T14:29:15.344845+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "solver_family": "onedim",
+  "subsystem": "1D residual",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0, libcantera_shared.so.4.0.0"
+  },
+  "file_hashes": {
+    "oned_py": "1a8e5dffafb64c6b181420343f72bff15b4875f54081cf189aedac91ecf55f1c",
+    "corpus_onedim_jsonl": "99d768a80dfdfc0a97b40f9466ed0babbb7d256d96950279ed493e618aadac34",
+    "run_native_onedim_oracle_cpp": "58e9c168beefc1b19b432cfd48321a1df254d748b9139ddc774d3d6dd1007fb4",
+    "run_python_onedim_port_py": "75fcdf3725bf47a69105af6af3a307cf3b0f333ed954fa846ae27f6c888ba88f",
+    "run_onedim_campaign_py": "7378dfa166cb6a3ef27055b5d50aae0447b032baabe4d0f86aaaf3dd20163fb2",
+    "benchmark_native_onedim_cpp": "db5a6270e537cafd6810957ed577309389e90e6becbe2923ba5be440c22cba8c",
+    "benchmark_onedim_performance_py": "a28bd8b5aa4581f52b1ff1f22fdb2902c54b3a94dcef5d9b6cb86fe5d6df0285",
+    "native_onedim_oracle_results_json": "005156f66e6538858f60bee8ef786c7a98403a76dc78046558be7983d78ec78f",
+    "python_onedim_port_results_json": "8e8163cf343e1287f6e64e433f19b1dbc91359eaaceda3b0c4276ee8b3db068c",
+    "onedim_differential_summary_json": "40fde1a6ab79d01e4eb21d2e257a321342f54b8be3fe7ce1525d9d2250977aeb",
+    "onedim_performance_benchmark_json": "5b99c7b5d3f1eb1382f839504b25df29900a08bf572d1e0e5072eacd13c8e81f",
+    "onedim_starting_snapshot_json": "13f11986faaa2859368b45b7daf1940b4c4d8a18b4e32b4525eecea0bf89c7c2",
+    "onedim_closure_symbol_set_json": "23632f7dcbadc4ecbcc79bcba96c31e7c45fec7e01b99d32e67315d5a09c8ff2",
+    "onedim_runtime_call_graph_json": "f58ce0af3c0ea89f8528329767ec56e141da3c8cb9ccb265a26c421663bef668",
+    "pinned_onedim_h": "e0a5ac1771d7dee87d7ad26618369370c51fea23c53b03718bee1b43c1dab7ca",
+    "pinned_onedim_cpp": "d862358879060ba346559677a2bd650deb40796aaf53715dd6f2fbaa8c6db12d"
+  },
+  "campaign_summary": {
+    "total_cases": 20,
+    "passed_cases": 20,
+    "pass_rate_percent": 100.0,
+    "structure_mismatches": 0,
+    "norm_mismatches": 0,
+    "residual_mismatches": 0,
+    "jacobian_mismatches": 0,
+    "exception_mismatches": 0,
+    "max_rel_norm_diff": 2.3323815749783864e-15,
+    "max_abs_residual_diff": 1.1368683772161603e-13,
+    "max_abs_jacobian_diff": 5.08606955440527e-08,
+    "parity_achieved": true
+  },
+  "performance_benchmark": {
+    "overall_slowdown_factor": 476.09,
+    "native_equivalent_speed_parity": false,
+    "comparisons": [
+      {
+        "grid_size": 25,
+        "n_components": 4,
+        "total_size": 100,
+        "native_median_ms": 0.000468,
+        "python_median_ms": 0.18419999832985923,
+        "slowdown_factor": 393.59
+      },
+      {
+        "grid_size": 100,
+        "n_components": 4,
+        "total_size": 400,
+        "native_median_ms": 0.001672,
+        "python_median_ms": 0.7585999992443249,
+        "slowdown_factor": 453.71
+      },
+      {
+        "grid_size": 500,
+        "n_components": 4,
+        "total_size": 2000,
+        "native_median_ms": 0.008222,
+        "python_median_ms": 4.098400000657421,
+        "slowdown_factor": 498.47
+      },
+      {
+        "grid_size": 2000,
+        "n_components": 4,
+        "total_size": 8000,
+        "native_median_ms": 0.032837,
+        "python_median_ms": 18.500300000596326,
+        "slowdown_factor": 563.4
+      }
+    ]
+  },
+  "independent_status_flags": {
+    "ONEDIM_SOURCE_LOGIC_COMPLETE": true,
+    "ONEDIM_RUNTIME_INTEGRATED": true,
+    "ONEDIM_NUMERICAL_PARITY": true,
+    "ONEDIM_ADVERSARIAL_VALIDATED": true,
+    "ONEDIM_FAILURE_SEMANTICS_VALIDATED": true,
+    "ONEDIM_NATIVE_PERFORMANCE_BENCHMARKED": true,
+    "ONEDIM_NATIVE_SPEED_PARITY": false,
+    "ONEDIM_FULL_REGRESSION_CLEAN": true,
+    "ONEDIM_FULLY_FROZEN": false
+  },
+  "status": "VALIDATED_NUMERICALLY_EQUIVALENT"
+}

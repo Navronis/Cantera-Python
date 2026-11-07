@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/reactor_network_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T10:50:24.319325+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "reactor_network_run_id": "rnet_diff_7b71db564f2f60b4",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "file_hashes": {
+    "reactor_py": "f5df9385f3abf971cd79e60696d618dd6d43810e4a3f0c863d6e3517a8d039d1",
+    "numerics_py": "4a85a40839c458b22abad14671654eb9f96f744d0cf7cb3c100aaa4ce6a1cf60",
+    "test_reactor_network_py": "1f06c6c4527ac96da30642bd9296dd24a805c619553b9cd145a8375c057c8989",
+    "test_reactor_conservation_py": "17f2dc607b46c9679415ad32b197da9719d6c0aa1f3eae2a80e4441beacfd978",
+    "test_reactor_network_native_parity_py": "bc642f0658b146e2cf40b1aedd78bf5ad43b55f9d661737054daa06f3439c237",
+    "corpus_reactor_network_jsonl": "283629c774f4d09e92e771461dbbcff26cdbff0860aee6330e631deac431b244",
+    "run_native_reactor_net_oracle_py": "712e5aacdb11c4636c1c095c103e3a54bfad33c66d4f24b3262fa7aa31db792d",
+    "run_python_reactor_net_port_py": "32a83a52abff818cac92327fc0a87914df612acf7c4ec60a18dbd3185f1a05f6",
+    "run_reactor_net_campaign_py": "5ee90e9ddd3a689e68475860f3e74e5fa652f05dcdccb0a5a0f1a3dc3360c36f",
+    "reactor_net_native_oracle_results_jsonl": "78c46a7229c308b0c30a2bbaddc2c0950b1bfeb593328656b888013d4a3a9911",
+    "reactor_net_python_port_results_jsonl": "e290d8e7e24877921bb5753a740bff69bf5fef69853e634f527ed45b6d3cdf23",
+    "reactor_network_differential_summary_json": "a57b47e66a2bb558a46c059dc038c6d292c1553f6beeb9eda5802eb5b39ed349",
+    "reactor_network_starting_snapshot_json": "c6fad339e381d2ec1f048ca498ccbc87ff7be996de92725a04f791f8f5b98503",
+    "reactor_network_closure_symbol_set_json": "f7d21687cb03298ab3a3861e510c587b26e371a0105c2340364b4f3d69bbfeb0",
+    "reactor_network_runtime_call_graph_json": "d61c3cf9e8b4a4ff8d4328ffc0dbc66825f6ad0f3b425afb65befd904186548a",
+    "reactor_network_state_layout_json": "c8d1cf683cfa59ffd17589b09565a11d541b691dd87613849eedd6473b3e65c6",
+    "pinned_ReactorNet_h": "d4565ea88facda8d79fd7e3ee13b3dbaaa36ed80b9d99111f3d44078f007616b",
+    "pinned_ReactorNet_cpp": "46f8d3ca02a4cb1ca55f84356e4ffbe3ab360e5d9854bcd8d82526fb1fdb0aa6"
+  },
+  "campaign_summary": {
+    "total_cases": 24,
+    "passed_cases": 24,
+    "pass_rate_percent": 100.0,
+    "max_temperature_relative_error": 1.218387997050836e-05,
+    "max_pressure_relative_error": 1.1527114586693048e-05,
+    "max_mass_relative_error": 3.900705374258646e-16,
+    "max_sensitivity_relative_error": 0.0007516298488278403,
+    "max_ignition_delay_difference_s": 0.0
+  },
+  "status": "VALIDATED_NUMERICALLY_EQUIVALENT"
+}

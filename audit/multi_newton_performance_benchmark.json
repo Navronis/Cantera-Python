@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "solver_family": "multi_newton",
+  "subsystem": "1D Newton",
+  "benchmark_timestamp_utc": "2026-11-05T13:25:47.350093+00:00",
+  "workload": {
+    "name": "1D reacting diffusion nonlinear solve",
+    "grid_points": 50,
+    "trials": 50,
+    "warmup": 10,
+    "iterations_per_solve": 3
+  },
+  "native_performance": {
+    "median_ms": 0.01547,
+    "p95_ms": 0.01566,
+    "min_ms": 0.015344,
+    "max_ms": 0.015923
+  },
+  "python_performance": {
+    "median_ms": 0.8951999989221804,
+    "p95_ms": 0.9620999990147538,
+    "min_ms": 0.7819999991625082,
+    "max_ms": 1.0803999975905754
+  },
+  "comparison": {
+    "speed_ratio": 57.87,
+    "native_speed_parity": false,
+    "assessment": "Python MultiNewton solve completes in 0.895 ms (Native C++: 0.015 ms, speed ratio 57.87x). Banded factor/solve operates directly via optimized SciPy DGBTRF/DGBTRS kernels."
+  }
+}

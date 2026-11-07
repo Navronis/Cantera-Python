@@ -1,0 +1,8 @@
+{"case":"T <= 0","status":"PASS","evidence":"set_T rejects nonpositive temperature"}
+{"case":"rho <= 0","status":"PASS","evidence":"set_v rejects nonpositive specific volume"}
+{"case":"quality < 0 or > 1","status":"PASS","evidence":"TX/PX checks"}
+{"case":"pressure <= 0 for Tsat","status":"PASS","evidence":"Tsat raises TPXError"}
+{"case":"pressure > critical for Tsat","status":"PASS","evidence":"Tsat raises TPXError"}
+{"case":"temperature outside Psat domain","status":"PASS","evidence":"fluid Psat bounds"}
+{"case":"unsupported property pair","status":"PASS","evidence":"Set raises TPXError"}
+{"case":"critical/underflow saturation branch","status":"SOURCE_DIFFERENT","evidence":"finite published-correlation fallback is recorded in update_sat"}

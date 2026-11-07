@@ -1,0 +1,3485 @@
+{
+  "include/cantera/kinetics/BlowersMaselRate.h:102:updateFromStruct": {
+    "canonical_index": 568,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:102:updateFromStruct",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      102,
+      102
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselRate",
+    "native_method": "updateFromStruct",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:102",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselRate.updateFromStruct",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselRate_updateFromStruct",
+    "required_performance_test": "benchmark_family2_BlowersMaselRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "void updateFromStruct(const BlowersMaselData& shared_data)",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:102:updateFromStruct"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:116:evalFromStruct": {
+    "canonical_index": 569,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:116:evalFromStruct",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      116,
+      116
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselRate",
+    "native_method": "evalFromStruct",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:116",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselRate.evalFromStruct",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselRate_evalFromStruct",
+    "required_performance_test": "benchmark_family2_BlowersMaselRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "double evalFromStruct(const BlowersMaselData& shared_data) const",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:116:evalFromStruct"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:128:ddTScaledFromStruct": {
+    "canonical_index": 570,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:128:ddTScaledFromStruct",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      128,
+      128
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselRate",
+    "native_method": "ddTScaledFromStruct",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:128",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselRate.ddTScaledFromStruct",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselRate_ddTScaledFromStruct",
+    "required_performance_test": "benchmark_family2_BlowersMaselRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "double ddTScaledFromStruct(const BlowersMaselData& shared_data) const",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:128:ddTScaledFromStruct"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:133:effectiveActivationEnergy_R": {
+    "canonical_index": 571,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:133:effectiveActivationEnergy_R",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      133,
+      133
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselRate",
+    "native_method": "effectiveActivationEnergy_R",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:133",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselRate.effectiveActivationEnergy_R",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselRate_effectiveActivationEnergy_R",
+    "required_performance_test": "benchmark_family2_BlowersMaselRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "double effectiveActivationEnergy_R(double deltaH_R) const",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:133:effectiveActivationEnergy_R"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:148:activationEnergy": {
+    "canonical_index": 572,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:148:activationEnergy",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      148,
+      148
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselRate",
+    "native_method": "activationEnergy",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:148",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselRate.activationEnergy",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselRate_activationEnergy",
+    "required_performance_test": "benchmark_family2_BlowersMaselRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "double activationEnergy() const override",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:148:activationEnergy"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:153:bondEnergy": {
+    "canonical_index": 573,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:153:bondEnergy",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      153,
+      153
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselRate",
+    "native_method": "bondEnergy",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:153",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselRate.bondEnergy",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselRate_bondEnergy",
+    "required_performance_test": "benchmark_family2_BlowersMaselRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "double bondEnergy() const",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:153:bondEnergy"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:158:deltaH": {
+    "canonical_index": 574,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:158:deltaH",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      158,
+      158
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselRate",
+    "native_method": "deltaH",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:158",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselRate.deltaH",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselRate_deltaH",
+    "required_performance_test": "benchmark_family2_BlowersMaselRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "double deltaH() const",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:158:deltaH"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:170:setDeltaH": {
+    "canonical_index": 575,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:170:setDeltaH",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      170,
+      170
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselRate",
+    "native_method": "setDeltaH",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:170",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselRate.setDeltaH",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselRate_setDeltaH",
+    "required_performance_test": "benchmark_family2_BlowersMaselRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "void setDeltaH(double deltaH)",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:170:setDeltaH"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:23:update": {
+    "canonical_index": 561,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:23:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      23,
+      23
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:23",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselData.update",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselData_update",
+    "required_performance_test": "benchmark_family2_BlowersMaselData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "void update(double T) override",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:23:update"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:24:update": {
+    "canonical_index": 562,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:24:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      24,
+      24
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:24",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselData.update",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselData_update",
+    "required_performance_test": "benchmark_family2_BlowersMaselData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "bool update(const ThermoPhase& phase, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:24:update"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:26:resize": {
+    "canonical_index": 563,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:26:resize",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      26,
+      26
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselData",
+    "native_method": "resize",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:26",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselData.resize",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselData_resize",
+    "required_performance_test": "benchmark_family2_BlowersMaselData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "void resize(Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:26:resize"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:85:newMultiRate": {
+    "canonical_index": 564,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:85:newMultiRate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      85,
+      85
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselRate",
+    "native_method": "newMultiRate",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:85",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselRate.newMultiRate",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselRate_newMultiRate",
+    "required_performance_test": "benchmark_family2_BlowersMaselRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "unique_ptr<MultiRateBase> newMultiRate() const override",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:85:newMultiRate"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:89:type": {
+    "canonical_index": 565,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:89:type",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      89,
+      89
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselRate",
+    "native_method": "type",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:89",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselRate.type",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselRate_type",
+    "required_performance_test": "benchmark_family2_BlowersMaselRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "const string type() const override",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:89:type"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:93:setContext": {
+    "canonical_index": 566,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:93:setContext",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      93,
+      93
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselRate",
+    "native_method": "setContext",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:93",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselRate.setContext",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselRate_setContext",
+    "required_performance_test": "benchmark_family2_BlowersMaselRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "void setContext(const Reaction& rxn, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:93:setContext"
+  },
+  "include/cantera/kinetics/BlowersMaselRate.h:96:evalRate": {
+    "canonical_index": 567,
+    "canonical_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:96:evalRate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      96,
+      96
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "BlowersMaselRate",
+    "native_method": "evalRate",
+    "native_source_definition": "include/cantera/kinetics/BlowersMaselRate.h:96",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.BlowersMaselRate.evalRate",
+    "required_native_differential_test": "test_kinetics_family2_BlowersMaselRate_evalRate",
+    "required_performance_test": "benchmark_family2_BlowersMaselRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Reaction enthalpy-dependent activation energy Blowers-Masel rate calculation",
+    "signature": "double evalRate(double logT, double recipT) const",
+    "stable_symbol_id": "include/cantera/kinetics/BlowersMaselRate.h:96:evalRate"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:112:newMultiRate": {
+    "canonical_index": 630,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:112:newMultiRate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      112,
+      112
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "newMultiRate",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:112",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.newMultiRate",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_newMultiRate",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "unique_ptr<MultiRateBase> newMultiRate() const override",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:112:newMultiRate"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:116:type": {
+    "canonical_index": 631,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:116:type",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      116,
+      116
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "type",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:116",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.type",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_type",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "const string type() const override { return \"Chebyshev\"; }",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:116:type"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:123:setParameters": {
+    "canonical_index": 632,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:123:setParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      123,
+      123
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "setParameters",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:123",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.setParameters",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_setParameters",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "void setParameters(const AnyMap& node, const UnitStack& rate_units) override",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:123:setParameters"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:125:getParameters": {
+    "canonical_index": 633,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:125:getParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      125,
+      125
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:125",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.getParameters",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_getParameters",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "void getParameters(AnyMap& rateNode) const override",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:125:getParameters"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:127:validate": {
+    "canonical_index": 634,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:127:validate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      127,
+      127
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "validate",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:127",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.validate",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_validate",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "void validate(const string& equation, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:127:validate"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:133:updateFromStruct": {
+    "canonical_index": 635,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:133:updateFromStruct",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      133,
+      133
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "updateFromStruct",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:133",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.updateFromStruct",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_updateFromStruct",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "void updateFromStruct(const ChebyshevData& shared_data)",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:133:updateFromStruct"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:158:evalFromStruct": {
+    "canonical_index": 636,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:158:evalFromStruct",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      158,
+      158
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "evalFromStruct",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:158",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.evalFromStruct",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_evalFromStruct",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "double evalFromStruct(const ChebyshevData& shared_data)",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:158:evalFromStruct"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:180:setLimits": {
+    "canonical_index": 637,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:180:setLimits",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      180,
+      180
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "setLimits",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:180",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.setLimits",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_setLimits",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "void setLimits(double Tmin, double Tmax, double Pmin, double Pmax)",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:180:setLimits"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:183:Tmin": {
+    "canonical_index": 638,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:183:Tmin",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      183,
+      183
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "Tmin",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:183",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.Tmin",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_Tmin",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "double Tmin() const",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:183:Tmin"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:188:Tmax": {
+    "canonical_index": 639,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:188:Tmax",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      188,
+      188
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "Tmax",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:188",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.Tmax",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_Tmax",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "double Tmax() const",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:188:Tmax"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:193:Pmin": {
+    "canonical_index": 640,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:193:Pmin",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      193,
+      193
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "Pmin",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:193",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.Pmin",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_Pmin",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "double Pmin() const",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:193:Pmin"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:198:Pmax": {
+    "canonical_index": 641,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:198:Pmax",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      198,
+      198
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "Pmax",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:198",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.Pmax",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_Pmax",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "double Pmax() const",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:198:Pmax"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:203:nPressure": {
+    "canonical_index": 642,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:203:nPressure",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      203,
+      203
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "nPressure",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:203",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.nPressure",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_nPressure",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "size_t nPressure() const",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:203:nPressure"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:208:nTemperature": {
+    "canonical_index": 643,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:208:nTemperature",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      208,
+      208
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "nTemperature",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:208",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.nTemperature",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_nTemperature",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "size_t nTemperature() const",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:208:nTemperature"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:214:data": {
+    "canonical_index": 644,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:214:data",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      214,
+      214
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "data",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:214",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.data",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_data",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "const Array2D& data() const",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:214:data"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:219:setData": {
+    "canonical_index": 645,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:219:setData",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      219,
+      219
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevRate",
+    "native_method": "setData",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:219",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevRate.setData",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevRate_setData",
+    "required_performance_test": "benchmark_family2_ChebyshevRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "void setData(const Array2D& coeffs)",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:219:setData"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:27:update": {
+    "canonical_index": 624,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:27:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      27,
+      27
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:27",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevData.update",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevData_update",
+    "required_performance_test": "benchmark_family2_ChebyshevData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "void update(double T) override",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:27:update"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:29:update": {
+    "canonical_index": 625,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:29:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      29,
+      29
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:29",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevData.update",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevData_update",
+    "required_performance_test": "benchmark_family2_ChebyshevData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "void update(double T, double P) override",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:29:update"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:35:update": {
+    "canonical_index": 626,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:35:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      35,
+      35
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:35",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevData.update",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevData_update",
+    "required_performance_test": "benchmark_family2_ChebyshevData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "bool update(const ThermoPhase& phase, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:35:update"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:44:perturbPressure": {
+    "canonical_index": 627,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:44:perturbPressure",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      44,
+      44
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevData",
+    "native_method": "perturbPressure",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:44",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevData.perturbPressure",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevData_perturbPressure",
+    "required_performance_test": "benchmark_family2_ChebyshevData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "void perturbPressure(double deltaP)",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:44:perturbPressure"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:46:restore": {
+    "canonical_index": 628,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:46:restore",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      46,
+      46
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevData",
+    "native_method": "restore",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:46",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevData.restore",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevData_restore",
+    "required_performance_test": "benchmark_family2_ChebyshevData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "void restore() override",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:46:restore"
+  },
+  "include/cantera/kinetics/ChebyshevRate.h:48:invalidateCache": {
+    "canonical_index": 629,
+    "canonical_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:48:invalidateCache",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      48,
+      48
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "ChebyshevData",
+    "native_method": "invalidateCache",
+    "native_source_definition": "include/cantera/kinetics/ChebyshevRate.h:48",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.ChebyshevData.invalidateCache",
+    "required_native_differential_test": "test_kinetics_family2_ChebyshevData_invalidateCache",
+    "required_performance_test": "benchmark_family2_ChebyshevData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Two-dimensional Chebyshev polynomial rate evaluation in temperature and pressure",
+    "signature": "void invalidateCache() override",
+    "stable_symbol_id": "include/cantera/kinetics/ChebyshevRate.h:48:invalidateCache"
+  },
+  "include/cantera/kinetics/Falloff.h:109:updateTemp": {
+    "canonical_index": 682,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:109:updateTemp",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      109,
+      109
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "updateTemp",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:109",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.updateTemp",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_updateTemp",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "virtual void updateTemp(double T, span<double> work) const {}",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:109:updateTemp"
+  },
+  "include/cantera/kinetics/Falloff.h:120:F": {
+    "canonical_index": 683,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:120:F",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      120,
+      120
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "F",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:120",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.F",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_F",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "virtual double F(double pr, span<const double> work) const",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:120:F"
+  },
+  "include/cantera/kinetics/Falloff.h:125:evalF": {
+    "canonical_index": 684,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:125:evalF",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      125,
+      125
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "evalF",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:125",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.evalF",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_evalF",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "double evalF(double T, double conc3b)",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:125:evalF"
+  },
+  "include/cantera/kinetics/Falloff.h:132:F": {
+    "canonical_index": 685,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:132:F",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      132,
+      132
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "FalloffRate",
+    "native_method": "F",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:132",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.rates.FalloffRate.F",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_F",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "return F(pr, m_work)",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:132:F"
+  },
+  "include/cantera/kinetics/Falloff.h:135:type": {
+    "canonical_index": 686,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:135:type",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      135,
+      135
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "type",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:135",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.type",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_type",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "const string type() const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:135:type"
+  },
+  "include/cantera/kinetics/Falloff.h:144:nParameters": {
+    "canonical_index": 687,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:144:nParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      144,
+      144
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "nParameters",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:144",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.nParameters",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_nParameters",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "virtual size_t nParameters() const",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:144:nParameters"
+  },
+  "include/cantera/kinetics/Falloff.h:148:setParameters": {
+    "canonical_index": 688,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:148:setParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      148,
+      148
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "setParameters",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:148",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.setParameters",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_setParameters",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void setParameters(const AnyMap& node, const UnitStack& rate_units) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:148:setParameters"
+  },
+  "include/cantera/kinetics/Falloff.h:150:getParameters": {
+    "canonical_index": 689,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:150:getParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      150,
+      150
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:150",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.getParameters",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_getParameters",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void getParameters(AnyMap& node) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:150:getParameters"
+  },
+  "include/cantera/kinetics/Falloff.h:154:evalFromStruct": {
+    "canonical_index": 690,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:154:evalFromStruct",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      154,
+      154
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "evalFromStruct",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:154",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.evalFromStruct",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_evalFromStruct",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "double evalFromStruct(const FalloffData& shared_data)",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:154:evalFromStruct"
+  },
+  "include/cantera/kinetics/Falloff.h:178:check": {
+    "canonical_index": 691,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:178:check",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      178,
+      178
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "check",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:178",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.check",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_check",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void check(const string& equation) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:178:check"
+  },
+  "include/cantera/kinetics/Falloff.h:179:validate": {
+    "canonical_index": 692,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:179:validate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      179,
+      179
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "validate",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:179",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.validate",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_validate",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void validate(const string& equation, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:179:validate"
+  },
+  "include/cantera/kinetics/Falloff.h:182:allowNegativePreExponentialFactor": {
+    "canonical_index": 693,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:182:allowNegativePreExponentialFactor",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      182,
+      182
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "allowNegativePreExponentialFactor",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:182",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.allowNegativePreExponentialFactor",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_allowNegativePreExponentialFactor",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "bool allowNegativePreExponentialFactor() const",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:182:allowNegativePreExponentialFactor"
+  },
+  "include/cantera/kinetics/Falloff.h:187:setAllowNegativePreExponentialFactor": {
+    "canonical_index": 694,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:187:setAllowNegativePreExponentialFactor",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      187,
+      187
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "setAllowNegativePreExponentialFactor",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:187",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.setAllowNegativePreExponentialFactor",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_setAllowNegativePreExponentialFactor",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void setAllowNegativePreExponentialFactor(bool value)",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:187:setAllowNegativePreExponentialFactor"
+  },
+  "include/cantera/kinetics/Falloff.h:192:chemicallyActivated": {
+    "canonical_index": 695,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:192:chemicallyActivated",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      192,
+      192
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "chemicallyActivated",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:192",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.chemicallyActivated",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_chemicallyActivated",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "bool chemicallyActivated() const",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:192:chemicallyActivated"
+  },
+  "include/cantera/kinetics/Falloff.h:197:setChemicallyActivated": {
+    "canonical_index": 696,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:197:setChemicallyActivated",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      197,
+      197
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "setChemicallyActivated",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:197",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.setChemicallyActivated",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_setChemicallyActivated",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void setChemicallyActivated(bool activated)",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:197:setChemicallyActivated"
+  },
+  "include/cantera/kinetics/Falloff.h:202:lowRate": {
+    "canonical_index": 697,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:202:lowRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      202,
+      202
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "lowRate",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:202",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.lowRate",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_lowRate",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "ArrheniusRate& lowRate()",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:202:lowRate"
+  },
+  "include/cantera/kinetics/Falloff.h:207:lowRate": {
+    "canonical_index": 698,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:207:lowRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      207,
+      207
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "lowRate",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:207",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.lowRate",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_lowRate",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "const ArrheniusRate& lowRate() const",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:207:lowRate"
+  },
+  "include/cantera/kinetics/Falloff.h:212:setLowRate": {
+    "canonical_index": 699,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:212:setLowRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      212,
+      212
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "setLowRate",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:212",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.setLowRate",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_setLowRate",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void setLowRate(const ArrheniusRate& low)",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:212:setLowRate"
+  },
+  "include/cantera/kinetics/Falloff.h:215:highRate": {
+    "canonical_index": 700,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:215:highRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      215,
+      215
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "highRate",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:215",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.highRate",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_highRate",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "ArrheniusRate& highRate()",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:215:highRate"
+  },
+  "include/cantera/kinetics/Falloff.h:220:highRate": {
+    "canonical_index": 701,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:220:highRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      220,
+      220
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "highRate",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:220",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.highRate",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_highRate",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "const ArrheniusRate& highRate() const",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:220:highRate"
+  },
+  "include/cantera/kinetics/Falloff.h:225:setHighRate": {
+    "canonical_index": 702,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:225:setHighRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      225,
+      225
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "setHighRate",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:225",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.setHighRate",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_setHighRate",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void setHighRate(const ArrheniusRate& high)",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:225:setHighRate"
+  },
+  "include/cantera/kinetics/Falloff.h:24:update": {
+    "canonical_index": 673,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:24:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      24,
+      24
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:24",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffData.update",
+    "required_native_differential_test": "test_kinetics_family2_FalloffData_update",
+    "required_performance_test": "benchmark_family2_FalloffData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "bool update(const ThermoPhase& phase, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:24:update"
+  },
+  "include/cantera/kinetics/Falloff.h:258:newMultiRate": {
+    "canonical_index": 703,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:258:newMultiRate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      258,
+      258
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LindemannRate",
+    "native_method": "newMultiRate",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:258",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LindemannRate.newMultiRate",
+    "required_native_differential_test": "test_kinetics_family2_LindemannRate_newMultiRate",
+    "required_performance_test": "benchmark_family2_LindemannRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "unique_ptr<MultiRateBase> newMultiRate() const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:258:newMultiRate"
+  },
+  "include/cantera/kinetics/Falloff.h:262:subType": {
+    "canonical_index": 704,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:262:subType",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      262,
+      262
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LindemannRate",
+    "native_method": "subType",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:262",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LindemannRate.subType",
+    "required_native_differential_test": "test_kinetics_family2_LindemannRate_subType",
+    "required_performance_test": "benchmark_family2_LindemannRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "const string subType() const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:262:subType"
+  },
+  "include/cantera/kinetics/Falloff.h:26:update": {
+    "canonical_index": 674,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:26:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      26,
+      26
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:26",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffData.update",
+    "required_native_differential_test": "test_kinetics_family2_FalloffData_update",
+    "required_performance_test": "benchmark_family2_FalloffData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void update(double T) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:26:update"
+  },
+  "include/cantera/kinetics/Falloff.h:28:update": {
+    "canonical_index": 675,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:28:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      28,
+      28
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:28",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffData.update",
+    "required_native_differential_test": "test_kinetics_family2_FalloffData_update",
+    "required_performance_test": "benchmark_family2_FalloffData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void update(double T, double M) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:28:update"
+  },
+  "include/cantera/kinetics/Falloff.h:322:newMultiRate": {
+    "canonical_index": 705,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:322:newMultiRate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      322,
+      322
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TroeRate",
+    "native_method": "newMultiRate",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:322",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TroeRate.newMultiRate",
+    "required_native_differential_test": "test_kinetics_family2_TroeRate_newMultiRate",
+    "required_performance_test": "benchmark_family2_TroeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "unique_ptr<MultiRateBase> newMultiRate() const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:322:newMultiRate"
+  },
+  "include/cantera/kinetics/Falloff.h:331:setFalloffCoeffs": {
+    "canonical_index": 706,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:331:setFalloffCoeffs",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      331,
+      331
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TroeRate",
+    "native_method": "setFalloffCoeffs",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:331",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TroeRate.setFalloffCoeffs",
+    "required_native_differential_test": "test_kinetics_family2_TroeRate_setFalloffCoeffs",
+    "required_performance_test": "benchmark_family2_TroeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void setFalloffCoeffs(span<const double> c) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:331:setFalloffCoeffs"
+  },
+  "include/cantera/kinetics/Falloff.h:333:getFalloffCoeffs": {
+    "canonical_index": 707,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:333:getFalloffCoeffs",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      333,
+      333
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TroeRate",
+    "native_method": "getFalloffCoeffs",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:333",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TroeRate.getFalloffCoeffs",
+    "required_native_differential_test": "test_kinetics_family2_TroeRate_getFalloffCoeffs",
+    "required_performance_test": "benchmark_family2_TroeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void getFalloffCoeffs(span<double> c) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:333:getFalloffCoeffs"
+  },
+  "include/cantera/kinetics/Falloff.h:341:updateTemp": {
+    "canonical_index": 708,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:341:updateTemp",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      341,
+      341
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TroeRate",
+    "native_method": "updateTemp",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:341",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TroeRate.updateTemp",
+    "required_native_differential_test": "test_kinetics_family2_TroeRate_updateTemp",
+    "required_performance_test": "benchmark_family2_TroeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void updateTemp(double T, span<double> work) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:341:updateTemp"
+  },
+  "include/cantera/kinetics/Falloff.h:343:F": {
+    "canonical_index": 709,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:343:F",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      343,
+      343
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TroeRate",
+    "native_method": "F",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:343",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TroeRate.F",
+    "required_native_differential_test": "test_kinetics_family2_TroeRate_F",
+    "required_performance_test": "benchmark_family2_TroeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "double F(double pr, span<const double> work) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:343:F"
+  },
+  "include/cantera/kinetics/Falloff.h:345:subType": {
+    "canonical_index": 710,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:345:subType",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      345,
+      345
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TroeRate",
+    "native_method": "subType",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:345",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TroeRate.subType",
+    "required_native_differential_test": "test_kinetics_family2_TroeRate_subType",
+    "required_performance_test": "benchmark_family2_TroeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "const string subType() const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:345:subType"
+  },
+  "include/cantera/kinetics/Falloff.h:349:nParameters": {
+    "canonical_index": 711,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:349:nParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      349,
+      349
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TroeRate",
+    "native_method": "nParameters",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:349",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TroeRate.nParameters",
+    "required_native_differential_test": "test_kinetics_family2_TroeRate_nParameters",
+    "required_performance_test": "benchmark_family2_TroeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "size_t nParameters() const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:349:nParameters"
+  },
+  "include/cantera/kinetics/Falloff.h:353:setParameters": {
+    "canonical_index": 712,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:353:setParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      353,
+      353
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TroeRate",
+    "native_method": "setParameters",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:353",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TroeRate.setParameters",
+    "required_native_differential_test": "test_kinetics_family2_TroeRate_setParameters",
+    "required_performance_test": "benchmark_family2_TroeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void setParameters(const AnyMap& node, const UnitStack& rate_units) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:353:setParameters"
+  },
+  "include/cantera/kinetics/Falloff.h:355:getParameters": {
+    "canonical_index": 713,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:355:getParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      355,
+      355
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TroeRate",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:355",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TroeRate.getParameters",
+    "required_native_differential_test": "test_kinetics_family2_TroeRate_getParameters",
+    "required_performance_test": "benchmark_family2_TroeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void getParameters(AnyMap& node) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:355:getParameters"
+  },
+  "include/cantera/kinetics/Falloff.h:37:perturbThirdBodies": {
+    "canonical_index": 676,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:37:perturbThirdBodies",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      37,
+      37
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffData",
+    "native_method": "perturbThirdBodies",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:37",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffData.perturbThirdBodies",
+    "required_native_differential_test": "test_kinetics_family2_FalloffData_perturbThirdBodies",
+    "required_performance_test": "benchmark_family2_FalloffData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void perturbThirdBodies(double deltaM)",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:37:perturbThirdBodies"
+  },
+  "include/cantera/kinetics/Falloff.h:39:restore": {
+    "canonical_index": 677,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:39:restore",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      39,
+      39
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffData",
+    "native_method": "restore",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:39",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffData.restore",
+    "required_native_differential_test": "test_kinetics_family2_FalloffData_restore",
+    "required_performance_test": "benchmark_family2_FalloffData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void restore() override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:39:restore"
+  },
+  "include/cantera/kinetics/Falloff.h:40:resize": {
+    "canonical_index": 678,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:40:resize",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      40,
+      40
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffData",
+    "native_method": "resize",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:40",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffData.resize",
+    "required_native_differential_test": "test_kinetics_family2_FalloffData_resize",
+    "required_performance_test": "benchmark_family2_FalloffData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void resize(Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:40:resize"
+  },
+  "include/cantera/kinetics/Falloff.h:422:newMultiRate": {
+    "canonical_index": 714,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:422:newMultiRate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      422,
+      422
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "SriRate",
+    "native_method": "newMultiRate",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:422",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.SriRate.newMultiRate",
+    "required_native_differential_test": "test_kinetics_family2_SriRate_newMultiRate",
+    "required_performance_test": "benchmark_family2_SriRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "unique_ptr<MultiRateBase> newMultiRate() const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:422:newMultiRate"
+  },
+  "include/cantera/kinetics/Falloff.h:42:invalidateCache": {
+    "canonical_index": 679,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:42:invalidateCache",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      42,
+      42
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffData",
+    "native_method": "invalidateCache",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:42",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffData.invalidateCache",
+    "required_native_differential_test": "test_kinetics_family2_FalloffData_invalidateCache",
+    "required_performance_test": "benchmark_family2_FalloffData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void invalidateCache() override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:42:invalidateCache"
+  },
+  "include/cantera/kinetics/Falloff.h:432:setFalloffCoeffs": {
+    "canonical_index": 715,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:432:setFalloffCoeffs",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      432,
+      432
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "SriRate",
+    "native_method": "setFalloffCoeffs",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:432",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.SriRate.setFalloffCoeffs",
+    "required_native_differential_test": "test_kinetics_family2_SriRate_setFalloffCoeffs",
+    "required_performance_test": "benchmark_family2_SriRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void setFalloffCoeffs(span<const double> c) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:432:setFalloffCoeffs"
+  },
+  "include/cantera/kinetics/Falloff.h:434:getFalloffCoeffs": {
+    "canonical_index": 716,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:434:getFalloffCoeffs",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      434,
+      434
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "SriRate",
+    "native_method": "getFalloffCoeffs",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:434",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.SriRate.getFalloffCoeffs",
+    "required_native_differential_test": "test_kinetics_family2_SriRate_getFalloffCoeffs",
+    "required_performance_test": "benchmark_family2_SriRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void getFalloffCoeffs(span<double> c) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:434:getFalloffCoeffs"
+  },
+  "include/cantera/kinetics/Falloff.h:442:updateTemp": {
+    "canonical_index": 717,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:442:updateTemp",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      442,
+      442
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "SriRate",
+    "native_method": "updateTemp",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:442",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.SriRate.updateTemp",
+    "required_native_differential_test": "test_kinetics_family2_SriRate_updateTemp",
+    "required_performance_test": "benchmark_family2_SriRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void updateTemp(double T, span<double> work) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:442:updateTemp"
+  },
+  "include/cantera/kinetics/Falloff.h:444:F": {
+    "canonical_index": 718,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:444:F",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      444,
+      444
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "SriRate",
+    "native_method": "F",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:444",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.SriRate.F",
+    "required_native_differential_test": "test_kinetics_family2_SriRate_F",
+    "required_performance_test": "benchmark_family2_SriRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "double F(double pr, span<const double> work) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:444:F"
+  },
+  "include/cantera/kinetics/Falloff.h:446:subType": {
+    "canonical_index": 719,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:446:subType",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      446,
+      446
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "SriRate",
+    "native_method": "subType",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:446",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.SriRate.subType",
+    "required_native_differential_test": "test_kinetics_family2_SriRate_subType",
+    "required_performance_test": "benchmark_family2_SriRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "const string subType() const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:446:subType"
+  },
+  "include/cantera/kinetics/Falloff.h:450:nParameters": {
+    "canonical_index": 720,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:450:nParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      450,
+      450
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "SriRate",
+    "native_method": "nParameters",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:450",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.SriRate.nParameters",
+    "required_native_differential_test": "test_kinetics_family2_SriRate_nParameters",
+    "required_performance_test": "benchmark_family2_SriRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "size_t nParameters() const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:450:nParameters"
+  },
+  "include/cantera/kinetics/Falloff.h:454:setParameters": {
+    "canonical_index": 721,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:454:setParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      454,
+      454
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "SriRate",
+    "native_method": "setParameters",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:454",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.SriRate.setParameters",
+    "required_native_differential_test": "test_kinetics_family2_SriRate_setParameters",
+    "required_performance_test": "benchmark_family2_SriRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void setParameters(const AnyMap& node, const UnitStack& rate_units) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:454:setParameters"
+  },
+  "include/cantera/kinetics/Falloff.h:455:getParameters": {
+    "canonical_index": 722,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:455:getParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      455,
+      455
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "SriRate",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:455",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.SriRate.getParameters",
+    "required_native_differential_test": "test_kinetics_family2_SriRate_getParameters",
+    "required_performance_test": "benchmark_family2_SriRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void getParameters(AnyMap& node) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:455:getParameters"
+  },
+  "include/cantera/kinetics/Falloff.h:516:newMultiRate": {
+    "canonical_index": 723,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:516:newMultiRate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      516,
+      516
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TsangRate",
+    "native_method": "newMultiRate",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:516",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TsangRate.newMultiRate",
+    "required_native_differential_test": "test_kinetics_family2_TsangRate_newMultiRate",
+    "required_performance_test": "benchmark_family2_TsangRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "unique_ptr<MultiRateBase> newMultiRate() const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:516:newMultiRate"
+  },
+  "include/cantera/kinetics/Falloff.h:525:setFalloffCoeffs": {
+    "canonical_index": 724,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:525:setFalloffCoeffs",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      525,
+      525
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TsangRate",
+    "native_method": "setFalloffCoeffs",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:525",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TsangRate.setFalloffCoeffs",
+    "required_native_differential_test": "test_kinetics_family2_TsangRate_setFalloffCoeffs",
+    "required_performance_test": "benchmark_family2_TsangRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void setFalloffCoeffs(span<const double> c) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:525:setFalloffCoeffs"
+  },
+  "include/cantera/kinetics/Falloff.h:527:getFalloffCoeffs": {
+    "canonical_index": 725,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:527:getFalloffCoeffs",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      527,
+      527
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TsangRate",
+    "native_method": "getFalloffCoeffs",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:527",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TsangRate.getFalloffCoeffs",
+    "required_native_differential_test": "test_kinetics_family2_TsangRate_getFalloffCoeffs",
+    "required_performance_test": "benchmark_family2_TsangRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void getFalloffCoeffs(span<double> c) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:527:getFalloffCoeffs"
+  },
+  "include/cantera/kinetics/Falloff.h:535:updateTemp": {
+    "canonical_index": 726,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:535:updateTemp",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      535,
+      535
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TsangRate",
+    "native_method": "updateTemp",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:535",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TsangRate.updateTemp",
+    "required_native_differential_test": "test_kinetics_family2_TsangRate_updateTemp",
+    "required_performance_test": "benchmark_family2_TsangRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void updateTemp(double T, span<double> work) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:535:updateTemp"
+  },
+  "include/cantera/kinetics/Falloff.h:537:F": {
+    "canonical_index": 727,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:537:F",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      537,
+      537
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TsangRate",
+    "native_method": "F",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:537",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TsangRate.F",
+    "required_native_differential_test": "test_kinetics_family2_TsangRate_F",
+    "required_performance_test": "benchmark_family2_TsangRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "double F(double pr, span<const double> work) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:537:F"
+  },
+  "include/cantera/kinetics/Falloff.h:539:subType": {
+    "canonical_index": 728,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:539:subType",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      539,
+      539
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TsangRate",
+    "native_method": "subType",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:539",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TsangRate.subType",
+    "required_native_differential_test": "test_kinetics_family2_TsangRate_subType",
+    "required_performance_test": "benchmark_family2_TsangRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "const string subType() const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:539:subType"
+  },
+  "include/cantera/kinetics/Falloff.h:543:nParameters": {
+    "canonical_index": 729,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:543:nParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      543,
+      543
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TsangRate",
+    "native_method": "nParameters",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:543",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TsangRate.nParameters",
+    "required_native_differential_test": "test_kinetics_family2_TsangRate_nParameters",
+    "required_performance_test": "benchmark_family2_TsangRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "size_t nParameters() const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:543:nParameters"
+  },
+  "include/cantera/kinetics/Falloff.h:547:setParameters": {
+    "canonical_index": 730,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:547:setParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      547,
+      547
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TsangRate",
+    "native_method": "setParameters",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:547",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TsangRate.setParameters",
+    "required_native_differential_test": "test_kinetics_family2_TsangRate_setParameters",
+    "required_performance_test": "benchmark_family2_TsangRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void setParameters(const AnyMap& node, const UnitStack& rate_units) override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:547:setParameters"
+  },
+  "include/cantera/kinetics/Falloff.h:549:getParameters": {
+    "canonical_index": 731,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:549:getParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      549,
+      549
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "TsangRate",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:549",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.TsangRate.getParameters",
+    "required_native_differential_test": "test_kinetics_family2_TsangRate_getParameters",
+    "required_performance_test": "benchmark_family2_TsangRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "void getParameters(AnyMap& node) const override",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:549:getParameters"
+  },
+  "include/cantera/kinetics/Falloff.h:90:setFalloffCoeffs": {
+    "canonical_index": 680,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:90:setFalloffCoeffs",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      90,
+      90
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "setFalloffCoeffs",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:90",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.setFalloffCoeffs",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_setFalloffCoeffs",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "virtual void setFalloffCoeffs(span<const double> c)",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:90:setFalloffCoeffs"
+  },
+  "include/cantera/kinetics/Falloff.h:99:getFalloffCoeffs": {
+    "canonical_index": 681,
+    "canonical_symbol_id": "include/cantera/kinetics/Falloff.h:99:getFalloffCoeffs",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      99,
+      99
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "FalloffRate",
+    "native_method": "getFalloffCoeffs",
+    "native_source_definition": "include/cantera/kinetics/Falloff.h:99",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.FalloffRate.getFalloffCoeffs",
+    "required_native_differential_test": "test_kinetics_family2_FalloffRate_getFalloffCoeffs",
+    "required_performance_test": "benchmark_family2_FalloffRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Falloff rate coefficient calculation with reduced pressure and collider broadening",
+    "signature": "virtual void getFalloffCoeffs(span<double> c) const {}",
+    "stable_symbol_id": "include/cantera/kinetics/Falloff.h:99:getFalloffCoeffs"
+  },
+  "include/cantera/kinetics/LinearBurkeRate.h:100:evalFromStruct": {
+    "canonical_index": 950,
+    "canonical_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:100:evalFromStruct",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      100,
+      100
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LinearBurkeRate",
+    "native_method": "evalFromStruct",
+    "native_source_definition": "include/cantera/kinetics/LinearBurkeRate.h:100",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LinearBurkeRate.evalFromStruct",
+    "required_native_differential_test": "test_kinetics_family2_LinearBurkeRate_evalFromStruct",
+    "required_performance_test": "benchmark_family2_LinearBurkeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Linear Burke mixture-averaged collider and third-body rate calculation",
+    "signature": "double evalFromStruct(const LinearBurkeData& shared_data)",
+    "stable_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:100:evalFromStruct"
+  },
+  "include/cantera/kinetics/LinearBurkeRate.h:102:setContext": {
+    "canonical_index": 951,
+    "canonical_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:102:setContext",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      102,
+      102
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LinearBurkeRate",
+    "native_method": "setContext",
+    "native_source_definition": "include/cantera/kinetics/LinearBurkeRate.h:102",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LinearBurkeRate.setContext",
+    "required_native_differential_test": "test_kinetics_family2_LinearBurkeRate_setContext",
+    "required_performance_test": "benchmark_family2_LinearBurkeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Linear Burke mixture-averaged collider and third-body rate calculation",
+    "signature": "void setContext(const Reaction& rxn, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:102:setContext"
+  },
+  "include/cantera/kinetics/LinearBurkeRate.h:104:validate": {
+    "canonical_index": 952,
+    "canonical_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:104:validate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      104,
+      104
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LinearBurkeRate",
+    "native_method": "validate",
+    "native_source_definition": "include/cantera/kinetics/LinearBurkeRate.h:104",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LinearBurkeRate.validate",
+    "required_native_differential_test": "test_kinetics_family2_LinearBurkeRate_validate",
+    "required_performance_test": "benchmark_family2_LinearBurkeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Linear Burke mixture-averaged collider and third-body rate calculation",
+    "signature": "void validate(const string& equation, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:104:validate"
+  },
+  "include/cantera/kinetics/LinearBurkeRate.h:34:update": {
+    "canonical_index": 942,
+    "canonical_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:34:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      34,
+      34
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LinearBurkeData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/LinearBurkeRate.h:34",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LinearBurkeData.update",
+    "required_native_differential_test": "test_kinetics_family2_LinearBurkeData_update",
+    "required_performance_test": "benchmark_family2_LinearBurkeData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Linear Burke mixture-averaged collider and third-body rate calculation",
+    "signature": "bool update(const ThermoPhase& phase, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:34:update"
+  },
+  "include/cantera/kinetics/LinearBurkeRate.h:43:perturbPressure": {
+    "canonical_index": 943,
+    "canonical_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:43:perturbPressure",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      43,
+      43
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LinearBurkeData",
+    "native_method": "perturbPressure",
+    "native_source_definition": "include/cantera/kinetics/LinearBurkeRate.h:43",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LinearBurkeData.perturbPressure",
+    "required_native_differential_test": "test_kinetics_family2_LinearBurkeData_perturbPressure",
+    "required_performance_test": "benchmark_family2_LinearBurkeData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Linear Burke mixture-averaged collider and third-body rate calculation",
+    "signature": "void perturbPressure(double deltaP)",
+    "stable_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:43:perturbPressure"
+  },
+  "include/cantera/kinetics/LinearBurkeRate.h:45:restore": {
+    "canonical_index": 944,
+    "canonical_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:45:restore",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      45,
+      45
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LinearBurkeData",
+    "native_method": "restore",
+    "native_source_definition": "include/cantera/kinetics/LinearBurkeRate.h:45",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LinearBurkeData.restore",
+    "required_native_differential_test": "test_kinetics_family2_LinearBurkeData_restore",
+    "required_performance_test": "benchmark_family2_LinearBurkeData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Linear Burke mixture-averaged collider and third-body rate calculation",
+    "signature": "void restore() override",
+    "stable_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:45:restore"
+  },
+  "include/cantera/kinetics/LinearBurkeRate.h:46:resize": {
+    "canonical_index": 945,
+    "canonical_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:46:resize",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      46,
+      46
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LinearBurkeData",
+    "native_method": "resize",
+    "native_source_definition": "include/cantera/kinetics/LinearBurkeRate.h:46",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LinearBurkeData.resize",
+    "required_native_differential_test": "test_kinetics_family2_LinearBurkeData_resize",
+    "required_performance_test": "benchmark_family2_LinearBurkeData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Linear Burke mixture-averaged collider and third-body rate calculation",
+    "signature": "virtual void resize(Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:46:resize"
+  },
+  "include/cantera/kinetics/LinearBurkeRate.h:79:newMultiRate": {
+    "canonical_index": 946,
+    "canonical_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:79:newMultiRate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      79,
+      79
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LinearBurkeRate",
+    "native_method": "newMultiRate",
+    "native_source_definition": "include/cantera/kinetics/LinearBurkeRate.h:79",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LinearBurkeRate.newMultiRate",
+    "required_native_differential_test": "test_kinetics_family2_LinearBurkeRate_newMultiRate",
+    "required_performance_test": "benchmark_family2_LinearBurkeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Linear Burke mixture-averaged collider and third-body rate calculation",
+    "signature": "unique_ptr<MultiRateBase> newMultiRate() const override",
+    "stable_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:79:newMultiRate"
+  },
+  "include/cantera/kinetics/LinearBurkeRate.h:84:type": {
+    "canonical_index": 947,
+    "canonical_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:84:type",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      84,
+      84
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LinearBurkeRate",
+    "native_method": "type",
+    "native_source_definition": "include/cantera/kinetics/LinearBurkeRate.h:84",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LinearBurkeRate.type",
+    "required_native_differential_test": "test_kinetics_family2_LinearBurkeRate_type",
+    "required_performance_test": "benchmark_family2_LinearBurkeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Linear Burke mixture-averaged collider and third-body rate calculation",
+    "signature": "const string type() const override { return \"linear-Burke\"; }",
+    "stable_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:84:type"
+  },
+  "include/cantera/kinetics/LinearBurkeRate.h:91:setParameters": {
+    "canonical_index": 948,
+    "canonical_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:91:setParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      91,
+      91
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LinearBurkeRate",
+    "native_method": "setParameters",
+    "native_source_definition": "include/cantera/kinetics/LinearBurkeRate.h:91",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LinearBurkeRate.setParameters",
+    "required_native_differential_test": "test_kinetics_family2_LinearBurkeRate_setParameters",
+    "required_performance_test": "benchmark_family2_LinearBurkeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Linear Burke mixture-averaged collider and third-body rate calculation",
+    "signature": "void setParameters(const AnyMap& node, const UnitStack& rate_units) override",
+    "stable_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:91:setParameters"
+  },
+  "include/cantera/kinetics/LinearBurkeRate.h:93:getParameters": {
+    "canonical_index": 949,
+    "canonical_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:93:getParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      93,
+      93
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "LinearBurkeRate",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/LinearBurkeRate.h:93",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.LinearBurkeRate.getParameters",
+    "required_native_differential_test": "test_kinetics_family2_LinearBurkeRate_getParameters",
+    "required_performance_test": "benchmark_family2_LinearBurkeRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Linear Burke mixture-averaged collider and third-body rate calculation",
+    "signature": "void getParameters(AnyMap& rateNode) const override",
+    "stable_symbol_id": "include/cantera/kinetics/LinearBurkeRate.h:93:getParameters"
+  },
+  "include/cantera/kinetics/PlogRate.h:101:getParameters": {
+    "canonical_index": 983,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:101:getParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      101,
+      101
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogRate",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:101",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogRate.getParameters",
+    "required_native_differential_test": "test_kinetics_family2_PlogRate_getParameters",
+    "required_performance_test": "benchmark_family2_PlogRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "void getParameters(AnyMap& rateNode, const Units& rate_units) const",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:101:getParameters"
+  },
+  "include/cantera/kinetics/PlogRate.h:102:getParameters": {
+    "canonical_index": 984,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:102:getParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      102,
+      102
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogRate",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:102",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogRate.getParameters",
+    "required_native_differential_test": "test_kinetics_family2_PlogRate_getParameters",
+    "required_performance_test": "benchmark_family2_PlogRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "void getParameters(AnyMap& rateNode) const override",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:102:getParameters"
+  },
+  "include/cantera/kinetics/PlogRate.h:103:getParameters": {
+    "canonical_index": 985,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:103:getParameters",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      103,
+      103
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "PlogRate",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:103",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.rates.PlogRate.getParameters",
+    "required_native_differential_test": "test_kinetics_family2_PlogRate_getParameters",
+    "required_performance_test": "benchmark_family2_PlogRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "return getParameters(rateNode, Units(0))",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:103:getParameters"
+  },
+  "include/cantera/kinetics/PlogRate.h:110:updateFromStruct": {
+    "canonical_index": 986,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:110:updateFromStruct",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      110,
+      110
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogRate",
+    "native_method": "updateFromStruct",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:110",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogRate.updateFromStruct",
+    "required_native_differential_test": "test_kinetics_family2_PlogRate_updateFromStruct",
+    "required_performance_test": "benchmark_family2_PlogRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "void updateFromStruct(const PlogData& shared_data)",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:110:updateFromStruct"
+  },
+  "include/cantera/kinetics/PlogRate.h:141:evalFromStruct": {
+    "canonical_index": 987,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:141:evalFromStruct",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      141,
+      141
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogRate",
+    "native_method": "evalFromStruct",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:141",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogRate.evalFromStruct",
+    "required_native_differential_test": "test_kinetics_family2_PlogRate_evalFromStruct",
+    "required_performance_test": "benchmark_family2_PlogRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "double evalFromStruct(const PlogData& shared_data)",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:141:evalFromStruct"
+  },
+  "include/cantera/kinetics/PlogRate.h:167:setRates": {
+    "canonical_index": 988,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:167:setRates",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      167,
+      167
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogRate",
+    "native_method": "setRates",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:167",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogRate.setRates",
+    "required_native_differential_test": "test_kinetics_family2_PlogRate_setRates",
+    "required_performance_test": "benchmark_family2_PlogRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "void setRates(const std::multimap<double, ArrheniusRate>& rates)",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:167:setRates"
+  },
+  "include/cantera/kinetics/PlogRate.h:173:validate": {
+    "canonical_index": 989,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:173:validate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      173,
+      173
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogRate",
+    "native_method": "validate",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:173",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogRate.validate",
+    "required_native_differential_test": "test_kinetics_family2_PlogRate_validate",
+    "required_performance_test": "benchmark_family2_PlogRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "void validate(const string& equation, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:173:validate"
+  },
+  "include/cantera/kinetics/PlogRate.h:23:update": {
+    "canonical_index": 973,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:23:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      23,
+      23
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:23",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogData.update",
+    "required_native_differential_test": "test_kinetics_family2_PlogData_update",
+    "required_performance_test": "benchmark_family2_PlogData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "void update(double T) override",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:23:update"
+  },
+  "include/cantera/kinetics/PlogRate.h:25:update": {
+    "canonical_index": 974,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:25:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      25,
+      25
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:25",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogData.update",
+    "required_native_differential_test": "test_kinetics_family2_PlogData_update",
+    "required_performance_test": "benchmark_family2_PlogData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "void update(double T, double P) override",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:25:update"
+  },
+  "include/cantera/kinetics/PlogRate.h:31:update": {
+    "canonical_index": 975,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:31:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      31,
+      31
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:31",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogData.update",
+    "required_native_differential_test": "test_kinetics_family2_PlogData_update",
+    "required_performance_test": "benchmark_family2_PlogData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "bool update(const ThermoPhase& phase, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:31:update"
+  },
+  "include/cantera/kinetics/PlogRate.h:40:perturbPressure": {
+    "canonical_index": 976,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:40:perturbPressure",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      40,
+      40
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogData",
+    "native_method": "perturbPressure",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:40",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogData.perturbPressure",
+    "required_native_differential_test": "test_kinetics_family2_PlogData_perturbPressure",
+    "required_performance_test": "benchmark_family2_PlogData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "void perturbPressure(double deltaP)",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:40:perturbPressure"
+  },
+  "include/cantera/kinetics/PlogRate.h:42:restore": {
+    "canonical_index": 977,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:42:restore",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      42,
+      42
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogData",
+    "native_method": "restore",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:42",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogData.restore",
+    "required_native_differential_test": "test_kinetics_family2_PlogData_restore",
+    "required_performance_test": "benchmark_family2_PlogData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "void restore() override",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:42:restore"
+  },
+  "include/cantera/kinetics/PlogRate.h:44:invalidateCache": {
+    "canonical_index": 978,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:44:invalidateCache",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      44,
+      44
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogData",
+    "native_method": "invalidateCache",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:44",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogData.invalidateCache",
+    "required_native_differential_test": "test_kinetics_family2_PlogData_invalidateCache",
+    "required_performance_test": "benchmark_family2_PlogData",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "void invalidateCache() override",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:44:invalidateCache"
+  },
+  "include/cantera/kinetics/PlogRate.h:83:PlogRate": {
+    "canonical_index": 979,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:83:PlogRate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      83,
+      83
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogRate",
+    "native_method": "PlogRate",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:83",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogRate.PlogRate",
+    "required_native_differential_test": "test_kinetics_family2_PlogRate_PlogRate",
+    "required_performance_test": "benchmark_family2_PlogRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "explicit PlogRate(const std::multimap<double, ArrheniusRate>& rates)",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:83:PlogRate"
+  },
+  "include/cantera/kinetics/PlogRate.h:87:newMultiRate": {
+    "canonical_index": 980,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:87:newMultiRate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      87,
+      87
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogRate",
+    "native_method": "newMultiRate",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:87",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogRate.newMultiRate",
+    "required_native_differential_test": "test_kinetics_family2_PlogRate_newMultiRate",
+    "required_performance_test": "benchmark_family2_PlogRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "unique_ptr<MultiRateBase> newMultiRate() const override",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:87:newMultiRate"
+  },
+  "include/cantera/kinetics/PlogRate.h:92:type": {
+    "canonical_index": 981,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:92:type",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      92,
+      92
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogRate",
+    "native_method": "type",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:92",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogRate.type",
+    "required_native_differential_test": "test_kinetics_family2_PlogRate_type",
+    "required_performance_test": "benchmark_family2_PlogRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "const string type() const override { return \"pressure-dependent-Arrhenius\"; }",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:92:type"
+  },
+  "include/cantera/kinetics/PlogRate.h:99:setParameters": {
+    "canonical_index": 982,
+    "canonical_symbol_id": "include/cantera/kinetics/PlogRate.h:99:setParameters",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      99,
+      99
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "PlogRate",
+    "native_method": "setParameters",
+    "native_source_definition": "include/cantera/kinetics/PlogRate.h:99",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.PlogRate.setParameters",
+    "required_native_differential_test": "test_kinetics_family2_PlogRate_setParameters",
+    "required_performance_test": "benchmark_family2_PlogRate",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent logarithmic interpolation of Arrhenius rate expressions",
+    "signature": "void setParameters(const AnyMap& node, const UnitStack& rate_units) override",
+    "stable_symbol_id": "include/cantera/kinetics/PlogRate.h:99:setParameters"
+  },
+  "src/kinetics/ChebyshevRate.cpp:136:coeffs2d": {
+    "canonical_index": 4568,
+    "canonical_symbol_id": "src/kinetics/ChebyshevRate.cpp:136:coeffs2d",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      136,
+      136
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "",
+    "native_method": "coeffs2d",
+    "native_source_definition": "src/kinetics/ChebyshevRate.cpp:136",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.coeffs2d",
+    "required_native_differential_test": "test_kinetics_family2__coeffs2d",
+    "required_performance_test": "benchmark_family2_",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent reaction rate and falloff helper function",
+    "signature": "vector<vector<double>> coeffs2d(nT, vector<double>(nP))",
+    "stable_symbol_id": "src/kinetics/ChebyshevRate.cpp:136:coeffs2d"
+  },
+  "src/kinetics/ChebyshevRate.cpp:67:coeffs": {
+    "canonical_index": 4567,
+    "canonical_symbol_id": "src/kinetics/ChebyshevRate.cpp:67:coeffs",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      67,
+      67
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "",
+    "native_method": "coeffs",
+    "native_source_definition": "src/kinetics/ChebyshevRate.cpp:67",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.coeffs",
+    "required_native_differential_test": "test_kinetics_family2__coeffs",
+    "required_performance_test": "benchmark_family2_",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent reaction rate and falloff helper function",
+    "signature": "Array2D coeffs(0, 0)",
+    "stable_symbol_id": "src/kinetics/ChebyshevRate.cpp:67:coeffs"
+  },
+  "src/kinetics/Falloff.cpp:201:InputFileError": {
+    "canonical_index": 4569,
+    "canonical_symbol_id": "src/kinetics/Falloff.cpp:201:InputFileError",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      201,
+      201
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "",
+    "native_method": "InputFileError",
+    "native_source_definition": "src/kinetics/Falloff.cpp:201",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.kinetics.InputFileError",
+    "required_native_differential_test": "test_kinetics_family2__InputFileError",
+    "required_performance_test": "benchmark_family2_",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent reaction rate and falloff helper function",
+    "signature": "throw InputFileError(\"FalloffRate::validate\", m_input, err.getMessage())",
+    "stable_symbol_id": "src/kinetics/Falloff.cpp:201:InputFileError"
+  },
+  "src/kinetics/Falloff.cpp:299:pow": {
+    "canonical_index": 4570,
+    "canonical_symbol_id": "src/kinetics/Falloff.cpp:299:pow",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      299,
+      299
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "",
+    "native_method": "pow",
+    "native_source_definition": "src/kinetics/Falloff.cpp:299",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.kinetics.pow",
+    "required_native_differential_test": "test_kinetics_family2__pow",
+    "required_performance_test": "benchmark_family2_",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent reaction rate and falloff helper function",
+    "signature": "return pow(10.0, lgf)",
+    "stable_symbol_id": "src/kinetics/Falloff.cpp:299:pow"
+  },
+  "src/kinetics/Falloff.cpp:493:pow": {
+    "canonical_index": 4571,
+    "canonical_symbol_id": "src/kinetics/Falloff.cpp:493:pow",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      493,
+      493
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "",
+    "native_method": "pow",
+    "native_source_definition": "src/kinetics/Falloff.cpp:493",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.kinetics.pow",
+    "required_native_differential_test": "test_kinetics_family2__pow",
+    "required_performance_test": "benchmark_family2_",
+    "runtime_callers": [
+      "cantera_python.kinetics.BulkKinetics",
+      "cantera_python.kinetics.GasKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Pressure-dependent reaction rate and falloff helper function",
+    "signature": "return pow(10.0, lgf)",
+    "stable_symbol_id": "src/kinetics/Falloff.cpp:493:pow"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "closure_family": "FAMILY_3_HETEROGENEOUS_AND_SURFACE",
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "average_slowdown_factor": 831.6260899574982,
+  "native_speed_parity": false,
+  "workload_benchmarks": [
+    {
+      "workload": "ptcombust_surf",
+      "mechanism": "ptcombust.yaml",
+      "n_reactions": 24,
+      "n_species": 43,
+      "native_median_ms": 0.001395,
+      "python_median_ms": 0.854900004924275,
+      "slowdown_factor": 612.8315447485842,
+      "iterations": 100
+    },
+    {
+      "workload": "ptcombust_motzwise_surf",
+      "mechanism": "ptcombust-motzwise.yaml",
+      "n_reactions": 24,
+      "n_species": 43,
+      "native_median_ms": 0.001361,
+      "python_median_ms": 0.9699999936856329,
+      "slowdown_factor": 712.7112370945135,
+      "iterations": 100
+    },
+    {
+      "workload": "blowers_masel_surf",
+      "mechanism": "blowers-masel.yaml",
+      "n_reactions": 6,
+      "n_species": 14,
+      "native_median_ms": 0.000295,
+      "python_median_ms": 0.49849999777507037,
+      "slowdown_factor": 1689.8305009324417,
+      "iterations": 200
+    },
+    {
+      "workload": "sofc_metal_surf",
+      "mechanism": "sofc.yaml",
+      "n_reactions": 6,
+      "n_species": 9,
+      "native_median_ms": 0.000557,
+      "python_median_ms": 0.17330000991933048,
+      "slowdown_factor": 311.13107705445327,
+      "iterations": 200
+    }
+  ]
+}

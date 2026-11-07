@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "solver_family": "reactor_network",
+  "entry_points": [
+    "cantera_python.reactor.ReactorNet.__init__",
+    "cantera_python.reactor.ReactorNet.add_reactor",
+    "cantera_python.reactor.ReactorNet.initialize",
+    "cantera_python.reactor.ReactorNet.reinitialize",
+    "cantera_python.reactor.ReactorNet.advance",
+    "cantera_python.reactor.ReactorNet.step",
+    "cantera_python.reactor.ReactorNet.setAdvanceLimits",
+    "cantera_python.reactor.ReactorNet.hasAdvanceLimits",
+    "cantera_python.reactor.ReactorNet.getAdvanceLimits",
+    "cantera_python.reactor.ReactorNet.getDerivative",
+    "cantera_python.reactor.ReactorNet.getEstimate",
+    "cantera_python.reactor.ReactorNet.sensitivity",
+    "cantera_python.reactor.ReactorNet.sensitivities",
+    "cantera_python.reactor.ReactorNet.registerSensitivityParameter",
+    "cantera_python.reactor.ReactorNet.sensitivityParameterName",
+    "cantera_python.reactor.ReactorNet.solveSteady",
+    "cantera_python.reactor.ReactorNet.steadyJacobian",
+    "cantera_python.reactor.ReactorNet.jacobian",
+    "cantera_python.reactor.ReactorNet.finiteDifferenceJacobian",
+    "cantera_python.reactor.ReactorNet.solverStats",
+    "cantera_python.reactor.ReactorNet.lastOrder",
+    "cantera_python.reactor.ReactorNet.setRelativeTolerance",
+    "cantera_python.reactor.ReactorNet.setAbsoluteTolerance",
+    "cantera_python.reactor.ReactorNet.clearAbsoluteTolerance",
+    "cantera_python.reactor.ReactorNet.setTolerances",
+    "cantera_python.reactor.ReactorNet.updateTolerances",
+    "cantera_python.reactor.ReactorNet.componentName",
+    "cantera_python.reactor.ReactorNet.globalComponentIndex",
+    "cantera_python.reactor.ReactorNet.upperBound",
+    "cantera_python.reactor.ReactorNet.lowerBound",
+    "cantera_python.reactor.ReactorNet.resetBadValues"
+  ],
+  "nodes": {
+    "cantera_python.reactor.ReactorNet.__init__": {
+      "callees": [
+        "cantera_python.numerics.FuncEval.__init__",
+        "cantera_python.numerics.CVodesIntegrator.__init__",
+        "cantera_python.reactor.ReactorNet.updateTolerances"
+      ],
+      "description": "Initialize ReactorNet attributes, reactor vectors, BDF CVodesIntegrator instance and seed tolerances"
+    },
+    "cantera_python.reactor.ReactorNet.add_reactor": {
+      "callees": [
+        "cantera_python.reactor.ReactorBase.setNetwork",
+        "cantera_python.reactor.ReactorNet.setNeedsReinit"
+      ],
+      "description": "Register reactor with network, classify as bulk or surface, attach network pointer, and request integrator reinit"
+    },
+    "cantera_python.reactor.ReactorNet.initialize": {
+      "callees": [
+        "cantera_python.reactor.ReactorBase.setOffset",
+        "cantera_python.reactor.ReactorBase.initialize",
+        "cantera_python.reactor.ReactorNet.updateTolerances",
+        "cantera_python.numerics.CVodesIntegrator.initialize"
+      ],
+      "description": "Compute equation offsets, initialize reactors and walls, assemble tolerance vectors, and initialize pure-Python CVodesIntegrator"
+    },
+    "cantera_python.reactor.ReactorNet.reinitialize": {
+      "callees": [
+        "cantera_python.reactor.ReactorBase.updateConnected",
+        "cantera_python.reactor.ReactorNet.updateTolerances",
+        "cantera_python.numerics.CVodesIntegrator.reinitialize"
+      ],
+      "description": "Reinitialize CVodesIntegrator at new starting time/state without destroying network topology"
+    },
+    "cantera_python.reactor.ReactorNet.advance": {
+      "callees": [
+        "cantera_python.reactor.ReactorNet.initialize",
+        "cantera_python.numerics.CVodesIntegrator.integrate",
+        "cantera_python.reactor.ReactorNet.updateState"
+      ],
+      "description": "Advance network solution to requested tout using CVodesIntegrator and update constituent reactor thermodynamic states"
+    },
+    "cantera_python.reactor.ReactorNet.step": {
+      "callees": [
+        "cantera_python.reactor.ReactorNet.initialize",
+        "cantera_python.numerics.CVodesIntegrator.step",
+        "cantera_python.reactor.ReactorNet.updateState"
+      ],
+      "description": "Advance ODE system by exactly one internal variable-order BDF step toward tout = time + 1.0"
+    },
+    "cantera_python.reactor.ReactorNet.eval": {
+      "callees": [
+        "cantera_python.reactor.ReactorNet.updateState",
+        "cantera_python.reactor.ReactorNet._global_rhs",
+        "cantera_python.reactor.ReactorBase.rhs"
+      ],
+      "description": "FuncEval RHS callback: unpack state vector y, dispatch to reactors/walls/flow devices, and assemble ydot"
+    },
+    "cantera_python.reactor.ReactorNet.getDerivative": {
+      "callees": [
+        "cantera_python.reactor.ReactorNet.initialize",
+        "cantera_python.numerics.CVodesIntegrator.derivative"
+      ],
+      "description": "Evaluate analytical k-th order time derivative via CVodesIntegrator Nordsieck polynomial expansion"
+    },
+    "cantera_python.reactor.ReactorNet.getEstimate": {
+      "callees": [
+        "cantera_python.reactor.ReactorNet.initialize",
+        "cantera_python.numerics.CVodesIntegrator.solution",
+        "cantera_python.reactor.ReactorNet.getDerivative"
+      ],
+      "description": "Taylor polynomial state prediction y(t) = y(t0) + sum (dt^n / n!) d^n y / dt^n"
+    },
+    "cantera_python.reactor.ReactorNet.sensitivity": {
+      "callees": [
+        "cantera_python.reactor.ReactorNet.globalComponentIndex",
+        "cantera_python.reactor.ReactorNet.initialize",
+        "cantera_python.numerics.CVodesIntegrator.sensitivity",
+        "cantera_python.numerics.CVodesIntegrator.solution"
+      ],
+      "description": "Calculate normalized relative sensitivity (dy_k / dp) / y_k from CVodesIntegrator forward sensitivity equations"
+    },
+    "cantera_python.reactor.ReactorNet.solveSteady": {
+      "callees": [
+        "cantera_python.reactor.ReactorNet.finiteDifferenceJacobian",
+        "cantera_python.reactor.ReactorNet._eval_rhs",
+        "cantera_python.reactor._python_dense_solve",
+        "cantera_python.reactor.ReactorNet.updateState"
+      ],
+      "description": "Steady-state Newton solver with finite-difference network Jacobian and pure-Python pivoted LU factorization"
+    },
+    "cantera_python.reactor.ReactorNet.solverStats": {
+      "callees": [
+        "cantera_python.numerics.CVodesIntegrator.solverStats"
+      ],
+      "description": "Retrieve solver statistics dictionary matching native Cantera AnyMap keys"
+    },
+    "cantera_python.reactor.ReactorNet.updateTolerances": {
+      "callees": [
+        "cantera_python.reactor.ReactorBase.getAbsoluteTolerances",
+        "cantera_python.reactor.ReactorBase.updateDefaultTolerances",
+        "cantera_python.numerics.CVodesIntegrator.setTolerances"
+      ],
+      "description": "Assemble global atol vector from scalar network settings and per-reactor rules, passing to integrator"
+    }
+  }
+}

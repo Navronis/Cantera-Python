@@ -1,0 +1,78 @@
+{
+  "active_closure_family": "FAMILY_1_CORE_HOMOGENEOUS_ENGINE",
+  "active_closure_symbols_closed": 169,
+  "artifact_hashes": {
+    "corpus_kinetics.jsonl": {
+      "path": "audit/corpus_kinetics.jsonl",
+      "sha256": "e1cb876b97f15d4b4996f4e9a9f1fb6b3c1866460568ea269e2903dfcaf1c509",
+      "size_bytes": 8739
+    },
+    "kinetics.py": {
+      "path": "cantera_python/kinetics.py",
+      "sha256": "7c690663144120fad15d272a4e0a13e1996e90a4f871019b553607aaa3304d26",
+      "size_bytes": 116347
+    },
+    "kinetics_active_closure_symbol_set.json": {
+      "path": "audit/kinetics_active_closure_symbol_set.json",
+      "sha256": "232a2d3c5766229446de50b74cd1df97c93cce214d7d59224ca680456e8417b1",
+      "size_bytes": 245721
+    },
+    "kinetics_complete_runtime_call_graph.json": {
+      "path": "audit/kinetics_complete_runtime_call_graph.json",
+      "sha256": "c5d4e0dbd1e3fe68ee74b4f19641020c18c2e0485e308b8602f1433ebb8adada",
+      "size_bytes": 181860
+    },
+    "kinetics_differential_summary.json": {
+      "path": "audit/kinetics_differential_summary.json",
+      "sha256": "720dbe443939235760bf7409dac5fbf97af4d3efdecc98b6390169abe91829d5",
+      "size_bytes": 109069
+    },
+    "kinetics_performance_benchmark.json": {
+      "path": "audit/kinetics_performance_benchmark.json",
+      "sha256": "61b5def95361b0f22cc36c2a948c253e15d396f6e4dfc8d46e309881db8454fe",
+      "size_bytes": 1075
+    },
+    "kinetics_source_closure_plan.json": {
+      "path": "audit/kinetics_source_closure_plan.json",
+      "sha256": "adc1aa4a8c0f8e052da3363b518287188f09ceb2bad3b0e4d37c933a0c6732aa",
+      "size_bytes": 763390
+    },
+    "native_kinetics_oracle_results.json": {
+      "path": "audit/native_kinetics_oracle_results.json",
+      "sha256": "0615ec3e079ac46fe64e17a8f7f4b17dd4a7e376312cbb8c19972e1df586395e",
+      "size_bytes": 851199
+    },
+    "python_kinetics_port_results.json": {
+      "path": "audit/python_kinetics_port_results.json",
+      "sha256": "bd974c62c3471a861e6e2ca406c148357034b55f01dc5bdcb06d9b6e52d20889",
+      "size_bytes": 1350287
+    },
+    "rates.py": {
+      "path": "cantera_python/rates.py",
+      "sha256": "479a6ac84ac46bf4fd685fab4d587f50c0913a00d3f956456928dc70f98dd8fc",
+      "size_bytes": 65716
+    }
+  },
+  "manifest_schema_version": "1.0.0",
+  "open_kinetics_symbols": 498,
+  "performance": {
+    "gri30_slowdown": 500.3,
+    "h2o2_slowdown": 157.92,
+    "mean_slowdown_vs_native": 329.11,
+    "vectorized_speedup_over_scalar": 21.43
+  },
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "pinned_native_validated_symbols": 169,
+  "proven_non_runtime_symbols": 82,
+  "subsystem": "kinetics",
+  "timestamp": "2026-11-06T08:45:00Z",
+  "total_kinetics_symbols": 749,
+  "validation_campaign": {
+    "bitwise_identical_ratio": 0.6787,
+    "cases_evaluated": 37,
+    "cases_failed": 0,
+    "cases_passed": 37,
+    "status": "FULL_PARITY",
+    "total_comparisons": 50552
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-11-04T22:25:00Z",
+  "mechanisms": {
+    "gri30.yaml": {
+      "n_species": 53,
+      "species": [
+        "H2",
+        "H",
+        "O",
+        "O2",
+        "OH",
+        "H2O",
+        "HO2",
+        "H2O2",
+        "C",
+        "CH",
+        "CH2",
+        "CH2(S)",
+        "CH3",
+        "CH4",
+        "CO",
+        "CO2",
+        "HCO",
+        "CH2O",
+        "CH2OH",
+        "CH3O",
+        "CH3OH",
+        "C2H",
+        "C2H2",
+        "C2H3",
+        "C2H4",
+        "C2H5",
+        "C2H6",
+        "HCCO",
+        "CH2CO",
+        "HCCOH",
+        "N",
+        "NH",
+        "NH2",
+        "NH3",
+        "NNH",
+        "NO",
+        "NO2",
+        "N2O",
+        "HNO",
+        "CN",
+        "HCN",
+        "H2CN",
+        "HCNN",
+        "HCNO",
+        "HOCN",
+        "HNCO",
+        "NCO",
+        "N2",
+        "AR",
+        "C3H7",
+        "C3H8",
+        "CH2CHO",
+        "CH3CHO"
+      ],
+      "matrix_shape": [
+        53,
+        53
+      ],
+      "flux_vector_shape": [
+        53
+      ],
+      "verified": true
+    },
+    "h2o2.yaml": {
+      "n_species": 10,
+      "species": [
+        "H2",
+        "H",
+        "O",
+        "O2",
+        "OH",
+        "H2O",
+        "HO2",
+        "H2O2",
+        "AR",
+        "N2"
+      ],
+      "matrix_shape": [
+        10,
+        10
+      ],
+      "flux_vector_shape": [
+        10
+      ],
+      "verified": true
+    }
+  }
+}

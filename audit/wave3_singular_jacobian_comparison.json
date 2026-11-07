@@ -1,0 +1,188 @@
+{
+  "cases": 88,
+  "status_matches": 88,
+  "status_mismatches": [],
+  "property_tolerances": {
+    "T": {
+      "rtol": 1e-08,
+      "atol": 0.01
+    },
+    "P": {
+      "rtol": 1e-07,
+      "atol": 1.0
+    },
+    "v": {
+      "rtol": 1e-05,
+      "atol": 1e-10
+    },
+    "rho": {
+      "rtol": 1e-05,
+      "atol": 1e-08
+    },
+    "h": {
+      "rtol": 5e-06,
+      "atol": 0.1
+    },
+    "u": {
+      "rtol": 5e-06,
+      "atol": 0.1
+    },
+    "s": {
+      "rtol": 5e-06,
+      "atol": 0.001
+    },
+    "quality": {
+      "rtol": 1e-05,
+      "atol": 1e-08
+    }
+  },
+  "observable_fields_compared": {
+    "T": 85,
+    "P": 85,
+    "v": 85,
+    "rho": 85,
+    "h": 85,
+    "u": 0,
+    "s": 85,
+    "quality": 0
+  },
+  "unavailable_native_observables": {
+    "internal_energy": 85,
+    "quality": 85
+  },
+  "error_distributions": {
+    "T": {
+      "count": 85,
+      "p50_absolute": 0.0,
+      "p95_absolute": 0.0,
+      "p99_absolute": 0.0,
+      "max_absolute": 0.0,
+      "p50_relative": 0.0,
+      "p95_relative": 0.0,
+      "p99_relative": 0.0,
+      "max_relative": 0.0
+    },
+    "P": {
+      "count": 85,
+      "p50_absolute": 5.587935447692871e-08,
+      "p95_absolute": 0.020261675119400024,
+      "p99_absolute": 0.027418585494160652,
+      "max_absolute": 0.031195922754704952,
+      "p50_relative": 3.035243198195454e-14,
+      "p95_relative": 5.719070589067496e-09,
+      "p99_relative": 8.074263943428104e-09,
+      "max_relative": 9.095662946963122e-09
+    },
+    "v": {
+      "count": 85,
+      "p50_absolute": 2.0816681711721685e-15,
+      "p95_absolute": 2.1050711798697996e-09,
+      "p99_absolute": 3.5786642603279073e-09,
+      "max_absolute": 1.6129268374902306e-08,
+      "p50_relative": 1.1542134010621538e-13,
+      "p95_relative": 3.5594238345096686e-07,
+      "p99_relative": 1.6025382886136378e-06,
+      "max_relative": 8.006736202009065e-06
+    },
+    "rho": {
+      "count": 85,
+      "p50_absolute": 2.091837814077735e-11,
+      "p95_absolute": 7.731513017006364e-05,
+      "p99_absolute": 0.0007176233631298601,
+      "max_absolute": 0.003974658764207106,
+      "p50_relative": 1.1552044208636167e-13,
+      "p95_relative": 3.559423835112819e-07,
+      "p99_relative": 1.6025382886166483e-06,
+      "max_relative": 8.006736201939306e-06
+    },
+    "h": {
+      "count": 85,
+      "p50_absolute": 6.100162863731384e-08,
+      "p95_absolute": 0.03240947052836418,
+      "p99_absolute": 0.11383439987548627,
+      "max_absolute": 0.4915573795733508,
+      "p50_relative": 2.3766653609239353e-14,
+      "p95_relative": 7.16296693712978e-08,
+      "p99_relative": 4.7458236531870394e-07,
+      "max_relative": 2.568007835344687e-06
+    },
+    "u": {
+      "count": 0,
+      "p50_absolute": null,
+      "p95_absolute": null,
+      "p99_absolute": null,
+      "max_absolute": null,
+      "p50_relative": null,
+      "p95_relative": null,
+      "p99_relative": null,
+      "max_relative": null
+    },
+    "s": {
+      "count": 85,
+      "p50_absolute": 1.9330400391481817e-08,
+      "p95_absolute": 0.0002826033996825572,
+      "p99_absolute": 0.0007365011515503284,
+      "max_absolute": 0.0013136383231540094,
+      "p50_relative": 4.6438052182396765e-12,
+      "p95_relative": 4.259497616414008e-08,
+      "p99_relative": 1.7545512574398232e-07,
+      "max_relative": 1.0112148015061335e-06
+    },
+    "quality": {
+      "count": 0,
+      "p50_absolute": null,
+      "p95_absolute": null,
+      "p99_absolute": null,
+      "max_absolute": null,
+      "p50_relative": null,
+      "p95_relative": null,
+      "p99_relative": null,
+      "max_relative": null
+    }
+  },
+  "target_property_residuals": {
+    "T": {
+      "native": {
+        "count": 85,
+        "max_abs": 0.0
+      },
+      "python": {
+        "count": 85,
+        "max_abs": 0.0
+      }
+    },
+    "P": {
+      "native": {
+        "count": 54,
+        "max_abs": 0.12982601672410965
+      },
+      "python": {
+        "count": 54,
+        "max_abs": 0.12982642278075218
+      }
+    },
+    "quality": {
+      "native": {
+        "count": 0,
+        "max_abs": null
+      },
+      "python": {
+        "count": 31,
+        "max_abs": 1.1102230246251565e-16
+      }
+    }
+  },
+  "property_mismatches": [],
+  "fallback_activation_instrumented": false,
+  "direct_jacobian_division_instrumented": true,
+  "python_only_regularization_present": false,
+  "fallback_activation_cases": [],
+  "fallback_activation_count": 0,
+  "fallback_activation_events": [],
+  "failure_messages_compared": false,
+  "evidence_status": "LIVE_PINNED_NATIVE_AND_PYTHON_RERUN",
+  "waves_1_3_snapshot_id": "fc63583ec6249d35444d7e68c5971a96b67aa7051af9d75904ffafd151bdc2ca",
+  "repository_snapshot_kind": "WORKING_TREE_SNAPSHOT_WITH_DIFF_HASH",
+  "evidence_binding_scope": "SAVED_RAW_RECORDS_NOT_REPROVEN",
+  "evidence_binding_note": "Report generated for this repository snapshot. Raw-run freshness is separately established only when the execution-provenance file verifies its raw hashes and pinned identity."
+}

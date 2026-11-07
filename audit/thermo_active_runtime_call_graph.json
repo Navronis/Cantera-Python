@@ -1,0 +1,65 @@
+{
+  "family": "THERMO_FAMILY_1_PHASE_CORE_STATE_FOUNDATION",
+  "root_class": "Phase",
+  "primary_callers": [
+    "ThermoPhase (derived thermo class, inherits state)",
+    "Kinetics (reads species concentrations, temperature, mole fractions)",
+    "Transport (reads composition, molecular weights, density, temperature)",
+    "Reactor (reads density, mass fractions, volume)",
+    "OneDim / Domain1D (reads composition, density, molecular weights)"
+  ],
+  "core_method_clusters": {
+    "identification_and_elements": [
+      "name",
+      "setName",
+      "type",
+      "elementName",
+      "elementIndex",
+      "elementNames",
+      "atomicWeight",
+      "atomicWeights",
+      "atomicNumber",
+      "nElements",
+      "checkElementIndex"
+    ],
+    "species_and_molecular_weights": [
+      "speciesName",
+      "speciesIndex",
+      "speciesNames",
+      "nSpecies",
+      "checkSpeciesIndex",
+      "molecularWeight",
+      "molecularWeights",
+      "meanMolecularWeight"
+    ],
+    "state_coordinates": [
+      "temperature",
+      "setTemperature",
+      "density",
+      "setDensity",
+      "molarDensity",
+      "molarVolume",
+      "pressure",
+      "setPressure"
+    ],
+    "composition_representations": [
+      "getMoleFractions",
+      "setMoleFractions",
+      "setMoleFractionsByName",
+      "getMassFractions",
+      "setMassFractions",
+      "setMassFractionsByName",
+      "getConcentrations",
+      "setConcentrations",
+      "concentration",
+      "moleFraction",
+      "massFraction"
+    ],
+    "partial_molar_quantities_and_stoichiometry": [
+      "nAtoms",
+      "getAtoms",
+      "elementalMassFraction",
+      "elementalMoleFraction"
+    ]
+  }
+}

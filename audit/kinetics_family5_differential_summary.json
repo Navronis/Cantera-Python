@@ -1,0 +1,326 @@
+{
+  "family": "FAMILY_5_PLASMA_VIBRATIONAL_AND_MULTIRATE",
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "total_cases": 45,
+  "total_passed": 45,
+  "pass_rate_percent": 100.0,
+  "max_global_relative_error": 1.6654118876401579e-06,
+  "all_passed": true,
+  "case_reports": [
+    {
+      "case_id": "fam5_vib_001_T300_P101325",
+      "category": "vibrational_relaxation",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_vib_002_T500_P50662",
+      "category": "vibrational_relaxation",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 3.635537558084073e-15
+    },
+    {
+      "case_id": "fam5_vib_003_T800_P202650",
+      "category": "vibrational_relaxation",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 7.0391843133473515e-15
+    },
+    {
+      "case_id": "fam5_vib_004_T1000_P101325",
+      "category": "vibrational_relaxation",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 3.558734010821894e-15
+    },
+    {
+      "case_id": "fam5_vib_005_T1200_P1013250",
+      "category": "vibrational_relaxation",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_vib_006_T1500_P101325",
+      "category": "vibrational_relaxation",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 3.526531876255881e-15
+    },
+    {
+      "case_id": "fam5_vib_007_T1800_P506625",
+      "category": "vibrational_relaxation",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 3.613633994200895e-15
+    },
+    {
+      "case_id": "fam5_vib_008_T2200_P101325",
+      "category": "vibrational_relaxation",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 7.329885686482009e-15
+    },
+    {
+      "case_id": "fam5_vib_009_T2600_P2026500",
+      "category": "vibrational_relaxation",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 3.476189269115996e-15
+    },
+    {
+      "case_id": "fam5_vib_010_T3000_P101325",
+      "category": "vibrational_relaxation",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 6.934684484372912e-15
+    },
+    {
+      "case_id": "fam5_plasma2t_001_T300_Te11604",
+      "category": "two_temp_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.6654118873725308e-06
+    },
+    {
+      "case_id": "fam5_plasma2t_002_T400_Te23209",
+      "category": "two_temp_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.66541188755441e-06
+    },
+    {
+      "case_id": "fam5_plasma2t_003_T600_Te34813",
+      "category": "two_temp_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.6654118875966816e-06
+    },
+    {
+      "case_id": "fam5_plasma2t_004_T800_Te46418",
+      "category": "two_temp_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.6654118874240598e-06
+    },
+    {
+      "case_id": "fam5_plasma2t_005_T1000_Te58022",
+      "category": "two_temp_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.6654118875445268e-06
+    },
+    {
+      "case_id": "fam5_plasma2t_006_T1200_Te11604",
+      "category": "two_temp_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.6654118872397821e-06
+    },
+    {
+      "case_id": "fam5_plasma2t_007_T1500_Te23209",
+      "category": "two_temp_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.6654118874896028e-06
+    },
+    {
+      "case_id": "fam5_plasma2t_008_T1800_Te34813",
+      "category": "two_temp_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.6654118875546185e-06
+    },
+    {
+      "case_id": "fam5_plasma2t_009_T2000_Te46418",
+      "category": "two_temp_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.665411887631007e-06
+    },
+    {
+      "case_id": "fam5_plasma2t_010_T2500_Te58022",
+      "category": "two_temp_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.6654118876401579e-06
+    },
+    {
+      "case_id": "fam5_airplasma_001_T300",
+      "category": "air_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_airplasma_002_T500",
+      "category": "air_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_airplasma_003_T1000",
+      "category": "air_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_airplasma_004_T1500",
+      "category": "air_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_airplasma_005_T2000",
+      "category": "air_plasma",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_custom_delegator_001_T300",
+      "category": "custom_delegator",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_custom_delegator_002_T500",
+      "category": "custom_delegator",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_custom_delegator_003_T1000",
+      "category": "custom_delegator",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_custom_delegator_004_T1500",
+      "category": "custom_delegator",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_custom_delegator_005_T2000",
+      "category": "custom_delegator",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_multirate_001_Arrhenius",
+      "category": "multirate_ops",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_multirate_002_Blowers_Masel",
+      "category": "multirate_ops",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_multirate_003_two_temperature_plasma",
+      "category": "multirate_ops",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_multirate_004_constant_vibrational_relaxation",
+      "category": "multirate_ops",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_multirate_005_custom_rate_function",
+      "category": "multirate_ops",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_deriv_001_h2o2_T500",
+      "category": "kinetics_derivatives",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 4.6816644275727034e-27
+    },
+    {
+      "case_id": "fam5_deriv_002_gri30_T800",
+      "category": "kinetics_derivatives",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.778341284825748e-19
+    },
+    {
+      "case_id": "fam5_deriv_003_vibrational-relaxation_T1000",
+      "category": "kinetics_derivatives",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_deriv_004_h2o2_T1200",
+      "category": "kinetics_derivatives",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.9891684668591116e-08
+    },
+    {
+      "case_id": "fam5_deriv_005_gri30_T1500",
+      "category": "kinetics_derivatives",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 3.6847578692061624e-08
+    },
+    {
+      "case_id": "fam5_deriv_006_h2o2_T1800",
+      "category": "kinetics_derivatives",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 5.065943819707856e-08
+    },
+    {
+      "case_id": "fam5_deriv_007_gri30_T2000",
+      "category": "kinetics_derivatives",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 1.7525191959673623e-07
+    },
+    {
+      "case_id": "fam5_deriv_008_vibrational-relaxation_T2200",
+      "category": "kinetics_derivatives",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 0.0
+    },
+    {
+      "case_id": "fam5_deriv_009_h2o2_T2500",
+      "category": "kinetics_derivatives",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 4.181232428532131e-08
+    },
+    {
+      "case_id": "fam5_deriv_010_gri30_T3000",
+      "category": "kinetics_derivatives",
+      "passed": true,
+      "discrepancies": [],
+      "max_rel_err": 2.9031140995053157e-07
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/flow1d_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-05T18:57:07.777553+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "solver_family": "flow1d",
+  "subsystem": "1D reacting flow domains (Flow1D / StFlow)",
+  "closure_symbol_count": 131,
+  "pinned_native_validated_symbols": 118,
+  "non_runtime_cpp_only_symbols": 13,
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0, libcantera_shared.so.4.0.0"
+  },
+  "file_hashes": {
+    "oned_py": "6168e1b3ba01e8f09dfc8b977cb8c4e1529a72bf497594f5ea990a1e44436405",
+    "test_flow1d_py": "26f08ae714296be5f31ee7c6ee49864ea7f577e4149dc442627c28812c89a072",
+    "test_flow1d_flames_py": "deab23cdebfd979f106e330bac49ca49c5378d4e203c8cbc06a46f3f8eb2235b",
+    "corpus_flow1d_jsonl": "4c500bc19a9442de1bb6095440fcd64b98f7d24a8b455a9d09ea469356fe6fa0",
+    "run_native_flow1d_oracle_cpp": "a75606008dc9b4f2c7a887014018998fa4ddea93aa84150767964c21a9152131",
+    "run_python_flow1d_port_py": "ee7e5a7684bbd07f15397be77369abcf24415ca168ec4c0f86e4f5b0538e38dc",
+    "run_flow1d_campaign_py": "8b1a2f878ca3f00a1538f8877fb66309d3e61855e623caf35a9ce0442ecf6e25",
+    "benchmark_native_flow1d_cpp": "867b9c052e04ca02da15df6c74c032ce05f4c3cd481679a5a936a63ad01f4ac1",
+    "benchmark_flow1d_performance_py": "e736ea56b486aee4d4bfe8de1ec5582fafab57023d1c6326c7d5a84fa3e79bee",
+    "native_flow1d_oracle_results_json": "6f09c70ba0afaed4d6f6729a7fe352260d5b3f5e6c66e7a454fc74dfdd9d8c44",
+    "python_flow1d_port_results_json": "1471926d98a8ec4c701fe29f02e2ff49f57064d94810ae926b39ad68ade01cd1",
+    "flow1d_differential_summary_json": "5cf31511e1a7793ef06189c555e61dbc895fca299f2cb39df715c37af6d1cd74",
+    "flow1d_performance_benchmark_json": "8fc96fc97ff72a3ac55e838424cca47c99e6e9671fd884028252bcf4a4cfdfca",
+    "flow1d_starting_snapshot_json": "e1a5554b2eef617d296e2b5caffbf4ba79b2421372d7f52a828a3651e50f60d2",
+    "flow1d_closure_symbol_set_json": "3a1b8dd2e938023331f066db2af0a60172a98aa28c092f3aa29e0351f5668e57",
+    "flow1d_runtime_call_graph_json": "e2fffd5f4a8779a9f18394314a51d84f2105cb07b6731645ced5109260a8ebe8",
+    "pinned_flow1d_h": "8719940d021d255a0d999d4e3bf52edff43d35c0db55e01537bb4ad63e31be4f",
+    "pinned_flow1d_cpp": "f4e13d64107ece0e38c199df41681973f64338d53ea646cb046a900e05b54091",
+    "pinned_stflow_h": "FILE_NOT_FOUND",
+    "pinned_stflow_cpp": "FILE_NOT_FOUND"
+  },
+  "campaign_summary": {
+    "total_cases": 30,
+    "passed_cases": 30,
+    "failed_cases": 0,
+    "pass_rate_pct": 100.0,
+    "parity_achieved": true
+  },
+  "performance_benchmark": {
+    "mean_slowdown_factor": 40426.519145657,
+    "comparisons": [
+      {
+        "name": "FreeFlow_10pts",
+        "domain_type": "free-flow",
+        "points": 10,
+        "native_median_us": 13.305,
+        "python_median_us": 339841.59999818075,
+        "slowdown_factor": 25542.397594752405,
+        "native_reps": 5000,
+        "python_reps": 200
+      },
+      {
+        "name": "AxisymmetricFlow_10pts_Rad",
+        "domain_type": "axisymmetric-flow",
+        "points": 10,
+        "native_median_us": 13.856,
+        "python_median_us": 407162.4999996857,
+        "slowdown_factor": 29385.284353326046,
+        "native_reps": 5000,
+        "python_reps": 200
+      },
+      {
+        "name": "UnstrainedFlow_10pts",
+        "domain_type": "unstrained-flow",
+        "points": 10,
+        "native_median_us": 13.684,
+        "python_median_us": 381883.90000141226,
+        "slowdown_factor": 27907.32972825287,
+        "native_reps": 5000,
+        "python_reps": 200
+      },
+      {
+        "name": "FreeFlow_25pts",
+        "domain_type": "free-flow",
+        "points": 25,
+        "native_median_us": 37.947,
+        "python_median_us": 2992920.2999992413,
+        "slowdown_factor": 78871.0649062967,
+        "native_reps": 2000,
+        "python_reps": 100
+      }
+    ]
+  },
+  "independent_status_flags": {
+    "FLOW1D_SOURCE_LOGIC_COMPLETE": true,
+    "FLOW1D_RUNTIME_INTEGRATED": true,
+    "FLOW1D_NUMERICAL_PARITY": true,
+    "FLOW1D_ADVERSARIAL_VALIDATED": true,
+    "FLOW1D_FAILURE_SEMANTICS_VALIDATED": true,
+    "FLOW1D_NATIVE_PERFORMANCE_BENCHMARKED": true,
+    "FLOW1D_NATIVE_SPEED_PARITY": false,
+    "FLOW1D_FULL_REGRESSION_CLEAN": true,
+    "FLOW1D_FULLY_FROZEN": true
+  }
+}

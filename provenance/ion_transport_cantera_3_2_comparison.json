@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-17",
+  "reference": "released Cantera 3.2.0 (supplementary, not the exact pinned oracle)",
+  "mechanism": "data/gri30_ion.yaml",
+  "phase": "gas",
+  "state": {
+    "temperature_K": 1200.0,
+    "pressure_Pa": 101325.0,
+    "mole_composition": "N2:0.7,O2:0.2,H2O:0.09999998,HCO+:1e-8,E:1e-8"
+  },
+  "native": {
+    "viscosity": 4.800450085901067e-05,
+    "thermal_conductivity": 0.08597788208263807,
+    "electrical_conductivity": 0.003929680764453163,
+    "mobilities": {"HCO+": 0.001046558236970873, "H3O+": 0.0011986053202214142, "E": 0.4},
+    "mix_diff_coeffs": {"HCO+": 0.00010822249214547713, "H3O+": 0.00012394537792953799, "E": 0.04136319965829686}
+  },
+  "python": {
+    "viscosity": 4.849949251826793e-05,
+    "thermal_conductivity": 0.08522300628314707,
+    "electrical_conductivity": 0.003929677003272423,
+    "mobilities": {"HCO+": 0.0010461743868119997, "H3O+": 0.0011981873283975538, "E": 0.4},
+    "mix_diff_coeffs": {"HCO+": 0.0001081827989689904, "H3O+": 0.00012390215423137329, "E": 0.04136319965829686}
+  },
+  "limitations": "Neutral transport uses the port's approximate collision-integral layer; this comparison is not exact-pinned validation."
+}

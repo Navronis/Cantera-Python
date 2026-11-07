@@ -1,0 +1,23 @@
+{
+  "water_transport": {
+    "iterations": 10000,
+    "seconds": 0.05777829998987727,
+    "us_per_call": 5.777829998987727,
+    "native_us_per_call": 4.2863,
+    "ratio_py_to_native": 1.3479761096954779
+  },
+  "unity_lewis_transport": {
+    "iterations": 10000,
+    "seconds": 4.219191200012574,
+    "us_per_call": 421.9191200012574,
+    "native_us_per_call": 0.2766,
+    "ratio_py_to_native": 1525.376428059499
+  },
+  "ion_gas_transport": {
+    "iterations": 1000,
+    "seconds": 3.001354200008791,
+    "us_per_call": 3001.354200008791,
+    "native_us_per_call": 1.28,
+    "ratio_py_to_native": 2344.807968756868
+  }
+}

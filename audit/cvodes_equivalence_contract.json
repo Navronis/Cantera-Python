@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "solver_family": "cvodes_integrator",
+  "native_oracle_pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "equivalence_definitions": {
+    "public_observable_parity": {
+      "state_at_target_time": "Solution y(t) evaluated via integrate(tout) must match pinned native within specified rtol and atol (max rel err < 1e-4 for stiff problems, < 1e-6 for analytic)",
+      "one_step_advancement": "step(tout) must advance by one internal BDF step and return the new internal time tn, advancing monotonically towards tout",
+      "derivative_evaluation": "derivative(tout, n) must match numerical derivatives and native CVodeGetDky to within BDF interpolation error",
+      "forward_sensitivity": "sensitivity(k, p) must match analytic derivatives and native CVodeGetSens for parameterized ODEs",
+      "limits_and_configuration": "Tolerances, max_step, min_step, max_steps, and max_err_test_fails must be strictly enforced with source-equivalent error exceptions",
+      "reinitialization": "Calling reinitialize(t0, func) must clear history so subsequent solves are completely uncontaminated by prior runs"
+    },
+    "numerical_behavior": {
+      "stiff_stability": "Must integrate stiff problems (Robertson kinetics, stiff exponential decay lambda=1e6) stably without unphysical oscillations",
+      "tolerance_response": "Tightening rtol from 1e-4 down to 1e-10 must show expected error reduction",
+      "bdf_orders": "Must support and exercise variable BDF orders 1 through 5",
+      "long_horizon": "Must integrate over long time horizons (> 1000 time units) without artificial limit failures when configured with reasonable max_steps"
+    },
+    "internal_solver_behavior": {
+      "step_sequences": "Because Python BDF and native SUNDIALS use adaptive step heuristics, internal step sizes and orders need not be bit-for-bit identical, provided trajectories and public observables match the contract"
+    }
+  }
+}

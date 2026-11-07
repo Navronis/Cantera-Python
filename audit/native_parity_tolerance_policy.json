@@ -1,0 +1,270 @@
+{
+  "policy_version": "2.0",
+  "pinned_cantera_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "methodology": "Property-specific and regime-specific tolerances based on algebraic vs iterative conditioning and thermodynamic sensitivity",
+  "waves": {
+    "wave1": {
+      "name": "Thermodynamic Inverse-State Solvers",
+      "solver_family": "Safeguarded Newton-Bisection Inversion",
+      "convergence_target_rtol": 1e-9,
+      "tolerances": {
+        "temperature": {
+          "rtol": 1e-7,
+          "atol": 1e-4,
+          "unit": "K",
+          "rationale": "Newton-bisection iteration converges to rtol <= 1e-8. Tested with independent start points >=20% away."
+        },
+        "pressure": {
+          "rtol": 1e-7,
+          "atol": 1e-2,
+          "unit": "Pa",
+          "rationale": "Exact input for HP/SP. For UV/SV, calculated from ideal-gas state equation P = rho * R * T."
+        },
+        "density": {
+          "rtol": 1e-7,
+          "atol": 1e-8,
+          "unit": "kg/m^3",
+          "rationale": "Inverted via specific volume in UV/SV, or computed from equation of state in HP/SP."
+        },
+        "enthalpy": {
+          "rtol": 1e-7,
+          "atol": 1.0,
+          "unit": "J/kg",
+          "rationale": "Direct target in setState_HP; computed from converged T and polynomial coefficients."
+        },
+        "int_energy": {
+          "rtol": 1e-7,
+          "atol": 1.0,
+          "unit": "J/kg",
+          "rationale": "Direct target in setState_UV; related to h by u = h - P*v."
+        },
+        "entropy": {
+          "rtol": 1e-7,
+          "atol": 1e-3,
+          "unit": "J/(kg*K)",
+          "rationale": "Direct target in setState_SP and setState_SV; logarithmic T-dependence."
+        },
+        "cp": {
+          "rtol": 1e-6,
+          "atol": 1e-4,
+          "unit": "J/(kg*K)",
+          "rationale": "Algebraic polynomial evaluation (NASA-7 / NASA-9)."
+        },
+        "cv": {
+          "rtol": 1e-6,
+          "atol": 1e-4,
+          "unit": "J/(kg*K)",
+          "rationale": "Algebraic evaluation: cv = cp - R/W for ideal gas mixtures."
+        }
+      }
+    },
+    "wave2": {
+      "name": "Cubic Non-Ideal State and Root Solvers",
+      "solver_family": "Analytical Cardano / Trigonometric Cubic Root Solver with Phase Selection",
+      "tolerances": {
+        "density": {
+          "nominal": {
+            "rtol": 1e-6,
+            "atol": 1e-7,
+            "unit": "kg/m^3",
+            "rationale": "Analytical cubic root solve in single-phase and stable vapor/liquid branches."
+          },
+          "near_spinodal": {
+            "rtol": 5e-5,
+            "atol": 1e-6,
+            "unit": "kg/m^3",
+            "rationale": "Near spinodal or critical points where cubic discriminant approaches zero."
+          }
+        },
+        "molar_volume": {
+          "rtol": 1e-6,
+          "atol": 1e-8,
+          "unit": "m^3/kmol",
+          "rationale": "Inverse relation to density v = W / rho."
+        },
+        "enthalpy": {
+          "rtol": 1e-5,
+          "atol": 50.0,
+          "unit": "J/kg",
+          "rationale": "Departure function integration over non-ideal cubic equation of state."
+        },
+        "int_energy": {
+          "rtol": 1e-5,
+          "atol": 50.0,
+          "unit": "J/kg",
+          "rationale": "Departure function internal energy u = h - P*v."
+        },
+        "entropy": {
+          "rtol": 1e-5,
+          "atol": 0.5,
+          "unit": "J/(kg*K)",
+          "rationale": "Logarithmic volume integration plus ideal gas standard state."
+        },
+        "cp": {
+          "rtol": 1e-4,
+          "atol": 5.0,
+          "unit": "J/(kg*K)",
+          "rationale": "Analytical temperature derivative of enthalpy departure."
+        },
+        "cv": {
+          "rtol": 1e-4,
+          "atol": 5.0,
+          "unit": "J/(kg*K)",
+          "rationale": "Analytical temperature derivative of internal energy departure."
+        }
+      }
+    },
+    "wave3": {
+      "name": "TPX Pure-Fluid Equations of State",
+      "solver_family": "Helmholtz Free Energy Residual & Multidimensional Pair Inversions",
+      "tolerances": {
+        "forward": {
+          "temperature": {
+            "rtol": 1e-7,
+            "atol": 1e-5,
+            "unit": "K",
+            "rationale": "Independent state variable in forward evaluation."
+          },
+          "pressure": {
+            "rtol": 5e-6,
+            "atol": 1.0,
+            "unit": "Pa",
+            "rationale": "BWR/Helmholtz algebraic pressure evaluation; observed max rel err 9.30e-7."
+          },
+          "density": {
+            "rtol": 5e-6,
+            "atol": 1e-5,
+            "unit": "kg/m^3",
+            "rationale": "Iterative 1D root solve for rho given (T, P); observed max rel err 1.13e-6."
+          },
+          "enthalpy": {
+            "rtol": 5e-6,
+            "atol": 10.0,
+            "unit": "J/kg",
+            "rationale": "Helmholtz energy residual plus reference offsets; observed max rel err 1.89e-7."
+          },
+          "int_energy": {
+            "rtol": 5e-6,
+            "atol": 10.0,
+            "unit": "J/kg",
+            "rationale": "Helmholtz u = h - P/rho."
+          },
+          "entropy": {
+            "rtol": 5e-6,
+            "atol": 0.05,
+            "unit": "J/(kg*K)",
+            "rationale": "Helmholtz temperature derivative."
+          },
+          "gibbs": {
+            "rtol": 5e-6,
+            "atol": 10.0,
+            "unit": "J/kg",
+            "rationale": "Helmholtz g = h - T*s."
+          },
+          "cp": {
+            "rtol": 1e-4,
+            "atol": 5.0,
+            "unit": "J/(kg*K)",
+            "rationale": "Second derivative of Helmholtz energy in single-phase region."
+          },
+          "cv": {
+            "rtol": 1e-4,
+            "atol": 5.0,
+            "unit": "J/(kg*K)",
+            "rationale": "Second temperature derivative of Helmholtz energy in single-phase region."
+          }
+        },
+        "quality": {
+          "temperature": {
+            "rtol": 1e-6,
+            "atol": 1e-4,
+            "unit": "K",
+            "rationale": "Nonlinear iterative saturation temperature solve T = Tsat(P) from vapor pressure curve."
+          },
+          "pressure": {
+            "rtol": 1e-6,
+            "atol": 1.0,
+            "unit": "Pa",
+            "rationale": "Input saturation pressure."
+          },
+          "density": {
+            "rtol": 5e-6,
+            "atol": 1e-4,
+            "unit": "kg/m^3",
+            "rationale": "Mixture two-phase density from saturated liquid/vapor densities and vapor fraction."
+          },
+          "enthalpy": {
+            "rtol": 5e-6,
+            "atol": 10.0,
+            "unit": "J/kg",
+            "rationale": "Mixture two-phase enthalpy from saturated liquid/vapor values."
+          },
+          "entropy": {
+            "rtol": 5e-6,
+            "atol": 0.05,
+            "unit": "J/(kg*K)",
+            "rationale": "Mixture two-phase entropy from saturated liquid/vapor values."
+          },
+          "quality": {
+            "rtol": 1e-6,
+            "atol": 1e-6,
+            "unit": "dimensionless",
+            "rationale": "Input vapor fraction quality."
+          }
+        },
+        "saturation": {
+          "pressure": {
+            "rtol": 1e-5,
+            "atol": 10.0,
+            "unit": "Pa",
+            "rationale": "Vapor pressure equation iteration."
+          },
+          "rho_liq": {
+            "rtol": 1e-5,
+            "atol": 1e-4,
+            "unit": "kg/m^3",
+            "rationale": "Saturated liquid density root solve."
+          },
+          "rho_vap": {
+            "rtol": 1e-5,
+            "atol": 1e-4,
+            "unit": "kg/m^3",
+            "rationale": "Saturated vapor density root solve."
+          },
+          "h_liq": {
+            "rtol": 1e-5,
+            "atol": 20.0,
+            "unit": "J/kg",
+            "rationale": "Saturated liquid enthalpy evaluation."
+          },
+          "h_vap": {
+            "rtol": 1e-5,
+            "atol": 20.0,
+            "unit": "J/kg",
+            "rationale": "Saturated vapor enthalpy evaluation."
+          }
+        },
+        "property_pairs": {
+          "temperature": {
+            "rtol": 1e-4,
+            "atol": 0.05,
+            "unit": "K",
+            "rationale": "Multidimensional 2D Newton inversion."
+          },
+          "pressure": {
+            "rtol": 1e-4,
+            "atol": 10.0,
+            "unit": "Pa",
+            "rationale": "Multidimensional 2D Newton inversion."
+          },
+          "density": {
+            "rtol": 1e-4,
+            "atol": 1e-3,
+            "unit": "kg/m^3",
+            "rationale": "Multidimensional 2D Newton inversion."
+          }
+        }
+      }
+    }
+  }
+}

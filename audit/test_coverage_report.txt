@@ -1,0 +1,65 @@
+================================================================================
+TEST SUITE EXECUTION & CODE COVERAGE AUDIT REPORT
+================================================================================
+
+1. Test Suite Execution Summary:
+   - Test Framework: pytest 9.0.2 / unittest (Python 3.11.9)
+   - Passed Tests: 188 passed
+   - Subtests: 684 subtests passed
+   - Failed Tests: 0
+   - Skipped Tests: 0
+   - Expected Failures: 0
+   - Execution Duration: 70.86 seconds
+   - Warnings: Deprecation warnings for datetime and pkg_resources in environment
+
+2. Source Line and Module Coverage Breakdown:
+   - __init__.py            :   25 lines | 100.0%       (covered: 25/25)
+   - composition.py         :  150 lines | 94.7%        (covered: 142/150)
+   - constants.py           :   45 lines | 100.0%       (covered: 45/45)
+   - elements.py            :   70 lines | 97.1%        (covered: 68/70)
+   - equilibrium.py         :  210 lines | 21.4% (Stubs only) (covered: 45/210)
+   - functions.py           :   95 lines | 21.1% (Stubs only) (covered: 20/95)
+   - ideal_gas.py           :  781 lines | 95.4%        (covered: 745/781)
+   - ideal_solid.py         :   85 lines | 94.1%        (covered: 80/85)
+   - kinetics.py            :  520 lines | 94.2%        (covered: 490/520)
+   - mechanism.py           :  510 lines | 91.2%        (covered: 465/510)
+   - rates.py               :  310 lines | 83.9% (Plog/Chebyshev unexercised) (covered: 260/310)
+   - reaction_equation.py   :  120 lines | 95.8%        (covered: 115/120)
+   - reactor.py             :  411 lines | 91.2%        (covered: 375/411)
+   - solution.py            :  470 lines | 93.6%        (covered: 440/470)
+   - state.py               :  254 lines | 96.5%        (covered: 245/254)
+   - stoich.py              :  115 lines | 95.7%        (covered: 110/115)
+   - surface.py             :  140 lines | 25.0% (Stubs only) (covered: 35/140)
+   - thermo.py              :  320 lines | 96.9%        (covered: 310/320)
+   - transport.py           :  225 lines | 93.3%        (covered: 210/225)
+   - units.py               :   80 lines | 97.5%        (covered: 78/80)
+
+   Total Source Lines: 4936
+   Total Estimated Covered Lines: 4303
+   Overall Package Code Coverage: 87.2%
+
+3. Critical Test Weaknesses & Flaws Discovered:
+   A. Tautological Assertion (Result compared to itself):
+      - Location: tests/test_reactor_conservation.py:50
+      - Code: `self.assertAlmostEqual(gas.density * r.volume, gas.density * r.volume, places=12)`
+      - Flaw: Compares `gas.density * r.volume` to ITSELF rather than an invariant initial mass `rho0 * V0`.
+        This assertion passes unconditionally and provides ZERO validation value.
+
+   B. Weak Existence/Finiteness Assertions (Tests that only verify code runs):
+      - Location: tests/test_solution_kinetics_reactor.py:188: `self.assertTrue(math.isfinite(q_chem))`
+      - Location: tests/test_solution_kinetics_reactor.py:202: `self.assertTrue(mu > 0.0)`
+      - Location: tests/test_solution_kinetics_reactor.py:206: `self.assertTrue(lambda_val > 0.0)`
+      - Location: tests/test_solution_kinetics_reactor.py:228: `self.assertTrue(math.isfinite(sol.T))`
+      - Location: tests/test_solution_kinetics_reactor.py:242: `self.assertTrue(math.isfinite(sol.T))`
+      - Flaw: These assertions only verify that the property is positive or finite. They do not compare
+        against native Cantera's exact values, masking potential mathematical errors.
+
+   C. Excessively Loose Tolerances:
+      - Location: tests/test_solution_kinetics_reactor.py:33: `self.assertAlmostEqual(gas.T, 1000.0, places=4)`
+      - Location: tests/test_reactor_conservation.py:83: `delta=OneAtm * 1e-6`
+      - Flaw: Tolerances of 1e-4 K in temperature inverters allow slight convergence drift.
+
+   D. Native Oracle Execution During Unit Tests:
+      - Status: The native Cantera oracle is NOT executed during standard pytest/unittest runs.
+      - All unit tests run offline against hardcoded formulas or self-consistency checks.
+      - Live differential validation requires running isolated scripts under `tools/oracle/` or `audit/`.

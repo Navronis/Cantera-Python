@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/reactor_network_starting_snapshot.json",
+  "snapshot_timestamp_utc": "2026-11-05T07:08:11.398728+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "file_hashes": {
+    "reactor_py": "7e9c044917564e49416b522dd2bb2f2396e0d7095d1a04e852a0c99db7b9e400",
+    "numerics_py": "4a85a40839c458b22abad14671654eb9f96f744d0cf7cb3c100aaa4ce6a1cf60",
+    "test_reactor_network_py": "1f06c6c4527ac96da30642bd9296dd24a805c619553b9cd145a8375c057c8989",
+    "test_reactor_conservation_py": "17f2dc607b46c9679415ad32b197da9719d6c0aa1f3eae2a80e4441beacfd978",
+    "reactor_network_closure_symbol_set_json": "9ad54143fe8a53cdff830459da0d285a1ec86f071a299cd1f980499bfb6d30cb",
+    "reactor_network_runtime_call_graph_json": "4ed0e0b3c65b455387615b8a698a3e57847bbc52e19e0b11042e12fb221eb08b",
+    "cvodes_integrator_frozen_manifest_json": "c9edfa6f9617bd955198ecf969d993557fef3091bc78996c44a4a0244ee4c368",
+    "pinned_native_ReactorNet_h": "d4565ea88facda8d79fd7e3ee13b3dbaaa36ed80b9d99111f3d44078f007616b",
+    "pinned_native_ReactorNet_cpp": "46f8d3ca02a4cb1ca55f84356e4ffbe3ab360e5d9854bcd8d82526fb1fdb0aa6"
+  },
+  "frozen_cvodes_reused": true,
+  "initial_symbol_counts": {
+    "total": 68,
+    "open_runtime": 67,
+    "non_runtime_cpp_only": 1
+  }
+}

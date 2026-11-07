@@ -1,0 +1,115 @@
+{
+  "run_id": "a0f6357d731a18c658ed89201f122bf7",
+  "total_adversarial_cases": 6,
+  "passed_adversarial_cases": 6,
+  "cases": [
+    {
+      "case_id": "DUSTY_ADV_NANOPORE_061",
+      "mechanism": "h2o2.yaml",
+      "n_species": 10,
+      "passed": true,
+      "cond_err": {
+        "abs": 1.6653345369377348e-16,
+        "rel": 9.811529890909183e-16
+      },
+      "multi_diff_err": {
+        "abs": 2.6469779601696886e-23,
+        "rel": 9.853088594287733e-15
+      },
+      "flux_err": {
+        "abs": 2.752857078576476e-21,
+        "rel": 1.1650330990647391e-14
+      }
+    },
+    {
+      "case_id": "DUSTY_ADV_MACROPORE_062",
+      "mechanism": "h2o2.yaml",
+      "n_species": 10,
+      "passed": true,
+      "cond_err": {
+        "abs": 1.6653345369377348e-16,
+        "rel": 9.811529890909183e-16
+      },
+      "multi_diff_err": {
+        "abs": 8.881784197001252e-16,
+        "rel": 4.681191806943965e-15
+      },
+      "flux_err": {
+        "abs": 3.3306690738754696e-14,
+        "rel": 1.1086329444544686e-14
+      }
+    },
+    {
+      "case_id": "DUSTY_ADV_LOW_POROSITY_063",
+      "mechanism": "h2o2.yaml",
+      "n_species": 10,
+      "passed": true,
+      "cond_err": {
+        "abs": 5.551115123125783e-17,
+        "rel": 2.4236443013069956e-16
+      },
+      "multi_diff_err": {
+        "abs": 5.029258124322408e-22,
+        "rel": 7.832301967325759e-15
+      },
+      "flux_err": {
+        "abs": 2.0752307207730358e-20,
+        "rel": 1.1478580807053037e-14
+      }
+    },
+    {
+      "case_id": "DUSTY_ADV_TRACE_GRI_064",
+      "mechanism": "gri30.yaml",
+      "n_species": 53,
+      "passed": true,
+      "cond_err": {
+        "abs": 3.2335245592207684e-15,
+        "rel": 3.399966203984004e-14
+      },
+      "multi_diff_err": {
+        "abs": 3.469446951953614e-18,
+        "rel": 4.2494040135522626e-14
+      },
+      "flux_err": {
+        "abs": 3.148523108897905e-16,
+        "rel": 4.621070497297123e-14
+      }
+    },
+    {
+      "case_id": "DUSTY_ADV_P100BAR_T3200_065",
+      "mechanism": "gri30.yaml",
+      "n_species": 53,
+      "passed": true,
+      "cond_err": {
+        "abs": 7.41073868937292e-15,
+        "rel": 3.526759153646168e-14
+      },
+      "multi_diff_err": {
+        "abs": 8.803721640582296e-17,
+        "rel": 7.209031960476784e-14
+      },
+      "flux_err": {
+        "abs": 7.494005416219807e-16,
+        "rel": 1.2369888741476784e-14
+      }
+    },
+    {
+      "case_id": "DUSTY_ADV_ZERO_GRAD_066",
+      "mechanism": "h2o2.yaml",
+      "n_species": 10,
+      "passed": true,
+      "cond_err": {
+        "abs": 1.6653345369377348e-16,
+        "rel": 1.1132750356034318e-15
+      },
+      "multi_diff_err": {
+        "abs": 3.469446951953614e-18,
+        "rel": 5.3236316823440045e-15
+      },
+      "flux_err": {
+        "abs": 0.0,
+        "rel": 0.0
+      }
+    }
+  ]
+}

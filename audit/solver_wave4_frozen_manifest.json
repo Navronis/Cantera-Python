@@ -1,0 +1,124 @@
+{
+  "manifest_schema_version": "2.0",
+  "manifest_title": "Cantera Wave 4 MultiTransport / Stefan-Maxwell Multicomponent Transport Foundation Frozen Manifest (Evidence Closure)",
+  "status": "VALIDATED_AND_FROZEN",
+  "closure_gate": "PASSED",
+  "frozen_timestamp": "2026-09-27T16:17:51+0530",
+  "pinned_native_reference": {
+    "exact_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, Linux 6.6.87.2, glibc 2.39",
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "oracle_identity_json": {
+      "file": "audit/native_oracle_identity.json",
+      "sha256": "41b22f6cf4e0e0ec7f1fe015e9c44be568c526e24a0c1f0f5a2966549cf4cff2"
+    }
+  },
+  "frozen_scope": {
+    "wave4": {
+      "name": "MultiTransport / Stefan-Maxwell Multicomponent Transport Solver Stack",
+      "status": "VALIDATED_AND_FROZEN",
+      "frozen": true,
+      "closure_flags": {
+        "NATIVE_WAVE4_ORACLE_REVERIFIED": true,
+        "NATIVE_WAVE4_PRODUCER_BOUND": true,
+        "WAVE_4_EXPECTED_MATRIX_DIMENSIONS_VALIDATED": true,
+        "WAVE_4_FULL_BINARY_MATRIX_PARITY": true,
+        "WAVE_4_FULL_MULTIDIFF_MATRIX_PARITY": true,
+        "WAVE_4_NATIVE_FAILURE_SEMANTICS_VALIDATED": true,
+        "WAVE_4_SOURCE_ACCOUNTED": true,
+        "WAVE_4_IMPLEMENTATION_COMPLETE": true,
+        "WAVE_4_INDEPENDENTLY_VALIDATED": true,
+        "WAVE_4_ADVERSARIAL_VALIDATED": true,
+        "WAVE_4_LIVE_PINNED_NATIVE_VALIDATED": true,
+        "WAVE_4_FROZEN": true,
+        "READY_TO_START_WAVE_5": true
+      }
+    }
+  },
+  "cryptographic_run_provenance": {
+    "provenance_file": "audit/solver_wave4_run_provenance.json",
+    "provenance_sha256": "7f725a5331fa692dc4b72e776e36b5720ceed44dfd9145a053a6ed9dd9f58591",
+    "wave4_run_id": "w4_0e6da47414ae3487",
+    "records_cryptographically_verified": 10000
+  },
+  "implementation_hashes": {
+    "cantera_python/transport.py": "d97538a6d08b05bc2567779e084327f1cfd62c9fed5a75bf234560624915da23",
+    "cantera_python/solution.py": "861ad9f0abd2fa7af5af11e8991048ea9adcdbbbde8d55b950ff7a547ce1cca2",
+    "tests/test_transport.py": "7f2425a6d013ae55a8c46bd66adecffd234e9a540d24aa46b3c4f2d0794b35cc",
+    "tests/test_multicomponent_transport.py": "281ba68f5033463be3f4625589607bb32804d2e3411daca9f7bb517e229d9976"
+  },
+  "native_differential_artifacts": {
+    "general_corpus": {
+      "corpus_file": "audit/corpus_wave4.jsonl",
+      "corpus_sha256": "832dbafaf132d5245d917be50283b37c409b1873dca9a7e847262f4e6417a4a1",
+      "cases": 10000,
+      "native_results": "audit/native_wave4_results.jsonl",
+      "native_results_sha256": "b0a61b64ab13afb6ba2c3c058b98da2def5b37d79c4fd886555a4b9c4816cff1",
+      "python_results": "audit/python_wave4_results.jsonl",
+      "python_results_sha256": "cf4903aa5d2ca5c37046fc3bdd106c65a236ee2434f5453a38fc730ea475391f",
+      "validation_report": "audit/solver_wave4_differential_validation.md",
+      "validation_report_sha256": "ee8d1c1f92bfb65d872f408e8c33d979249ae3e9ac41264d749924e0e0798433",
+      "comparisons": 44345000,
+      "dimension_assertions": 1810000,
+      "dimension_errors": 0,
+      "unexplained_mismatches": 0,
+      "unexplained_nonfinites": 0,
+      "solvability_statement": "All tested transport solves completed successfully and produced finite source-equivalent outputs."
+    },
+    "live_adversarial_subset": {
+      "corpus_file": "audit/corpus_wave4_adversarial_diff.jsonl",
+      "corpus_sha256": "07acb5cd2582912f9ca2b28dc7f3ce59f84477e185624d7c56fff5f605f29022",
+      "cases": 2500,
+      "native_results": "audit/native_wave4_adversarial_results.jsonl",
+      "native_results_sha256": "56c8002873136326bb56edcf230dd096353becd71aae2155dc39c4caf1a09ac5",
+      "python_results": "audit/python_wave4_adversarial_results.jsonl",
+      "python_results_sha256": "5bc09b59e6e5cf2eb8066ced341b7063006808beb95acb0577360c4668d347fb",
+      "validation_report": "audit/solver_wave4_adversarial_validation.md",
+      "validation_report_sha256": "ef4ebd16d5025f78562d46977a1e092c47fee19b27d16448c3ca11cccb1b453a",
+      "comparisons": 10052100,
+      "unexplained_mismatches": 0,
+      "unexplained_nonfinites": 0
+    }
+  },
+  "structural_and_failure_validations": {
+    "full_binary_matrix": {
+      "file": "audit/solver_wave4_full_binary_matrix_validation.jsonl",
+      "sha256": "f76d046d5f4aa5c0b5af007a866826b951eb31dec5c45c24d732a43f67785df7",
+      "status": "PASS"
+    },
+    "full_multidiff_matrix": {
+      "file": "audit/solver_wave4_full_multidiff_matrix_validation.jsonl",
+      "sha256": "3bdba0193899cbfab959cb74874673a7a82669fa071e44e57574c93207418164",
+      "status": "PASS"
+    },
+    "failure_semantics": {
+      "file": "audit/native_failure_semantics_wave4.jsonl",
+      "sha256": "7cf8baa3e12ddd7cb8f1168afe7f5949eddb52736392efcc19567ca984f5c03c",
+      "cases_tested": 13,
+      "failure_success_status_mismatches": 0,
+      "failure_category_mismatches": 0,
+      "unknown_failure_category": 0,
+      "status": "PASS"
+    },
+    "source_inventory": {
+      "file": "audit/solver_wave4_source_inventory.jsonl",
+      "sha256": "11b375ea795d3e559e8423636e889b78e2cf65053371768a300c6f940a82121d",
+      "total_symbols": 126,
+      "ported_symbols": 57,
+      "non_runtime_symbols": 69,
+      "missing": 0,
+      "partial": 0,
+      "unjustified_approximations": 0,
+      "status": "PASS"
+    },
+    "independent_audit": {
+      "file": "audit/solver_wave4_independent_audit.md",
+      "sha256": "2b3893e100ff17eb06bf20ea579967e3d044105750da452e8f6fce4de3a967e2",
+      "disposition": "FULLY APPROVED FOR CLOSURE AND FREEZE"
+    }
+  },
+  "regression_testing": {
+    "test_transport_and_multitransport": "10 passed in 14.33s",
+    "full_suite": "371 passed, 3 skipped, 2 warnings in 226.30s (03:46)"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "total_failure_tests": 6,
+  "status_mismatches": 0,
+  "failure_category_mismatches": 0,
+  "unknown_failures": 0,
+  "results": [
+    {
+      "test": "T_negative",
+      "result": "EXCEPTION",
+      "type": "CanteraError"
+    },
+    {
+      "test": "P_negative",
+      "result": "EXCEPTION",
+      "type": "CanteraError"
+    },
+    {
+      "test": "state_too_small",
+      "result": "EXCEPTION",
+      "type": "ArraySizeError"
+    },
+    {
+      "test": "flux_too_small",
+      "result": "EXCEPTION",
+      "type": "ArraySizeError"
+    },
+    {
+      "test": "ld_too_small",
+      "result": "EXCEPTION",
+      "type": "CanteraError"
+    },
+    {
+      "test": "d_too_small",
+      "result": "EXCEPTION",
+      "type": "ArraySizeError"
+    }
+  ]
+}

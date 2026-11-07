@@ -1,0 +1,442 @@
+{
+  "cases": [
+    {
+      "case_id": "domain1d_01_default_construction",
+      "index": 0,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "points": 1,
+      "size": 1,
+      "bandwidth": -1,
+      "zmin": 0.0,
+      "zmax": 0.0,
+      "domain_type": "domain"
+    },
+    {
+      "case_id": "domain1d_02_resize_and_defaults",
+      "index": 1,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "points": 8,
+      "size": 24,
+      "bandwidth": -1,
+      "zmin": 0.0,
+      "zmax": 0.0,
+      "domain_type": "domain",
+      "steady_rtol": [
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "steady_atol": [
+        1e-09,
+        1e-09,
+        1e-09
+      ],
+      "transient_rtol": [
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "transient_atol": [
+        1e-11,
+        1e-11,
+        1e-11
+      ]
+    },
+    {
+      "case_id": "domain1d_03_component_names_and_indices",
+      "index": 2,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "component_names": [
+        "velocity",
+        "temperature",
+        "species_H2"
+      ],
+      "queried_indices": [
+        0,
+        1,
+        2
+      ],
+      "has_components": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "case_id": "domain1d_04_set_and_query_bounds",
+      "index": 3,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "lower_bounds": [
+        -100.0,
+        250.0,
+        0.0
+      ],
+      "upper_bounds": [
+        200.0,
+        3500.0,
+        1.0
+      ]
+    },
+    {
+      "case_id": "domain1d_05_steady_tolerances_all_and_per_comp",
+      "index": 4,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "steady_rtol": [
+        1e-05,
+        1e-05,
+        1e-07,
+        1e-05
+      ],
+      "steady_atol": [
+        1e-10,
+        1e-10,
+        1e-12,
+        1e-10
+      ],
+      "transient_rtol": [
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "transient_atol": [
+        1e-11,
+        1e-11,
+        1e-11,
+        1e-11
+      ]
+    },
+    {
+      "case_id": "domain1d_06_transient_tolerances_all_and_per_comp",
+      "index": 5,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "steady_rtol": [
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "steady_atol": [
+        1e-09,
+        1e-09,
+        1e-09,
+        1e-09
+      ],
+      "transient_rtol": [
+        0.0002,
+        5e-06,
+        0.0002,
+        0.0002
+      ],
+      "transient_atol": [
+        3e-10,
+        7e-12,
+        3e-10,
+        3e-10
+      ]
+    },
+    {
+      "case_id": "domain1d_07_mode_switching_tolerances",
+      "index": 6,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "steady_rtol": [
+        0.001,
+        0.001
+      ],
+      "steady_atol": [
+        1e-08,
+        1e-08
+      ],
+      "transient_rtol": [
+        2e-05,
+        2e-05
+      ],
+      "transient_atol": [
+        3e-11,
+        3e-11
+      ],
+      "steady_flag": true,
+      "transient_flag": false,
+      "current_rtol": [
+        0.001,
+        0.001
+      ],
+      "current_atol": [
+        1e-08,
+        1e-08
+      ]
+    },
+    {
+      "case_id": "domain1d_08_prev_solution_caching",
+      "index": 7,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "prev_solution": [
+        1.1,
+        2.2,
+        3.3,
+        4.4,
+        5.5,
+        6.6
+      ]
+    },
+    {
+      "case_id": "domain1d_09_setup_custom_grid",
+      "index": 8,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "grid_points": [
+        0.0,
+        0.05,
+        0.12,
+        0.25,
+        0.45,
+        0.7,
+        1.0
+      ],
+      "zmin": 0.0,
+      "zmax": 1.0
+    },
+    {
+      "case_id": "domain1d_10_setup_uniform_grid",
+      "index": 9,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "grid_points": [
+        0.01,
+        0.015,
+        0.02,
+        0.025,
+        0.03,
+        0.035,
+        0.04,
+        0.045000000000000005,
+        0.05,
+        0.055,
+        0.060000000000000005
+      ],
+      "zmin": 0.01,
+      "zmax": 0.060000000000000005
+    },
+    {
+      "case_id": "domain1d_11_reset_bad_values_clamping",
+      "index": 10,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "clamped_state": [
+        -2.0,
+        15.0,
+        5.0,
+        -10.0,
+        12.0,
+        0.0
+      ]
+    },
+    {
+      "case_id": "domain1d_12_topology_three_domains",
+      "index": 11,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "d0_loc": 0,
+      "d0_firstPoint": 0,
+      "d0_lastPoint": 0,
+      "d1_loc": 1,
+      "d1_firstPoint": 1,
+      "d1_lastPoint": 5,
+      "d2_loc": 16,
+      "d2_firstPoint": 6,
+      "d2_lastPoint": 6,
+      "d1_global_idx_2_3": 12,
+      "has_d0_left": false,
+      "has_d0_right": true,
+      "has_d2_right": false
+    },
+    {
+      "case_id": "domain1d_13_topology_five_domains",
+      "index": 12,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "topology5_locs": [
+        0,
+        2,
+        18,
+        19,
+        37
+      ],
+      "topology5_firstPoints": [
+        0,
+        1,
+        5,
+        6,
+        12
+      ],
+      "topology5_lastPoints": [
+        0,
+        4,
+        5,
+        11,
+        12
+      ]
+    },
+    {
+      "case_id": "domain1d_14_refiner_criteria_delegation",
+      "index": 13,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "refine_criteria": [
+        12.0,
+        0.35,
+        0.45,
+        0.02
+      ]
+    },
+    {
+      "case_id": "domain1d_15_jacobian_mode_configuration",
+      "index": 14,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "jacobian_mode": "auto",
+      "caught_invalid_jacobian_mode": true
+    },
+    {
+      "case_id": "domain1d_16_metadata_uniform_tolerances",
+      "index": 15,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "meta": {
+        "type": "domain",
+        "points": 5,
+        "tolerances": {
+          "transient-abstol": 2e-09,
+          "steady-abstol": 1e-08,
+          "transient-reltol": 0.0002,
+          "steady-reltol": 0.0001
+        }
+      }
+    },
+    {
+      "case_id": "domain1d_17_metadata_nonuniform_tolerances",
+      "index": 16,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "meta": {
+        "type": "domain",
+        "points": 4,
+        "tolerances": {
+          "transient-abstol": 1e-11,
+          "steady-abstol": {
+            "u": 1e-08,
+            "V": 3e-08,
+            "T": 1e-07
+          },
+          "transient-reltol": 0.0001,
+          "steady-reltol": {
+            "u": 0.0001,
+            "V": 0.0002,
+            "T": 5e-05
+          }
+        }
+      }
+    },
+    {
+      "case_id": "domain1d_18_element_indexing_and_access",
+      "index": 17,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "element_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "queried_values": [
+        10.1,
+        20.1,
+        30.1,
+        10.2,
+        20.2,
+        30.2,
+        10.3,
+        20.3,
+        30.3,
+        10.4,
+        20.4,
+        30.4
+      ]
+    },
+    {
+      "case_id": "domain1d_19_initial_solution_loading",
+      "index": 18,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "initial_solution": [
+        101.0,
+        201.0,
+        102.0,
+        202.0,
+        103.0,
+        203.0,
+        104.0,
+        204.0
+      ]
+    },
+    {
+      "case_id": "domain1d_20_set_flat_profile",
+      "index": 19,
+      "success": true,
+      "exception_thrown": false,
+      "error_message": "",
+      "shared_state": [
+        0.0,
+        42.75,
+        0.0,
+        0.0,
+        42.75,
+        0.0,
+        0.0,
+        42.75,
+        0.0,
+        0.0,
+        42.75,
+        0.0,
+        0.0,
+        42.75,
+        0.0
+      ]
+    }
+  ]
+}

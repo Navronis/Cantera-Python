@@ -1,0 +1,49 @@
+{
+  "exact_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "source_directory": "/home/nebula/cantera-pinned-oracle",
+  "compiler_version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "operating_system": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "architecture": "x86_64",
+  "python_version": "Python 3.12.3",
+  "python_executable": "/home/nebula/cantera-oracle-env/bin/python3",
+  "scons_version": "4.11.1.b97f32b9adab83a96af767ec1d7dc8d7a41c7c74",
+  "cantera_conf": {
+    "prefix": "C:UsersDell/cantera-pinned-install",
+    "python_package": "y",
+    "f90_interface": "n"
+  },
+  "build_command": "python3 -m SCons build -j16",
+  "native_extension": {
+    "path": "/home/nebula/cantera-oracle-env/lib/python3.12/site-packages/cantera/_cantera.cpython-312-x86_64-linux-gnu.so",
+    "sha256": "d686773fe369ba07c2ad78431240869a3679316c4bdbb77160062d86aa14c68c"
+  },
+  "libraries": {
+    "libcantera_shared.so": {
+      "path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so",
+      "sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744",
+      "size": 234740800
+    },
+    "libcantera.a": {
+      "path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera.a",
+      "sha256": "0f9948c9d3eea3f12547f11949a9cc6cbf28893ec98d6aa5425860b9d6d14e02",
+      "size": 618918002
+    },
+    "libcantera_python3_12.so": {
+      "path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_python3_12.so",
+      "sha256": "cf70d89d5e1039fd35fcddfe05673a26a794ccb4c7fe320c5f2d2634ee2c5d96",
+      "size": 392760
+    },
+    "libgtest.a": {
+      "path": "/home/nebula/cantera-pinned-oracle/build/lib/libgtest.a",
+      "sha256": "3389cd8950e9fb6477fa081b884694aba2decc6ca6977b713894e362bdb2c46f",
+      "size": 9917990
+    },
+    "libgmock.a": {
+      "path": "/home/nebula/cantera-pinned-oracle/build/lib/libgmock.a",
+      "sha256": "e59b86c335a23bb0f846bcb7f6e7e282d02cff1eb5ef35252d6b95f306a5e77e",
+      "size": 3245302
+    }
+  },
+  "cantera_version_string": "4.0.0a2",
+  "verification_status": "EXACT_PINNED_NATIVE_CONFIRMED"
+}

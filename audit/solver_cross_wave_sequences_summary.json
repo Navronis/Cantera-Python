@@ -1,0 +1,15 @@
+{
+  "total_cases": 508,
+  "passed_cases": 508,
+  "failed_cases": 0,
+  "success_rate": 1.0,
+  "breakdown": {
+    "IdealGas": 200,
+    "CubicEOS": 100,
+    "TPX": 208
+  },
+  "max_relative_error": 3.781246894101382e-07,
+  "median_relative_error": 4.781215349126234e-11,
+  "p95_relative_error": 1.5355329889158417e-07,
+  "p99_relative_error": 2.3497959850106883e-07
+}

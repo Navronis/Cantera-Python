@@ -1,0 +1,303 @@
+{
+  "run_id": "c7d392567f84e748a7a6fb33dcc8f41a",
+  "adversarial_cases_total": 8,
+  "adversarial_cases_passed": 8,
+  "cases": [
+    {
+      "case_id": "HP_ADV_NEAR_CRIT_CO2_0281",
+      "category": "adversarial_near_critical",
+      "quantities": {
+        "viscosity": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "thermal_conductivity": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "binary_diff_coeffs": {
+          "max_abs_error": 3.282252670610414e-21,
+          "max_rel_error": 2.4879524761768573e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs": {
+          "max_abs_error": 3.255782891008717e-21,
+          "max_rel_error": 2.4752140467399627e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs_mole": {
+          "max_abs_error": 3.282252670610414e-21,
+          "max_rel_error": 2.4879524761768573e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs_mass": {
+          "max_abs_error": 3.282252670610414e-21,
+          "max_rel_error": 2.4879524761768573e-14,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "HP_ADV_NEAR_CRIT_CHUNG_0282",
+      "category": "adversarial_near_critical",
+      "quantities": {
+        "viscosity": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "thermal_conductivity": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "binary_diff_coeffs": {
+          "max_abs_error": 3.282252670610414e-21,
+          "max_rel_error": 2.4879524761768573e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs": {
+          "max_abs_error": 3.255782891008717e-21,
+          "max_rel_error": 2.4752140467399627e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs_mole": {
+          "max_abs_error": 3.282252670610414e-21,
+          "max_rel_error": 2.4879524761768573e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs_mass": {
+          "max_abs_error": 3.282252670610414e-21,
+          "max_rel_error": 2.4879524761768573e-14,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "HP_ADV_P600BAR_LUCAS_0283",
+      "category": "adversarial_extreme_pressure",
+      "quantities": {
+        "viscosity": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "thermal_conductivity": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "binary_diff_coeffs": {
+          "max_abs_error": 6.088049308390284e-22,
+          "max_rel_error": 1.9626738640665528e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs": {
+          "max_abs_error": 8.999725064576941e-22,
+          "max_rel_error": 1.4573037867010588e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs_mole": {
+          "max_abs_error": 6.154223757394526e-22,
+          "max_rel_error": 1.4482753563273118e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs_mass": {
+          "max_abs_error": 6.220398206398768e-22,
+          "max_rel_error": 1.463848209621154e-14,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "HP_ADV_P600BAR_CHUNG_0284",
+      "category": "adversarial_extreme_pressure",
+      "quantities": {
+        "viscosity": {
+          "max_abs_error": 2.710505431213761e-20,
+          "max_rel_error": 4.285281625289939e-16,
+          "passed": true
+        },
+        "thermal_conductivity": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 8.129855872852319e-16,
+          "passed": true
+        },
+        "binary_diff_coeffs": {
+          "max_abs_error": 6.088049308390284e-22,
+          "max_rel_error": 1.9626738640665528e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs": {
+          "max_abs_error": 8.999725064576941e-22,
+          "max_rel_error": 1.4573037867010588e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs_mole": {
+          "max_abs_error": 6.154223757394526e-22,
+          "max_rel_error": 1.4482753563273118e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs_mass": {
+          "max_abs_error": 6.220398206398768e-22,
+          "max_rel_error": 1.463848209621154e-14,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "HP_ADV_TRACE_RK_0285",
+      "category": "adversarial_trace_species",
+      "quantities": {
+        "viscosity": {
+          "max_abs_error": 1.1809333350619455e-16,
+          "max_rel_error": 4.081067839456313e-12,
+          "passed": true
+        },
+        "thermal_conductivity": {
+          "max_abs_error": 1.1084883011491797e-13,
+          "max_rel_error": 1.869888108260279e-12,
+          "passed": true
+        },
+        "binary_diff_coeffs": {
+          "max_abs_error": 2.2956075178249234e-17,
+          "max_rel_error": 9.94368039285618e-11,
+          "passed": true
+        },
+        "mix_diff_coeffs": {
+          "max_abs_error": 1.8348639461659468e-17,
+          "max_rel_error": 1.8979392832312657e-11,
+          "passed": true
+        },
+        "mix_diff_coeffs_mole": {
+          "max_abs_error": 5.301565452579273e-16,
+          "max_rel_error": 1.8693417041754508e-09,
+          "passed": true
+        },
+        "mix_diff_coeffs_mass": {
+          "max_abs_error": 1.8348639461659468e-17,
+          "max_rel_error": 1.897939290129295e-11,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "HP_ADV_TRACE_RK_CHUNG_0286",
+      "category": "adversarial_trace_species",
+      "quantities": {
+        "viscosity": {
+          "max_abs_error": 2.000420770871536e-16,
+          "max_rel_error": 7.466399416568103e-12,
+          "passed": true
+        },
+        "thermal_conductivity": {
+          "max_abs_error": 5.743253095324974e-13,
+          "max_rel_error": 1.3353715655991373e-11,
+          "passed": true
+        },
+        "binary_diff_coeffs": {
+          "max_abs_error": 2.2956075178249234e-17,
+          "max_rel_error": 9.94368039285618e-11,
+          "passed": true
+        },
+        "mix_diff_coeffs": {
+          "max_abs_error": 1.8348639461659468e-17,
+          "max_rel_error": 1.8979392832312657e-11,
+          "passed": true
+        },
+        "mix_diff_coeffs_mole": {
+          "max_abs_error": 5.301565452579273e-16,
+          "max_rel_error": 1.8693417041754508e-09,
+          "passed": true
+        },
+        "mix_diff_coeffs_mass": {
+          "max_abs_error": 1.8348639461659468e-17,
+          "max_rel_error": 1.897939290129295e-11,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "HP_ADV_IDEAL_LIMIT_0287",
+      "category": "adversarial_ideal_limit",
+      "quantities": {
+        "viscosity": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "thermal_conductivity": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "binary_diff_coeffs": {
+          "max_abs_error": 1.111307226797642e-18,
+          "max_rel_error": 1.0899786788379814e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs": {
+          "max_abs_error": 1.1655173354219173e-18,
+          "max_rel_error": 5.467191484121306e-15,
+          "passed": true
+        },
+        "mix_diff_coeffs_mole": {
+          "max_abs_error": 8.131516293641283e-19,
+          "max_rel_error": 5.477137708554135e-15,
+          "passed": true
+        },
+        "mix_diff_coeffs_mass": {
+          "max_abs_error": 8.402566836762659e-19,
+          "max_rel_error": 5.659708965505941e-15,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "HP_ADV_IDEAL_LIMIT_CHUNG_0288",
+      "category": "adversarial_ideal_limit",
+      "quantities": {
+        "viscosity": {
+          "max_abs_error": 6.776263578034403e-21,
+          "max_rel_error": 2.125194834260422e-16,
+          "passed": true
+        },
+        "thermal_conductivity": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 7.945463046169378e-16,
+          "passed": true
+        },
+        "binary_diff_coeffs": {
+          "max_abs_error": 1.111307226797642e-18,
+          "max_rel_error": 1.0899786788379814e-14,
+          "passed": true
+        },
+        "mix_diff_coeffs": {
+          "max_abs_error": 1.1655173354219173e-18,
+          "max_rel_error": 5.467191484121306e-15,
+          "passed": true
+        },
+        "mix_diff_coeffs_mole": {
+          "max_abs_error": 8.131516293641283e-19,
+          "max_rel_error": 5.477137708554135e-15,
+          "passed": true
+        },
+        "mix_diff_coeffs_mass": {
+          "max_abs_error": 8.402566836762659e-19,
+          "max_rel_error": 5.659708965505941e-15,
+          "passed": true
+        }
+      },
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "wave": 2,
+  "total_cases": 2000,
+  "success_parity_cases": 1962,
+  "failure_parity_cases": 38,
+  "observed_counts": {
+    "successes": 1962,
+    "failures": 38
+  },
+  "case_count_reconciles": true,
+  "failure_category_matches": 38,
+  "mismatches": 0,
+  "property_error_distributions": {
+    "density": {
+      "attempts": 1962,
+      "finite_comparisons": 1962,
+      "nan_count": 0,
+      "inf_count": 0,
+      "abs_error": {
+        "count": 1962,
+        "p50": 4.440892098500626e-16,
+        "p95": 1.3642420526593924e-12,
+        "p99": 3.524291969370097e-12,
+        "max": 1.801936377887614e-11
+      },
+      "rel_error": {
+        "count": 1962,
+        "p50": 1.2846454741668255e-16,
+        "p95": 2.5704784978838512e-15,
+        "p99": 7.486030652015898e-15,
+        "max": 4.6797664725718987e-14
+      },
+      "tolerance_policy": {
+        "nominal": {
+          "rtol": 1e-06,
+          "atol": 1e-07,
+          "unit": "kg/m^3",
+          "rationale": "Analytical cubic root solve in single-phase and stable vapor/liquid branches."
+        },
+        "near_spinodal": {
+          "rtol": 5e-05,
+          "atol": 1e-06,
+          "unit": "kg/m^3",
+          "rationale": "Near spinodal or critical points where cubic discriminant approaches zero."
+        }
+      }
+    },
+    "molar_volume": {
+      "attempts": 1962,
+      "finite_comparisons": 1962,
+      "nan_count": 0,
+      "inf_count": 0,
+      "abs_error": {
+        "count": 1962,
+        "p50": 2.7755575615628914e-17,
+        "p95": 2.9559688030644793e-15,
+        "p99": 1.4210854715202004e-14,
+        "max": 1.1368683772161603e-13
+      },
+      "rel_error": {
+        "count": 1962,
+        "p50": 1.349229856835272e-16,
+        "p95": 2.5386197119807562e-15,
+        "p99": 7.426641169454771e-15,
+        "max": 4.6829689031363046e-14
+      },
+      "tolerance_policy": {
+        "rtol": 1e-06,
+        "atol": 1e-08,
+        "unit": "m^3/kmol",
+        "rationale": "Inverse relation to density v = W / rho."
+      }
+    },
+    "enthalpy": {
+      "attempts": 1962,
+      "finite_comparisons": 1962,
+      "nan_count": 0,
+      "inf_count": 0,
+      "abs_error": {
+        "count": 1962,
+        "p50": 0.0,
+        "p95": 3.725290298461914e-09,
+        "p99": 3.725290298461914e-09,
+        "max": 7.450580596923828e-09
+      },
+      "rel_error": {
+        "count": 1962,
+        "p50": 0.0,
+        "p95": 4.1358491286794855e-16,
+        "p99": 4.3016646704046687e-16,
+        "max": 8.213870134232311e-16
+      },
+      "tolerance_policy": {
+        "rtol": 1e-05,
+        "atol": 50.0,
+        "unit": "J/kg",
+        "rationale": "Departure function integration over non-ideal cubic equation of state."
+      }
+    },
+    "int_energy": {
+      "attempts": 1962,
+      "finite_comparisons": 1962,
+      "nan_count": 0,
+      "inf_count": 0,
+      "abs_error": {
+        "count": 1962,
+        "p50": 0.0,
+        "p95": 3.725290298461914e-09,
+        "p99": 3.725290298461914e-09,
+        "max": 5.587935447692871e-09
+      },
+      "rel_error": {
+        "count": 1962,
+        "p50": 0.0,
+        "p95": 4.115653276870674e-16,
+        "p99": 4.2033968001762315e-16,
+        "max": 6.222396032087689e-16
+      },
+      "tolerance_policy": {
+        "rtol": 1e-05,
+        "atol": 50.0,
+        "unit": "J/kg",
+        "rationale": "Departure function internal energy u = h - P*v."
+      }
+    },
+    "entropy": {
+      "attempts": 1962,
+      "finite_comparisons": 1962,
+      "nan_count": 0,
+      "inf_count": 0,
+      "abs_error": {
+        "count": 1962,
+        "p50": 4.547473508864641e-13,
+        "p95": 1.8189894035458565e-12,
+        "p99": 2.7284841053187847e-12,
+        "max": 1.5916157281026244e-11
+      },
+      "rel_error": {
+        "count": 1962,
+        "p50": 1.3626813830001869e-16,
+        "p95": 4.321723696371348e-16,
+        "p99": 7.5531923552129e-16,
+        "max": 4.2859052243434606e-15
+      },
+      "tolerance_policy": {
+        "rtol": 1e-05,
+        "atol": 0.5,
+        "unit": "J/(kg*K)",
+        "rationale": "Logarithmic volume integration plus ideal gas standard state."
+      }
+    },
+    "cp": {
+      "attempts": 1962,
+      "finite_comparisons": 1962,
+      "nan_count": 0,
+      "inf_count": 0,
+      "abs_error": {
+        "count": 1962,
+        "p50": 3.410605131648481e-13,
+        "p95": 1.0459189070388675e-10,
+        "p99": 9.204086381942034e-10,
+        "max": 2.7306668926030397e-08
+      },
+      "rel_error": {
+        "count": 1962,
+        "p50": 2.311340023594602e-16,
+        "p95": 1.5476597407107903e-14,
+        "p99": 5.632459240320154e-14,
+        "max": 4.2576789828218463e-13
+      },
+      "tolerance_policy": {
+        "rtol": 0.0001,
+        "atol": 5.0,
+        "unit": "J/(kg*K)",
+        "rationale": "Analytical temperature derivative of enthalpy departure."
+      }
+    },
+    "cv": {
+      "attempts": 1962,
+      "finite_comparisons": 1962,
+      "nan_count": 0,
+      "inf_count": 0,
+      "abs_error": {
+        "count": 1962,
+        "p50": 1.1368683772161603e-13,
+        "p95": 1.0231815394945443e-12,
+        "p99": 3.865352482534945e-12,
+        "max": 1.057287590811029e-11
+      },
+      "rel_error": {
+        "count": 1962,
+        "p50": 1.6527735044052328e-16,
+        "p95": 1.2045663315619438e-15,
+        "p99": 4.123048411534794e-15,
+        "max": 1.3339927852670135e-14
+      },
+      "tolerance_policy": {
+        "rtol": 0.0001,
+        "atol": 5.0,
+        "unit": "J/(kg*K)",
+        "rationale": "Analytical temperature derivative of internal energy departure."
+      }
+    },
+    "compressibility_factor_z": {
+      "attempts": 1962,
+      "finite_comparisons": 1962,
+      "nan_count": 0,
+      "inf_count": 0,
+      "abs_error": {
+        "count": 1962,
+        "p50": 1.1102230246251565e-16,
+        "p95": 1.1102230246251565e-15,
+        "p99": 2.942091015256665e-15,
+        "max": 2.1441182163073336e-14
+      },
+      "rel_error": {
+        "count": 1962,
+        "p50": 1.2878424836967393e-16,
+        "p95": 5.0905635119693966e-15,
+        "p99": 2.3070618545571796e-14,
+        "max": 1.8064425056349663e-13
+      },
+      "tolerance_policy": {
+        "rtol": 1e-05,
+        "atol": 1e-06
+      }
+    }
+  },
+  "schema_declaration": {
+    "observable_fields": [
+      "status",
+      "temperature",
+      "pressure",
+      "density",
+      "molar_volume",
+      "enthalpy",
+      "int_energy",
+      "entropy",
+      "cp",
+      "cv",
+      "compressibility_factor_z"
+    ],
+    "unobservable_fields": {
+      "cubic_coefficients": "NOT_OBSERVABLE_WITH_CURRENT_ORACLE",
+      "root_count": "NOT_OBSERVABLE_WITH_CURRENT_ORACLE",
+      "every_root": "NOT_OBSERVABLE_WITH_CURRENT_ORACLE",
+      "root_ordering": "NOT_OBSERVABLE_WITH_CURRENT_ORACLE",
+      "selected_root": "NOT_OBSERVABLE_WITH_CURRENT_ORACLE",
+      "branch_return_code": "NOT_OBSERVABLE_WITH_CURRENT_ORACLE",
+      "fugacity_coefficients": "NOT_OBSERVABLE_WITH_CURRENT_ORACLE",
+      "chemical_potentials": "NOT_OBSERVABLE_WITH_CURRENT_ORACLE"
+    }
+  },
+  "WAVE_2_SAVED_NATIVE_RECORDS_MATCH": true
+}

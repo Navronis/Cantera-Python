@@ -1,0 +1,69 @@
+{
+  "total_failure_cases": 6,
+  "success_status_mismatches": 0,
+  "failure_category_mismatches": 0,
+  "unknown_failure_category": 0,
+  "all_matched": true,
+  "records": [
+    {
+      "case_id": "FAIL_T_ZERO",
+      "description": "T <= 0",
+      "native_status": "RAISED",
+      "native_exception": "CanteraError",
+      "python_status": "RAISED",
+      "python_exception": "CanteraError",
+      "category": "INVALID_STATE_DOMAIN",
+      "matches": true
+    },
+    {
+      "case_id": "FAIL_T_NEG",
+      "description": "T < 0",
+      "native_status": "RAISED",
+      "native_exception": "CanteraError",
+      "python_status": "RAISED",
+      "python_exception": "CanteraError",
+      "category": "INVALID_STATE_DOMAIN",
+      "matches": true
+    },
+    {
+      "case_id": "FAIL_P_ZERO",
+      "description": "P <= 0",
+      "native_status": "RAISED",
+      "native_exception": "CanteraError",
+      "python_status": "RAISED",
+      "python_exception": "CanteraError",
+      "category": "INVALID_STATE_DOMAIN",
+      "matches": true
+    },
+    {
+      "case_id": "FAIL_P_NEG",
+      "description": "P < 0",
+      "native_status": "RAISED",
+      "native_exception": "CanteraError",
+      "python_status": "RAISED",
+      "python_exception": "CanteraError",
+      "category": "INVALID_STATE_DOMAIN",
+      "matches": true
+    },
+    {
+      "case_id": "FAIL_T_NAN",
+      "description": "NaN temperature",
+      "native_status": "RAISED",
+      "native_exception": "CanteraError",
+      "python_status": "RAISED",
+      "python_exception": "CanteraError",
+      "category": "INVALID_STATE_DOMAIN",
+      "matches": true
+    },
+    {
+      "case_id": "FAIL_P_NAN",
+      "description": "NaN pressure",
+      "native_status": "RAISED",
+      "native_exception": "CanteraError",
+      "python_status": "RAISED",
+      "python_exception": "CanteraError",
+      "category": "INVALID_STATE_DOMAIN",
+      "matches": true
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "campaign": "Sim1D Differential Parity Campaign",
+  "total_cases": 20,
+  "passed_cases": 20,
+  "failed_cases": 0,
+  "pass_rate_percent": 100.0,
+  "structure_mismatches": 0,
+  "refine_result_mismatches": 0,
+  "grid_mismatches": 0,
+  "value_mismatches": 0,
+  "jacobian_mismatches": 0,
+  "adjoint_mismatches": 0,
+  "exception_mismatches": 0,
+  "max_abs_grid_diff": 3.885780586188048e-16,
+  "max_abs_value_diff": 4.774847184307873e-12,
+  "max_abs_jacobian_diff": 1.1958212198237561e-11,
+  "max_abs_adjoint_diff": 1.4853895891064894e-09,
+  "parity_achieved": true,
+  "cases": [
+    {
+      "case_id": "sim1d_01_single_domain_values_and_grid",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_02_refine_slope_steep_tanh",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_03_refine_curvature_gaussian_peak",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_04_refine_three_domains_inlet_flow_outlet",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_05_refine_prune_discard_flat",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_06_set_refine_criteria_multi_domain",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_07_gridmin_clamp_suppression",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_08_max_grid_points_limit",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_09_restore_steady_solution",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_10_restore_steady_solution_error_no_prior",
+      "passed": true,
+      "exception_thrown": true,
+      "notes": "Expected exception triggered and matched in both."
+    },
+    {
+      "case_id": "sim1d_11_restore_time_stepping_solution_error_no_prior",
+      "passed": true,
+      "exception_thrown": true,
+      "notes": "Expected exception triggered and matched in both."
+    },
+    {
+      "case_id": "sim1d_12_time_step_regrid_max",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_13_eval_ss_jacobian",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_14_solve_adjoint",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_15_multidomain_5_domains_refine",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_16_multicomponent_profile_refine",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_17_set_left_control_point_no_axisymmetric_error",
+      "passed": true,
+      "exception_thrown": true,
+      "notes": "Expected exception triggered and matched in both."
+    },
+    {
+      "case_id": "sim1d_18_set_right_control_point_no_axisymmetric_error",
+      "passed": true,
+      "exception_thrown": true,
+      "notes": "Expected exception triggered and matched in both."
+    },
+    {
+      "case_id": "sim1d_19_error_value_index_out_of_bounds",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    },
+    {
+      "case_id": "sim1d_20_error_set_value_index_out_of_bounds",
+      "passed": true,
+      "exception_thrown": false,
+      "notes": "Exact match"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "solver_family": "flow_reactor",
+  "native_class": "FlowReactor",
+  "nodes": [
+    "FlowReactor.__init__",
+    "FlowReactor.type",
+    "FlowReactor.isOde",
+    "FlowReactor.timeIsIndependent",
+    "FlowReactor.area",
+    "FlowReactor.setArea",
+    "FlowReactor.speed",
+    "FlowReactor.distance",
+    "FlowReactor.setMassFlowRate",
+    "FlowReactor.massFlowRate",
+    "FlowReactor.getStateDae",
+    "FlowReactor.updateState",
+    "FlowReactor.getConstraints",
+    "FlowReactor.evalDae",
+    "FlowReactor.componentIndex",
+    "FlowReactor.componentName",
+    "FlowReactor.initialize",
+    "IdasIntegrator.initialize",
+    "IdasIntegrator.integrate",
+    "IdasIntegrator.step",
+    "IdasIntegrator.solution"
+  ],
+  "edges": [
+    {
+      "caller": "ReactorNet.initialize",
+      "callee": "FlowReactor.getStateDae"
+    },
+    {
+      "caller": "ReactorNet.initialize",
+      "callee": "FlowReactor.getConstraints"
+    },
+    {
+      "caller": "ReactorNet.initialize",
+      "callee": "IdasIntegrator.initialize"
+    },
+    {
+      "caller": "ReactorNet.advance",
+      "callee": "IdasIntegrator.integrate"
+    },
+    {
+      "caller": "ReactorNet.step",
+      "callee": "IdasIntegrator.step"
+    },
+    {
+      "caller": "IdasIntegrator._dae_residual",
+      "callee": "FlowReactor.evalDae"
+    },
+    {
+      "caller": "FlowReactor.evalDae",
+      "callee": "FlowReactor.updateState"
+    }
+  ]
+}

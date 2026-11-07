@@ -1,0 +1,70 @@
+{
+  "solver_family": "sim1d",
+  "nodes": [
+    "include/cantera/oneD/Sim1D.h:55:_setValue",
+    "include/cantera/oneD/Sim1D.h:65:_value",
+    "include/cantera/oneD/Sim1D.h:75:_workValue",
+    "include/cantera/oneD/Sim1D.h:88:show",
+    "include/cantera/oneD/Sim1D.h:146:restore",
+    "include/cantera/oneD/Sim1D.h:159:_restore",
+    "include/cantera/oneD/Sim1D.h:165:clearDebugFile",
+    "include/cantera/oneD/Sim1D.h:211:solve",
+    "include/cantera/oneD/Sim1D.h:213:eval",
+    "include/cantera/oneD/Sim1D.h:219:getResidual",
+    "include/cantera/oneD/Sim1D.h:230:refine",
+    "include/cantera/oneD/Sim1D.h:233:setFixedTemperature",
+    "include/cantera/oneD/Sim1D.h:236:fixedTemperature",
+    "include/cantera/oneD/Sim1D.h:239:fixedTemperatureLocation",
+    "include/cantera/oneD/Sim1D.h:251:setLeftControlPoint",
+    "include/cantera/oneD/Sim1D.h:263:setRightControlPoint",
+    "include/cantera/oneD/Sim1D.h:279:getRefineCriteria",
+    "include/cantera/oneD/Sim1D.h:286:setMaxGridPoints",
+    "include/cantera/oneD/Sim1D.h:293:maxGridPoints",
+    "include/cantera/oneD/Sim1D.h:301:setGridMin",
+    "include/cantera/oneD/Sim1D.h:306:restoreTimeSteppingSolution",
+    "include/cantera/oneD/Sim1D.h:311:restoreSteadySolution",
+    "include/cantera/oneD/Sim1D.h:314:getInitialSoln",
+    "include/cantera/oneD/Sim1D.h:317:evalSSJacobian",
+    "include/cantera/oneD/Sim1D.h:332:solveAdjoint",
+    "include/cantera/oneD/Sim1D.h:334:resize",
+    "include/cantera/oneD/Sim1D.h:339:setSteadyCallback",
+    "include/cantera/oneD/Sim1D.h:349:setTimeStepRegridMax",
+    "include/cantera/oneD/Sim1D.h:358:timeStepRegridMax",
+    "include/cantera/oneD/Sim1D.h:379:finalize",
+    "include/cantera/oneD/Sim1D.h:390:newSim1D",
+    "src/oneD/Sim1D.cpp:112:out",
+    "src/oneD/Sim1D.cpp:123:res",
+    "src/oneD/Sim1D.cpp:411:x",
+    "src/oneD/Sim1D.cpp:412:r",
+    "src/oneD/Sim1D.cpp:413:mask",
+    "src/oneD/Sim1D.cpp:764:domain",
+    "src/oneD/Sim1D.cpp:820:CanteraError",
+    "src/oneD/Sim1D.cpp:824:Jt"
+  ],
+  "edges": [
+    {
+      "from": "Sim1D::solve",
+      "to": "Sim1D::newtonSolve"
+    },
+    {
+      "from": "Sim1D::newtonSolve",
+      "to": "MultiNewton::solve"
+    },
+    {
+      "from": "Sim1D::solve",
+      "to": "Sim1D::refine"
+    },
+    {
+      "from": "Sim1D::refine",
+      "to": "Refiner::analyze"
+    },
+    {
+      "from": "Sim1D::solve",
+      "to": "OneDim::eval"
+    },
+    {
+      "from": "Sim1D::solve",
+      "to": "OneDim::evalJacobian"
+    }
+  ]
+}

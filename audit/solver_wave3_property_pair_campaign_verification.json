@@ -1,0 +1,1059 @@
+{
+  "schema": "solver-wave3-property-pair-campaign-verification-v1",
+  "verified_at_utc": "2026-09-28T23:24:55.481632+00:00",
+  "scope": "PURE_PYTHON_SELF_CONSISTENCY_ONLY_NOT_NATIVE_PARITY",
+  "pinned_source_commit_label": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "case_file": "audit/solver_wave3_property_pair_validation.jsonl",
+  "case_file_sha256": "b4d913cc7f9f5f463b54c5df8359908a9cf49a67c3ce000259cc476398f40fe9",
+  "campaign_summary_sha256": "e6883f3b1add27868b472b10fe913667f68f1a7c6cc05d2093113d9a2718823d",
+  "campaign_runner_sha256": "7f72adbb137c655a54a2c7c83c0023c230bbd4c39dfba130b962076820199c96",
+  "runtime_tpx_sha256": "d4411979abf5f96ecbadca5558253bc2577fbbecfc20a642980c8c799854f263",
+  "trials": 22400,
+  "fluid_pair_combinations": 112,
+  "trials_per_fluid_pair": 200,
+  "records_per_fluid_pair": {
+    "carbon_dioxide:HP": 200,
+    "carbon_dioxide:PV": 200,
+    "carbon_dioxide:PX": 200,
+    "carbon_dioxide:SH": 200,
+    "carbon_dioxide:SP": 200,
+    "carbon_dioxide:ST": 200,
+    "carbon_dioxide:SV": 200,
+    "carbon_dioxide:TH": 200,
+    "carbon_dioxide:TP": 200,
+    "carbon_dioxide:TV": 200,
+    "carbon_dioxide:TX": 200,
+    "carbon_dioxide:UP": 200,
+    "carbon_dioxide:UV": 200,
+    "carbon_dioxide:VH": 200,
+    "heptane:HP": 200,
+    "heptane:PV": 200,
+    "heptane:PX": 200,
+    "heptane:SH": 200,
+    "heptane:SP": 200,
+    "heptane:ST": 200,
+    "heptane:SV": 200,
+    "heptane:TH": 200,
+    "heptane:TP": 200,
+    "heptane:TV": 200,
+    "heptane:TX": 200,
+    "heptane:UP": 200,
+    "heptane:UV": 200,
+    "heptane:VH": 200,
+    "hfc134a:HP": 200,
+    "hfc134a:PV": 200,
+    "hfc134a:PX": 200,
+    "hfc134a:SH": 200,
+    "hfc134a:SP": 200,
+    "hfc134a:ST": 200,
+    "hfc134a:SV": 200,
+    "hfc134a:TH": 200,
+    "hfc134a:TP": 200,
+    "hfc134a:TV": 200,
+    "hfc134a:TX": 200,
+    "hfc134a:UP": 200,
+    "hfc134a:UV": 200,
+    "hfc134a:VH": 200,
+    "hydrogen:HP": 200,
+    "hydrogen:PV": 200,
+    "hydrogen:PX": 200,
+    "hydrogen:SH": 200,
+    "hydrogen:SP": 200,
+    "hydrogen:ST": 200,
+    "hydrogen:SV": 200,
+    "hydrogen:TH": 200,
+    "hydrogen:TP": 200,
+    "hydrogen:TV": 200,
+    "hydrogen:TX": 200,
+    "hydrogen:UP": 200,
+    "hydrogen:UV": 200,
+    "hydrogen:VH": 200,
+    "methane:HP": 200,
+    "methane:PV": 200,
+    "methane:PX": 200,
+    "methane:SH": 200,
+    "methane:SP": 200,
+    "methane:ST": 200,
+    "methane:SV": 200,
+    "methane:TH": 200,
+    "methane:TP": 200,
+    "methane:TV": 200,
+    "methane:TX": 200,
+    "methane:UP": 200,
+    "methane:UV": 200,
+    "methane:VH": 200,
+    "nitrogen:HP": 200,
+    "nitrogen:PV": 200,
+    "nitrogen:PX": 200,
+    "nitrogen:SH": 200,
+    "nitrogen:SP": 200,
+    "nitrogen:ST": 200,
+    "nitrogen:SV": 200,
+    "nitrogen:TH": 200,
+    "nitrogen:TP": 200,
+    "nitrogen:TV": 200,
+    "nitrogen:TX": 200,
+    "nitrogen:UP": 200,
+    "nitrogen:UV": 200,
+    "nitrogen:VH": 200,
+    "oxygen:HP": 200,
+    "oxygen:PV": 200,
+    "oxygen:PX": 200,
+    "oxygen:SH": 200,
+    "oxygen:SP": 200,
+    "oxygen:ST": 200,
+    "oxygen:SV": 200,
+    "oxygen:TH": 200,
+    "oxygen:TP": 200,
+    "oxygen:TV": 200,
+    "oxygen:TX": 200,
+    "oxygen:UP": 200,
+    "oxygen:UV": 200,
+    "oxygen:VH": 200,
+    "water:HP": 200,
+    "water:PV": 200,
+    "water:PX": 200,
+    "water:SH": 200,
+    "water:SP": 200,
+    "water:ST": 200,
+    "water:SV": 200,
+    "water:TH": 200,
+    "water:TP": 200,
+    "water:TV": 200,
+    "water:TX": 200,
+    "water:UP": 200,
+    "water:UV": 200,
+    "water:VH": 200
+  },
+  "trials_per_strategy_per_fluid_pair": 25,
+  "strategy_coverage_complete": true,
+  "status_counts": {
+    "SUCCESS": 21760,
+    "INVERSION_FAILURE": 640
+  },
+  "successful_target_pair_residual_matches": 21760,
+  "successful_full_state_matches": 20669,
+  "solver_failure_rate": 0.02857142857142857,
+  "failure_clusters": [
+    {
+      "fluid": "heptane",
+      "pair": "SH",
+      "guess_strategy": "far_below_temperature",
+      "count": 17
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "SH",
+      "guess_strategy": "opposite_phase",
+      "count": 17
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SH",
+      "guess_strategy": "far_above_temperature",
+      "count": 14
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "SH",
+      "guess_strategy": "far_below_temperature",
+      "count": 14
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SH",
+      "guess_strategy": "high_density",
+      "count": 13
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SH",
+      "guess_strategy": "near_critical",
+      "count": 11
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "SH",
+      "guess_strategy": "far_above_temperature",
+      "count": 11
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "SH",
+      "guess_strategy": "far_below_temperature",
+      "count": 10
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "SH",
+      "guess_strategy": "far_above_temperature",
+      "count": 10
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "SH",
+      "guess_strategy": "high_density",
+      "count": 10
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "SH",
+      "guess_strategy": "near_critical",
+      "count": 10
+    },
+    {
+      "fluid": "water",
+      "pair": "SH",
+      "guess_strategy": "far_above_temperature",
+      "count": 9
+    },
+    {
+      "fluid": "water",
+      "pair": "SH",
+      "guess_strategy": "randomized",
+      "count": 9
+    },
+    {
+      "fluid": "water",
+      "pair": "SH",
+      "guess_strategy": "high_density",
+      "count": 9
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SH",
+      "guess_strategy": "randomized",
+      "count": 9
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "SH",
+      "guess_strategy": "randomized",
+      "count": 9
+    },
+    {
+      "fluid": "water",
+      "pair": "SH",
+      "guess_strategy": "near_critical",
+      "count": 8
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "HP",
+      "guess_strategy": "randomized",
+      "count": 8
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "UP",
+      "guess_strategy": "randomized",
+      "count": 8
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "SH",
+      "guess_strategy": "far_below_temperature",
+      "count": 8
+    },
+    {
+      "fluid": "hydrogen",
+      "pair": "SH",
+      "guess_strategy": "randomized",
+      "count": 8
+    },
+    {
+      "fluid": "methane",
+      "pair": "SH",
+      "guess_strategy": "far_above_temperature",
+      "count": 8
+    },
+    {
+      "fluid": "heptane",
+      "pair": "UV",
+      "guess_strategy": "randomized",
+      "count": 8
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SH",
+      "guess_strategy": "low_density",
+      "count": 8
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SH",
+      "guess_strategy": "opposite_phase",
+      "count": 8
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "HP",
+      "guess_strategy": "randomized",
+      "count": 8
+    },
+    {
+      "fluid": "water",
+      "pair": "UP",
+      "guess_strategy": "randomized",
+      "count": 7
+    },
+    {
+      "fluid": "water",
+      "pair": "UP",
+      "guess_strategy": "far_below_temperature",
+      "count": 7
+    },
+    {
+      "fluid": "water",
+      "pair": "SH",
+      "guess_strategy": "opposite_phase",
+      "count": 7
+    },
+    {
+      "fluid": "carbon_dioxide",
+      "pair": "HP",
+      "guess_strategy": "randomized",
+      "count": 7
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "SP",
+      "guess_strategy": "far_below_temperature",
+      "count": 7
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "UP",
+      "guess_strategy": "far_below_temperature",
+      "count": 7
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "TH",
+      "guess_strategy": "near_critical",
+      "count": 7
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "SH",
+      "guess_strategy": "opposite_phase",
+      "count": 7
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SV",
+      "guess_strategy": "far_below_temperature",
+      "count": 7
+    },
+    {
+      "fluid": "heptane",
+      "pair": "UP",
+      "guess_strategy": "far_below_temperature",
+      "count": 7
+    },
+    {
+      "fluid": "heptane",
+      "pair": "VH",
+      "guess_strategy": "opposite_phase",
+      "count": 7
+    },
+    {
+      "fluid": "heptane",
+      "pair": "VH",
+      "guess_strategy": "far_below_temperature",
+      "count": 7
+    },
+    {
+      "fluid": "heptane",
+      "pair": "TH",
+      "guess_strategy": "far_below_temperature",
+      "count": 7
+    },
+    {
+      "fluid": "water",
+      "pair": "UP",
+      "guess_strategy": "opposite_phase",
+      "count": 6
+    },
+    {
+      "fluid": "water",
+      "pair": "SH",
+      "guess_strategy": "far_below_temperature",
+      "count": 6
+    },
+    {
+      "fluid": "carbon_dioxide",
+      "pair": "SH",
+      "guess_strategy": "opposite_phase",
+      "count": 6
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "HP",
+      "guess_strategy": "far_below_temperature",
+      "count": 6
+    },
+    {
+      "fluid": "heptane",
+      "pair": "HP",
+      "guess_strategy": "far_below_temperature",
+      "count": 6
+    },
+    {
+      "fluid": "heptane",
+      "pair": "UV",
+      "guess_strategy": "far_below_temperature",
+      "count": 6
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SV",
+      "guess_strategy": "randomized",
+      "count": 6
+    },
+    {
+      "fluid": "water",
+      "pair": "HP",
+      "guess_strategy": "far_below_temperature",
+      "count": 5
+    },
+    {
+      "fluid": "water",
+      "pair": "SH",
+      "guess_strategy": "low_density",
+      "count": 5
+    },
+    {
+      "fluid": "carbon_dioxide",
+      "pair": "SH",
+      "guess_strategy": "far_above_temperature",
+      "count": 5
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "TH",
+      "guess_strategy": "far_above_temperature",
+      "count": 5
+    },
+    {
+      "fluid": "hydrogen",
+      "pair": "UP",
+      "guess_strategy": "randomized",
+      "count": 5
+    },
+    {
+      "fluid": "hydrogen",
+      "pair": "TH",
+      "guess_strategy": "far_below_temperature",
+      "count": 5
+    },
+    {
+      "fluid": "methane",
+      "pair": "HP",
+      "guess_strategy": "randomized",
+      "count": 5
+    },
+    {
+      "fluid": "heptane",
+      "pair": "VH",
+      "guess_strategy": "randomized",
+      "count": 5
+    },
+    {
+      "fluid": "heptane",
+      "pair": "TH",
+      "guess_strategy": "low_density",
+      "count": 5
+    },
+    {
+      "fluid": "heptane",
+      "pair": "TH",
+      "guess_strategy": "randomized",
+      "count": 5
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "SH",
+      "guess_strategy": "low_density",
+      "count": 5
+    },
+    {
+      "fluid": "water",
+      "pair": "SP",
+      "guess_strategy": "far_below_temperature",
+      "count": 4
+    },
+    {
+      "fluid": "water",
+      "pair": "SP",
+      "guess_strategy": "randomized",
+      "count": 4
+    },
+    {
+      "fluid": "carbon_dioxide",
+      "pair": "SP",
+      "guess_strategy": "randomized",
+      "count": 4
+    },
+    {
+      "fluid": "carbon_dioxide",
+      "pair": "UP",
+      "guess_strategy": "randomized",
+      "count": 4
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "SH",
+      "guess_strategy": "near_critical",
+      "count": 4
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "SH",
+      "guess_strategy": "randomized",
+      "count": 4
+    },
+    {
+      "fluid": "hydrogen",
+      "pair": "SP",
+      "guess_strategy": "randomized",
+      "count": 4
+    },
+    {
+      "fluid": "methane",
+      "pair": "SH",
+      "guess_strategy": "high_density",
+      "count": 4
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SP",
+      "guess_strategy": "far_below_temperature",
+      "count": 4
+    },
+    {
+      "fluid": "heptane",
+      "pair": "VH",
+      "guess_strategy": "low_density",
+      "count": 4
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "UP",
+      "guess_strategy": "randomized",
+      "count": 4
+    },
+    {
+      "fluid": "water",
+      "pair": "HP",
+      "guess_strategy": "near_saturation",
+      "count": 3
+    },
+    {
+      "fluid": "water",
+      "pair": "SP",
+      "guess_strategy": "opposite_phase",
+      "count": 3
+    },
+    {
+      "fluid": "carbon_dioxide",
+      "pair": "SH",
+      "guess_strategy": "randomized",
+      "count": 3
+    },
+    {
+      "fluid": "carbon_dioxide",
+      "pair": "SH",
+      "guess_strategy": "far_below_temperature",
+      "count": 3
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "UP",
+      "guess_strategy": "opposite_phase",
+      "count": 3
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "TH",
+      "guess_strategy": "low_density",
+      "count": 3
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "SH",
+      "guess_strategy": "near_critical",
+      "count": 3
+    },
+    {
+      "fluid": "hydrogen",
+      "pair": "HP",
+      "guess_strategy": "randomized",
+      "count": 3
+    },
+    {
+      "fluid": "methane",
+      "pair": "UP",
+      "guess_strategy": "randomized",
+      "count": 3
+    },
+    {
+      "fluid": "methane",
+      "pair": "TH",
+      "guess_strategy": "far_above_temperature",
+      "count": 3
+    },
+    {
+      "fluid": "heptane",
+      "pair": "HP",
+      "guess_strategy": "opposite_phase",
+      "count": 3
+    },
+    {
+      "fluid": "heptane",
+      "pair": "HP",
+      "guess_strategy": "randomized",
+      "count": 3
+    },
+    {
+      "fluid": "heptane",
+      "pair": "UV",
+      "guess_strategy": "low_density",
+      "count": 3
+    },
+    {
+      "fluid": "heptane",
+      "pair": "UP",
+      "guess_strategy": "opposite_phase",
+      "count": 3
+    },
+    {
+      "fluid": "heptane",
+      "pair": "TH",
+      "guess_strategy": "near_critical",
+      "count": 3
+    },
+    {
+      "fluid": "water",
+      "pair": "HP",
+      "guess_strategy": "opposite_phase",
+      "count": 2
+    },
+    {
+      "fluid": "water",
+      "pair": "HP",
+      "guess_strategy": "high_density",
+      "count": 2
+    },
+    {
+      "fluid": "water",
+      "pair": "TH",
+      "guess_strategy": "far_above_temperature",
+      "count": 2
+    },
+    {
+      "fluid": "water",
+      "pair": "TH",
+      "guess_strategy": "near_critical",
+      "count": 2
+    },
+    {
+      "fluid": "carbon_dioxide",
+      "pair": "SH",
+      "guess_strategy": "high_density",
+      "count": 2
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "SP",
+      "guess_strategy": "opposite_phase",
+      "count": 2
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "TH",
+      "guess_strategy": "randomized",
+      "count": 2
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "TH",
+      "guess_strategy": "far_below_temperature",
+      "count": 2
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "TH",
+      "guess_strategy": "opposite_phase",
+      "count": 2
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "SH",
+      "guess_strategy": "far_above_temperature",
+      "count": 2
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "UP",
+      "guess_strategy": "randomized",
+      "count": 2
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "TH",
+      "guess_strategy": "far_below_temperature",
+      "count": 2
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "SH",
+      "guess_strategy": "randomized",
+      "count": 2
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "SH",
+      "guess_strategy": "high_density",
+      "count": 2
+    },
+    {
+      "fluid": "hydrogen",
+      "pair": "TH",
+      "guess_strategy": "far_above_temperature",
+      "count": 2
+    },
+    {
+      "fluid": "hydrogen",
+      "pair": "TH",
+      "guess_strategy": "near_critical",
+      "count": 2
+    },
+    {
+      "fluid": "methane",
+      "pair": "TH",
+      "guess_strategy": "randomized",
+      "count": 2
+    },
+    {
+      "fluid": "methane",
+      "pair": "TH",
+      "guess_strategy": "far_below_temperature",
+      "count": 2
+    },
+    {
+      "fluid": "methane",
+      "pair": "TH",
+      "guess_strategy": "opposite_phase",
+      "count": 2
+    },
+    {
+      "fluid": "methane",
+      "pair": "SH",
+      "guess_strategy": "near_critical",
+      "count": 2
+    },
+    {
+      "fluid": "methane",
+      "pair": "SH",
+      "guess_strategy": "randomized",
+      "count": 2
+    },
+    {
+      "fluid": "methane",
+      "pair": "SH",
+      "guess_strategy": "opposite_phase",
+      "count": 2
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SP",
+      "guess_strategy": "opposite_phase",
+      "count": 2
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SP",
+      "guess_strategy": "randomized",
+      "count": 2
+    },
+    {
+      "fluid": "heptane",
+      "pair": "VH",
+      "guess_strategy": "near_critical",
+      "count": 2
+    },
+    {
+      "fluid": "heptane",
+      "pair": "TH",
+      "guess_strategy": "opposite_phase",
+      "count": 2
+    },
+    {
+      "fluid": "heptane",
+      "pair": "TH",
+      "guess_strategy": "far_above_temperature",
+      "count": 2
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "SP",
+      "guess_strategy": "randomized",
+      "count": 2
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "TH",
+      "guess_strategy": "high_density",
+      "count": 2
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "TH",
+      "guess_strategy": "randomized",
+      "count": 2
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "TH",
+      "guess_strategy": "far_below_temperature",
+      "count": 2
+    },
+    {
+      "fluid": "water",
+      "pair": "SV",
+      "guess_strategy": "randomized",
+      "count": 1
+    },
+    {
+      "fluid": "water",
+      "pair": "TH",
+      "guess_strategy": "opposite_phase",
+      "count": 1
+    },
+    {
+      "fluid": "water",
+      "pair": "TH",
+      "guess_strategy": "far_below_temperature",
+      "count": 1
+    },
+    {
+      "fluid": "water",
+      "pair": "TH",
+      "guess_strategy": "high_density",
+      "count": 1
+    },
+    {
+      "fluid": "water",
+      "pair": "TH",
+      "guess_strategy": "low_density",
+      "count": 1
+    },
+    {
+      "fluid": "carbon_dioxide",
+      "pair": "SH",
+      "guess_strategy": "near_critical",
+      "count": 1
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "HP",
+      "guess_strategy": "opposite_phase",
+      "count": 1
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "SP",
+      "guess_strategy": "randomized",
+      "count": 1
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "TH",
+      "guess_strategy": "near_critical",
+      "count": 1
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "TH",
+      "guess_strategy": "far_above_temperature",
+      "count": 1
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "SH",
+      "guess_strategy": "opposite_phase",
+      "count": 1
+    },
+    {
+      "fluid": "nitrogen",
+      "pair": "SH",
+      "guess_strategy": "high_density",
+      "count": 1
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "ST",
+      "guess_strategy": "randomized",
+      "count": 1
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "TH",
+      "guess_strategy": "randomized",
+      "count": 1
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "TH",
+      "guess_strategy": "low_density",
+      "count": 1
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "TH",
+      "guess_strategy": "opposite_phase",
+      "count": 1
+    },
+    {
+      "fluid": "oxygen",
+      "pair": "SH",
+      "guess_strategy": "low_density",
+      "count": 1
+    },
+    {
+      "fluid": "hydrogen",
+      "pair": "TH",
+      "guess_strategy": "low_density",
+      "count": 1
+    },
+    {
+      "fluid": "hydrogen",
+      "pair": "SH",
+      "guess_strategy": "high_density",
+      "count": 1
+    },
+    {
+      "fluid": "methane",
+      "pair": "VH",
+      "guess_strategy": "far_below_temperature",
+      "count": 1
+    },
+    {
+      "fluid": "methane",
+      "pair": "TH",
+      "guess_strategy": "low_density",
+      "count": 1
+    },
+    {
+      "fluid": "methane",
+      "pair": "TH",
+      "guess_strategy": "near_critical",
+      "count": 1
+    },
+    {
+      "fluid": "methane",
+      "pair": "SH",
+      "guess_strategy": "low_density",
+      "count": 1
+    },
+    {
+      "fluid": "methane",
+      "pair": "SH",
+      "guess_strategy": "far_below_temperature",
+      "count": 1
+    },
+    {
+      "fluid": "heptane",
+      "pair": "UV",
+      "guess_strategy": "far_above_temperature",
+      "count": 1
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SV",
+      "guess_strategy": "high_density",
+      "count": 1
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SV",
+      "guess_strategy": "low_density",
+      "count": 1
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SV",
+      "guess_strategy": "near_critical",
+      "count": 1
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SV",
+      "guess_strategy": "far_above_temperature",
+      "count": 1
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SV",
+      "guess_strategy": "opposite_phase",
+      "count": 1
+    },
+    {
+      "fluid": "heptane",
+      "pair": "VH",
+      "guess_strategy": "high_density",
+      "count": 1
+    },
+    {
+      "fluid": "heptane",
+      "pair": "VH",
+      "guess_strategy": "far_above_temperature",
+      "count": 1
+    },
+    {
+      "fluid": "heptane",
+      "pair": "TH",
+      "guess_strategy": "high_density",
+      "count": 1
+    },
+    {
+      "fluid": "heptane",
+      "pair": "SH",
+      "guess_strategy": "near_saturation",
+      "count": 1
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "UP",
+      "guess_strategy": "far_below_temperature",
+      "count": 1
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "VH",
+      "guess_strategy": "far_below_temperature",
+      "count": 1
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "VH",
+      "guess_strategy": "randomized",
+      "count": 1
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "TH",
+      "guess_strategy": "opposite_phase",
+      "count": 1
+    },
+    {
+      "fluid": "hfc134a",
+      "pair": "TH",
+      "guess_strategy": "low_density",
+      "count": 1
+    }
+  ],
+  "native_parity": "NOT_TESTED",
+  "output": "audit/solver_wave3_property_pair_campaign_verification.json"
+}

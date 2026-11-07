@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source": "provenance/pinned_native_differential_results.jsonl",
+  "applicability": "Binary64 ULP distance for direct scalar algebraic outputs. Iterative trajectory and ill-conditioned comparisons require mixed tolerances.",
+  "histogram": {
+    "0": 117,
+    "1": 5,
+    "2": 1,
+    "3": 1
+  },
+  "by_suite": {
+    "falloff": {
+      "1": 1,
+      "2": 1,
+      "3": 1
+    },
+    "phase_state": {
+      "0": 12,
+      "1": 4
+    },
+    "species_thermo": {
+      "0": 105
+    }
+  },
+  "max_ulp_distance": 3
+}

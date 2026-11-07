@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/high_pressure_gas_transport_starting_snapshot.json",
+  "timestamp_utc": "2026-11-04T17:26:34.340489+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "pinned_native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "python_executable": "/home/nebula/cantera-oracle-env/bin/python3",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "target_family": {
+    "family": "high_pressure_gas_transport",
+    "native_classes": [
+      "HighPressureGasTransportBase",
+      "HighPressureGasTransport",
+      "ChungHighPressureGasTransport"
+    ],
+    "native_file": "src/transport/HighPressureGasTransport.cpp",
+    "runtime_symbols_total": 39,
+    "status_before": "PARTIAL"
+  },
+  "file_hashes": {
+    "transport_py": "43dfd57c39bb94621fbcf4819de3992d0e60cf265f3e80acec975b05d0d01fb9",
+    "solution_py": "1a3a395a4d50eae73708d9d2aef0b63ef4df4ba6485f587361f41a7baf36ec4c",
+    "test_hp_transport_py": "176c47579ecdb78484462144d5f9dbe12c078f9512f1b9816b07c87bedc4365c",
+    "hp_closure_set_json": "ffcdb91b49370a885a6803667575503718d113d50809a767609181455d2b4987",
+    "hp_call_graph_json": "d66677b2bddfd885c2e1a775c27143e3883368c87ba68233b21ddc64689aaaab"
+  },
+  "frozen_dependencies": {
+    "mixture_transport_differential_summary_json": "9a6d2cb6a16615ae03c5fd3f637ff47f7e6c46043306956de4ad414c64203235",
+    "multicomponent_transport_frozen_manifest_json": "0ff63aaabcf1351d3c97bbb5056cc2ceeb784b6fec0d8609de05e28bad5015ce",
+    "dusty_gas_transport_frozen_manifest_json": "48d682b13408c666676fb3d65ddf384dd7de5ae31f4053ed8d3727e4fd85ae5a"
+  },
+  "global_starting_state": {
+    "fully_dispositioned": 1032,
+    "remaining_without_final_disposition": 4752
+  }
+}

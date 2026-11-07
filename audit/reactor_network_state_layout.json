@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/reactor_network_state_layout.json",
+  "description": "ReactorNet state vector layout and component index mapping validated against pinned Cantera 4.0",
+  "topologies": {
+    "single_ideal_gas_reactor": {
+      "class": "IdealGasReactor",
+      "neq": 56,
+      "components": [
+        {
+          "index": 0,
+          "name": "mass",
+          "type": "extensive_mass",
+          "unit": "kg"
+        },
+        {
+          "index": 1,
+          "name": "volume",
+          "type": "extensive_volume",
+          "unit": "m^3"
+        },
+        {
+          "index": 2,
+          "name": "temperature",
+          "type": "intensive_temperature",
+          "unit": "K"
+        },
+        {
+          "index": "3..55",
+          "name": "species_mass_fractions (H2..AR)",
+          "type": "intensive_mass_fraction",
+          "unit": "dimensionless"
+        }
+      ]
+    },
+    "single_ideal_gas_const_pressure_reactor": {
+      "class": "IdealGasConstPressureReactor",
+      "neq": 55,
+      "components": [
+        {
+          "index": 0,
+          "name": "mass",
+          "type": "extensive_mass",
+          "unit": "kg"
+        },
+        {
+          "index": 1,
+          "name": "temperature",
+          "type": "intensive_temperature",
+          "unit": "K"
+        },
+        {
+          "index": "2..54",
+          "name": "species_mass_fractions (H2..AR)",
+          "type": "intensive_mass_fraction",
+          "unit": "dimensionless"
+        }
+      ]
+    },
+    "coupled_multi_reactor_network": {
+      "reactors": [
+        {
+          "name": "Combustor",
+          "class": "IdealGasReactor",
+          "offset": 0,
+          "neq": 56
+        },
+        {
+          "name": "Plenum",
+          "class": "IdealGasConstPressureReactor",
+          "offset": 56,
+          "neq": 55
+        }
+      ],
+      "total_neq": 111,
+      "sample_mappings": {
+        "globalComponentIndex('temperature', 0)": 2,
+        "globalComponentIndex('temperature', 1)": 57,
+        "globalComponentIndex('CH4', 0)": 16,
+        "globalComponentIndex('CH4', 1)": 71,
+        "componentName(0)": "Combustor: mass",
+        "componentName(1)": "Combustor: volume",
+        "componentName(2)": "Combustor: temperature",
+        "componentName(3)": "Combustor: H2",
+        "componentName(56)": "Plenum: mass",
+        "componentName(57)": "Plenum: temperature",
+        "componentName(58)": "Plenum: H2"
+      }
+    }
+  },
+  "state_layout_validated": true
+}

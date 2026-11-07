@@ -1,0 +1,1235 @@
+{
+  "schema": "solver-wave3-property-pair-campaign-v1",
+  "pinned_source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "seed": 726522,
+  "requested_cases_per_fluid_pair": 2,
+  "fluids": [
+    "water",
+    "carbon_dioxide",
+    "nitrogen",
+    "oxygen",
+    "hydrogen",
+    "methane",
+    "heptane",
+    "hfc134a"
+  ],
+  "property_pairs": [
+    "TV",
+    "HP",
+    "SP",
+    "PV",
+    "TP",
+    "UV",
+    "ST",
+    "SV",
+    "UP",
+    "VH",
+    "TH",
+    "SH",
+    "PX",
+    "TX"
+  ],
+  "fluid_pair_combinations": 112,
+  "total_cases": 224,
+  "totals": {
+    "success": 217,
+    "failure": 7,
+    "nonfinite": 0,
+    "valid_combinations": 112,
+    "attempts": 224
+  },
+  "total_records": 224,
+  "invalid_target_samples": 0,
+  "all_combinations_reached_requested_valid_case_count": true,
+  "full_state_relative_error_distributions": {
+    "T": {
+      "count": 217,
+      "p50": 4.9996686357412495e-12,
+      "p95": 7.0634376355171575e-09,
+      "p99": 6.815588126411331e-08,
+      "max": 2.443035329937347
+    },
+    "P": {
+      "count": 217,
+      "p50": 2.808567309069633e-10,
+      "p95": 0.9854451422674582,
+      "p99": 657.0285963473185,
+      "max": 39684.30864730308
+    },
+    "rho": {
+      "count": 217,
+      "p50": 5.6347300148795245e-12,
+      "p95": 0.873833419806043,
+      "p99": 72.70971941965463,
+      "max": 3005.673231496326
+    },
+    "v": {
+      "count": 217,
+      "p50": 5.634769488494009e-12,
+      "p95": 0.958412265168251,
+      "p99": 72.5181577232531,
+      "max": 4318.808818961237
+    },
+    "u": {
+      "count": 217,
+      "p50": 3.3334022013831725e-11,
+      "p95": 0.6272925626522643,
+      "p99": 3.799084866804396,
+      "max": 13.525719684008264
+    },
+    "h": {
+      "count": 217,
+      "p50": 3.630447106256138e-11,
+      "p95": 7.716347284281147e-09,
+      "p99": 0.22884568929557733,
+      "max": 0.9516723427448214
+    },
+    "s": {
+      "count": 217,
+      "p50": 6.067377150214242e-11,
+      "p95": 0.6012075725533474,
+      "p99": 3.966958245306963,
+      "max": 4.577044028178735
+    },
+    "g": {
+      "count": 217,
+      "p50": 2.965219922047794e-10,
+      "p95": 1.0385251588771092,
+      "p99": 7.5134215444732595,
+      "max": 34.21241662742732
+    },
+    "quality": {
+      "count": 217,
+      "p50": 0.0,
+      "p95": 1.0,
+      "p99": 3.8797100290330615e+299,
+      "max": 8.734329234260059e+299
+    }
+  },
+  "pair_summary": {
+    "water:TV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:HP": {
+      "requested": 2,
+      "success": 1,
+      "failure": 1,
+      "full_state_match": 1,
+      "target_residual_match": 1,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:SP": {
+      "requested": 2,
+      "success": 1,
+      "failure": 1,
+      "full_state_match": 1,
+      "target_residual_match": 1,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:PV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:TP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:UV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:ST": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:SV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:UP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:VH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:TH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 0,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:SH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:PX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "water:TX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:TV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:HP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:SP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:PV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:TP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:UV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:ST": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:SV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:UP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:VH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:TH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 0,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:SH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:PX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "carbon_dioxide:TX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:TV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:HP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:SP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:PV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:TP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:UV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:ST": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 1,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:SV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:UP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:VH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:TH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 0,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:SH": {
+      "requested": 2,
+      "success": 1,
+      "failure": 1,
+      "full_state_match": 1,
+      "target_residual_match": 1,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:PX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "nitrogen:TX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:TV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:HP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:SP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:PV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:TP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:UV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:ST": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:SV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:UP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:VH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:TH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 0,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:SH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:PX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "oxygen:TX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:TV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:HP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:SP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:PV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:TP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:UV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:ST": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:SV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:UP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:VH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:TH": {
+      "requested": 2,
+      "success": 1,
+      "failure": 1,
+      "full_state_match": 0,
+      "target_residual_match": 1,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:SH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:PX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hydrogen:TX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:TV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:HP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:SP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:PV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 1,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:TP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:UV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:ST": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:SV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:UP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:VH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:TH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 0,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:SH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:PX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "methane:TX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:TV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:HP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:SP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:PV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:TP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:UV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 1,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:ST": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:SV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:UP": {
+      "requested": 2,
+      "success": 0,
+      "failure": 2,
+      "full_state_match": 0,
+      "target_residual_match": 0,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:VH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:TH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 1,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:SH": {
+      "requested": 2,
+      "success": 1,
+      "failure": 1,
+      "full_state_match": 1,
+      "target_residual_match": 1,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:PX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "heptane:TX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:TV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:HP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:SP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:PV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:TP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:UV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:ST": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:SV": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:UP": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:VH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:TH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 0,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:SH": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:PX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    },
+    "hfc134a:TX": {
+      "requested": 2,
+      "success": 2,
+      "failure": 0,
+      "full_state_match": 2,
+      "target_residual_match": 2,
+      "target_sampling_attempts": 2,
+      "invalid_target_samples": 0,
+      "requested_valid_cases_completed": true
+    }
+  },
+  "case_file": "audit/solver_wave3_property_pair_validation.jsonl",
+  "case_file_sha256": "a803733200c82a39191fd8b7c2c6bfdf080633e82bd2cc4631a1992cb5e822bf",
+  "runtime_class_source": "cantera_python.tpx via the same class family returned by newSubstance; tpx_exact duplicate classes are excluded",
+  "interpretation": "Self-consistency only; no native oracle comparison. Full-state differences may reflect non-unique solutions and require source-branch review."
+}

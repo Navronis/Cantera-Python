@@ -1,0 +1,19 @@
+{
+  "module": "cantera_python.ideal_gas",
+  "upstream_paths": [
+    "include/cantera/thermo/IdealGasPhase.h",
+    "src/thermo/IdealGasPhase.cpp",
+    "src/thermo/Phase.cpp"
+  ],
+  "translations": [
+    {
+      "python_symbols": ["Species", "IdealGasMixture"],
+      "translated_methods": [
+        "ideal-gas density and molar density", "mixture cp/h/s/g/u",
+        "mass and partial-molar properties", "chemical potentials",
+        "ideal-gas compressibility and expansion coefficients"
+      ],
+      "notes": "Scalar, fixed-state equation layer. Full ThermoPhase state machinery, parsing, equilibrium, and kinetics remain pending."
+    }
+  ]
+}

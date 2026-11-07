@@ -1,0 +1,63 @@
+"""Build provenance/reactor_equation_matrix.jsonl from pinned zeroD sources.
+
+Maps every governing term of IdealGasReactor and IdealGasConstPressureReactor
+to the Python implementation, with pinned source line references.
+"""
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).parents[2]
+PROV = ROOT / 'provenance'
+
+ROWS = [
+    {
+        "reactor": "IdealGasReactor",
+        "state_vector": ["mass", "volume", "temperature", "Y_0..Y_{K-1}", "surface coverages"],
+        "pinned_source": "src/zeroD/IdealGasReactor.cpp",
+        "pinned_lines": "36-46 (updateState), 48-108 (eval)",
+        "terms": [
+            {"quantity": "dm/dt", "pinned_equation": "dmdt += mdot_surf; dmdt -= mdot_out; dmdt += mdot_in",
+             "python": "reactor.IdealGasReactor (closed system: 0)", "status": "IMPLEMENTED_CLOSED_ONLY"},
+            {"quantity": "m*cv*dT/dt", "pinned_equation": "-(P + internalPressure)*vdot + Qdot - sum(wdot_k*u_k)*V - sum(sdot_k*u_k) + inlet enthalpy/flow-work terms",
+             "python": "reactor.rhs dTdt = -(wdot @ u)/(rho*cv) for closed adiabatic reactor", "status": "IMPLEMENTED_CLOSED_ONLY"},
+            {"quantity": "m*dY_k/dt", "pinned_equation": "(wdot_k*V + sdot_k)*W_k - Y_k*mdot_surf + inlet species flows",
+             "python": "reactor.rhs dYdt = wdot*W/rho for closed system", "status": "IMPLEMENTED_CLOSED_ONLY"},
+        ],
+        "notes": "Pinned state vector is [m, V, T, Y...]; Python reactor currently integrates [T, Y...] at fixed volume (dm=dV=0 valid for closed constant-volume). Walls/surface/inlet/outlet terms NOT YET ported.",
+    },
+    {
+        "reactor": "IdealGasConstPressureReactor",
+        "state_vector": ["mass", "temperature", "Y_0..Y_{K-1}", "surface coverages"],
+        "pinned_source": "src/zeroD/IdealGasConstPressureReactor.cpp",
+        "pinned_lines": "27-41 (updateState), 43-105 (eval)",
+        "terms": [
+            {"quantity": "dm/dt", "pinned_equation": "dmdt = mdot_surf - mdot_out + mdot_in",
+             "python": "reactor.IdealGasConstPressureReactor (closed: 0)", "status": "IMPLEMENTED_CLOSED_ONLY"},
+            {"quantity": "m*cp*dT/dt", "pinned_equation": "Qdot - sum(wdot_k*h_k)*V - sum(sdot_k*h_k) + inlet terms",
+             "python": "reactor.rhs dTdt = -(wdot @ h)/(rho*cp) closed adiabatic", "status": "IMPLEMENTED_CLOSED_ONLY"},
+            {"quantity": "m*dY_k/dt", "pinned_equation": "(wdot_k*V + sdot_k)*W_k - Y_k*mdot_surf",
+             "python": "reactor.rhs dYdt = wdot*W/rho", "status": "IMPLEMENTED_CLOSED_ONLY"},
+            {"quantity": "volume evolution", "pinned_equation": "V = m/rho(T,P,Y)", "python": "update_state sets volume from mass/density", "status": "IMPLEMENTED"},
+        ],
+        "notes": "Python update_state matches pinned updateState (mass from density at fixed P). Flow/wall/surface terms not yet ported.",
+    },
+    {
+        "reactor": "ReactorNet",
+        "state_vector": "concatenation of reactor state vectors",
+        "pinned_source": "src/zeroD/ReactorNet.cpp",
+        "pinned_lines": "162-260 (tolerances), 480-500 (linear solve interface)",
+        "terms": [
+            {"quantity": "rtol/atol defaults", "pinned_equation": "m_rtol=1e-9, m_atols=1e-15",
+             "python": "ReactorNet.__init__ rtol=1e-9 atol=1e-15", "status": "IMPLEMENTED"},
+            {"quantity": "integrator", "pinned_equation": "CVODE (SUNDIALS) BDF/Adams with preconditioner hooks",
+             "python": "scipy solve_ivp BDF with block sparsity, LSODA fallback, documented relaxed retry", "status": "BACKEND_SUBSTITUTION_JUSTIFIED"},
+        ],
+        "notes": "Sensitivity/preconditioner hooks not yet ported (Phase 12). Backend substitution documented in VALIDATION.md; public tolerance defaults match pinned.",
+    },
+]
+
+out = PROV / 'reactor_equation_matrix.jsonl'
+with out.open('w', encoding='utf-8') as fh:
+    for r in ROWS:
+        fh.write(json.dumps(r) + '\n')
+print('wrote', out, len(ROWS), 'rows')

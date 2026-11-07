@@ -1,0 +1,10 @@
+{
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "pip_version": "26.0.1",
+  "numpy_version": "2.4.4",
+  "scipy_version": "1.17.1",
+  "pytest_version": "9.0.2",
+  "platform": "win32 x86_64",
+  "timestamp": "2026-09-27T23:10:00+05:30",
+  "FULL_PYTHON_TEST_ENV_RESTORED": true
+}

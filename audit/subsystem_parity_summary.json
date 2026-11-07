@@ -1,0 +1,175 @@
+{
+  "schema_version": 2,
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "complete": false,
+  "whole_library_percentage": null,
+  "percentage_policy": "No single percentage is scientifically defensible.",
+  "runtime": {
+    "native_cantera_imported": false,
+    "native_cantera_shared_library_required": false,
+    "parity_numerical_dependency": "scikit-sundae 1.1.3 / SUNDIALS 7.5.0",
+    "native_python_sundials_loaded": false
+  },
+  "focused_archived_fixture": {
+    "records": 144,
+    "scalar_records": 124,
+    "aggregate_vector_records": 20,
+    "max_scalar_ulp": 3,
+    "scope_limit": "Focused archived-fixture replay only; this does not characterize unrepresented solvers or subsystems."
+  },
+  "solver_status_counts": {
+    "APPROXIMATE": 3,
+    "NOT_IMPLEMENTED": 16,
+    "PARTIAL": 12,
+    "SAME_SOLVER_FAMILY_PARITY": 1
+  },
+  "solver_complete": false,
+  "canonical_symbol_closure": {
+    "TOTAL": 5784,
+    "PINNED_NATIVE_VALIDATED": 0,
+    "SEMANTIC_PYTHON_EQUIVALENT_VALIDATED": 0,
+    "NON_RUNTIME_CPP_ONLY_PROVEN": 759,
+    "PARTIAL": 644,
+    "NOT_PORTED": 4381,
+    "fully_dispositioned": 759,
+    "remaining_without_final_disposition": 5025,
+    "FULL_PORT_COMPLETE": false
+  },
+  "open_solver_families": [
+    {
+      "subsystem": "0D ODE integration",
+      "status": "SAME_SOLVER_FAMILY_PARITY"
+    },
+    {
+      "subsystem": "0D forward sensitivity",
+      "status": "APPROXIMATE"
+    },
+    {
+      "subsystem": "0D adjoint sensitivity",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "DAE integration",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "DAE sensitivity",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "reactor network",
+      "status": "PARTIAL"
+    },
+    {
+      "subsystem": "flow reactor DAE",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "steady reactor",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "1D Newton",
+      "status": "PARTIAL"
+    },
+    {
+      "subsystem": "1D residual",
+      "status": "PARTIAL"
+    },
+    {
+      "subsystem": "1D solve orchestration",
+      "status": "PARTIAL"
+    },
+    {
+      "subsystem": "1D adjoint",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "grid refinement",
+      "status": "PARTIAL"
+    },
+    {
+      "subsystem": "banded linear algebra",
+      "status": "PARTIAL"
+    },
+    {
+      "subsystem": "sparse direct linear algebra",
+      "status": "PARTIAL"
+    },
+    {
+      "subsystem": "reactor preconditioning",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "single-phase equilibrium",
+      "status": "APPROXIMATE"
+    },
+    {
+      "subsystem": "multiphase Gibbs equilibrium",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "VCS equilibrium",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "surface transient",
+      "status": "APPROXIMATE"
+    },
+    {
+      "subsystem": "surface steady",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "Peng-Robinson roots",
+      "status": "PARTIAL"
+    },
+    {
+      "subsystem": "Redlich-Kwong roots",
+      "status": "PARTIAL"
+    },
+    {
+      "subsystem": "generic fugacity roots",
+      "status": "PARTIAL"
+    },
+    {
+      "subsystem": "TPX pure fluids",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "IAPWS water",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "mixture transport",
+      "status": "PARTIAL"
+    },
+    {
+      "subsystem": "porous transport",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "high-pressure transport",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "ionized 1D flow",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "electron energy distribution",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "subsystem": "thermodynamic state inversion",
+      "status": "PARTIAL"
+    }
+  ],
+  "authoritative_artifacts": [
+    "audit/complete_solver_inventory.jsonl",
+    "audit/native_environment_manifest.json",
+    "audit/scientific_status.json",
+    "audit/remaining_gaps.jsonl",
+    "provenance/symbol_closure_dashboard.json"
+  ]
+}

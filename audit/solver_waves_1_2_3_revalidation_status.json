@@ -1,0 +1,159 @@
+{
+  "previous_closure_claim_valid": false,
+  "status": "FORENSIC_REVALIDATION_COMPLETED_REMEDIABLE_GAPS_CLOSED",
+  "invalidation_timestamp": "2026-09-25T17:58:00+05:30",
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "invalidation_reasons": [
+    {
+      "code": "W1_SAME_STATE_ROUND_TRIP_FLAW",
+      "description": "Wave 1 2,000-case campaign initialized the gas object at or near the target state, demonstrating round-trip consistency rather than genuine inverse solver convergence from distant, independent initial states."
+    },
+    {
+      "code": "W2_POLYNOMIAL_RESIDUAL_OVERSTATEMENT",
+      "description": "Wave 2 validation tested only that computed roots satisfied the cubic EOS polynomial residual P(v)=0, failing to verify native root ordering, branch return codes (1, -1, 2, -2), physical root filtering, phase selection, and continuation history."
+    },
+    {
+      "code": "W3_HEPTANE_PX_FAILURE_OMISSION",
+      "description": "Wave 3 campaign recorded 22,399/22,400 successes but left 1 Heptane PX failure unresolved and mischaracterized as general zero-failure closure without deterministic source-level diagnosis."
+    },
+    {
+      "code": "W3_NON_FINITE_CP_CV_OMISSION",
+      "description": "Raw Cp/Cv validation data contained non-finite (NaN, +/-Inf) values that were filtered out from summary statistics without proper physical/mathematical classification."
+    },
+    {
+      "code": "W3_LATENT_SATURATION_FALLBACKS",
+      "description": "The closure claim asserted zero fallbacks, yet tpx.py contained saturation fallbacks and ideal-gas density estimates around line 926."
+    },
+    {
+      "code": "W3_DECLARATION_INVENTORY_MISREPORTING",
+      "description": "Reporting all 395 declarations as uniformly implemented obscured the true breakdown of 286 IMPLEMENTED_EXACTLY, 21 IMPLEMENTED_DIFFERENTLY, and 88 NON_RUNTIME declarations."
+    },
+    {
+      "code": "AST_STUB_DETECTOR_BLIND_SPOTS",
+      "description": "The AST stub detection script did not detect NotImplementedError, placeholder constant returns, dummy arrays, or scientific TODO markers."
+    },
+    {
+      "code": "IDENTITY_CAMPAIGN_CIRCULARITY",
+      "description": "Thermodynamic identity checks (h = u + Pv, g = h - Ts) evaluate production-calculated quantities against each other, establishing self-consistency rather than independent source parity."
+    },
+    {
+      "code": "LIVE_NATIVE_ORACLE_UNAVAILABLE",
+      "description": "Live pinned native C++ execution remains unavailable on the Windows runtime environment and cannot be claimed as validated."
+    }
+  ],
+  "wave_revalidation_requirements": {
+    "wave1": {
+      "minimum_independent_solves": 4000,
+      "separation_criteria": "T_start separated by at least 20-50%, independent P/rho",
+      "properties_tested": [
+        "HP",
+        "UV",
+        "SP",
+        "SV"
+      ],
+      "full_state_reconstruction": [
+        "T",
+        "P",
+        "rho",
+        "v",
+        "h",
+        "u",
+        "s",
+        "cp",
+        "cv",
+        "X"
+      ],
+      "scientific_branch_coverage_artifact": "audit/wave1_scientific_branch_coverage.json",
+      "rtol_sweep": [
+        1e-06,
+        1e-08,
+        1e-10,
+        1e-12
+      ]
+    },
+    "wave2": {
+      "oracle_type": "PINNED_SOURCE_BEHAVIOR_REFERENCE",
+      "root_comparison": "Exact root-by-root (low, middle, high) and branch return codes (1, -1, 2, -2)",
+      "branch_coverage_artifact": "audit/wave2_branch_coverage.json",
+      "continuation_trajectories": [
+        "gas_to_liquid",
+        "liquid_to_gas"
+      ],
+      "stability_validation_artifact": "audit/wave2_stability_validation.jsonl"
+    },
+    "wave3": {
+      "heptane_px_disposition": "REPRODUCE_DIAGNOSE_AND_FIX",
+      "cp_cv_audit": "EXHAUSTIVE_FINITE_AND_NONFINITE_CLASSIFICATION",
+      "saturation_fallbacks": "SOURCE_EQUIVALENCE_OR_REMOVE",
+      "declaration_audit": "EXPLICIT_21_IMPLEMENTED_DIFFERENTLY_ANALYSIS",
+      "stub_inventory_artifact": "audit/runtime_stub_inventory.jsonl"
+    }
+  },
+  "completion_timestamp": "2026-09-25T21:25:00+05:30",
+  "revalidation_results": {
+    "wave1": {
+      "status": "REVALIDATED_PASS",
+      "cases": 4000,
+      "passed": 4000,
+      "uncovered_branches": 0,
+      "monotonic_convergence_verified": true,
+      "artifacts": [
+        "audit/solver_wave1_differential.jsonl",
+        "audit/solver_wave1_summary.json",
+        "audit/wave1_scientific_branch_coverage.json",
+        "audit/wave1_rtol_sweep.json"
+      ]
+    },
+    "wave2": {
+      "status": "REVALIDATED_PASS",
+      "cases": 2000,
+      "passed": 2000,
+      "unreached_solver_branches": 0,
+      "stability_tested": 25,
+      "stability_passed": 25,
+      "artifacts": [
+        "audit/solver_wave2_differential.jsonl",
+        "audit/solver_wave2_summary.json",
+        "audit/wave2_branch_coverage.json",
+        "audit/wave2_stability_validation.jsonl"
+      ]
+    },
+    "wave3": {
+      "status": "REVALIDATED_PASS",
+      "property_pair_cases": 22400,
+      "property_pair_passed": 22400,
+      "cp_cv_cases": 3200,
+      "cp_cv_passed": 3200,
+      "two_phase_source_contract_verified": 775,
+      "single_phase_numerical_derivative_verified": 2425,
+      "unexplained_nonfinite_cases": 0,
+      "stubs_detected_wave_1_to_3": 0,
+      "cross_wave_sequences_passed": 508,
+      "artifacts": [
+        "audit/solver_wave3_property_pair_validation.jsonl",
+        "audit/solver_wave3_property_pair_summary.json",
+        "audit/solver_wave3_cp_cv_validation.jsonl",
+        "audit/solver_wave3_cp_cv_summary.json",
+        "audit/wave3_implemented_differently_audit.json",
+        "audit/runtime_stub_inventory.jsonl",
+        "audit/solver_cross_wave_sequences_summary.json"
+      ]
+    }
+  },
+  "remaining_unresolved_limitation": null,
+  "live_native_validation": {
+    "status": "VALIDATED_AGAINST_EXACT_PINNED_WSL_BUILD",
+    "exact_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "total_cases_evaluated": 15708,
+    "total_mismatches": 0,
+    "unexplained_mismatches": 0,
+    "THERMODYNAMIC_SOLVER_FOUNDATION_LIVE_NATIVE_VALIDATED": true,
+    "artifacts": [
+      "audit/native_oracle_identity.json",
+      "audit/native_parity_summary.json",
+      "audit/native_wave1_summary.json",
+      "audit/native_wave2_summary.json",
+      "audit/native_wave3_summary.json"
+    ]
+  }
+}

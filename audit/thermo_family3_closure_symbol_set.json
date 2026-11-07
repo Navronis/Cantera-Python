@@ -1,0 +1,2620 @@
+{
+  "family": "THERMO_FAMILY_3_THERMOPHASE_BASE",
+  "subsystem": "thermodynamics",
+  "symbol_count": 201,
+  "symbols": [
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoFactory.h:34:factory",
+      "canonical_index": 3121,
+      "source_file": "include/cantera/thermo/ThermoFactory.h",
+      "line_range": [
+        34,
+        34
+      ],
+      "signature": "static ThermoFactory* factory()",
+      "function_or_method": "factory",
+      "class": "ThermoFactory",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoFactory.h:37:deleteFactory",
+      "canonical_index": 3122,
+      "source_file": "include/cantera/thermo/ThermoFactory.h",
+      "line_range": [
+        37,
+        37
+      ],
+      "signature": "void deleteFactory() override",
+      "function_or_method": "deleteFactory",
+      "class": "ThermoFactory",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoFactory.h:57:newThermoModel",
+      "canonical_index": 3123,
+      "source_file": "include/cantera/thermo/ThermoFactory.h",
+      "line_range": [
+        57,
+        57
+      ],
+      "signature": "shared_ptr<ThermoPhase> newThermoModel(const string& model)",
+      "function_or_method": "newThermoModel",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoFactory.h:84:newThermo",
+      "canonical_index": 3124,
+      "source_file": "include/cantera/thermo/ThermoFactory.h",
+      "line_range": [
+        84,
+        84
+      ],
+      "signature": "shared_ptr<ThermoPhase> newThermo(const string& infile, const string& id=\"\")",
+      "function_or_method": "newThermo",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:400:clone",
+      "canonical_index": 3125,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        400,
+        400
+      ],
+      "signature": "shared_ptr<ThermoPhase> clone() const",
+      "function_or_method": "clone",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:405:type",
+      "canonical_index": 3126,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        405,
+        405
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "ThermoPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:410:isIdeal",
+      "canonical_index": 3127,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        410,
+        410
+      ],
+      "signature": "virtual bool isIdeal() const",
+      "function_or_method": "isIdeal",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:434:phaseOfMatter",
+      "canonical_index": 3128,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        434,
+        434
+      ],
+      "signature": "virtual string phaseOfMatter() const",
+      "function_or_method": "phaseOfMatter",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:442:refPressure",
+      "canonical_index": 3129,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        442,
+        442
+      ],
+      "signature": "virtual double refPressure() const",
+      "function_or_method": "refPressure",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:457:minTemp",
+      "canonical_index": 3130,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        457,
+        457
+      ],
+      "signature": "virtual double minTemp(size_t k = npos) const",
+      "function_or_method": "minTemp",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:472:Hf298SS",
+      "canonical_index": 3131,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        472,
+        472
+      ],
+      "signature": "double Hf298SS(const size_t k) const",
+      "function_or_method": "Hf298SS",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:487:modifyOneHf298SS",
+      "canonical_index": 3132,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        487,
+        487
+      ],
+      "signature": "virtual void modifyOneHf298SS(const size_t k, const double Hf298New)",
+      "function_or_method": "modifyOneHf298SS",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:497:resetHf298",
+      "canonical_index": 3133,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        497,
+        497
+      ],
+      "signature": "virtual void resetHf298(const size_t k=npos)",
+      "function_or_method": "resetHf298",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:510:maxTemp",
+      "canonical_index": 3134,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        510,
+        510
+      ],
+      "signature": "virtual double maxTemp(size_t k = npos) const",
+      "function_or_method": "maxTemp",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:522:temperatureLimitsEnforced",
+      "canonical_index": 3135,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        522,
+        522
+      ],
+      "signature": "bool temperatureLimitsEnforced() const",
+      "function_or_method": "temperatureLimitsEnforced",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:528:setTemperatureLimitsEnforced",
+      "canonical_index": 3136,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        528,
+        528
+      ],
+      "signature": "void setTemperatureLimitsEnforced(bool enforce)",
+      "function_or_method": "setTemperatureLimitsEnforced",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:540:chargeNeutralityNecessary",
+      "canonical_index": 3137,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        540,
+        540
+      ],
+      "signature": "bool chargeNeutralityNecessary() const",
+      "function_or_method": "chargeNeutralityNecessary",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:556:enthalpy_mole",
+      "canonical_index": 3138,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        556,
+        556
+      ],
+      "signature": "virtual double enthalpy_mole() const",
+      "function_or_method": "enthalpy_mole",
+      "class": "ThermoPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:558:mean_X",
+      "canonical_index": 3139,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        558,
+        558
+      ],
+      "signature": "return mean_X(m_workS)",
+      "function_or_method": "mean_X",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:562:intEnergy_mole",
+      "canonical_index": 3140,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        562,
+        562
+      ],
+      "signature": "virtual double intEnergy_mole() const",
+      "function_or_method": "intEnergy_mole",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:563:enthalpy_mole",
+      "canonical_index": 3141,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        563,
+        563
+      ],
+      "signature": "return enthalpy_mole() - pressure()* molarVolume()",
+      "function_or_method": "enthalpy_mole",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:574:entropy_mole",
+      "canonical_index": 3142,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        574,
+        574
+      ],
+      "signature": "virtual double entropy_mole() const",
+      "function_or_method": "entropy_mole",
+      "class": "ThermoPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:576:mean_X",
+      "canonical_index": 3143,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        576,
+        576
+      ],
+      "signature": "return mean_X(m_workS)",
+      "function_or_method": "mean_X",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:587:gibbs_mole",
+      "canonical_index": 3144,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        587,
+        587
+      ],
+      "signature": "virtual double gibbs_mole() const",
+      "function_or_method": "gibbs_mole",
+      "class": "ThermoPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:589:mean_X",
+      "canonical_index": 3145,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        589,
+        589
+      ],
+      "signature": "return mean_X(m_workS)",
+      "function_or_method": "mean_X",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:599:cp_mole",
+      "canonical_index": 3146,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        599,
+        599
+      ],
+      "signature": "virtual double cp_mole() const",
+      "function_or_method": "cp_mole",
+      "class": "ThermoPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:601:mean_X",
+      "canonical_index": 3147,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        601,
+        601
+      ],
+      "signature": "return mean_X(m_workS)",
+      "function_or_method": "mean_X",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:605:cv_mole",
+      "canonical_index": 3148,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        605,
+        605
+      ],
+      "signature": "virtual double cv_mole() const",
+      "function_or_method": "cv_mole",
+      "class": "ThermoPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:625:isothermalCompressibility",
+      "canonical_index": 3149,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        625,
+        625
+      ],
+      "signature": "virtual double isothermalCompressibility() const",
+      "function_or_method": "isothermalCompressibility",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:637:thermalExpansionCoeff",
+      "canonical_index": 3150,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        637,
+        637
+      ],
+      "signature": "virtual double thermalExpansionCoeff() const",
+      "function_or_method": "thermalExpansionCoeff",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:659:internalPressure",
+      "canonical_index": 3151,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        659,
+        659
+      ],
+      "signature": "virtual double internalPressure() const",
+      "function_or_method": "internalPressure",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:671:soundSpeed",
+      "canonical_index": 3152,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        671,
+        671
+      ],
+      "signature": "virtual double soundSpeed() const",
+      "function_or_method": "soundSpeed",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:693:setElectricPotential",
+      "canonical_index": 3153,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        693,
+        693
+      ],
+      "signature": "void setElectricPotential(double v)",
+      "function_or_method": "setElectricPotential",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:702:electricPotential",
+      "canonical_index": 3154,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        702,
+        702
+      ],
+      "signature": "double electricPotential() const",
+      "function_or_method": "electricPotential",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:734:activityConvention",
+      "canonical_index": 3155,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        734,
+        734
+      ],
+      "signature": "virtual int activityConvention() const",
+      "function_or_method": "activityConvention",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:752:standardStateConvention",
+      "canonical_index": 3156,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        752,
+        752
+      ],
+      "signature": "virtual int standardStateConvention() const",
+      "function_or_method": "standardStateConvention",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:762:standardConcentrationUnits",
+      "canonical_index": 3157,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        762,
+        762
+      ],
+      "signature": "virtual Units standardConcentrationUnits() const",
+      "function_or_method": "standardConcentrationUnits",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:778:getActivityConcentrations",
+      "canonical_index": 3158,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        778,
+        778
+      ],
+      "signature": "virtual void getActivityConcentrations(span<double> c) const",
+      "function_or_method": "getActivityConcentrations",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:800:standardConcentration",
+      "canonical_index": 3159,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        800,
+        800
+      ],
+      "signature": "virtual double standardConcentration(size_t k=0) const",
+      "function_or_method": "standardConcentration",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:809:logStandardConc",
+      "canonical_index": 3160,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        809,
+        809
+      ],
+      "signature": "virtual double logStandardConc(size_t k=0) const",
+      "function_or_method": "logStandardConc",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:823:getActivities",
+      "canonical_index": 3161,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        823,
+        823
+      ],
+      "signature": "virtual void getActivities(span<double> a) const",
+      "function_or_method": "getActivities",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:830:getActivityCoefficients",
+      "canonical_index": 3162,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        830,
+        830
+      ],
+      "signature": "virtual void getActivityCoefficients(span<double> ac) const",
+      "function_or_method": "getActivityCoefficients",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:844:getLnActivityCoefficients",
+      "canonical_index": 3163,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        844,
+        844
+      ],
+      "signature": "virtual void getLnActivityCoefficients(span<double> lnac) const",
+      "function_or_method": "getLnActivityCoefficients",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:859:getChemPotentials",
+      "canonical_index": 3164,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        859,
+        859
+      ],
+      "signature": "virtual void getChemPotentials(span<double> mu) const",
+      "function_or_method": "getChemPotentials",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:878:getElectrochemPotentials",
+      "canonical_index": 3165,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        878,
+        878
+      ],
+      "signature": "void getElectrochemPotentials(span<double> mu) const",
+      "function_or_method": "getElectrochemPotentials",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:886:getPartialMolarEnthalpies",
+      "canonical_index": 3166,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        886,
+        886
+      ],
+      "signature": "virtual void getPartialMolarEnthalpies(span<double> hbar) const",
+      "function_or_method": "getPartialMolarEnthalpies",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:897:getPartialMolarEntropies",
+      "canonical_index": 3167,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        897,
+        897
+      ],
+      "signature": "virtual void getPartialMolarEntropies(span<double> sbar) const",
+      "function_or_method": "getPartialMolarEntropies",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:908:getPartialMolarIntEnergies",
+      "canonical_index": 3168,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        908,
+        908
+      ],
+      "signature": "virtual void getPartialMolarIntEnergies(span<double> ubar) const",
+      "function_or_method": "getPartialMolarIntEnergies",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:926:getPartialMolarIntEnergies_TV",
+      "canonical_index": 3169,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        926,
+        926
+      ],
+      "signature": "virtual void getPartialMolarIntEnergies_TV(span<double> utilde) const",
+      "function_or_method": "getPartialMolarIntEnergies_TV",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:935:getPartialMolarCp",
+      "canonical_index": 3170,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        935,
+        935
+      ],
+      "signature": "virtual void getPartialMolarCp(span<double> cpbar) const",
+      "function_or_method": "getPartialMolarCp",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:952:getPartialMolarCv_TV",
+      "canonical_index": 3171,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        952,
+        952
+      ],
+      "signature": "virtual void getPartialMolarCv_TV(span<double> cvtilde) const",
+      "function_or_method": "getPartialMolarCv_TV",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:963:getPartialMolarVolumes",
+      "canonical_index": 3172,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        963,
+        963
+      ],
+      "signature": "virtual void getPartialMolarVolumes(span<double> vbar) const",
+      "function_or_method": "getPartialMolarVolumes",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:982:getStandardChemPotentials",
+      "canonical_index": 3173,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        982,
+        982
+      ],
+      "signature": "virtual void getStandardChemPotentials(span<double> mu) const",
+      "function_or_method": "getStandardChemPotentials",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:993:getEnthalpy_RT",
+      "canonical_index": 3174,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        993,
+        993
+      ],
+      "signature": "virtual void getEnthalpy_RT(span<double> hrt) const",
+      "function_or_method": "getEnthalpy_RT",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1004:getEntropy_R",
+      "canonical_index": 3175,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1004,
+        1004
+      ],
+      "signature": "virtual void getEntropy_R(span<double> sr) const",
+      "function_or_method": "getEntropy_R",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1015:getGibbs_RT",
+      "canonical_index": 3176,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1015,
+        1015
+      ],
+      "signature": "virtual void getGibbs_RT(span<double> grt) const",
+      "function_or_method": "getGibbs_RT",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1026:getIntEnergy_RT",
+      "canonical_index": 3177,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1026,
+        1026
+      ],
+      "signature": "virtual void getIntEnergy_RT(span<double> urt) const",
+      "function_or_method": "getIntEnergy_RT",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1038:getCp_R",
+      "canonical_index": 3178,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1038,
+        1038
+      ],
+      "signature": "virtual void getCp_R(span<double> cpr) const",
+      "function_or_method": "getCp_R",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1051:getStandardVolumes",
+      "canonical_index": 3179,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1051,
+        1051
+      ],
+      "signature": "virtual void getStandardVolumes(span<double> vol) const",
+      "function_or_method": "getStandardVolumes",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1067:getEnthalpy_RT_ref",
+      "canonical_index": 3180,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1067,
+        1067
+      ],
+      "signature": "virtual void getEnthalpy_RT_ref(span<double> hrt) const",
+      "function_or_method": "getEnthalpy_RT_ref",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1079:getGibbs_RT_ref",
+      "canonical_index": 3181,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1079,
+        1079
+      ],
+      "signature": "virtual void getGibbs_RT_ref(span<double> grt) const",
+      "function_or_method": "getGibbs_RT_ref",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1091:getGibbs_ref",
+      "canonical_index": 3182,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1091,
+        1091
+      ],
+      "signature": "virtual void getGibbs_ref(span<double> g) const",
+      "function_or_method": "getGibbs_ref",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1103:getEntropy_R_ref",
+      "canonical_index": 3183,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1103,
+        1103
+      ],
+      "signature": "virtual void getEntropy_R_ref(span<double> er) const",
+      "function_or_method": "getEntropy_R_ref",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1115:getIntEnergy_RT_ref",
+      "canonical_index": 3184,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1115,
+        1115
+      ],
+      "signature": "virtual void getIntEnergy_RT_ref(span<double> urt) const",
+      "function_or_method": "getIntEnergy_RT_ref",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1128:getCp_R_ref",
+      "canonical_index": 3185,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1128,
+        1128
+      ],
+      "signature": "virtual void getCp_R_ref(span<double> cprt) const",
+      "function_or_method": "getCp_R_ref",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1141:getStandardVolumes_ref",
+      "canonical_index": 3186,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1141,
+        1141
+      ],
+      "signature": "virtual void getStandardVolumes_ref(span<double> vol) const",
+      "function_or_method": "getStandardVolumes_ref",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1154:beginEquilibrate",
+      "canonical_index": 3187,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1154,
+        1154
+      ],
+      "signature": "virtual void beginEquilibrate() {}",
+      "function_or_method": "beginEquilibrate",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1162:endEquilibrate",
+      "canonical_index": 3188,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1162,
+        1162
+      ],
+      "signature": "virtual void endEquilibrate() {}",
+      "function_or_method": "endEquilibrate",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1185:enthalpy_mass",
+      "canonical_index": 3189,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1185,
+        1185
+      ],
+      "signature": "double enthalpy_mass() const",
+      "function_or_method": "enthalpy_mass",
+      "class": "ThermoPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1186:enthalpy_mole",
+      "canonical_index": 3190,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1186,
+        1186
+      ],
+      "signature": "return enthalpy_mole()/meanMolecularWeight()",
+      "function_or_method": "enthalpy_mole",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1190:intEnergy_mass",
+      "canonical_index": 3191,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1190,
+        1190
+      ],
+      "signature": "double intEnergy_mass() const",
+      "function_or_method": "intEnergy_mass",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1191:intEnergy_mole",
+      "canonical_index": 3192,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1191,
+        1191
+      ],
+      "signature": "return intEnergy_mole()/meanMolecularWeight()",
+      "function_or_method": "intEnergy_mole",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1195:entropy_mass",
+      "canonical_index": 3193,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1195,
+        1195
+      ],
+      "signature": "double entropy_mass() const",
+      "function_or_method": "entropy_mass",
+      "class": "ThermoPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1196:entropy_mole",
+      "canonical_index": 3194,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1196,
+        1196
+      ],
+      "signature": "return entropy_mole()/meanMolecularWeight()",
+      "function_or_method": "entropy_mole",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1200:gibbs_mass",
+      "canonical_index": 3195,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1200,
+        1200
+      ],
+      "signature": "double gibbs_mass() const",
+      "function_or_method": "gibbs_mass",
+      "class": "ThermoPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1201:gibbs_mole",
+      "canonical_index": 3196,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1201,
+        1201
+      ],
+      "signature": "return gibbs_mole()/meanMolecularWeight()",
+      "function_or_method": "gibbs_mole",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1205:cp_mass",
+      "canonical_index": 3197,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1205,
+        1205
+      ],
+      "signature": "double cp_mass() const",
+      "function_or_method": "cp_mass",
+      "class": "ThermoPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1206:cp_mole",
+      "canonical_index": 3198,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1206,
+        1206
+      ],
+      "signature": "return cp_mole()/meanMolecularWeight()",
+      "function_or_method": "cp_mole",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1210:cv_mass",
+      "canonical_index": 3199,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1210,
+        1210
+      ],
+      "signature": "double cv_mass() const",
+      "function_or_method": "cv_mass",
+      "class": "ThermoPhase",
+      "current_status": "PARTIAL"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1211:cv_mole",
+      "canonical_index": 3200,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1211,
+        1211
+      ],
+      "signature": "return cv_mole()/meanMolecularWeight()",
+      "function_or_method": "cv_mole",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1219:RT",
+      "canonical_index": 3201,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1219,
+        1219
+      ],
+      "signature": "double RT() const",
+      "function_or_method": "RT",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1239:setState_TPX",
+      "canonical_index": 3202,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1239,
+        1239
+      ],
+      "signature": "virtual void setState_TPX(double t, double p, span<const double> x)",
+      "function_or_method": "setState_TPX",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1251:setState_TPX",
+      "canonical_index": 3203,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1251,
+        1251
+      ],
+      "signature": "virtual void setState_TPX(double t, double p, const Composition& x)",
+      "function_or_method": "setState_TPX",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1264:setState_TPX",
+      "canonical_index": 3204,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1264,
+        1264
+      ],
+      "signature": "virtual void setState_TPX(double t, double p, const string& x)",
+      "function_or_method": "setState_TPX",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1277:setState_TPY",
+      "canonical_index": 3205,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1277,
+        1277
+      ],
+      "signature": "virtual void setState_TPY(double t, double p, span<const double> y)",
+      "function_or_method": "setState_TPY",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1290:setState_TPY",
+      "canonical_index": 3206,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1290,
+        1290
+      ],
+      "signature": "virtual void setState_TPY(double t, double p, const Composition& y)",
+      "function_or_method": "setState_TPY",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1304:setState_TPY",
+      "canonical_index": 3207,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1304,
+        1304
+      ],
+      "signature": "virtual void setState_TPY(double t, double p, const string& y)",
+      "function_or_method": "setState_TPY",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1313:setState_TP",
+      "canonical_index": 3208,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1313,
+        1313
+      ],
+      "signature": "virtual void setState_TP(double t, double p)",
+      "function_or_method": "setState_TP",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1324:setState_HP",
+      "canonical_index": 3209,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1324,
+        1324
+      ],
+      "signature": "virtual void setState_HP(double h, double p, double tol=1e-9)",
+      "function_or_method": "setState_HP",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1338:setState_UV",
+      "canonical_index": 3210,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1338,
+        1338
+      ],
+      "signature": "virtual void setState_UV(double u, double v, double tol=1e-9)",
+      "function_or_method": "setState_UV",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1351:setState_SP",
+      "canonical_index": 3211,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1351,
+        1351
+      ],
+      "signature": "virtual void setState_SP(double s, double p, double tol=1e-9)",
+      "function_or_method": "setState_SP",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1364:setState_SV",
+      "canonical_index": 3212,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1364,
+        1364
+      ],
+      "signature": "virtual void setState_SV(double s, double v, double tol=1e-9)",
+      "function_or_method": "setState_SV",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1378:setState_ST",
+      "canonical_index": 3213,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1378,
+        1378
+      ],
+      "signature": "virtual void setState_ST(double s, double t, double tol=1e-9)",
+      "function_or_method": "setState_ST",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1395:setState_TV",
+      "canonical_index": 3214,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1395,
+        1395
+      ],
+      "signature": "virtual void setState_TV(double t, double v, double tol=1e-9)",
+      "function_or_method": "setState_TV",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1412:setState_PV",
+      "canonical_index": 3215,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1412,
+        1412
+      ],
+      "signature": "virtual void setState_PV(double p, double v, double tol=1e-9)",
+      "function_or_method": "setState_PV",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1429:setState_UP",
+      "canonical_index": 3216,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1429,
+        1429
+      ],
+      "signature": "virtual void setState_UP(double u, double p, double tol=1e-9)",
+      "function_or_method": "setState_UP",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1446:setState_VH",
+      "canonical_index": 3217,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1446,
+        1446
+      ],
+      "signature": "virtual void setState_VH(double v, double h, double tol=1e-9)",
+      "function_or_method": "setState_VH",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1463:setState_TH",
+      "canonical_index": 3218,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1463,
+        1463
+      ],
+      "signature": "virtual void setState_TH(double t, double h, double tol=1e-9)",
+      "function_or_method": "setState_TH",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1480:setState_SH",
+      "canonical_index": 3219,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1480,
+        1480
+      ],
+      "signature": "virtual void setState_SH(double s, double h, double tol=1e-9)",
+      "function_or_method": "setState_SH",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1499:setState_DP",
+      "canonical_index": 3220,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1499,
+        1499
+      ],
+      "signature": "virtual void setState_DP(double rho, double p)",
+      "function_or_method": "setState_DP",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1527:setState",
+      "canonical_index": 3221,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1527,
+        1527
+      ],
+      "signature": "virtual void setState(const AnyMap& state)",
+      "function_or_method": "setState",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1690:equivalenceRatio",
+      "canonical_index": 3222,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1690,
+        1690
+      ],
+      "signature": "double equivalenceRatio() const",
+      "function_or_method": "equivalenceRatio",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1729:AnyMap",
+      "canonical_index": 3223,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1729,
+        1729
+      ],
+      "signature": "return AnyMap()",
+      "function_or_method": "AnyMap",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1743:setState_HPorUV",
+      "canonical_index": 3224,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1743,
+        1743
+      ],
+      "signature": "void setState_HPorUV(double h, double p, double tol=1e-9, bool doUV = false)",
+      "function_or_method": "setState_HPorUV",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1754:setState_SPorSV",
+      "canonical_index": 3225,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1754,
+        1754
+      ],
+      "signature": "void setState_SPorSV(double s, double p, double tol=1e-9, bool doSV = false)",
+      "function_or_method": "setState_SPorSV",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1758:setState_conditional_TP",
+      "canonical_index": 3226,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1758,
+        1758
+      ],
+      "signature": "void setState_conditional_TP(double t, double p, bool set_p)",
+      "function_or_method": "setState_conditional_TP",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1766:o2Required",
+      "canonical_index": 3227,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1766,
+        1766
+      ],
+      "signature": "double o2Required(span<const double> y) const",
+      "function_or_method": "o2Required",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1774:o2Present",
+      "canonical_index": 3228,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1774,
+        1774
+      ],
+      "signature": "double o2Present(span<const double> y) const",
+      "function_or_method": "o2Present",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1829:setToEquilState",
+      "canonical_index": 3229,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1829,
+        1829
+      ],
+      "signature": "virtual void setToEquilState(span<const double> mu_RT)",
+      "function_or_method": "setToEquilState",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1830:NotImplementedError",
+      "canonical_index": 3230,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1830,
+        1830
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::setToEquilState\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1836:compatibleWithMultiPhase",
+      "canonical_index": 3231,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1836,
+        1836
+      ],
+      "signature": "virtual bool compatibleWithMultiPhase() const",
+      "function_or_method": "compatibleWithMultiPhase",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1848:critTemperature",
+      "canonical_index": 3232,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1848,
+        1848
+      ],
+      "signature": "virtual double critTemperature() const",
+      "function_or_method": "critTemperature",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1849:NotImplementedError",
+      "canonical_index": 3233,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1849,
+        1849
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::critTemperature\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1853:critPressure",
+      "canonical_index": 3234,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1853,
+        1853
+      ],
+      "signature": "virtual double critPressure() const",
+      "function_or_method": "critPressure",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1854:NotImplementedError",
+      "canonical_index": 3235,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1854,
+        1854
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::critPressure\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1858:critVolume",
+      "canonical_index": 3236,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1858,
+        1858
+      ],
+      "signature": "virtual double critVolume() const",
+      "function_or_method": "critVolume",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1859:NotImplementedError",
+      "canonical_index": 3237,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1859,
+        1859
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::critVolume\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1863:critCompressibility",
+      "canonical_index": 3238,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1863,
+        1863
+      ],
+      "signature": "virtual double critCompressibility() const",
+      "function_or_method": "critCompressibility",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1864:NotImplementedError",
+      "canonical_index": 3239,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1864,
+        1864
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::critCompressibility\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1868:critDensity",
+      "canonical_index": 3240,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1868,
+        1868
+      ],
+      "signature": "virtual double critDensity() const",
+      "function_or_method": "critDensity",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1869:NotImplementedError",
+      "canonical_index": 3241,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1869,
+        1869
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::critDensity\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1883:satTemperature",
+      "canonical_index": 3242,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1883,
+        1883
+      ],
+      "signature": "virtual double satTemperature(double p) const",
+      "function_or_method": "satTemperature",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1884:NotImplementedError",
+      "canonical_index": 3243,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1884,
+        1884
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::satTemperature\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1891:satPressure",
+      "canonical_index": 3244,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1891,
+        1891
+      ],
+      "signature": "virtual double satPressure(double t)",
+      "function_or_method": "satPressure",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1892:NotImplementedError",
+      "canonical_index": 3245,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1892,
+        1892
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::satPressure\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1896:vaporFraction",
+      "canonical_index": 3246,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1896,
+        1896
+      ],
+      "signature": "virtual double vaporFraction() const",
+      "function_or_method": "vaporFraction",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1897:NotImplementedError",
+      "canonical_index": 3247,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1897,
+        1897
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::vaporFraction\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1905:setState_Tsat",
+      "canonical_index": 3248,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1905,
+        1905
+      ],
+      "signature": "virtual void setState_Tsat(double t, double x)",
+      "function_or_method": "setState_Tsat",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1906:NotImplementedError",
+      "canonical_index": 3249,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1906,
+        1906
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::setState_Tsat\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1914:setState_Psat",
+      "canonical_index": 3250,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1914,
+        1914
+      ],
+      "signature": "virtual void setState_Psat(double p, double x)",
+      "function_or_method": "setState_Psat",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1915:NotImplementedError",
+      "canonical_index": 3251,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1915,
+        1915
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::setState_Psat\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1934:setState_TPQ",
+      "canonical_index": 3252,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1934,
+        1934
+      ],
+      "signature": "void setState_TPQ(double T, double P, double Q)",
+      "function_or_method": "setState_TPQ",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1945:addSpecies",
+      "canonical_index": 3253,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1945,
+        1945
+      ],
+      "signature": "bool addSpecies(shared_ptr<Species> spec) override",
+      "function_or_method": "addSpecies",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1947:modifySpecies",
+      "canonical_index": 3254,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1947,
+        1947
+      ],
+      "signature": "void modifySpecies(size_t k, shared_ptr<Species> spec) override",
+      "function_or_method": "modifySpecies",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1954:speciesThermo",
+      "canonical_index": 3255,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1954,
+        1954
+      ],
+      "signature": "virtual MultiSpeciesThermo& speciesThermo(int k = -1)",
+      "function_or_method": "speciesThermo",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1956:speciesThermo",
+      "canonical_index": 3256,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1956,
+        1956
+      ],
+      "signature": "virtual const MultiSpeciesThermo& speciesThermo(int k = -1) const",
+      "function_or_method": "speciesThermo",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1969:initThermoFile",
+      "canonical_index": 3257,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1969,
+        1969
+      ],
+      "signature": "void initThermoFile(const string& inputFile, const string& id)",
+      "function_or_method": "initThermoFile",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1985:initThermo",
+      "canonical_index": 3258,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1985,
+        1985
+      ],
+      "signature": "virtual void initThermo()",
+      "function_or_method": "initThermo",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:1998:parameters",
+      "canonical_index": 3259,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        1998,
+        1998
+      ],
+      "signature": "AnyMap parameters(bool withInput=true) const",
+      "function_or_method": "parameters",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2006:getSpeciesParameters",
+      "canonical_index": 3260,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2006,
+        2006
+      ],
+      "signature": "virtual void getSpeciesParameters(const string& name, AnyMap& speciesNode) const {}",
+      "function_or_method": "getSpeciesParameters",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2009:input",
+      "canonical_index": 3261,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2009,
+        2009
+      ],
+      "signature": "const AnyMap& input() const",
+      "function_or_method": "input",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2010:input",
+      "canonical_index": 3262,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2010,
+        2010
+      ],
+      "signature": "AnyMap& input()",
+      "function_or_method": "input",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2012:invalidateCache",
+      "canonical_index": 3263,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2012,
+        2012
+      ],
+      "signature": "void invalidateCache() override",
+      "function_or_method": "invalidateCache",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2038:NotImplementedError",
+      "canonical_index": 3264,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2038,
+        2038
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::getdlnActCoeffds\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2056:getdlnActCoeffdlnX_diag",
+      "canonical_index": 3265,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2056,
+        2056
+      ],
+      "signature": "virtual void getdlnActCoeffdlnX_diag(span<double> dlnActCoeffdlnX_diag) const",
+      "function_or_method": "getdlnActCoeffdlnX_diag",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2057:NotImplementedError",
+      "canonical_index": 3266,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2057,
+        2057
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::getdlnActCoeffdlnX_diag\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2076:getdlnActCoeffdlnN_diag",
+      "canonical_index": 3267,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2076,
+        2076
+      ],
+      "signature": "virtual void getdlnActCoeffdlnN_diag(span<double> dlnActCoeffdlnN_diag) const",
+      "function_or_method": "getdlnActCoeffdlnN_diag",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2077:NotImplementedError",
+      "canonical_index": 3268,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2077,
+        2077
+      ],
+      "signature": "throw NotImplementedError(\"ThermoPhase::getdlnActCoeffdlnN_diag\")",
+      "function_or_method": "NotImplementedError",
+      "class": "ThermoPhase",
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2105:getdlnActCoeffdlnN",
+      "canonical_index": 3269,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2105,
+        2105
+      ],
+      "signature": "virtual void getdlnActCoeffdlnN(const size_t ld, span<double> dlnActCoeffdlnN)",
+      "function_or_method": "getdlnActCoeffdlnN",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2121:report",
+      "canonical_index": 3270,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2121,
+        2121
+      ],
+      "signature": "virtual string report(bool show_thermo=true, double threshold=-1e-14) const",
+      "function_or_method": "report",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2127:setSolution",
+      "canonical_index": 3271,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2127,
+        2127
+      ],
+      "signature": "virtual void setSolution(std::weak_ptr<Solution> soln)",
+      "function_or_method": "setSolution",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2134:root",
+      "canonical_index": 3272,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2134,
+        2134
+      ],
+      "signature": "shared_ptr<Solution> root() const",
+      "function_or_method": "root",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/ThermoPhase.h:2142:getParameters",
+      "canonical_index": 3273,
+      "source_file": "include/cantera/thermo/ThermoPhase.h",
+      "line_range": [
+        2142,
+        2142
+      ],
+      "signature": "virtual void getParameters(AnyMap& phaseNode) const",
+      "function_or_method": "getParameters",
+      "class": "ThermoPhase",
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoFactory.cpp:99:lock",
+      "canonical_index": 5014,
+      "source_file": "src/thermo/ThermoFactory.cpp",
+      "line_range": [
+        99,
+        99
+      ],
+      "signature": "std::unique_lock<std::mutex> lock(thermo_mutex)",
+      "function_or_method": "lock",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoFactory.cpp:108:lock",
+      "canonical_index": 5015,
+      "source_file": "src/thermo/ThermoFactory.cpp",
+      "line_range": [
+        108,
+        108
+      ],
+      "signature": "std::unique_lock<std::mutex> lock(thermo_mutex)",
+      "function_or_method": "lock",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoFactory.cpp:115:tptr",
+      "canonical_index": 5016,
+      "source_file": "src/thermo/ThermoFactory.cpp",
+      "line_range": [
+        115,
+        115
+      ],
+      "signature": "shared_ptr<ThermoPhase> tptr(ThermoFactory::factory()->create(model))",
+      "function_or_method": "tptr",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoFactory.cpp:148:newThermo",
+      "canonical_index": 5017,
+      "source_file": "src/thermo/ThermoFactory.cpp",
+      "line_range": [
+        148,
+        148
+      ],
+      "signature": "return newThermo(phase, root)",
+      "function_or_method": "newThermo",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoFactory.cpp:151:addDefaultElements",
+      "canonical_index": 5018,
+      "source_file": "src/thermo/ThermoFactory.cpp",
+      "line_range": [
+        151,
+        151
+      ],
+      "signature": "void addDefaultElements(ThermoPhase& thermo, const vector<string>& element_names)",
+      "function_or_method": "addDefaultElements",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoFactory.cpp:238:fileName",
+      "canonical_index": 5019,
+      "source_file": "src/thermo/ThermoFactory.cpp",
+      "line_range": [
+        238,
+        238
+      ],
+      "signature": "string fileName(source.begin(), slash.begin())",
+      "function_or_method": "fileName",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoFactory.cpp:239:node",
+      "canonical_index": 5020,
+      "source_file": "src/thermo/ThermoFactory.cpp",
+      "line_range": [
+        239,
+        239
+      ],
+      "signature": "string node(slash.end(), source.end())",
+      "function_or_method": "node",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoFactory.cpp:283:fileName",
+      "canonical_index": 5021,
+      "source_file": "src/thermo/ThermoFactory.cpp",
+      "line_range": [
+        283,
+        283
+      ],
+      "signature": "string fileName(source.begin(), slash.begin())",
+      "function_or_method": "fileName",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoFactory.cpp:284:node",
+      "canonical_index": 5022,
+      "source_file": "src/thermo/ThermoFactory.cpp",
+      "line_range": [
+        284,
+        284
+      ],
+      "signature": "string node(slash.end(), source.end())",
+      "function_or_method": "node",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:45:newThermo",
+      "canonical_index": 5023,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        45,
+        45
+      ],
+      "signature": "return newThermo(phase, root)",
+      "function_or_method": "newThermo",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:107:Units",
+      "canonical_index": 5024,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        107,
+        107
+      ],
+      "signature": "return Units(1.0, 0, -static_cast<double>(nDim()), 0, 0, 0, 1)",
+      "function_or_method": "Units",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:112:log",
+      "canonical_index": 5025,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        112,
+        112
+      ],
+      "signature": "return log(standardConcentration(k))",
+      "function_or_method": "log",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:142:vbar",
+      "canonical_index": 5026,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        142,
+        142
+      ],
+      "signature": "vector<double> vbar(m_kk)",
+      "function_or_method": "vbar",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:189:state",
+      "canonical_index": 5027,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        189,
+        189
+      ],
+      "signature": "vector<double> state(partialStateSize())",
+      "function_or_method": "state",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:202:state",
+      "canonical_index": 5028,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        202,
+        202
+      ],
+      "signature": "vector<double> state(partialStateSize())",
+      "function_or_method": "state",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:215:state",
+      "canonical_index": 5029,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        215,
+        215
+      ],
+      "signature": "vector<double> state(partialStateSize())",
+      "function_or_method": "state",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:366:clip",
+      "canonical_index": 5030,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        366,
+        366
+      ],
+      "signature": ": clip(minTemp(), SmallNumber, 100.0)",
+      "function_or_method": "clip",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:554:CanteraError",
+      "canonical_index": 5031,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        554,
+        554
+      ],
+      "signature": "throw CanteraError(\"ThermoPhase::setState_HPorUV (UV)\", ErrString)",
+      "function_or_method": "CanteraError",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:556:CanteraError",
+      "canonical_index": 5032,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        556,
+        556
+      ],
+      "signature": "throw CanteraError(\"ThermoPhase::setState_HPorUV (HP)\", ErrString)",
+      "function_or_method": "CanteraError",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:562:state",
+      "canonical_index": 5033,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        562,
+        562
+      ],
+      "signature": "vector<double> state(partialStateSize())",
+      "function_or_method": "state",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:575:state",
+      "canonical_index": 5034,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        575,
+        575
+      ],
+      "signature": "vector<double> state(partialStateSize())",
+      "function_or_method": "state",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:607:clip",
+      "canonical_index": 5035,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        607,
+        607
+      ],
+      "signature": ": clip(minTemp(), SmallNumber, 100.0)",
+      "function_or_method": "clip",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:777:CanteraError",
+      "canonical_index": 5036,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        777,
+        777
+      ],
+      "signature": "throw CanteraError(\"ThermoPhase::setState_SPorSV (SV)\", ErrString)",
+      "function_or_method": "CanteraError",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:779:CanteraError",
+      "canonical_index": 5037,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        779,
+        779
+      ],
+      "signature": "throw CanteraError(\"ThermoPhase::setState_SPorSV (SP)\", ErrString)",
+      "function_or_method": "CanteraError",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:834:fuel",
+      "canonical_index": 5038,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        834,
+        834
+      ],
+      "signature": "vector<double> fuel(getCompositionFromMap(fuelComp))",
+      "function_or_method": "fuel",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:835:ox",
+      "canonical_index": 5039,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        835,
+        835
+      ],
+      "signature": "vector<double> ox(getCompositionFromMap(oxComp))",
+      "function_or_method": "ox",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:836:stoichAirFuelRatio",
+      "canonical_index": 5040,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        836,
+        836
+      ],
+      "signature": "return stoichAirFuelRatio(fuel, ox, basis)",
+      "function_or_method": "stoichAirFuelRatio",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:903:y",
+      "canonical_index": 5041,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        903,
+        903
+      ],
+      "signature": "vector<double> y(m_kk)",
+      "function_or_method": "y",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:946:fuel",
+      "canonical_index": 5042,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        946,
+        946
+      ],
+      "signature": "vector<double> fuel(getCompositionFromMap(fuelComp))",
+      "function_or_method": "fuel",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:947:ox",
+      "canonical_index": 5043,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        947,
+        947
+      ],
+      "signature": "vector<double> ox(getCompositionFromMap(oxComp))",
+      "function_or_method": "ox",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:948:equivalenceRatio",
+      "canonical_index": 5044,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        948,
+        948
+      ],
+      "signature": "return equivalenceRatio(fuel, ox, basis)",
+      "function_or_method": "equivalenceRatio",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:991:fuel",
+      "canonical_index": 5045,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        991,
+        991
+      ],
+      "signature": "vector<double> fuel(getCompositionFromMap(fuelComp))",
+      "function_or_method": "fuel",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:992:ox",
+      "canonical_index": 5046,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        992,
+        992
+      ],
+      "signature": "vector<double> ox(getCompositionFromMap(oxComp))",
+      "function_or_method": "ox",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1035:y",
+      "canonical_index": 5047,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1035,
+        1035
+      ],
+      "signature": "vector<double> y(m_kk)",
+      "function_or_method": "y",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1050:fuel",
+      "canonical_index": 5048,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1050,
+        1050
+      ],
+      "signature": "vector<double> fuel(getCompositionFromMap(fuelComp))",
+      "function_or_method": "fuel",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1051:ox",
+      "canonical_index": 5049,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1051,
+        1051
+      ],
+      "signature": "vector<double> ox(getCompositionFromMap(oxComp))",
+      "function_or_method": "ox",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1052:mixtureFraction",
+      "canonical_index": 5050,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1052,
+        1052
+      ],
+      "signature": "return mixtureFraction(fuel, ox, basis, element)",
+      "function_or_method": "mixtureFraction",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1325:initial_state",
+      "canonical_index": 5051,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1325,
+        1325
+      ],
+      "signature": "vector<double> initial_state(stateSize())",
+      "function_or_method": "initial_state",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1329:guard",
+      "canonical_index": 5052,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1329,
+        1329
+      ],
+      "signature": "PhaseEquilGuard guard(*this)",
+      "function_or_method": "guard",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1401:ActCoeff_Base",
+      "canonical_index": 5053,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1401,
+        1401
+      ],
+      "signature": "vector<double> ActCoeff_Base(m_kk)",
+      "function_or_method": "ActCoeff_Base",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1403:Xmol_Base",
+      "canonical_index": 5054,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1403,
+        1403
+      ],
+      "signature": "vector<double> Xmol_Base(m_kk)",
+      "function_or_method": "Xmol_Base",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1407:ActCoeff",
+      "canonical_index": 5055,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1407,
+        1407
+      ],
+      "signature": "vector<double> ActCoeff(m_kk)",
+      "function_or_method": "ActCoeff",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1408:Xmol",
+      "canonical_index": 5056,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1408,
+        1408
+      ],
+      "signature": "vector<double> Xmol(m_kk)",
+      "function_or_method": "Xmol",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1532:x",
+      "canonical_index": 5057,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1532,
+        1532
+      ],
+      "signature": "vector<double> x(m_kk)",
+      "function_or_method": "x",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1533:y",
+      "canonical_index": 5058,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1533,
+        1533
+      ],
+      "signature": "vector<double> y(m_kk)",
+      "function_or_method": "y",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1534:mu",
+      "canonical_index": 5059,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1534,
+        1534
+      ],
+      "signature": "vector<double> mu(m_kk)",
+      "function_or_method": "mu",
+      "class": null,
+      "current_status": "NOT_PORTED"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1577:to_string",
+      "canonical_index": 5060,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1577,
+        1577
+      ],
+      "signature": "return to_string(b) + err.what()",
+      "function_or_method": "to_string",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "stable_symbol_id": "src/thermo/ThermoPhase.cpp:1579:to_string",
+      "canonical_index": 5061,
+      "source_file": "src/thermo/ThermoPhase.cpp",
+      "line_range": [
+        1579,
+        1579
+      ],
+      "signature": "return to_string(b)",
+      "function_or_method": "to_string",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    }
+  ]
+}

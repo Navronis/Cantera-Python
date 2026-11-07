@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/chem_equil_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-04T20:56:39.546511+00:00",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "git_tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+  "is_worktree_clean": false,
+  "chem_equil_run_id": "de03d8bca955710558e5af3654f445a8",
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "python_executable": "/home/nebula/cantera-oracle-env/bin/python3",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "file_hashes": {
+    "equilibrium_py": "c7d75fcfde2b51ddd5106b3b94519515ba47cb0400d23fcfcd0ec92a8f9ad345",
+    "solution_py": "66f0cf32c214aa1875665f6c259c2b56f955e15dbc5ce71107bb147b7dc08d71",
+    "corpus_chem_equil_jsonl": "FILE_NOT_FOUND",
+    "run_native_chem_equil_oracle_py": "d24be966b8efda300eb02e1d0d70f0e38128725bd6a1b2331e748f08ea2e604e",
+    "run_chem_equil_campaign_py": "00702994df89ba06c4c962c140821b0b4f08317297ea054a2a7743a68ad522c1",
+    "chem_equil_native_oracle_results_jsonl": "2a5070e17df9229832438ff1d15d8c1c160cb05cc56c8e9b1b3d439c1896c029",
+    "chem_equil_python_port_results_jsonl": "f7e1076fa69037ffa73d3b011dfd75d5b513412a982b67ce2459b8a50e7c071f",
+    "chem_equil_differential_results_jsonl": "c7a391ffd407bbf2e4122dce859aba24175b693ba2e1b02ad43b8e22ea39aacd",
+    "chem_equil_differential_summary_json": "db9e87d3de2857fe0edacd6e7becaeabb6c912a72f8f76b22e7c413e7816a7cc",
+    "chem_equil_adversarial_results_json": "0ed13fc3aa16097183b1770376baa537fbb38b9a477a14e3624cf5302e537dd9",
+    "chem_equil_failure_semantics_json": "d81c04a94a57728ceba8467a4daadca97716ad38c226b73eebea51640ea7a957",
+    "chem_equil_closure_symbol_set_json": "87af279a01b041c114aa06bd9f5871b3ddd17c77c77d7adea0134622d03b2571",
+    "chem_equil_runtime_call_graph_json": "a3c0c889c9e5360ddba9d0c25c56bd3d2a476220ab54bf2bb4d8a44f13208d6d"
+  },
+  "campaign_summary": {
+    "total_cases": 246,
+    "passed_cases": 246,
+    "pass_rate_percent": 100.0,
+    "max_temperature_rel_err": 1.8526439246083656e-08,
+    "max_pressure_rel_err": 4.4474607631077924e-08,
+    "max_mole_fractions_rel_err": 0.0020407468757199167,
+    "max_chemical_potentials_rel_err": 8.497853665855848e-06,
+    "adversarial_cases": 6,
+    "adversarial_passed": 6,
+    "failure_semantics_cases": 3,
+    "failure_semantics_passed": 3
+  },
+  "status": "VALIDATED_NUMERICALLY_EQUIVALENT"
+}

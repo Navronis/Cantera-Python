@@ -1,0 +1,111 @@
+{
+  "active_closure_family": "FAMILY_4_REACTION_TOPOLOGY_AND_FACTORIES",
+  "active_closure_symbols_closed": 106,
+  "artifact_hashes": {
+    "corpus_kinetics_family4.jsonl": {
+      "path": "audit/corpus_kinetics_family4.jsonl",
+      "sha256": "9584c72f24a26a4cd69eba0c40340d6cd5ae9a301f8c5cacb4ab6417b74c653e",
+      "size_bytes": 9288
+    },
+    "kinetics.py": {
+      "path": "cantera_python/kinetics.py",
+      "sha256": "33b7fe6a46e142e8d272d59fca027be10d0caa6f9864494a6e60df0ce3bbacfe",
+      "size_bytes": 157168
+    },
+    "kinetics_family4_closure_symbol_set.json": {
+      "path": "audit/kinetics_family4_closure_symbol_set.json",
+      "sha256": "68e3e87934e25c58340f84582dbf369297c0583cc101e8ac943cff52167316ca",
+      "size_bytes": 172566
+    },
+    "kinetics_family4_differential_summary.json": {
+      "path": "audit/kinetics_family4_differential_summary.json",
+      "sha256": "55a73ce966e098f2a11c52cdc0fb0c9bb785ef2fb429b99271a94ee456020417",
+      "size_bytes": 7869
+    },
+    "kinetics_family4_performance_benchmark.json": {
+      "path": "audit/kinetics_family4_performance_benchmark.json",
+      "sha256": "7c7588d26451161a1f6217cc3bde0d7c11a0214d84619ca4ea2bfcafb7586b3d",
+      "size_bytes": 805
+    },
+    "kinetics_family4_runtime_call_graph.json": {
+      "path": "audit/kinetics_family4_runtime_call_graph.json",
+      "sha256": "383e42ca3501183b90bdf566792c487156869f239034302ce7f7e4285bdb93ab",
+      "size_bytes": 30839
+    },
+    "native_kinetics_family4_oracle_results.json": {
+      "path": "audit/native_kinetics_family4_oracle_results.json",
+      "sha256": "fbd055baba9cf21522211cbc0525af4eb024202429a42bb11447907a3d9f50fc",
+      "size_bytes": 33427
+    },
+    "python_kinetics_family4_port_results.json": {
+      "path": "audit/python_kinetics_family4_port_results.json",
+      "sha256": "ea93844f2bb412ee57d410ffe4e29ee3535605a3d282c16775560e9818a3ebfb",
+      "size_bytes": 42793
+    },
+    "rates.py": {
+      "path": "cantera_python/rates.py",
+      "sha256": "b17d9afe199e15b1cee3e7e0e988d7417b8b911f65173135fc0d0abea1b08184",
+      "size_bytes": 70080
+    },
+    "solution.py": {
+      "path": "cantera_python/solution.py",
+      "sha256": "ebe5f1106e0da26520a40104f21b6bb7be3999edabce373db4677da5160e00bd",
+      "size_bytes": 38240
+    },
+    "surface.py": {
+      "path": "cantera_python/surface.py",
+      "sha256": "90d1a503d8d2dda4aa3a9ba4ba20534ca5966b304c372efcec483ac34895af97",
+      "size_bytes": 67986
+    },
+    "test_family4_failure_semantics.py": {
+      "path": "tests/test_family4_failure_semantics.py",
+      "sha256": "8d74e59f70858389377eb70ba31f71fcebcc6098083a474c75bd78c6ec934d71",
+      "size_bytes": 2456
+    },
+    "test_family4_scientific_checks.py": {
+      "path": "tests/test_family4_scientific_checks.py",
+      "sha256": "7add391c9aa0a6fe1e40f80026b1a3c63a70d27b188cf7098fb5039dccd8ffaf",
+      "size_bytes": 3277
+    }
+  },
+  "certification_flags": {
+    "FAMILY4_FACTORIES_COMPLETE": true,
+    "FAMILY4_FAILURE_SEMANTICS_VALIDATED": true,
+    "FAMILY4_FULLY_FROZEN": true,
+    "FAMILY4_FULL_REGRESSION_CLEAN": true,
+    "FAMILY4_GRAPHVIZ_DOT_COMPLETE": true,
+    "FAMILY4_GROUP_ALGEBRA_COMPLETE": true,
+    "FAMILY4_NATIVE_NUMERICAL_PARITY": true,
+    "FAMILY4_NATIVE_SPEED_PARITY": false,
+    "FAMILY4_PERFORMANCE_BENCHMARKED": true,
+    "FAMILY4_PUBLIC_INTEGRATION_COMPLETE": true,
+    "FAMILY4_REACTION_PATH_DIAGRAM_COMPLETE": true,
+    "FAMILY4_SCIENTIFIC_CHECKS_VALIDATED": true,
+    "FAMILY4_SOURCE_LOGIC_COMPLETE": true
+  },
+  "family4_proven_non_runtime_symbols": 26,
+  "family4_runtime_symbols_closed": 106,
+  "manifest_schema_version": "1.0.0",
+  "open_kinetics_symbols_remaining": 141,
+  "performance": {
+    "mean_slowdown_vs_native": 64.17,
+    "native_speed_parity": false
+  },
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "pinned_native_validated_symbols_total": 500,
+  "proven_non_runtime_symbols": 108,
+  "subsystem": "kinetics",
+  "timestamp": "2026-11-06T14:40:00Z",
+  "total_family4_symbols": 132,
+  "total_kinetics_symbols": 749,
+  "validation_campaign": {
+    "cases_evaluated": 40,
+    "cases_failed": 0,
+    "cases_passed": 40,
+    "max_relative_error": 0.00174,
+    "p95_relative_error": 1.1385e-10,
+    "p99_relative_error": 0.00154,
+    "status": "FULL_PARITY",
+    "total_evaluations": 320
+  }
+}

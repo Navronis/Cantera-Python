@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "case": "two-species constant-pressure first-order reactor to t=0.01 s",
+  "timed_region": "integration only; mechanism construction excluded",
+  "warmup": "one untimed solve per backend",
+  "native_cantera": null,
+  "native_python": null,
+  "scope_limit": "Smoke benchmark only; broad required benchmark matrix remains open.",
+  "records": [
+    {
+      "backend": "parity",
+      "repetitions": 7,
+      "median_wall_seconds": 0.01033090000419179,
+      "min_wall_seconds": 0.010141300001123454,
+      "max_wall_seconds": 0.014612999999371823,
+      "max_analytic_absolute_error": 3.034568429871598e-10,
+      "last_solver_stats": {
+        "backend": "sksundae-cvode",
+        "sundials_version": "7.5.0",
+        "nfev": 53,
+        "njev": 1
+      }
+    },
+    {
+      "backend": "legacy",
+      "repetitions": 7,
+      "median_wall_seconds": 0.0262321999980486,
+      "min_wall_seconds": 0.024858999997377396,
+      "max_wall_seconds": 0.03472659999533789,
+      "max_analytic_absolute_error": 1.4278229987230162e-10,
+      "last_solver_stats": null
+    }
+  ]
+}

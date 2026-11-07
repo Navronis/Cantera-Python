@@ -1,0 +1,1 @@
+{"measurement":"direct source-translated property calls","status":"measured","environment":"Python 3.12 reference-env, Windows x64","native_comparison":"unavailable","loops":"1000 each of Pp/up/sp","seconds":{"Water":0.0776681,"CarbonDioxide":0.0348811,"Nitrogen":0.0462073,"Oxygen":0.0476373,"Hydrogen":0.0471578,"Methane":0.0591095,"Heptane":0.0178170,"HFC134a":0.0574322}}

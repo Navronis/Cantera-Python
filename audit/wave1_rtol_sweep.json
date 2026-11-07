@@ -1,0 +1,22 @@
+{
+  "1e-06": {
+    "mean_iterations": 130.8,
+    "max_relative_error": 8.658387783229541e-08,
+    "mean_relative_error": 6.1009359494952815e-09
+  },
+  "1e-08": {
+    "mean_iterations": 137.0,
+    "max_relative_error": 5.098233941680519e-09,
+    "mean_relative_error": 3.681499812074797e-10
+  },
+  "1e-10": {
+    "mean_iterations": 145.44,
+    "max_relative_error": 9.672612577560358e-11,
+    "mean_relative_error": 1.559976674607915e-11
+  },
+  "1e-12": {
+    "mean_iterations": 140.36,
+    "max_relative_error": 2.836757284101276e-13,
+    "mean_relative_error": 2.0739302012248752e-14
+  }
+}

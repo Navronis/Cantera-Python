@@ -1,0 +1,91 @@
+{
+  "upstream_repository": "https://github.com/cantera/cantera",
+  "upstream_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "python_module": "cantera_python/rates.py",
+  "coverage_status": "Selected scalar rate-coefficient equations only; not the entire kinetics subsystem.",
+  "units": {
+    "temperature": "K",
+    "pressure": "Pa",
+    "activation_energy_and_reaction_enthalpy": "J/kmol",
+    "third_body_concentration": "kmol/m^3",
+    "rate_coefficients": "m, kmol, s to powers determined by reaction order; values must already be converted"
+  },
+  "translations": [
+    {
+      "python_symbols": ["ArrheniusRate"],
+      "upstream_paths": ["include/cantera/kinetics/Arrhenius.h", "src/kinetics/Arrhenius.cpp"],
+      "translated_methods": ["ArrheniusRate::evalRate", "ArrheniusRate::evalLog", "ArrheniusRate::evalFromStruct", "ArrheniusRate::ddTScaledFromStruct", "ArrheniusBase::check (negative A check)"],
+      "equations": ["k = A exp(b ln(T) - Ea/(RT))", "ln(k) = ln(A) + b ln(T) - Ea/(RT)", "(dk/dT)/k = b/T + Ea/(R T^2)"]
+    },
+    {
+      "python_symbols": ["TwoTempPlasmaRate"],
+      "upstream_paths": ["include/cantera/kinetics/TwoTempPlasmaRate.h", "src/kinetics/TwoTempPlasmaRate.cpp"],
+      "translated_methods": ["TwoTempPlasmaRate::evalFromStruct", "TwoTempPlasmaRate::ddTScaledFromStruct", "TwoTempPlasmaRate numeric constructor parameter defaults"],
+      "equations": ["k = A exp(bg ln(T) + b ln(Te) - Ea/(RT) + EE(Te-T)/(R Te T) - T/Tinv)", "(partial k/partial T)/k at fixed Te = bg/T + (Ea-EE)/(R T^2) - 1/Tinv"],
+      "branches": ["Tinv=0 disables the final exponential/derivative term; all six upstream parameters included"]
+    },
+    {
+      "python_symbols": ["ElectronCollisionPlasmaRate"],
+      "upstream_paths": ["include/cantera/kinetics/ElectronCollisionPlasmaRate.h", "src/kinetics/ElectronCollisionPlasmaRate.cpp", "src/numerics/funcs.cpp"],
+      "translated_methods": ["ElectronCollisionPlasmaRate::updateInterpolatedCrossSection", "ElectronCollisionPlasmaRate::evalFromStruct", "ElectronCollisionPlasmaRate::modifyRateConstants"],
+      "equations": ["kf = sqrt(2 e / me) NA simpson(epsilon F0 sigma, epsilon)", "kr = sqrt(2 e / me) NA simpson((epsilon+U) F0 sigma_super, epsilon)", "sigma_super grid = [0, energy_i-U] with source cross-section values"],
+      "branches": ["Cross sections are endpoint-clamped linear interpolations on the supplied EEDF grid", "superelastic rate uses the first tabulated energy as U, matching modifyRateConstants"],
+      "exclusions": ["PlasmaPhase EEDF construction/caching, YAML parsing, collision kind inference from species charges, and the native unimplemented temperature derivative"]
+    },
+    {
+      "python_symbols": ["CustomFunc1Rate"],
+      "upstream_paths": ["include/cantera/kinetics/Custom.h", "src/kinetics/Custom.cpp"],
+      "translated_methods": ["CustomFunc1Rate::setRateFunction", "CustomFunc1Rate::validate", "CustomFunc1Rate::evalFromStruct"],
+      "equations": ["k(T) = rate_function(T)"],
+      "branches": ["unconfigured evaluation returns NaN", "validation rejects an unconfigured rate"],
+      "exclusions": ["Native AnyMap construction and intentionally unimplemented serialization"]
+    },
+    {
+      "python_symbols": ["BlowersMaselRate"],
+      "upstream_paths": ["include/cantera/kinetics/BlowersMaselRate.h", "src/kinetics/BlowersMaselRate.cpp"],
+      "translated_methods": ["BlowersMaselRate::effectiveActivationEnergy_R", "BlowersMaselRate::activationEnergy", "BlowersMaselRate::evalRate", "BlowersMaselRate::evalFromStruct", "BlowersMaselRate::ddTScaledFromStruct"],
+      "equations": ["Vp = 2 w (w+Ea0)/(w-Ea0)", "Ea = (w+dH/2)(Vp-2w+dH)^2/(Vp^2-4w^2+dH^2) for the middle branch", "k = A exp(b ln(T) - Ea(dH)/(RT))"],
+      "branches": ["dH <= -4 Ea0 gives zero barrier", "dH > 4 Ea0 gives barrier dH", "otherwise evaluate full Blowers-Masel expression"],
+      "exclusions": ["Reaction stoichiometry and phase partial-molar-enthalpy gathering in updateFromStruct/setContext; caller supplies reaction enthalpy", "Derivative includes fixed-enthalpy contribution only, exactly as in the upstream derivative"]
+    },
+    {
+      "python_symbols": ["_FalloffRate", "LindemannRate", "TroeRate", "SriRate", "TsangRate"],
+      "upstream_paths": ["include/cantera/kinetics/Falloff.h", "src/kinetics/Falloff.cpp", "include/cantera/base/ct_defs.h"],
+      "translated_methods": ["FalloffRate::evalF", "FalloffRate::evalFromStruct", "FalloffRate::check (sign checks)", "FalloffRate::F", "TroeRate::setFalloffCoeffs", "TroeRate::updateTemp", "TroeRate::F", "SriRate::setFalloffCoeffs", "SriRate::updateTemp", "SriRate::F", "TsangRate::setFalloffCoeffs", "TsangRate::updateTemp", "TsangRate::F"],
+      "equations": ["Pr = [M] k0/(kinf+1e-300)", "k_falloff = kinf Pr F/(1+Pr)", "k_activated = k0 F/(1+Pr)", "F_Lindemann = 1", "Fcent_Troe = (1-a) exp(-T/T3) + a exp(-T/T1) + exp(-T2/T)", "C = -0.4 - 0.67 log10(Fcent); N = 0.75 - 1.27 log10(Fcent)", "f1 = (log10(Pr)+C)/(N-0.14(log10(Pr)+C)); F = 10^(log10(Fcent)/(1+f1^2))", "F_SRI = (a exp(-b/T)+exp(-T/c))^(1/(1+log10(Pr)^2)) d T^e", "Fcent_Tsang = a+bT"],
+      "branches": ["Troe/Tsang Fcent and all log10(Pr) inputs floor at 1e-300", "Troe abs(T3/T1)<1e-300 omits corresponding exponential", "Troe T2=0 omits its exponential; nonzero subnormal T2 remains included", "SRI c=0 omits exp(-T/c)", "SRI defaults d=1,e=0; c,d nonnegative including d=0", "Troe/Tsang f1 infinite pole returns F=1"],
+      "exclusions": ["Effective third-body concentrations from a full mechanism, efficiencies, shared-state caching, and perturb/restore plumbing", "Automatic rate-unit adjustment between conventional and chemically activated reactions"]
+    },
+    {
+      "python_symbols": ["PlogRate"],
+      "upstream_paths": ["include/cantera/kinetics/PlogRate.h", "src/kinetics/PlogRate.cpp"],
+      "translated_methods": ["PlogRate::setRates (grouping and endpoint behavior)", "PlogRate::updateFromStruct (pressure interval selection)", "PlogRate::evalFromStruct", "PlogRate::validate (sample-temperature positivity checks)"],
+      "equations": ["ln(k) = ln(k1) + (ln(k2)-ln(k1)) (ln(P)-ln(P1))/(ln(P2)-ln(P1))", "k_i = 1e-300 + sum of Arrhenius terms at pressure i"],
+      "branches": ["Multiple terms at identical log-pressure are summed in supplied order", "Nearest pressure group is used outside the pressure range", "Validation temperatures default to 300,500,1000,2000,5000,10000 K and exclude evaluation floor"]
+    },
+    {
+      "python_symbols": ["ChebyshevRate"],
+      "upstream_paths": ["include/cantera/kinetics/ChebyshevRate.h", "src/kinetics/ChebyshevRate.cpp"],
+      "translated_methods": ["ChebyshevRate::setLimits", "ChebyshevRate::setData (coefficient layout)", "ChebyshevRate::updateFromStruct (pressure polynomial)", "ChebyshevRate::evalFromStruct"],
+      "equations": ["Tr = (2/T-1/Tmin-1/Tmax)/(1/Tmax-1/Tmin)", "Pr = (2 log10(P)-log10(Pmin)-log10(Pmax))/(log10(Pmax)-log10(Pmin))", "C_(n+1)(x) = 2 x C_n(x) - C_(n-1)(x)", "log10(k) = sum_i sum_j alpha_ij C_i(Tr) C_j(Pr)"],
+      "branches": ["No clamping: extrapolation evaluates the same polynomial outside the fitted limits"],
+      "exclusions": ["YAML unit-system offset of coefficient [0][0]; inputs must already be in target units"]
+    },
+    {
+      "python_symbols": ["LinearBurkeCollider", "LinearBurkeRate"],
+      "upstream_paths": ["include/cantera/kinetics/LinearBurkeRate.h", "src/kinetics/LinearBurkeRate.cpp"],
+      "translated_methods": ["LinearBurkeRate::evalPlogRate", "LinearBurkeRate::evalTroeRate", "LinearBurkeRate::evalChebyshevRate", "LinearBurkeRate::evalFromStruct"],
+      "equations": ["eps_mix = sum(explicit X_i eps_i) + sum(reference X_i)", "log(P_eff,i) = log(P) + log(eps_mix) - log(eps2_i)", "k = sum_i(k_i(T,P_eff,i) eps1_i X_i / eps_mix) + k_M(T,P eps_mix) X_M / eps_mix"],
+      "branches": ["Reference M efficiency is one", "An explicit collider without its own rate uses the reference rate and eps2=1", "Troe rates receive P_eff/(R T) as their third-body concentration"],
+      "exclusions": ["YAML collider parsing/serialization, phase cache/perturb/restore behavior, and source input-unit conversions"]
+    }
+  ],
+  "global_exclusions": [
+    "Full Kinetics, BulkKinetics, InterfaceKinetics, reaction stoichiometry, reverse rates, species production rates, mechanism parsing, unit systems, factories, shared-state caches, serialization, and vectorized MultiRate infrastructure",
+    "Surface coverage, sticking, electrochemical, extensible, and vibrational-relaxation rate implementations",
+    "Default unconfigured native objects returning NaN are not provided; required parameters are mandatory",
+    "C++ exception types and warnings are replaced by Python exceptions and documented derivative semantics",
+    "Positive finite T and P and nonnegative M are required; exact overflow/invalid-state IEEE behavior is not promised"
+  ],
+  "tests": "tests/test_rates.py: independent algebraic identities, numerical partial derivatives, physical limits, boundaries, duplicate-pressure groups, and polynomial basis expansion; no native dependency. tests/reference_rates.py: optional deterministic randomized comparisons against separately installed native Cantera; prints version, counts, maximum errors, and limitations."
+}

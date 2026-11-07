@@ -1,0 +1,88 @@
+{"case_id": "W3_SING_Water_0001", "fluid": "Water", "type": "EXACT_CRITICAL_POINT", "T": 647.096, "P": 22064000.0, "pair": "TP"}
+{"case_id": "W3_SING_Water_0002", "fluid": "Water", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.01, "T": 640.62504, "P": 21843360.0, "pair": "TP"}
+{"case_id": "W3_SING_Water_0003", "fluid": "Water", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.0001, "T": 647.0312904, "P": 22061793.6, "pair": "TP"}
+{"case_id": "W3_SING_Water_0004", "fluid": "Water", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -1e-06, "T": 647.095352904, "P": 22063977.936, "pair": "TP"}
+{"case_id": "W3_SING_Water_0005", "fluid": "Water", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 1e-06, "T": 647.096647096, "P": 22064022.064, "pair": "TP"}
+{"case_id": "W3_SING_Water_0006", "fluid": "Water", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.0001, "T": 647.1607096, "P": 22066206.4, "pair": "TP"}
+{"case_id": "W3_SING_Water_0007", "fluid": "Water", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.01, "T": 653.56696, "P": 22284640.0, "pair": "TP"}
+{"case_id": "W3_SING_Water_0008", "fluid": "Water", "type": "SATURATION_CURVE", "T": 388.25759999999997, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Water_0009", "fluid": "Water", "type": "SATURATION_CURVE", "T": 485.322, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Water_0010", "fluid": "Water", "type": "SATURATION_CURVE", "T": 582.3864, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Water_0011", "fluid": "Water", "type": "SATURATION_CURVE", "T": 634.15408, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Nitrogen_0012", "fluid": "Nitrogen", "type": "EXACT_CRITICAL_POINT", "T": 126.2, "P": 3395800.0, "pair": "TP"}
+{"case_id": "W3_SING_Nitrogen_0013", "fluid": "Nitrogen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.01, "T": 124.938, "P": 3361842.0, "pair": "TP"}
+{"case_id": "W3_SING_Nitrogen_0014", "fluid": "Nitrogen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.0001, "T": 126.18738, "P": 3395460.42, "pair": "TP"}
+{"case_id": "W3_SING_Nitrogen_0015", "fluid": "Nitrogen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -1e-06, "T": 126.1998738, "P": 3395796.6042, "pair": "TP"}
+{"case_id": "W3_SING_Nitrogen_0016", "fluid": "Nitrogen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 1e-06, "T": 126.20012619999999, "P": 3395803.3957999996, "pair": "TP"}
+{"case_id": "W3_SING_Nitrogen_0017", "fluid": "Nitrogen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.0001, "T": 126.21262, "P": 3396139.58, "pair": "TP"}
+{"case_id": "W3_SING_Nitrogen_0018", "fluid": "Nitrogen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.01, "T": 127.462, "P": 3429758.0, "pair": "TP"}
+{"case_id": "W3_SING_Nitrogen_0019", "fluid": "Nitrogen", "type": "SATURATION_CURVE", "T": 75.72, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Nitrogen_0020", "fluid": "Nitrogen", "type": "SATURATION_CURVE", "T": 94.65, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Nitrogen_0021", "fluid": "Nitrogen", "type": "SATURATION_CURVE", "T": 113.58, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Nitrogen_0022", "fluid": "Nitrogen", "type": "SATURATION_CURVE", "T": 123.676, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Oxygen_0023", "fluid": "Oxygen", "type": "EXACT_CRITICAL_POINT", "T": 154.581, "P": 5043000.0, "pair": "TP"}
+{"case_id": "W3_SING_Oxygen_0024", "fluid": "Oxygen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.01, "T": 153.03519, "P": 4992570.0, "pair": "TP"}
+{"case_id": "W3_SING_Oxygen_0025", "fluid": "Oxygen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.0001, "T": 154.5655419, "P": 5042495.7, "pair": "TP"}
+{"case_id": "W3_SING_Oxygen_0026", "fluid": "Oxygen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -1e-06, "T": 154.58084541899998, "P": 5042994.9569999995, "pair": "TP"}
+{"case_id": "W3_SING_Oxygen_0027", "fluid": "Oxygen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 1e-06, "T": 154.58115458099996, "P": 5043005.043, "pair": "TP"}
+{"case_id": "W3_SING_Oxygen_0028", "fluid": "Oxygen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.0001, "T": 154.59645809999998, "P": 5043504.3, "pair": "TP"}
+{"case_id": "W3_SING_Oxygen_0029", "fluid": "Oxygen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.01, "T": 156.12680999999998, "P": 5093430.0, "pair": "TP"}
+{"case_id": "W3_SING_Oxygen_0030", "fluid": "Oxygen", "type": "SATURATION_CURVE", "T": 92.7486, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Oxygen_0031", "fluid": "Oxygen", "type": "SATURATION_CURVE", "T": 115.93574999999998, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Oxygen_0032", "fluid": "Oxygen", "type": "SATURATION_CURVE", "T": 139.1229, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Oxygen_0033", "fluid": "Oxygen", "type": "SATURATION_CURVE", "T": 151.48937999999998, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Hydrogen_0034", "fluid": "Hydrogen", "type": "EXACT_CRITICAL_POINT", "T": 33.145, "P": 1296400.0, "pair": "TP"}
+{"case_id": "W3_SING_Hydrogen_0035", "fluid": "Hydrogen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.01, "T": 32.81355, "P": 1283436.0, "pair": "TP"}
+{"case_id": "W3_SING_Hydrogen_0036", "fluid": "Hydrogen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.0001, "T": 33.1416855, "P": 1296270.36, "pair": "TP"}
+{"case_id": "W3_SING_Hydrogen_0037", "fluid": "Hydrogen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -1e-06, "T": 33.144966855, "P": 1296398.7036, "pair": "TP"}
+{"case_id": "W3_SING_Hydrogen_0038", "fluid": "Hydrogen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 1e-06, "T": 33.145033145, "P": 1296401.2963999999, "pair": "TP"}
+{"case_id": "W3_SING_Hydrogen_0039", "fluid": "Hydrogen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.0001, "T": 33.148314500000005, "P": 1296529.64, "pair": "TP"}
+{"case_id": "W3_SING_Hydrogen_0040", "fluid": "Hydrogen", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.01, "T": 33.47645000000001, "P": 1309364.0, "pair": "TP"}
+{"case_id": "W3_SING_Hydrogen_0041", "fluid": "Hydrogen", "type": "SATURATION_CURVE", "T": 19.887, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Hydrogen_0042", "fluid": "Hydrogen", "type": "SATURATION_CURVE", "T": 24.85875, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Hydrogen_0043", "fluid": "Hydrogen", "type": "SATURATION_CURVE", "T": 29.830500000000004, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Hydrogen_0044", "fluid": "Hydrogen", "type": "SATURATION_CURVE", "T": 32.4821, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Methane_0045", "fluid": "Methane", "type": "EXACT_CRITICAL_POINT", "T": 190.564, "P": 4599200.0, "pair": "TP"}
+{"case_id": "W3_SING_Methane_0046", "fluid": "Methane", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.01, "T": 188.65836, "P": 4553208.0, "pair": "TP"}
+{"case_id": "W3_SING_Methane_0047", "fluid": "Methane", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.0001, "T": 190.54494359999998, "P": 4598740.08, "pair": "TP"}
+{"case_id": "W3_SING_Methane_0048", "fluid": "Methane", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -1e-06, "T": 190.56380943599999, "P": 4599195.4008, "pair": "TP"}
+{"case_id": "W3_SING_Methane_0049", "fluid": "Methane", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 1e-06, "T": 190.56419056399997, "P": 4599204.5992, "pair": "TP"}
+{"case_id": "W3_SING_Methane_0050", "fluid": "Methane", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.0001, "T": 190.5830564, "P": 4599659.92, "pair": "TP"}
+{"case_id": "W3_SING_Methane_0051", "fluid": "Methane", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.01, "T": 192.46964, "P": 4645192.0, "pair": "TP"}
+{"case_id": "W3_SING_Methane_0052", "fluid": "Methane", "type": "SATURATION_CURVE", "T": 114.3384, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Methane_0053", "fluid": "Methane", "type": "SATURATION_CURVE", "T": 142.923, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Methane_0054", "fluid": "Methane", "type": "SATURATION_CURVE", "T": 171.5076, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Methane_0055", "fluid": "Methane", "type": "SATURATION_CURVE", "T": 186.75271999999998, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_CarbonDioxide_0056", "fluid": "CarbonDioxide", "type": "EXACT_CRITICAL_POINT", "T": 304.1282, "P": 7377300.0, "pair": "TP"}
+{"case_id": "W3_SING_CarbonDioxide_0057", "fluid": "CarbonDioxide", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.01, "T": 301.08691799999997, "P": 7303527.0, "pair": "TP"}
+{"case_id": "W3_SING_CarbonDioxide_0058", "fluid": "CarbonDioxide", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.0001, "T": 304.09778718, "P": 7376562.2700000005, "pair": "TP"}
+{"case_id": "W3_SING_CarbonDioxide_0059", "fluid": "CarbonDioxide", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -1e-06, "T": 304.1278958718, "P": 7377292.6227, "pair": "TP"}
+{"case_id": "W3_SING_CarbonDioxide_0060", "fluid": "CarbonDioxide", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 1e-06, "T": 304.12850412819995, "P": 7377307.3773, "pair": "TP"}
+{"case_id": "W3_SING_CarbonDioxide_0061", "fluid": "CarbonDioxide", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.0001, "T": 304.15861282, "P": 7378037.7299999995, "pair": "TP"}
+{"case_id": "W3_SING_CarbonDioxide_0062", "fluid": "CarbonDioxide", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.01, "T": 307.169482, "P": 7451073.0, "pair": "TP"}
+{"case_id": "W3_SING_CarbonDioxide_0063", "fluid": "CarbonDioxide", "type": "SATURATION_CURVE", "T": 182.47691999999998, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_CarbonDioxide_0064", "fluid": "CarbonDioxide", "type": "SATURATION_CURVE", "T": 228.09615, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_CarbonDioxide_0065", "fluid": "CarbonDioxide", "type": "SATURATION_CURVE", "T": 273.71538, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_CarbonDioxide_0066", "fluid": "CarbonDioxide", "type": "SATURATION_CURVE", "T": 298.045636, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Heptane_0067", "fluid": "Heptane", "type": "EXACT_CRITICAL_POINT", "T": 540.2, "P": 2740000.0, "pair": "TP"}
+{"case_id": "W3_SING_Heptane_0068", "fluid": "Heptane", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.01, "T": 534.798, "P": 2712600.0, "pair": "TP"}
+{"case_id": "W3_SING_Heptane_0069", "fluid": "Heptane", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.0001, "T": 540.14598, "P": 2739726.0, "pair": "TP"}
+{"case_id": "W3_SING_Heptane_0070", "fluid": "Heptane", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -1e-06, "T": 540.1994598, "P": 2739997.26, "pair": "TP"}
+{"case_id": "W3_SING_Heptane_0071", "fluid": "Heptane", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 1e-06, "T": 540.2005402, "P": 2740002.7399999998, "pair": "TP"}
+{"case_id": "W3_SING_Heptane_0072", "fluid": "Heptane", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.0001, "T": 540.2540200000001, "P": 2740274.0, "pair": "TP"}
+{"case_id": "W3_SING_Heptane_0073", "fluid": "Heptane", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.01, "T": 545.6020000000001, "P": 2767400.0, "pair": "TP"}
+{"case_id": "W3_SING_Heptane_0074", "fluid": "Heptane", "type": "SATURATION_CURVE", "T": 324.12, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Heptane_0075", "fluid": "Heptane", "type": "SATURATION_CURVE", "T": 405.15000000000003, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Heptane_0076", "fluid": "Heptane", "type": "SATURATION_CURVE", "T": 486.18000000000006, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_Heptane_0077", "fluid": "Heptane", "type": "SATURATION_CURVE", "T": 529.3960000000001, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_HFC134a_0078", "fluid": "HFC134a", "type": "EXACT_CRITICAL_POINT", "T": 374.18, "P": 4059300.0, "pair": "TP"}
+{"case_id": "W3_SING_HFC134a_0079", "fluid": "HFC134a", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.01, "T": 370.4382, "P": 4018707.0, "pair": "TP"}
+{"case_id": "W3_SING_HFC134a_0080", "fluid": "HFC134a", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -0.0001, "T": 374.142582, "P": 4058894.07, "pair": "TP"}
+{"case_id": "W3_SING_HFC134a_0081", "fluid": "HFC134a", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": -1e-06, "T": 374.17962582, "P": 4059295.9406999997, "pair": "TP"}
+{"case_id": "W3_SING_HFC134a_0082", "fluid": "HFC134a", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 1e-06, "T": 374.18037418, "P": 4059304.0593, "pair": "TP"}
+{"case_id": "W3_SING_HFC134a_0083", "fluid": "HFC134a", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.0001, "T": 374.217418, "P": 4059705.93, "pair": "TP"}
+{"case_id": "W3_SING_HFC134a_0084", "fluid": "HFC134a", "type": "NEAR_CRITICAL_PERTURBATION", "delta_relative": 0.01, "T": 377.9218, "P": 4099893.0, "pair": "TP"}
+{"case_id": "W3_SING_HFC134a_0085", "fluid": "HFC134a", "type": "SATURATION_CURVE", "T": 224.508, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_HFC134a_0086", "fluid": "HFC134a", "type": "SATURATION_CURVE", "T": 280.635, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_HFC134a_0087", "fluid": "HFC134a", "type": "SATURATION_CURVE", "T": 336.762, "pair": "TX", "x": 0.5}
+{"case_id": "W3_SING_HFC134a_0088", "fluid": "HFC134a", "type": "SATURATION_CURVE", "T": 366.6964, "pair": "TX", "x": 0.5}

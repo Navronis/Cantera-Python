@@ -1,0 +1,138 @@
+{"kind": "array", "fluid": "Water", "symbol": "A", "count": 70, "exact": true}
+{"kind": "array", "fluid": "Water", "symbol": "F", "count": 8, "exact": true}
+{"kind": "array", "fluid": "Water", "symbol": "D", "count": 8, "exact": true}
+{"kind": "array", "fluid": "Water", "symbol": "G", "count": 6, "exact": true}
+{"kind": "array", "fluid": "Water", "symbol": "taua", "count": 7, "exact": true}
+{"kind": "array", "fluid": "CarbonDioxide", "symbol": "Acarbdi", "count": 19, "exact": true}
+{"kind": "array", "fluid": "CarbonDioxide", "symbol": "F", "count": 8, "exact": true}
+{"kind": "array", "fluid": "CarbonDioxide", "symbol": "D", "count": 6, "exact": true}
+{"kind": "array", "fluid": "CarbonDioxide", "symbol": "G", "count": 6, "exact": true}
+{"kind": "array", "fluid": "Nitrogen", "symbol": "Ann", "count": 32, "exact": true}
+{"kind": "array", "fluid": "Nitrogen", "symbol": "Fnn", "count": 9, "exact": true}
+{"kind": "array", "fluid": "Nitrogen", "symbol": "Dnn", "count": 6, "exact": true}
+{"kind": "array", "fluid": "Nitrogen", "symbol": "Gnn", "count": 8, "exact": true}
+{"kind": "array", "fluid": "Oxygen", "symbol": "Aoxy", "count": 32, "exact": true}
+{"kind": "array", "fluid": "Oxygen", "symbol": "Foxy", "count": 9, "exact": true}
+{"kind": "array", "fluid": "Oxygen", "symbol": "Doxy", "count": 6, "exact": true}
+{"kind": "array", "fluid": "Oxygen", "symbol": "Goxy", "count": 8, "exact": true}
+{"kind": "array", "fluid": "Hydrogen", "symbol": "Ahydro", "count": 32, "exact": true}
+{"kind": "array", "fluid": "Hydrogen", "symbol": "Fhydro", "count": 4, "exact": true}
+{"kind": "array", "fluid": "Hydrogen", "symbol": "Dhydro", "count": 7, "exact": true}
+{"kind": "array", "fluid": "Hydrogen", "symbol": "Ghydro", "count": 17, "exact": true}
+{"kind": "array", "fluid": "Methane", "symbol": "Ameth", "count": 32, "exact": true}
+{"kind": "array", "fluid": "Methane", "symbol": "Fmeth", "count": 4, "exact": true}
+{"kind": "array", "fluid": "Methane", "symbol": "Dmeth", "count": 3, "exact": true}
+{"kind": "array", "fluid": "Methane", "symbol": "Gmeth", "count": 5, "exact": true}
+{"kind": "array", "fluid": "Heptane", "symbol": "Ahept", "count": 10, "exact": true}
+{"kind": "array", "fluid": "Heptane", "symbol": "F", "count": 8, "exact": true}
+{"kind": "array", "fluid": "Heptane", "symbol": "D", "count": 6, "exact": true}
+{"kind": "array", "fluid": "Heptane", "symbol": "G", "count": 6, "exact": true}
+{"kind": "array", "fluid": "HFC134a", "symbol": "a134", "count": 21, "exact": true}
+{"kind": "array", "fluid": "HFC134a", "symbol": "t134", "count": 21, "exact": true}
+{"kind": "array", "fluid": "HFC134a", "symbol": "d134", "count": 21, "exact": true}
+{"kind": "array", "fluid": "HFC134a", "symbol": "b134", "count": 5, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "Tmn", "source_value": 273.16, "python_value": 273.16, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "Tmx", "source_value": 1600.0, "python_value": 1600.0, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "M", "source_value": 18.016, "python_value": 18.016, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "Tc", "source_value": 647.286, "python_value": 647.286, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "Pc", "source_value": 22089000.0, "python_value": 22089000.0, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "Roc", "source_value": 317.0, "python_value": 317.0, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "To", "source_value": 273.16, "python_value": 273.16, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "R", "source_value": 461.51, "python_value": 461.51, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "E", "source_value": 0.0048, "python_value": 0.0048, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "Ta", "source_value": 1000.0, "python_value": 1000.0, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "tauc", "source_value": 1.544912, "python_value": 1.544912, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "Tp", "source_value": 338.15, "python_value": 338.15, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "aww", "source_value": 0.01, "python_value": 0.01, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "Roa1", "source_value": 634.0, "python_value": 634.0, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "Roaj", "source_value": 1000.0, "python_value": 1000.0, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "u0", "source_value": 2375470.875, "python_value": 2375470.875, "exact": true}
+{"kind": "scalar", "fluid": "Water", "symbol": "s0", "source_value": 6697.356635, "python_value": 6697.356635, "exact": true}
+{"kind": "scalar", "fluid": "CarbonDioxide", "symbol": "Tmn", "source_value": 216.54, "python_value": 216.54, "exact": true}
+{"kind": "scalar", "fluid": "CarbonDioxide", "symbol": "Tmx", "source_value": 1500.0, "python_value": 1500.0, "exact": true}
+{"kind": "scalar", "fluid": "CarbonDioxide", "symbol": "Tc", "source_value": 304.21, "python_value": 304.21, "exact": true}
+{"kind": "scalar", "fluid": "CarbonDioxide", "symbol": "Roc", "source_value": 464.0, "python_value": 464.0, "exact": true}
+{"kind": "scalar", "fluid": "CarbonDioxide", "symbol": "To", "source_value": 216.54, "python_value": 216.54, "exact": true}
+{"kind": "scalar", "fluid": "CarbonDioxide", "symbol": "R", "source_value": 188.918, "python_value": 188.918, "exact": true}
+{"kind": "scalar", "fluid": "CarbonDioxide", "symbol": "Gamma", "source_value": 5e-06, "python_value": 5e-06, "exact": true}
+{"kind": "scalar", "fluid": "CarbonDioxide", "symbol": "u0", "source_value": 321741.05, "python_value": 321741.05, "exact": true}
+{"kind": "scalar", "fluid": "CarbonDioxide", "symbol": "s0", "source_value": 2139.6056, "python_value": 2139.6056, "exact": true}
+{"kind": "scalar", "fluid": "CarbonDioxide", "symbol": "Tp", "source_value": 250.0, "python_value": 250.0, "exact": true}
+{"kind": "scalar", "fluid": "CarbonDioxide", "symbol": "Pc", "source_value": 7383500.0, "python_value": 7383500.0, "exact": true}
+{"kind": "scalar", "fluid": "CarbonDioxide", "symbol": "M", "source_value": 44.01, "python_value": 44.01, "exact": true}
+{"kind": "scalar", "fluid": "Nitrogen", "symbol": "M", "source_value": 28.01348, "python_value": 28.01348, "exact": true}
+{"kind": "scalar", "fluid": "Nitrogen", "symbol": "Tmn", "source_value": 63.15, "python_value": 63.15, "exact": true}
+{"kind": "scalar", "fluid": "Nitrogen", "symbol": "Tmx", "source_value": 2000.0, "python_value": 2000.0, "exact": true}
+{"kind": "scalar", "fluid": "Nitrogen", "symbol": "Tc", "source_value": 126.2, "python_value": 126.2, "exact": true}
+{"kind": "scalar", "fluid": "Nitrogen", "symbol": "Pc", "source_value": 3400000.0, "python_value": 3400000.0, "exact": true}
+{"kind": "scalar", "fluid": "Nitrogen", "symbol": "Roc", "source_value": 314.03, "python_value": 314.03, "exact": true}
+{"kind": "scalar", "fluid": "Nitrogen", "symbol": "R", "source_value": 296.790515164171, "python_value": 296.790515164171, "exact": true}
+{"kind": "scalar", "fluid": "Nitrogen", "symbol": "Gamma", "source_value": 7.13602531283233e-06, "python_value": 7.13602531283233e-06, "exact": true}
+{"kind": "scalar", "fluid": "Nitrogen", "symbol": "alpha", "source_value": 1.95, "python_value": 1.95, "exact": true}
+{"kind": "scalar", "fluid": "Nitrogen", "symbol": "beta", "source_value": 3353.4061, "python_value": 3353.4061, "exact": true}
+{"kind": "scalar", "fluid": "Nitrogen", "symbol": "u0", "source_value": 150877.551, "python_value": 150877.551, "exact": true}
+{"kind": "scalar", "fluid": "Nitrogen", "symbol": "s0", "source_value": 214.9352518, "python_value": 214.9352518, "exact": true}
+{"kind": "scalar", "fluid": "Oxygen", "symbol": "M", "source_value": 31.9994, "python_value": 31.9994, "exact": true}
+{"kind": "scalar", "fluid": "Oxygen", "symbol": "Tmn", "source_value": 54.34, "python_value": 54.34, "exact": true}
+{"kind": "scalar", "fluid": "Oxygen", "symbol": "Tmx", "source_value": 2000.0, "python_value": 2000.0, "exact": true}
+{"kind": "scalar", "fluid": "Oxygen", "symbol": "Tc", "source_value": 154.581, "python_value": 154.581, "exact": true}
+{"kind": "scalar", "fluid": "Oxygen", "symbol": "Pc", "source_value": 5042900.0, "python_value": 5042900.0, "exact": true}
+{"kind": "scalar", "fluid": "Oxygen", "symbol": "Roc", "source_value": 436.15, "python_value": 436.15, "exact": true}
+{"kind": "scalar", "fluid": "Oxygen", "symbol": "R", "source_value": 259.820853437877, "python_value": 259.820853437877, "exact": true}
+{"kind": "scalar", "fluid": "Oxygen", "symbol": "Gamma", "source_value": 5.46895508389297e-06, "python_value": 5.46895508389297e-06, "exact": true}
+{"kind": "scalar", "fluid": "Oxygen", "symbol": "alpha", "source_value": 1.91576, "python_value": 1.91576, "exact": true}
+{"kind": "scalar", "fluid": "Oxygen", "symbol": "beta", "source_value": 2239.18105, "python_value": 2239.18105, "exact": true}
+{"kind": "scalar", "fluid": "Oxygen", "symbol": "u0", "source_value": 198884.2435, "python_value": 198884.2435, "exact": true}
+{"kind": "scalar", "fluid": "Oxygen", "symbol": "s0", "source_value": 668.542976, "python_value": 668.542976, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "M", "source_value": 2.0159, "python_value": 2.0159, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "Tmn", "source_value": 13.8, "python_value": 13.8, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "Tmx", "source_value": 5000.0, "python_value": 5000.0, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "Tc", "source_value": 32.938, "python_value": 32.938, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "Pc", "source_value": 1283800.0, "python_value": 1283800.0, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "Roc", "source_value": 31.36, "python_value": 31.36, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "To", "source_value": 13.8, "python_value": 13.8, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "Tt", "source_value": 13.8, "python_value": 13.8, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "Pt", "source_value": 7042.09, "python_value": 7042.09, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "R", "source_value": 4124.299539, "python_value": 4124.299539, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "Gamma", "source_value": 0.001008854772, "python_value": 0.001008854772, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "u0", "source_value": 392751.14, "python_value": 392751.14, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "s0", "source_value": 23900.333, "python_value": 23900.333, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "T1", "source_value": 35.0, "python_value": 35.0, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "T2", "source_value": 400.0, "python_value": 400.0, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "alpha", "source_value": 1.5814454428, "python_value": 1.5814454428, "exact": true}
+{"kind": "scalar", "fluid": "Hydrogen", "symbol": "alpha1", "source_value": 0.3479, "python_value": 0.3479, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "M", "source_value": 16.04996, "python_value": 16.04996, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "Tmn", "source_value": 90.68, "python_value": 90.68, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "Tmx", "source_value": 1700.0, "python_value": 1700.0, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "Tc", "source_value": 190.555, "python_value": 190.555, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "Pc", "source_value": 4598800.0, "python_value": 4598800.0, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "Roc", "source_value": 160.43, "python_value": 160.43, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "Tt", "source_value": 90.68, "python_value": 90.68, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "Pt", "source_value": 11743.5675, "python_value": 11743.5675, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "R", "source_value": 518.253475866, "python_value": 518.253475866, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "Gamma", "source_value": 3.72992471469e-05, "python_value": 3.72992471469e-05, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "alpha", "source_value": 1.5, "python_value": 1.5, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "alpha1", "source_value": 0.36, "python_value": 0.36, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "Rot", "source_value": 451.562, "python_value": 451.562, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "beta", "source_value": 2009.152, "python_value": 2009.152, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "u0", "source_value": 357696.0858, "python_value": 357696.0858, "exact": true}
+{"kind": "scalar", "fluid": "Methane", "symbol": "s0", "source_value": -1918.035071, "python_value": -1918.035071, "exact": true}
+{"kind": "scalar", "fluid": "Heptane", "symbol": "Tmn", "source_value": 182.56, "python_value": 182.56, "exact": true}
+{"kind": "scalar", "fluid": "Heptane", "symbol": "Tmx", "source_value": 1000.0, "python_value": 1000.0, "exact": true}
+{"kind": "scalar", "fluid": "Heptane", "symbol": "Tc", "source_value": 537.68, "python_value": 537.68, "exact": true}
+{"kind": "scalar", "fluid": "Heptane", "symbol": "Roc", "source_value": 197.6, "python_value": 197.6, "exact": true}
+{"kind": "scalar", "fluid": "Heptane", "symbol": "To", "source_value": 300.0, "python_value": 300.0, "exact": true}
+{"kind": "scalar", "fluid": "Heptane", "symbol": "R", "source_value": 82.99504, "python_value": 82.99504, "exact": true}
+{"kind": "scalar", "fluid": "Heptane", "symbol": "Gamma", "source_value": 9.611604e-06, "python_value": 9.611604e-06, "exact": true}
+{"kind": "scalar", "fluid": "Heptane", "symbol": "u0", "source_value": 340584.39, "python_value": 340584.39, "exact": true}
+{"kind": "scalar", "fluid": "Heptane", "symbol": "s0", "source_value": 1108.0254, "python_value": 1108.0254, "exact": true}
+{"kind": "scalar", "fluid": "Heptane", "symbol": "Tp", "source_value": 400.0, "python_value": 400.0, "exact": true}
+{"kind": "scalar", "fluid": "Heptane", "symbol": "Pc", "source_value": 2619900.0, "python_value": 2619900.0, "exact": true}
+{"kind": "scalar", "fluid": "Heptane", "symbol": "M", "source_value": 100.2, "python_value": 100.2, "exact": true}
+{"kind": "scalar", "fluid": "HFC134a", "symbol": "M", "source_value": 102.032, "python_value": 102.032, "exact": true}
+{"kind": "scalar", "fluid": "HFC134a", "symbol": "Tmn", "source_value": 170.0, "python_value": 170.0, "exact": true}
+{"kind": "scalar", "fluid": "HFC134a", "symbol": "Tmx", "source_value": 455.0, "python_value": 455.0, "exact": true}
+{"kind": "scalar", "fluid": "HFC134a", "symbol": "Tc", "source_value": 374.18, "python_value": 374.18, "exact": true}
+{"kind": "scalar", "fluid": "HFC134a", "symbol": "Pc", "source_value": 4056290.0, "python_value": 4056290.0, "exact": true}
+{"kind": "scalar", "fluid": "HFC134a", "symbol": "Roc", "source_value": 508.0, "python_value": 508.0, "exact": true}
+{"kind": "scalar", "fluid": "HFC134a", "symbol": "R", "source_value": 81.48885644, "python_value": 81.48885644, "exact": true}

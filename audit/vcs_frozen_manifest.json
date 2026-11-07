@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/vcs_frozen_manifest.json",
+  "freeze_timestamp_utc": "2026-11-04T20:10:30Z",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "is_worktree_clean": false,
+  "native_oracle": {
+    "source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "build_environment": "WSL2 Ubuntu 24.04 x86_64, g++ 13.3.0",
+    "python_executable": "/home/nebula/cantera-oracle-env/bin/python3",
+    "shared_library_path": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744"
+  },
+  "file_hashes": {
+    "vcs_py": "692f20742aa0b1d0cac0a8e5f7f768299e86bcce292131c22b988a4e3c4f6be6",
+    "solution_py": "f55de485a7ab65f17aa2a11ec9c225e08ba4ecd8794efc6ec54e55182f3548ee",
+    "test_vcs_multiphase_py": "e36b4cd339cf80f49e869c52d54b768484c6601967fd4c62ad5a29d5f07bea44",
+    "corpus_vcs_jsonl": "269f2681f9af8f6841ef7fa256b1a112668769e269319341eac156cd6fb88c4e",
+    "native_runner_py": "77fa6099bbe0e1585d5603e1e5f73e342b52e3d30860b4a31f200dd3902baf64",
+    "comparator_py": "e6f1f86db71d70d08a2bed1b17083f9304f6caa37491a17c8c610ffcf475b35d"
+  },
+  "status": "FROZEN_VALIDATED_NUMERICALLY_EQUIVALENT"
+}

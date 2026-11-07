@@ -1,0 +1,1603 @@
+{
+  "include/cantera/transport/GasTransport.h:103:getMixDiffCoeffsMass": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:103:getMixDiffCoeffsMass",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "getMixDiffCoeffsMass",
+    "source_lines": [
+      103,
+      103
+    ],
+    "python_target": "cantera_python.transport.GasTransport.getMixDiffCoeffsMass",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:107:getViscosityPolynomial": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:107:getViscosityPolynomial",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "getViscosityPolynomial",
+    "source_lines": [
+      107,
+      107
+    ],
+    "python_target": "cantera_python.transport.GasTransport.getViscosityPolynomial",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:111:getConductivityPolynomial": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:111:getConductivityPolynomial",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "getConductivityPolynomial",
+    "source_lines": [
+      111,
+      111
+    ],
+    "python_target": "cantera_python.transport.GasTransport.getConductivityPolynomial",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:115:getBinDiffusivityPolynomial": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:115:getBinDiffusivityPolynomial",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "getBinDiffusivityPolynomial",
+    "source_lines": [
+      115,
+      115
+    ],
+    "python_target": "cantera_python.transport.GasTransport.getBinDiffusivityPolynomial",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:126:setViscosityPolynomial": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:126:setViscosityPolynomial",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "setViscosityPolynomial",
+    "source_lines": [
+      126,
+      126
+    ],
+    "python_target": "cantera_python.transport.GasTransport.setViscosityPolynomial",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:130:setConductivityPolynomial": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:130:setConductivityPolynomial",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "setConductivityPolynomial",
+    "source_lines": [
+      130,
+      130
+    ],
+    "python_target": "cantera_python.transport.GasTransport.setConductivityPolynomial",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:134:setBinDiffusivityPolynomial": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:134:setBinDiffusivityPolynomial",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "setBinDiffusivityPolynomial",
+    "source_lines": [
+      134,
+      134
+    ],
+    "python_target": "cantera_python.transport.GasTransport.setBinDiffusivityPolynomial",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:141:init": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:141:init",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "init",
+    "source_lines": [
+      141,
+      141
+    ],
+    "python_target": "cantera_python.transport.GasTransport.init",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.setupCollisionParameters",
+      "cantera_python.transport.GasTransport.setupCollisionIntegral"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.TransportFactory.newTransport"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:143:CKMode": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:143:CKMode",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "CKMode",
+    "source_lines": [
+      143,
+      143
+    ],
+    "python_target": "cantera_python.transport.GasTransport.CKMode",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:147:invalidateCache": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:147:invalidateCache",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "invalidateCache",
+    "source_lines": [
+      147,
+      147
+    ],
+    "python_target": "cantera_python.transport.GasTransport.invalidateCache",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:152:update_T": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:152:update_T",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "update_T",
+    "source_lines": [
+      152,
+      152
+    ],
+    "python_target": "cantera_python.transport.GasTransport.update_T",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:161:updateViscosity_T": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:161:updateViscosity_T",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "updateViscosity_T",
+    "source_lines": [
+      161,
+      161
+    ],
+    "python_target": "cantera_python.transport.GasTransport.updateViscosity_T",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.updateSpeciesViscosities"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.GasTransport.viscosity",
+      "cantera_python.transport.MixTransport.getThermalDiffCoeffs"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:166:updateSpeciesViscosities": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:166:updateSpeciesViscosities",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "updateSpeciesViscosities",
+    "source_lines": [
+      166,
+      166
+    ],
+    "python_target": "cantera_python.transport.GasTransport.updateSpeciesViscosities",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.update_T"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.GasTransport.updateViscosity_T",
+      "cantera_python.transport.GasTransport.getSpeciesViscosities"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:173:updateDiff_T": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:173:updateDiff_T",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "updateDiff_T",
+    "source_lines": [
+      173,
+      173
+    ],
+    "python_target": "cantera_python.transport.GasTransport.updateDiff_T",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.update_T"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.GasTransport.getBinaryDiffCoeffs",
+      "cantera_python.transport.GasTransport.getMixDiffCoeffs",
+      "cantera_python.transport.MixTransport.getThermalDiffCoeffs"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:180:setupCollisionParameters": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:180:setupCollisionParameters",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "setupCollisionParameters",
+    "source_lines": [
+      180,
+      180
+    ],
+    "python_target": "cantera_python.transport.GasTransport.setupCollisionParameters",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:184:setupCollisionIntegral": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:184:setupCollisionIntegral",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "setupCollisionIntegral",
+    "source_lines": [
+      184,
+      184
+    ],
+    "python_target": "cantera_python.transport.GasTransport.setupCollisionIntegral",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.fitCollisionIntegrals",
+      "cantera_python.transport.GasTransport.fitProperties"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.GasTransport.init"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:192:getTransportData": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:192:getTransportData",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "getTransportData",
+    "source_lines": [
+      192,
+      192
+    ],
+    "python_target": "cantera_python.transport.GasTransport.getTransportData",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:212:fitCollisionIntegrals": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:212:fitCollisionIntegrals",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "fitCollisionIntegrals",
+    "source_lines": [
+      212,
+      212
+    ],
+    "python_target": "cantera_python.transport.GasTransport.fitCollisionIntegrals",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:236:fitProperties": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:236:fitProperties",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "fitProperties",
+    "source_lines": [
+      236,
+      236
+    ],
+    "python_target": "cantera_python.transport.GasTransport.fitProperties",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.fitDiffCoeffs"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.GasTransport.setupCollisionIntegral"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:251:fitDiffCoeffs": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:251:fitDiffCoeffs",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "fitDiffCoeffs",
+    "source_lines": [
+      251,
+      251
+    ],
+    "python_target": "cantera_python.transport.GasTransport.fitDiffCoeffs",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:45:viscosity": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:45:viscosity",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "viscosity",
+    "source_lines": [
+      45,
+      45
+    ],
+    "python_target": "cantera_python.transport.GasTransport.viscosity",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.update_T",
+      "cantera_python.transport.MixTransport.update_C",
+      "cantera_python.transport.GasTransport.updateViscosity_T"
+    ],
+    "caller_symbols": [
+      "cantera_python.solution.Solution.viscosity"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:48:getSpeciesViscosities": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:48:getSpeciesViscosities",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "getSpeciesViscosities",
+    "source_lines": [
+      48,
+      48
+    ],
+    "python_target": "cantera_python.transport.GasTransport.getSpeciesViscosities",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:55:getBinaryDiffCoeffs": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:55:getBinaryDiffCoeffs",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "getBinaryDiffCoeffs",
+    "source_lines": [
+      55,
+      55
+    ],
+    "python_target": "cantera_python.transport.GasTransport.getBinaryDiffCoeffs",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.update_T",
+      "cantera_python.transport.GasTransport.updateDiff_T"
+    ],
+    "caller_symbols": [
+      "cantera_python.solution.Solution.binary_diff_coeffs",
+      "cantera_python.transport.MixTransport.getMixDiffCoeffs"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:76:getMixDiffCoeffs": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:76:getMixDiffCoeffs",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "getMixDiffCoeffs",
+    "source_lines": [
+      76,
+      76
+    ],
+    "python_target": "cantera_python.transport.GasTransport.getMixDiffCoeffs",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.update_T",
+      "cantera_python.transport.MixTransport.update_C",
+      "cantera_python.transport.GasTransport.updateDiff_T"
+    ],
+    "caller_symbols": [
+      "cantera_python.solution.Solution.mix_diff_coeffs",
+      "cantera_python.transport.MixTransport.getMobilities",
+      "cantera_python.transport.MixTransport.getThermalDiffCoeffs",
+      "cantera_python.transport.MixTransport.getSpeciesFluxes"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/GasTransport.h:87:getMixDiffCoeffsMole": {
+    "stable_symbol_id": "include/cantera/transport/GasTransport.h:87:getMixDiffCoeffsMole",
+    "source_file": "include/cantera/transport/GasTransport.h",
+    "class": "GasTransport",
+    "method": "getMixDiffCoeffsMole",
+    "source_lines": [
+      87,
+      87
+    ],
+    "python_target": "cantera_python.transport.GasTransport.getMixDiffCoeffsMole",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/MixTransport.h:103:getMobilities": {
+    "stable_symbol_id": "include/cantera/transport/MixTransport.h:103:getMobilities",
+    "source_file": "include/cantera/transport/MixTransport.h",
+    "class": "MixTransport",
+    "method": "getMobilities",
+    "source_lines": [
+      103,
+      103
+    ],
+    "python_target": "cantera_python.transport.MixTransport.getMobilities",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/MixTransport.h:110:update_T": {
+    "stable_symbol_id": "include/cantera/transport/MixTransport.h:110:update_T",
+    "source_file": "include/cantera/transport/MixTransport.h",
+    "class": "MixTransport",
+    "method": "update_T",
+    "source_lines": [
+      110,
+      110
+    ],
+    "python_target": "cantera_python.transport.MixTransport.update_T",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/MixTransport.h:117:update_C": {
+    "stable_symbol_id": "include/cantera/transport/MixTransport.h:117:update_C",
+    "source_file": "include/cantera/transport/MixTransport.h",
+    "class": "MixTransport",
+    "method": "update_C",
+    "source_lines": [
+      117,
+      117
+    ],
+    "python_target": "cantera_python.transport.MixTransport.update_C",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/MixTransport.h:144:init": {
+    "stable_symbol_id": "include/cantera/transport/MixTransport.h:144:init",
+    "source_file": "include/cantera/transport/MixTransport.h",
+    "class": "MixTransport",
+    "method": "init",
+    "source_lines": [
+      144,
+      144
+    ],
+    "python_target": "cantera_python.transport.MixTransport.init",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.setupCollisionParameters",
+      "cantera_python.transport.GasTransport.setupCollisionIntegral"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.TransportFactory.newTransport"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/MixTransport.h:153:updateCond_T": {
+    "stable_symbol_id": "include/cantera/transport/MixTransport.h:153:updateCond_T",
+    "source_file": "include/cantera/transport/MixTransport.h",
+    "class": "MixTransport",
+    "method": "updateCond_T",
+    "source_lines": [
+      153,
+      153
+    ],
+    "python_target": "cantera_python.transport.MixTransport.updateCond_T",
+    "dependency_symbols": [
+      "cantera_python.transport.MixTransport.update_T"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.MixTransport.thermalConductivity"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/MixTransport.h:41:transportModel": {
+    "stable_symbol_id": "include/cantera/transport/MixTransport.h:41:transportModel",
+    "source_file": "include/cantera/transport/MixTransport.h",
+    "class": "MixTransport",
+    "method": "transportModel",
+    "source_lines": [
+      41,
+      41
+    ],
+    "python_target": "cantera_python.transport.MixTransport.transportModel",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/MixTransport.h:73:getThermalDiffCoeffs": {
+    "stable_symbol_id": "include/cantera/transport/MixTransport.h:73:getThermalDiffCoeffs",
+    "source_file": "include/cantera/transport/MixTransport.h",
+    "class": "MixTransport",
+    "method": "getThermalDiffCoeffs",
+    "source_lines": [
+      73,
+      73
+    ],
+    "python_target": "cantera_python.transport.MixTransport.getThermalDiffCoeffs",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/MixTransport.h:88:thermalConductivity": {
+    "stable_symbol_id": "include/cantera/transport/MixTransport.h:88:thermalConductivity",
+    "source_file": "include/cantera/transport/MixTransport.h",
+    "class": "MixTransport",
+    "method": "thermalConductivity",
+    "source_lines": [
+      88,
+      88
+    ],
+    "python_target": "cantera_python.transport.MixTransport.thermalConductivity",
+    "dependency_symbols": [
+      "cantera_python.transport.MixTransport.update_T",
+      "cantera_python.transport.MixTransport.update_C",
+      "cantera_python.transport.MixTransport.updateCond_T"
+    ],
+    "caller_symbols": [
+      "cantera_python.solution.Solution.thermal_conductivity"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:101:transportModel": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:101:transportModel",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "transportModel",
+    "source_lines": [
+      101,
+      101
+    ],
+    "python_target": "cantera_python.transport.Transport.transportModel",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:111:thermo": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:111:thermo",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "thermo",
+    "source_lines": [
+      111,
+      111
+    ],
+    "python_target": "cantera_python.transport.Transport.thermo",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:120:checkSpeciesIndex": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:120:checkSpeciesIndex",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "checkSpeciesIndex",
+    "source_lines": [
+      120,
+      120
+    ],
+    "python_target": "cantera_python.transport.Transport.checkSpeciesIndex",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:126:viscosity": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:126:viscosity",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "viscosity",
+    "source_lines": [
+      126,
+      126
+    ],
+    "python_target": "cantera_python.transport.Transport.viscosity",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.update_T",
+      "cantera_python.transport.MixTransport.update_C",
+      "cantera_python.transport.GasTransport.updateViscosity_T"
+    ],
+    "caller_symbols": [
+      "cantera_python.solution.Solution.viscosity"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:135:getSpeciesViscosities": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:135:getSpeciesViscosities",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "getSpeciesViscosities",
+    "source_lines": [
+      135,
+      135
+    ],
+    "python_target": "cantera_python.transport.Transport.getSpeciesViscosities",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:146:bulkViscosity": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:146:bulkViscosity",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "bulkViscosity",
+    "source_lines": [
+      146,
+      146
+    ],
+    "python_target": "cantera_python.transport.Transport.bulkViscosity",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:152:thermalConductivity": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:152:thermalConductivity",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "thermalConductivity",
+    "source_lines": [
+      152,
+      152
+    ],
+    "python_target": "cantera_python.transport.Transport.thermalConductivity",
+    "dependency_symbols": [
+      "cantera_python.transport.MixTransport.update_T",
+      "cantera_python.transport.MixTransport.update_C",
+      "cantera_python.transport.MixTransport.updateCond_T"
+    ],
+    "caller_symbols": [
+      "cantera_python.solution.Solution.thermal_conductivity"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:158:electricalConductivity": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:158:electricalConductivity",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "electricalConductivity",
+    "source_lines": [
+      158,
+      158
+    ],
+    "python_target": "cantera_python.transport.Transport.electricalConductivity",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:179:getMobilities": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:179:getMobilities",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "getMobilities",
+    "source_lines": [
+      179,
+      179
+    ],
+    "python_target": "cantera_python.transport.Transport.getMobilities",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:261:getThermalDiffCoeffs": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:261:getThermalDiffCoeffs",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "getThermalDiffCoeffs",
+    "source_lines": [
+      261,
+      261
+    ],
+    "python_target": "cantera_python.transport.Transport.getThermalDiffCoeffs",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:276:getBinaryDiffCoeffs": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:276:getBinaryDiffCoeffs",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "getBinaryDiffCoeffs",
+    "source_lines": [
+      276,
+      276
+    ],
+    "python_target": "cantera_python.transport.Transport.getBinaryDiffCoeffs",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.update_T",
+      "cantera_python.transport.GasTransport.updateDiff_T"
+    ],
+    "caller_symbols": [
+      "cantera_python.solution.Solution.binary_diff_coeffs",
+      "cantera_python.transport.MixTransport.getMixDiffCoeffs"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:296:getMultiDiffCoeffs": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:296:getMultiDiffCoeffs",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "getMultiDiffCoeffs",
+    "source_lines": [
+      296,
+      296
+    ],
+    "python_target": "cantera_python.transport.Transport.getMultiDiffCoeffs",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:311:getMixDiffCoeffs": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:311:getMixDiffCoeffs",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "getMixDiffCoeffs",
+    "source_lines": [
+      311,
+      311
+    ],
+    "python_target": "cantera_python.transport.Transport.getMixDiffCoeffs",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.update_T",
+      "cantera_python.transport.MixTransport.update_C",
+      "cantera_python.transport.GasTransport.updateDiff_T"
+    ],
+    "caller_symbols": [
+      "cantera_python.solution.Solution.mix_diff_coeffs",
+      "cantera_python.transport.MixTransport.getMobilities",
+      "cantera_python.transport.MixTransport.getThermalDiffCoeffs",
+      "cantera_python.transport.MixTransport.getSpeciesFluxes"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:317:getMixDiffCoeffsMole": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:317:getMixDiffCoeffsMole",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "getMixDiffCoeffsMole",
+    "source_lines": [
+      317,
+      317
+    ],
+    "python_target": "cantera_python.transport.Transport.getMixDiffCoeffsMole",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:323:getMixDiffCoeffsMass": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:323:getMixDiffCoeffsMass",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "getMixDiffCoeffsMass",
+    "source_lines": [
+      323,
+      323
+    ],
+    "python_target": "cantera_python.transport.Transport.getMixDiffCoeffsMass",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:329:getViscosityPolynomial": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:329:getViscosityPolynomial",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "getViscosityPolynomial",
+    "source_lines": [
+      329,
+      329
+    ],
+    "python_target": "cantera_python.transport.Transport.getViscosityPolynomial",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:335:getConductivityPolynomial": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:335:getConductivityPolynomial",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "getConductivityPolynomial",
+    "source_lines": [
+      335,
+      335
+    ],
+    "python_target": "cantera_python.transport.Transport.getConductivityPolynomial",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:341:getBinDiffusivityPolynomial": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:341:getBinDiffusivityPolynomial",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "getBinDiffusivityPolynomial",
+    "source_lines": [
+      341,
+      341
+    ],
+    "python_target": "cantera_python.transport.Transport.getBinDiffusivityPolynomial",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:356:setViscosityPolynomial": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:356:setViscosityPolynomial",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "setViscosityPolynomial",
+    "source_lines": [
+      356,
+      356
+    ],
+    "python_target": "cantera_python.transport.Transport.setViscosityPolynomial",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:362:setConductivityPolynomial": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:362:setConductivityPolynomial",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "setConductivityPolynomial",
+    "source_lines": [
+      362,
+      362
+    ],
+    "python_target": "cantera_python.transport.Transport.setConductivityPolynomial",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:368:setBinDiffusivityPolynomial": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:368:setBinDiffusivityPolynomial",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "setBinDiffusivityPolynomial",
+    "source_lines": [
+      368,
+      368
+    ],
+    "python_target": "cantera_python.transport.Transport.setBinDiffusivityPolynomial",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:386:parameters": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:386:parameters",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "parameters",
+    "source_lines": [
+      386,
+      386
+    ],
+    "python_target": "cantera_python.transport.Transport.parameters",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:396:fittingErrors": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:396:fittingErrors",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "fittingErrors",
+    "source_lines": [
+      396,
+      396
+    ],
+    "python_target": "cantera_python.transport.Transport.fittingErrors",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:414:init": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:414:init",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "init",
+    "source_lines": [
+      414,
+      414
+    ],
+    "python_target": "cantera_python.transport.Transport.init",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.setupCollisionParameters",
+      "cantera_python.transport.GasTransport.setupCollisionIntegral"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.TransportFactory.newTransport"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:418:CKMode": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:418:CKMode",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "CKMode",
+    "source_lines": [
+      418,
+      418
+    ],
+    "python_target": "cantera_python.transport.Transport.CKMode",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:428:invalidateCache": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:428:invalidateCache",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "invalidateCache",
+    "source_lines": [
+      428,
+      428
+    ],
+    "python_target": "cantera_python.transport.Transport.invalidateCache",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/Transport.h:95:clone": {
+    "stable_symbol_id": "include/cantera/transport/Transport.h:95:clone",
+    "source_file": "include/cantera/transport/Transport.h",
+    "class": "Transport",
+    "method": "clone",
+    "source_lines": [
+      95,
+      95
+    ],
+    "python_target": "cantera_python.transport.Transport.clone",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/TransportData.h:106:newTransportData": {
+    "stable_symbol_id": "include/cantera/transport/TransportData.h:106:newTransportData",
+    "source_file": "include/cantera/transport/TransportData.h",
+    "class": "",
+    "method": "newTransportData",
+    "source_lines": [
+      106,
+      106
+    ],
+    "python_target": "cantera_python.transport.newTransportData",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/TransportData.h:24:validate": {
+    "stable_symbol_id": "include/cantera/transport/TransportData.h:24:validate",
+    "source_file": "include/cantera/transport/TransportData.h",
+    "class": "TransportData",
+    "method": "validate",
+    "source_lines": [
+      24,
+      24
+    ],
+    "python_target": "cantera_python.transport.TransportData.validate",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "PARTIAL"
+  },
+  "include/cantera/transport/TransportData.h:32:parameters": {
+    "stable_symbol_id": "include/cantera/transport/TransportData.h:32:parameters",
+    "source_file": "include/cantera/transport/TransportData.h",
+    "class": "TransportData",
+    "method": "parameters",
+    "source_lines": [
+      32,
+      32
+    ],
+    "python_target": "cantera_python.transport.TransportData.parameters",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/TransportData.h:40:getParameters": {
+    "stable_symbol_id": "include/cantera/transport/TransportData.h:40:getParameters",
+    "source_file": "include/cantera/transport/TransportData.h",
+    "class": "TransportData",
+    "method": "getParameters",
+    "source_lines": [
+      40,
+      40
+    ],
+    "python_target": "cantera_python.transport.TransportData.getParameters",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "include/cantera/transport/TransportData.h:70:validate": {
+    "stable_symbol_id": "include/cantera/transport/TransportData.h:70:validate",
+    "source_file": "include/cantera/transport/TransportData.h",
+    "class": "GasTransportData",
+    "method": "validate",
+    "source_lines": [
+      70,
+      70
+    ],
+    "python_target": "cantera_python.transport.GasTransportData.validate",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "PARTIAL"
+  },
+  "include/cantera/transport/TransportData.h:72:getParameters": {
+    "stable_symbol_id": "include/cantera/transport/TransportData.h:72:getParameters",
+    "source_file": "include/cantera/transport/TransportData.h",
+    "class": "GasTransportData",
+    "method": "getParameters",
+    "source_lines": [
+      72,
+      72
+    ],
+    "python_target": "cantera_python.transport.GasTransportData.getParameters",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/GasTransport.cpp:157:CanteraError": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:157:CanteraError",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      157,
+      157
+    ],
+    "python_target": "cantera_python.transport.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+  },
+  "src/transport/GasTransport.cpp:477:ca": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:477:ca",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "ca",
+    "source_lines": [
+      477,
+      477
+    ],
+    "python_target": "cantera_python.transport.ca",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/GasTransport.cpp:478:co22": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:478:co22",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "co22",
+    "source_lines": [
+      478,
+      478
+    ],
+    "python_target": "cantera_python.transport.co22",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/GasTransport.cpp:505:tlog": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:505:tlog",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "tlog",
+    "source_lines": [
+      505,
+      505
+    ],
+    "python_target": "cantera_python.transport.tlog",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/GasTransport.cpp:506:w": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:506:w",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "w",
+    "source_lines": [
+      506,
+      506
+    ],
+    "python_target": "cantera_python.transport.w",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/GasTransport.cpp:518:c": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:518:c",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "c",
+    "source_lines": [
+      518,
+      518
+    ],
+    "python_target": "cantera_python.transport.c",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "PARTIAL"
+  },
+  "src/transport/GasTransport.cpp:535:cp_R_all": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:535:cp_R_all",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "cp_R_all",
+    "source_lines": [
+      535,
+      535
+    ],
+    "python_target": "cantera_python.transport.cp_R_all",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/GasTransport.cpp:641:tlog": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:641:tlog",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "tlog",
+    "source_lines": [
+      641,
+      641
+    ],
+    "python_target": "cantera_python.transport.tlog",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/GasTransport.cpp:642:w": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:642:w",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "w",
+    "source_lines": [
+      642,
+      642
+    ],
+    "python_target": "cantera_python.transport.w",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/GasTransport.cpp:651:c": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:651:c",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "c",
+    "source_lines": [
+      651,
+      651
+    ],
+    "python_target": "cantera_python.transport.c",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "PARTIAL"
+  },
+  "src/transport/GasTransport.cpp:654:diff": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:654:diff",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "diff",
+    "source_lines": [
+      654,
+      654
+    ],
+    "python_target": "cantera_python.transport.diff",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/GasTransport.cpp:665:pow": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:665:pow",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "pow",
+    "source_lines": [
+      665,
+      665
+    ],
+    "python_target": "cantera_python.transport.pow",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/GasTransport.cpp:873:ca": {
+    "stable_symbol_id": "src/transport/GasTransport.cpp:873:ca",
+    "source_file": "src/transport/GasTransport.cpp",
+    "class": "",
+    "method": "ca",
+    "source_lines": [
+      873,
+      873
+    ],
+    "python_target": "cantera_python.transport.ca",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.cpp:238:c": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:238:c",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "c",
+    "source_lines": [
+      238,
+      238
+    ],
+    "python_target": "cantera_python.transport.c",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "PARTIAL"
+  },
+  "src/transport/MMCollisionInt.cpp:290:values": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:290:values",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "values",
+    "source_lines": [
+      290,
+      290
+    ],
+    "python_target": "cantera_python.transport.values",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.cpp:298:quadInterp": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:298:quadInterp",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "quadInterp",
+    "source_lines": [
+      298,
+      298
+    ],
+    "python_target": "cantera_python.transport.quadInterp",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+  },
+  "src/transport/MMCollisionInt.cpp:313:values": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:313:values",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "values",
+    "source_lines": [
+      313,
+      313
+    ],
+    "python_target": "cantera_python.transport.values",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.cpp:321:quadInterp": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:321:quadInterp",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "quadInterp",
+    "source_lines": [
+      321,
+      321
+    ],
+    "python_target": "cantera_python.transport.quadInterp",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+  },
+  "src/transport/MMCollisionInt.cpp:336:values": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:336:values",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "values",
+    "source_lines": [
+      336,
+      336
+    ],
+    "python_target": "cantera_python.transport.values",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.cpp:344:quadInterp": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:344:quadInterp",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "quadInterp",
+    "source_lines": [
+      344,
+      344
+    ],
+    "python_target": "cantera_python.transport.quadInterp",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+  },
+  "src/transport/MMCollisionInt.cpp:359:values": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:359:values",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "values",
+    "source_lines": [
+      359,
+      359
+    ],
+    "python_target": "cantera_python.transport.values",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.cpp:367:quadInterp": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:367:quadInterp",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "quadInterp",
+    "source_lines": [
+      367,
+      367
+    ],
+    "python_target": "cantera_python.transport.quadInterp",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+  },
+  "src/transport/MMCollisionInt.cpp:373:values": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:373:values",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "values",
+    "source_lines": [
+      373,
+      373
+    ],
+    "python_target": "cantera_python.transport.values",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.cpp:374:logT": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:374:logT",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "logT",
+    "source_lines": [
+      374,
+      374
+    ],
+    "python_target": "cantera_python.transport.logT",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.cpp:389:values": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:389:values",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "values",
+    "source_lines": [
+      389,
+      389
+    ],
+    "python_target": "cantera_python.transport.values",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.cpp:390:logT": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.cpp:390:logT",
+    "source_file": "src/transport/MMCollisionInt.cpp",
+    "class": "",
+    "method": "logT",
+    "source_lines": [
+      390,
+      390
+    ],
+    "python_target": "cantera_python.transport.logT",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.h:70:init": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.h:70:init",
+    "source_file": "src/transport/MMCollisionInt.h",
+    "class": "MMCollisionInt",
+    "method": "init",
+    "source_lines": [
+      70,
+      70
+    ],
+    "python_target": "cantera_python.transport.MMCollisionInt.init",
+    "dependency_symbols": [
+      "cantera_python.transport.GasTransport.setupCollisionParameters",
+      "cantera_python.transport.GasTransport.setupCollisionIntegral"
+    ],
+    "caller_symbols": [
+      "cantera_python.transport.TransportFactory.newTransport"
+    ],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.h:72:omega22": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.h:72:omega22",
+    "source_file": "src/transport/MMCollisionInt.h",
+    "class": "MMCollisionInt",
+    "method": "omega22",
+    "source_lines": [
+      72,
+      72
+    ],
+    "python_target": "cantera_python.transport.MMCollisionInt.omega22",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.h:73:astar": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.h:73:astar",
+    "source_file": "src/transport/MMCollisionInt.h",
+    "class": "MMCollisionInt",
+    "method": "astar",
+    "source_lines": [
+      73,
+      73
+    ],
+    "python_target": "cantera_python.transport.MMCollisionInt.astar",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.h:74:bstar": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.h:74:bstar",
+    "source_file": "src/transport/MMCollisionInt.h",
+    "class": "MMCollisionInt",
+    "method": "bstar",
+    "source_lines": [
+      74,
+      74
+    ],
+    "python_target": "cantera_python.transport.MMCollisionInt.bstar",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.h:75:cstar": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.h:75:cstar",
+    "source_file": "src/transport/MMCollisionInt.h",
+    "class": "MMCollisionInt",
+    "method": "cstar",
+    "source_lines": [
+      75,
+      75
+    ],
+    "python_target": "cantera_python.transport.MMCollisionInt.cstar",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.h:78:fit_omega22": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.h:78:fit_omega22",
+    "source_file": "src/transport/MMCollisionInt.h",
+    "class": "MMCollisionInt",
+    "method": "fit_omega22",
+    "source_lines": [
+      78,
+      78
+    ],
+    "python_target": "cantera_python.transport.MMCollisionInt.fit_omega22",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.h:79:omega11": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.h:79:omega11",
+    "source_file": "src/transport/MMCollisionInt.h",
+    "class": "MMCollisionInt",
+    "method": "omega11",
+    "source_lines": [
+      79,
+      79
+    ],
+    "python_target": "cantera_python.transport.MMCollisionInt.omega11",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.h:80:omega22": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.h:80:omega22",
+    "source_file": "src/transport/MMCollisionInt.h",
+    "class": "MMCollisionInt",
+    "method": "omega22",
+    "source_lines": [
+      80,
+      80
+    ],
+    "python_target": "cantera_python.transport.MMCollisionInt.omega22",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+  },
+  "src/transport/MMCollisionInt.h:84:fitDelta": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.h:84:fitDelta",
+    "source_file": "src/transport/MMCollisionInt.h",
+    "class": "MMCollisionInt",
+    "method": "fitDelta",
+    "source_lines": [
+      84,
+      84
+    ],
+    "python_target": "cantera_python.transport.MMCollisionInt.fitDelta",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MMCollisionInt.h:85:quadInterp": {
+    "stable_symbol_id": "src/transport/MMCollisionInt.h:85:quadInterp",
+    "source_file": "src/transport/MMCollisionInt.h",
+    "class": "MMCollisionInt",
+    "method": "quadInterp",
+    "source_lines": [
+      85,
+      85
+    ],
+    "python_target": "cantera_python.transport.MMCollisionInt.quadInterp",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/MixTransport.cpp:134:CanteraError": {
+    "stable_symbol_id": "src/transport/MixTransport.cpp:134:CanteraError",
+    "source_file": "src/transport/MixTransport.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      134,
+      134
+    ],
+    "python_target": "cantera_python.transport.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+  },
+  "src/transport/MixTransport.cpp:138:CanteraError": {
+    "stable_symbol_id": "src/transport/MixTransport.cpp:138:CanteraError",
+    "source_file": "src/transport/MixTransport.cpp",
+    "class": "",
+    "method": "CanteraError",
+    "source_lines": [
+      138,
+      138
+    ],
+    "python_target": "cantera_python.transport.CanteraError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+  },
+  "src/transport/MixTransport.cpp:147:sum": {
+    "stable_symbol_id": "src/transport/MixTransport.cpp:147:sum",
+    "source_file": "src/transport/MixTransport.cpp",
+    "class": "",
+    "method": "sum",
+    "source_lines": [
+      147,
+      147
+    ],
+    "python_target": "cantera_python.transport.sum",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NOT_PORTED"
+  },
+  "src/transport/Transport.cpp:15:newTransport": {
+    "stable_symbol_id": "src/transport/Transport.cpp:15:newTransport",
+    "source_file": "src/transport/Transport.cpp",
+    "class": "",
+    "method": "newTransport",
+    "source_lines": [
+      15,
+      15
+    ],
+    "python_target": "cantera_python.transport.newTransport",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+  },
+  "src/transport/Transport.cpp:23:IndexError": {
+    "stable_symbol_id": "src/transport/Transport.cpp:23:IndexError",
+    "source_file": "src/transport/Transport.cpp",
+    "class": "",
+    "method": "IndexError",
+    "source_lines": [
+      23,
+      23
+    ],
+    "python_target": "cantera_python.transport.IndexError",
+    "dependency_symbols": [],
+    "caller_symbols": [],
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+  }
+}

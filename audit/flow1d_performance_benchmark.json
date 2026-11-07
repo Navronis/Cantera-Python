@@ -1,0 +1,54 @@
+{
+  "subsystem": "1D flow equations (Flow1D / StFlow)",
+  "native_classes": [
+    "Flow1D",
+    "StFlow",
+    "FreeFlow",
+    "AxisymmetricFlow",
+    "UnstrainedFlow"
+  ],
+  "benchmark_workload": "Flow1D residual evaluation across 4 configurations (10-25 grid points, H2/O2 kinetics, mixture-averaged transport, radiation)",
+  "mean_slowdown_factor": 250.43345779550242,
+  "comparisons": [
+    {
+      "name": "FreeFlow_10pts",
+      "domain_type": "free-flow",
+      "points": 10,
+      "native_median_us": 11.501,
+      "python_median_us": 2931.3000122783706,
+      "slowdown_factor": 254.87349032939488,
+      "native_reps": 5000,
+      "python_reps": 200
+    },
+    {
+      "name": "AxisymmetricFlow_10pts_Rad",
+      "domain_type": "axisymmetric-flow",
+      "points": 10,
+      "native_median_us": 12.328,
+      "python_median_us": 3233.1999973393977,
+      "slowdown_factor": 262.26476292499984,
+      "native_reps": 5000,
+      "python_reps": 200
+    },
+    {
+      "name": "UnstrainedFlow_10pts",
+      "domain_type": "unstrained-flow",
+      "points": 10,
+      "native_median_us": 11.94,
+      "python_median_us": 3014.599991729483,
+      "slowdown_factor": 252.47906128387632,
+      "native_reps": 5000,
+      "python_reps": 200
+    },
+    {
+      "name": "FreeFlow_25pts",
+      "domain_type": "free-flow",
+      "points": 25,
+      "native_median_us": 32.27,
+      "python_median_us": 7490.399992093444,
+      "slowdown_factor": 232.11651664373855,
+      "native_reps": 2000,
+      "python_reps": 100
+    }
+  ]
+}

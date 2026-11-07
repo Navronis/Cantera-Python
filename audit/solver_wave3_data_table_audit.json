@@ -1,0 +1,206 @@
+{
+  "source_arrays_checked": 33,
+  "coefficient_mismatches": 0,
+  "missing_table_entries": 0,
+  "entries": [
+    {
+      "fluid": "Water",
+      "symbol": "A",
+      "count": 70,
+      "exact": true
+    },
+    {
+      "fluid": "Water",
+      "symbol": "F",
+      "count": 8,
+      "exact": true
+    },
+    {
+      "fluid": "Water",
+      "symbol": "D",
+      "count": 8,
+      "exact": true
+    },
+    {
+      "fluid": "Water",
+      "symbol": "G",
+      "count": 6,
+      "exact": true
+    },
+    {
+      "fluid": "Water",
+      "symbol": "taua",
+      "count": 7,
+      "exact": true
+    },
+    {
+      "fluid": "CarbonDioxide",
+      "symbol": "Acarbdi",
+      "count": 19,
+      "exact": true
+    },
+    {
+      "fluid": "CarbonDioxide",
+      "symbol": "F",
+      "count": 8,
+      "exact": true
+    },
+    {
+      "fluid": "CarbonDioxide",
+      "symbol": "D",
+      "count": 6,
+      "exact": true
+    },
+    {
+      "fluid": "CarbonDioxide",
+      "symbol": "G",
+      "count": 6,
+      "exact": true
+    },
+    {
+      "fluid": "Nitrogen",
+      "symbol": "Ann",
+      "count": 32,
+      "exact": true
+    },
+    {
+      "fluid": "Nitrogen",
+      "symbol": "Fnn",
+      "count": 9,
+      "exact": true
+    },
+    {
+      "fluid": "Nitrogen",
+      "symbol": "Dnn",
+      "count": 6,
+      "exact": true
+    },
+    {
+      "fluid": "Nitrogen",
+      "symbol": "Gnn",
+      "count": 8,
+      "exact": true
+    },
+    {
+      "fluid": "Oxygen",
+      "symbol": "Aoxy",
+      "count": 32,
+      "exact": true
+    },
+    {
+      "fluid": "Oxygen",
+      "symbol": "Foxy",
+      "count": 9,
+      "exact": true
+    },
+    {
+      "fluid": "Oxygen",
+      "symbol": "Doxy",
+      "count": 6,
+      "exact": true
+    },
+    {
+      "fluid": "Oxygen",
+      "symbol": "Goxy",
+      "count": 8,
+      "exact": true
+    },
+    {
+      "fluid": "Hydrogen",
+      "symbol": "Ahydro",
+      "count": 32,
+      "exact": true
+    },
+    {
+      "fluid": "Hydrogen",
+      "symbol": "Fhydro",
+      "count": 4,
+      "exact": true
+    },
+    {
+      "fluid": "Hydrogen",
+      "symbol": "Dhydro",
+      "count": 7,
+      "exact": true
+    },
+    {
+      "fluid": "Hydrogen",
+      "symbol": "Ghydro",
+      "count": 17,
+      "exact": true
+    },
+    {
+      "fluid": "Methane",
+      "symbol": "Ameth",
+      "count": 32,
+      "exact": true
+    },
+    {
+      "fluid": "Methane",
+      "symbol": "Fmeth",
+      "count": 4,
+      "exact": true
+    },
+    {
+      "fluid": "Methane",
+      "symbol": "Dmeth",
+      "count": 3,
+      "exact": true
+    },
+    {
+      "fluid": "Methane",
+      "symbol": "Gmeth",
+      "count": 5,
+      "exact": true
+    },
+    {
+      "fluid": "Heptane",
+      "symbol": "Ahept",
+      "count": 10,
+      "exact": true
+    },
+    {
+      "fluid": "Heptane",
+      "symbol": "F",
+      "count": 8,
+      "exact": true
+    },
+    {
+      "fluid": "Heptane",
+      "symbol": "D",
+      "count": 6,
+      "exact": true
+    },
+    {
+      "fluid": "Heptane",
+      "symbol": "G",
+      "count": 6,
+      "exact": true
+    },
+    {
+      "fluid": "HFC134a",
+      "symbol": "a134",
+      "count": 21,
+      "exact": true
+    },
+    {
+      "fluid": "HFC134a",
+      "symbol": "t134",
+      "count": 21,
+      "exact": true
+    },
+    {
+      "fluid": "HFC134a",
+      "symbol": "d134",
+      "count": 21,
+      "exact": true
+    },
+    {
+      "fluid": "HFC134a",
+      "symbol": "b134",
+      "count": 5,
+      "exact": true
+    }
+  ],
+  "mismatches": []
+}

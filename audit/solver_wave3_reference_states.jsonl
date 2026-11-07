@@ -1,0 +1,8 @@
+{"fluid":"Water","source_constants":{"To":273.16,"u0":2375470.875,"s0":6697.356635},"python":"Water.To/u0/s0","status":"TABLE_MATCHED"}
+{"fluid":"CarbonDioxide","source_constants":{"To":216.54,"u0":321741.05,"s0":2139.6056},"python":"CarbonDioxide.To/u0/s0","status":"TABLE_MATCHED"}
+{"fluid":"Nitrogen","source_constants":{"u0":150877.551,"s0":214.9352518},"python":"Nitrogen.u0/s0","status":"TABLE_MATCHED"}
+{"fluid":"Oxygen","source_constants":{"u0":198884.2435,"s0":668.542976},"python":"Oxygen.u0/s0","status":"TABLE_MATCHED"}
+{"fluid":"Hydrogen","source_constants":{"u0":392751.14,"s0":23900.333},"python":"Hydrogen.u0/s0","status":"TABLE_MATCHED"}
+{"fluid":"Methane","source_constants":{"u0":357696.0858,"s0":-1918.035071},"python":"Methane.u0/s0","status":"TABLE_MATCHED"}
+{"fluid":"Heptane","source_constants":{"To":300.0,"u0":340584.39,"s0":1108.0254},"python":"Heptane.To/u0/s0","status":"TABLE_MATCHED"}
+{"fluid":"HFC-134a","source_constants":{"reference":"Tillner-Roth Helmholtz phi0/phiR"},"python":"HFC134a.b/a/t/d","status":"TABLE_MATCHED"}

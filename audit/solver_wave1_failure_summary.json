@@ -1,0 +1,8 @@
+{
+  "status": "PENDING_PINNED_NATIVE_EXECUTABLE",
+  "cases_tested_against_pinned_native": 0,
+  "native_successes": null,
+  "native_failures": null,
+  "exception_mismatches": null,
+  "state_restoration_mismatches": null
+}

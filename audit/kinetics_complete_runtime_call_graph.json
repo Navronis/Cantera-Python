@@ -1,0 +1,5458 @@
+{
+  "edges": [
+    {
+      "source": "BulkKinetics.updateROP",
+      "target": "ThermoPhase.getStandardChemPotentials"
+    },
+    {
+      "source": "BulkKinetics.updateROP",
+      "target": "Kinetics.getRevReactionDelta"
+    },
+    {
+      "source": "BulkKinetics.updateROP",
+      "target": "ThermoPhase.getActivityConcentrations"
+    },
+    {
+      "source": "BulkKinetics.updateROP",
+      "target": "ThermoPhase.getConcentrations"
+    },
+    {
+      "source": "BulkKinetics.updateROP",
+      "target": "ThirdBodyCalc.update"
+    },
+    {
+      "source": "BulkKinetics.updateROP",
+      "target": "MultiRate.update"
+    },
+    {
+      "source": "BulkKinetics.updateROP",
+      "target": "MultiRate.getRateConstants"
+    },
+    {
+      "source": "BulkKinetics.updateROP",
+      "target": "BulkKinetics.processThirdBodies"
+    },
+    {
+      "source": "BulkKinetics.updateROP",
+      "target": "BulkKinetics.applyEquilibriumConstants"
+    },
+    {
+      "source": "BulkKinetics.updateROP",
+      "target": "StoichManagerN.multiply"
+    },
+    {
+      "source": "BulkKinetics.getFwdRateConstants",
+      "target": "BulkKinetics.updateROP"
+    },
+    {
+      "source": "BulkKinetics.getEquilibriumConstants",
+      "target": "BulkKinetics.updateROP"
+    },
+    {
+      "source": "BulkKinetics.getEquilibriumConstants",
+      "target": "Kinetics.getReactionDelta"
+    },
+    {
+      "source": "BulkKinetics.getRevRateConstants",
+      "target": "BulkKinetics.getFwdRateConstants"
+    },
+    {
+      "source": "BulkKinetics.getRevRateConstants",
+      "target": "BulkKinetics.getEquilibriumConstants"
+    },
+    {
+      "source": "Kinetics.getFwdRatesOfProgress",
+      "target": "BulkKinetics.updateROP"
+    },
+    {
+      "source": "Kinetics.getRevRatesOfProgress",
+      "target": "BulkKinetics.updateROP"
+    },
+    {
+      "source": "Kinetics.getNetRatesOfProgress",
+      "target": "BulkKinetics.updateROP"
+    },
+    {
+      "source": "Kinetics.getCreationRates",
+      "target": "BulkKinetics.updateROP"
+    },
+    {
+      "source": "Kinetics.getCreationRates",
+      "target": "StoichManagerN.incrementSpecies"
+    },
+    {
+      "source": "Kinetics.getDestructionRates",
+      "target": "BulkKinetics.updateROP"
+    },
+    {
+      "source": "Kinetics.getDestructionRates",
+      "target": "StoichManagerN.incrementSpecies"
+    },
+    {
+      "source": "Kinetics.getNetProductionRates",
+      "target": "BulkKinetics.updateROP"
+    },
+    {
+      "source": "Kinetics.getNetProductionRates",
+      "target": "StoichManagerN.incrementSpecies"
+    },
+    {
+      "source": "Kinetics.getNetProductionRates",
+      "target": "StoichManagerN.decrementSpecies"
+    },
+    {
+      "source": "BulkKinetics.getDeltaGibbs",
+      "target": "ThermoPhase.getChemPotentials"
+    },
+    {
+      "source": "BulkKinetics.getDeltaGibbs",
+      "target": "Kinetics.getReactionDelta"
+    },
+    {
+      "source": "BulkKinetics.getDeltaEnthalpy",
+      "target": "ThermoPhase.getPartialMolarEnthalpies"
+    },
+    {
+      "source": "BulkKinetics.getDeltaEnthalpy",
+      "target": "Kinetics.getReactionDelta"
+    },
+    {
+      "source": "BulkKinetics.getDeltaEntropy",
+      "target": "ThermoPhase.getPartialMolarEntropies"
+    },
+    {
+      "source": "BulkKinetics.getDeltaEntropy",
+      "target": "Kinetics.getReactionDelta"
+    },
+    {
+      "source": "BulkKinetics.getDeltaSSGibbs",
+      "target": "ThermoPhase.getStandardChemPotentials"
+    },
+    {
+      "source": "BulkKinetics.getDeltaSSGibbs",
+      "target": "Kinetics.getReactionDelta"
+    },
+    {
+      "source": "BulkKinetics.getDeltaSSEnthalpy",
+      "target": "ThermoPhase.getEnthalpy_RT"
+    },
+    {
+      "source": "BulkKinetics.getDeltaSSEnthalpy",
+      "target": "Kinetics.getReactionDelta"
+    },
+    {
+      "source": "BulkKinetics.getDeltaSSEntropy",
+      "target": "ThermoPhase.getEntropy_R"
+    },
+    {
+      "source": "BulkKinetics.getDeltaSSEntropy",
+      "target": "Kinetics.getReactionDelta"
+    },
+    {
+      "source": "ThirdBodyCalc.update",
+      "target": "ThirdBody.effective_concentration"
+    },
+    {
+      "source": "ArrheniusRate.evalRate",
+      "target": "ArrheniusRate.evalLog"
+    },
+    {
+      "source": "StoichManagerN.incrementSpecies",
+      "target": "C1.incrementSpecies"
+    },
+    {
+      "source": "StoichManagerN.incrementSpecies",
+      "target": "C2.incrementSpecies"
+    },
+    {
+      "source": "StoichManagerN.incrementSpecies",
+      "target": "C3.incrementSpecies"
+    },
+    {
+      "source": "StoichManagerN.incrementSpecies",
+      "target": "C_AnyN.incrementSpecies"
+    },
+    {
+      "source": "StoichManagerN.decrementSpecies",
+      "target": "C1.decrementSpecies"
+    },
+    {
+      "source": "StoichManagerN.decrementSpecies",
+      "target": "C2.decrementSpecies"
+    },
+    {
+      "source": "StoichManagerN.decrementSpecies",
+      "target": "C3.decrementSpecies"
+    },
+    {
+      "source": "StoichManagerN.decrementSpecies",
+      "target": "C_AnyN.decrementSpecies"
+    },
+    {
+      "source": "StoichManagerN.multiply",
+      "target": "C1.multiply"
+    },
+    {
+      "source": "StoichManagerN.multiply",
+      "target": "C2.multiply"
+    },
+    {
+      "source": "StoichManagerN.multiply",
+      "target": "C3.multiply"
+    },
+    {
+      "source": "StoichManagerN.multiply",
+      "target": "C_AnyN.multiply"
+    }
+  ],
+  "nodes": [
+    {
+      "class": "ArrheniusData",
+      "id": "include/cantera/kinetics/Arrhenius.h:31:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ArrheniusBase",
+      "id": "include/cantera/kinetics/Arrhenius.h:80:getRateParameters",
+      "method": "getRateParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ArrheniusBase",
+      "id": "include/cantera/kinetics/Arrhenius.h:82:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ArrheniusBase",
+      "id": "include/cantera/kinetics/Arrhenius.h:84:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ArrheniusBase",
+      "id": "include/cantera/kinetics/Arrhenius.h:87:check",
+      "method": "check",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ArrheniusBase",
+      "id": "include/cantera/kinetics/Arrhenius.h:89:validate",
+      "method": "validate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ArrheniusBase",
+      "id": "include/cantera/kinetics/Arrhenius.h:97:preExponentialFactor",
+      "method": "preExponentialFactor",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ArrheniusBase",
+      "id": "include/cantera/kinetics/Arrhenius.h:106:temperatureExponent",
+      "method": "temperatureExponent",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ArrheniusBase",
+      "id": "include/cantera/kinetics/Arrhenius.h:116:activationEnergy",
+      "method": "activationEnergy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ArrheniusBase",
+      "id": "include/cantera/kinetics/Arrhenius.h:121:order",
+      "method": "order",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ArrheniusBase",
+      "id": "include/cantera/kinetics/Arrhenius.h:126:setRateUnits",
+      "method": "setRateUnits",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ArrheniusBase",
+      "id": "include/cantera/kinetics/Arrhenius.h:136:allowNegativePreExponentialFactor",
+      "method": "allowNegativePreExponentialFactor",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ArrheniusBase",
+      "id": "include/cantera/kinetics/Arrhenius.h:141:setAllowNegativePreExponentialFactor",
+      "method": "setAllowNegativePreExponentialFactor",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ArrheniusRate",
+      "id": "include/cantera/kinetics/Arrhenius.h:174:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ArrheniusRate",
+      "id": "include/cantera/kinetics/Arrhenius.h:178:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ArrheniusRate",
+      "id": "include/cantera/kinetics/Arrhenius.h:183:evalRate",
+      "method": "evalRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ArrheniusRate",
+      "id": "include/cantera/kinetics/Arrhenius.h:188:evalLog",
+      "method": "evalLog",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ArrheniusRate",
+      "id": "include/cantera/kinetics/Arrhenius.h:196:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ArrheniusRate",
+      "id": "include/cantera/kinetics/Arrhenius.h:205:ddTScaledFromStruct",
+      "method": "ddTScaledFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BlowersMaselData",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:23:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BlowersMaselData",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:24:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BlowersMaselData",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:26:resize",
+      "method": "resize",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BlowersMaselRate",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:85:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BlowersMaselRate",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:89:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BlowersMaselRate",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:93:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BlowersMaselRate",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:96:evalRate",
+      "method": "evalRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BlowersMaselRate",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:102:updateFromStruct",
+      "method": "updateFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BlowersMaselRate",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:116:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BlowersMaselRate",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:128:ddTScaledFromStruct",
+      "method": "ddTScaledFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BlowersMaselRate",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:133:effectiveActivationEnergy_R",
+      "method": "effectiveActivationEnergy_R",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BlowersMaselRate",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:148:activationEnergy",
+      "method": "activationEnergy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BlowersMaselRate",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:153:bondEnergy",
+      "method": "bondEnergy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BlowersMaselRate",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:158:deltaH",
+      "method": "deltaH",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BlowersMaselRate",
+      "id": "include/cantera/kinetics/BlowersMaselRate.h:170:setDeltaH",
+      "method": "setDeltaH",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:26:kineticsType",
+      "method": "kineticsType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:34:addReaction",
+      "method": "addReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:35:addThirdBody",
+      "method": "addThirdBody",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:36:modifyReaction",
+      "method": "modifyReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:37:resizeSpecies",
+      "method": "resizeSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:38:resizeReactions",
+      "method": "resizeReactions",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:39:setMultiplier",
+      "method": "setMultiplier",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:40:invalidateCache",
+      "method": "invalidateCache",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:45:getFwdRateConstants",
+      "method": "getFwdRateConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:46:getEquilibriumConstants",
+      "method": "getEquilibriumConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:47:getRevRateConstants",
+      "method": "getRevRateConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:49:getDeltaGibbs",
+      "method": "getDeltaGibbs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:50:getDeltaEnthalpy",
+      "method": "getDeltaEnthalpy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:51:getDeltaEntropy",
+      "method": "getDeltaEntropy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:53:getDeltaSSGibbs",
+      "method": "getDeltaSSGibbs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:54:getDeltaSSEnthalpy",
+      "method": "getDeltaSSEnthalpy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:55:getDeltaSSEntropy",
+      "method": "getDeltaSSEntropy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:60:getDerivativeSettings",
+      "method": "getDerivativeSettings",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:61:setDerivativeSettings",
+      "method": "setDerivativeSettings",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:62:getFwdRateConstants_ddT",
+      "method": "getFwdRateConstants_ddT",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:63:getFwdRatesOfProgress_ddT",
+      "method": "getFwdRatesOfProgress_ddT",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:64:getRevRatesOfProgress_ddT",
+      "method": "getRevRatesOfProgress_ddT",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:65:getNetRatesOfProgress_ddT",
+      "method": "getNetRatesOfProgress_ddT",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:66:getFwdRateConstants_ddP",
+      "method": "getFwdRateConstants_ddP",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:67:getFwdRatesOfProgress_ddP",
+      "method": "getFwdRatesOfProgress_ddP",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:68:getRevRatesOfProgress_ddP",
+      "method": "getRevRatesOfProgress_ddP",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:69:getNetRatesOfProgress_ddP",
+      "method": "getNetRatesOfProgress_ddP",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:70:getFwdRateConstants_ddC",
+      "method": "getFwdRateConstants_ddC",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:71:getFwdRatesOfProgress_ddC",
+      "method": "getFwdRatesOfProgress_ddC",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:72:getRevRatesOfProgress_ddC",
+      "method": "getRevRatesOfProgress_ddC",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:73:getNetRatesOfProgress_ddC",
+      "method": "getNetRatesOfProgress_ddC",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:74:fwdRatesOfProgress_ddX",
+      "method": "fwdRatesOfProgress_ddX",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:75:revRatesOfProgress_ddX",
+      "method": "revRatesOfProgress_ddX",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:76:netRatesOfProgress_ddX",
+      "method": "netRatesOfProgress_ddX",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:77:fwdRatesOfProgress_ddCi",
+      "method": "fwdRatesOfProgress_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:78:revRatesOfProgress_ddCi",
+      "method": "revRatesOfProgress_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:79:netRatesOfProgress_ddCi",
+      "method": "netRatesOfProgress_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:80:netProductionRates_ddCi",
+      "method": "netProductionRates_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:86:updateROP",
+      "method": "updateROP",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:88:getThirdBodyConcentrations",
+      "method": "getThirdBodyConcentrations",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:89:thirdBodyConcentrations",
+      "method": "thirdBodyConcentrations",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:104:processThirdBodies",
+      "method": "processThirdBodies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:107:applyEquilibriumConstants",
+      "method": "applyEquilibriumConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:114:applyEquilibriumConstants_ddT",
+      "method": "applyEquilibriumConstants_ddT",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:119:process_ddT",
+      "method": "process_ddT",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:124:process_ddP",
+      "method": "process_ddP",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "BulkKinetics",
+      "id": "include/cantera/kinetics/BulkKinetics.h:156:assertDerivativesValid",
+      "method": "assertDerivativesValid",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "CastelaVibrationalRelaxationRate",
+      "id": "include/cantera/kinetics/CastelaVibrationalRelaxationRate.h:70:getRateParameters",
+      "method": "getRateParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevData",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:27:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ChebyshevData",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:29:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ChebyshevData",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:35:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ChebyshevData",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:44:perturbPressure",
+      "method": "perturbPressure",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ChebyshevData",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:46:restore",
+      "method": "restore",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ChebyshevData",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:48:invalidateCache",
+      "method": "invalidateCache",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:112:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:116:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:123:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:125:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:127:validate",
+      "method": "validate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:133:updateFromStruct",
+      "method": "updateFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:158:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:180:setLimits",
+      "method": "setLimits",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:183:Tmin",
+      "method": "Tmin",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:188:Tmax",
+      "method": "Tmax",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:193:Pmin",
+      "method": "Pmin",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:198:Pmax",
+      "method": "Pmax",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:203:nPressure",
+      "method": "nPressure",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:208:nTemperature",
+      "method": "nTemperature",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:214:data",
+      "method": "data",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ChebyshevRate",
+      "id": "include/cantera/kinetics/ChebyshevRate.h:219:setData",
+      "method": "setData",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ConstantVibrationalRelaxationRate",
+      "id": "include/cantera/kinetics/ConstantVibrationalRelaxationRate.h:37:ConstantVibrationalRelaxationRate",
+      "method": "ConstantVibrationalRelaxationRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ConstantVibrationalRelaxationRate",
+      "id": "include/cantera/kinetics/ConstantVibrationalRelaxationRate.h:58:getRateParameters",
+      "method": "getRateParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "CustomFunc1Rate",
+      "id": "include/cantera/kinetics/Custom.h:43:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "CustomFunc1Rate",
+      "id": "include/cantera/kinetics/Custom.h:47:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "CustomFunc1Rate",
+      "id": "include/cantera/kinetics/Custom.h:49:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "CustomFunc1Rate",
+      "id": "include/cantera/kinetics/Custom.h:52:validate",
+      "method": "validate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "CustomFunc1Rate",
+      "id": "include/cantera/kinetics/Custom.h:58:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "CustomFunc1Rate",
+      "id": "include/cantera/kinetics/Custom.h:65:setRateFunction",
+      "method": "setRateFunction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "EdgeKinetics",
+      "id": "include/cantera/kinetics/EdgeKinetics.h:28:kineticsType",
+      "method": "kineticsType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ElectronCollisionPlasmaData",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:27:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ElectronCollisionPlasmaData",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:30:invalidateCache",
+      "method": "invalidateCache",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:120:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:122:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:124:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:129:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:133:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:139:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:151:ddTScaledFromStruct",
+      "method": "ddTScaledFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:152:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:161:kind",
+      "method": "kind",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:168:target",
+      "method": "target",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:178:product",
+      "method": "product",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:192:threshold",
+      "method": "threshold",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:197:energyLevels",
+      "method": "energyLevels",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:202:crossSections",
+      "method": "crossSections",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:207:crossSectionInterpolated",
+      "method": "crossSectionInterpolated",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ElectronCollisionPlasmaRate",
+      "id": "include/cantera/kinetics/ElectronCollisionPlasmaRate.h:212:updateInterpolatedCrossSection",
+      "method": "updateInterpolatedCrossSection",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "FalloffData",
+      "id": "include/cantera/kinetics/Falloff.h:24:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffData",
+      "id": "include/cantera/kinetics/Falloff.h:26:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffData",
+      "id": "include/cantera/kinetics/Falloff.h:28:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffData",
+      "id": "include/cantera/kinetics/Falloff.h:37:perturbThirdBodies",
+      "method": "perturbThirdBodies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffData",
+      "id": "include/cantera/kinetics/Falloff.h:39:restore",
+      "method": "restore",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffData",
+      "id": "include/cantera/kinetics/Falloff.h:40:resize",
+      "method": "resize",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffData",
+      "id": "include/cantera/kinetics/Falloff.h:42:invalidateCache",
+      "method": "invalidateCache",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:90:setFalloffCoeffs",
+      "method": "setFalloffCoeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:99:getFalloffCoeffs",
+      "method": "getFalloffCoeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:109:updateTemp",
+      "method": "updateTemp",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:120:F",
+      "method": "F",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:125:evalF",
+      "method": "evalF",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:132:F",
+      "method": "F",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:135:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:144:nParameters",
+      "method": "nParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:148:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:150:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:154:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:178:check",
+      "method": "check",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:179:validate",
+      "method": "validate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:182:allowNegativePreExponentialFactor",
+      "method": "allowNegativePreExponentialFactor",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:187:setAllowNegativePreExponentialFactor",
+      "method": "setAllowNegativePreExponentialFactor",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:192:chemicallyActivated",
+      "method": "chemicallyActivated",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:197:setChemicallyActivated",
+      "method": "setChemicallyActivated",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:202:lowRate",
+      "method": "lowRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:207:lowRate",
+      "method": "lowRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:212:setLowRate",
+      "method": "setLowRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:215:highRate",
+      "method": "highRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:220:highRate",
+      "method": "highRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "FalloffRate",
+      "id": "include/cantera/kinetics/Falloff.h:225:setHighRate",
+      "method": "setHighRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "LindemannRate",
+      "id": "include/cantera/kinetics/Falloff.h:258:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "LindemannRate",
+      "id": "include/cantera/kinetics/Falloff.h:262:subType",
+      "method": "subType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TroeRate",
+      "id": "include/cantera/kinetics/Falloff.h:322:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TroeRate",
+      "id": "include/cantera/kinetics/Falloff.h:331:setFalloffCoeffs",
+      "method": "setFalloffCoeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TroeRate",
+      "id": "include/cantera/kinetics/Falloff.h:333:getFalloffCoeffs",
+      "method": "getFalloffCoeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TroeRate",
+      "id": "include/cantera/kinetics/Falloff.h:341:updateTemp",
+      "method": "updateTemp",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TroeRate",
+      "id": "include/cantera/kinetics/Falloff.h:343:F",
+      "method": "F",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TroeRate",
+      "id": "include/cantera/kinetics/Falloff.h:345:subType",
+      "method": "subType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TroeRate",
+      "id": "include/cantera/kinetics/Falloff.h:349:nParameters",
+      "method": "nParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TroeRate",
+      "id": "include/cantera/kinetics/Falloff.h:353:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TroeRate",
+      "id": "include/cantera/kinetics/Falloff.h:355:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "SriRate",
+      "id": "include/cantera/kinetics/Falloff.h:422:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "SriRate",
+      "id": "include/cantera/kinetics/Falloff.h:432:setFalloffCoeffs",
+      "method": "setFalloffCoeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "SriRate",
+      "id": "include/cantera/kinetics/Falloff.h:434:getFalloffCoeffs",
+      "method": "getFalloffCoeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "SriRate",
+      "id": "include/cantera/kinetics/Falloff.h:442:updateTemp",
+      "method": "updateTemp",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "SriRate",
+      "id": "include/cantera/kinetics/Falloff.h:444:F",
+      "method": "F",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "SriRate",
+      "id": "include/cantera/kinetics/Falloff.h:446:subType",
+      "method": "subType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "SriRate",
+      "id": "include/cantera/kinetics/Falloff.h:450:nParameters",
+      "method": "nParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "SriRate",
+      "id": "include/cantera/kinetics/Falloff.h:454:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "SriRate",
+      "id": "include/cantera/kinetics/Falloff.h:455:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TsangRate",
+      "id": "include/cantera/kinetics/Falloff.h:516:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TsangRate",
+      "id": "include/cantera/kinetics/Falloff.h:525:setFalloffCoeffs",
+      "method": "setFalloffCoeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TsangRate",
+      "id": "include/cantera/kinetics/Falloff.h:527:getFalloffCoeffs",
+      "method": "getFalloffCoeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TsangRate",
+      "id": "include/cantera/kinetics/Falloff.h:535:updateTemp",
+      "method": "updateTemp",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TsangRate",
+      "id": "include/cantera/kinetics/Falloff.h:537:F",
+      "method": "F",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TsangRate",
+      "id": "include/cantera/kinetics/Falloff.h:539:subType",
+      "method": "subType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TsangRate",
+      "id": "include/cantera/kinetics/Falloff.h:543:nParameters",
+      "method": "nParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TsangRate",
+      "id": "include/cantera/kinetics/Falloff.h:547:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TsangRate",
+      "id": "include/cantera/kinetics/Falloff.h:549:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "Group",
+      "id": "include/cantera/kinetics/Group.h:83:diff",
+      "method": "diff",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Group",
+      "id": "include/cantera/kinetics/Group.h:88:sum",
+      "method": "sum",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Group",
+      "id": "include/cantera/kinetics/Group.h:98:validate",
+      "method": "validate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "Group",
+      "id": "include/cantera/kinetics/Group.h:103:valid",
+      "method": "valid",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Group",
+      "id": "include/cantera/kinetics/Group.h:109:sign",
+      "method": "sign",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Group",
+      "id": "include/cantera/kinetics/Group.h:112:size",
+      "method": "size",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Group",
+      "id": "include/cantera/kinetics/Group.h:117:nAtoms",
+      "method": "nAtoms",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Group",
+      "id": "include/cantera/kinetics/Group.h:125:nAtoms",
+      "method": "nAtoms",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Group",
+      "id": "include/cantera/kinetics/Group.h:132:fmt",
+      "method": "fmt",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:61:resizeReactions",
+      "method": "resizeReactions",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:63:kineticsType",
+      "method": "kineticsType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:72:setElectricPotential",
+      "method": "setElectricPotential",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:77:getEquilibriumConstants",
+      "method": "getEquilibriumConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:78:getDeltaGibbs",
+      "method": "getDeltaGibbs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:80:getDeltaElectrochemPotentials",
+      "method": "getDeltaElectrochemPotentials",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:81:getDeltaEnthalpy",
+      "method": "getDeltaEnthalpy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:82:getDeltaEntropy",
+      "method": "getDeltaEntropy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:84:getDeltaSSGibbs",
+      "method": "getDeltaSSGibbs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:85:getDeltaSSEnthalpy",
+      "method": "getDeltaSSEnthalpy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:86:getDeltaSSEntropy",
+      "method": "getDeltaSSEntropy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:92:getFwdRateConstants",
+      "method": "getFwdRateConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:93:getRevRateConstants",
+      "method": "getRevRateConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:112:addThermo",
+      "method": "addThermo",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:114:init",
+      "method": "init",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:115:resizeSpecies",
+      "method": "resizeSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:116:addReaction",
+      "method": "addReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:117:modifyReaction",
+      "method": "modifyReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:118:setMultiplier",
+      "method": "setMultiplier",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:125:updateROP",
+      "method": "updateROP",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:131:updateKc",
+      "method": "updateKc",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:133:_update_rates_T",
+      "method": "_update_rates_T",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:136:_update_rates_phi",
+      "method": "_update_rates_phi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:145:_update_rates_C",
+      "method": "_update_rates_C",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:183:solvePseudoSteadyStateProblem",
+      "method": "solvePseudoSteadyStateProblem",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:191:updateMu0",
+      "method": "updateMu0",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:200:updateKc",
+      "method": "updateKc",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:213:setPhaseExistence",
+      "method": "setPhaseExistence",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:233:setPhaseStability",
+      "method": "setPhaseStability",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:242:phaseExistence",
+      "method": "phaseExistence",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:252:phaseStability",
+      "method": "phaseStability",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:263:interfaceCurrent",
+      "method": "interfaceCurrent",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:265:setDerivativeSettings",
+      "method": "setDerivativeSettings",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:266:getDerivativeSettings",
+      "method": "getDerivativeSettings",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:267:fwdRatesOfProgress_ddCi",
+      "method": "fwdRatesOfProgress_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:268:revRatesOfProgress_ddCi",
+      "method": "revRatesOfProgress_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:269:netRatesOfProgress_ddCi",
+      "method": "netRatesOfProgress_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:281:applyEquilibriumConstants",
+      "method": "applyEquilibriumConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:295:assertDerivativesValid",
+      "method": "assertDerivativesValid",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceKinetics",
+      "id": "include/cantera/kinetics/InterfaceKinetics.h:299:buildNetwork",
+      "method": "buildNetwork",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceData",
+      "id": "include/cantera/kinetics/InterfaceRate.h:32:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceData",
+      "id": "include/cantera/kinetics/InterfaceRate.h:33:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceData",
+      "id": "include/cantera/kinetics/InterfaceRate.h:34:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceData",
+      "id": "include/cantera/kinetics/InterfaceRate.h:36:perturbTemperature",
+      "method": "perturbTemperature",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceData",
+      "id": "include/cantera/kinetics/InterfaceRate.h:37:resize",
+      "method": "resize",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:86:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:90:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:100:getCoverageDependencies",
+      "method": "getCoverageDependencies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:109:exchangeCurrentDensityFormulation",
+      "method": "exchangeCurrentDensityFormulation",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:116:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:120:setSpecies",
+      "method": "setSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:124:updateFromStruct",
+      "method": "updateFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:147:voltageCorrection",
+      "method": "voltageCorrection",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:182:usesElectrochemistry",
+      "method": "usesElectrochemistry",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:187:beta",
+      "method": "beta",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:199:siteDensity",
+      "method": "siteDensity",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRateBase",
+      "id": "include/cantera/kinetics/InterfaceRate.h:212:setSiteDensity",
+      "method": "setSiteDensity",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:261:setStickingParameters",
+      "method": "setStickingParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:265:getStickingParameters",
+      "method": "getStickingParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:270:motzWiseCorrection",
+      "method": "motzWiseCorrection",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:275:setMotzWiseCorrection",
+      "method": "setMotzWiseCorrection",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:281:stickingSpecies",
+      "method": "stickingSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:291:setStickingSpecies",
+      "method": "setStickingSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:297:stickingOrder",
+      "method": "stickingOrder",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:309:setStickingOrder",
+      "method": "setStickingOrder",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:314:stickingWeight",
+      "method": "stickingWeight",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:326:setStickingWeight",
+      "method": "setStickingWeight",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingCoverage",
+      "id": "include/cantera/kinetics/InterfaceRate.h:335:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:363:InterfaceRate",
+      "method": "InterfaceRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:367:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:372:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:376:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:381:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:387:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:394:updateFromStruct",
+      "method": "updateFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:395:constexpr",
+      "method": "constexpr",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:403:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:415:ddTScaledFromStruct",
+      "method": "ddTScaledFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:416:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:419:preExponentialFactor",
+      "method": "preExponentialFactor",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "InterfaceRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:424:activationEnergy",
+      "method": "activationEnergy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:460:StickingRate",
+      "method": "StickingRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:464:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:469:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:473:setRateUnits",
+      "method": "setRateUnits",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:478:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:491:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:506:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:512:validate",
+      "method": "validate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:531:updateFromStruct",
+      "method": "updateFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:532:constexpr",
+      "method": "constexpr",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:541:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:558:ddTScaledFromStruct",
+      "method": "ddTScaledFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:559:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:562:preExponentialFactor",
+      "method": "preExponentialFactor",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StickingRate",
+      "id": "include/cantera/kinetics/InterfaceRate.h:567:activationEnergy",
+      "method": "activationEnergy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:144:clone",
+      "method": "clone",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:151:kineticsType",
+      "method": "kineticsType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:156:resizeReactions",
+      "method": "resizeReactions",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:159:nReactions",
+      "method": "nReactions",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:168:checkReactionIndex",
+      "method": "checkReactionIndex",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:175:checkSpeciesIndex",
+      "method": "checkSpeciesIndex",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:187:nPhases",
+      "method": "nPhases",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:196:checkPhaseIndex",
+      "method": "checkPhaseIndex",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:210:phaseIndex",
+      "method": "phaseIndex",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:216:reactionPhase",
+      "method": "reactionPhase",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:224:phase",
+      "method": "phase",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:237:thermo",
+      "method": "thermo",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:240:thermo",
+      "method": "thermo",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:249:nTotalSpecies",
+      "method": "nTotalSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:271:kineticsSpeciesIndex",
+      "method": "kineticsSpeciesIndex",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:275:speciesOffset",
+      "method": "speciesOffset",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:288:kineticsSpeciesName",
+      "method": "kineticsSpeciesName",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:303:kineticsSpeciesIndex",
+      "method": "kineticsSpeciesIndex",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:312:speciesPhase",
+      "method": "speciesPhase",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:313:speciesPhase",
+      "method": "speciesPhase",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:322:speciesPhase",
+      "method": "speciesPhase",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:323:thermo",
+      "method": "thermo",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:333:speciesPhaseIndex",
+      "method": "speciesPhaseIndex",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:348:getFwdRatesOfProgress",
+      "method": "getFwdRatesOfProgress",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:358:getRevRatesOfProgress",
+      "method": "getRevRatesOfProgress",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:367:getNetRatesOfProgress",
+      "method": "getNetRatesOfProgress",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:387:getEquilibriumConstants",
+      "method": "getEquilibriumConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:388:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:418:getRevReactionDelta",
+      "method": "getRevReactionDelta",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:430:getDeltaGibbs",
+      "method": "getDeltaGibbs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:431:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:445:getDeltaElectrochemPotentials",
+      "method": "getDeltaElectrochemPotentials",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:446:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:458:getDeltaEnthalpy",
+      "method": "getDeltaEnthalpy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:459:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:471:getDeltaEntropy",
+      "method": "getDeltaEntropy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:472:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:485:getDeltaSSGibbs",
+      "method": "getDeltaSSGibbs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:486:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:499:getDeltaSSEnthalpy",
+      "method": "getDeltaSSEnthalpy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:500:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:513:getDeltaSSEntropy",
+      "method": "getDeltaSSEntropy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:514:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:525:getThirdBodyConcentrations",
+      "method": "getThirdBodyConcentrations",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:535:thirdBodyConcentrations",
+      "method": "thirdBodyConcentrations",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:553:getCreationRates",
+      "method": "getCreationRates",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:562:getDestructionRates",
+      "method": "getDestructionRates",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:572:getNetProductionRates",
+      "method": "getNetProductionRates",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:981:getCreationRates_ddT",
+      "method": "getCreationRates_ddT",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:988:getCreationRates_ddP",
+      "method": "getCreationRates_ddP",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:998:getCreationRates_ddC",
+      "method": "getCreationRates_ddC",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1011:creationRates_ddX",
+      "method": "creationRates_ddX",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1027:creationRates_ddCi",
+      "method": "creationRates_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1034:getDestructionRates_ddT",
+      "method": "getDestructionRates_ddT",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1041:getDestructionRates_ddP",
+      "method": "getDestructionRates_ddP",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1051:getDestructionRates_ddC",
+      "method": "getDestructionRates_ddC",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1064:destructionRates_ddX",
+      "method": "destructionRates_ddX",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1080:destructionRates_ddCi",
+      "method": "destructionRates_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1087:getNetProductionRates_ddT",
+      "method": "getNetProductionRates_ddT",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1094:getNetProductionRates_ddP",
+      "method": "getNetProductionRates_ddP",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1104:getNetProductionRates_ddC",
+      "method": "getNetProductionRates_ddC",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1117:netProductionRates_ddX",
+      "method": "netProductionRates_ddX",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1133:netProductionRates_ddCi",
+      "method": "netProductionRates_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1148:netProductionRates_ddCi",
+      "method": "netProductionRates_ddCi",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1162:reactantStoichCoeff",
+      "method": "reactantStoichCoeff",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1167:reactantStoichCoeffs",
+      "method": "reactantStoichCoeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1177:productStoichCoeff",
+      "method": "productStoichCoeff",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1182:productStoichCoeffs",
+      "method": "productStoichCoeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1189:revProductStoichCoeffs",
+      "method": "revProductStoichCoeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1201:reactantOrder",
+      "method": "reactantOrder",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1202:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1215:productOrder",
+      "method": "productOrder",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1216:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1226:isReversible",
+      "method": "isReversible",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1243:getFwdRateConstants",
+      "method": "getFwdRateConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1244:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1263:getRevRateConstants",
+      "method": "getRevRateConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1264:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1287:addThermo",
+      "method": "addThermo",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1297:init",
+      "method": "init",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1301:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1306:parameters",
+      "method": "parameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1312:resizeSpecies",
+      "method": "resizeSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1322:addReaction",
+      "method": "addReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1332:modifyReaction",
+      "method": "modifyReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1339:reaction",
+      "method": "reaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1341:reaction",
+      "method": "reaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1347:skipUndeclaredSpecies",
+      "method": "skipUndeclaredSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1350:skipUndeclaredSpecies",
+      "method": "skipUndeclaredSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1359:skipUndeclaredThirdBodies",
+      "method": "skipUndeclaredThirdBodies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1362:skipUndeclaredThirdBodies",
+      "method": "skipUndeclaredThirdBodies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1370:setExplicitThirdBodyDuplicateHandling",
+      "method": "setExplicitThirdBodyDuplicateHandling",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1371:explicitThirdBodyDuplicateHandling",
+      "method": "explicitThirdBodyDuplicateHandling",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1390:multiplier",
+      "method": "multiplier",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1399:setMultiplier",
+      "method": "setMultiplier",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1403:invalidateCache",
+      "method": "invalidateCache",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1424:setRoot",
+      "method": "setRoot",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1430:root",
+      "method": "root",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1459:updateROP",
+      "method": "updateROP",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1460:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Kinetics",
+      "id": "include/cantera/kinetics/Kinetics.h:1474:checkDuplicateStoich",
+      "method": "checkDuplicateStoich",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "KineticsFactory",
+      "id": "include/cantera/kinetics/KineticsFactory.h:24:factory",
+      "method": "factory",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "KineticsFactory",
+      "id": "include/cantera/kinetics/KineticsFactory.h:26:deleteFactory",
+      "method": "deleteFactory",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "KineticsFactory",
+      "id": "include/cantera/kinetics/KineticsFactory.h:31:newKinetics",
+      "method": "newKinetics",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "include/cantera/kinetics/KineticsFactory.h:45:newKinetics",
+      "method": "newKinetics",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "LinearBurkeData",
+      "id": "include/cantera/kinetics/LinearBurkeRate.h:34:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "LinearBurkeData",
+      "id": "include/cantera/kinetics/LinearBurkeRate.h:43:perturbPressure",
+      "method": "perturbPressure",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "LinearBurkeData",
+      "id": "include/cantera/kinetics/LinearBurkeRate.h:45:restore",
+      "method": "restore",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "LinearBurkeData",
+      "id": "include/cantera/kinetics/LinearBurkeRate.h:46:resize",
+      "method": "resize",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "LinearBurkeRate",
+      "id": "include/cantera/kinetics/LinearBurkeRate.h:79:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "LinearBurkeRate",
+      "id": "include/cantera/kinetics/LinearBurkeRate.h:84:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "LinearBurkeRate",
+      "id": "include/cantera/kinetics/LinearBurkeRate.h:91:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "LinearBurkeRate",
+      "id": "include/cantera/kinetics/LinearBurkeRate.h:93:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "LinearBurkeRate",
+      "id": "include/cantera/kinetics/LinearBurkeRate.h:100:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "LinearBurkeRate",
+      "id": "include/cantera/kinetics/LinearBurkeRate.h:102:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "LinearBurkeRate",
+      "id": "include/cantera/kinetics/LinearBurkeRate.h:104:validate",
+      "method": "validate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:30:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:38:add",
+      "method": "add",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:44:replace",
+      "method": "replace",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:64:resize",
+      "method": "resize",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:69:getRateConstants",
+      "method": "getRateConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:75:modifyRateConstants",
+      "method": "modifyRateConstants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:76:constexpr",
+      "method": "constexpr",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:86:constexpr",
+      "method": "constexpr",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:113:constexpr",
+      "method": "constexpr",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:138:constexpr",
+      "method": "constexpr",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:167:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:172:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:177:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:182:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:192:evalSingle",
+      "method": "evalSingle",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:194:constexpr",
+      "method": "constexpr",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:202:sharedData",
+      "method": "sharedData",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:208:_update",
+      "method": "_update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiRate",
+      "id": "include/cantera/kinetics/MultiRate.h:209:constexpr",
+      "method": "constexpr",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "MultiStateResolvedVibrationalRelaxationRate",
+      "id": "include/cantera/kinetics/MultiStateResolvedVibrationalRelaxationRate.h:52:getRateParameters",
+      "method": "getRateParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "PlogData",
+      "id": "include/cantera/kinetics/PlogRate.h:23:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "PlogData",
+      "id": "include/cantera/kinetics/PlogRate.h:25:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "PlogData",
+      "id": "include/cantera/kinetics/PlogRate.h:31:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "PlogData",
+      "id": "include/cantera/kinetics/PlogRate.h:40:perturbPressure",
+      "method": "perturbPressure",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "PlogData",
+      "id": "include/cantera/kinetics/PlogRate.h:42:restore",
+      "method": "restore",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "PlogData",
+      "id": "include/cantera/kinetics/PlogRate.h:44:invalidateCache",
+      "method": "invalidateCache",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "PlogRate",
+      "id": "include/cantera/kinetics/PlogRate.h:83:PlogRate",
+      "method": "PlogRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "PlogRate",
+      "id": "include/cantera/kinetics/PlogRate.h:87:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "PlogRate",
+      "id": "include/cantera/kinetics/PlogRate.h:92:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "PlogRate",
+      "id": "include/cantera/kinetics/PlogRate.h:99:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "PlogRate",
+      "id": "include/cantera/kinetics/PlogRate.h:101:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "PlogRate",
+      "id": "include/cantera/kinetics/PlogRate.h:102:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "PlogRate",
+      "id": "include/cantera/kinetics/PlogRate.h:103:getParameters",
+      "method": "getParameters",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "PlogRate",
+      "id": "include/cantera/kinetics/PlogRate.h:110:updateFromStruct",
+      "method": "updateFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "PlogRate",
+      "id": "include/cantera/kinetics/PlogRate.h:141:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "PlogRate",
+      "id": "include/cantera/kinetics/PlogRate.h:167:setRates",
+      "method": "setRates",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "PlogRate",
+      "id": "include/cantera/kinetics/PlogRate.h:173:validate",
+      "method": "validate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:40:reactantString",
+      "method": "reactantString",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:43:productString",
+      "method": "productString",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:46:equation",
+      "method": "equation",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:50:setEquation",
+      "method": "setEquation",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:53:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:58:calculateRateCoeffUnits",
+      "method": "calculateRateCoeffUnits",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:62:check",
+      "method": "check",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:66:validate",
+      "method": "validate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:78:parameters",
+      "method": "parameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:81:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:84:valid",
+      "method": "valid",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:89:setValid",
+      "method": "setValid",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:97:checkBalance",
+      "method": "checkBalance",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:104:checkSpecies",
+      "method": "checkSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:108:usesElectrochemistry",
+      "method": "usesElectrochemistry",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:147:rate",
+      "method": "rate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:152:setRate",
+      "method": "setRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:155:thirdBody",
+      "method": "thirdBody",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:161:usesThirdBody",
+      "method": "usesThirdBody",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:162:bool",
+      "method": "bool",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:171:registerSetRateCallback",
+      "method": "registerSetRateCallback",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:175:removeSetRateCallback",
+      "method": "removeSetRateCallback",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Reaction",
+      "id": "include/cantera/kinetics/Reaction.h:181:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ThirdBody",
+      "id": "include/cantera/kinetics/Reaction.h:209:ThirdBody",
+      "method": "ThirdBody",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ThirdBody",
+      "id": "include/cantera/kinetics/Reaction.h:215:name",
+      "method": "name",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ThirdBody",
+      "id": "include/cantera/kinetics/Reaction.h:221:setName",
+      "method": "setName",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ThirdBody",
+      "id": "include/cantera/kinetics/Reaction.h:225:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ThirdBody",
+      "id": "include/cantera/kinetics/Reaction.h:230:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ThirdBody",
+      "id": "include/cantera/kinetics/Reaction.h:233:efficiency",
+      "method": "efficiency",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ThirdBody",
+      "id": "include/cantera/kinetics/Reaction.h:238:collider",
+      "method": "collider",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ThirdBody",
+      "id": "include/cantera/kinetics/Reaction.h:247:checkSpecies",
+      "method": "checkSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": null,
+      "id": "include/cantera/kinetics/Reaction.h:279:getReactions",
+      "method": "getReactions",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ReactionData",
+      "id": "include/cantera/kinetics/ReactionData.h:38:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionData",
+      "id": "include/cantera/kinetics/ReactionData.h:50:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionData",
+      "id": "include/cantera/kinetics/ReactionData.h:64:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionData",
+      "id": "include/cantera/kinetics/ReactionData.h:82:perturbTemperature",
+      "method": "perturbTemperature",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionData",
+      "id": "include/cantera/kinetics/ReactionData.h:92:restore",
+      "method": "restore",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionData",
+      "id": "include/cantera/kinetics/ReactionData.h:102:resize",
+      "method": "resize",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionData",
+      "id": "include/cantera/kinetics/ReactionData.h:108:invalidateCache",
+      "method": "invalidateCache",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "SpeciesNode",
+      "id": "include/cantera/kinetics/ReactionPath.h:47:path",
+      "method": "path",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "SpeciesNode",
+      "id": "include/cantera/kinetics/ReactionPath.h:50:path",
+      "method": "path",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "SpeciesNode",
+      "id": "include/cantera/kinetics/ReactionPath.h:56:nPaths",
+      "method": "nPaths",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "SpeciesNode",
+      "id": "include/cantera/kinetics/ReactionPath.h:61:addPath",
+      "method": "addPath",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "SpeciesNode",
+      "id": "include/cantera/kinetics/ReactionPath.h:63:outflow",
+      "method": "outflow",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "SpeciesNode",
+      "id": "include/cantera/kinetics/ReactionPath.h:66:inflow",
+      "method": "inflow",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "SpeciesNode",
+      "id": "include/cantera/kinetics/ReactionPath.h:69:netOutflow",
+      "method": "netOutflow",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "SpeciesNode",
+      "id": "include/cantera/kinetics/ReactionPath.h:73:printPaths",
+      "method": "printPaths",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Path",
+      "id": "include/cantera/kinetics/ReactionPath.h:99:addReaction",
+      "method": "addReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Path",
+      "id": "include/cantera/kinetics/ReactionPath.h:102:begin",
+      "method": "begin",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Path",
+      "id": "include/cantera/kinetics/ReactionPath.h:105:begin",
+      "method": "begin",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Path",
+      "id": "include/cantera/kinetics/ReactionPath.h:110:end",
+      "method": "end",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Path",
+      "id": "include/cantera/kinetics/ReactionPath.h:113:end",
+      "method": "end",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Path",
+      "id": "include/cantera/kinetics/ReactionPath.h:121:otherNode",
+      "method": "otherNode",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Path",
+      "id": "include/cantera/kinetics/ReactionPath.h:126:flow",
+      "method": "flow",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Path",
+      "id": "include/cantera/kinetics/ReactionPath.h:129:setFlow",
+      "method": "setFlow",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Path",
+      "id": "include/cantera/kinetics/ReactionPath.h:134:nReactions",
+      "method": "nReactions",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Path",
+      "id": "include/cantera/kinetics/ReactionPath.h:139:reactionMap",
+      "method": "reactionMap",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "Path",
+      "id": "include/cantera/kinetics/ReactionPath.h:147:writeLabel",
+      "method": "writeLabel",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:180:maxFlow",
+      "method": "maxFlow",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:185:netFlow",
+      "method": "netFlow",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:186:flow",
+      "method": "flow",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:190:flow",
+      "method": "flow",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:195:hasNode",
+      "method": "hasNode",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:199:writeData",
+      "method": "writeData",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:205:getData",
+      "method": "getData",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:219:exportToDot",
+      "method": "exportToDot",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:227:getDot",
+      "method": "getDot",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:229:add",
+      "method": "add",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:232:add",
+      "method": "add",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:234:node",
+      "method": "node",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:237:path",
+      "method": "path",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:240:path",
+      "method": "path",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:243:nPaths",
+      "method": "nPaths",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:246:nNodes",
+      "method": "nNodes",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:250:addNode",
+      "method": "addNode",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:254:displayOnly",
+      "method": "displayOnly",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:258:linkNodes",
+      "method": "linkNodes",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:260:include",
+      "method": "include",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:263:exclude",
+      "method": "exclude",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:266:include",
+      "method": "include",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:271:exclude",
+      "method": "exclude",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:276:included",
+      "method": "included",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:279:excluded",
+      "method": "excluded",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:282:species",
+      "method": "species",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:283:reactions",
+      "method": "reactions",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:289:findMajorPaths",
+      "method": "findMajorPaths",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:292:setFont",
+      "method": "setFont",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:297:flowType",
+      "method": "flowType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:300:setFlowType",
+      "method": "setFlowType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:307:build",
+      "method": "build",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathDiagram",
+      "id": "include/cantera/kinetics/ReactionPath.h:310:getLog",
+      "method": "getLog",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathBuilder",
+      "id": "include/cantera/kinetics/ReactionPath.h:370:init",
+      "method": "init",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathBuilder",
+      "id": "include/cantera/kinetics/ReactionPath.h:376:findGroups",
+      "method": "findGroups",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionPathBuilder",
+      "id": "include/cantera/kinetics/ReactionPath.h:379:findElements",
+      "method": "findElements",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:91:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:100:subType",
+      "method": "subType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:107:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:115:parameters",
+      "method": "parameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:127:conversionUnits",
+      "method": "conversionUnits",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:138:setRateUnits",
+      "method": "setRateUnits",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:147:check",
+      "method": "check",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:150:validate",
+      "method": "validate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:153:rateIndex",
+      "method": "rateIndex",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:158:setRateIndex",
+      "method": "setRateIndex",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:167:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:175:eval",
+      "method": "eval",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:177:_evaluator",
+      "method": "_evaluator",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:188:eval",
+      "method": "eval",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:190:_evaluator",
+      "method": "_evaluator",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:203:eval",
+      "method": "eval",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:205:_evaluator",
+      "method": "_evaluator",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:209:valid",
+      "method": "valid",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:215:compositionDependent",
+      "method": "compositionDependent",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:221:setCompositionDependence",
+      "method": "setCompositionDependence",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:230:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRate",
+      "id": "include/cantera/kinetics/ReactionRate.h:254:_evaluator",
+      "method": "_evaluator",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionDataDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:24:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionDataDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:26:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionDataDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:35:setType",
+      "method": "setType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionDataDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:40:getWrapper",
+      "method": "getWrapper",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionDataDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:45:setWrapper",
+      "method": "setWrapper",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRateDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:73:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRateDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:76:setType",
+      "method": "setType",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRateDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:80:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ReactionRateDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:89:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRateDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:90:m_evalFromStruct",
+      "method": "m_evalFromStruct",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "ReactionRateDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:93:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRateDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:97:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRateDelegator",
+      "id": "include/cantera/kinetics/ReactionRateDelegator.h:101:validate",
+      "method": "validate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "ReactionRateFactory",
+      "id": "include/cantera/kinetics/ReactionRateFactory.h:65:factory",
+      "method": "factory",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ReactionRateFactory",
+      "id": "include/cantera/kinetics/ReactionRateFactory.h:67:deleteFactory",
+      "method": "deleteFactory",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "include/cantera/kinetics/ReactionRateFactory.h:87:newReactionRate",
+      "method": "newReactionRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "include/cantera/kinetics/ReactionRateFactory.h:102:newReactionRate",
+      "method": "newReactionRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StarikovskiyVibrationalRelaxationRate",
+      "id": "include/cantera/kinetics/StarikovskiyVibrationalRelaxationRate.h:53:getRateParameters",
+      "method": "getRateParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "C1",
+      "id": "include/cantera/kinetics/StoichManager.h:139:incrementSpecies",
+      "method": "incrementSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C1",
+      "id": "include/cantera/kinetics/StoichManager.h:143:decrementSpecies",
+      "method": "decrementSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C1",
+      "id": "include/cantera/kinetics/StoichManager.h:147:multiply",
+      "method": "multiply",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C1",
+      "id": "include/cantera/kinetics/StoichManager.h:151:incrementReaction",
+      "method": "incrementReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C1",
+      "id": "include/cantera/kinetics/StoichManager.h:155:decrementReaction",
+      "method": "decrementReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C1",
+      "id": "include/cantera/kinetics/StoichManager.h:171:scale",
+      "method": "scale",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C2",
+      "id": "include/cantera/kinetics/StoichManager.h:193:m_rxn",
+      "method": "m_rxn",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "C2",
+      "id": "include/cantera/kinetics/StoichManager.h:195:incrementSpecies",
+      "method": "incrementSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C2",
+      "id": "include/cantera/kinetics/StoichManager.h:200:decrementSpecies",
+      "method": "decrementSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C2",
+      "id": "include/cantera/kinetics/StoichManager.h:205:multiply",
+      "method": "multiply",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C2",
+      "id": "include/cantera/kinetics/StoichManager.h:213:incrementReaction",
+      "method": "incrementReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C2",
+      "id": "include/cantera/kinetics/StoichManager.h:217:decrementReaction",
+      "method": "decrementReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C3",
+      "id": "include/cantera/kinetics/StoichManager.h:262:m_rxn",
+      "method": "m_rxn",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": "C3",
+      "id": "include/cantera/kinetics/StoichManager.h:264:incrementSpecies",
+      "method": "incrementSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C3",
+      "id": "include/cantera/kinetics/StoichManager.h:270:decrementSpecies",
+      "method": "decrementSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C3",
+      "id": "include/cantera/kinetics/StoichManager.h:276:multiply",
+      "method": "multiply",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C3",
+      "id": "include/cantera/kinetics/StoichManager.h:285:incrementReaction",
+      "method": "incrementReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C3",
+      "id": "include/cantera/kinetics/StoichManager.h:289:decrementReaction",
+      "method": "decrementReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C_AnyN",
+      "id": "include/cantera/kinetics/StoichManager.h:354:multiply",
+      "method": "multiply",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C_AnyN",
+      "id": "include/cantera/kinetics/StoichManager.h:368:incrementSpecies",
+      "method": "incrementSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C_AnyN",
+      "id": "include/cantera/kinetics/StoichManager.h:375:decrementSpecies",
+      "method": "decrementSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C_AnyN",
+      "id": "include/cantera/kinetics/StoichManager.h:382:incrementReaction",
+      "method": "incrementReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "C_AnyN",
+      "id": "include/cantera/kinetics/StoichManager.h:388:decrementReaction",
+      "method": "decrementReaction",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StoichManagerN",
+      "id": "include/cantera/kinetics/StoichManager.h:649:add",
+      "method": "add",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StoichManagerN",
+      "id": "include/cantera/kinetics/StoichManager.h:650:order",
+      "method": "order",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "StoichManagerN",
+      "id": "include/cantera/kinetics/StoichManager.h:651:stoich",
+      "method": "stoich",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StoichManagerN",
+      "id": "include/cantera/kinetics/StoichManager.h:655:add",
+      "method": "add",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StoichManagerN",
+      "id": "include/cantera/kinetics/StoichManager.h:656:stoich",
+      "method": "stoich",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StoichManagerN",
+      "id": "include/cantera/kinetics/StoichManager.h:725:multiply",
+      "method": "multiply",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StoichManagerN",
+      "id": "include/cantera/kinetics/StoichManager.h:732:incrementSpecies",
+      "method": "incrementSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StoichManagerN",
+      "id": "include/cantera/kinetics/StoichManager.h:739:decrementSpecies",
+      "method": "decrementSpecies",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StoichManagerN",
+      "id": "include/cantera/kinetics/StoichManager.h:746:incrementReactions",
+      "method": "incrementReactions",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "StoichManagerN",
+      "id": "include/cantera/kinetics/StoichManager.h:753:decrementReactions",
+      "method": "decrementReactions",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ThirdBodyCalc",
+      "id": "include/cantera/kinetics/ThirdBodyCalc.h:47:resizeCoeffs",
+      "method": "resizeCoeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ThirdBodyCalc",
+      "id": "include/cantera/kinetics/ThirdBodyCalc.h:68:defaults",
+      "method": "defaults",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ThirdBodyCalc",
+      "id": "include/cantera/kinetics/ThirdBodyCalc.h:75:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ThirdBodyCalc",
+      "id": "include/cantera/kinetics/ThirdBodyCalc.h:86:multiply",
+      "method": "multiply",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ThirdBodyCalc",
+      "id": "include/cantera/kinetics/ThirdBodyCalc.h:97:derivatives",
+      "method": "derivatives",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ThirdBodyCalc",
+      "id": "include/cantera/kinetics/ThirdBodyCalc.h:98:mapped",
+      "method": "mapped",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ThirdBodyCalc",
+      "id": "include/cantera/kinetics/ThirdBodyCalc.h:103:scale",
+      "method": "scale",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "ThirdBodyCalc",
+      "id": "include/cantera/kinetics/ThirdBodyCalc.h:122:empty",
+      "method": "empty",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "TwoTempPlasmaData",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:24:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "TwoTempPlasmaData",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:25:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "TwoTempPlasmaData",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:26:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "TwoTempPlasmaData",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:29:updateTe",
+      "method": "updateTe",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "TwoTempPlasmaData",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:31:invalidateCache",
+      "method": "invalidateCache",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "TwoTempPlasmaRate",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:91:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TwoTempPlasmaRate",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:94:newMultiRate",
+      "method": "newMultiRate",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TwoTempPlasmaRate",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:99:type",
+      "method": "type",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TwoTempPlasmaRate",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:104:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TwoTempPlasmaRate",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:110:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TwoTempPlasmaRate",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:127:ddTScaledFromStruct",
+      "method": "ddTScaledFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TwoTempPlasmaRate",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:130:activationElectronEnergy",
+      "method": "activationElectronEnergy",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "TwoTempPlasmaRate",
+      "id": "include/cantera/kinetics/TwoTempPlasmaRate.h:136:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "VibrationalRelaxationData",
+      "id": "include/cantera/kinetics/VibrationalRelaxationRate.h:25:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "VibrationalRelaxationData",
+      "id": "include/cantera/kinetics/VibrationalRelaxationRate.h:35:update",
+      "method": "update",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": "VibrationalRelaxationRate",
+      "id": "include/cantera/kinetics/VibrationalRelaxationRate.h:70:setParameters",
+      "method": "setParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "VibrationalRelaxationRate",
+      "id": "include/cantera/kinetics/VibrationalRelaxationRate.h:79:setContext",
+      "method": "setContext",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "VibrationalRelaxationRate",
+      "id": "include/cantera/kinetics/VibrationalRelaxationRate.h:81:evalFromStruct",
+      "method": "evalFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "VibrationalRelaxationRate",
+      "id": "include/cantera/kinetics/VibrationalRelaxationRate.h:111:ddTScaledFromStruct",
+      "method": "ddTScaledFromStruct",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "VibrationalRelaxationRate",
+      "id": "include/cantera/kinetics/VibrationalRelaxationRate.h:113:check",
+      "method": "check",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "VibrationalRelaxationRate",
+      "id": "include/cantera/kinetics/VibrationalRelaxationRate.h:151:getParameters",
+      "method": "getParameters",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": "VibrationalRelaxationRate",
+      "id": "include/cantera/kinetics/VibrationalRelaxationRate.h:156:getPreExponentialFactor",
+      "method": "getPreExponentialFactor",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "PARTIAL"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:307:dRevRop",
+      "method": "dRevRop",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:308:dRevRop2",
+      "method": "dRevRop2",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:321:dNetRop",
+      "method": "dNetRop",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:322:dNetRop2",
+      "method": "dNetRop2",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:372:process_ddC",
+      "method": "process_ddC",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:380:dNetRop",
+      "method": "dNetRop",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:383:dNetRop2",
+      "method": "dNetRop2",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:394:calculateCompositionDerivatives",
+      "method": "calculateCompositionDerivatives",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:405:calculateCompositionDerivatives",
+      "method": "calculateCompositionDerivatives",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:429:calculateCompositionDerivatives",
+      "method": "calculateCompositionDerivatives",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:440:calculateCompositionDerivatives",
+      "method": "calculateCompositionDerivatives",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:630:out",
+      "method": "out",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/BulkKinetics.cpp:643:outM",
+      "method": "outM",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ChebyshevRate.cpp:67:coeffs",
+      "method": "coeffs",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ChebyshevRate.cpp:136:coeffs2d",
+      "method": "coeffs2d",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Falloff.cpp:201:InputFileError",
+      "method": "InputFileError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Falloff.cpp:299:pow",
+      "method": "pow",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Falloff.cpp:493:pow",
+      "method": "pow",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:498:CanteraError",
+      "method": "CanteraError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:540:savedStates",
+      "method": "savedStates",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:568:savedStates",
+      "method": "savedStates",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:631:charges",
+      "method": "charges",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:632:netProdRates",
+      "method": "netProdRates",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:653:calculateCompositionDerivatives",
+      "method": "calculateCompositionDerivatives",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:664:calculateCompositionDerivatives",
+      "method": "calculateCompositionDerivatives",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:717:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceKinetics.cpp:719:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceRate.cpp:91:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceRate.cpp:158:E",
+      "method": "E",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/InterfaceRate.cpp:201:E_temp",
+      "method": "E_temp",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:39:newKinetics",
+      "method": "newKinetics",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:47:IndexError",
+      "method": "IndexError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:72:IndexError",
+      "method": "IndexError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:97:IndexError",
+      "method": "IndexError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:249:CanteraError",
+      "method": "CanteraError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:300:thermo",
+      "method": "thermo",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:303:IndexError",
+      "method": "IndexError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:338:thermo",
+      "method": "thermo",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:462:out",
+      "method": "out",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:463:buf",
+      "method": "buf",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:475:out",
+      "method": "out",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:476:buf",
+      "method": "buf",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:488:out",
+      "method": "out",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:489:buf",
+      "method": "buf",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:521:out",
+      "method": "out",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:522:buf",
+      "method": "buf",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:534:out",
+      "method": "out",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:535:buf",
+      "method": "buf",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:547:out",
+      "method": "out",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:548:buf",
+      "method": "buf",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:580:out",
+      "method": "out",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:581:buf",
+      "method": "buf",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:589:out",
+      "method": "out",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:590:buf",
+      "method": "buf",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:598:out",
+      "method": "out",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:599:buf",
+      "method": "buf",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:606:netRatesOfProgress_ddX",
+      "method": "netRatesOfProgress_ddX",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Kinetics.cpp:611:netRatesOfProgress_ddCi",
+      "method": "netRatesOfProgress_ddCi",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/KineticsFactory.cpp:41:lock",
+      "method": "lock",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/KineticsFactory.cpp:49:lock",
+      "method": "lock",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/KineticsFactory.cpp:56:create",
+      "method": "create",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/KineticsFactory.cpp:61:kin",
+      "method": "kin",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/KineticsFactory.cpp:86:kin",
+      "method": "kin",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/KineticsFactory.cpp:105:newKinetics",
+      "method": "newKinetics",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/KineticsFactory.cpp:177:fileName",
+      "method": "fileName",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/KineticsFactory.cpp:178:node",
+      "method": "node",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/KineticsFactory.cpp:210:CanteraError",
+      "method": "CanteraError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Reaction.cpp:383:reactantString",
+      "method": "reactantString",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Reaction.cpp:385:reactantString",
+      "method": "reactantString",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Reaction.cpp:560:CanteraError",
+      "method": "CanteraError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Reaction.cpp:585:rate_units",
+      "method": "rate_units",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Reaction.cpp:743:e_counter",
+      "method": "e_counter",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/Reaction.cpp:847:getValue",
+      "method": "getValue",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionPath.cpp:31:CanteraError",
+      "method": "CanteraError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionPath.cpp:611:allProducts",
+      "method": "allProducts",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionPath.cpp:612:allReactants",
+      "method": "allReactants",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionPath.cpp:677:comp",
+      "method": "comp",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionPath.cpp:755:status",
+      "method": "status",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionPath.cpp:866:ReactionPathDiagram",
+      "method": "ReactionPathDiagram",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateDelegator.cpp:17:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateDelegator.cpp:47:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateDelegator.cpp:58:NotImplementedError",
+      "method": "NotImplementedError",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:37:ArrheniusRate",
+      "method": "ArrheniusRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:45:TwoTempPlasmaRate",
+      "method": "TwoTempPlasmaRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:51:ConstantVibrationalRelaxationRate",
+      "method": "ConstantVibrationalRelaxationRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:57:MultiStateResolvedVibrationalRelaxationRate",
+      "method": "MultiStateResolvedVibrationalRelaxationRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:63:StarikovskiyVibrationalRelaxationRate",
+      "method": "StarikovskiyVibrationalRelaxationRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:69:CastelaVibrationalRelaxationRate",
+      "method": "CastelaVibrationalRelaxationRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:74:ElectronCollisionPlasmaRate",
+      "method": "ElectronCollisionPlasmaRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:79:BlowersMaselRate",
+      "method": "BlowersMaselRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:84:LindemannRate",
+      "method": "LindemannRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:90:TroeRate",
+      "method": "TroeRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:95:SriRate",
+      "method": "SriRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:100:TsangRate",
+      "method": "TsangRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:105:PlogRate",
+      "method": "PlogRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:110:LinearBurkeRate",
+      "method": "LinearBurkeRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:115:ChebyshevRate",
+      "method": "ChebyshevRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:120:CustomFunc1Rate",
+      "method": "CustomFunc1Rate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:125:InterfaceArrheniusRate",
+      "method": "InterfaceArrheniusRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:130:StickingArrheniusRate",
+      "method": "StickingArrheniusRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:135:InterfaceBlowersMaselRate",
+      "method": "InterfaceBlowersMaselRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:140:StickingBlowersMaselRate",
+      "method": "StickingBlowersMaselRate",
+      "relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "status": "NON_RUNTIME_CPP_ONLY_PROVEN"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:145:lock",
+      "method": "lock",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    },
+    {
+      "class": null,
+      "id": "src/kinetics/ReactionRateFactory.cpp:153:lock",
+      "method": "lock",
+      "relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "status": "NOT_PORTED"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "solver_family": "kinetics",
+  "subsystem": "kinetics",
+  "total_edges": 51,
+  "total_nodes": 749
+}

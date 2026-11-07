@@ -1,0 +1,5 @@
+{"source":"src/tpx/Sub.cpp:514-520","algorithm":"cache bypass when T changes; save density; initialize pp=Psat and log pressure","python":"tpx.py:_update_sat_source","status":"MAPPED"}
+{"source":"src/tpx/Sub.cpp:521-536","algorithm":"liquid seed ldens and vapor ideal-gas seed, each corrected by set_TPp","python":"tpx.py:_update_sat_source","status":"MAPPED"}
+{"source":"src/tpx/Sub.cpp:537-549","algorithm":"Gibbs difference, branch swap, 0.001 J/kg/K convergence","python":"tpx.py:_update_sat_source","status":"MAPPED"}
+{"source":"src/tpx/Sub.cpp:550-570","algorithm":"pressure update, logarithmic large-step update, critical and negative-pressure guards","python":"tpx.py:_update_sat_source","status":"MAPPED_WITH_BINARY64_UNDERFLOW_GUARD"}
+{"source":"src/tpx/Sub.cpp:571-576","algorithm":"20-iteration failure and cache commit","python":"tpx.py:_update_sat_source/update_sat","status":"MAPPED_WITH_LEGACY_CORRELATION_FALLBACK"}

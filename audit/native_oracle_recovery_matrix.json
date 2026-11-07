@@ -1,0 +1,14 @@
+{
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "routes": [
+    {"route":"existing_binary_search","status":"UNAVAILABLE","evidence":"No _cantera shared library, Cantera DLL, or pinned executable found on accessible drives/workspace"},
+    {"route":"SCons","status":"ATTEMPTED_FAILED","evidence":"SCons 4.11.1 loaded the pinned source and verified commit 726522be4, then failed because no C++ compiler/include environment is installed"},
+    {"route":"MSVC","status":"UNAVAILABLE","evidence":"No Visual Studio Build Tools, vswhere, cl.exe, or VC vars batch file found"},
+    {"route":"MinGW","status":"UNAVAILABLE","evidence":"No MinGW/MSYS2 or gcc/g++ found"},
+    {"route":"Clang","status":"UNAVAILABLE","evidence":"No LLVM or clang executable found"},
+    {"route":"WSL","status":"ATTEMPTED_FAILED","evidence":"wsl.exe exists but distro enumeration returned access denied"},
+    {"route":"container","status":"UNAVAILABLE","evidence":"docker executable not found"},
+    {"route":"authorized_CI","status":"UNAVAILABLE","evidence":"No authenticated CI execution interface is available in this task"}
+  ],
+  "live_pinned_oracle_ready": false
+}

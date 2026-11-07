@@ -1,0 +1,2945 @@
+{
+  "include/cantera/kinetics/EdgeKinetics.h:28:kineticsType": {
+    "canonical_index": 654,
+    "canonical_symbol_id": "include/cantera/kinetics/EdgeKinetics.h:28:kineticsType",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      28,
+      28
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "EdgeKinetics",
+    "native_method": "kineticsType",
+    "native_source_definition": "include/cantera/kinetics/EdgeKinetics.h:28",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.EdgeKinetics.kineticsType",
+    "required_native_differential_test": "test_kinetics_family3_EdgeKinetics_kineticsType",
+    "required_performance_test": "benchmark_family3_EdgeKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Edge kinetics manager for 1D triple-phase boundaries",
+    "signature": "string kineticsType() const override",
+    "stable_symbol_id": "include/cantera/kinetics/EdgeKinetics.h:28:kineticsType"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:112:addThermo": {
+    "canonical_index": 754,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:112:addThermo",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      112,
+      112
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "addThermo",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:112",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.addThermo",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_addThermo",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void addThermo(shared_ptr<ThermoPhase> thermo) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:112:addThermo"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:114:init": {
+    "canonical_index": 755,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:114:init",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      114,
+      114
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "init",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:114",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.init",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_init",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void init() override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:114:init"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:115:resizeSpecies": {
+    "canonical_index": 756,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:115:resizeSpecies",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      115,
+      115
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "resizeSpecies",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:115",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.resizeSpecies",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_resizeSpecies",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void resizeSpecies() override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:115:resizeSpecies"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:116:addReaction": {
+    "canonical_index": 757,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:116:addReaction",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      116,
+      116
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "addReaction",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:116",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.addReaction",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_addReaction",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "bool addReaction(shared_ptr<Reaction> r, bool resize=true) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:116:addReaction"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:117:modifyReaction": {
+    "canonical_index": 758,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:117:modifyReaction",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      117,
+      117
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "modifyReaction",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:117",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.modifyReaction",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_modifyReaction",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void modifyReaction(size_t i, shared_ptr<Reaction> rNew) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:117:modifyReaction"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:118:setMultiplier": {
+    "canonical_index": 759,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:118:setMultiplier",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      118,
+      118
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "setMultiplier",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:118",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.setMultiplier",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_setMultiplier",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void setMultiplier(size_t i, double f) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:118:setMultiplier"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:125:updateROP": {
+    "canonical_index": 760,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:125:updateROP",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      125,
+      125
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "updateROP",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:125",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.updateROP",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_updateROP",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void updateROP() override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:125:updateROP"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:131:updateKc": {
+    "canonical_index": 761,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:131:updateKc",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      131,
+      131
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "updateKc",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:131",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.updateKc",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_updateKc",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "* updateKc()",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:131:updateKc"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:133:_update_rates_T": {
+    "canonical_index": 762,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:133:_update_rates_T",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      133,
+      133
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "_update_rates_T",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:133",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics._update_rates_T",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics__update_rates_T",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void _update_rates_T()",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:133:_update_rates_T"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:136:_update_rates_phi": {
+    "canonical_index": 763,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:136:_update_rates_phi",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      136,
+      136
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "_update_rates_phi",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:136",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics._update_rates_phi",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics__update_rates_phi",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void _update_rates_phi()",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:136:_update_rates_phi"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:145:_update_rates_C": {
+    "canonical_index": 764,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:145:_update_rates_C",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      145,
+      145
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "_update_rates_C",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:145",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics._update_rates_C",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics__update_rates_C",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void _update_rates_C()",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:145:_update_rates_C"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:183:solvePseudoSteadyStateProblem": {
+    "canonical_index": 765,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:183:solvePseudoSteadyStateProblem",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      183,
+      183
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "solvePseudoSteadyStateProblem",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:183",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.solvePseudoSteadyStateProblem",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_solvePseudoSteadyStateProblem",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void solvePseudoSteadyStateProblem(int loglevel=0)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:183:solvePseudoSteadyStateProblem"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:191:updateMu0": {
+    "canonical_index": 766,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:191:updateMu0",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      191,
+      191
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "updateMu0",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:191",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.updateMu0",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_updateMu0",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "virtual void updateMu0()",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:191:updateMu0"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:200:updateKc": {
+    "canonical_index": 767,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:200:updateKc",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      200,
+      200
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "updateKc",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:200",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.updateKc",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_updateKc",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void updateKc()",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:200:updateKc"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:213:setPhaseExistence": {
+    "canonical_index": 768,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:213:setPhaseExistence",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      213,
+      213
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "setPhaseExistence",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:213",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.setPhaseExistence",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_setPhaseExistence",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void setPhaseExistence(const size_t iphase, const int exists)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:213:setPhaseExistence"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:233:setPhaseStability": {
+    "canonical_index": 769,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:233:setPhaseStability",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      233,
+      233
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "setPhaseStability",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:233",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.setPhaseStability",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_setPhaseStability",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void setPhaseStability(const size_t iphase, const int isStable)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:233:setPhaseStability"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:242:phaseExistence": {
+    "canonical_index": 770,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:242:phaseExistence",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      242,
+      242
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "phaseExistence",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:242",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.phaseExistence",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_phaseExistence",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "int phaseExistence(const size_t iphase) const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:242:phaseExistence"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:252:phaseStability": {
+    "canonical_index": 771,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:252:phaseStability",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      252,
+      252
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "phaseStability",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:252",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.phaseStability",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_phaseStability",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "int phaseStability(const size_t iphase) const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:252:phaseStability"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:263:interfaceCurrent": {
+    "canonical_index": 772,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:263:interfaceCurrent",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      263,
+      263
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "interfaceCurrent",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:263",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.interfaceCurrent",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_interfaceCurrent",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "double interfaceCurrent(const size_t iphase)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:263:interfaceCurrent"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:265:setDerivativeSettings": {
+    "canonical_index": 773,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:265:setDerivativeSettings",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      265,
+      265
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "setDerivativeSettings",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:265",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.setDerivativeSettings",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_setDerivativeSettings",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void setDerivativeSettings(const AnyMap& settings) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:265:setDerivativeSettings"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:266:getDerivativeSettings": {
+    "canonical_index": 774,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:266:getDerivativeSettings",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      266,
+      266
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "getDerivativeSettings",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:266",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.getDerivativeSettings",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_getDerivativeSettings",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void getDerivativeSettings(AnyMap& settings) const override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:266:getDerivativeSettings"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:267:fwdRatesOfProgress_ddCi": {
+    "canonical_index": 775,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:267:fwdRatesOfProgress_ddCi",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      267,
+      267
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "fwdRatesOfProgress_ddCi",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:267",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.fwdRatesOfProgress_ddCi",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_fwdRatesOfProgress_ddCi",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "Eigen::SparseMatrix<double> fwdRatesOfProgress_ddCi() override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:267:fwdRatesOfProgress_ddCi"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:268:revRatesOfProgress_ddCi": {
+    "canonical_index": 776,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:268:revRatesOfProgress_ddCi",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      268,
+      268
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "revRatesOfProgress_ddCi",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:268",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.revRatesOfProgress_ddCi",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_revRatesOfProgress_ddCi",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "Eigen::SparseMatrix<double> revRatesOfProgress_ddCi() override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:268:revRatesOfProgress_ddCi"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:269:netRatesOfProgress_ddCi": {
+    "canonical_index": 777,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:269:netRatesOfProgress_ddCi",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      269,
+      269
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "netRatesOfProgress_ddCi",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:269",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.netRatesOfProgress_ddCi",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_netRatesOfProgress_ddCi",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "Eigen::SparseMatrix<double> netRatesOfProgress_ddCi() override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:269:netRatesOfProgress_ddCi"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:281:applyEquilibriumConstants": {
+    "canonical_index": 778,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:281:applyEquilibriumConstants",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      281,
+      281
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "applyEquilibriumConstants",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:281",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.applyEquilibriumConstants",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_applyEquilibriumConstants",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void applyEquilibriumConstants(span<double> rop)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:281:applyEquilibriumConstants"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:295:assertDerivativesValid": {
+    "canonical_index": 779,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:295:assertDerivativesValid",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      295,
+      295
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "assertDerivativesValid",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:295",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.assertDerivativesValid",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_assertDerivativesValid",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void assertDerivativesValid(const string& name)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:295:assertDerivativesValid"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:299:buildNetwork": {
+    "canonical_index": 780,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:299:buildNetwork",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      299,
+      299
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "buildNetwork",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:299",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.buildNetwork",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_buildNetwork",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void buildNetwork()",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:299:buildNetwork"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:61:resizeReactions": {
+    "canonical_index": 741,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:61:resizeReactions",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      61,
+      61
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "resizeReactions",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:61",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.resizeReactions",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_resizeReactions",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void resizeReactions() override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:61:resizeReactions"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:63:kineticsType": {
+    "canonical_index": 742,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:63:kineticsType",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      63,
+      63
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "kineticsType",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:63",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.kineticsType",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_kineticsType",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "string kineticsType() const override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:63:kineticsType"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:72:setElectricPotential": {
+    "canonical_index": 743,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:72:setElectricPotential",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      72,
+      72
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "setElectricPotential",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:72",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.setElectricPotential",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_setElectricPotential",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void setElectricPotential(int n, double V)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:72:setElectricPotential"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:77:getEquilibriumConstants": {
+    "canonical_index": 744,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:77:getEquilibriumConstants",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      77,
+      77
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "getEquilibriumConstants",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:77",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.getEquilibriumConstants",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_getEquilibriumConstants",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void getEquilibriumConstants(span<double> kc) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:77:getEquilibriumConstants"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:78:getDeltaGibbs": {
+    "canonical_index": 745,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:78:getDeltaGibbs",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      78,
+      78
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "getDeltaGibbs",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:78",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.getDeltaGibbs",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_getDeltaGibbs",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void getDeltaGibbs(span<double> deltaG) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:78:getDeltaGibbs"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:80:getDeltaElectrochemPotentials": {
+    "canonical_index": 746,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:80:getDeltaElectrochemPotentials",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      80,
+      80
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "getDeltaElectrochemPotentials",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:80",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.getDeltaElectrochemPotentials",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_getDeltaElectrochemPotentials",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void getDeltaElectrochemPotentials(span<double> deltaM) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:80:getDeltaElectrochemPotentials"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:81:getDeltaEnthalpy": {
+    "canonical_index": 747,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:81:getDeltaEnthalpy",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      81,
+      81
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "getDeltaEnthalpy",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:81",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.getDeltaEnthalpy",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_getDeltaEnthalpy",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void getDeltaEnthalpy(span<double> deltaH) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:81:getDeltaEnthalpy"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:82:getDeltaEntropy": {
+    "canonical_index": 748,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:82:getDeltaEntropy",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      82,
+      82
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "getDeltaEntropy",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:82",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.getDeltaEntropy",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_getDeltaEntropy",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void getDeltaEntropy(span<double> deltaS) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:82:getDeltaEntropy"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:84:getDeltaSSGibbs": {
+    "canonical_index": 749,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:84:getDeltaSSGibbs",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      84,
+      84
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "getDeltaSSGibbs",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:84",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.getDeltaSSGibbs",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_getDeltaSSGibbs",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void getDeltaSSGibbs(span<double> deltaG) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:84:getDeltaSSGibbs"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:85:getDeltaSSEnthalpy": {
+    "canonical_index": 750,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:85:getDeltaSSEnthalpy",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      85,
+      85
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "getDeltaSSEnthalpy",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:85",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.getDeltaSSEnthalpy",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_getDeltaSSEnthalpy",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void getDeltaSSEnthalpy(span<double> deltaH) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:85:getDeltaSSEnthalpy"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:86:getDeltaSSEntropy": {
+    "canonical_index": 751,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:86:getDeltaSSEntropy",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      86,
+      86
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "getDeltaSSEntropy",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:86",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.getDeltaSSEntropy",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_getDeltaSSEntropy",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void getDeltaSSEntropy(span<double> deltaS) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:86:getDeltaSSEntropy"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:92:getFwdRateConstants": {
+    "canonical_index": 752,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:92:getFwdRateConstants",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      92,
+      92
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "getFwdRateConstants",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:92",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.getFwdRateConstants",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_getFwdRateConstants",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void getFwdRateConstants(span<double> kfwd) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:92:getFwdRateConstants"
+  },
+  "include/cantera/kinetics/InterfaceKinetics.h:93:getRevRateConstants": {
+    "canonical_index": 753,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:93:getRevRateConstants",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      93,
+      93
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceKinetics",
+    "native_method": "getRevRateConstants",
+    "native_source_definition": "include/cantera/kinetics/InterfaceKinetics.h:93",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.InterfaceKinetics.getRevRateConstants",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceKinetics_getRevRateConstants",
+    "required_performance_test": "benchmark_family3_InterfaceKinetics",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics management across surface and adjoining bulk phases",
+    "signature": "void getRevRateConstants(span<double> krev, bool doIrreversible=false) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceKinetics.h:93:getRevRateConstants"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:100:getCoverageDependencies": {
+    "canonical_index": 788,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:100:getCoverageDependencies",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      100,
+      100
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRateBase",
+    "native_method": "getCoverageDependencies",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:100",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRateBase.getCoverageDependencies",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRateBase_getCoverageDependencies",
+    "required_performance_test": "benchmark_family3_InterfaceRateBase",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void getCoverageDependencies(AnyMap& dependencies) const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:100:getCoverageDependencies"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:109:exchangeCurrentDensityFormulation": {
+    "canonical_index": 789,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:109:exchangeCurrentDensityFormulation",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      109,
+      109
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRateBase",
+    "native_method": "exchangeCurrentDensityFormulation",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:109",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRateBase.exchangeCurrentDensityFormulation",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRateBase_exchangeCurrentDensityFormulation",
+    "required_performance_test": "benchmark_family3_InterfaceRateBase",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "bool exchangeCurrentDensityFormulation()",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:109:exchangeCurrentDensityFormulation"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:116:setContext": {
+    "canonical_index": 790,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:116:setContext",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      116,
+      116
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRateBase",
+    "native_method": "setContext",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:116",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRateBase.setContext",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRateBase_setContext",
+    "required_performance_test": "benchmark_family3_InterfaceRateBase",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void setContext(const Reaction& rxn, const Kinetics& kin)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:116:setContext"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:120:setSpecies": {
+    "canonical_index": 791,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:120:setSpecies",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      120,
+      120
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRateBase",
+    "native_method": "setSpecies",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:120",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRateBase.setSpecies",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRateBase_setSpecies",
+    "required_performance_test": "benchmark_family3_InterfaceRateBase",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void setSpecies(span<const string> species)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:120:setSpecies"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:124:updateFromStruct": {
+    "canonical_index": 792,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:124:updateFromStruct",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      124,
+      124
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRateBase",
+    "native_method": "updateFromStruct",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:124",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRateBase.updateFromStruct",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRateBase_updateFromStruct",
+    "required_performance_test": "benchmark_family3_InterfaceRateBase",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void updateFromStruct(const InterfaceData& shared_data)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:124:updateFromStruct"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:147:voltageCorrection": {
+    "canonical_index": 793,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:147:voltageCorrection",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      147,
+      147
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRateBase",
+    "native_method": "voltageCorrection",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:147",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRateBase.voltageCorrection",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRateBase_voltageCorrection",
+    "required_performance_test": "benchmark_family3_InterfaceRateBase",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "double voltageCorrection() const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:147:voltageCorrection"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:182:usesElectrochemistry": {
+    "canonical_index": 794,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:182:usesElectrochemistry",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      182,
+      182
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRateBase",
+    "native_method": "usesElectrochemistry",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:182",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRateBase.usesElectrochemistry",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRateBase_usesElectrochemistry",
+    "required_performance_test": "benchmark_family3_InterfaceRateBase",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "bool usesElectrochemistry()",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:182:usesElectrochemistry"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:187:beta": {
+    "canonical_index": 795,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:187:beta",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      187,
+      187
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRateBase",
+    "native_method": "beta",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:187",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRateBase.beta",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRateBase_beta",
+    "required_performance_test": "benchmark_family3_InterfaceRateBase",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "double beta() const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:187:beta"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:199:siteDensity": {
+    "canonical_index": 796,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:199:siteDensity",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      199,
+      199
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRateBase",
+    "native_method": "siteDensity",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:199",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRateBase.siteDensity",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRateBase_siteDensity",
+    "required_performance_test": "benchmark_family3_InterfaceRateBase",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "double siteDensity() const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:199:siteDensity"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:212:setSiteDensity": {
+    "canonical_index": 797,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:212:setSiteDensity",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      212,
+      212
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRateBase",
+    "native_method": "setSiteDensity",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:212",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRateBase.setSiteDensity",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRateBase_setSiteDensity",
+    "required_performance_test": "benchmark_family3_InterfaceRateBase",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void setSiteDensity(double siteDensity)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:212:setSiteDensity"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:261:setStickingParameters": {
+    "canonical_index": 798,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:261:setStickingParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      261,
+      261
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingCoverage",
+    "native_method": "setStickingParameters",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:261",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingCoverage.setStickingParameters",
+    "required_native_differential_test": "test_kinetics_family3_StickingCoverage_setStickingParameters",
+    "required_performance_test": "benchmark_family3_StickingCoverage",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void setStickingParameters(const AnyMap& node)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:261:setStickingParameters"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:265:getStickingParameters": {
+    "canonical_index": 799,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:265:getStickingParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      265,
+      265
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingCoverage",
+    "native_method": "getStickingParameters",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:265",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingCoverage.getStickingParameters",
+    "required_native_differential_test": "test_kinetics_family3_StickingCoverage_getStickingParameters",
+    "required_performance_test": "benchmark_family3_StickingCoverage",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void getStickingParameters(AnyMap& node) const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:265:getStickingParameters"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:270:motzWiseCorrection": {
+    "canonical_index": 800,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:270:motzWiseCorrection",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      270,
+      270
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingCoverage",
+    "native_method": "motzWiseCorrection",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:270",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingCoverage.motzWiseCorrection",
+    "required_native_differential_test": "test_kinetics_family3_StickingCoverage_motzWiseCorrection",
+    "required_performance_test": "benchmark_family3_StickingCoverage",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "bool motzWiseCorrection() const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:270:motzWiseCorrection"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:275:setMotzWiseCorrection": {
+    "canonical_index": 801,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:275:setMotzWiseCorrection",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      275,
+      275
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingCoverage",
+    "native_method": "setMotzWiseCorrection",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:275",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingCoverage.setMotzWiseCorrection",
+    "required_native_differential_test": "test_kinetics_family3_StickingCoverage_setMotzWiseCorrection",
+    "required_performance_test": "benchmark_family3_StickingCoverage",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void setMotzWiseCorrection(bool motz_wise)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:275:setMotzWiseCorrection"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:281:stickingSpecies": {
+    "canonical_index": 802,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:281:stickingSpecies",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      281,
+      281
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingCoverage",
+    "native_method": "stickingSpecies",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:281",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingCoverage.stickingSpecies",
+    "required_native_differential_test": "test_kinetics_family3_StickingCoverage_stickingSpecies",
+    "required_performance_test": "benchmark_family3_StickingCoverage",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "string stickingSpecies() const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:281:stickingSpecies"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:291:setStickingSpecies": {
+    "canonical_index": 803,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:291:setStickingSpecies",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      291,
+      291
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingCoverage",
+    "native_method": "setStickingSpecies",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:291",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingCoverage.setStickingSpecies",
+    "required_native_differential_test": "test_kinetics_family3_StickingCoverage_setStickingSpecies",
+    "required_performance_test": "benchmark_family3_StickingCoverage",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void setStickingSpecies(const string& stickingSpecies)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:291:setStickingSpecies"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:297:stickingOrder": {
+    "canonical_index": 804,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:297:stickingOrder",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      297,
+      297
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingCoverage",
+    "native_method": "stickingOrder",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:297",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingCoverage.stickingOrder",
+    "required_native_differential_test": "test_kinetics_family3_StickingCoverage_stickingOrder",
+    "required_performance_test": "benchmark_family3_StickingCoverage",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "double stickingOrder()",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:297:stickingOrder"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:309:setStickingOrder": {
+    "canonical_index": 805,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:309:setStickingOrder",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      309,
+      309
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingCoverage",
+    "native_method": "setStickingOrder",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:309",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingCoverage.setStickingOrder",
+    "required_native_differential_test": "test_kinetics_family3_StickingCoverage_setStickingOrder",
+    "required_performance_test": "benchmark_family3_StickingCoverage",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void setStickingOrder(double order)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:309:setStickingOrder"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:314:stickingWeight": {
+    "canonical_index": 806,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:314:stickingWeight",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      314,
+      314
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingCoverage",
+    "native_method": "stickingWeight",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:314",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingCoverage.stickingWeight",
+    "required_native_differential_test": "test_kinetics_family3_StickingCoverage_stickingWeight",
+    "required_performance_test": "benchmark_family3_StickingCoverage",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "double stickingWeight()",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:314:stickingWeight"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:326:setStickingWeight": {
+    "canonical_index": 807,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:326:setStickingWeight",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      326,
+      326
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingCoverage",
+    "native_method": "setStickingWeight",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:326",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingCoverage.setStickingWeight",
+    "required_native_differential_test": "test_kinetics_family3_StickingCoverage_setStickingWeight",
+    "required_performance_test": "benchmark_family3_StickingCoverage",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void setStickingWeight(double weight)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:326:setStickingWeight"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:32:update": {
+    "canonical_index": 781,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:32:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      32,
+      32
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:32",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceData.update",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceData_update",
+    "required_performance_test": "benchmark_family3_InterfaceData",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "bool update(const ThermoPhase& bulk, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:32:update"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:335:setContext": {
+    "canonical_index": 808,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:335:setContext",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      335,
+      335
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingCoverage",
+    "native_method": "setContext",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:335",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingCoverage.setContext",
+    "required_native_differential_test": "test_kinetics_family3_StickingCoverage_setContext",
+    "required_performance_test": "benchmark_family3_StickingCoverage",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void setContext(const Reaction& rxn, const Kinetics& kin)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:335:setContext"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:33:update": {
+    "canonical_index": 782,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:33:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      33,
+      33
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:33",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceData.update",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceData_update",
+    "required_performance_test": "benchmark_family3_InterfaceData",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void update(double T) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:33:update"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:34:update": {
+    "canonical_index": 783,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:34:update",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      34,
+      34
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceData",
+    "native_method": "update",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:34",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceData.update",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceData_update",
+    "required_performance_test": "benchmark_family3_InterfaceData",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void update(double T, span<const double> values) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:34:update"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:363:InterfaceRate": {
+    "canonical_index": 809,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:363:InterfaceRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      363,
+      363
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRate",
+    "native_method": "InterfaceRate",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:363",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRate.InterfaceRate",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_InterfaceRate",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "explicit InterfaceRate(const AnyMap& node)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:363:InterfaceRate"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:367:newMultiRate": {
+    "canonical_index": 810,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:367:newMultiRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      367,
+      367
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRate",
+    "native_method": "newMultiRate",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:367",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRate.newMultiRate",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_newMultiRate",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "unique_ptr<MultiRateBase> newMultiRate() const override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:367:newMultiRate"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:36:perturbTemperature": {
+    "canonical_index": 784,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:36:perturbTemperature",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      36,
+      36
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceData",
+    "native_method": "perturbTemperature",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:36",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceData.perturbTemperature",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceData_perturbTemperature",
+    "required_performance_test": "benchmark_family3_InterfaceData",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "virtual void perturbTemperature(double deltaT)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:36:perturbTemperature"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:372:type": {
+    "canonical_index": 811,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:372:type",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      372,
+      372
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRate",
+    "native_method": "type",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:372",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRate.type",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_type",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "const string type() const override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:372:type"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:376:setParameters": {
+    "canonical_index": 812,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:376:setParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      376,
+      376
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRate",
+    "native_method": "setParameters",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:376",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRate.setParameters",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_setParameters",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void setParameters(const AnyMap& node, const UnitStack& rate_units) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:376:setParameters"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:37:resize": {
+    "canonical_index": 785,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:37:resize",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      37,
+      37
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceData",
+    "native_method": "resize",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:37",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceData.resize",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceData_resize",
+    "required_performance_test": "benchmark_family3_InterfaceData",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void resize(Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:37:resize"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:381:getParameters": {
+    "canonical_index": 813,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:381:getParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      381,
+      381
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRate",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:381",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRate.getParameters",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_getParameters",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void getParameters(AnyMap& node) const override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:381:getParameters"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:387:setContext": {
+    "canonical_index": 814,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:387:setContext",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      387,
+      387
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRate",
+    "native_method": "setContext",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:387",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRate.setContext",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_setContext",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void setContext(const Reaction& rxn, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:387:setContext"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:394:updateFromStruct": {
+    "canonical_index": 815,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:394:updateFromStruct",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      394,
+      394
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRate",
+    "native_method": "updateFromStruct",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:394",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRate.updateFromStruct",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_updateFromStruct",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void updateFromStruct(const DataType& shared_data)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:394:updateFromStruct"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:395:constexpr": {
+    "canonical_index": 816,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:395:constexpr",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      395,
+      395
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRate",
+    "native_method": "constexpr",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:395",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRate.constexpr",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_constexpr",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "if constexpr (has_update<RateType>::value)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:395:constexpr"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:403:evalFromStruct": {
+    "canonical_index": 817,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:403:evalFromStruct",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      403,
+      403
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRate",
+    "native_method": "evalFromStruct",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:403",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRate.evalFromStruct",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_evalFromStruct",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "double evalFromStruct(const DataType& shared_data) const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:403:evalFromStruct"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:415:ddTScaledFromStruct": {
+    "canonical_index": 818,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:415:ddTScaledFromStruct",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      415,
+      415
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRate",
+    "native_method": "ddTScaledFromStruct",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:415",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRate.ddTScaledFromStruct",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_ddTScaledFromStruct",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "double ddTScaledFromStruct(const DataType& shared_data) const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:415:ddTScaledFromStruct"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:416:NotImplementedError": {
+    "canonical_index": 819,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:416:NotImplementedError",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      416,
+      416
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "InterfaceRate",
+    "native_method": "NotImplementedError",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:416",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.rates.InterfaceRate.NotImplementedError",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_NotImplementedError",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "throw NotImplementedError(\"InterfaceRate<>::ddTScaledFromStruct\")",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:416:NotImplementedError"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:419:preExponentialFactor": {
+    "canonical_index": 820,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:419:preExponentialFactor",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      419,
+      419
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRate",
+    "native_method": "preExponentialFactor",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:419",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRate.preExponentialFactor",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_preExponentialFactor",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "double preExponentialFactor() const override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:419:preExponentialFactor"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:424:activationEnergy": {
+    "canonical_index": 821,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:424:activationEnergy",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      424,
+      424
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRate",
+    "native_method": "activationEnergy",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:424",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRate.activationEnergy",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRate_activationEnergy",
+    "required_performance_test": "benchmark_family3_InterfaceRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "double activationEnergy() const override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:424:activationEnergy"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:460:StickingRate": {
+    "canonical_index": 822,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:460:StickingRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      460,
+      460
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "StickingRate",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:460",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.StickingRate",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_StickingRate",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "explicit StickingRate(const AnyMap& node)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:460:StickingRate"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:464:newMultiRate": {
+    "canonical_index": 823,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:464:newMultiRate",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      464,
+      464
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "newMultiRate",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:464",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.newMultiRate",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_newMultiRate",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "unique_ptr<MultiRateBase> newMultiRate() const override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:464:newMultiRate"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:469:type": {
+    "canonical_index": 824,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:469:type",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      469,
+      469
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "type",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:469",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.type",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_type",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "const string type() const override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:469:type"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:473:setRateUnits": {
+    "canonical_index": 825,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:473:setRateUnits",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      473,
+      473
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "setRateUnits",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:473",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.setRateUnits",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_setRateUnits",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void setRateUnits(const UnitStack& rate_units) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:473:setRateUnits"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:478:setParameters": {
+    "canonical_index": 826,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:478:setParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      478,
+      478
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "setParameters",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:478",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.setParameters",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_setParameters",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void setParameters(const AnyMap& node, const UnitStack& rate_units) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:478:setParameters"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:491:getParameters": {
+    "canonical_index": 827,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:491:getParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      491,
+      491
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:491",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.getParameters",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_getParameters",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void getParameters(AnyMap& node) const override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:491:getParameters"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:506:setContext": {
+    "canonical_index": 828,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:506:setContext",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      506,
+      506
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "setContext",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:506",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.setContext",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_setContext",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void setContext(const Reaction& rxn, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:506:setContext"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:512:validate": {
+    "canonical_index": 829,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:512:validate",
+    "current_status": "PARTIAL",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      512,
+      512
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "validate",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:512",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.validate",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_validate",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void validate(const string &equation, const Kinetics& kin) override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:512:validate"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:531:updateFromStruct": {
+    "canonical_index": 830,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:531:updateFromStruct",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      531,
+      531
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "updateFromStruct",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:531",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.updateFromStruct",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_updateFromStruct",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "void updateFromStruct(const DataType& shared_data)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:531:updateFromStruct"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:532:constexpr": {
+    "canonical_index": 831,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:532:constexpr",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      532,
+      532
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "constexpr",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:532",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.constexpr",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_constexpr",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "if constexpr (has_update<RateType>::value)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:532:constexpr"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:541:evalFromStruct": {
+    "canonical_index": 832,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:541:evalFromStruct",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      541,
+      541
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "evalFromStruct",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:541",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.evalFromStruct",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_evalFromStruct",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "double evalFromStruct(const DataType& shared_data) const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:541:evalFromStruct"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:558:ddTScaledFromStruct": {
+    "canonical_index": 833,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:558:ddTScaledFromStruct",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      558,
+      558
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "ddTScaledFromStruct",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:558",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.ddTScaledFromStruct",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_ddTScaledFromStruct",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "double ddTScaledFromStruct(const DataType& shared_data) const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:558:ddTScaledFromStruct"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:559:NotImplementedError": {
+    "canonical_index": 834,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:559:NotImplementedError",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      559,
+      559
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "StickingRate",
+    "native_method": "NotImplementedError",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:559",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.rates.StickingRate.NotImplementedError",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_NotImplementedError",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "throw NotImplementedError(\"StickingRate<>::ddTScaledFromStruct\")",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:559:NotImplementedError"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:562:preExponentialFactor": {
+    "canonical_index": 835,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:562:preExponentialFactor",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      562,
+      562
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "preExponentialFactor",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:562",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.preExponentialFactor",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_preExponentialFactor",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "double preExponentialFactor() const override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:562:preExponentialFactor"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:567:activationEnergy": {
+    "canonical_index": 836,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:567:activationEnergy",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      567,
+      567
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "StickingRate",
+    "native_method": "activationEnergy",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:567",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.StickingRate.activationEnergy",
+    "required_native_differential_test": "test_kinetics_family3_StickingRate_activationEnergy",
+    "required_performance_test": "benchmark_family3_StickingRate",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface sticking coefficient calculation with thermal velocity and surface coverage dependency",
+    "signature": "double activationEnergy() const override",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:567:activationEnergy"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:86:setParameters": {
+    "canonical_index": 786,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:86:setParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      86,
+      86
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRateBase",
+    "native_method": "setParameters",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:86",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRateBase.setParameters",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRateBase_setParameters",
+    "required_performance_test": "benchmark_family3_InterfaceRateBase",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void setParameters(const AnyMap& node)",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:86:setParameters"
+  },
+  "include/cantera/kinetics/InterfaceRate.h:90:getParameters": {
+    "canonical_index": 787,
+    "canonical_symbol_id": "include/cantera/kinetics/InterfaceRate.h:90:getParameters",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      90,
+      90
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "InterfaceRateBase",
+    "native_method": "getParameters",
+    "native_source_definition": "include/cantera/kinetics/InterfaceRate.h:90",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.rates.InterfaceRateBase.getParameters",
+    "required_native_differential_test": "test_kinetics_family3_InterfaceRateBase_getParameters",
+    "required_performance_test": "benchmark_family3_InterfaceRateBase",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Surface interface rate parameterization, coverage modification, and electrical potential adjustment",
+    "signature": "void getParameters(AnyMap& node) const",
+    "stable_symbol_id": "include/cantera/kinetics/InterfaceRate.h:90:getParameters"
+  },
+  "src/kinetics/InterfaceKinetics.cpp:498:CanteraError": {
+    "canonical_index": 4572,
+    "canonical_symbol_id": "src/kinetics/InterfaceKinetics.cpp:498:CanteraError",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      498,
+      498
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "",
+    "native_method": "CanteraError",
+    "native_source_definition": "src/kinetics/InterfaceKinetics.cpp:498",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.kinetics.CanteraError",
+    "required_native_differential_test": "test_kinetics_family3__CanteraError",
+    "required_performance_test": "benchmark_family3_",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics free function and rate helper",
+    "signature": "throw CanteraError(\"InterfaceKinetics::init\", \"no interface phase is present.\")",
+    "stable_symbol_id": "src/kinetics/InterfaceKinetics.cpp:498:CanteraError"
+  },
+  "src/kinetics/InterfaceKinetics.cpp:540:savedStates": {
+    "canonical_index": 4573,
+    "canonical_symbol_id": "src/kinetics/InterfaceKinetics.cpp:540:savedStates",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      540,
+      540
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "",
+    "native_method": "savedStates",
+    "native_source_definition": "src/kinetics/InterfaceKinetics.cpp:540",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.savedStates",
+    "required_native_differential_test": "test_kinetics_family3__savedStates",
+    "required_performance_test": "benchmark_family3_",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics free function and rate helper",
+    "signature": "vector<vector<double>> savedStates(nPhases())",
+    "stable_symbol_id": "src/kinetics/InterfaceKinetics.cpp:540:savedStates"
+  },
+  "src/kinetics/InterfaceKinetics.cpp:568:savedStates": {
+    "canonical_index": 4574,
+    "canonical_symbol_id": "src/kinetics/InterfaceKinetics.cpp:568:savedStates",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      568,
+      568
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "",
+    "native_method": "savedStates",
+    "native_source_definition": "src/kinetics/InterfaceKinetics.cpp:568",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.savedStates",
+    "required_native_differential_test": "test_kinetics_family3__savedStates",
+    "required_performance_test": "benchmark_family3_",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics free function and rate helper",
+    "signature": "vector<vector<double>> savedStates(nPhases())",
+    "stable_symbol_id": "src/kinetics/InterfaceKinetics.cpp:568:savedStates"
+  },
+  "src/kinetics/InterfaceKinetics.cpp:631:charges": {
+    "canonical_index": 4575,
+    "canonical_symbol_id": "src/kinetics/InterfaceKinetics.cpp:631:charges",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      631,
+      631
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "",
+    "native_method": "charges",
+    "native_source_definition": "src/kinetics/InterfaceKinetics.cpp:631",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.charges",
+    "required_native_differential_test": "test_kinetics_family3__charges",
+    "required_performance_test": "benchmark_family3_",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics free function and rate helper",
+    "signature": "vector<double> charges(m_kk, 0.0)",
+    "stable_symbol_id": "src/kinetics/InterfaceKinetics.cpp:631:charges"
+  },
+  "src/kinetics/InterfaceKinetics.cpp:632:netProdRates": {
+    "canonical_index": 4576,
+    "canonical_symbol_id": "src/kinetics/InterfaceKinetics.cpp:632:netProdRates",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      632,
+      632
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "",
+    "native_method": "netProdRates",
+    "native_source_definition": "src/kinetics/InterfaceKinetics.cpp:632",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.netProdRates",
+    "required_native_differential_test": "test_kinetics_family3__netProdRates",
+    "required_performance_test": "benchmark_family3_",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics free function and rate helper",
+    "signature": "vector<double> netProdRates(m_kk, 0.0)",
+    "stable_symbol_id": "src/kinetics/InterfaceKinetics.cpp:632:netProdRates"
+  },
+  "src/kinetics/InterfaceKinetics.cpp:653:calculateCompositionDerivatives": {
+    "canonical_index": 4577,
+    "canonical_symbol_id": "src/kinetics/InterfaceKinetics.cpp:653:calculateCompositionDerivatives",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      653,
+      653
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "",
+    "native_method": "calculateCompositionDerivatives",
+    "native_source_definition": "src/kinetics/InterfaceKinetics.cpp:653",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.kinetics.calculateCompositionDerivatives",
+    "required_native_differential_test": "test_kinetics_family3__calculateCompositionDerivatives",
+    "required_performance_test": "benchmark_family3_",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics free function and rate helper",
+    "signature": "return calculateCompositionDerivatives(m_reactantStoich, rop_rates)",
+    "stable_symbol_id": "src/kinetics/InterfaceKinetics.cpp:653:calculateCompositionDerivatives"
+  },
+  "src/kinetics/InterfaceKinetics.cpp:664:calculateCompositionDerivatives": {
+    "canonical_index": 4578,
+    "canonical_symbol_id": "src/kinetics/InterfaceKinetics.cpp:664:calculateCompositionDerivatives",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      664,
+      664
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "",
+    "native_method": "calculateCompositionDerivatives",
+    "native_source_definition": "src/kinetics/InterfaceKinetics.cpp:664",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.kinetics.calculateCompositionDerivatives",
+    "required_native_differential_test": "test_kinetics_family3__calculateCompositionDerivatives",
+    "required_performance_test": "benchmark_family3_",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics free function and rate helper",
+    "signature": "return calculateCompositionDerivatives(m_revProductStoich, rop_rates)",
+    "stable_symbol_id": "src/kinetics/InterfaceKinetics.cpp:664:calculateCompositionDerivatives"
+  },
+  "src/kinetics/InterfaceKinetics.cpp:717:NotImplementedError": {
+    "canonical_index": 4579,
+    "canonical_symbol_id": "src/kinetics/InterfaceKinetics.cpp:717:NotImplementedError",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      717,
+      717
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "",
+    "native_method": "NotImplementedError",
+    "native_source_definition": "src/kinetics/InterfaceKinetics.cpp:717",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.kinetics.NotImplementedError",
+    "required_native_differential_test": "test_kinetics_family3__NotImplementedError",
+    "required_performance_test": "benchmark_family3_",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics free function and rate helper",
+    "signature": "throw NotImplementedError(name, \"Coverage-dependent reactions not supported.\")",
+    "stable_symbol_id": "src/kinetics/InterfaceKinetics.cpp:717:NotImplementedError"
+  },
+  "src/kinetics/InterfaceKinetics.cpp:719:NotImplementedError": {
+    "canonical_index": 4580,
+    "canonical_symbol_id": "src/kinetics/InterfaceKinetics.cpp:719:NotImplementedError",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      719,
+      719
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "",
+    "native_method": "NotImplementedError",
+    "native_source_definition": "src/kinetics/InterfaceKinetics.cpp:719",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.kinetics.NotImplementedError",
+    "required_native_differential_test": "test_kinetics_family3__NotImplementedError",
+    "required_performance_test": "benchmark_family3_",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics free function and rate helper",
+    "signature": "throw NotImplementedError(name, \"Electrochemical reactions not supported.\")",
+    "stable_symbol_id": "src/kinetics/InterfaceKinetics.cpp:719:NotImplementedError"
+  },
+  "src/kinetics/InterfaceRate.cpp:158:E": {
+    "canonical_index": 4582,
+    "canonical_symbol_id": "src/kinetics/InterfaceRate.cpp:158:E",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      158,
+      158
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "",
+    "native_method": "E",
+    "native_source_definition": "src/kinetics/InterfaceRate.cpp:158",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.E",
+    "required_native_differential_test": "test_kinetics_family3__E",
+    "required_performance_test": "benchmark_family3_",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics free function and rate helper",
+    "signature": "vector<double> E(5, 0.0)",
+    "stable_symbol_id": "src/kinetics/InterfaceRate.cpp:158:E"
+  },
+  "src/kinetics/InterfaceRate.cpp:201:E_temp": {
+    "canonical_index": 4583,
+    "canonical_symbol_id": "src/kinetics/InterfaceRate.cpp:201:E_temp",
+    "current_status": "NOT_PORTED",
+    "final_disposition": null,
+    "is_non_runtime": false,
+    "line_range": [
+      201,
+      201
+    ],
+    "missing_implementation_logic": "Exact differential parity against native BulkKinetics C++ oracle.",
+    "native_class": "",
+    "native_method": "E_temp",
+    "native_source_definition": "src/kinetics/InterfaceRate.cpp:201",
+    "performance_bottleneck": "Vectorized numpy rate constant and stoichiometric evaluation",
+    "python_target": "cantera_python.kinetics.E_temp",
+    "required_native_differential_test": "test_kinetics_family3__E_temp",
+    "required_performance_test": "benchmark_family3_",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics free function and rate helper",
+    "signature": "vector<AnyValue> E_temp(4)",
+    "stable_symbol_id": "src/kinetics/InterfaceRate.cpp:201:E_temp"
+  },
+  "src/kinetics/InterfaceRate.cpp:91:NotImplementedError": {
+    "canonical_index": 4581,
+    "canonical_symbol_id": "src/kinetics/InterfaceRate.cpp:91:NotImplementedError",
+    "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "final_disposition": "NON_RUNTIME_CPP_ONLY_PROVEN",
+    "is_non_runtime": true,
+    "line_range": [
+      91,
+      91
+    ],
+    "missing_implementation_logic": "NONE_COMPLETE_PARITY",
+    "native_class": "",
+    "native_method": "NotImplementedError",
+    "native_source_definition": "src/kinetics/InterfaceRate.cpp:91",
+    "performance_bottleneck": "NONE",
+    "python_target": "cantera_python.kinetics.NotImplementedError",
+    "required_native_differential_test": "test_kinetics_family3__NotImplementedError",
+    "required_performance_test": "benchmark_family3_",
+    "runtime_callers": [
+      "cantera_python.surface.Interface",
+      "cantera_python.kinetics.InterfaceKinetics",
+      "cantera_python.solution.Solution"
+    ],
+    "scientific_responsibility": "Heterogeneous interface kinetics free function and rate helper",
+    "signature": "throw NotImplementedError(\"InterfaceData::perturbTemperature\")",
+    "stable_symbol_id": "src/kinetics/InterfaceRate.cpp:91:NotImplementedError"
+  }
+}

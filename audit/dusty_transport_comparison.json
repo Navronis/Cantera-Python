@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "pinned_native_version": "4.0.0a2",
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "pinned_oracle_identity_verified": true,
+  "native_extension_sha256": "d686773fe369ba07c2ad78431240869a3679316c4bdbb77160062d86aa14c68c",
+  "native_input_sha256": "9be74b04573b9ad7895de6496fd242854346a38d5ea5f0e11a230838980f859a",
+  "python_input_sha256": "630402cc4af5bcf72ef060d6906f0e972adc504ed04002b3be83e3104198c990",
+  "python_transport_source_sha256": "600f90b6e1b50b7dc3bee2e63b9a4abb47a37529158c4aea87547c61eb87cfe1",
+  "probe_source_sha256": "06fa41644eae3c0a5dbf23f42993334325291c06d5b28dc3ffd5bb7210081c6e",
+  "mechanism_sha256_match": true,
+  "case_ids_match": true,
+  "case_count": 4,
+  "tolerance": {
+    "rtol": 1e-10,
+    "atol": 1e-30
+  },
+  "results": [
+    {
+      "case_id": "ambient_hydrogen_rich",
+      "state_match": true,
+      "species_names_match": true,
+      "multi_diff_coeffs": {
+        "shape_match": true,
+        "elements": 100,
+        "mismatches": 0,
+        "max_absolute_error": 4.0245584642661925e-16,
+        "max_relative_error": 3.948023418905211e-14,
+        "rtol": 1e-10,
+        "atol": 1e-30,
+        "within_tolerance": true
+      },
+      "thermal_conductivity": {
+        "shape_match": true,
+        "elements": 1,
+        "mismatches": 0,
+        "max_absolute_error": 3.122502256758253e-16,
+        "max_relative_error": 6.059438303973529e-15,
+        "rtol": 1e-10,
+        "atol": 1e-30,
+        "within_tolerance": true
+      },
+      "molar_fluxes": {
+        "shape_match": true,
+        "elements": 10,
+        "mismatches": 0,
+        "max_absolute_error": 1.4155343563970746e-15,
+        "max_relative_error": 1.0389667828449272e-13,
+        "rtol": 1e-10,
+        "atol": 1e-30,
+        "within_tolerance": true
+      }
+    },
+    {
+      "case_id": "hot_pressurized_dilute",
+      "state_match": true,
+      "species_names_match": true,
+      "multi_diff_coeffs": {
+        "shape_match": true,
+        "elements": 100,
+        "mismatches": 0,
+        "max_absolute_error": 1.9081958235744878e-16,
+        "max_relative_error": 1.9255388658868027e-14,
+        "rtol": 1e-10,
+        "atol": 1e-30,
+        "within_tolerance": true
+      },
+      "thermal_conductivity": {
+        "shape_match": true,
+        "elements": 1,
+        "mismatches": 0,
+        "max_absolute_error": 1.3877787807814457e-16,
+        "max_relative_error": 9.168467500472166e-16,
+        "rtol": 1e-10,
+        "atol": 1e-30,
+        "within_tolerance": true
+      },
+      "molar_fluxes": {
+        "shape_match": true,
+        "elements": 10,
+        "mismatches": 0,
+        "max_absolute_error": 1.8735013540549517e-15,
+        "max_relative_error": 6.391280522878743e-14,
+        "rtol": 1e-10,
+        "atol": 1e-30,
+        "within_tolerance": true
+      }
+    },
+    {
+      "case_id": "reference_fixture",
+      "state_match": true,
+      "species_names_match": true,
+      "multi_diff_coeffs": {
+        "shape_match": true,
+        "elements": 100,
+        "mismatches": 0,
+        "max_absolute_error": 6.938893903907228e-18,
+        "max_relative_error": 6.499870821280553e-15,
+        "rtol": 1e-10,
+        "atol": 1e-30,
+        "within_tolerance": true
+      },
+      "thermal_conductivity": {
+        "shape_match": true,
+        "elements": 1,
+        "mismatches": 0,
+        "max_absolute_error": 3.608224830031759e-16,
+        "max_relative_error": 4.669220460052096e-15,
+        "rtol": 1e-10,
+        "atol": 1e-30,
+        "within_tolerance": true
+      },
+      "molar_fluxes": {
+        "shape_match": true,
+        "elements": 10,
+        "mismatches": 0,
+        "max_absolute_error": 1.1102230246251565e-16,
+        "max_relative_error": 9.991237482082943e-15,
+        "rtol": 1e-10,
+        "atol": 1e-30,
+        "within_tolerance": true
+      }
+    },
+    {
+      "case_id": "trace_species_low_porosity",
+      "state_match": true,
+      "species_names_match": true,
+      "multi_diff_coeffs": {
+        "shape_match": true,
+        "elements": 100,
+        "mismatches": 0,
+        "max_absolute_error": 8.131516293641283e-19,
+        "max_relative_error": 1.2195422043494815e-14,
+        "rtol": 1e-10,
+        "atol": 1e-30,
+        "within_tolerance": true
+      },
+      "thermal_conductivity": {
+        "shape_match": true,
+        "elements": 1,
+        "mismatches": 0,
+        "max_absolute_error": 3.885780586188048e-16,
+        "max_relative_error": 9.882247054794755e-15,
+        "rtol": 1e-10,
+        "atol": 1e-30,
+        "within_tolerance": true
+      },
+      "molar_fluxes": {
+        "shape_match": true,
+        "elements": 10,
+        "mismatches": 0,
+        "max_absolute_error": 3.2959746043559335e-17,
+        "max_relative_error": 8.915383486227746e-15,
+        "rtol": 1e-10,
+        "atol": 1e-30,
+        "within_tolerance": true
+      }
+    }
+  ],
+  "passed": true,
+  "scope_note": "Four fixed states compare DustyGas multi-diffusion matrices and delegated thermal conductivity. This is targeted differential evidence, not full DustyGas API or domain validation."
+}

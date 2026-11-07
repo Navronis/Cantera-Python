@@ -1,0 +1,14 @@
+{
+  "iterations": 5000,
+  "setState_TD_us_per_call": 61.14720000186936,
+  "setMoleFractions_us_per_call": 113.99953999789432,
+  "saveRestoreState_us_per_call": 1909.1472800006159,
+  "native_setState_TD_us_per_call": 0.333368,
+  "native_setMoleFractions_us_per_call": 0.232328,
+  "native_saveRestoreState_us_per_call": 1.19753,
+  "ratios": {
+    "setState_TD_python_vs_native": 183.4225240631055,
+    "setMoleFractions_python_vs_native": 490.6836024839637,
+    "saveRestoreState_python_vs_native": 1594.2375389348208
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-17",
+  "pinned_source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "command": "python -m unittest discover -s tests",
+  "collected": 192,
+  "passed": 192,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "warnings": 0,
+  "duration_seconds": 142.779,
+  "python": "3.12.14",
+  "platform": "Windows x64",
+  "numpy": "2.5.3",
+  "ruamel_yaml": "0.19.1",
+  "scipy": null,
+  "native_cantera_installed_for_reference_only": "3.2.0",
+  "exact_pinned_oracle_available": true,
+  "exact_pinned_oracle_regenerated_this_run": false,
+  "exact_pinned_oracle_regeneration_blocker": "WSL launch denied by host (E_ACCESSDENIED)",
+  "reactor_backend_exercised": "adaptive pure-Python RK4 step-doubling fallback",
+  "full_port_complete": false
+}

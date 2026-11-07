@@ -1,0 +1,295 @@
+{
+  "subsystem": "kinetics",
+  "closure_family": "FAMILY_4_REACTION_TOPOLOGY_AND_FACTORIES",
+  "pinned_native_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "total_cases": 40,
+  "passed_cases": 40,
+  "failed_cases": 0,
+  "parity_achieved": true,
+  "max_relative_error": 0.0017445355037640946,
+  "p95_relative_error": 1.1385354488397959e-10,
+  "p99_relative_error": 0.0015396735319568881,
+  "total_evaluations": 320,
+  "case_summaries": [
+    {
+      "case_id": "fam4_001_h2o2_H_default",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 3.23722665489459e-15,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_002_h2o2_O_default",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 4.1820439018847785e-15,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_003_gri30_C_net",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 2.332640707736969e-16,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_004_gri30_H_net",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 3.2335309616660168e-15,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_005_gri30_O_net",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 7.994221765939021e-16,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_006_gri30_N_net",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 1.0876391983810147e-14,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_007_gri30_C_oneway",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 2.332640707736969e-16,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_008_gri30_C_unscaled",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 2.332640707736969e-16,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_009_gri30_C_oneway_unscaled",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 2.332640707736969e-16,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_010_gri30_C_high_threshold",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 2.332640707736969e-16,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_011_gri30_C_included",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 2.332640707736969e-16,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_012_gri30_C_excluded",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 2.332640707736969e-16,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_013_h2o2_H_display_only",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 3.23722665489459e-15,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_014_ptcombust_C",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 3.7951181627988786e-11,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_015_ptcombust_H",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 1.1385354488397959e-10,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_016_ptcombust_O",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 5.293955920339377e-23,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_017_gri30_ion_H",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 3.2335309616660168e-15,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_018_nDodecane_C",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 0.0017445355037640946,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_019_blowers_masel_H",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_020_blowers_masel_C",
+      "category": "reaction_path_diagram",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_021_rxn_gri30_elementary",
+      "category": "reaction_inspection",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_022_rxn_gri30_threebody",
+      "category": "reaction_inspection",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_023_rxn_gri30_troe",
+      "category": "reaction_inspection",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_024_rxn_gri30_lindemann",
+      "category": "reaction_inspection",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_025_rxn_h2o2_elementary",
+      "category": "reaction_inspection",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_026_rxn_h2o2_threebody",
+      "category": "reaction_inspection",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_027_rxn_ptcombust_surf",
+      "category": "reaction_inspection",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_028_rxn_ptcombust_sticking",
+      "category": "reaction_inspection",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_029_rxn_blowers_masel_surf",
+      "category": "reaction_inspection",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_030_rxn_sofc_electrochem",
+      "category": "reaction_inspection",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_031_rxn_sofc_oxide",
+      "category": "reaction_inspection",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_032_group_single_atom",
+      "category": "group_algebra",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_033_group_multi_atom",
+      "category": "group_algebra",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_034_group_sum",
+      "category": "group_algebra",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_035_group_diff",
+      "category": "group_algebra",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_036_group_negative",
+      "category": "group_algebra",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_037_group_mixed_sign",
+      "category": "group_algebra",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_038_group_empty",
+      "category": "group_algebra",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_039_kinetics_factory",
+      "category": "kinetics_factory",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    },
+    {
+      "case_id": "fam4_040_rate_factory",
+      "category": "rate_factory",
+      "status": "PASS",
+      "max_rel_error": 0.0,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,4162 @@
+{
+  "schema_version": "1.0.0",
+  "subsystem": "kinetics",
+  "closure_family": "FAMILY_3_HETEROGENEOUS_AND_SURFACE",
+  "pinned_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "status": "FULL_PARITY",
+  "TOTAL_CASES": 40,
+  "PASSED_CASES": 40,
+  "FAILED_CASES": 0,
+  "TOTAL_FLOAT_COMPARISONS": 9416,
+  "BITWISE_IDENTICAL_PERCENT": 72.83,
+  "MAX_RELATIVE_ERROR": 1.1646428151275047e-12,
+  "P95_RELATIVE_ERROR": 6.591490201738071e-15,
+  "P99_RELATIVE_ERROR": 3.0103995426659604e-14,
+  "WORST_CASE_ID": "fam3_010_ptcombust-motzwise_Pt_surf",
+  "FAILED_SOURCE_BRANCHES": 0,
+  "NONFINITE_MISMATCHES": 0,
+  "property_metrics": {
+    "forward_rate_constants": {
+      "comparisons": 504,
+      "bitwise_identical": 303,
+      "max_abs_error": 32768.0,
+      "max_rel_error": 1.4161352016931505e-14,
+      "mean_rel_error": 4.480919783671897e-16,
+      "p95_rel_error": 3.2103553638230692e-15,
+      "p99_rel_error": 7.223146652879602e-15,
+      "bitwise_identical_percent": 60.12
+    },
+    "reverse_rate_constants": {
+      "comparisons": 504,
+      "bitwise_identical": 412,
+      "max_abs_error": 116736.0,
+      "max_rel_error": 1.759124990466557e-14,
+      "mean_rel_error": 2.870424935087675e-15,
+      "p95_rel_error": 1.0302093700234492e-14,
+      "p99_rel_error": 1.6858260475597924e-14,
+      "bitwise_identical_percent": 81.75
+    },
+    "equilibrium_constants": {
+      "comparisons": 504,
+      "bitwise_identical": 259,
+      "max_abs_error": 1.0943480920177381e+42,
+      "max_rel_error": 4.980641077179379e-14,
+      "mean_rel_error": 3.3668370209367355e-15,
+      "p95_rel_error": 1.4202459344904043e-14,
+      "p99_rel_error": 2.4840155940971885e-14,
+      "bitwise_identical_percent": 51.39
+    },
+    "forward_rates_of_progress": {
+      "comparisons": 504,
+      "bitwise_identical": 398,
+      "max_abs_error": 1.1368683772161603e-12,
+      "max_rel_error": 7.699546546940024e-15,
+      "mean_rel_error": 4.613974060516432e-16,
+      "p95_rel_error": 2.1132763915422043e-15,
+      "p99_rel_error": 5.365259537430625e-15,
+      "bitwise_identical_percent": 78.97
+    },
+    "reverse_rates_of_progress": {
+      "comparisons": 504,
+      "bitwise_identical": 486,
+      "max_abs_error": 3.865352482534945e-12,
+      "max_rel_error": 6.7966998929572614e-15,
+      "mean_rel_error": 2.7821766739885927e-15,
+      "p95_rel_error": 6.490095371498554e-15,
+      "p99_rel_error": 6.73537898866552e-15,
+      "bitwise_identical_percent": 96.43
+    },
+    "net_rates_of_progress": {
+      "comparisons": 504,
+      "bitwise_identical": 396,
+      "max_abs_error": 3.865352482534945e-12,
+      "max_rel_error": 7.699546546940024e-15,
+      "mean_rel_error": 7.004504831012877e-16,
+      "p95_rel_error": 4.382409271711679e-15,
+      "p99_rel_error": 6.8487713386218056e-15,
+      "bitwise_identical_percent": 78.57
+    },
+    "species_creation_rates": {
+      "comparisons": 920,
+      "bitwise_identical": 781,
+      "max_abs_error": 3.865352482534945e-12,
+      "max_rel_error": 7.699546546940024e-15,
+      "mean_rel_error": 8.835501017732114e-16,
+      "p95_rel_error": 4.121742553890817e-15,
+      "p99_rel_error": 6.803208823665331e-15,
+      "bitwise_identical_percent": 84.89
+    },
+    "species_destruction_rates": {
+      "comparisons": 920,
+      "bitwise_identical": 799,
+      "max_abs_error": 3.865352482534945e-12,
+      "max_rel_error": 5.678852718678668e-15,
+      "mean_rel_error": 4.77440458645751e-16,
+      "p95_rel_error": 2.8403726565931495e-15,
+      "p99_rel_error": 5.331054798383915e-15,
+      "bitwise_identical_percent": 86.85
+    },
+    "net_species_production_rates": {
+      "comparisons": 920,
+      "bitwise_identical": 736,
+      "max_abs_error": 3.922195901395753e-12,
+      "max_rel_error": 9.327829181191831e-15,
+      "mean_rel_error": 7.715891280249775e-16,
+      "p95_rel_error": 5.800636162887571e-15,
+      "p99_rel_error": 6.580990462091872e-15,
+      "bitwise_identical_percent": 80.0
+    },
+    "delta_gibbs": {
+      "comparisons": 504,
+      "bitwise_identical": 331,
+      "max_abs_error": 1.9073486328125e-06,
+      "max_rel_error": 2.999553389635343e-13,
+      "mean_rel_error": 1.3649435359156957e-15,
+      "p95_rel_error": 4.487867755930346e-15,
+      "p99_rel_error": 1.5521463812022324e-14,
+      "bitwise_identical_percent": 65.67
+    },
+    "delta_enthalpy": {
+      "comparisons": 504,
+      "bitwise_identical": 426,
+      "max_abs_error": 1.1920928955078125e-07,
+      "max_rel_error": 5.5600692549896326e-15,
+      "mean_rel_error": 7.89102768412265e-17,
+      "p95_rel_error": 2.6132038755670056e-16,
+      "p99_rel_error": 1.1228855053169296e-15,
+      "bitwise_identical_percent": 84.52
+    },
+    "delta_entropy": {
+      "comparisons": 504,
+      "bitwise_identical": 185,
+      "max_abs_error": 2.7939677238464355e-09,
+      "max_rel_error": 1.1646428151275047e-12,
+      "mean_rel_error": 7.235021428521504e-15,
+      "p95_rel_error": 2.896673083860412e-14,
+      "p99_rel_error": 7.366369703089786e-14,
+      "bitwise_identical_percent": 36.71
+    },
+    "delta_standard_gibbs": {
+      "comparisons": 504,
+      "bitwise_identical": 284,
+      "max_abs_error": 1.7881393432617188e-07,
+      "max_rel_error": 1.1181544436109699e-13,
+      "mean_rel_error": 9.419548539483263e-16,
+      "p95_rel_error": 2.266120455248263e-15,
+      "p99_rel_error": 1.3994909446983609e-14,
+      "bitwise_identical_percent": 56.35
+    },
+    "delta_standard_enthalpy": {
+      "comparisons": 504,
+      "bitwise_identical": 426,
+      "max_abs_error": 1.1920928955078125e-07,
+      "max_rel_error": 5.5600692549896326e-15,
+      "mean_rel_error": 7.89102768412265e-17,
+      "p95_rel_error": 2.6132038755670056e-16,
+      "p99_rel_error": 1.1228855053169296e-15,
+      "bitwise_identical_percent": 84.52
+    },
+    "delta_standard_entropy": {
+      "comparisons": 504,
+      "bitwise_identical": 122,
+      "max_abs_error": 3.4924596548080444e-10,
+      "max_rel_error": 5.974909709570722e-13,
+      "mean_rel_error": 7.308279231135406e-15,
+      "p95_rel_error": 2.343018613545735e-14,
+      "p99_rel_error": 8.402283772950911e-14,
+      "bitwise_identical_percent": 24.21
+    },
+    "surface_concentrations": {
+      "comparisons": 284,
+      "bitwise_identical": 234,
+      "max_abs_error": 1.1102230246251565e-16,
+      "max_rel_error": 2.0376667099065827e-16,
+      "mean_rel_error": 7.223829365326867e-17,
+      "p95_rel_error": 1.7465714656342135e-16,
+      "p99_rel_error": 2.0376667099065827e-16,
+      "bitwise_identical_percent": 82.39
+    },
+    "surface_coverages": {
+      "comparisons": 284,
+      "bitwise_identical": 240,
+      "max_abs_error": 1.1102230246251565e-16,
+      "max_rel_error": 1.8503717077085946e-16,
+      "mean_rel_error": 6.01570660166467e-17,
+      "p95_rel_error": 1.586032892321652e-16,
+      "p99_rel_error": 1.8503717077085946e-16,
+      "bitwise_identical_percent": 84.51
+    },
+    "interface_current": {
+      "comparisons": 40,
+      "bitwise_identical": 40,
+      "max_abs_error": 0.0,
+      "max_rel_error": 0.0,
+      "mean_rel_error": 0.0,
+      "p95_rel_error": 0.0,
+      "p99_rel_error": 0.0,
+      "bitwise_identical_percent": 100.0
+    }
+  },
+  "case_evaluations": [
+    {
+      "case_id": "fam3_001_ptcombust_Pt_surf",
+      "mechanism": "ptcombust.yaml",
+      "temperature": 300,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 3072.0,
+          "max_rel_error": 1.4161352016931505e-14,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.21875,
+          "max_rel_error": 3.3717625375020756e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1.0943480920177381e+42,
+          "max_rel_error": 4.980641077179379e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 2.0816681711721685e-17,
+          "max_rel_error": 3.366329173031224e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.0816681711721685e-17,
+          "max_rel_error": 3.366329173031224e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 5.0372218417087e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 4.848838058197561e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 5.0372218417087e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 2.384185791015625e-07,
+          "max_rel_error": 1.439403338123856e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 9.313225746154785e-10,
+          "max_rel_error": 3.644086258511323e-15,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.341104507446289e-07,
+          "max_rel_error": 5.782317526003019e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 3.4924596548080444e-10,
+          "max_rel_error": 1.4896220934698594e-13,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_002_ptcombust_Pt_surf",
+      "mechanism": "ptcombust.yaml",
+      "temperature": 600,
+      "pressure": 10132.5,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16384.0,
+          "max_rel_error": 7.22611701215391e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 208.0,
+          "max_rel_error": 3.5391312844648034e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 50465865728.0,
+          "max_rel_error": 3.5493303934902624e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 9.094947017729282e-13,
+          "max_rel_error": 6.9268785071186206e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 3.903127820947816e-18,
+          "max_rel_error": 1.1789778660968822e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 9.094947017729282e-13,
+          "max_rel_error": 6.9268785071186206e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 9.094947017729282e-13,
+          "max_rel_error": 6.9268785071186206e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 9.094947017729282e-13,
+          "max_rel_error": 8.585651988013791e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 1.0231815394945443e-12,
+          "max_rel_error": 6.9268785071186206e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 4.76837158203125e-07,
+          "max_rel_error": 1.3939343509607733e-14,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.596131852712409e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.04046193882823e-09,
+          "max_rel_error": 2.915021710548142e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.7881393432617188e-07,
+          "max_rel_error": 6.219248804500719e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.596131852712409e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.6193447411060333e-10,
+          "max_rel_error": 3.63691411844922e-14,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 8.271806125530277e-25,
+          "max_rel_error": 1.528250032429937e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 1.3877787807814457e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_003_ptcombust_Pt_surf",
+      "mechanism": "ptcombust.yaml",
+      "temperature": 1000,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16384.0,
+          "max_rel_error": 3.6505429740447216e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 7168.0,
+          "max_rel_error": 3.619165894091829e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.005615234375,
+          "max_rel_error": 1.0619049453106055e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 2.168404344971009e-18,
+          "max_rel_error": 3.650706618956319e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.168404344971009e-18,
+          "max_rel_error": 3.650706618956319e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 5.204170427930421e-18,
+          "max_rel_error": 3.650706618956319e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 4.440892098500626e-16,
+          "max_rel_error": 3.528789365125769e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 5.204170427930421e-18,
+          "max_rel_error": 3.650706618956319e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 9.5367431640625e-07,
+          "max_rel_error": 1.4303577914584677e-14,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 4.469201405434269e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 1.2521803302334855e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 8.940696716308594e-08,
+          "max_rel_error": 1.6658195487719508e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 4.469201405434269e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 7.275957614183426e-11,
+          "max_rel_error": 3.307111964578983e-14,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.8503717077085936e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_004_ptcombust_Pt_surf",
+      "mechanism": "ptcombust.yaml",
+      "temperature": 1400,
+      "pressure": 506625,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16384.0,
+          "max_rel_error": 3.644935517942648e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 5376.0,
+          "max_rel_error": 5.601740098897592e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 8.96351398465488e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 9.094947017729282e-13,
+          "max_rel_error": 3.5811498077754314e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 1.5987211554602254e-13,
+          "max_rel_error": 5.560694123400783e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 9.094947017729282e-13,
+          "max_rel_error": 3.5811498077754314e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 9.094947017729282e-13,
+          "max_rel_error": 5.560362172528165e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 1.8189894035458565e-12,
+          "max_rel_error": 5.678852718678668e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 9.094947017729282e-13,
+          "max_rel_error": 4.857933054622721e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 2.384185791015625e-07,
+          "max_rel_error": 4.081601663991877e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.062889215300538e-15,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 9.313225746154785e-10,
+          "max_rel_error": 5.800123086788355e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 5.639236489116305e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.062889215300538e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 5.820766091346741e-11,
+          "max_rel_error": 3.1839903252309586e-14,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 1.850371707708594e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_005_ptcombust_Pt_surf",
+      "mechanism": "ptcombust.yaml",
+      "temperature": 1800,
+      "pressure": 2026500,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 3584.0,
+          "max_rel_error": 1.8670021574987912e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 49152.0,
+          "max_rel_error": 4.089152275862556e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 4.76837158203125e-06,
+          "max_rel_error": 4.07828155652042e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 2.0816681711721685e-17,
+          "max_rel_error": 3.941497982346325e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.0816681711721685e-17,
+          "max_rel_error": 3.941497982346325e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 4.163336342344337e-17,
+          "max_rel_error": 3.941497982346325e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 4.163336342344337e-17,
+          "max_rel_error": 3.941497982346325e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 3.8715496629382845e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 4.172325134277344e-07,
+          "max_rel_error": 6.5878375204060565e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 4.846364472359582e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 2.270098775625229e-09,
+          "max_rel_error": 1.7743228009256035e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 3.8610997095122264e-14,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 4.846364472359582e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 6.730260793119669e-11,
+          "max_rel_error": 7.687161351980944e-14,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 3.308722450212111e-24,
+          "max_rel_error": 1.7465714656342135e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_006_ptcombust_Pt_surf",
+      "mechanism": "ptcombust.yaml",
+      "temperature": 800,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16384.0,
+          "max_rel_error": 3.4544635920532506e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 5632.0,
+          "max_rel_error": 8.095064909638765e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1344.0,
+          "max_rel_error": 2.1267404221263456e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 4.547473508864641e-13,
+          "max_rel_error": 2.096921694226283e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 4.547473508864641e-13,
+          "max_rel_error": 2.096921694226283e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 4.547473508864641e-13,
+          "max_rel_error": 2.096921694226283e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 4.547473508864641e-13,
+          "max_rel_error": 1.575881718840684e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 4.547473508864641e-13,
+          "max_rel_error": 2.096921694226283e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 1.3113021850585938e-06,
+          "max_rel_error": 1.555913038616992e-14,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.564278035088066e-15,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 2.137323928177847e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 7.450580596923828e-08,
+          "max_rel_error": 9.237024297180268e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.564278035088066e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1459633242338896e-10,
+          "max_rel_error": 5.690195910771726e-14,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_007_ptcombust_Pt_surf",
+      "mechanism": "ptcombust.yaml",
+      "temperature": 500,
+      "pressure": 1013.25,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 8192.0,
+          "max_rel_error": 7.463511571475288e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 4.0,
+          "max_rel_error": 3.5157904509689214e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2542620639232.0,
+          "max_rel_error": 2.1272953307520917e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 1.1368683772161603e-13,
+          "max_rel_error": 7.699546546940024e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.1368683772161603e-13,
+          "max_rel_error": 7.699546546940024e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 1.4210854715202004e-13,
+          "max_rel_error": 7.699546546940024e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 1.1368683772161603e-13,
+          "max_rel_error": 7.965068019833079e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 1.1368683772161603e-13,
+          "max_rel_error": 7.965068019833079e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 4.76837158203125e-07,
+          "max_rel_error": 2.0551853138952275e-14,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 5.316769982943053e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 1.208242667076262e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 1.2524244058858961e-14,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 5.316769982943053e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.6007106751203537e-10,
+          "max_rel_error": 5.556353587513238e-13,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 3.308722450212111e-24,
+          "max_rel_error": 1.528250032429937e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.3877787807814457e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_008_ptcombust_Pt_surf",
+      "mechanism": "ptcombust.yaml",
+      "temperature": 1200,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16384.0,
+          "max_rel_error": 3.5307192286025046e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 3584.0,
+          "max_rel_error": 2.1357458154931205e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.015625,
+          "max_rel_error": 1.4202459344904043e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 3.552713678800501e-15,
+          "max_rel_error": 3.6910806555619166e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 3.552713678800501e-15,
+          "max_rel_error": 3.6910806555619166e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 7.105427357601002e-15,
+          "max_rel_error": 3.6910806555619166e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 7.105427357601002e-15,
+          "max_rel_error": 2.495176822488435e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 7.105427357601002e-15,
+          "max_rel_error": 3.6910806555619166e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 9.5367431640625e-07,
+          "max_rel_error": 4.363262461120719e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 2.1852196137490256e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 1.2078835473410413e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 1.3994909446983609e-14,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 2.1852196137490256e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 5.820766091346741e-11,
+          "max_rel_error": 5.974909709570722e-13,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.6543612251060553e-24,
+          "max_rel_error": 2.0376667099065827e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_009_ptcombust_Pt_surf",
+      "mechanism": "ptcombust.yaml",
+      "temperature": 2200,
+      "pressure": 5066250,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16384.0,
+          "max_rel_error": 1.6839021540813492e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 116736.0,
+          "max_rel_error": 6.519936180868132e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 6.556510925292969e-07,
+          "max_rel_error": 7.233425654220295e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 1.7017037197094092e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 1.7017037197094092e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.7017037197094092e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.7017037197094092e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 3.139520473506562e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 1.9073486328125e-06,
+          "max_rel_error": 6.712178443185806e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 1.4901161193847656e-08,
+          "max_rel_error": 3.1333710218651985e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 2.7939677238464355e-09,
+          "max_rel_error": 3.486863255000268e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 2.6488845836508116e-14,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.4901161193847656e-08,
+          "max_rel_error": 3.1333710218651985e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 8.731149137020111e-11,
+          "max_rel_error": 2.850897880932947e-14,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 1.3877787807814454e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_010_ptcombust-motzwise_Pt_surf",
+      "mechanism": "ptcombust-motzwise.yaml",
+      "temperature": 400,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 4096.0,
+          "max_rel_error": 7.127105036343754e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 47.5,
+          "max_rel_error": 1.6885459042646185e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1.6683176310681883e+26,
+          "max_rel_error": 2.0157555546789345e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 4.336808689942018e-19,
+          "max_rel_error": 3.799173265848304e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 4.336808689942018e-19,
+          "max_rel_error": 3.799173265848304e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 4.336808689942018e-19,
+          "max_rel_error": 3.799173265848304e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 4.336808689942018e-19,
+          "max_rel_error": 3.799173265848304e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 4.336808689942018e-19,
+          "max_rel_error": 3.799173265848304e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 5.650258218564128e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 5.5600692549896326e-15,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.979060471057892e-09,
+          "max_rel_error": 1.1646428151275047e-12,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 6.566950393283647e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 5.5600692549896326e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.7462298274040222e-10,
+          "max_rel_error": 2.661904736134464e-13,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.2335811384723962e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_011_ptcombust-motzwise_Pt_surf",
+      "mechanism": "ptcombust-motzwise.yaml",
+      "temperature": 800,
+      "pressure": 50662.5,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16384.0,
+          "max_rel_error": 3.4544635920532506e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 5632.0,
+          "max_rel_error": 8.095064909638765e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1344.0,
+          "max_rel_error": 2.1267404221263456e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 1.1368683772161603e-12,
+          "max_rel_error": 2.151437351946023e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.1368683772161603e-12,
+          "max_rel_error": 2.151437351946023e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 1.1368683772161603e-12,
+          "max_rel_error": 2.151437351946023e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 1.1368683772161603e-12,
+          "max_rel_error": 5.909556445650947e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 1.1368683772161603e-12,
+          "max_rel_error": 2.151437351946023e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 1.3113021850585938e-06,
+          "max_rel_error": 1.6188276941348043e-14,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.564278035088066e-15,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.280568540096283e-09,
+          "max_rel_error": 3.2763151031795075e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 7.450580596923828e-08,
+          "max_rel_error": 9.237024297180268e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.564278035088066e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1459633242338896e-10,
+          "max_rel_error": 5.690195910771726e-14,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 3.308722450212111e-24,
+          "max_rel_error": 2.0376667099065827e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.8503717077085946e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_012_ptcombust-motzwise_Pt_surf",
+      "mechanism": "ptcombust-motzwise.yaml",
+      "temperature": 1200,
+      "pressure": 202650,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16384.0,
+          "max_rel_error": 3.5307192286025046e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 3584.0,
+          "max_rel_error": 2.1357458154931205e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.015625,
+          "max_rel_error": 1.4202459344904043e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 4.336808689942018e-19,
+          "max_rel_error": 1.662734883480635e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 4.336808689942018e-19,
+          "max_rel_error": 1.662734883480635e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 4.336808689942018e-19,
+          "max_rel_error": 1.662734883480635e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 4.336808689942018e-19,
+          "max_rel_error": 1.662734883480635e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_rel_error": 2.0890658249977005e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 9.5367431640625e-07,
+          "max_rel_error": 2.893941164294481e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 2.1852196137490256e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.979060471057892e-09,
+          "max_rel_error": 2.1463284910100088e-13,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 2.0342781552735114e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 2.1852196137490256e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 5.974909709570722e-13,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 1.8503717077085946e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_013_ptcombust-motzwise_Pt_surf",
+      "mechanism": "ptcombust-motzwise.yaml",
+      "temperature": 1600,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 32768.0,
+          "max_rel_error": 1.7052147020517737e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 54272.0,
+          "max_rel_error": 5.952736417366051e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2.86102294921875e-05,
+          "max_rel_error": 8.875675518435602e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_rel_error": 1.5142123669740155e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 5.400124791776761e-13,
+          "max_rel_error": 4.382409271711679e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 5.400124791776761e-13,
+          "max_rel_error": 4.382409271711679e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 5.684341886080801e-13,
+          "max_rel_error": 4.381995636918619e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 5.684341886080801e-13,
+          "max_rel_error": 4.261759558301606e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 5.684341886080801e-13,
+          "max_rel_error": 4.381995636918619e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 1.9073486328125e-06,
+          "max_rel_error": 2.136938356784893e-14,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 4.85480245092421e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.3387762010097504e-09,
+          "max_rel_error": 1.31806576349079e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 1.1181544436109699e-13,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 4.85480245092421e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 5.820766091346741e-11,
+          "max_rel_error": 7.4829910038845e-14,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 3.308722450212111e-24,
+          "max_rel_error": 1.7465714656342135e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.586032892321652e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_014_ptcombust-motzwise_Pt_surf",
+      "mechanism": "ptcombust-motzwise.yaml",
+      "temperature": 1000,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16384.0,
+          "max_rel_error": 3.6505429740447216e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 7168.0,
+          "max_rel_error": 3.619165894091829e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.005615234375,
+          "max_rel_error": 1.0619049453106055e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 4.034991526214882e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 4.034991526214882e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_rel_error": 4.034991526214882e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_rel_error": 2.3515395005411065e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 2.6645352591003757e-15,
+          "max_rel_error": 4.034991526214882e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 1.9073486328125e-06,
+          "max_rel_error": 4.5161462253257796e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 4.469201405434269e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 7.414171876648887e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 8.940696716308594e-08,
+          "max_rel_error": 1.6658195487719508e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 4.469201405434269e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 7.275957614183426e-11,
+          "max_rel_error": 3.307111964578983e-14,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 3.308722450212111e-24,
+          "max_rel_error": 2.0376667099065827e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 1.3877787807814457e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_015_ptcombust-motzwise_Pt_surf",
+      "mechanism": "ptcombust-motzwise.yaml",
+      "temperature": 600,
+      "pressure": 10132.5,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16384.0,
+          "max_rel_error": 7.22611701215391e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 208.0,
+          "max_rel_error": 3.5391312844648034e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 50465865728.0,
+          "max_rel_error": 3.5493303934902624e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 2.168404344971009e-19,
+          "max_rel_error": 5.726272772834806e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.168404344971009e-19,
+          "max_rel_error": 5.726272772834806e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 8.673617379884035e-19,
+          "max_rel_error": 5.726272772834806e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 8.673617379884035e-19,
+          "max_rel_error": 5.726272772834806e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 8.673617379884035e-19,
+          "max_rel_error": 1.8524309401632754e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 4.76837158203125e-07,
+          "max_rel_error": 1.1621970527043408e-14,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.596131852712409e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 5.574078281590137e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.7881393432617188e-07,
+          "max_rel_error": 6.219248804500719e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.596131852712409e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.6193447411060333e-10,
+          "max_rel_error": 3.63691411844922e-14,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.3877787807814454e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_016_ptcombust-motzwise_Pt_surf",
+      "mechanism": "ptcombust-motzwise.yaml",
+      "temperature": 2000,
+      "pressure": 3039750,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 256.0,
+          "max_rel_error": 1.8720366596525117e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 1024.0,
+          "max_rel_error": 1.2046943944119844e-16,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 5.115907697472721e-13,
+          "max_rel_error": 1.9403222010033695e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 1.3839747649122367e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 1.3839747649122367e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 1.3839747649122367e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.3839747649122367e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 4.405642024294802e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 7.152557373046875e-07,
+          "max_rel_error": 2.999553389635343e-13,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 1.4901161193847656e-08,
+          "max_rel_error": 2.6791229831078003e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.331500243395567e-09,
+          "max_rel_error": 4.6741837704004616e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.220861601288998e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.4901161193847656e-08,
+          "max_rel_error": 2.6791229831078003e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 5.820766091346741e-11,
+          "max_rel_error": 9.612614573828218e-15,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 3.308722450212111e-24,
+          "max_rel_error": 1.2869473957304734e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.3877787807814454e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_017_sticking_coeff_check_Pt_surf",
+      "mechanism": "sticking_coeff_check.yaml",
+      "temperature": 300,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 1.595415016371074e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_018_sticking_coeff_check_Pt_surf",
+      "mechanism": "sticking_coeff_check.yaml",
+      "temperature": 700,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 3.399636497149956e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 3.399636497149956e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_rel_error": 3.399636497149956e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_rel_error": 3.399636497149956e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_rel_error": 3.399636497149956e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 1.4828009368906757e-16,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 1.5055484658917808e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.586032892321652e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.586032892321652e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_019_sticking_coeff_check_Pt_surf",
+      "mechanism": "sticking_coeff_check.yaml",
+      "temperature": 1100,
+      "pressure": 506625,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 3.8198777474462986e-11,
+          "max_rel_error": 3.5801504376209355e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 1.6705745947838852e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 1.6705745947838852e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_rel_error": 1.6705745947838852e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 1.6705745947838852e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_rel_error": 1.6705745947838852e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 3.725290298461914e-08,
+          "max_rel_error": 1.019790782017235e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 8.731149137020111e-11,
+          "max_rel_error": 4.959006387624751e-16,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 5.105940546222584e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 1.584442687172785e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_020_sticking_coeff_check_Pt_surf",
+      "mechanism": "sticking_coeff_check.yaml",
+      "temperature": 1500,
+      "pressure": 20265,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2.4868995751603507e-14,
+          "max_rel_error": 2.7011676600777344e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 2.3813608853436e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 2.3813608853436e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 2.220446049250313e-16,
+          "max_rel_error": 2.3813608853436e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 2.220446049250313e-16,
+          "max_rel_error": 2.3813608853436e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 2.220446049250313e-16,
+          "max_rel_error": 2.3813608853436e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 7.450580596923828e-09,
+          "max_rel_error": 1.1670975307782905e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 8.731149137020111e-11,
+          "max_rel_error": 4.166897740946005e-16,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 5.68628918375568e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 1.4413724092430084e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.3877787807814454e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.3877787807814454e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_021_sticking_coeff_check_Pt_surf",
+      "mechanism": "sticking_coeff_check.yaml",
+      "temperature": 2000,
+      "pressure": 2026500,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2.914335439641036e-16,
+          "max_rel_error": 3.4209932636363445e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 1.4901161193847656e-08,
+          "max_rel_error": 2.746036475376137e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 4.3655745685100555e-11,
+          "max_rel_error": 3.3565176521440487e-16,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 7.847252332259674e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 1.81451949048494e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 1.3877787807814454e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 1.3877787807814454e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_022_sticking_coeff_check_Pt_surf",
+      "mechanism": "sticking_coeff_check.yaml",
+      "temperature": 900,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2.2351741790771484e-08,
+          "max_rel_error": 5.2263555631093205e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 4.440892098500626e-16,
+          "max_rel_error": 1.748948584342854e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 4.440892098500626e-16,
+          "max_rel_error": 1.748948584342854e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 1.748948584342854e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 1.748948584342854e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 1.748948584342854e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 4.470348358154297e-08,
+          "max_rel_error": 6.119220115905185e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.74018704099711e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 5.820766091346741e-11,
+          "max_rel_error": 2.8712351138077206e-16,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 3.631614374157013e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.74018704099711e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 1.5101886796241423e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.8503717077085946e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.8503717077085946e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_023_blowers-masel_Pt_surf",
+      "mechanism": "blowers-masel.yaml",
+      "temperature": 400,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 1.0,
+          "max_rel_error": 2.475872648318741e-16,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 344064.0,
+          "max_rel_error": 2.0157555546789345e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 3.0074905598626677e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 3.0074905598626677e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 3.0074905598626677e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 3.0074905598626677e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 3.0074905598626677e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 4.76837158203125e-07,
+          "max_rel_error": 1.4959120759531074e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 1.1753571513456282e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 9.313225746154785e-10,
+          "max_rel_error": 1.2160557070804907e-15,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.9283787715382465e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 1.1753571513456282e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 5.820766091346741e-11,
+          "max_rel_error": 2.8763070514263303e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 3.308722450212111e-24,
+          "max_rel_error": 1.528250032429937e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_024_blowers-masel_Pt_surf",
+      "mechanism": "blowers-masel.yaml",
+      "temperature": 700,
+      "pressure": 50662.5,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 1.0,
+          "max_rel_error": 2.2117890182705984e-16,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1.4156103134155273e-07,
+          "max_rel_error": 3.458399974208199e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 1.8748889016453602e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 1.8748889016453602e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 1.8748889016453602e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 1.8748889016453602e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 1.8748889016453602e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 9.499490261077881e-08,
+          "max_rel_error": 8.478424311337473e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 9.313225746154785e-10,
+          "max_rel_error": 2.3301898502516057e-15,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 4.00559089725344e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 8.731149137020111e-11,
+          "max_rel_error": 4.3514140317043607e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_025_blowers-masel_Pt_surf",
+      "mechanism": "blowers-masel.yaml",
+      "temperature": 1000,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 9.5367431640625e-07,
+          "max_rel_error": 1.269710572208892e-16,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2.7284841053187847e-12,
+          "max_rel_error": 3.562694559416159e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 3.383538858045344e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 3.383538858045344e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 3.383538858045344e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 3.383538858045344e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 5.1512550273122e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 9.5367431640625e-07,
+          "max_rel_error": 2.3400652748896126e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 9.313225746154785e-10,
+          "max_rel_error": 4.3171937464309187e-16,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 1.604786228325469e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 2.097794608844675e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.6543612251060553e-24,
+          "max_rel_error": 1.528250032429937e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 1.3877787807814457e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_026_blowers-masel_Pt_surf",
+      "mechanism": "blowers-masel.yaml",
+      "temperature": 1300,
+      "pressure": 506625,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 1.0,
+          "max_rel_error": 1.3733670438510835e-16,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2.7939677238464355e-09,
+          "max_rel_error": 1.072425507235462e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 3.469446951953614e-18,
+          "max_rel_error": 1.9277620309437772e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 3.469446951953614e-18,
+          "max_rel_error": 1.9277620309437772e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 6.938893903907228e-18,
+          "max_rel_error": 1.9277620309437772e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 3.469446951953614e-18,
+          "max_rel_error": 1.9277620309437772e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.9277620309437772e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 9.5367431640625e-07,
+          "max_rel_error": 2.9291324979846287e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 9.313225746154785e-10,
+          "max_rel_error": 1.0722544917656717e-15,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 1.294390131285604e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 5.820766091346741e-11,
+          "max_rel_error": 3.3495287594214996e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 1.3877787807814454e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_027_blowers-masel_Pt_surf",
+      "mechanism": "blowers-masel.yaml",
+      "temperature": 1800,
+      "pressure": 1519875,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 7.62939453125e-06,
+          "max_rel_error": 1.3431758243907706e-16,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2.2737367544323206e-12,
+          "max_rel_error": 7.083180715219216e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 4.440892098500626e-16,
+          "max_rel_error": 5.5552443277934195e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 4.440892098500626e-16,
+          "max_rel_error": 5.5552443277934195e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 5.5552443277934195e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_rel_error": 5.5552443277934195e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_rel_error": 5.5552443277934195e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 1.9073486328125e-06,
+          "max_rel_error": 2.1664740782258545e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 9.313225746154785e-10,
+          "max_rel_error": 1.970529214282694e-15,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.5176460874824117e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 3.308722450212111e-24,
+          "max_rel_error": 1.7465714656342135e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_028_blowers-masel_Pt_surf",
+      "mechanism": "blowers-masel.yaml",
+      "temperature": 2200,
+      "pressure": 4053000,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 7.62939453125e-06,
+          "max_rel_error": 1.214948246449222e-16,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2.9558577807620168e-12,
+          "max_rel_error": 6.594888622752472e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 1.5641518918930534e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 1.5641518918930534e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 8.881784197001252e-16,
+          "max_rel_error": 1.5641518918930534e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_rel_error": 1.5641518918930534e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_rel_error": 1.5641518918930534e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 3.5762786865234375e-07,
+          "max_rel_error": 1.3176194333535152e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 1.93397543492123e-15,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 1.2516234003848927e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 1.975740454698376e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_029_blowers-masel_Pt_surf",
+      "mechanism": "blowers-masel.yaml",
+      "temperature": 1100,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 1.0,
+          "max_rel_error": 1.718196287709899e-16,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1.862645149230957e-07,
+          "max_rel_error": 7.184751817023753e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 3.1919096792321164e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 3.1919096792321164e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 3.1919096792321164e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 3.1919096792321164e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 4.406870406119764e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 9.5367431640625e-07,
+          "max_rel_error": 2.385963755854403e-14,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.979060471057892e-09,
+          "max_rel_error": 5.7860216827201105e-15,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 4.041480721846236e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 2.3057598872529295e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_030_blowers-masel_Pt_surf",
+      "mechanism": "blowers-masel.yaml",
+      "temperature": 500,
+      "pressure": 5066.25,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 1.0,
+          "max_rel_error": 2.2144878181092542e-16,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 94371840.0,
+          "max_rel_error": 7.080676714896259e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 3.469446951953614e-18,
+          "max_rel_error": 4.981446913734686e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 3.469446951953614e-18,
+          "max_rel_error": 4.981446913734686e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 3.469446951953614e-18,
+          "max_rel_error": 4.981446913734686e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 3.469446951953614e-18,
+          "max_rel_error": 4.981446913734686e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 6.938893903907228e-18,
+          "max_rel_error": 4.981446913734686e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 4.76837158203125e-07,
+          "max_rel_error": 2.621542774397618e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 2.250726455708484e-15,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 1.3575948836559512e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 5.940243323473762e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.2335811384723962e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_031_sofc_metal_surface",
+      "mechanism": "sofc.yaml",
+      "temperature": 800,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16.0,
+          "max_rel_error": 1.4925874671100692e-16,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 32.0,
+          "max_rel_error": 1.1022885373781732e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 3.2014213502407074e-10,
+          "max_rel_error": 1.1192397133386054e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 1.4703976493856343e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 3.9898639947466563e-17,
+          "max_rel_error": 2.600672504279378e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 2.600672504279378e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 2.600672504279378e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.3293726911095568e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 9.5367431640625e-07,
+          "max_rel_error": 2.1519043680090407e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 5.228477611876368e-16,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 4.807763057874311e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 2.538756906434164e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 5.228477611876368e-16,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 1.1641532182693481e-10,
+          "max_rel_error": 2.2737367544323206e-15,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.6543612251060553e-24,
+          "max_rel_error": 1.5907319472173605e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_032_sofc_metal_surface",
+      "mechanism": "sofc.yaml",
+      "temperature": 1073.15,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 512.0,
+          "max_rel_error": 1.7681901319348094e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 2560.0,
+          "max_rel_error": 3.4679328168247033e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1.2079226507921703e-13,
+          "max_rel_error": 3.586471549462472e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 3.6785255118888723e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 2.3314683517128287e-15,
+          "max_rel_error": 3.8273967376535455e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.220446049250313e-15,
+          "max_rel_error": 5.800636162887571e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 4.6629367034256575e-15,
+          "max_rel_error": 3.8273967376535455e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 4.6629367034256575e-15,
+          "max_rel_error": 3.8273967376535455e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 4.440892098500626e-15,
+          "max_rel_error": 6.474745518531314e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 4.2174870981495264e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 5.820766091347079e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 1.6914969788646666e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.6543612251060553e-24,
+          "max_rel_error": 1.2725855577738886e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_033_sofc_metal_surface",
+      "mechanism": "sofc.yaml",
+      "temperature": 1073.15,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 512.0,
+          "max_rel_error": 1.7681901319348094e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 2560.0,
+          "max_rel_error": 3.4679328168247033e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1.2079226507921703e-13,
+          "max_rel_error": 3.586471549462472e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 3.6785255118888723e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 2.3314683517128287e-15,
+          "max_rel_error": 3.8273967376535455e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.220446049250313e-15,
+          "max_rel_error": 5.800636162887571e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 4.6629367034256575e-15,
+          "max_rel_error": 3.8273967376535455e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 4.6629367034256575e-15,
+          "max_rel_error": 3.8273967376535455e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 4.440892098500626e-15,
+          "max_rel_error": 6.474745518531314e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 4.2174870981495264e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 5.820766091347079e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 1.6914969788646666e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.6543612251060553e-24,
+          "max_rel_error": 1.2725855577738886e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_034_sofc_metal_surface",
+      "mechanism": "sofc.yaml",
+      "temperature": 1073.15,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 512.0,
+          "max_rel_error": 1.7681901319348094e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 2560.0,
+          "max_rel_error": 3.4679328168247033e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1.2079226507921703e-13,
+          "max_rel_error": 3.586471549462472e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 3.6785255118888723e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 2.3314683517128287e-15,
+          "max_rel_error": 3.8273967376535455e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.220446049250313e-15,
+          "max_rel_error": 5.800636162887571e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 4.6629367034256575e-15,
+          "max_rel_error": 3.8273967376535455e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 4.6629367034256575e-15,
+          "max_rel_error": 3.8273967376535455e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 4.440892098500626e-15,
+          "max_rel_error": 6.474745518531314e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 4.2174870981495264e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 5.820766091347079e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 1.6914969788646666e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.6543612251060553e-24,
+          "max_rel_error": 1.2725855577738886e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_035_sofc_metal_surface",
+      "mechanism": "sofc.yaml",
+      "temperature": 1200,
+      "pressure": 303975,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16.0,
+          "max_rel_error": 1.8025680278015727e-16,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 7168.0,
+          "max_rel_error": 1.2254543060356836e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 2.3305801732931286e-12,
+          "max_rel_error": 1.2453790975917317e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_rel_error": 3.8607610175901123e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 3.410605131648481e-13,
+          "max_rel_error": 6.490095371498554e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 3.410605131648481e-13,
+          "max_rel_error": 2.723145447172713e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 3.410605131648481e-13,
+          "max_rel_error": 6.490095371498554e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 3.126388037344441e-13,
+          "max_rel_error": 2.433110827681767e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 3.552713678800501e-13,
+          "max_rel_error": 3.9934730106240356e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 1.8146991319756436e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 9.313225746154785e-10,
+          "max_rel_error": 5.761411789413553e-15,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 2.2837028649574953e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 5.093170329928398e-11,
+          "max_rel_error": 1.5916157281026244e-15,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.6543612251060553e-24,
+          "max_rel_error": 1.5907319472173608e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 1.3877787807814457e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_036_sofc_metal_surface",
+      "mechanism": "sofc.yaml",
+      "temperature": 900,
+      "pressure": 20265,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16.0,
+          "max_rel_error": 1.781942148158693e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 3392.0,
+          "max_rel_error": 1.759124990466557e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1.000444171950221e-10,
+          "max_rel_error": 1.6015842765736494e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 1.4322785724936847e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 6.938893903907228e-18,
+          "max_rel_error": 2.0232820817709588e-16,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 1.3877787807814457e-17,
+          "max_rel_error": 2.216975514652174e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 2.0232820817709588e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 2.0232820817709588e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 3.711470832233616e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 4.0413520978217725e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 1.8743598985971895e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 6.548361852765083e-11,
+          "max_rel_error": 2.0463630789890884e-15,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.586032892321652e-16,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_037_sofc_metal_surface",
+      "mechanism": "sofc.yaml",
+      "temperature": 1400,
+      "pressure": 1013250,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 1536.0,
+          "max_rel_error": 1.7223556897860665e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 1536.0,
+          "max_rel_error": 6.929447378622185e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.0001678466796875,
+          "max_rel_error": 7.129904990614307e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 4.440892098500626e-15,
+          "max_rel_error": 1.7679354136414893e-15,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 3.865352482534945e-12,
+          "max_rel_error": 6.7966998929572614e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 3.865352482534945e-12,
+          "max_rel_error": 6.7966998929572614e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 3.865352482534945e-12,
+          "max_rel_error": 6.7966998929572614e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 3.865352482534945e-12,
+          "max_rel_error": 5.294885553907992e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 3.922195901395753e-12,
+          "max_rel_error": 9.327829181191831e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 1.9073486328125e-06,
+          "max_rel_error": 7.893945117002033e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 1.2417634328206365e-15,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 2.92411430501337e-16,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 5.960464477539063e-08,
+          "max_rel_error": 2.1562181501364498e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 1.1920928955078125e-07,
+          "max_rel_error": 1.2417634328206365e-15,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 7.7956688723393845e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_038_sofc_metal_surface",
+      "mechanism": "sofc.yaml",
+      "temperature": 1000,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16.0,
+          "max_rel_error": 1.672484155281914e-16,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 1.0,
+          "max_rel_error": 2.841402591059714e-16,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 1.6806906409275544e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 1.8666216442745983e-16,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_rel_error": 4.4129043044512126e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.8666216442745983e-16,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 1.1102230246251565e-16,
+          "max_rel_error": 1.8666216442745983e-16,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 5.551115123125783e-17,
+          "max_rel_error": 9.63270399913543e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 5.587935447692871e-09,
+          "max_rel_error": 2.8283857374129813e-15,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 2.7939677238464355e-09,
+          "max_rel_error": 5.820766091347079e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 1.027666289230873e-15,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 5.820766091346741e-11,
+          "max_rel_error": 4.733062810303594e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.6543612251060553e-24,
+          "max_rel_error": 1.2725855577738886e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_039_sofc_metal_surface",
+      "mechanism": "sofc.yaml",
+      "temperature": 1073.15,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 512.0,
+          "max_rel_error": 1.7681901319348094e-15,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 2560.0,
+          "max_rel_error": 3.4679328168247033e-15,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 1.2079226507921703e-13,
+          "max_rel_error": 3.586471549462472e-15,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 3.6785255118888723e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 2.3314683517128287e-15,
+          "max_rel_error": 3.8273967376535455e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 2.220446049250313e-15,
+          "max_rel_error": 5.800636162887571e-15,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 4.6629367034256575e-15,
+          "max_rel_error": 3.8273967376535455e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 4.6629367034256575e-15,
+          "max_rel_error": 3.8273967376535455e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 4.440892098500626e-15,
+          "max_rel_error": 6.474745518531314e-15,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 3.725290298461914e-09,
+          "max_rel_error": 4.2174870981495264e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 5.820766091347079e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 2.9103830456733704e-11,
+          "max_rel_error": 1.6914969788646666e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 1.6543612251060553e-24,
+          "max_rel_error": 1.2725855577738886e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case_id": "fam3_040_sofc_metal_surface",
+      "mechanism": "sofc.yaml",
+      "temperature": 600,
+      "pressure": 101325,
+      "passed": true,
+      "properties": {
+        "forward_rate_constants": {
+          "max_abs_error": 16.0,
+          "max_rel_error": 1.7234915518501205e-16,
+          "passed": true
+        },
+        "reverse_rate_constants": {
+          "max_abs_error": 0.01416015625,
+          "max_rel_error": 1.3856811116279374e-14,
+          "passed": true
+        },
+        "equilibrium_constants": {
+          "max_abs_error": 9.7998327891582e+18,
+          "max_rel_error": 1.42155855773901e-14,
+          "passed": true
+        },
+        "forward_rates_of_progress": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 4.881965146829313e-16,
+          "passed": true
+        },
+        "reverse_rates_of_progress": {
+          "max_abs_error": 4.0657581468206416e-19,
+          "max_rel_error": 5.4455907392243305e-15,
+          "passed": true
+        },
+        "net_rates_of_progress": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 4.881965146829313e-16,
+          "passed": true
+        },
+        "species_creation_rates": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 5.4455907392243305e-15,
+          "passed": true
+        },
+        "species_destruction_rates": {
+          "max_abs_error": 2.220446049250313e-16,
+          "max_rel_error": 5.4455907392243305e-15,
+          "passed": true
+        },
+        "net_species_production_rates": {
+          "max_abs_error": 8.326672684688674e-17,
+          "max_rel_error": 4.881965146829313e-16,
+          "passed": true
+        },
+        "delta_gibbs": {
+          "max_abs_error": 2.2351741790771484e-08,
+          "max_rel_error": 4.845017802285841e-16,
+          "passed": true
+        },
+        "delta_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_entropy": {
+          "max_abs_error": 1.862645149230957e-09,
+          "max_rel_error": 3.3833926954294364e-14,
+          "passed": true
+        },
+        "delta_standard_gibbs": {
+          "max_abs_error": 2.9802322387695312e-08,
+          "max_rel_error": 7.761021455128988e-16,
+          "passed": true
+        },
+        "delta_standard_enthalpy": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "delta_standard_entropy": {
+          "max_abs_error": 4.3655745685100555e-11,
+          "max_rel_error": 4.848195343781662e-16,
+          "passed": true
+        },
+        "surface_concentrations": {
+          "max_abs_error": 3.308722450212111e-24,
+          "max_rel_error": 1.5907319472173605e-16,
+          "passed": true
+        },
+        "surface_coverages": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        },
+        "interface_current": {
+          "max_abs_error": 0.0,
+          "max_rel_error": 0.0,
+          "passed": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "solver_family": "multicomponent_transport",
+  "timestamp_utc": "2026-11-04T21:16:00Z",
+  "git": {
+    "commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+    "branch": "full-port/continuous-closure-20260930",
+    "tree": "c4a9c78b219a3c12f1209991bb05ad25b2d8ab42",
+    "dirty": true,
+    "status_lines_count": 243
+  },
+  "native_oracle": {
+    "pinned_source_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "expected_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "commit_match": true,
+    "shared_library": "/home/nebula/cantera-pinned-oracle/build/lib/libcantera_shared.so.4.0.0",
+    "shared_library_sha256": "a16c2d0f7a5f3f1440c058205e878fdac45873411aa9f285e8f6bd28f5c1f744",
+    "python_env": "/home/nebula/cantera-oracle-env/bin/python3",
+    "cantera_version": "4.0.0a2"
+  },
+  "key_source_hashes": {
+    "cantera_python/transport.py": "71438d716b3b53408b2568e66e53befdf769cf5bc73debcd9151e45480b426b0",
+    "cantera_python/solution.py": "1a3a395a4d50eae73708d9d2aef0b63ef4df4ba6485f587361f41a7baf36ec4c",
+    "cantera_python/constants.py": "43b17585371daa7a54a93feed5eff32d3c490b8f970a22e6a671d48fa1bc6cb4"
+  },
+  "key_test_hashes": {
+    "tests/test_multicomponent_transport.py": "243c19a3e55792a9447c32d68c3058007b0a3c23409aca0a41bac3e3869b5e29",
+    "tests/test_transport.py": "8bdad0c75cb28be5855d70ea60eff16e2ac5af9b4ae9ea93c240768a71f888e2",
+    "tests/test_mixture_transport.py": "8aa45545eba9460bfa3514e9cb2914ac396570ef60950b88bc82e314d336d1e0",
+    "tests/test_hp_transport.py": "65cca55cb8ece6606c65fed1d09ab934af7fb09cf11b432bcfcdc0b5b9ee84cb",
+    "tests/test_dusty_gas_transport.py": "c29d54441b18ba81492e4ed90a28ded2200d74983ddc61c35989dcefee5aa6a2"
+  },
+  "existing_multitransport_artifacts": {
+    "fixtures/pinned_multitransport_trace_heavy.json": "9728bed0cb3a7aeac5d97048716df8a327aa8951146857004dbb85e9d96e6337",
+    "audit/next_solver_selection.json": "368378c9ae4bbb5cffe2ad4a7a8e18b1947e3d518322bfefb13dd8ea3f85e21f",
+    "audit/wave4_matrix_harmonic_comparison.json": "15cad8907373fcc5770dea72c3f8abe450ef9158521f3ada7f9ab9dd7fe665a9",
+    "audit/wave4_matrix_trace_heavy_comparison.json": "e8a5c0215aa87eddfe51a99255931a7df40a3f22ede0e540467c8aaafb5cf078",
+    "audit/wave4_matrix_uniform_comparison.json": "c0aaea6725136eff0e9f3e340b2a6d67fc9ba46a073aa3db092f1b245f13479b"
+  },
+  "prerequisite_solver_families_frozen": {
+    "vcs_multiphase_equilibrium": true,
+    "mixture_transport": true,
+    "thermodynamic_state_inversion": true
+  }
+}

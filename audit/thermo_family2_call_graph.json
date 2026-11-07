@@ -1,0 +1,27 @@
+{
+  "family": "THERMO_FAMILY_2_SPECIES_THERMO",
+  "root_class": "SpeciesThermoInterpType",
+  "primary_callers": [
+    "ThermoPhase::update_T",
+    "IdealGasPhase::updateThermo",
+    "MultiSpeciesThermo::update_one",
+    "Kinetics::updateROP"
+  ],
+  "core_method_clusters": {
+    "evaluation": [
+      "updatePropertiesTemp",
+      "updateProperties",
+      "reportParameters"
+    ],
+    "bounds": [
+      "minTemp",
+      "maxTemp",
+      "refPressure"
+    ],
+    "manager": [
+      "MultiSpeciesThermo::install",
+      "MultiSpeciesThermo::update_temp",
+      "MultiSpeciesThermo::update_one"
+    ]
+  }
+}

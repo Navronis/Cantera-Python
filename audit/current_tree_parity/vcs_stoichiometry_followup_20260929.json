@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-29",
+  "pinned_cantera_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+  "implementation_scope": "VCS preparation kernels: independent component basis, active-element row rearrangement, formation-reaction stoichiometric coefficients, vcs_deltag reaction selection and zero-component clamping, and vcs_dfe species chemical-potential formulas and major/minor filtering",
+  "native_source_mapping": {
+    "basis_selection": "src/equil/vcs_solve_TP.cpp::VCS_SOLVE::vcs_basopt",
+    "element_rearrangement": "src/equil/vcs_solve.cpp::VCS_SOLVE::vcs_elem_rearrange",
+    "stoichiometric_system": "src/equil/vcs_solve_TP.cpp, vcs_basopt section 'EVALUATE THE STOICHIOMETRY' (C X + B = 0)",
+    "reaction_gibbs_changes": "src/equil/vcs_solve_TP.cpp::VCS_SOLVE::vcs_deltag",
+    "species_chemical_potentials": "src/equil/vcs_solve_TP.cpp::VCS_SOLVE::vcs_dfe"
+  },
+  "python_implementation": {
+    "path": "cantera_python/vcs.py",
+    "sha256": "36e8c030c9ab162415753c622549176fb370399f5f8d2eb4c4e9bea673989e9b",
+    "linear_solver": "cantera_python.numerics.DenseMatrix partial-pivot LU and forward/back substitution"
+  },
+  "fixed_stoichiometry_phase_element_fix": {
+    "path": "cantera_python/fixed_stoichiometry.py",
+    "sha256": "036865a089a90c910ee5dd0da9266dff2985e28b678f537c3eeee826fa45cc5e",
+    "behavior": "Preserves phase-declared elements and species composition for fixed-stoichiometry phases; exposes element/species indexing and atom-count APIs.",
+    "root_cause": "The graphite phase previously exposed no element names, yielding an all-zero carbon formula row in the VCS problem."
+  },
+  "tests": {
+    "path": "tests/test_vcs_multiphase.py",
+    "sha256": "07c4871eef7ce2146b47e38b80b225652bdc8a4158cc5b74ae5522b1d75f647f",
+    "added_checks": [
+      "formation coefficients balance all formula rows for a GRI gas plus graphite prepared problem",
+      "inactive leading element is rearranged and a one-reaction formation vector balances",
+      "element goals and active flags follow the rearrangement",
+      "vcs_deltag follows pinned major/minor/all selection, status limits, old-mole handling, and absent-component clamping",
+      "vcs_dfe follows pinned standard-state, activity, small-mole, zeroed-phase, single-species-phase, electric-potential, and major/minor selection branches"
+    ],
+    "targeted_pytest": "20 passed in 11.77s: tests/test_vcs_multiphase.py and tests/test_multiphase_container.py",
+    "full_pytest": "498 passed, 3 skipped, 0 failed, 0 errors in 186.43s, recorded by tools/run_waves_1_3_pytest.py",
+    "full_pytest_source_digest": "aacc9ffc5caafa12b50217349b66a5f93d0e56ba07e7bea3e7f6855e2c088192",
+    "full_pytest_log_sha256": "a5892f1af74030f3116e304217e33ac8b4ec0b29ea3d154edc9a0c75784095e6",
+    "environment": "Windows AMD64, Python 3.11 configured project environment"
+  },
+  "executed_checks": {
+    "py_compile": "PASS for cantera_python/vcs.py and tests/test_vcs_multiphase.py",
+    "dynamic_helper_probe": "PASS: loaded project DenseMatrix and VCS helper implementations; checked element order, solved coefficient -2, and zero elemental residual",
+    "targeted_pytest": "PASS",
+    "full_pytest_after_latest_fix": "PASS: 498 passed, 3 skipped; source and log hashes recorded by the repository provenance harness",
+    "git_diff_check": "PASS"
+  },
+  "exact_pinned_native_differential": {
+    "pinned_checkout_commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "oracle_version": "4.0.0a2",
+    "native_probe_source": "tools/run_native_vcs_basis_probe.cpp",
+    "native_probe_source_sha256": "62c4394cc21ac5c6b0c4bee1a8cdde36f1ff6fc1024467d8db14166d8f175c7f",
+    "native_probe_binary": "tools/run_native_vcs_basis_probe",
+    "native_probe_binary_sha256": "b1c9b95574109a91c0fc6c3b50977de38ff99e5e982b83c7483da2d61eb456a8",
+    "native_output": "audit/current_tree_parity/native_vcs_basis_gri_graphite.txt",
+    "native_output_sha256": "ac2c2c33acf3b770b66b0261957445c098d84213cfe401d78790af4e6ec85a74",
+    "python_comparison_tool": "tools/compare_vcs_basis_native_probe.py",
+    "python_comparison_tool_sha256": "4fbb3ff819693ab4954d4bf16a29d5a8fbef7971febe89189f7445b0fbb9873b",
+    "command": "python tools/compare_vcs_basis_native_probe.py",
+    "result": "PASS against actual pinned VCS_SOLVE methods: exact component count, element ordering, species permutation, all 245 formation coefficients, six vcs_deltag outputs, and 162 vcs_dfe species outputs (L=-1, 0, 1)",
+    "component_species": ["N2", "C(gr)", "CH4", "O2", "AR"],
+    "element_order": ["O", "H", "C", "N", "Ar"],
+    "maximum_absolute_stoichiometric_error": 0.0,
+    "maximum_absolute_deltag_error": 0.0,
+    "vcs_dfe_comparison": {
+      "native_method": "VCS_SOLVE::vcs_dfe",
+      "modes": [-1, 0, 1],
+      "species_outputs_compared": 162,
+      "maximum_absolute_error": 0.0,
+      "build_standard": "g++ -std=c++20 against pinned libcantera_shared.so.4.0.0"
+    }
+  },
+  "limitations": [
+    "The native differential covers one ideal-gas-plus-graphite problem; charged species, nonideal activity-coefficient models, and multi-species condensed phases are not yet covered by the native probe.",
+    "vcs_dfe receives activity coefficients and phase potentials prepared by phase objects; complete phase activity-coefficient update semantics are not yet ported for all models.",
+    "Interfacial-voltage stoichiometry is explicitly rejected pending the pinned special correction.",
+    "VCS equilibrium iteration and final state update remain unimplemented; this is not a complete or validated VCS solver port."
+  ]
+}

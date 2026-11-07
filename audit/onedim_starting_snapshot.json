@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "artifact": "audit/onedim_starting_snapshot.json",
+  "snapshot_timestamp_utc": "2026-11-05T14:05:00Z",
+  "git_commit": "903605c396c46789f3bb2b8b6bb9174696f71e65",
+  "git_branch": "full-port/continuous-closure-20260930",
+  "is_worktree_clean": false,
+  "solver_family": "onedim",
+  "subsystem": "1D residual",
+  "native_source": {
+    "commit": "726522be4e2a13454d8415b7ef799d621f665cf3",
+    "header": "include/cantera/oneD/OneDim.h",
+    "source": "src/oneD/OneDim.cpp",
+    "onedim_h_sha256": "e0a5ac1771d7dee87d7ad26618369370c51fea23c53b03718bee1b43c1dab7ca",
+    "onedim_cpp_sha256": "d862358879060ba346559677a2bd650deb40796aaf53715dd6f2fbaa8c6db12d"
+  },
+  "python_files": {
+    "oned_py_sha256": "99a2bfc6872ed4ee60525d2ade2a47601143858268e4c9c6e67bd5c6e24baf5a",
+    "test_onedim_py_sha256": "199d866e9a7944a878da7e8835a83c37fb53f08f72b71f8dbf1f523a84ddf493"
+  },
+  "closure_set_sha256": "5b4e9bea41fcbc4efa32f233617f65b6ee42c0331b282a8b5a71e06d60fbc45f",
+  "inventory_counts": {
+    "total_canonical_symbols": 39,
+    "open_runtime_symbols": 34,
+    "non_runtime_proven_symbols": 5,
+    "pinned_native_validated": 0
+  }
+}

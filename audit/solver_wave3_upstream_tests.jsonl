@@ -1,0 +1,6 @@
+{"source":"test/thermo/thermoFromYaml.cpp:367-380","scope":"PureFluid nitrogen and CO2 construction","status":"COVERED_BY_STRONGER_TEST","evidence":"test_tpx_water.py and independent 8,000-state evaluator"}
+{"source":"test/thermo/thermoToYaml.cpp:100-104,542-550","scope":"PureFluid serialization for nitrogen","status":"COVERED_BY_STRONGER_TEST","evidence":"PureFluidPhase.save/restore preserves pure-fluid-name and quality"}
+{"source":"test/thermo/water_iapws.cpp","scope":"IAPWS-95 WaterProps, not legacy TPX water.cpp","status":"NOT_APPLICABLE_NON_RUNTIME","reason":"separate thermo WaterPropsIAPWS engine outside src/tpx"}
+{"source":"test/thermo/phaseConstructors.cpp:218-230","scope":"PureFluidPhase construction","status":"COVERED_BY_STRONGER_TEST","evidence":"Python factory and TPX fluid matrix"}
+{"source":"test/thermo_consistency/consistency.cpp:1190-1193","scope":"NitrogenPureFluid consistency states","status":"MISSING","reason":"upstream consistency fixture replay against pinned native unavailable"}
+{"source":"test/thermo_consistency/consistency.cpp:1304-1307","scope":"LiquidWaterIapws95 consistency states","status":"NOT_APPLICABLE_NON_RUNTIME","reason":"IAPWS95 thermo engine is outside legacy src/tpx Wave 3"}

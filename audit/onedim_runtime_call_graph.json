@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "solver_family": "onedim",
+  "subsystem": "1D residual",
+  "entry_points": [
+    "OneDim::eval",
+    "OneDim::evalJacobian",
+    "OneDim::weightedNorm",
+    "OneDim::addDomain",
+    "OneDim::resize",
+    "OneDim::initTimeInteg",
+    "OneDim::setSteadyMode"
+  ],
+  "dependencies": {
+    "Domain1D": [
+      "locate",
+      "eval",
+      "bandwidth",
+      "hasAnalyticJacobian",
+      "evalJacobianAnalytic",
+      "initTimeInteg",
+      "setSteadyMode"
+    ],
+    "SystemJacobian": [
+      "setValue",
+      "reset",
+      "incrementEvals",
+      "setAge",
+      "updateElapsed"
+    ],
+    "MultiJac": [
+      "initialize",
+      "setBandwidth"
+    ],
+    "SteadyStateSystem": [
+      "eval",
+      "evalJacobian",
+      "weightedNorm",
+      "initTimeInteg",
+      "setSteadyMode",
+      "resize"
+    ]
+  }
+}
