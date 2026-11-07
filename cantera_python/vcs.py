@@ -64,7 +64,10 @@ class MultiPhase:
             for species in mechanism.species:
                 if species.name == species_name:
                     return float(species.composition.get(element, 0.0))
-        species = phase.species[species_index]
+        if callable(getattr(phase, "species", None)):
+            species = phase.species(species_index)
+        else:
+            species = phase.species[species_index]
         composition = getattr(species, "composition", {})
         return float(composition.get(element, 0.0))
 
@@ -174,9 +177,14 @@ class MultiPhase:
         p = self._check_phase_index(p)
         phase = self._phases[p]
         x = self._phase_mole_fractions(p)
-        species = phase.species
-        charge = sum(float(species[k].charge) * x[k]
-                     for k in range(len(species)))
+        nsp = phase.n_species if hasattr(phase, "n_species") else phase.nSpecies()
+        if hasattr(phase, "charge") and callable(phase.charge):
+            charge = sum(float(phase.charge(k)) * x[k] for k in range(nsp))
+        else:
+            species_get = phase.species if callable(getattr(phase, "species", None)) else None
+            species_list = phase.species if not callable(getattr(phase, "species", None)) else getattr(phase, "_species", None)
+            charge = sum(float(getattr(species_get(k) if species_get else species_list[k], "charge", 0.0)) * x[k]
+                         for k in range(nsp))
         return float(Faraday * charge * self._phase_moles[p])
 
     def phaseIndex(self, name: str) -> int:
@@ -450,7 +458,10 @@ class vcs_VolPhase:
         self._tp = thermo_phase
         self._phase_num = int(phase_num)
         self._species_names = tuple(thermo_phase.species_names)
-        self._species = tuple(getattr(thermo_phase, "species", ()))
+        sp = getattr(thermo_phase, "species", ())
+        if callable(sp):
+            sp = getattr(thermo_phase, "_species", [thermo_phase.species(k) for k in range(len(self._species_names))])
+        self._species = tuple(sp)
         self._base_element_names = self._get_element_names(thermo_phase)
         self._element_names = self._base_element_names
         self._formula_matrix = np.zeros(
@@ -1554,9 +1565,14 @@ class VCS_SOLVE:
                     vcs_VolPhase._STATE_OLD, activity, moles=moles)
             convention = getattr(phase._tp, "activityConvention", None)
             convention = convention() if callable(convention) else convention
-            if convention is None:
-                convention = 0
-            if int(convention) != 0 and phase.nSpecies() > 1:
+            if convention is None or str(convention).lower() in ("0", "molar"):
+                convention_val = 0
+            else:
+                try:
+                    convention_val = int(convention)
+                except ValueError:
+                    convention_val = 1
+            if convention_val != 0 and phase.nSpecies() > 1:
                 molecular_weights = np.asarray(phase._tp.molecular_weights,
                                                dtype=float)
                 solvent_mnaught = float(molecular_weights[0]) / 1000.0

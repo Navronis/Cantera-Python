@@ -975,7 +975,7 @@ class Boundary1D(Domain1D):
         self.m_right_nv: int = 0
         self.m_left_nsp: int = 0
         self.m_right_nsp: int = 0
-        self.m_temp: float = float(phase.T) if phase is not None and hasattr(phase, "T") else 0.0
+        self.m_temp: float = float(phase.T() if callable(phase.T) else phase.T) if phase is not None and hasattr(phase, "T") else 0.0
         self.m_mdot: float = 0.0
         self.m_V0: float = 0.0
         self.m_yin: np.ndarray = (

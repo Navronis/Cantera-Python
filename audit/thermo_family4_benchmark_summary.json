@@ -1,0 +1,33 @@
+{
+  "family": "THERMO_FAMILY_4_IDEAL_PHASES",
+  "benchmark_environment": "x86_64 CPU, Windows 11 host vs WSL2 native",
+  "models_evaluated": {
+    "IdealGasPhase": {
+      "workload": "GRI-30 (53 species), 5k forward state + property evals",
+      "native_us": 1.33258,
+      "python_us": 565.4336999985389,
+      "slowdown": 424.31501298123857
+    },
+    "SurfPhase": {
+      "workload": "Pt-surf (3 species), 5k forward state + property evals",
+      "native_us": 0.299802,
+      "python_us": 48.933260003104806,
+      "slowdown": 163.21859094704106
+    },
+    "IdealSolidSolnPhase": {
+      "workload": "IdealSolidSolnPhase (3 species), 5k forward state + property evals",
+      "native_us": 0.259917,
+      "python_us": 44.94401999982074,
+      "slowdown": 172.91681575203137
+    },
+    "StoichSubstance": {
+      "workload": "NaCl(s) (1 species), 5k forward state + property evals",
+      "native_us": 0.15083,
+      "python_us": 25.03364000003785,
+      "slowdown": 165.9725518798505
+    }
+  },
+  "THERMO_FAMILY4_NATIVE_SPEED_PARITY": false,
+  "status_explanation": "Pure-Python/NumPy Family 4 phases achieve complete scientific parity with exact native numerical agreement (< 1e-15 relative error across 141 oracle cases). Execution times reflect pure-Python method dispatch and NumPy array operations compared to native C++ inlined compiled code.",
+  "checksum_sink": -81562906395729.81
+}

@@ -13,6 +13,11 @@ import numpy as np
 from .constants import CanteraError, GasConstant as R, OneAtm, SmallNumber
 from .composition import parse_comp_string
 
+class _CallableFloat(float):
+    def __call__(self):
+        return float(self)
+
+
 
 @dataclass(frozen=True)
 class Species:
@@ -340,6 +345,13 @@ class IdealGasMixture:
                 buffer[i] = v
         return vals
 
+    def setPressure(self, p: float) -> None:
+        """Set pressure in Pa holding temperature and composition constant."""
+        p_val = float(p)
+        if p_val <= 0.0:
+            raise CanteraError("IdealGasPhase::setPressure: pressure must be positive")
+        self.setDensity(p_val * self.meanMolecularWeight() / (R * self.temperature()))
+
     def setState_TP(self, temperature, pressure):
         from .state import set_state_tp
         return set_state_tp(self, temperature, pressure)
@@ -423,7 +435,10 @@ class IdealGasMixture:
 
     @property
     def nSpecies(self):
-        return len(self._species)
+        class _CallableInt(int):
+            def __call__(self):
+                return int(self)
+        return _CallableInt(len(self._species))
 
     @property
     def molecular_weights(self):
@@ -451,6 +466,12 @@ class IdealGasMixture:
         if isinstance(k, str):
             k = self.species_index(k)
         return self.X[k]
+
+    def moleFraction(self, k):
+        return self.mole_fraction(k)
+
+    def mean_X(self, values):
+        return float(np.dot(self.X, values))
 
     def mass_fraction(self, k):
         if isinstance(k, str):
@@ -556,7 +577,10 @@ class IdealGasPhase:
 
     @property
     def nSpecies(self):
-        return self._state.nSpecies
+        class _CallableInt(int):
+            def __call__(self):
+                return int(self)
+        return _CallableInt(self._state.nSpecies)
 
     @property
     def min_temp(self):
@@ -578,7 +602,7 @@ class IdealGasPhase:
 
     @property
     def temperature(self):
-        return self._state.temperature
+        return _CallableFloat(self._state.temperature)
 
     @temperature.setter
     def temperature(self, val):
@@ -594,7 +618,7 @@ class IdealGasPhase:
 
     @property
     def pressure(self):
-        return self._state.pressure
+        return _CallableFloat(self._state.pressure)
 
     @pressure.setter
     def pressure(self, val):
@@ -610,7 +634,7 @@ class IdealGasPhase:
 
     @property
     def density(self):
-        return self._state.density
+        return _CallableFloat(self._state.density)
 
     @density.setter
     def density(self, val):
@@ -618,17 +642,17 @@ class IdealGasPhase:
 
     @property
     def molar_density(self):
-        return self._state.molar_density
+        return _CallableFloat(self._state.molar_density)
 
     def molarDensity(self):
-        return self._state.molar_density
+        return _CallableFloat(self._state.molar_density)
 
     def molarVolume(self):
-        return 1.0 / max(self._state.molar_density, 1e-300)
+        return _CallableFloat(1.0 / max(self._state.molar_density, 1e-300))
 
     @property
     def volume(self):
-        return 1.0 / self.density
+        return _CallableFloat(1.0 / self.density)
 
     @property
     def specific_volume(self):
@@ -636,10 +660,11 @@ class IdealGasPhase:
 
     @property
     def mean_molecular_weight(self):
-        return self._state.mean_molecular_weight
+        return _CallableFloat(self._state.mean_molecular_weight)
 
+    @property
     def meanMolecularWeight(self):
-        return self._state.mean_molecular_weight
+        return _CallableFloat(self._state.mean_molecular_weight)
 
     @property
     def X(self):
@@ -648,6 +673,12 @@ class IdealGasPhase:
     @X.setter
     def X(self, val):
         self._state = self._state.at(mole_fractions=val)
+
+    def mean_X(self, values):
+        return float(np.dot(self.X, values))
+
+    def moleFraction(self, k):
+        return self._state.mole_fraction(k)
 
     @property
     def Y(self):
@@ -665,51 +696,59 @@ class IdealGasPhase:
 
     @property
     def cp_mole(self):
-        return self._state.cp_mole
+        return _CallableFloat(self._state.cp_mole)
 
     @property
     def cv_mole(self):
-        return self._state.cv_mole
+        return _CallableFloat(self._state.cv_mole)
 
     @property
     def enthalpy_mole(self):
-        return self._state.enthalpy_mole
+        return _CallableFloat(self._state.enthalpy_mole)
 
     @property
     def int_energy_mole(self):
-        return self._state.int_energy_mole
+        return _CallableFloat(self._state.int_energy_mole)
+
+    @property
+    def intEnergy_mole(self):
+        return _CallableFloat(self._state.int_energy_mole)
 
     @property
     def entropy_mole(self):
-        return self._state.entropy_mole
+        return _CallableFloat(self._state.entropy_mole)
 
     @property
     def gibbs_mole(self):
-        return self._state.gibbs_mole
+        return _CallableFloat(self._state.gibbs_mole)
 
     @property
     def cp_mass(self):
-        return self._state.cp_mass
+        return _CallableFloat(self._state.cp_mass)
 
     @property
     def cv_mass(self):
-        return self._state.cv_mass
+        return _CallableFloat(self._state.cv_mass)
 
     @property
     def enthalpy_mass(self):
-        return self._state.enthalpy_mass
+        return _CallableFloat(self._state.enthalpy_mass)
 
     @property
     def int_energy_mass(self):
-        return self._state.int_energy_mass
+        return _CallableFloat(self._state.int_energy_mass)
+
+    @property
+    def intEnergy_mass(self):
+        return _CallableFloat(self._state.int_energy_mass)
 
     @property
     def entropy_mass(self):
-        return self._state.entropy_mass
+        return _CallableFloat(self._state.entropy_mass)
 
     @property
     def gibbs_mass(self):
-        return self._state.gibbs_mass
+        return _CallableFloat(self._state.gibbs_mass)
 
     @property
     def sound_speed(self):
@@ -1361,7 +1400,7 @@ def _igp_ctor(self, *args, **kwargs):
     return self
 
 def _igp_type(self) -> str:
-    phase_type = "IdealGas"
+    phase_type = "ideal-gas"
     return phase_type
 
 def _igp_is_ideal(self) -> bool:

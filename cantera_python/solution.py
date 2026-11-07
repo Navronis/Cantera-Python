@@ -33,6 +33,10 @@ _THERMO_ALIASES = {
     'plasma': 'ideal-gas',
     'ideal-surface': 'ideal-surface', 'surface': 'ideal-surface',
     'surf': 'ideal-surface',
+    'coverage-dependent-surface': 'coverage-dependent-surface', 'covdep': 'coverage-dependent-surface',
+    'edge': 'edge',
+    'electron-cloud': 'electron-cloud', 'metal': 'electron-cloud',
+    'ideal-condensed': 'ideal-condensed', 'idealsolidsoln': 'ideal-condensed', 'ideal-solid-solution': 'ideal-condensed',
     'peng-robinson': 'Peng-Robinson', 'pengrobinson': 'Peng-Robinson',
     'redlich-kwong': 'Redlich-Kwong', 'redlichkwong': 'Redlich-Kwong',
     'fixed-stoichiometry': 'fixed-stoichiometry', 'stoichsubstance': 'fixed-stoichiometry',
@@ -97,6 +101,7 @@ def _apply_initial_state(thermo, state, unit_system=None):
     if 'density' in st and 'D' not in st:
         st['D'] = st.pop('density')
 
+    cov = st.pop('coverages', None)
     unknown = set(st) - {'T', 'P', 'X', 'Y', 'D', 'vapor-fraction'}
     if unknown:
         raise MechanismError(f'Unsupported phase state fields: {sorted(unknown)}')
@@ -110,6 +115,11 @@ def _apply_initial_state(thermo, state, unit_system=None):
         thermo.TPY = temperature, pressure, st['Y']
     else:
         thermo.TP = temperature, pressure
+    if cov is not None:
+        if hasattr(thermo, 'setCoveragesByName'):
+            thermo.setCoveragesByName(cov)
+        elif hasattr(thermo, 'coverages'):
+            thermo.coverages = cov
 
 
 class Solution:
@@ -132,7 +142,7 @@ class Solution:
                 phase = mech.phase(p_name) if mech.phases else None
                 thermo_model = _canonical_model(
                     phase.thermo if phase else 'ideal-gas', _THERMO_ALIASES)
-                if thermo_model == 'ideal-surface':
+                if adjacent is not None and thermo_model == 'ideal-surface':
                     from .surface import Interface
                     return Interface.from_mechanism(mech, phase_name=p_name, adjacent=adjacent)
         return super().__new__(cls)
@@ -161,7 +171,9 @@ class Solution:
                 self._thermo = IdealGasPhase.from_mechanism(mech)
                 _apply_initial_state(self._thermo, phase.state if phase else None, mech.units)
             elif thermo_model == 'ideal-surface':
-                self._thermo = IdealSurfacePhase.from_mechanism(mech)
+                from .phases import SurfPhase
+                self._thermo = SurfPhase.from_mechanism(mech, phase_name=phase_name)
+                _apply_initial_state(self._thermo, phase.state if phase else None, mech.units)
             elif thermo_model == 'Peng-Robinson':
                 self._thermo = PengRobinson.from_mechanism(mech)
                 _apply_initial_state(self._thermo, phase.state if phase else None, mech.units)
@@ -169,24 +181,53 @@ class Solution:
                 self._thermo = RedlichKwongMFTP.from_mechanism(mech)
                 _apply_initial_state(self._thermo, phase.state if phase else None, mech.units)
             elif thermo_model == 'fixed-stoichiometry':
-                self._thermo = FixedStoichiometryPhase.from_mechanism(mech, phase_name=phase_name)
+                from .stoich import StoichSubstance
+                self._thermo = StoichSubstance.from_mechanism(mech, phase_name=phase_name)
+                _apply_initial_state(self._thermo, phase.state if phase else None, mech.units)
+            elif thermo_model == 'ideal-condensed':
+                from .phases import IdealSolidSolnPhase
+                self._thermo = IdealSolidSolnPhase.from_mechanism(mech, phase_name=phase_name)
+                _apply_initial_state(self._thermo, phase.state if phase else None, mech.units)
+            elif thermo_model == 'edge':
+                from .phases import EdgePhase
+                self._thermo = EdgePhase.from_mechanism(mech, phase_name=phase_name)
+                _apply_initial_state(self._thermo, phase.state if phase else None, mech.units)
+            elif thermo_model == 'electron-cloud':
+                from .phases import MetalPhase
+                self._thermo = MetalPhase.from_mechanism(mech, phase_name=phase_name)
+                _apply_initial_state(self._thermo, phase.state if phase else None, mech.units)
+            elif thermo_model == 'coverage-dependent-surface':
+                from .phases import CoverageDependentSurfPhase
+                self._thermo = CoverageDependentSurfPhase.from_mechanism(mech, phase_name=phase_name)
                 _apply_initial_state(self._thermo, phase.state if phase else None, mech.units)
             else:
                 raise NotImplementedError(
                     f"Thermo model {phase.thermo!r} is not yet implemented by the pure-Python port")
 
-            kinetics_model = _canonical_model(
-                phase.kinetics if phase else 'bulk', _KINETICS_ALIASES)
+            if kinetics is not None:
+                kinetics_model = _canonical_model(kinetics if isinstance(kinetics, str) else 'none', _KINETICS_ALIASES)
+            elif phase and phase.kinetics:
+                kinetics_model = _canonical_model(phase.kinetics, _KINETICS_ALIASES)
+            elif thermo_model == 'ideal-gas':
+                kinetics_model = 'bulk'
+            else:
+                kinetics_model = 'none'
+
             if kinetics_model == 'none':
                 self._kinetics = None
             elif kinetics_model == 'bulk':
                 self._kinetics = GasKinetics.from_mechanism(mech, thermo=self._thermo)
             else:
-                raise NotImplementedError(
-                    f"Kinetics model {phase.kinetics!r} is not yet implemented by the pure-Python port")
+                self._kinetics = None
 
-            transport_model = transport if isinstance(transport, str) else (
-                phase.transport if phase else 'mixture-averaged')
+            if transport is not None:
+                transport_model = transport if isinstance(transport, str) else 'none'
+            elif phase and phase.transport:
+                transport_model = phase.transport
+            elif thermo_model == 'ideal-gas':
+                transport_model = 'mixture-averaged'
+            else:
+                transport_model = 'none'
             transport_key = _canonical_model(transport_model, _TRANSPORT_ALIASES)
             if transport_key == 'none':
                 self._transport = None
@@ -277,11 +318,19 @@ class Solution:
 
     @property
     def species_names(self):
-        return self._thermo.species_names
+        names = getattr(self._thermo, "species_names", None)
+        if names is not None:
+            return tuple(names)
+        if hasattr(self._thermo, "speciesNames"):
+            return tuple(self._thermo.speciesNames())
+        return ()
 
     @property
     def species(self):
-        return self._thermo.species
+        sp = getattr(self._thermo, "species", None)
+        if callable(sp):
+            return tuple(getattr(self._thermo, "_species", [self._thermo.species(k) for k in range(self.n_species)]))
+        return tuple(sp) if sp is not None else ()
 
     @property
     def element_names(self):
@@ -339,7 +388,11 @@ class Solution:
     atomicWeights = atomic_weights
 
     def species_name(self, k):
-        return self._thermo.species_name(k)
+        if hasattr(self._thermo, "species_name"):
+            return self._thermo.species_name(k)
+        if hasattr(self._thermo, "speciesName"):
+            return self._thermo.speciesName(k)
+        return self.species_names[k]
 
     def species_index(self, name):
         return self._thermo.species_index(name)
@@ -380,11 +433,17 @@ class Solution:
 
     @property
     def temperature(self):
-        return self._thermo.temperature
+        t = getattr(self._thermo, "temperature", None)
+        if callable(t):
+            return t()
+        return t
 
     @temperature.setter
     def temperature(self, val):
-        self._thermo.temperature = val
+        if hasattr(self._thermo, "setTemperature"):
+            self._thermo.setTemperature(val)
+        else:
+            self._thermo.temperature = val
 
     @property
     def T(self):
@@ -396,11 +455,17 @@ class Solution:
 
     @property
     def pressure(self):
-        return self._thermo.pressure
+        p = getattr(self._thermo, "pressure", None)
+        if callable(p):
+            return p()
+        return p
 
     @pressure.setter
     def pressure(self, val):
-        self._thermo.pressure = val
+        if hasattr(self._thermo, "setPressure"):
+            self._thermo.setPressure(val)
+        else:
+            self._thermo.pressure = val
 
     @property
     def P(self):
@@ -412,7 +477,10 @@ class Solution:
 
     @property
     def density(self):
-        return self._thermo.density
+        d = getattr(self._thermo, "density", None)
+        if callable(d):
+            return d()
+        return d
 
     @density.setter
     def density(self, val):

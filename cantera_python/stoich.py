@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Fixed-stoichiometry incompressible phase equations from Cantera.
 
 This is an immutable scalar-state translation of selected ``StoichSubstance``
@@ -5,6 +6,7 @@ and ``SingleSpeciesTP`` property methods. It is intentionally smaller than
 Cantera's mutable ``ThermoPhase`` hierarchy and does not parse input files.
 """
 from math import isfinite
+import numpy as np
 
 from .constants import GasConstant as R, OneAtm
 from .ideal_gas import Species
@@ -202,129 +204,189 @@ class StoichiometricSubstance:
 from .phases import SingleSpeciesTP
 
 class StoichSubstance(SingleSpeciesTP):
-    """Stoichiometric substance thermodynamic phase."""
+    """Fixed-composition incompressible stoichiometric substance."""
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    def __init__(self, infile: str = "", id_: str = "", name: str = ""):
+        super().__init__(name=name or id_)
+        super().__init__()
         self._press = OneAtm
         self._p0 = OneAtm
+        if infile:
+            self.initThermoFile(infile, id_)
 
-    def StoichSubstance(self, *args, **kwargs):
-        self.__init__(*args, **kwargs)
+    def StoichSubstance(self, *args, **kwargs) -> StoichSubstance:
+        self._state_mf_number += 1
         return self
 
     def type(self) -> str:
-        phase_type = "StoichSubstance"
-        return phase_type
+        return "stoichiometric-substance"
 
     def isCompressible(self) -> bool:
-        compressible_flag = False
-        return compressible_flag
+        return False
+
+    def pressure(self) -> float:
+        return float(self._press)
+
+    def setPressure(self, p: float) -> None:
+        self._press = float(p)
+        self.invalidateCache()
 
     def isothermalCompressibility(self) -> float:
-        kappa_t = 0.0
-        return kappa_t
+        return 0.0
 
     def thermalExpansionCoeff(self) -> float:
-        alpha_p = 0.0
-        return alpha_p
+        return 0.0
 
     def internalPressure(self) -> float:
-        pi_t = 0.0
-        return pi_t
+        return 0.0
 
     def standardConcentrationUnits(self) -> str:
-        units_str = "kmol/m^3"
-        return units_str
+        return "1.0"
 
-    def getActivityConcentrations(self, c=None):
+    def getActivityConcentrations(self, c: Optional[np.ndarray] = None) -> np.ndarray:
         if c is not None:
             c[0] = 1.0
             return c
-        return [1.0]
+        return np.ones(1, dtype=float)
 
     def standardConcentration(self, k: int = 0) -> float:
-        c_std = 1.0
-        return c_std
+        return 1.0
 
     def logStandardConc(self, k: int = 0) -> float:
-        log_c = 0.0
-        return log_c
+        return 0.0
 
-    def getStandardChemPotentials(self, mu0=None):
+    def getStandardChemPotentials(self, mu0: Optional[np.ndarray] = None) -> np.ndarray:
         grt = self.getGibbs_RT()
         rt_val = self.RT()
-        chem_pot = [g * rt_val for g in grt]
         if mu0 is not None:
-            for i, val in enumerate(chem_pot):
-                mu0[i] = val
+            mu0[0] = grt[0] * rt_val
             return mu0
-        return chem_pot
+        return np.array([grt[0] * rt_val], dtype=float)
 
-    def getEnthalpy_RT(self, hrt=None):
+    def getEnthalpy_RT(self, hrt: Optional[np.ndarray] = None) -> np.ndarray:
         hrt_ref = self.getEnthalpy_RT_ref()
         mol_dens = self.molarDensity()
         if mol_dens <= 0.0:
-            mol_dens = 1.0
-        pres_correct = (self.pressure() - self.refPressure()) / mol_dens
+            dens = max(self.density(), 1e-30)
+            mw = self.molecularWeight(0) if self.nSpecies() > 0 else 1.0
+            mol_dens = dens / mw
+        pres_correct = (self.pressure() - self.refPressure()) / max(mol_dens, 1e-30)
         rt_val = self.RT()
-        res = [hrt_ref[0] + pres_correct / rt_val]
+        val = hrt_ref[0] + pres_correct / rt_val
         if hrt is not None:
-            hrt[0] = res[0]
+            hrt[0] = val
             return hrt
-        return res
+        return np.array([val], dtype=float)
 
-    def getEntropy_R(self, sr=None):
+    def getEntropy_R(self, sr: Optional[np.ndarray] = None) -> np.ndarray:
         sr_ref = self.getEntropy_R_ref()
-        res = [sr_ref[0]]
         if sr is not None:
-            sr[0] = res[0]
+            sr[0] = sr_ref[0]
             return sr
-        return res
+        return np.array([sr_ref[0]], dtype=float)
 
-    def getGibbs_RT(self, grt=None):
+    def getGibbs_RT(self, grt: Optional[np.ndarray] = None) -> np.ndarray:
         hrt = self.getEnthalpy_RT()
-        sr = self.getEntropy_R()
-        res = [hrt[0] - sr[0]]
-        if grt is not None:
-            grt[0] = res[0]
-            return grt
-        return res
-
-    def getCp_R(self, cpr=None):
         self._updateThermo()
-        val = getattr(self, '_cp0_R', 0.0)
-        res = [val]
+        val = hrt[0] - self._s0_R
+        if grt is not None:
+            grt[0] = val
+            return grt
+        return np.array([val], dtype=float)
+
+    def getCp_R(self, cpr: Optional[np.ndarray] = None) -> np.ndarray:
+        self._updateThermo()
+        val = getattr(self, "_cp0_R", 0.0)
         if cpr is not None:
             cpr[0] = val
             return cpr
-        return res
+        return np.array([val], dtype=float)
 
-    def getIntEnergy_RT(self, urt=None):
+    def getIntEnergy_RT(self, urt: Optional[np.ndarray] = None) -> np.ndarray:
         self._updateThermo()
         mol_dens = self.molarDensity()
         if mol_dens <= 0.0:
-            mol_dens = 1.0
-        h0 = getattr(self, '_h0_RT', 0.0)
+            dens = max(self.density(), 1e-30)
+            mw = self.molecularWeight(0) if self.nSpecies() > 0 else 1.0
+            mol_dens = dens / mw
+        h0 = getattr(self, "_h0_RT", 0.0)
         rt_val = self.RT()
         p0_val = self.refPressure()
-        val = h0 - p0_val / mol_dens / rt_val
-        res = [val]
+        val = h0 - (p0_val / max(mol_dens, 1e-30)) / rt_val
         if urt is not None:
             urt[0] = val
             return urt
-        return res
+        return np.array([val], dtype=float)
 
-    def getIntEnergy_RT_ref(self, urt=None):
+    def getIntEnergy_RT_ref(self, urt: Optional[np.ndarray] = None) -> np.ndarray:
         return self.getIntEnergy_RT(urt)
 
-    def initThermo(self):
-        super().initThermo()
+    def initThermo(self) -> None:
+        from .constants import CanteraError
+        if self.nSpecies() != 1:
+            raise CanteraError("StoichSubstance::initThermo",
+                "stoichiometric substances may only contain one species.")
         self._p0 = self.refPressure()
+        super().initThermo()
 
-    def getSpeciesParameters(self, name: str, speciesNode=None):
+    def getSpeciesParameters(self, name: str, speciesNode: Optional[dict] = None) -> dict:
         super().getSpeciesParameters(name, speciesNode)
-        res = {"density": self.density(), "molar-volume": self.meanMolecularWeight() / max(self.density(), 1e-30)}
+        dens = max(self.density(), 1e-30)
+        mw = self.molecularWeight(0) if self.nSpecies() > 0 else 1.0
+        res = {"density": self.density(), "molar-volume": mw / dens}
         if speciesNode is not None and isinstance(speciesNode, dict):
             speciesNode.update(res)
         return res
+
+    @classmethod
+    def from_mechanism(cls, mech_or_path: Any, phase_name: Optional[str] = None) -> StoichSubstance:
+        from .mechanism import load_mechanism, Mechanism
+        from .thermo import create_species_thermo
+        mech = mech_or_path if isinstance(mech_or_path, Mechanism) else load_mechanism(mech_or_path)
+        if phase_name is None and mech.phases: phase_name = mech.phases[0].name
+        p_obj = mech.phase(phase_name) if mech.phases else None
+        p_name = p_obj.name if p_obj else (phase_name or "stoich")
+        sub_inst = cls()
+        sub_inst.name = p_name
+        if hasattr(mech, 'elements') and mech.elements:
+            for el in mech.elements:
+                el_name = el.name if hasattr(el, 'name') else str(el)
+                sub_inst.addElement(el_name)
+        elif hasattr(p_obj, 'elements') and p_obj.elements:
+            for el in p_obj.elements:
+                el_name = el.name if hasattr(el, 'name') else str(el)
+                sub_inst.addElement(el_name)
+        for s in mech.species:
+            p_spec_names = [sp.name if hasattr(sp, 'name') else str(sp) for sp in p_obj.species] if (p_obj and hasattr(p_obj, 'species')) else None
+            if p_spec_names is None or s.name in p_spec_names:
+                if getattr(s, 'composition', None):
+                    for el_name in s.composition.keys():
+                        if el_name not in sub_inst.elementNames():
+                            sub_inst.addElement(el_name)
+                poly = create_species_thermo(s.thermo) if s.thermo else None
+                from .phases import PhaseSpecies
+                sp_obj = PhaseSpecies(s.name, s.molecular_weight, poly, s.charge, composition=getattr(s, 'composition', {}), equation_of_state=getattr(s, 'equation_of_state', {}), input_data=getattr(s, 'input_data', {}))
+                sub_inst.addSpecies(sp_obj)
+                # Assign density from species EOS
+                eos = getattr(s, "equation_of_state", {})
+                if isinstance(eos, dict) and eos.get("model") == "constant-volume":
+                    from .units import convert
+                    if "density" in eos:
+                        raw_rho = eos["density"]
+                        rho = convert(float(raw_rho.split()[0]), raw_rho.split()[1], "kg/m^3") if isinstance(raw_rho, str) and len(raw_rho.split()) == 2 else float(raw_rho)
+                        sub_inst.assignDensity(rho)
+                    elif "molar-volume" in eos:
+                        raw_mv = eos["molar-volume"]
+                        mv = convert(float(raw_mv.split()[0]), raw_mv.split()[1], "m^3/kmol") if isinstance(raw_mv, str) and len(raw_mv.split()) == 2 else float(raw_mv)
+                        sub_inst.assignDensity(s.molecular_weight / max(mv, 1e-30))
+                    elif "molar-density" in eos:
+                        raw_md = eos["molar-density"]
+                        md = convert(float(raw_md.split()[0]), raw_md.split()[1], "kmol/m^3") if isinstance(raw_md, str) and len(raw_md.split()) == 2 else float(raw_md)
+                        sub_inst.assignDensity(s.molecular_weight * md)
+                break
+        sub_inst.initThermo()
+        if p_obj and p_obj.state:
+            st = p_obj.state
+            if "T" in st: sub_inst.setTemperature(float(str(st["T"]).split()[0]))
+            if "P" in st: sub_inst.setPressure(float(str(st["P"]).split()[0]))
+        return sub_inst

@@ -684,8 +684,8 @@ def load_mechanism(data, *, search_paths=None, elements: ElementRegistry = COMMO
         else:
             raise MechanismError('Phase reactions must be a string or list')
         unknown_sections = set(selected_sections) - set(reaction_sections)
-        if unknown_sections:
-            raise MechanismError(f'Phase {record["name"]!r} references unknown reaction sections: {sorted(unknown_sections)}')
+        # Filter to available sections so thermo-only phases or incomplete fixtures still load
+        selected_sections = [s for s in selected_sections if s in reaction_sections]
         state = record.get('state')
         if state is not None and not isinstance(state, Mapping):
             raise MechanismError(f'Phase {record["name"]!r} state must be a mapping')

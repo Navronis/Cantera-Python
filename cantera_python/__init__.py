@@ -26,6 +26,10 @@ from .cubic_eos import (MixtureFugacityTP, PengRobinson, RedlichKwongMFTP,
 from .surface import (IdealSurfacePhase, SurfaceSpecies, Interface,
                     InterfaceReaction, InterfaceKinetics)
 from .ideal_solid import IdealSolidSolution
+from .phases import (SingleSpeciesTP, SurfPhase, EdgePhase, MetalPhase,
+                    IdealSolidSolnPhase, CoverageDependentSurfPhase)
+from .stoich import StoichSubstance
+
 from .stoich import StoichiometricSubstance
 from .fixed_stoichiometry import FixedStoichiometryPhase
 from .equilibrium import (EquilibriumError, IdealGasEquilibrium,

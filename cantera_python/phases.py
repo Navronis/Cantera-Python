@@ -13,7 +13,34 @@ from typing import Sequence, Mapping, Any, Optional, Dict, List, Tuple
 import numpy as np
 
 from .constants import GasConstant, OneAtm, SmallNumber, Faraday
-from .elements import ElementRegistry, COMMON_ELEMENTS
+from .elements import ElementRegistry, COMMON_ELEMENTS, getElementWeight
+
+
+def _parse_state_scalar(val: Any, default_unit: str = "K") -> float:
+    if isinstance(val, (int, float)):
+        return float(val)
+    if isinstance(val, str):
+        from .units import convert
+        parts = val.strip().split(maxsplit=1)
+        if len(parts) == 2:
+            return float(convert(float(parts[0]), parts[1], default_unit))
+        return float(parts[0])
+    return float(val)
+
+class PhaseSpecies:
+    """Species representation used by ThermoPhase and its derived classes."""
+    def __init__(self, name: str, molecular_weight: float, thermo: Any = None, charge: float = 0.0,
+                 size: float = 1.0, equation_of_state: Optional[dict] = None, input_data: Optional[dict] = None,
+                 composition: Optional[dict] = None):
+        self.name = str(name)
+        mw = float(molecular_weight)
+        self.molecular_weight = max(mw, 1e-20)
+        self.thermo = thermo
+        self.charge = float(charge)
+        self.size = float(size)
+        self.equation_of_state = equation_of_state or {}
+        self.input_data = input_data or {}
+        self.composition = dict(composition or {})
 
 
 class Phase:
@@ -79,7 +106,7 @@ class Phase:
         if len(self._atomic_weights) != len(self._element_names):
             weights = []
             for el_name in self._element_names:
-                w = COMMON_ELEMENTS.get(el_name, 1.008)
+                w = getElementWeight(el_name)
                 weights.append(float(w))
             self._atomic_weights = np.array(weights, dtype=float)
         return self._atomic_weights.copy()
@@ -110,6 +137,10 @@ class Phase:
         """Number of chemical species contained in this phase."""
         return len(self._species_names)
 
+    @property
+    def n_species(self) -> int:
+        return len(self._species_names)
+
     def speciesIndex(self, name: str) -> int:
         """Return index of species by name or alias."""
         resolved = self._species_aliases.get(name, name)
@@ -126,9 +157,17 @@ class Phase:
         self.checkSpeciesIndex(k)
         return self._species_names[k]
 
+    def species_name(self, k: int) -> str:
+        self.checkSpeciesIndex(k)
+        return self._species_names[k]
+
     def speciesNames(self) -> List[str]:
         """Return list of species names."""
         return list(self._species_names)
+
+    @property
+    def species_names(self) -> Tuple[str, ...]:
+        return tuple(self._species_names)
 
     def molecularWeight(self, k: int) -> float:
         """Return molecular weight of species k in kg/kmol."""
@@ -159,7 +198,8 @@ class Phase:
     def meanMolecularWeight(self) -> float:
         """Calculate mean molecular weight: sum(X_k * M_k) or 1.0 / sum(Y_k / M_k)."""
         if len(self._mole_fractions) > 0 and np.sum(self._mole_fractions) > 0.0:
-            return float(np.sum(self._mole_fractions * self._mol_weights))
+            mmw = float(np.sum(self._mole_fractions * self._mol_weights))
+            return max(mmw, 1e-20)
         if len(self._mass_fractions) > 0 and np.sum(self._mass_fractions) > 0.0:
             inv_sum = float(np.sum(self._mass_fractions / np.maximum(self._mol_weights, 1e-12)))
             return 1.0 / max(inv_sum, 1e-12)
@@ -172,11 +212,61 @@ class Phase:
     def molarDensity(self) -> float:
         """Molar density in kmol/m^3: rho / meanMolecularWeight."""
         mean_mw = self.meanMolecularWeight()
-        return float(self._dens / max(mean_mw, 1e-12))
+        if mean_mw <= 0.0:
+            return 0.0
+        return float(self._dens / mean_mw)
 
     def molarVolume(self) -> float:
         """Molar volume in m^3/kmol: 1.0 / molarDensity."""
         return 1.0 / max(self.molarDensity(), 1e-15)
+
+    @property
+    def T(self) -> float:
+        return self.temperature()
+
+    @T.setter
+    def T(self, val: float) -> None:
+        self.setTemperature(val)
+
+    @property
+    def P(self) -> float:
+        return self.pressure()
+
+    @P.setter
+    def P(self, val: float) -> None:
+        self.setPressure(val)
+
+    @property
+    def X(self) -> np.ndarray:
+        return self.moleFractions()
+
+    @X.setter
+    def X(self, val: Any) -> None:
+        if isinstance(val, (dict, str)):
+            self.setMoleFractionsByName(val)
+        else:
+            self.setMoleFractions(val)
+
+    @property
+    def Y(self) -> np.ndarray:
+        return self.massFractions()
+
+    @Y.setter
+    def Y(self, val: Any) -> None:
+        if isinstance(val, (dict, str)):
+            self.setMassFractionsByName(val)
+        else:
+            self.setMassFractions(val)
+
+    @property
+    def TP(self) -> Tuple[float, float]:
+        return self.temperature(), self.pressure()
+
+    @TP.setter
+    def TP(self, values: Tuple[float, float]) -> None:
+        t, p = values
+        self.setTemperature(t)
+        self.setPressure(p)
 
     def temperature(self) -> float:
         """Temperature in Kelvin."""
@@ -221,6 +311,29 @@ class Phase:
         """Set temperature and density simultaneously."""
         self.setTemperature(T)
         self.setDensity(rho)
+
+    def setState_TP(self, T: float, P: float) -> None:
+        """Set temperature [K] and pressure [Pa]."""
+        self.setTemperature(T)
+        self.setPressure(P)
+
+    def setState_TPX(self, T: float, P: float, X: Any) -> None:
+        """Set temperature [K], pressure [Pa], and mole fractions."""
+        self.setTemperature(T)
+        self.setPressure(P)
+        if isinstance(X, (str, dict)):
+            self.setMoleFractionsByName(X)
+        else:
+            self.setMoleFractions(X)
+
+    def setState_TPY(self, T: float, P: float, Y: Any) -> None:
+        """Set temperature [K], pressure [Pa], and mass fractions."""
+        self.setTemperature(T)
+        self.setPressure(P)
+        if isinstance(Y, (str, dict)):
+            self.setMassFractionsByName(Y)
+        else:
+            self.setMassFractions(Y)
 
     def nAtoms(self, k: int, m: int) -> float:
         """Number of atoms of element index m in species index k."""
@@ -676,12 +789,18 @@ class Phase:
         idx = len(self._species_names)
         self._species_names.append(name)
         self._species_indices[name] = idx
-        mw = getattr(spec, "molecular_weight", getattr(spec, "mw", 1.0))
-        self._mol_weights = np.append(self._mol_weights, float(mw))
+        mw = float(getattr(spec, "molecular_weight", getattr(spec, "mw", 1.0)))
+        if mw <= 0.0:
+            mw = 1e-20
+        self._mol_weights = np.append(self._mol_weights, mw)
         ch = getattr(spec, "charge", 0.0)
         self._species_charge = np.append(self._species_charge, float(ch))
-        self._mole_fractions = np.append(self._mole_fractions, 0.0)
-        self._mass_fractions = np.append(self._mass_fractions, 0.0)
+        if len(self._species_names) == 1:
+            self._mole_fractions = np.array([1.0], dtype=float)
+            self._mass_fractions = np.array([1.0], dtype=float)
+        else:
+            self._mole_fractions = np.append(self._mole_fractions, 0.0)
+            self._mass_fractions = np.append(self._mass_fractions, 0.0)
         if not hasattr(self, "_species"):
             self._species = []
         self._species.append(spec)
@@ -714,7 +833,7 @@ class Phase:
         idx = len(self._element_names)
         self._element_names.append(name)
         self._element_indices[name] = idx
-        w = weight if weight is not None else COMMON_ELEMENTS.get(name, 1.008)
+        w = weight if weight is not None else getElementWeight(name)
         self._atomic_weights = np.append(self._atomic_weights, float(w))
         return True
 
@@ -962,6 +1081,46 @@ class ThermoPhase(Phase):
     def standardConcentration(self, k: int = 0) -> float:
         """Standard concentration of species k in kmol/m^3."""
         return float(self.molarDensity())
+
+    @property
+    def standard_concentrations(self) -> Tuple[float, ...]:
+        return tuple(self.standardConcentration(k) for k in range(self.nSpecies()))
+
+    @property
+    def chemical_potentials(self) -> np.ndarray:
+        mu = np.zeros(self.nSpecies(), dtype=float)
+        self.getChemPotentials(mu)
+        return mu
+
+    @property
+    def standard_chemical_potentials(self) -> np.ndarray:
+        mu0 = np.zeros(self.nSpecies(), dtype=float)
+        self.getStandardChemPotentials(mu0)
+        return mu0
+
+    @property
+    def partial_molar_enthalpies(self) -> np.ndarray:
+        h = np.zeros(self.nSpecies(), dtype=float)
+        self.getPartialMolarEnthalpies(h)
+        return h
+
+    @property
+    def partial_molar_entropies(self) -> np.ndarray:
+        s = np.zeros(self.nSpecies(), dtype=float)
+        self.getPartialMolarEntropies(s)
+        return s
+
+    @property
+    def partial_molar_cp(self) -> np.ndarray:
+        cp = np.zeros(self.nSpecies(), dtype=float)
+        self.getPartialMolarCp(cp)
+        return cp
+
+    @property
+    def partial_molar_volumes(self) -> np.ndarray:
+        v = np.zeros(self.nSpecies(), dtype=float)
+        self.getPartialMolarVolumes(v)
+        return v
 
     def getLnActivityCoefficients(self, lnAct: np.ndarray) -> None:
         """Compute natural logarithms of activity coefficients: ln(gamma_k)."""
@@ -1222,25 +1381,197 @@ class SingleSpeciesTP(ThermoPhase):
 
     def __init__(self, name: str = ""):
         super().__init__(name)
-        if len(self._species_names) == 0:
-            self._species_names = [name or "pure"]
-            self._species_indices = {self._species_names[0]: 0}
-            self._mol_weights = np.array([28.97], dtype=float)
-            self._mole_fractions = np.array([1.0], dtype=float)
-            self._mass_fractions = np.array([1.0], dtype=float)
+        self._press = OneAtm
+        self._p0 = OneAtm
+        self._h0_RT = 0.0
+        self._cp0_R = 0.0
+        self._s0_R = 0.0
+        self._tlast = None
+        self._species_names = []
+        self._species_indices = {}
+        self._mol_weights = np.array([], dtype=float)
+        self._mole_fractions = np.array([], dtype=float)
+        self._mass_fractions = np.array([], dtype=float)
+
+    def SingleSpeciesTP(self) -> SingleSpeciesTP:
+        self._state_mf_number += 1
+        return self
 
     def type(self) -> str:
-        """Type identifier."""
         return "SingleSpecies"
 
     def isPure(self) -> bool:
-        """Always True for single-species phase."""
-        n = self.nSpecies()
-        return n <= 1
+        return True
+
+    def enthalpy_mole(self) -> float:
+        hbar = np.zeros(1, dtype=float)
+        self.getPartialMolarEnthalpies(hbar)
+        return float(hbar[0])
+
+    def intEnergy_mole(self) -> float:
+        ubar = np.zeros(1, dtype=float)
+        self.getPartialMolarIntEnergies(ubar)
+        return float(ubar[0])
+
+    def entropy_mole(self) -> float:
+        sbar = np.zeros(1, dtype=float)
+        self.getPartialMolarEntropies(sbar)
+        return float(sbar[0])
+
+    def gibbs_mole(self) -> float:
+        gbar = np.zeros(1, dtype=float)
+        self.getChemPotentials(gbar)
+        return float(gbar[0])
+
+    def cp_mole(self) -> float:
+        cpbar = np.zeros(1, dtype=float)
+        self.getCp_R(cpbar)
+        return float(cpbar[0] * GasConstant)
+
+    def cv_mole(self) -> float:
+        cvbar = self.cp_mole()
+        alpha = self.thermalExpansionCoeff()
+        beta = self.isothermalCompressibility()
+        dens = max(self.density(), 1e-30)
+        mw = self.molecularWeight(0) if self.nSpecies() > 0 else 1.0
+        V = mw / dens
+        T = self.temperature()
+        if beta != 0.0:
+            cvbar -= alpha * alpha * V * T / beta
+        return float(cvbar)
+
+    def getActivities(self, a: Optional[np.ndarray] = None) -> np.ndarray:
+        if a is None:
+            a = np.ones(1, dtype=float)
+        else:
+            a[0] = 1.0
+        return a
+
+    def getActivityCoefficients(self, ac: Optional[np.ndarray] = None) -> np.ndarray:
+        if ac is None:
+            ac = np.ones(1, dtype=float)
+        else:
+            ac[0] = 1.0
+        return ac
+
+    def getChemPotentials(self, mu: Optional[np.ndarray] = None) -> np.ndarray:
+        return self.getStandardChemPotentials(mu)
+
+    def getPartialMolarEnthalpies(self, hbar: Optional[np.ndarray] = None) -> np.ndarray:
+        hbar = self.getEnthalpy_RT(hbar)
+        hbar[0] *= self.RT()
+        return hbar
+
+    def getPartialMolarIntEnergies(self, ubar: Optional[np.ndarray] = None) -> np.ndarray:
+        ubar = self.getIntEnergy_RT(ubar)
+        ubar[0] *= self.RT()
+        return ubar
+
+    def getPartialMolarEntropies(self, sbar: Optional[np.ndarray] = None) -> np.ndarray:
+        sbar = self.getEntropy_R(sbar)
+        sbar[0] *= GasConstant
+        return sbar
+
+    def getPartialMolarCp(self, cpbar: Optional[np.ndarray] = None) -> np.ndarray:
+        cpbar = self.getCp_R(cpbar)
+        cpbar[0] *= GasConstant
+        return cpbar
+
+    def getPartialMolarVolumes(self, vbar: Optional[np.ndarray] = None) -> np.ndarray:
+        if vbar is None:
+            vbar = np.zeros(1, dtype=float)
+        dens = max(self.density(), 1e-30)
+        mw = self.molecularWeight(0) if self.nSpecies() > 0 else 1.0
+        vbar[0] = mw / dens
+        return vbar
+
+    def getStandardVolumes(self, vbar: Optional[np.ndarray] = None) -> np.ndarray:
+        if vbar is None:
+            vbar = np.zeros(1, dtype=float)
+        dens = max(self.density(), 1e-30)
+        mw = self.molecularWeight(0) if self.nSpecies() > 0 else 1.0
+        vbar[0] = mw / dens
+        return vbar
+
+    def getEnthalpy_RT_ref(self, hrt: Optional[np.ndarray] = None) -> np.ndarray:
+        if hrt is None:
+            hrt = np.zeros(1, dtype=float)
+        self._updateThermo()
+        hrt[0] = self._h0_RT
+        return hrt
+
+    def getGibbs_RT_ref(self, grt: Optional[np.ndarray] = None) -> np.ndarray:
+        if grt is None:
+            grt = np.zeros(1, dtype=float)
+        self._updateThermo()
+        grt[0] = self._h0_RT - self._s0_R
+        return grt
+
+    def getGibbs_ref(self, g: Optional[np.ndarray] = None) -> np.ndarray:
+        g = self.getGibbs_RT_ref(g)
+        g[0] *= self.RT()
+        return g
+
+    def getEntropy_R_ref(self, er: Optional[np.ndarray] = None) -> np.ndarray:
+        if er is None:
+            er = np.zeros(1, dtype=float)
+        self._updateThermo()
+        er[0] = self._s0_R
+        return er
+
+    def getCp_R_ref(self, cpr: Optional[np.ndarray] = None) -> np.ndarray:
+        if cpr is None:
+            cpr = np.zeros(1, dtype=float)
+        self._updateThermo()
+        cpr[0] = self._cp0_R
+        return cpr
+
+    def setMassFractions(self, y: Any) -> None:
+        pass
+
+    def setMoleFractions(self, x: Any) -> None:
+        pass
+
+    def addSpecies(self, spec: Any) -> bool:
+        if self.nSpecies() != 0:
+            from .constants import CanteraError
+            raise CanteraError("SingleSpeciesTP::addSpecies",
+                "Stoichiometric substances may only contain one species.")
+        added = super().addSpecies(spec)
+        if added:
+            self._mole_fractions = np.array([1.0], dtype=float)
+            self._mass_fractions = np.array([1.0], dtype=float)
+        return added
 
     def _updateThermo(self) -> None:
-        """Update standard-state thermodynamic properties."""
-        self.invalidateCache()
+        tnow = self.temperature()
+        if getattr(self, "_tlast", None) != tnow:
+            mgr = self.speciesThermo()
+            if mgr is not None and mgr.ready(self.nSpecies()) and self.nSpecies() > 0:
+                cpr = np.zeros(1, dtype=float)
+                hrt = np.zeros(1, dtype=float)
+                sr = np.zeros(1, dtype=float)
+                mgr.update_single(0, tnow, cpr, hrt, sr)
+                self._cp0_R = float(cpr[0])
+                self._h0_RT = float(hrt[0])
+                self._s0_R = float(sr[0])
+            elif len(self._species_names) > 0 and hasattr(self, "_species") and len(self._species) > 0:
+                sp0 = self._species[0]
+                th = getattr(sp0, "thermo", None)
+                if th is not None:
+                    if hasattr(th, "updatePropertiesTemp"):
+                        cpr = np.zeros(1, dtype=float)
+                        hrt = np.zeros(1, dtype=float)
+                        sr = np.zeros(1, dtype=float)
+                        th.updatePropertiesTemp(tnow, cpr, hrt, sr)
+                        self._cp0_R = float(cpr[0])
+                        self._h0_RT = float(hrt[0])
+                        self._s0_R = float(sr[0])
+                    else:
+                        self._cp0_R = float(th.cp(tnow) / GasConstant)
+                        self._h0_RT = float(th.h(tnow) / (GasConstant * tnow))
+                        self._s0_R = float(th.s(tnow) / GasConstant)
+            self._tlast = tnow
 
 
 class PureFluidPhase(ThermoPhase):
@@ -1382,90 +1713,1301 @@ class WaterSSTP(SingleSpeciesTP):
 
 
 class SurfPhase(ThermoPhase):
-    """Surface phase with active site density and fractional coverages."""
+    """Thermodynamic model of a 2D surface phase with fractional coverages and active site density."""
 
-    def __init__(self, name: str = ""):
-        super().__init__(name)
-        self._site_density = 1e-9
+    def __init__(self, infile: str = "", id_: str = "", name: str = ""):
+        super().__init__(name=name or id_)
+        super().__init__()
         self._ndim = 2
-        self._coverages = np.array([], dtype=float)
+        self._n0 = 1.0e-9  # site density in kmol/m^2
+        self._logn0 = math.log(self._n0)
+        self._species_size = np.array([], dtype=float)
+        self._logsize = np.array([], dtype=float)
+        self._h0 = np.array([], dtype=float)
+        self._s0 = np.array([], dtype=float)
+        self._cp0 = np.array([], dtype=float)
+        self._mu0 = np.array([], dtype=float)
+        self._tlast = None
+        if infile:
+            self.initThermoFile(infile, id_)
 
-    def SurfPhase(self) -> SurfPhase:
+    def SurfPhase(self, *args, **kwargs) -> SurfPhase:
         self._state_mf_number += 1
         return self
 
     def type(self) -> str:
-        return "Surf"
+        return "surface"
 
     def isCompressible(self) -> bool:
-        matter = self.phaseOfMatter()
         return False
 
+    def size(self, k: int) -> float:
+        if k < len(self._species_size):
+            return float(self._species_size[k])
+        return 1.0
+
     def siteDensity(self) -> float:
-        """Surface site density in kmol/m^2."""
-        return float(self._site_density)
+        return float(self._n0)
 
-    def setSiteDensity(self, s: float) -> None:
-        """Set surface site density in kmol/m^2."""
-        val = float(s)
+    @property
+    def site_density(self) -> float:
+        return float(self._n0)
+
+    @site_density.setter
+    def site_density(self, n0: float) -> None:
+        self.setSiteDensity(n0)
+
+    def setSiteDensity(self, n0: float) -> None:
+        from .constants import CanteraError
+        val = float(n0)
         if val <= 0.0:
-            raise ValueError("Site density must be positive")
-        self._site_density = val
-        self.invalidateCache()
+            raise CanteraError("SurfPhase::setSiteDensity", f"Site density must be positive. Got {val}")
+        self._n0 = val
+        self._logn0 = math.log(val)
+        self.compositionChanged()
 
-    def setCoverages(self, theta: np.ndarray) -> None:
-        """Set surface fractional coverages summing to 1.0."""
+    def setCoverages(self, theta: Any) -> None:
+        from .constants import CanteraError
         arr = np.asarray(theta, dtype=float)
-        tot = float(np.sum(arr))
-        if tot <= 0.0:
-            raise ValueError("Sum of coverages must be positive")
-        self._coverages = arr / tot
-        self.setMoleFractions(self._coverages)
+        if len(arr) != self.nSpecies():
+            raise CanteraError("SurfPhase::setCoverages", f"Array size {len(arr)} != nSpecies {self.nSpecies()}")
+        sum_cov = 0.0
+        for k in range(len(arr)):
+            sum_cov += arr[k] / self.size(k)
+        if sum_cov <= 0.0:
+            raise CanteraError("SurfPhase::setCoverages", "Sum of Coverage fractions is zero or negative")
+        work = np.zeros(self.nSpecies(), dtype=float)
+        for k in range(len(arr)):
+            work[k] = arr[k] / (sum_cov * self.size(k))
+        self.setMoleFractions(work)
 
-    def setCoveragesByName(self, theta) -> None:
-        """Set fractional coverages from mapping or string."""
-        self.setMoleFractionsByName(theta)
-        self._coverages = self._mole_fractions.copy()
+    def setCoveragesNoNorm(self, theta: Any) -> None:
+        from .constants import CanteraError
+        arr = np.asarray(theta, dtype=float)
+        if len(arr) != self.nSpecies():
+            raise CanteraError("SurfPhase::setCoveragesNoNorm", f"Array size {len(arr)} != nSpecies {self.nSpecies()}")
+        sum_cov = 0.0
+        sum2 = 0.0
+        for k in range(len(arr)):
+            sum_cov += arr[k] / self.size(k)
+            sum2 += arr[k]
+        if sum_cov <= 0.0:
+            raise CanteraError("SurfPhase::setCoverages", "Sum of Coverage fractions is zero or negative")
+        work = np.zeros(self.nSpecies(), dtype=float)
+        for k in range(len(arr)):
+            work[k] = arr[k] * sum2 / (sum_cov * self.size(k))
+        self.setMoleFractions_NoNorm(work)
 
-    def getCoverages(self, theta: np.ndarray) -> None:
-        """Copy coverages into user buffer."""
-        n = min(len(theta), len(self._coverages))
-        theta[:n] = self._coverages[:n]
+    @property
+    def coverages(self) -> np.ndarray:
+        return self.getCoverages()
 
-    def _updateThermo(self) -> None:
-        self.invalidateCache()
+    @coverages.setter
+    def coverages(self, theta: Any) -> None:
+        self.setCoverages(theta)
+
+    def getCoverages(self, theta: Optional[np.ndarray] = None) -> np.ndarray:
+        if theta is None:
+            theta = np.zeros(self.nSpecies(), dtype=float)
+        X = self.moleFractions()
+        sum_X = float(np.sum(X))
+        sum_Xs = float(np.sum(X * self._species_size)) if len(self._species_size) == len(X) else 1.0
+        for k in range(self.nSpecies()):
+            theta[k] = X[k] * self.size(k) * sum_X / max(sum_Xs, 1e-30)
+        return theta
+
+    def setCoveragesByName(self, cov: Any) -> None:
+        from .constants import CanteraError
+        if isinstance(cov, str):
+            from .composition import parse_comp_string
+            cov_dict = parse_comp_string(cov, self.speciesNames())
+        elif isinstance(cov, dict):
+            cov_dict = cov
+        else:
+            raise TypeError("Coverages must be specified as string or dictionary")
+        cv = np.zeros(self.nSpecies(), dtype=float)
+        ifound = False
+        for k in range(self.nSpecies()):
+            name = self.speciesName(k)
+            c = float(cov_dict.get(name, 0.0))
+            if c > 0.0:
+                ifound = True
+                cv[k] = c
+        if not ifound:
+            raise CanteraError("SurfPhase::setCoveragesByName", "Input coverages are all zero or negative")
+        self.setCoverages(cv)
+
+    def setState(self, state: dict) -> None:
+        if isinstance(state, dict) and "coverages" in state:
+            self.setCoveragesByName(state["coverages"])
+        super().setState(state)
+
+    def compositionChanged(self) -> None:
+        super().compositionChanged()
+        X = self.moleFractions()
+        if len(X) == self.nSpecies() and self.nSpecies() > 0:
+            q = float(np.sum(X * self._species_size)) if len(self._species_size) == len(X) else 1.0
+            sumX = float(np.sum(X))
+            if sumX > 0.0 and q > 0.0:
+                self.assignDensity(self._n0 * self.meanMolecularWeight() * sumX / q)
+
+    def enthalpy_mole(self) -> float:
+        if self._n0 <= 0.0:
+            return 0.0
+        self._updateThermo()
+        return float(self.mean_X(self._h0))
+
+    def intEnergy_mole(self) -> float:
+        return self.enthalpy_mole()
+
+    def entropy_mole(self) -> float:
+        self._updateThermo()
+        s = 0.0
+        X = self.moleFractions()
+        conc = self.concentrations()
+        for k in range(self.nSpecies()):
+            ratio = max(conc[k] * self.size(k) / self._n0, SmallNumber)
+            s += X[k] * (self._s0[k] - GasConstant * math.log(ratio))
+        return float(s)
+
+    def cp_mole(self) -> float:
+        self._updateThermo()
+        return float(self.mean_X(self._cp0))
+
+    def cv_mole(self) -> float:
+        return self.cp_mole()
+
+    def getPartialMolarEnthalpies(self, hbar: Optional[np.ndarray] = None) -> np.ndarray:
+        hbar = self.getEnthalpy_RT(hbar)
+        hbar[:] *= self.RT()
+        return hbar
+
+    def getPartialMolarEntropies(self, sbar: Optional[np.ndarray] = None) -> np.ndarray:
+        sbar = self.getEntropy_R(sbar)
+        conc = self.concentrations()
+        for k in range(self.nSpecies()):
+            sbar[k] -= math.log(max(conc[k], SmallNumber)) - self.logStandardConc(k)
+            sbar[k] *= GasConstant
+        return sbar
+
+    def getPartialMolarCp(self, cpbar: Optional[np.ndarray] = None) -> np.ndarray:
+        cpbar = self.getCp_R(cpbar)
+        cpbar[:] *= GasConstant
+        return cpbar
+
+    def getPartialMolarVolumes(self, vbar: Optional[np.ndarray] = None) -> np.ndarray:
+        return self.getStandardVolumes(vbar)
+
+    def getStandardChemPotentials(self, mu0: Optional[np.ndarray] = None) -> np.ndarray:
+        if mu0 is None:
+            mu0 = np.zeros(self.nSpecies(), dtype=float)
+        self._updateThermo()
+        mu0[:] = self._mu0
+        return mu0
+
+    def getChemPotentials(self, mu: Optional[np.ndarray] = None) -> np.ndarray:
+        if mu is None:
+            mu = np.zeros(self.nSpecies(), dtype=float)
+        self._updateThermo()
+        mu[:] = self._mu0
+        conc = self.concentrations()
+        for k in range(self.nSpecies()):
+            mu[k] += self.RT() * (math.log(max(conc[k], SmallNumber)) - self.logStandardConc(k))
+        return mu
+
+    @property
+    def activities(self) -> np.ndarray:
+        return self.coverages
+
+    def getActivities(self, a: Optional[np.ndarray] = None) -> np.ndarray:
+        if a is None:
+            a = np.zeros(self.nSpecies(), dtype=float)
+        np.copyto(a, self.coverages)
+        return a
+
+    def getActivityConcentrations(self, c: Optional[np.ndarray] = None) -> np.ndarray:
+        return self.getConcentrations(c)
+
+    def molarVolume(self) -> float:
+        """Because surface phases have no volume, this returns 0.0."""
+        return 0.0
+
+    def standardConcentration(self, k: int = 0) -> float:
+        return float(self._n0 / self.size(k))
+
+    def logStandardConc(self, k: int = 0) -> float:
+        return float(self._logn0 - self._logsize[k])
+
+    def getGibbs_RT(self, grt: Optional[np.ndarray] = None) -> np.ndarray:
+        if grt is None:
+            grt = np.zeros(self.nSpecies(), dtype=float)
+        self._updateThermo()
+        grt[:] = self._mu0 / self.RT()
+        return grt
+
+    def getEnthalpy_RT(self, hrt: Optional[np.ndarray] = None) -> np.ndarray:
+        if hrt is None:
+            hrt = np.zeros(self.nSpecies(), dtype=float)
+        self._updateThermo()
+        hrt[:] = self._h0 / self.RT()
+        return hrt
+
+    def getEntropy_R(self, sr: Optional[np.ndarray] = None) -> np.ndarray:
+        if sr is None:
+            sr = np.zeros(self.nSpecies(), dtype=float)
+        self._updateThermo()
+        sr[:] = self._s0 / GasConstant
+        return sr
+
+    def getCp_R(self, cpr: Optional[np.ndarray] = None) -> np.ndarray:
+        if cpr is None:
+            cpr = np.zeros(self.nSpecies(), dtype=float)
+        self._updateThermo()
+        cpr[:] = self._cp0 / GasConstant
+        return cpr
+
+    def getStandardVolumes(self, vol: Optional[np.ndarray] = None) -> np.ndarray:
+        if vol is None:
+            vol = np.zeros(self.nSpecies(), dtype=float)
+        else:
+            vol.fill(0.0)
+        return vol
+
+    def getGibbs_RT_ref(self, grt: Optional[np.ndarray] = None) -> np.ndarray:
+        return self.getGibbs_RT(grt)
+
+    def getEnthalpy_RT_ref(self, hrt: Optional[np.ndarray] = None) -> np.ndarray:
+        return self.getEnthalpy_RT(hrt)
+
+    def getEntropy_R_ref(self, sr: Optional[np.ndarray] = None) -> np.ndarray:
+        return self.getEntropy_R(sr)
+
+    def getCp_R_ref(self, cprt: Optional[np.ndarray] = None) -> np.ndarray:
+        return self.getCp_R(cprt)
+
+    def addSpecies(self, spec: Any) -> bool:
+        added = super().addSpecies(spec)
+        if added:
+            sz = float(getattr(spec, "size", 1.0))
+            self._species_size = np.append(self._species_size, sz)
+            self._logsize = np.append(self._logsize, math.log(max(sz, 1e-30)))
+            self._h0 = np.append(self._h0, 0.0)
+            self._s0 = np.append(self._s0, 0.0)
+            self._cp0 = np.append(self._cp0, 0.0)
+            self._mu0 = np.append(self._mu0, 0.0)
+            if self.nSpecies() == 1:
+                self.setCoverages(np.array([1.0]))
+        return added
+
+    def _updateThermo(self, force: bool = False) -> None:
+        tnow = self.temperature()
+        if getattr(self, "_tlast", None) != tnow or force:
+            mgr = self.speciesThermo()
+            cpr = np.zeros(self.nSpecies(), dtype=float)
+            hrt = np.zeros(self.nSpecies(), dtype=float)
+            sr = np.zeros(self.nSpecies(), dtype=float)
+            if mgr is not None and mgr.ready(self.nSpecies()):
+                mgr.update(tnow, cpr, hrt, sr)
+            elif hasattr(self, "_species") and len(self._species) == self.nSpecies():
+                for k, sp in enumerate(self._species):
+                    th = getattr(sp, "thermo", None)
+                    if th is not None:
+                        if hasattr(th, "updatePropertiesTemp"):
+                            c1 = np.zeros(1); h1 = np.zeros(1); s1 = np.zeros(1)
+                            th.updatePropertiesTemp(tnow, c1, h1, s1)
+                            cpr[k] = c1[0]; hrt[k] = h1[0]; sr[k] = s1[0]
+                        else:
+                            cpr[k] = th.cp(tnow) / GasConstant
+                            hrt[k] = th.h(tnow) / (GasConstant * tnow)
+                            sr[k] = th.s(tnow) / GasConstant
+            self._h0[:] = hrt * GasConstant * tnow
+            self._s0[:] = sr * GasConstant
+            self._cp0[:] = cpr * GasConstant
+            self._mu0[:] = self._h0 - tnow * self._s0
+            self._tlast = tnow
+
+    def initThermo(self) -> None:
+        if hasattr(self, "_input_map") and "site-density" in self._input_map and self._n0 <= 0.0:
+            raw_sd = self._input_map["site-density"]
+            from .units import convert
+            if isinstance(raw_sd, str):
+                parts = raw_sd.strip().split(maxsplit=1)
+                u_str = f"kmol/m^{self._ndim}"
+                sd = convert(float(parts[0]), parts[1], u_str) if len(parts) == 2 else float(parts[0])
+            else:
+                sd = float(raw_sd)
+            self.setSiteDensity(sd)
+        super().initThermo()
+
+    @classmethod
+    def from_mechanism(cls, mech_or_path: Any, phase_name: Optional[str] = None) -> SurfPhase:
+        from .mechanism import load_mechanism, Mechanism
+        from .thermo import create_species_thermo
+        mech = mech_or_path if isinstance(mech_or_path, Mechanism) else load_mechanism(mech_or_path)
+        if phase_name is None and mech.phases: phase_name = mech.phases[0].name
+        p_obj = mech.phase(phase_name) if mech.phases else None
+        p_name = p_obj.name if p_obj else (phase_name or "surface")
+        sp_inst = cls(name=p_name)
+        if p_obj:
+            if hasattr(p_obj, "site_density") and p_obj.site_density is not None:
+                val = p_obj.site_density
+                if isinstance(val, (int, float)):
+                    from .units import convert
+                    doc_len = mech.units.get("length", "m") if hasattr(mech, "units") and mech.units else "m"
+                    doc_qty = mech.units.get("quantity", "kmol") if hasattr(mech, "units") and mech.units else "kmol"
+                    u_src = f"{doc_qty}/{doc_len}^{sp_inst._ndim}"
+                    u_dest = f"kmol/m^{sp_inst._ndim}"
+                    sp_inst.setSiteDensity(float(convert(float(val), u_src, u_dest)))
+                else:
+                    sp_inst.setSiteDensity(_parse_state_scalar(val, f"kmol/m^{sp_inst._ndim}"))
+            sp_inst._input_map = getattr(p_obj, "input_data", {})
+        for s in mech.species:
+            p_spec_names = [sp.name if hasattr(sp, 'name') else str(sp) for sp in p_obj.species] if (p_obj and hasattr(p_obj, 'species')) else None
+            if p_spec_names is None or s.name in p_spec_names:
+                sz = getattr(s, "size", 1.0)
+                poly = create_species_thermo(s.thermo) if s.thermo else None
+                sp_obj = PhaseSpecies(s.name, s.molecular_weight, poly, s.charge, size=sz, equation_of_state=getattr(s, 'equation_of_state', {}), input_data=getattr(s, 'input_data', {}))
+                sp_inst.addSpecies(sp_obj)
+        sp_inst.initThermo()
+        if p_obj and p_obj.state:
+            st = p_obj.state
+            if "T" in st: sp_inst.setTemperature(_parse_state_scalar(st["T"], "K"))
+            if "coverages" in st: sp_inst.setCoveragesByName(st["coverages"])
+        return sp_inst
 
 
 class EdgePhase(SurfPhase):
     """1D edge thermodynamic phase along surface interfaces."""
 
-    def __init__(self, name: str = ""):
-        super().__init__(name)
+    def __init__(self, infile: str = "", id_: str = "", name: str = ""):
+        super().__init__(name=name or id_)
+        super().__init__()
         self._ndim = 1
+        if infile:
+            self.initThermoFile(infile, id_)
 
-    def EdgePhase(self) -> EdgePhase:
+    def EdgePhase(self, *args, **kwargs) -> EdgePhase:
         self._state_mf_number += 1
         return self
 
     def type(self) -> str:
-        return "Edge"
+        return "edge"
 
 
 class MetalPhase(ThermoPhase):
     """Conduction electron phase in metals for electrochemical interfaces."""
 
-    def __init__(self, name: str = "metal"):
-        super().__init__(name)
+    def __init__(self, infile: str = "", id_: str = "", name: str = ""):
+        super().__init__(name=name or id_)
+        super().__init__()
         self._ndim = 3
+        self._press = OneAtm
+        if infile:
+            self.initThermoFile(infile, id_)
+
+    def MetalPhase(self, *args, **kwargs) -> MetalPhase:
+        return self
 
     def type(self) -> str:
-        return "Metal"
+        return "electron-cloud"
 
     def isCompressible(self) -> bool:
-        matter = self.phaseOfMatter()
         return False
 
+    def enthalpy_mole(self) -> float:
+        return 0.0
 
+    def intEnergy_mole(self) -> float:
+        dens = max(self.density(), 1e-30)
+        mw = self.meanMolecularWeight() if self.nSpecies() > 0 else 1.0
+        return float(-self.pressure() * (mw / dens))
+
+    def entropy_mole(self) -> float:
+        return 0.0
+
+    def gibbs_mole(self) -> float:
+        return 0.0
+
+    def cp_mole(self) -> float:
+        return 0.0
+
+    def cv_mole(self) -> float:
+        return 0.0
+
+    def setPressure(self, pres: float) -> None:
+        self._press = float(pres)
+        self.invalidateCache()
+
+    def pressure(self) -> float:
+        return float(self._press)
+
+    def getChemPotentials(self, mu: Optional[np.ndarray] = None) -> np.ndarray:
+        if mu is None:
+            mu = np.zeros(self.nSpecies(), dtype=float)
+        else:
+            mu.fill(0.0)
+        return mu
+
+    def getEnthalpy_RT(self, hrt: Optional[np.ndarray] = None) -> np.ndarray:
+        if hrt is None:
+            hrt = np.zeros(self.nSpecies(), dtype=float)
+        else:
+            hrt.fill(0.0)
+        return hrt
+
+    def getEntropy_R(self, sr: Optional[np.ndarray] = None) -> np.ndarray:
+        if sr is None:
+            sr = np.zeros(self.nSpecies(), dtype=float)
+        else:
+            sr.fill(0.0)
+        return sr
+
+    def getStandardChemPotentials(self, mu0: Optional[np.ndarray] = None) -> np.ndarray:
+        if mu0 is None:
+            mu0 = np.zeros(self.nSpecies(), dtype=float)
+        else:
+            mu0.fill(0.0)
+        return mu0
+
+    def getActivityConcentrations(self, c: Optional[np.ndarray] = None) -> np.ndarray:
+        if c is None:
+            c = np.ones(self.nSpecies(), dtype=float)
+        else:
+            c.fill(1.0)
+        return c
+
+    def getPartialMolarEnthalpies(self, h: Optional[np.ndarray] = None) -> np.ndarray:
+        if h is None:
+            h = np.zeros(self.nSpecies(), dtype=float)
+        else:
+            h.fill(0.0)
+        return h
+
+    def standardConcentrationUnits(self) -> str:
+        return "1.0"
+
+    def standardConcentration(self, k: int = 0) -> float:
+        return 1.0
+
+    def logStandardConc(self, k: int = 0) -> float:
+        return 0.0
+
+    def initThermo(self) -> None:
+        if hasattr(self, "_input_map") and "density" in self._input_map:
+            raw_rho = self._input_map["density"]
+            from .units import convert
+            if isinstance(raw_rho, str):
+                parts = raw_rho.strip().split(maxsplit=1)
+                rho = convert(float(parts[0]), parts[1], "kg/m^3") if len(parts) == 2 else float(parts[0])
+            else:
+                rho = float(raw_rho)
+            self.assignDensity(rho)
+        super().initThermo()
+
+    @classmethod
+    def from_mechanism(cls, mech_or_path: Any, phase_name: Optional[str] = None) -> MetalPhase:
+        from .mechanism import load_mechanism, Mechanism
+        mech = mech_or_path if isinstance(mech_or_path, Mechanism) else load_mechanism(mech_or_path)
+        if phase_name is None and mech.phases: phase_name = mech.phases[0].name
+        p_obj = mech.phase(phase_name) if mech.phases else None
+        p_name = p_obj.name if p_obj else (phase_name or "metal")
+        m_inst = cls(name=p_name)
+        if p_obj:
+            m_inst._input_map = getattr(p_obj, "input_data", {})
+        for s in mech.species:
+            p_spec_names = [sp.name if hasattr(sp, 'name') else str(sp) for sp in p_obj.species] if (p_obj and hasattr(p_obj, 'species')) else None
+            if p_spec_names is None or s.name in p_spec_names:
+                sp_obj = PhaseSpecies(s.name, s.molecular_weight, None, s.charge, equation_of_state=getattr(s, 'equation_of_state', {}), input_data=getattr(s, 'input_data', {}))
+                m_inst.addSpecies(sp_obj)
+        m_inst.initThermo()
+        if p_obj and p_obj.state:
+            st = p_obj.state
+            if "T" in st: m_inst.setTemperature(_parse_state_scalar(st["T"], "K"))
+            if "P" in st: m_inst.setPressure(_parse_state_scalar(st["P"], "Pa"))
+        return m_inst
+
+
+class IdealSolidSolnPhase(ThermoPhase):
+    """Ideal solid solution model with incompressible thermodynamics."""
+
+    def __init__(self, infile: str = "", id_: str = "", name: str = ""):
+        super().__init__(name=name or id_)
+        super().__init__()
+        self._p0 = OneAtm
+        self._Pcurrent = OneAtm
+        self._formGC = 0
+        self._species_molar_volume = np.array([], dtype=float)
+        self._h0_RT = np.array([], dtype=float)
+        self._cp0_R = np.array([], dtype=float)
+        self._s0_R = np.array([], dtype=float)
+        self._g0_RT = np.array([], dtype=float)
+        self._pp = np.array([], dtype=float)
+        self._tlast = None
+        if infile:
+            self.initThermoFile(infile, id_)
+
+    def IdealSolidSolnPhase(self, *args, **kwargs) -> IdealSolidSolnPhase:
+        return self
+
+    def type(self) -> str:
+        return "ideal-condensed"
+
+    def isIdeal(self) -> bool:
+        return True
+
+    def isCompressible(self) -> bool:
+        return False
+
+    def enthalpy_mole(self) -> float:
+        hbar = np.zeros(self.nSpecies(), dtype=float)
+        self.getPartialMolarEnthalpies(hbar)
+        return float(self.mean_X(hbar))
+
+    def intEnergy_mole(self) -> float:
+        return float(self.enthalpy_mole() - self.pressure() * self.molarVolume())
+
+    def enthalpy_mass(self) -> float:
+        return float(self.enthalpy_mole() / self.meanMolecularWeight())
+
+    def intEnergy_mass(self) -> float:
+        return float(self.intEnergy_mole() / self.meanMolecularWeight())
+
+    def entropy_mole(self) -> float:
+        return float(GasConstant * (self.mean_X(self.entropy_R_ref()) - self.sum_xlogx()))
+
+    def gibbs_mole(self) -> float:
+        mol_dens = self.molarDensity()
+        Pv = (self.pressure() - self._p0) / max(mol_dens, 1e-30)
+        return float(self.RT() * (self.mean_X(self.gibbs_RT_ref()) + self.sum_xlogx()) + Pv)
+
+    def cp_mole(self) -> float:
+        return float(GasConstant * self.mean_X(self.cp_R_ref()))
+
+    def cv_mole(self) -> float:
+        return self.cp_mole()
+
+    def calcDensity(self) -> None:
+        if len(self._species_molar_volume) == self.nSpecies() and self.nSpecies() > 0:
+            X = self.moleFractions()
+            if np.sum(X) > 0.0:
+                v_mol = self.mean_X(self._species_molar_volume)
+                if v_mol > 0.0:
+                    self.assignDensity(self.meanMolecularWeight() / v_mol)
+
+    def pressure(self) -> float:
+        return float(self._Pcurrent)
+
+    def setPressure(self, p: float) -> None:
+        self._Pcurrent = float(p)
+        self.calcDensity()
+        self.invalidateCache()
+
+    def compositionChanged(self) -> None:
+        super().compositionChanged()
+        self.calcDensity()
+
+    def standardConcentrationUnits(self) -> str:
+        if self._formGC == 0:
+            return "1.0"
+        return "kmol/m^3"
+
+    def getActivityConcentrations(self, c: Optional[np.ndarray] = None) -> np.ndarray:
+        if c is None:
+            c = np.zeros(self.nSpecies(), dtype=float)
+        X = self.moleFractions()
+        if self._formGC == 0:
+            c[:] = X
+        elif self._formGC == 1:
+            c[:] = X / self._species_molar_volume
+        elif self._formGC == 2:
+            c[:] = X / self._species_molar_volume[-1]
+        return c
+
+    def standardConcentration(self, k: int = 0) -> float:
+        if self._formGC == 0:
+            return 1.0
+        elif self._formGC == 1:
+            return 1.0 / self._species_molar_volume[k]
+        elif self._formGC == 2:
+            return 1.0 / self._species_molar_volume[-1]
+        return 0.0
+
+    def getActivityCoefficients(self, ac: Optional[np.ndarray] = None) -> np.ndarray:
+        if ac is None:
+            ac = np.ones(self.nSpecies(), dtype=float)
+        else:
+            ac.fill(1.0)
+        return ac
+
+    def getChemPotentials(self, mu: Optional[np.ndarray] = None) -> np.ndarray:
+        if mu is None:
+            mu = np.zeros(self.nSpecies(), dtype=float)
+        delta_p = self._Pcurrent - self._p0
+        g_RT = self.gibbs_RT_ref()
+        X = self.moleFractions()
+        xx = np.maximum(SmallNumber, X)
+        mu[:] = self.RT() * (g_RT + np.log(xx)) + delta_p * self._species_molar_volume
+        return mu
+
+    def getPartialMolarEnthalpies(self, hbar: Optional[np.ndarray] = None) -> np.ndarray:
+        if hbar is None:
+            hbar = np.zeros(self.nSpecies(), dtype=float)
+        _h = self.enthalpy_RT_ref()
+        delta_p = self._Pcurrent - self._p0
+        hbar[:] = _h * self.RT() + delta_p * self._species_molar_volume
+        return hbar
+
+    def getPartialMolarEntropies(self, sbar: Optional[np.ndarray] = None) -> np.ndarray:
+        if sbar is None:
+            sbar = np.zeros(self.nSpecies(), dtype=float)
+        _s = self.entropy_R_ref()
+        X = self.moleFractions()
+        xx = np.maximum(SmallNumber, X)
+        sbar[:] = GasConstant * (_s - np.log(xx))
+        return sbar
+
+    def getPartialMolarCp(self, cpbar: Optional[np.ndarray] = None) -> np.ndarray:
+        if cpbar is None:
+            cpbar = np.zeros(self.nSpecies(), dtype=float)
+        self.getCp_R(cpbar)
+        cpbar *= GasConstant
+        return cpbar
+
+    def getPartialMolarVolumes(self, vbar: Optional[np.ndarray] = None) -> np.ndarray:
+        return self.getStandardVolumes(vbar)
+
+    def getStandardChemPotentials(self, g0: Optional[np.ndarray] = None) -> np.ndarray:
+        if g0 is None:
+            g0 = np.zeros(self.nSpecies(), dtype=float)
+        gibbsrt = self.gibbs_RT_ref()
+        delta_p = self._Pcurrent - self._p0
+        g0[:] = self.RT() * gibbsrt + delta_p * self._species_molar_volume
+        return g0
+
+    def getGibbs_RT(self, grt: Optional[np.ndarray] = None) -> np.ndarray:
+        if grt is None:
+            grt = np.zeros(self.nSpecies(), dtype=float)
+        gibbsrt = self.gibbs_RT_ref()
+        delta_prt = (self._Pcurrent - self._p0) / self.RT()
+        grt[:] = gibbsrt + delta_prt * self._species_molar_volume
+        return grt
+
+    def getEnthalpy_RT(self, hrt: Optional[np.ndarray] = None) -> np.ndarray:
+        if hrt is None:
+            hrt = np.zeros(self.nSpecies(), dtype=float)
+        _h = self.enthalpy_RT_ref()
+        delta_prt = (self._Pcurrent - self._p0) / self.RT()
+        hrt[:] = _h + delta_prt * self._species_molar_volume
+        return hrt
+
+    def getEntropy_R(self, sr: Optional[np.ndarray] = None) -> np.ndarray:
+        if sr is None:
+            sr = np.zeros(self.nSpecies(), dtype=float)
+        sr[:] = self.entropy_R_ref()
+        return sr
+
+    def getIntEnergy_RT(self, urt: Optional[np.ndarray] = None) -> np.ndarray:
+        if urt is None:
+            urt = np.zeros(self.nSpecies(), dtype=float)
+        _h = self.enthalpy_RT_ref()
+        prefrt = self._p0 / self.RT()
+        urt[:] = _h - prefrt * self._species_molar_volume
+        return urt
+
+    def getCp_R(self, cpr: Optional[np.ndarray] = None) -> np.ndarray:
+        if cpr is None:
+            cpr = np.zeros(self.nSpecies(), dtype=float)
+        cpr[:] = self.cp_R_ref()
+        return cpr
+
+    def getStandardVolumes(self, vol: Optional[np.ndarray] = None) -> np.ndarray:
+        if vol is None:
+            vol = np.zeros(self.nSpecies(), dtype=float)
+        vol[:] = self._species_molar_volume
+        return vol
+
+    def getEnthalpy_RT_ref(self, hrt: Optional[np.ndarray] = None) -> np.ndarray:
+        self._updateThermo()
+        if hrt is None:
+            return self._h0_RT.copy()
+        hrt[:] = self._h0_RT
+        return hrt
+
+    def getGibbs_RT_ref(self, grt: Optional[np.ndarray] = None) -> np.ndarray:
+        self._updateThermo()
+        if grt is None:
+            return self._g0_RT.copy()
+        grt[:] = self._g0_RT
+        return grt
+
+    def getGibbs_ref(self, g: Optional[np.ndarray] = None) -> np.ndarray:
+        if g is None:
+            g = np.zeros(self.nSpecies(), dtype=float)
+        self._updateThermo()
+        g[:] = self.RT() * self._g0_RT
+        return g
+
+    def getIntEnergy_RT_ref(self, urt: Optional[np.ndarray] = None) -> np.ndarray:
+        if urt is None:
+            urt = np.zeros(self.nSpecies(), dtype=float)
+        self._updateThermo()
+        prefrt = self._p0 / self.RT()
+        urt[:] = self._h0_RT - prefrt * self._species_molar_volume
+        return urt
+
+    def getEntropy_R_ref(self, er: Optional[np.ndarray] = None) -> np.ndarray:
+        self._updateThermo()
+        if er is None:
+            return self._s0_R.copy()
+        er[:] = self._s0_R
+        return er
+
+    def getCp_R_ref(self, cprt: Optional[np.ndarray] = None) -> np.ndarray:
+        self._updateThermo()
+        if cprt is None:
+            return self._cp0_R.copy()
+        cprt[:] = self._cp0_R
+        return cprt
+
+    def getStandardVolumes_ref(self, vol: Optional[np.ndarray] = None) -> np.ndarray:
+        return self.getStandardVolumes(vol)
+
+    def enthalpy_RT_ref(self) -> np.ndarray:
+        self._updateThermo()
+        return self._h0_RT
+
+    def gibbs_RT_ref(self) -> np.ndarray:
+        self._updateThermo()
+        return self._g0_RT
+
+    def entropy_R_ref(self) -> np.ndarray:
+        self._updateThermo()
+        return self._s0_R
+
+    def cp_R_ref(self) -> np.ndarray:
+        self._updateThermo()
+        return self._cp0_R
+
+    def addSpecies(self, spec: Any) -> bool:
+        added = super().addSpecies(spec)
+        if added:
+            mv = 0.1
+            mw = float(getattr(spec, "molecular_weight", getattr(spec, "mw", 1.0)))
+            eos = getattr(spec, "equation_of_state", {})
+            if isinstance(eos, dict) and eos.get("model") == "constant-volume":
+                from .units import convert
+                if "molar-volume" in eos:
+                    raw_mv = eos["molar-volume"]
+                    if isinstance(raw_mv, str):
+                        parts = raw_mv.strip().split(maxsplit=1)
+                        mv = convert(float(parts[0]), parts[1], "m^3/kmol") if len(parts) == 2 else float(parts[0])
+                    else:
+                        mv = float(raw_mv)
+                elif "density" in eos:
+                    raw_rho = eos["density"]
+                    if isinstance(raw_rho, str):
+                        parts = raw_rho.strip().split(maxsplit=1)
+                        rho = convert(float(parts[0]), parts[1], "kg/m^3") if len(parts) == 2 else float(parts[0])
+                    else:
+                        rho = float(raw_rho)
+                    mv = mw / max(rho, 1e-30)
+                elif "molar-density" in eos:
+                    raw_md = eos["molar-density"]
+                    if isinstance(raw_md, str):
+                        parts = raw_md.strip().split(maxsplit=1)
+                        md = convert(float(parts[0]), parts[1], "kmol/m^3") if len(parts) == 2 else float(parts[0])
+                    else:
+                        md = float(raw_md)
+                    mv = 1.0 / max(md, 1e-30)
+            elif hasattr(spec, "molar_volume"):
+                mv = float(spec.molar_volume)
+            self._species_molar_volume = np.append(self._species_molar_volume, float(mv))
+            self._h0_RT = np.append(self._h0_RT, 0.0)
+            self._g0_RT = np.append(self._g0_RT, 0.0)
+            self._cp0_R = np.append(self._cp0_R, 0.0)
+            self._s0_R = np.append(self._s0_R, 0.0)
+            self._pp = np.append(self._pp, 0.0)
+            self.calcDensity()
+        return added
+
+    def initThermo(self) -> None:
+        self._p0 = self.refPressure()
+        if hasattr(self, "_input_map") and "standard-concentration-basis" in self._input_map:
+            self.setStandardConcentrationModel(self._input_map["standard-concentration-basis"])
+        super().initThermo()
+
+    def setStandardConcentrationModel(self, model: str) -> None:
+        from .constants import CanteraError
+        m = str(model).lower().strip().replace("-", "_")
+        if m in ("unity", "0"):
+            self._formGC = 0
+        elif m in ("species_molar_volume", "molar_volume", "1"):
+            self._formGC = 1
+        elif m in ("solvent_molar_volume", "solvent_volume", "2"):
+            self._formGC = 2
+        else:
+            raise CanteraError("IdealSolidSolnPhase::setStandardConcentrationModel",
+                f"Unknown standard concentration model '{model}'")
+
+    def speciesMolarVolume(self, k: int) -> float:
+        return float(self._species_molar_volume[k])
+
+    def getSpeciesMolarVolumes(self, smv: np.ndarray) -> np.ndarray:
+        smv[:] = self._species_molar_volume
+        return smv
+
+    def setToEquilState(self, mu_RT: np.ndarray) -> None:
+        grt = self.gibbs_RT_ref()
+        pres = 0.0
+        m_p0 = self._p0
+        for k in range(self.nSpecies()):
+            tmp = -grt[k] + mu_RT[k]
+            if tmp < -600.0:
+                self._pp[k] = 0.0
+            elif tmp > 500.0:
+                tmp2 = tmp / 500.0
+                tmp2 *= tmp2
+                self._pp[k] = m_p0 * math.exp(500.0) * tmp2
+            else:
+                self._pp[k] = m_p0 * math.exp(tmp)
+            pres += self._pp[k]
+        self.setMoleFractions(self._pp)
+        self.setPressure(pres)
+
+    def _updateThermo(self) -> None:
+        tnow = self.temperature()
+        if getattr(self, "_tlast", None) != tnow:
+            mgr = self.speciesThermo()
+            if mgr is not None and mgr.ready(self.nSpecies()):
+                mgr.update(tnow, self._cp0_R, self._h0_RT, self._s0_R)
+            elif hasattr(self, "_species") and len(self._species) == self.nSpecies():
+                for k, sp in enumerate(self._species):
+                    th = getattr(sp, "thermo", None)
+                    if th is not None:
+                        if hasattr(th, "updatePropertiesTemp"):
+                            cpr = np.zeros(1); hrt = np.zeros(1); sr = np.zeros(1)
+                            th.updatePropertiesTemp(tnow, cpr, hrt, sr)
+                            self._cp0_R[k] = cpr[0]; self._h0_RT[k] = hrt[0]; self._s0_R[k] = sr[0]
+                        else:
+                            self._cp0_R[k] = th.cp(tnow) / GasConstant
+                            self._h0_RT[k] = th.h(tnow) / (GasConstant * tnow)
+                            self._s0_R[k] = th.s(tnow) / GasConstant
+            self._g0_RT[:] = self._h0_RT - self._s0_R
+            self._tlast = tnow
+
+    @classmethod
+    def from_mechanism(cls, mech_or_path: Any, phase_name: Optional[str] = None) -> IdealSolidSolnPhase:
+        from .mechanism import load_mechanism, Mechanism
+        from .thermo import create_species_thermo
+        mech = mech_or_path if isinstance(mech_or_path, Mechanism) else load_mechanism(mech_or_path)
+        if phase_name is None and mech.phases: phase_name = mech.phases[0].name
+        p_obj = mech.phase(phase_name) if mech.phases else None
+        p_name = p_obj.name if p_obj else (phase_name or "solidSolution")
+        sol_inst = cls(name=p_name)
+        if p_obj:
+            sol_inst._input_map = getattr(p_obj, "input_data", {})
+        for s in mech.species:
+            p_spec_names = [sp.name if hasattr(sp, 'name') else str(sp) for sp in p_obj.species] if (p_obj and hasattr(p_obj, 'species')) else None
+            if p_spec_names is None or s.name in p_spec_names:
+                poly = create_species_thermo(s.thermo) if s.thermo else None
+                sp_obj = PhaseSpecies(s.name, s.molecular_weight, poly, s.charge, equation_of_state=getattr(s, 'equation_of_state', {}), input_data=getattr(s, 'input_data', {}))
+                sol_inst.addSpecies(sp_obj)
+        sol_inst.initThermo()
+        if p_obj and p_obj.state:
+            st = p_obj.state
+            if "T" in st: sol_inst.setTemperature(_parse_state_scalar(st["T"], "K"))
+            if "P" in st: sol_inst.setPressure(_parse_state_scalar(st["P"], "Pa"))
+            if "X" in st: sol_inst.setMoleFractionsByName(st["X"])
+        return sol_inst
+
+
+def _poly4(x: float, c: Sequence[float]) -> float:
+    return c[0] + x * (c[1] + x * (c[2] + x * (c[3] + x * c[4])))
+
+
+def _convert_dep_val(val: Any, default_unit: str, units_dict: Optional[dict] = None) -> float:
+    from .units import convert
+    if isinstance(val, str):
+        parts = val.strip().split(maxsplit=1)
+        if len(parts) == 2:
+            return float(convert(float(parts[0]), parts[1], default_unit))
+        val = float(parts[0])
+    if units_dict:
+        e = units_dict.get("energy", "J")
+        q = units_dict.get("quantity", "kmol")
+        if default_unit == "J/kmol":
+            u_src = f"{e}/{q}"
+        elif default_unit == "J/kmol/K":
+            u_src = f"{e}/{q}/K"
+        else:
+            u_src = default_unit
+        return float(convert(float(val), u_src, default_unit))
+    return float(val)
+
+def _convert_dep_vector(vals: Sequence[Any], default_unit: str, units_dict: Optional[dict] = None) -> List[float]:
+    return [_convert_dep_val(v, default_unit, units_dict) for v in vals]
+
+
+class PolynomialDependency:
+    def __init__(self, k: int, j: int, dep_map: dict):
+        self.k = k
+        self.j = j
+        self.enthalpy_coeffs = [0.0, 0.0, 0.0, 0.0, 0.0]
+        self.entropy_coeffs = [0.0, 0.0, 0.0, 0.0, 0.0]
+        self.isLinear = False
+        m = dep_map.get("model", "linear")
+        u_dict = dep_map.get("units")
+        if m == "linear":
+            self.isLinear = True
+            if "enthalpy" in dep_map:
+                self.enthalpy_coeffs[1] = _convert_dep_val(dep_map["enthalpy"], "J/kmol", u_dict)
+            if "entropy" in dep_map:
+                self.entropy_coeffs[1] = _convert_dep_val(dep_map["entropy"], "J/kmol/K", u_dict)
+        elif m == "polynomial":
+            if "enthalpy-coefficients" in dep_map:
+                h_c = _convert_dep_vector(dep_map["enthalpy-coefficients"], "J/kmol", u_dict)
+                self.enthalpy_coeffs = [0.0] + h_c[:4]
+                while len(self.enthalpy_coeffs) < 5:
+                    self.enthalpy_coeffs.append(0.0)
+            if "entropy-coefficients" in dep_map:
+                s_c = _convert_dep_vector(dep_map["entropy-coefficients"], "J/kmol/K", u_dict)
+                self.entropy_coeffs = [0.0] + s_c[:4]
+                while len(self.entropy_coeffs) < 5:
+                    self.entropy_coeffs.append(0.0)
+
+
+class InterpolativeDependency:
+    def __init__(self, k: int, j: int, dep_map: dict):
+        self.k = k
+        self.j = j
+        self.enthalpy_map = {0.0: 0.0, 1.0: 0.0}
+        self.entropy_map = {0.0: 0.0, 1.0: 0.0}
+        self.isPiecewise = False
+        m = dep_map.get("model", "piecewise-linear")
+        u_dict = dep_map.get("units")
+        if m == "piecewise-linear":
+            self.isPiecewise = True
+            if "enthalpy-change" in dep_map:
+                cov_ch = float(dep_map["enthalpy-change"])
+                raw_low = dep_map.get("enthalpy-low", 0.0)
+                raw_high = dep_map.get("enthalpy-high", 0.0)
+                h_low = _convert_dep_val(raw_low, "J/kmol", u_dict)
+                h_high = _convert_dep_val(raw_high, "J/kmol", u_dict)
+                self.enthalpy_map[cov_ch] = h_low * cov_ch
+                self.enthalpy_map[1.0] = (1.0 - cov_ch) * h_high + self.enthalpy_map[cov_ch]
+            if "entropy-change" in dep_map:
+                cov_ch = float(dep_map["entropy-change"])
+                raw_low = dep_map.get("entropy-low", 0.0)
+                raw_high = dep_map.get("entropy-high", 0.0)
+                s_low = _convert_dep_val(raw_low, "J/kmol/K", u_dict)
+                s_high = _convert_dep_val(raw_high, "J/kmol/K", u_dict)
+                self.entropy_map[cov_ch] = s_low * cov_ch
+                self.entropy_map[1.0] = (1.0 - cov_ch) * s_high + self.entropy_map[cov_ch]
+        elif m == "interpolative":
+            if "enthalpy-coverages" in dep_map and "enthalpies" in dep_map:
+                hcovs = [float(x) for x in dep_map["enthalpy-coverages"]]
+                enthalpies = _convert_dep_vector(dep_map["enthalpies"], "J/kmol", u_dict)
+                self.enthalpy_map = dict(zip(hcovs, enthalpies))
+            if "entropy-coverages" in dep_map and "entropies" in dep_map:
+                scovs = [float(x) for x in dep_map["entropy-coverages"]]
+                entropies = _convert_dep_vector(dep_map["entropies"], "J/kmol/K", u_dict)
+                self.entropy_map = dict(zip(scovs, entropies))
+
+
+class HeatCapacityDependency:
+    def __init__(self, k: int, j: int, coeff_a: float = 0.0, coeff_b: float = 0.0):
+        self.k = k
+        self.j = j
+        self.coeff_a = float(coeff_a)
+        self.coeff_b = float(coeff_b)
+
+
+class CoverageDependentSurfPhase(SurfPhase):
+    """Coverage-dependent surface thermodynamic phase applying adsorbate interaction corrections."""
+
+    def __init__(self, infile: str = "", id_: str = "", name: str = ""):
+        super().__init__(name=name or id_)
+        super().__init__()
+        self._theta_ref = 1.0
+        self._PolynomialDependency: List[PolynomialDependency] = []
+        self._InterpolativeDependency: List[InterpolativeDependency] = []
+        self._HeatCapacityDependency: List[HeatCapacityDependency] = []
+        self._cov = np.array([], dtype=float)
+        self._h_cov = np.array([], dtype=float)
+        self._s_cov = np.array([], dtype=float)
+        self._cp_cov = np.array([], dtype=float)
+        self._mu_cov = np.array([], dtype=float)
+        self._enthalpy = np.array([], dtype=float)
+        self._entropy = np.array([], dtype=float)
+        self._heatcapacity = np.array([], dtype=float)
+        self._chempot = np.array([], dtype=float)
+        self._stateNumlast = -2
+        if infile:
+            self.initThermoFile(infile, id_)
+
+    def CoverageDependentSurfPhase(self, *args, **kwargs) -> CoverageDependentSurfPhase:
+        return self
+
+    def type(self) -> str:
+        return "coverage-dependent-surface"
+
+    def addInterpolativeDependency(self, int_deps: InterpolativeDependency) -> None:
+        self._InterpolativeDependency.append(int_deps)
+
+    def addSpecies(self, spec: Any) -> bool:
+        added = super().addSpecies(spec)
+        if added:
+            self._cov = np.append(self._cov, 0.0)
+            self._h_cov = np.append(self._h_cov, 0.0)
+            self._s_cov = np.append(self._s_cov, 0.0)
+            self._cp_cov = np.append(self._cp_cov, 0.0)
+            self._mu_cov = np.append(self._mu_cov, 0.0)
+            self._enthalpy = np.append(self._enthalpy, 0.0)
+            self._entropy = np.append(self._entropy, 0.0)
+            self._heatcapacity = np.append(self._heatcapacity, 0.0)
+            self._chempot = np.append(self._chempot, 0.0)
+        return added
+
+    def getEnthalpy_RT_ref(self, hrt: Optional[np.ndarray] = None) -> np.ndarray:
+        if hrt is None:
+            hrt = np.zeros(self.nSpecies(), dtype=float)
+        super()._updateThermo()
+        hrt[:] = self._h0 / self.RT()
+        return hrt
+
+    def getEntropy_R_ref(self, sr: Optional[np.ndarray] = None) -> np.ndarray:
+        if sr is None:
+            sr = np.zeros(self.nSpecies(), dtype=float)
+        super()._updateThermo()
+        sr[:] = self._s0 / GasConstant
+        return sr
+
+    def getCp_R_ref(self, cpr: Optional[np.ndarray] = None) -> np.ndarray:
+        if cpr is None:
+            cpr = np.zeros(self.nSpecies(), dtype=float)
+        super()._updateThermo()
+        cpr[:] = self._cp0 / GasConstant
+        return cpr
+
+    def getGibbs_RT_ref(self, grt: Optional[np.ndarray] = None) -> np.ndarray:
+        if grt is None:
+            grt = np.zeros(self.nSpecies(), dtype=float)
+        super()._updateThermo()
+        grt[:] = self._mu0 / self.RT()
+        return grt
+
+    def getEnthalpy_RT(self, hrt: Optional[np.ndarray] = None) -> np.ndarray:
+        if hrt is None:
+            hrt = np.zeros(self.nSpecies(), dtype=float)
+        self._updateTotalThermo()
+        hrt[:] = self._enthalpy / self.RT()
+        return hrt
+
+    def getEntropy_R(self, sr: Optional[np.ndarray] = None) -> np.ndarray:
+        if sr is None:
+            sr = np.zeros(self.nSpecies(), dtype=float)
+        self._updateTotalThermo()
+        sr[:] = self._entropy / GasConstant
+        if self._theta_ref != 1.0:
+            sr[:] -= -math.log(self._theta_ref)
+        return sr
+
+    def getCp_R(self, cpr: Optional[np.ndarray] = None) -> np.ndarray:
+        if cpr is None:
+            cpr = np.zeros(self.nSpecies(), dtype=float)
+        self._updateTotalThermo()
+        cpr[:] = self._heatcapacity / GasConstant
+        return cpr
+
+    def getGibbs_RT(self, grt: Optional[np.ndarray] = None) -> np.ndarray:
+        if grt is None:
+            grt = np.zeros(self.nSpecies(), dtype=float)
+        self._updateTotalThermo()
+        grt[:] = self._chempot / self.RT()
+        if self._theta_ref != 1.0:
+            grt[:] += -math.log(self._theta_ref)
+        return grt
+
+    def getStandardChemPotentials(self, mu0: Optional[np.ndarray] = None) -> np.ndarray:
+        if mu0 is None:
+            mu0 = np.zeros(self.nSpecies(), dtype=float)
+        self._updateTotalThermo()
+        mu0[:] = self._chempot
+        if self._theta_ref != 1.0:
+            mu0[:] += self.RT() * -math.log(self._theta_ref)
+        return mu0
+
+    def getPartialMolarEnthalpies(self, hbar: Optional[np.ndarray] = None) -> np.ndarray:
+        if hbar is None:
+            hbar = np.zeros(self.nSpecies(), dtype=float)
+        self._updateTotalThermo()
+        hbar[:] = self._enthalpy
+        return hbar
+
+    def getPartialMolarEntropies(self, sbar: Optional[np.ndarray] = None) -> np.ndarray:
+        if sbar is None:
+            sbar = np.zeros(self.nSpecies(), dtype=float)
+        self._updateTotalThermo()
+        sbar[:] = self._entropy
+        cov = self.getCoverages()
+        for k in range(self.nSpecies()):
+            sbar[k] -= GasConstant * math.log(max(cov[k], SmallNumber) / self._theta_ref)
+        return sbar
+
+    def getPartialMolarCp(self, cpbar: Optional[np.ndarray] = None) -> np.ndarray:
+        if cpbar is None:
+            cpbar = np.zeros(self.nSpecies(), dtype=float)
+        self._updateTotalThermo()
+        cpbar[:] = self._heatcapacity
+        return cpbar
+
+    def getChemPotentials(self, mu: Optional[np.ndarray] = None) -> np.ndarray:
+        if mu is None:
+            mu = np.zeros(self.nSpecies(), dtype=float)
+        self._updateTotalThermo()
+        mu[:] = self._chempot
+        cov = self.getCoverages()
+        for k in range(self.nSpecies()):
+            mu[k] += self.RT() * math.log(max(cov[k], SmallNumber) / self._theta_ref)
+        return mu
+
+    def enthalpy_mole(self) -> float:
+        self._updateTotalThermo()
+        return float(self.mean_X(self._enthalpy))
+
+    def entropy_mole(self) -> float:
+        self._updateTotalThermo()
+        s = 0.0
+        X = self.moleFractions()
+        cov = self.getCoverages()
+        for k in range(self.nSpecies()):
+            s += X[k] * (self._entropy[k] - GasConstant * math.log(max(cov[k], SmallNumber) / self._theta_ref))
+        return float(s)
+
+    def cp_mole(self) -> float:
+        self._updateTotalThermo()
+        return float(self.mean_X(self._heatcapacity))
+
+    def _updateCovDepThermo(self) -> None:
+        stateNumnow = self._state_mf_number
+        tnow = self.temperature()
+        if self._stateNumlast != stateNumnow or getattr(self, "_tlast_cov", None) != tnow:
+            self._h_cov.fill(0.0)
+            self._s_cov.fill(0.0)
+            self._cp_cov.fill(0.0)
+            cov = self.getCoverages()
+            self._cov[:] = cov
+
+            for item in self._PolynomialDependency:
+                self._h_cov[item.k] += _poly4(cov[item.j], item.enthalpy_coeffs)
+                self._s_cov[item.k] += _poly4(cov[item.j], item.entropy_coeffs)
+
+            for item in self._InterpolativeDependency:
+                c_j = float(cov[item.j])
+                h_keys = sorted(item.enthalpy_map.keys())
+                idx = np.searchsorted(h_keys, c_j, side="right")
+                if idx == 0: idx = 1
+                if idx >= len(h_keys): idx = len(h_keys) - 1
+                k_low, k_high = h_keys[idx-1], h_keys[idx]
+                v_low, v_high = item.enthalpy_map[k_low], item.enthalpy_map[k_high]
+                frac = (c_j - k_low) / max(k_high - k_low, 1e-30)
+                self._h_cov[item.k] += v_low + frac * (v_high - v_low)
+
+                s_keys = sorted(item.entropy_map.keys())
+                idx = np.searchsorted(s_keys, c_j, side="right")
+                if idx == 0: idx = 1
+                if idx >= len(s_keys): idx = len(s_keys) - 1
+                k_low, k_high = s_keys[idx-1], s_keys[idx]
+                v_low, v_high = item.entropy_map[k_low], item.entropy_map[k_high]
+                frac = (c_j - k_low) / max(k_high - k_low, 1e-30)
+                self._s_cov[item.k] += v_low + frac * (v_high - v_low)
+
+            for item in self._HeatCapacityDependency:
+                a = item.coeff_a
+                b = item.coeff_b
+                c2 = cov[item.j] * cov[item.j]
+                self._cp_cov[item.k] += (a * math.log(tnow) + b) * c2
+                int_cp_tnow = tnow * (a * math.log(tnow) - a + b)
+                int_cp_298 = 298.15 * (a * math.log(298.15) - a + b)
+                self._h_cov[item.k] += (int_cp_tnow - int_cp_298) * c2
+                int_cp_T_tnow = math.log(tnow) * (a * math.log(tnow) + 2 * b)
+                int_cp_T_298 = math.log(298.15) * (a * math.log(298.15) + 2 * b)
+                self._s_cov[item.k] += 0.5 * (int_cp_T_tnow - int_cp_T_298) * c2
+
+            self._mu_cov[:] = self._h_cov - tnow * self._s_cov
+            self._stateNumlast = stateNumnow
+            self._tlast_cov = tnow
+
+    def _updateTotalThermo(self) -> None:
+        self._updateCovDepThermo()
+        super()._updateThermo()
+        self._enthalpy[:] = self._h0 + self._h_cov
+        self._entropy[:] = self._s0 + self._s_cov
+        self._heatcapacity[:] = self._cp0 + self._cp_cov
+        self._chempot[:] = self._mu0 + self._mu_cov
+
+    def initThermo(self) -> None:
+        super().initThermo()
+        if hasattr(self, "_input_map") and "reference-state-coverage" in self._input_map:
+            self._theta_ref = float(self._input_map["reference-state-coverage"])
+        # Parse coverage-dependencies from species input data
+        for k, sp_name in enumerate(self.speciesNames()):
+            sp_obj = self.species(k) if hasattr(self, "species") and callable(self.species) else (self._species[k] if hasattr(self, "_species") else None)
+            input_d = getattr(sp_obj, "input_data", {})
+            if "coverage-dependencies" in input_d:
+                cov_map = input_d["coverage-dependencies"]
+                for other_name, dep_dict in cov_map.items():
+                    if other_name in self._species_indices:
+                        j = self._species_indices[other_name]
+                        m = dep_dict.get("model", "linear")
+                        if m in ("linear", "polynomial"):
+                            self._PolynomialDependency.append(PolynomialDependency(k, j, dep_dict))
+                        elif m in ("piecewise-linear", "interpolative"):
+                            self._InterpolativeDependency.append(InterpolativeDependency(k, j, dep_dict))
+                        if "heat-capacity-a" in dep_dict:
+                            raw_a = dep_dict["heat-capacity-a"]
+                            raw_b = dep_dict["heat-capacity-b"]
+                            u_dict = dep_dict.get("units")
+                            a_val = _convert_dep_val(raw_a, "J/kmol/K", u_dict)
+                            b_val = _convert_dep_val(raw_b, "J/kmol/K", u_dict)
+                            self._HeatCapacityDependency.append(HeatCapacityDependency(k, j, a_val, b_val))
+
+    @classmethod
+    def from_mechanism(cls, mech_or_path: Any, phase_name: Optional[str] = None) -> CoverageDependentSurfPhase:
+        from .mechanism import load_mechanism, Mechanism
+        from .thermo import create_species_thermo
+        mech = mech_or_path if isinstance(mech_or_path, Mechanism) else load_mechanism(mech_or_path)
+        if phase_name is None and mech.phases: phase_name = mech.phases[0].name
+        p_obj = mech.phase(phase_name) if mech.phases else None
+        p_name = p_obj.name if p_obj else (phase_name or "covdep")
+        sp_inst = cls(name=p_name)
+        if p_obj:
+            if hasattr(p_obj, "site_density") and p_obj.site_density is not None:
+                val = p_obj.site_density
+                if isinstance(val, (int, float)):
+                    from .units import convert
+                    doc_len = mech.units.get("length", "m") if hasattr(mech, "units") and mech.units else "m"
+                    doc_qty = mech.units.get("quantity", "kmol") if hasattr(mech, "units") and mech.units else "kmol"
+                    u_src = f"{doc_qty}/{doc_len}^{sp_inst._ndim}"
+                    u_dest = f"kmol/m^{sp_inst._ndim}"
+                    sp_inst.setSiteDensity(float(convert(float(val), u_src, u_dest)))
+                else:
+                    sp_inst.setSiteDensity(_parse_state_scalar(val, f"kmol/m^{sp_inst._ndim}"))
+            sp_inst._input_map = getattr(p_obj, "input_data", {})
+        for s in mech.species:
+            p_spec_names = [sp.name if hasattr(sp, 'name') else str(sp) for sp in p_obj.species] if (p_obj and hasattr(p_obj, 'species')) else None
+            if p_spec_names is None or s.name in p_spec_names:
+                sz = getattr(s, "size", 1.0)
+                poly = create_species_thermo(s.thermo) if s.thermo else None
+                sp_obj = PhaseSpecies(s.name, s.molecular_weight, poly, s.charge, size=sz, equation_of_state=getattr(s, 'equation_of_state', {}), input_data=getattr(s, 'input_data', {}))
+                sp_obj.input_data = getattr(s, "input_data", {})
+                sp_inst.addSpecies(sp_obj)
+        sp_inst.initThermo()
+        if p_obj and p_obj.state:
+            st = p_obj.state
+            if "T" in st: sp_inst.setTemperature(_parse_state_scalar(st["T"], "K"))
+            if "coverages" in st: sp_inst.setCoveragesByName(st["coverages"])
+        return sp_inst
 class PlasmaPhase(ThermoPhase):
     """Non-equilibrium plasma phase with distinct electron and heavy-particle temperatures."""
 
@@ -1989,9 +3531,28 @@ class ThermoFactory:
 
     def newThermoPhase(self, model: str = "") -> ThermoPhase:
         from .ideal_gas import IdealGasPhase
+        from .stoich import StoichSubstance
         model_clean = model.lower().replace("-", "_").replace(" ", "_")
         if model_clean in ("idealgas", "ideal_gas"):
             return IdealGasPhase()
+        elif model_clean in ("singlespecies", "single_species"):
+            return SingleSpeciesTP()
+        elif model_clean in ("fixed_stoichiometry", "stoichsubstance", "stoichiometric_substance"):
+            return StoichSubstance()
+        elif model_clean in ("ideal_condensed", "idealsolidsoln", "ideal_solid_solution"):
+            return IdealSolidSolnPhase()
+        elif model_clean in ("ideal_surface", "surface", "surf"):
+            return SurfPhase()
+        elif model_clean == "edge":
+            return EdgePhase()
+        elif model_clean in ("electron_cloud", "metal"):
+            return MetalPhase()
+        elif model_clean in ("coverage_dependent_surface", "covdep"):
+            return CoverageDependentSurfPhase()
+        elif model_clean == "plasma":
+            return PlasmaPhase()
+        elif model_clean == "pure_fluid":
+            return PureFluidPhase()
         return ThermoPhase()
 
 

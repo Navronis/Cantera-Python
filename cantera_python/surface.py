@@ -483,8 +483,9 @@ class Interface(IdealSurfacePhase):
         obj._motz_wise_default = bool(
             (phase.input_data or {}).get('Motz-Wise', False))
         state = phase.state or {}
-        if 'T' in state: obj.T = float(state['T'])
-        if 'P' in state: obj.P = float(state['P'])
+        from .phases import _parse_state_scalar
+        if 'T' in state: obj.T = _parse_state_scalar(state['T'], 'K')
+        if 'P' in state: obj.P = _parse_state_scalar(state['P'], 'Pa')
         if 'coverages' in state: obj.coverages = state['coverages']
 
         # Parse reactions belonging to this surface phase
