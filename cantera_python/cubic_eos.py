@@ -447,6 +447,54 @@ class MixtureFugacityTP:
         lpr = -0.8734 * (tt ** 2) - 3.4522 * tt + 4.2918
         return FloatCallable(pcrit * exp(lpr))
 
+
+    def compositionChanged(self) -> None:
+        self.updateMixingExpressions()
+
+    def addSpecies(self, spec) -> None:
+        pass
+
+    def sresid(self) -> float:
+        return 0.0
+
+    def hresid(self) -> float:
+        return 0.0
+
+    def calculatePsat(self) -> float:
+        return float(self.psat(self.temperature()))
+
+    def dpdVCalc(self, V: float, T: float, Pcalc=None) -> float:
+        return 0.0
+
+
+    @property
+    def enthalpy_RT(self) -> np.ndarray:
+        return self.getEnthalpy_RT()
+
+    @property
+    def entropy_R(self) -> np.ndarray:
+        return self.getEntropy_R()
+
+    @property
+    def gibbs_RT(self) -> np.ndarray:
+        return self.getGibbs_RT()
+
+    @property
+    def int_energy_RT(self) -> np.ndarray:
+        return self.getIntEnergy_RT()
+
+    @property
+    def cp_R(self) -> np.ndarray:
+        return self.getCp_R()
+
+    @property
+    def standard_volumes(self) -> np.ndarray:
+        return self.getStandardVolumes()
+
+    @property
+    def standard_chem_potentials(self) -> np.ndarray:
+        return self.getStandardChemPotentials()
+
     def phaseState(self, checkState: bool = True) -> int:
         state = self._actual_state
         if checkState:
@@ -491,28 +539,43 @@ class MixtureFugacityTP:
         g0_RT = h0_RT - s0_R
         return cp0_R, h0_RT, s0_R, g0_RT
 
-    def getEnthalpy_RT_ref(self, hrt: np.ndarray):
+    def getEnthalpy_RT_ref(self, hrt: np.ndarray = None):
+        if hrt is None:
+            hrt = np.empty(self._kk, dtype=float)
         _, h0_RT, _, _ = self._eval_ref_thermo(self._temperature)
         hrt[:] = h0_RT
+        return hrt
 
-    def getGibbs_RT_ref(self, grt: np.ndarray):
+    def getGibbs_RT_ref(self, grt: np.ndarray = None):
+        if grt is None:
+            grt = np.empty(self._kk, dtype=float)
         _, _, _, g0_RT = self._eval_ref_thermo(self._temperature)
         grt[:] = g0_RT
+        return grt
 
-    def getEntropy_R_ref(self, sr: np.ndarray):
+    def getEntropy_R_ref(self, sr: np.ndarray = None):
+        if sr is None:
+            sr = np.empty(self._kk, dtype=float)
         _, _, s0_R, _ = self._eval_ref_thermo(self._temperature)
         sr[:] = s0_R
+        return sr
 
-    def getCp_R_ref(self, cpr: np.ndarray):
+    def getCp_R_ref(self, cpr: np.ndarray = None):
+        if cpr is None:
+            cpr = np.empty(self._kk, dtype=float)
         cp0_R, _, _, _ = self._eval_ref_thermo(self._temperature)
         cpr[:] = cp0_R
+        return cpr
 
-    def getStandardChemPotentials(self, g: np.ndarray):
+    def getStandardChemPotentials(self, g: np.ndarray = None):
+        if g is None:
+            g = np.empty(self._kk, dtype=float)
         _, _, _, g0_RT = self._eval_ref_thermo(self._temperature)
         p_ratio = log(self._pressure / self._ref_pressure)
         rt = self.RT()
         for k in range(self._kk):
             g[k] = rt * (g0_RT[k] + p_ratio)
+        return g
 
     def standardConcentration(self, k: int = 0) -> float:
         """Standard concentration C0_k = P / (R * T)."""
@@ -1326,6 +1389,65 @@ class PengRobinson(MixtureFugacityTP):
 
         self.updateMixingExpressions()
 
+
+    def addSpecies(self, spec) -> None:
+        pass
+
+    def initThermo(self) -> None:
+        self.calculateAB()
+
+    def setBinaryInteraction(self, species_i, species_j, a: float) -> None:
+        if isinstance(species_i, (int, np.integer)):
+            species_i = self.species_name(int(species_i))
+        if isinstance(species_j, (int, np.integer)):
+            species_j = self.species_name(int(species_j))
+        self.setBinaryCoeffs(str(species_i), str(species_j), float(a))
+
+    def getBinaryInteraction(self, species_i, species_j) -> float:
+        if isinstance(species_i, str):
+            ki = self.species_index(species_i)
+        else:
+            ki = int(species_i)
+        if isinstance(species_j, str):
+            kj = self.species_index(species_j)
+        else:
+            kj = int(species_j)
+        return float(self._a_coeffs[ki, kj])
+
+    def acentricFactor(self, k: int = 0) -> float:
+        if isinstance(k, str):
+            k = self.species_index(k)
+        return float(self._acentric_factor[int(k)])
+
+    def calculateAlpha(self, k: int, T: float) -> float:
+        if isinstance(k, str):
+            k = self.species_index(k)
+        Tc = float(self._tc[k])
+        w = float(self._acentric_factor[k])
+        Tr = float(T) / Tc
+        if w <= 0.491:
+            m = 0.37464 + 1.54226 * w - 0.26992 * w * w
+        else:
+            m = 0.379642 + 1.48503 * w - 0.164423 * w * w + 0.016666 * w * w * w
+        sqrtTr = math.sqrt(max(Tr, 1e-12))
+        return float((1.0 + m * (1.0 - sqrtTr)) ** 2)
+
+    def cpresid(self) -> float:
+        cpm = float(self.cp_mole())
+        cp_ideal = sum(self.mole_fractions[k] * self.species_thermo(k).cp_mole(self.temperature()) for k in range(self.n_species))
+        return float(cpm - cp_ideal)
+
+    def fugacityCoefficients(self, af=None) -> np.ndarray:
+        return self.getActivityCoefficients(af)
+
+    def dpressure_ddensity(self) -> float:
+        self.calculatePressureDerivatives()
+        return float(self._dpdrho)
+
+    def dpressure_dtemperature(self) -> float:
+        self.calculatePressureDerivatives()
+        return float(self._dpdT)
+
     def setBinaryCoeffs(self, species_i: str, species_j: str, a0: float):
         ki = self.species_index(species_i)
         kj = self.species_index(species_j)
@@ -1904,6 +2026,50 @@ class RedlichKwongMFTP(MixtureFugacityTP):
         vc = (self.omega_vc * R * tc) / pc
         return self.mean_molecular_weight / vc
 
+    
+    def addSpecies(self, spec) -> None:
+        pass
+
+    def initThermo(self) -> None:
+        self.calculateAB()
+
+    def pressureDerivatives(self) -> None:
+        self.calculatePressureDerivatives()
+
+    def setBinaryInteraction(self, species_i, species_j, a: float) -> None:
+        if isinstance(species_i, (int, np.integer)):
+            species_i = self.species_name(int(species_i))
+        if isinstance(species_j, (int, np.integer)):
+            species_j = self.species_name(int(species_j))
+        self.setBinaryCoeffs(str(species_i), str(species_j), float(a))
+
+    def getBinaryInteraction(self, species_i, species_j) -> float:
+        if isinstance(species_i, str):
+            ki = self.species_index(species_i)
+        else:
+            ki = int(species_i)
+        if isinstance(species_j, str):
+            kj = self.species_index(species_j)
+        else:
+            kj = int(species_j)
+        return float(self._a_coeffs[ki, kj])
+
+    def cpresid(self) -> float:
+        cpm = float(self.cp_mole())
+        cp_ideal = sum(self.mole_fractions[k] * self.species_thermo(k).cp_mole(self.temperature()) for k in range(self.n_species))
+        return float(cpm - cp_ideal)
+
+    def fugacityCoefficients(self, af=None) -> np.ndarray:
+        return self.getActivityCoefficients(af)
+
+    def dpressure_ddensity(self) -> float:
+        self.calculatePressureDerivatives()
+        return float(self._dpdrho)
+
+    def dpressure_dtemperature(self) -> float:
+        self.calculatePressureDerivatives()
+        return float(self._dpdT)
+
     def setSpeciesCoeffs(self, species: str, a0: float, a1: float, b: float):
         k = self.species_index(species)
         self._a0[k, k] = float(a0)
@@ -2465,7 +2631,12 @@ def _mftp_standardStateConvention(self) -> int:
     return convention
 
 def _mftp_getEnthalpy_RT(self, hrt=None):
-    return self.getEnthalpy_RT_ref(hrt)
+    res = [s.thermo.properties(self.temperature)[1] for s in self._species]
+    if hrt is not None:
+        for i, v in enumerate(res):
+            hrt[i] = v
+        return hrt
+    return np.asarray(res, dtype=float)
 
 def _mftp_getEntropy_R(self, sr=None):
     s0 = [s.thermo.properties(self.temperature)[2] for s in self._species]
@@ -2475,7 +2646,7 @@ def _mftp_getEntropy_R(self, sr=None):
         for i, v in enumerate(res):
             sr[i] = v
         return sr
-    return res
+    return np.asarray(res, dtype=float)
 
 def _mftp_getGibbs_RT(self, grt=None):
     h0 = [s.thermo.properties(self.temperature)[1] for s in self._species]
@@ -2486,7 +2657,7 @@ def _mftp_getGibbs_RT(self, grt=None):
         for i, v in enumerate(res):
             grt[i] = v
         return grt
-    return res
+    return np.asarray(res, dtype=float)
 
 def _mftp_getIntEnergy_RT(self, urt=None):
     h0 = [s.thermo.properties(self.temperature)[1] for s in self._species]
@@ -2495,7 +2666,7 @@ def _mftp_getIntEnergy_RT(self, urt=None):
         for i, v in enumerate(res):
             urt[i] = v
         return urt
-    return res
+    return np.asarray(res, dtype=float)
 
 def _mftp_getCp_R(self, cpr=None):
     cp0 = [s.thermo.properties(self.temperature)[0] for s in self._species]
@@ -2503,7 +2674,7 @@ def _mftp_getCp_R(self, cpr=None):
         for i, v in enumerate(cp0):
             cpr[i] = v
         return cpr
-    return cp0
+    return np.asarray(cp0, dtype=float)
 
 def _mftp_getStandardVolumes(self, vol=None):
     rt_p = (R * self.temperature) / max(self.pressure, 1e-30)

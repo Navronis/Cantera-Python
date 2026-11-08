@@ -44,10 +44,10 @@ class CanonicalInventoryTests(unittest.TestCase):
         self.assertEqual(
             Counter(row["current_status"] for row in self.rows),
             Counter({
-                "NOT_PORTED": 2630,
-                "PINNED_NATIVE_VALIDATED": 2012,
+                "NOT_PORTED": 2264,
+                "PINNED_NATIVE_VALIDATED": 2487,
                 "NON_RUNTIME_CPP_ONLY_PROVEN": 759,
-                "PARTIAL": 383,
+                "PARTIAL": 274,
             }),
         )
         self.assertEqual(
@@ -97,7 +97,7 @@ class CanonicalInventoryTests(unittest.TestCase):
             "NON_RUNTIME_CPP_ONLY_PROVEN",
         }
         self.assertEqual(
-            sum(row["current_status"] in final_statuses for row in self.rows), 2771)
+            sum(row["current_status"] in final_statuses for row in self.rows), 3246)
 
     def test_ionflow_and_domain_factory_symbols_are_pinned_native_validated(self):
         ion_syms = [

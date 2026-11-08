@@ -1,0 +1,13 @@
+{
+  "total_properties_evaluated": 26020,
+  "total_cases_evaluated": 288,
+  "cases_passed": 288,
+  "cases_failed": 0,
+  "max_relative_error": 1.583000610169127e-07,
+  "mean_relative_error": 1.042330256038415e-11,
+  "median_relative_error": 0.0,
+  "p95_relative_error": 4.996102105808657e-16,
+  "p99_relative_error": 1.3496447613842422e-12,
+  "max_absolute_error": 0.0006995499134063721,
+  "mean_absolute_error": 5.883664075053863e-07
+}

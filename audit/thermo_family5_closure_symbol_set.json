@@ -1,0 +1,3787 @@
+{
+  "family": "THERMO_FAMILY_5_CUBIC_REAL_EOS",
+  "subsystem": "thermodynamics",
+  "symbol_count": 252,
+  "symbols": [
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:78:type",
+      "canonical_index": 2371,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        78,
+        78
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "MixtureFugacityTP",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.type"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:82:standardStateConvention",
+      "canonical_index": 2372,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        82,
+        82
+      ],
+      "signature": "int standardStateConvention() const override",
+      "function_or_method": "standardStateConvention",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.standardStateConvention"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:91:setForcedSolutionBranch",
+      "canonical_index": 2373,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        91,
+        91
+      ],
+      "signature": "void setForcedSolutionBranch(int solnBranch)",
+      "function_or_method": "setForcedSolutionBranch",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.setForcedSolutionBranch"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:99:forcedSolutionBranch",
+      "canonical_index": 2374,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        99,
+        99
+      ],
+      "signature": "int forcedSolutionBranch() const",
+      "function_or_method": "forcedSolutionBranch",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.forcedSolutionBranch"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:107:reportSolnBranchActual",
+      "canonical_index": 2375,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        107,
+        107
+      ],
+      "signature": "int reportSolnBranchActual() const",
+      "function_or_method": "reportSolnBranchActual",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.reportSolnBranchActual"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:113:enthalpy_mole",
+      "canonical_index": 2376,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        113,
+        113
+      ],
+      "signature": "double enthalpy_mole() const override",
+      "function_or_method": "enthalpy_mole",
+      "class": "MixtureFugacityTP",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.enthalpy_mole"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:114:entropy_mole",
+      "canonical_index": 2377,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        114,
+        114
+      ],
+      "signature": "double entropy_mole() const override",
+      "function_or_method": "entropy_mole",
+      "class": "MixtureFugacityTP",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.entropy_mole"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:137:getStandardChemPotentials",
+      "canonical_index": 2378,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        137,
+        137
+      ],
+      "signature": "void getStandardChemPotentials(span<double> mu) const override",
+      "function_or_method": "getStandardChemPotentials",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getStandardChemPotentials"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:149:getEnthalpy_RT",
+      "canonical_index": 2379,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        149,
+        149
+      ],
+      "signature": "void getEnthalpy_RT(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getEnthalpy_RT"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:161:getEntropy_R",
+      "canonical_index": 2380,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        161,
+        161
+      ],
+      "signature": "void getEntropy_R(span<double> sr) const override",
+      "function_or_method": "getEntropy_R",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getEntropy_R"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:173:getGibbs_RT",
+      "canonical_index": 2381,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        173,
+        173
+      ],
+      "signature": "void getGibbs_RT(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getGibbs_RT"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:190:getIntEnergy_RT",
+      "canonical_index": 2382,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        190,
+        190
+      ],
+      "signature": "void getIntEnergy_RT(span<double> urt) const override",
+      "function_or_method": "getIntEnergy_RT",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getIntEnergy_RT"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:203:getCp_R",
+      "canonical_index": 2383,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        203,
+        203
+      ],
+      "signature": "void getCp_R(span<double> cpr) const override",
+      "function_or_method": "getCp_R",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getCp_R"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:217:getStandardVolumes",
+      "canonical_index": 2384,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        217,
+        217
+      ],
+      "signature": "void getStandardVolumes(span<double> vol) const override",
+      "function_or_method": "getStandardVolumes",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getStandardVolumes"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:227:setTemperature",
+      "canonical_index": 2385,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        227,
+        227
+      ],
+      "signature": "void setTemperature(const double temp) override",
+      "function_or_method": "setTemperature",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.setTemperature"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:237:setPressure",
+      "canonical_index": 2386,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        237,
+        237
+      ],
+      "signature": "void setPressure(double p) override",
+      "function_or_method": "setPressure",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.setPressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:240:compositionChanged",
+      "canonical_index": 2387,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        240,
+        240
+      ],
+      "signature": "void compositionChanged() override",
+      "function_or_method": "compositionChanged",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.compositionChanged"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:256:_updateReferenceStateThermo",
+      "canonical_index": 2388,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        256,
+        256
+      ],
+      "signature": "virtual void _updateReferenceStateThermo() const",
+      "function_or_method": "_updateReferenceStateThermo",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP._updateReferenceStateThermo"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:269:getEnthalpy_RT_ref",
+      "canonical_index": 2389,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        269,
+        269
+      ],
+      "signature": "void getEnthalpy_RT_ref(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT_ref",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getEnthalpy_RT_ref"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:270:getGibbs_RT_ref",
+      "canonical_index": 2390,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        270,
+        270
+      ],
+      "signature": "void getGibbs_RT_ref(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT_ref",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getGibbs_RT_ref"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:271:getGibbs_ref",
+      "canonical_index": 2391,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        271,
+        271
+      ],
+      "signature": "void getGibbs_ref(span<double> g) const override",
+      "function_or_method": "getGibbs_ref",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getGibbs_ref"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:272:getEntropy_R_ref",
+      "canonical_index": 2392,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        272,
+        272
+      ],
+      "signature": "void getEntropy_R_ref(span<double> er) const override",
+      "function_or_method": "getEntropy_R_ref",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getEntropy_R_ref"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:273:getCp_R_ref",
+      "canonical_index": 2393,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        273,
+        273
+      ],
+      "signature": "void getCp_R_ref(span<double> cprt) const override",
+      "function_or_method": "getCp_R_ref",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getCp_R_ref"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:274:getStandardVolumes_ref",
+      "canonical_index": 2394,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        274,
+        274
+      ],
+      "signature": "void getStandardVolumes_ref(span<double> vol) const override",
+      "function_or_method": "getStandardVolumes_ref",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getStandardVolumes_ref"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:284:addSpecies",
+      "canonical_index": 2395,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        284,
+        284
+      ],
+      "signature": "bool addSpecies(shared_ptr<Species> spec) override",
+      "function_or_method": "addSpecies",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.addSpecies"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:299:z",
+      "canonical_index": 2396,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        299,
+        299
+      ],
+      "signature": "double z() const",
+      "function_or_method": "z",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.z"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:308:sresid",
+      "canonical_index": 2397,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        308,
+        308
+      ],
+      "signature": "virtual double sresid() const",
+      "function_or_method": "sresid",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.sresid"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:317:hresid",
+      "canonical_index": 2398,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        317,
+        317
+      ],
+      "signature": "virtual double hresid() const",
+      "function_or_method": "hresid",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.hresid"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:327:psatEst",
+      "canonical_index": 2399,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        327,
+        327
+      ],
+      "signature": "virtual double psatEst(double TKelvin) const",
+      "function_or_method": "psatEst",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.psatEst"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:344:liquidVolEst",
+      "canonical_index": 2400,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        344,
+        344
+      ],
+      "signature": "virtual double liquidVolEst(double TKelvin, double& pres) const",
+      "function_or_method": "liquidVolEst",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.liquidVolEst"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:395:phaseState",
+      "canonical_index": 2401,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        395,
+        395
+      ],
+      "signature": "int phaseState(bool checkState = false) const",
+      "function_or_method": "phaseState",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.phaseState"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:405:calculatePsat",
+      "canonical_index": 2402,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        405,
+        405
+      ],
+      "signature": "double calculatePsat(double TKelvin, double& molarVolGas, double& molarVolLiquid)",
+      "function_or_method": "calculatePsat",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.calculatePsat"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:414:satPressure",
+      "canonical_index": 2403,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        414,
+        414
+      ],
+      "signature": "double satPressure(double TKelvin) override",
+      "function_or_method": "satPressure",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.satPressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:415:getActivityConcentrations",
+      "canonical_index": 2404,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        415,
+        415
+      ],
+      "signature": "void getActivityConcentrations(span<double> c) const override",
+      "function_or_method": "getActivityConcentrations",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.getActivityConcentrations"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:428:dpdVCalc",
+      "canonical_index": 2405,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        428,
+        428
+      ],
+      "signature": "virtual double dpdVCalc(double TKelvin, double molarVol, double& presCalc) const",
+      "function_or_method": "dpdVCalc",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.dpdVCalc"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:430:updateMixingExpressions",
+      "canonical_index": 2406,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        430,
+        430
+      ],
+      "signature": "virtual void updateMixingExpressions()",
+      "function_or_method": "updateMixingExpressions",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.updateMixingExpressions"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:436:critTemperature",
+      "canonical_index": 2407,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        436,
+        436
+      ],
+      "signature": "double critTemperature() const override",
+      "function_or_method": "critTemperature",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.critTemperature"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:437:critPressure",
+      "canonical_index": 2408,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        437,
+        437
+      ],
+      "signature": "double critPressure() const override",
+      "function_or_method": "critPressure",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.critPressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:438:critVolume",
+      "canonical_index": 2409,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        438,
+        438
+      ],
+      "signature": "double critVolume() const override",
+      "function_or_method": "critVolume",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.critVolume"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:439:critCompressibility",
+      "canonical_index": 2410,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        439,
+        439
+      ],
+      "signature": "double critCompressibility() const override",
+      "function_or_method": "critCompressibility",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.critCompressibility"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:440:critDensity",
+      "canonical_index": 2411,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        440,
+        440
+      ],
+      "signature": "double critDensity() const override",
+      "function_or_method": "critDensity",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.critDensity"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/MixtureFugacityTP.h:441:calcCriticalConditions",
+      "canonical_index": 2412,
+      "source_file": "include/cantera/thermo/MixtureFugacityTP.h",
+      "line_range": [
+        441,
+        441
+      ],
+      "signature": "virtual void calcCriticalConditions(double& pc, double& tc, double& vc) const",
+      "function_or_method": "calcCriticalConditions",
+      "class": "MixtureFugacityTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.MixtureFugacityTP.calcCriticalConditions"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:31:PengRobinson",
+      "canonical_index": 2639,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        31,
+        31
+      ],
+      "signature": "explicit PengRobinson(const string& infile=\"\", const string& id=\"\")",
+      "function_or_method": "PengRobinson",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.PengRobinson"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:33:type",
+      "canonical_index": 2640,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        33,
+        33
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "PengRobinson",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.type"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:40:cp_mole",
+      "canonical_index": 2641,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        40,
+        40
+      ],
+      "signature": "double cp_mole() const override",
+      "function_or_method": "cp_mole",
+      "class": "PengRobinson",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.cp_mole"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:41:cv_mole",
+      "canonical_index": 2642,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        41,
+        41
+      ],
+      "signature": "double cv_mole() const override",
+      "function_or_method": "cv_mole",
+      "class": "PengRobinson",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.cv_mole"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:89:pressure",
+      "canonical_index": 2643,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        89,
+        89
+      ],
+      "signature": "double pressure() const override",
+      "function_or_method": "pressure",
+      "class": "PengRobinson",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.pressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:107:standardConcentration",
+      "canonical_index": 2644,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        107,
+        107
+      ],
+      "signature": "double standardConcentration(size_t k=0) const override",
+      "function_or_method": "standardConcentration",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.standardConcentration"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:118:getActivityCoefficients",
+      "canonical_index": 2645,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        118,
+        118
+      ],
+      "signature": "void getActivityCoefficients(span<double> ac) const override",
+      "function_or_method": "getActivityCoefficients",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.getActivityCoefficients"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:123:getChemPotentials",
+      "canonical_index": 2646,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        123,
+        123
+      ],
+      "signature": "void getChemPotentials(span<double> mu) const override",
+      "function_or_method": "getChemPotentials",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.getChemPotentials"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:124:getPartialMolarEnthalpies",
+      "canonical_index": 2647,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        124,
+        124
+      ],
+      "signature": "void getPartialMolarEnthalpies(span<double> hbar) const override",
+      "function_or_method": "getPartialMolarEnthalpies",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.getPartialMolarEnthalpies"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:125:getPartialMolarEntropies",
+      "canonical_index": 2648,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        125,
+        125
+      ],
+      "signature": "void getPartialMolarEntropies(span<double> sbar) const override",
+      "function_or_method": "getPartialMolarEntropies",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.getPartialMolarEntropies"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:126:getPartialMolarIntEnergies",
+      "canonical_index": 2649,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        126,
+        126
+      ],
+      "signature": "void getPartialMolarIntEnergies(span<double> ubar) const override",
+      "function_or_method": "getPartialMolarIntEnergies",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.getPartialMolarIntEnergies"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:131:getPartialMolarCp",
+      "canonical_index": 2650,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        131,
+        131
+      ],
+      "signature": "void getPartialMolarCp(span<double> cpbar) const override",
+      "function_or_method": "getPartialMolarCp",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.getPartialMolarCp"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:132:getPartialMolarVolumes",
+      "canonical_index": 2651,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        132,
+        132
+      ],
+      "signature": "void getPartialMolarVolumes(span<double> vbar) const override",
+      "function_or_method": "getPartialMolarVolumes",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.getPartialMolarVolumes"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:144:speciesCritTemperature",
+      "canonical_index": 2652,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        144,
+        144
+      ],
+      "signature": "double speciesCritTemperature(double a, double b) const",
+      "function_or_method": "speciesCritTemperature",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.speciesCritTemperature"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:154:addSpecies",
+      "canonical_index": 2653,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        154,
+        154
+      ],
+      "signature": "bool addSpecies(shared_ptr<Species> spec) override",
+      "function_or_method": "addSpecies",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.addSpecies"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:155:initThermo",
+      "canonical_index": 2654,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        155,
+        155
+      ],
+      "signature": "void initThermo() override",
+      "function_or_method": "initThermo",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.initThermo"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:156:getSpeciesParameters",
+      "canonical_index": 2655,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        156,
+        156
+      ],
+      "signature": "void getSpeciesParameters(const string& name, AnyMap& speciesNode) const override",
+      "function_or_method": "getSpeciesParameters",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.getSpeciesParameters"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:165:setSpeciesCoeffs",
+      "canonical_index": 2656,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        165,
+        165
+      ],
+      "signature": "void setSpeciesCoeffs(const string& species, double a, double b, double w)",
+      "function_or_method": "setSpeciesCoeffs",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.setSpeciesCoeffs"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:173:setBinaryCoeffs",
+      "canonical_index": 2657,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        173,
+        173
+      ],
+      "signature": "void setBinaryCoeffs(const string& species_i, const string& species_j, double a)",
+      "function_or_method": "setBinaryCoeffs",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.setBinaryCoeffs"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:185:getAuxiliaryData",
+      "canonical_index": 2658,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        185,
+        185
+      ],
+      "signature": "AnyMap getAuxiliaryData() override",
+      "function_or_method": "getAuxiliaryData",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.getAuxiliaryData"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:189:sresid",
+      "canonical_index": 2659,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        189,
+        189
+      ],
+      "signature": "double sresid() const override",
+      "function_or_method": "sresid",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.sresid"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:190:hresid",
+      "canonical_index": 2660,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        190,
+        190
+      ],
+      "signature": "double hresid() const override",
+      "function_or_method": "hresid",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.hresid"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:192:liquidVolEst",
+      "canonical_index": 2661,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        192,
+        192
+      ],
+      "signature": "double liquidVolEst(double T, double& pres) const override",
+      "function_or_method": "liquidVolEst",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.liquidVolEst"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:193:densityCalc",
+      "canonical_index": 2662,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        193,
+        193
+      ],
+      "signature": "double densityCalc(double T, double pressure, int phase, double rhoguess) override",
+      "function_or_method": "densityCalc",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.densityCalc"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:194:dpdVCalc",
+      "canonical_index": 2663,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        194,
+        194
+      ],
+      "signature": "double dpdVCalc(double T, double molarVol, double& presCalc) const override",
+      "function_or_method": "dpdVCalc",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.dpdVCalc"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:202:daAlpha_dT",
+      "canonical_index": 2664,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        202,
+        202
+      ],
+      "signature": "double daAlpha_dT() const",
+      "function_or_method": "daAlpha_dT",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.daAlpha_dT"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:208:d2aAlpha_dT2",
+      "canonical_index": 2665,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        208,
+        208
+      ],
+      "signature": "double d2aAlpha_dT2() const",
+      "function_or_method": "d2aAlpha_dT2",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.d2aAlpha_dT2"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:212:isothermalCompressibility",
+      "canonical_index": 2666,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        212,
+        212
+      ],
+      "signature": "double isothermalCompressibility() const override",
+      "function_or_method": "isothermalCompressibility",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.isothermalCompressibility"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:213:thermalExpansionCoeff",
+      "canonical_index": 2667,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        213,
+        213
+      ],
+      "signature": "double thermalExpansionCoeff() const override",
+      "function_or_method": "thermalExpansionCoeff",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.thermalExpansionCoeff"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:214:soundSpeed",
+      "canonical_index": 2668,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        214,
+        214
+      ],
+      "signature": "double soundSpeed() const override",
+      "function_or_method": "soundSpeed",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.soundSpeed"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:220:calculatePressureDerivatives",
+      "canonical_index": 2669,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        220,
+        220
+      ],
+      "signature": "void calculatePressureDerivatives() const",
+      "function_or_method": "calculatePressureDerivatives",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.calculatePressureDerivatives"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:228:updateMixingExpressions",
+      "canonical_index": 2670,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        228,
+        228
+      ],
+      "signature": "void updateMixingExpressions() override",
+      "function_or_method": "updateMixingExpressions",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.updateMixingExpressions"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:239:calculateAB",
+      "canonical_index": 2671,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        239,
+        239
+      ],
+      "signature": "void calculateAB(double& aCalc, double& bCalc, double& aAlpha) const",
+      "function_or_method": "calculateAB",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.calculateAB"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PengRobinson.h:241:calcCriticalConditions",
+      "canonical_index": 2672,
+      "source_file": "include/cantera/thermo/PengRobinson.h",
+      "line_range": [
+        241,
+        241
+      ],
+      "signature": "void calcCriticalConditions(double& pc, double& tc, double& vc) const override",
+      "function_or_method": "calcCriticalConditions",
+      "class": "PengRobinson",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.PengRobinson.calcCriticalConditions"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:36:type",
+      "canonical_index": 2866,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        36,
+        36
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "PureFluidPhase",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.type"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:55:phaseOfMatter",
+      "canonical_index": 2867,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        55,
+        55
+      ],
+      "signature": "string phaseOfMatter() const override",
+      "function_or_method": "phaseOfMatter",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.phaseOfMatter"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:59:setSubstance",
+      "canonical_index": 2868,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        59,
+        59
+      ],
+      "signature": "void setSubstance(const string& name)",
+      "function_or_method": "setSubstance",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setSubstance"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:63:isPure",
+      "canonical_index": 2869,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        63,
+        63
+      ],
+      "signature": "bool isPure() const override",
+      "function_or_method": "isPure",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.isPure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:67:hasPhaseTransition",
+      "canonical_index": 2870,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        67,
+        67
+      ],
+      "signature": "bool hasPhaseTransition() const override",
+      "function_or_method": "hasPhaseTransition",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.hasPhaseTransition"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:71:fullStates",
+      "canonical_index": 2871,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        71,
+        71
+      ],
+      "signature": "vector<string> fullStates() const override",
+      "function_or_method": "fullStates",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.fullStates"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:72:partialStates",
+      "canonical_index": 2872,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        72,
+        72
+      ],
+      "signature": "vector<string> partialStates() const override",
+      "function_or_method": "partialStates",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.partialStates"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:74:minTemp",
+      "canonical_index": 2873,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        74,
+        74
+      ],
+      "signature": "double minTemp(size_t k=npos) const override",
+      "function_or_method": "minTemp",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.minTemp"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:75:maxTemp",
+      "canonical_index": 2874,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        75,
+        75
+      ],
+      "signature": "double maxTemp(size_t k=npos) const override",
+      "function_or_method": "maxTemp",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.maxTemp"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:77:enthalpy_mole",
+      "canonical_index": 2875,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        77,
+        77
+      ],
+      "signature": "double enthalpy_mole() const override",
+      "function_or_method": "enthalpy_mole",
+      "class": "PureFluidPhase",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.enthalpy_mole"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:78:intEnergy_mole",
+      "canonical_index": 2876,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        78,
+        78
+      ],
+      "signature": "double intEnergy_mole() const override",
+      "function_or_method": "intEnergy_mole",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.intEnergy_mole"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:79:entropy_mole",
+      "canonical_index": 2877,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        79,
+        79
+      ],
+      "signature": "double entropy_mole() const override",
+      "function_or_method": "entropy_mole",
+      "class": "PureFluidPhase",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.entropy_mole"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:80:gibbs_mole",
+      "canonical_index": 2878,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        80,
+        80
+      ],
+      "signature": "double gibbs_mole() const override",
+      "function_or_method": "gibbs_mole",
+      "class": "PureFluidPhase",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.gibbs_mole"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:81:cp_mole",
+      "canonical_index": 2879,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        81,
+        81
+      ],
+      "signature": "double cp_mole() const override",
+      "function_or_method": "cp_mole",
+      "class": "PureFluidPhase",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.cp_mole"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:82:cv_mole",
+      "canonical_index": 2880,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        82,
+        82
+      ],
+      "signature": "double cv_mole() const override",
+      "function_or_method": "cv_mole",
+      "class": "PureFluidPhase",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.cv_mole"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:89:pressure",
+      "canonical_index": 2881,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        89,
+        89
+      ],
+      "signature": "double pressure() const override",
+      "function_or_method": "pressure",
+      "class": "PureFluidPhase",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.pressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:98:setPressure",
+      "canonical_index": 2882,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        98,
+        98
+      ],
+      "signature": "void setPressure(double p) override",
+      "function_or_method": "setPressure",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setPressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:99:setTemperature",
+      "canonical_index": 2883,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        99,
+        99
+      ],
+      "signature": "void setTemperature(const double T) override",
+      "function_or_method": "setTemperature",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setTemperature"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:100:setDensity",
+      "canonical_index": 2884,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        100,
+        100
+      ],
+      "signature": "void setDensity(const double rho) override",
+      "function_or_method": "setDensity",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setDensity"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:102:getChemPotentials",
+      "canonical_index": 2885,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        102,
+        102
+      ],
+      "signature": "void getChemPotentials(span<double> mu) const override",
+      "function_or_method": "getChemPotentials",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getChemPotentials"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:106:getPartialMolarEnthalpies",
+      "canonical_index": 2886,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        106,
+        106
+      ],
+      "signature": "void getPartialMolarEnthalpies(span<double> hbar) const override",
+      "function_or_method": "getPartialMolarEnthalpies",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getPartialMolarEnthalpies"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:107:getPartialMolarEntropies",
+      "canonical_index": 2887,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        107,
+        107
+      ],
+      "signature": "void getPartialMolarEntropies(span<double> sbar) const override",
+      "function_or_method": "getPartialMolarEntropies",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getPartialMolarEntropies"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:108:getPartialMolarIntEnergies",
+      "canonical_index": 2888,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        108,
+        108
+      ],
+      "signature": "void getPartialMolarIntEnergies(span<double> ubar) const override",
+      "function_or_method": "getPartialMolarIntEnergies",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getPartialMolarIntEnergies"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:109:getPartialMolarCp",
+      "canonical_index": 2889,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        109,
+        109
+      ],
+      "signature": "void getPartialMolarCp(span<double> cpbar) const override",
+      "function_or_method": "getPartialMolarCp",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getPartialMolarCp"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:110:getPartialMolarVolumes",
+      "canonical_index": 2890,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        110,
+        110
+      ],
+      "signature": "void getPartialMolarVolumes(span<double> vbar) const override",
+      "function_or_method": "getPartialMolarVolumes",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getPartialMolarVolumes"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:112:standardConcentrationUnits",
+      "canonical_index": 2891,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        112,
+        112
+      ],
+      "signature": "Units standardConcentrationUnits() const override",
+      "function_or_method": "standardConcentrationUnits",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.standardConcentrationUnits"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:113:getActivityConcentrations",
+      "canonical_index": 2892,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        113,
+        113
+      ],
+      "signature": "void getActivityConcentrations(span<double> c) const override",
+      "function_or_method": "getActivityConcentrations",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getActivityConcentrations"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:114:standardConcentration",
+      "canonical_index": 2893,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        114,
+        114
+      ],
+      "signature": "double standardConcentration(size_t k=0) const override",
+      "function_or_method": "standardConcentration",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.standardConcentration"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:116:getActivities",
+      "canonical_index": 2894,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        116,
+        116
+      ],
+      "signature": "void getActivities(span<double> a) const override",
+      "function_or_method": "getActivities",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getActivities"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:118:isothermalCompressibility",
+      "canonical_index": 2895,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        118,
+        118
+      ],
+      "signature": "double isothermalCompressibility() const override",
+      "function_or_method": "isothermalCompressibility",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.isothermalCompressibility"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:119:thermalExpansionCoeff",
+      "canonical_index": 2896,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        119,
+        119
+      ],
+      "signature": "double thermalExpansionCoeff() const override",
+      "function_or_method": "thermalExpansionCoeff",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.thermalExpansionCoeff"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:120:internalPressure",
+      "canonical_index": 2897,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        120,
+        120
+      ],
+      "signature": "double internalPressure() const override",
+      "function_or_method": "internalPressure",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.internalPressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:123:TPX_Substance",
+      "canonical_index": 2898,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        123,
+        123
+      ],
+      "signature": "tpx::Substance& TPX_Substance()",
+      "function_or_method": "TPX_Substance",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.TPX_Substance"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:133:getStandardChemPotentials",
+      "canonical_index": 2899,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        133,
+        133
+      ],
+      "signature": "void getStandardChemPotentials(span<double> mu) const override",
+      "function_or_method": "getStandardChemPotentials",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getStandardChemPotentials"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:134:getEnthalpy_RT",
+      "canonical_index": 2900,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        134,
+        134
+      ],
+      "signature": "void getEnthalpy_RT(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getEnthalpy_RT"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:135:getEntropy_R",
+      "canonical_index": 2901,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        135,
+        135
+      ],
+      "signature": "void getEntropy_R(span<double> sr) const override",
+      "function_or_method": "getEntropy_R",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getEntropy_R"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:136:getGibbs_RT",
+      "canonical_index": 2902,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        136,
+        136
+      ],
+      "signature": "void getGibbs_RT(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getGibbs_RT"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:145:getEnthalpy_RT_ref",
+      "canonical_index": 2903,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        145,
+        145
+      ],
+      "signature": "void getEnthalpy_RT_ref(span<double> hrt) const override",
+      "function_or_method": "getEnthalpy_RT_ref",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getEnthalpy_RT_ref"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:146:getGibbs_RT_ref",
+      "canonical_index": 2904,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        146,
+        146
+      ],
+      "signature": "void getGibbs_RT_ref(span<double> grt) const override",
+      "function_or_method": "getGibbs_RT_ref",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getGibbs_RT_ref"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:147:getGibbs_ref",
+      "canonical_index": 2905,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        147,
+        147
+      ],
+      "signature": "void getGibbs_ref(span<double> g) const override",
+      "function_or_method": "getGibbs_ref",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getGibbs_ref"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:148:getEntropy_R_ref",
+      "canonical_index": 2906,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        148,
+        148
+      ],
+      "signature": "void getEntropy_R_ref(span<double> er) const override",
+      "function_or_method": "getEntropy_R_ref",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getEntropy_R_ref"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:156:setState_HP",
+      "canonical_index": 2907,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        156,
+        156
+      ],
+      "signature": "void setState_HP(double h, double p, double tol=1e-9) override",
+      "function_or_method": "setState_HP",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_HP"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:157:setState_UV",
+      "canonical_index": 2908,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        157,
+        157
+      ],
+      "signature": "void setState_UV(double u, double v, double tol=1e-9) override",
+      "function_or_method": "setState_UV",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_UV"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:158:setState_SV",
+      "canonical_index": 2909,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        158,
+        158
+      ],
+      "signature": "void setState_SV(double s, double v, double tol=1e-9) override",
+      "function_or_method": "setState_SV",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_SV"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:159:setState_SP",
+      "canonical_index": 2910,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        159,
+        159
+      ],
+      "signature": "void setState_SP(double s, double p, double tol=1e-9) override",
+      "function_or_method": "setState_SP",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_SP"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:160:setState_ST",
+      "canonical_index": 2911,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        160,
+        160
+      ],
+      "signature": "void setState_ST(double s, double t, double tol=1e-9) override",
+      "function_or_method": "setState_ST",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_ST"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:161:setState_TV",
+      "canonical_index": 2912,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        161,
+        161
+      ],
+      "signature": "void setState_TV(double t, double v, double tol=1e-9) override",
+      "function_or_method": "setState_TV",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_TV"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:162:setState_PV",
+      "canonical_index": 2913,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        162,
+        162
+      ],
+      "signature": "void setState_PV(double p, double v, double tol=1e-9) override",
+      "function_or_method": "setState_PV",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_PV"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:163:setState_UP",
+      "canonical_index": 2914,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        163,
+        163
+      ],
+      "signature": "void setState_UP(double u, double p, double tol=1e-9) override",
+      "function_or_method": "setState_UP",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_UP"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:164:setState_VH",
+      "canonical_index": 2915,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        164,
+        164
+      ],
+      "signature": "void setState_VH(double v, double h, double tol=1e-9) override",
+      "function_or_method": "setState_VH",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_VH"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:165:setState_TH",
+      "canonical_index": 2916,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        165,
+        165
+      ],
+      "signature": "void setState_TH(double t, double h, double tol=1e-9) override",
+      "function_or_method": "setState_TH",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_TH"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:166:setState_SH",
+      "canonical_index": 2917,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        166,
+        166
+      ],
+      "signature": "void setState_SH(double s, double h, double tol=1e-9) override",
+      "function_or_method": "setState_SH",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_SH"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:171:critTemperature",
+      "canonical_index": 2918,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        171,
+        171
+      ],
+      "signature": "double critTemperature() const override",
+      "function_or_method": "critTemperature",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.critTemperature"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:172:critPressure",
+      "canonical_index": 2919,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        172,
+        172
+      ],
+      "signature": "double critPressure() const override",
+      "function_or_method": "critPressure",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.critPressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:173:critDensity",
+      "canonical_index": 2920,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        173,
+        173
+      ],
+      "signature": "double critDensity() const override",
+      "function_or_method": "critDensity",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.critDensity"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:179:satTemperature",
+      "canonical_index": 2921,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        179,
+        179
+      ],
+      "signature": "double satTemperature(double p) const override",
+      "function_or_method": "satTemperature",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.satTemperature"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:180:satPressure",
+      "canonical_index": 2922,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        180,
+        180
+      ],
+      "signature": "double satPressure(double t) override",
+      "function_or_method": "satPressure",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.satPressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:181:vaporFraction",
+      "canonical_index": 2923,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        181,
+        181
+      ],
+      "signature": "double vaporFraction() const override",
+      "function_or_method": "vaporFraction",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.vaporFraction"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:183:setState_Tsat",
+      "canonical_index": 2924,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        183,
+        183
+      ],
+      "signature": "void setState_Tsat(double t, double x) override",
+      "function_or_method": "setState_Tsat",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_Tsat"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:184:setState_Psat",
+      "canonical_index": 2925,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        184,
+        184
+      ],
+      "signature": "void setState_Psat(double p, double x) override",
+      "function_or_method": "setState_Psat",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.setState_Psat"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:187:initThermo",
+      "canonical_index": 2926,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        187,
+        187
+      ],
+      "signature": "void initThermo() override",
+      "function_or_method": "initThermo",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.initThermo"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:188:getParameters",
+      "canonical_index": 2927,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        188,
+        188
+      ],
+      "signature": "void getParameters(AnyMap& phaseNode) const override",
+      "function_or_method": "getParameters",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.getParameters"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:190:report",
+      "canonical_index": 2928,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        190,
+        190
+      ],
+      "signature": "string report(bool show_thermo=true, double threshold=1e-14) const override",
+      "function_or_method": "report",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.report"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:192:compatibleWithMultiPhase",
+      "canonical_index": 2929,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        192,
+        192
+      ],
+      "signature": "bool compatibleWithMultiPhase() const override",
+      "function_or_method": "compatibleWithMultiPhase",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.compatibleWithMultiPhase"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/PureFluidPhase.h:203:Set",
+      "canonical_index": 2930,
+      "source_file": "include/cantera/thermo/PureFluidPhase.h",
+      "line_range": [
+        203,
+        203
+      ],
+      "signature": "void Set(tpx::PropertyPair::type n, double x, double y) const",
+      "function_or_method": "Set",
+      "class": "PureFluidPhase",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.PureFluidPhase.Set"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:75:RedlichKwongMFTP",
+      "canonical_index": 2951,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        75,
+        75
+      ],
+      "signature": "explicit RedlichKwongMFTP(const string& infile=\"\", const string& id=\"\")",
+      "function_or_method": "RedlichKwongMFTP",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.RedlichKwongMFTP"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:77:type",
+      "canonical_index": 2952,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        77,
+        77
+      ],
+      "signature": "string type() const override",
+      "function_or_method": "type",
+      "class": "RedlichKwongMFTP",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.type"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:83:cp_mole",
+      "canonical_index": 2953,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        83,
+        83
+      ],
+      "signature": "double cp_mole() const override",
+      "function_or_method": "cp_mole",
+      "class": "RedlichKwongMFTP",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.cp_mole"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:84:cv_mole",
+      "canonical_index": 2954,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        84,
+        84
+      ],
+      "signature": "double cv_mole() const override",
+      "function_or_method": "cv_mole",
+      "class": "RedlichKwongMFTP",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.cv_mole"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:99:pressure",
+      "canonical_index": 2955,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        99,
+        99
+      ],
+      "signature": "double pressure() const override",
+      "function_or_method": "pressure",
+      "class": "RedlichKwongMFTP",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.pressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:119:standardConcentration",
+      "canonical_index": 2956,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        119,
+        119
+      ],
+      "signature": "double standardConcentration(size_t k=0) const override",
+      "function_or_method": "standardConcentration",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.standardConcentration"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:130:getActivityCoefficients",
+      "canonical_index": 2957,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        130,
+        130
+      ],
+      "signature": "void getActivityCoefficients(span<double> ac) const override",
+      "function_or_method": "getActivityCoefficients",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.getActivityCoefficients"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:135:getChemPotentials",
+      "canonical_index": 2958,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        135,
+        135
+      ],
+      "signature": "void getChemPotentials(span<double> mu) const override",
+      "function_or_method": "getChemPotentials",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.getChemPotentials"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:168:getPartialMolarEnthalpies",
+      "canonical_index": 2959,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        168,
+        168
+      ],
+      "signature": "void getPartialMolarEnthalpies(span<double> hbar) const override",
+      "function_or_method": "getPartialMolarEnthalpies",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.getPartialMolarEnthalpies"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:169:getPartialMolarEntropies",
+      "canonical_index": 2960,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        169,
+        169
+      ],
+      "signature": "void getPartialMolarEntropies(span<double> sbar) const override",
+      "function_or_method": "getPartialMolarEntropies",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.getPartialMolarEntropies"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:170:getPartialMolarIntEnergies",
+      "canonical_index": 2961,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        170,
+        170
+      ],
+      "signature": "void getPartialMolarIntEnergies(span<double> ubar) const override",
+      "function_or_method": "getPartialMolarIntEnergies",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.getPartialMolarIntEnergies"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:189:getPartialMolarIntEnergies_TV",
+      "canonical_index": 2962,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        189,
+        189
+      ],
+      "signature": "void getPartialMolarIntEnergies_TV(span<double> utilde) const override",
+      "function_or_method": "getPartialMolarIntEnergies_TV",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.getPartialMolarIntEnergies_TV"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:253:getPartialMolarCp",
+      "canonical_index": 2963,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        253,
+        253
+      ],
+      "signature": "void getPartialMolarCp(span<double> cpbar) const override",
+      "function_or_method": "getPartialMolarCp",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.getPartialMolarCp"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:296:getPartialMolarCv_TV",
+      "canonical_index": 2964,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        296,
+        296
+      ],
+      "signature": "void getPartialMolarCv_TV(span<double> cvtilde) const override",
+      "function_or_method": "getPartialMolarCv_TV",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.getPartialMolarCv_TV"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:297:getPartialMolarVolumes",
+      "canonical_index": 2965,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        297,
+        297
+      ],
+      "signature": "void getPartialMolarVolumes(span<double> vbar) const override",
+      "function_or_method": "getPartialMolarVolumes",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.getPartialMolarVolumes"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:309:addSpecies",
+      "canonical_index": 2966,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        309,
+        309
+      ],
+      "signature": "bool addSpecies(shared_ptr<Species> spec) override",
+      "function_or_method": "addSpecies",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.addSpecies"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:310:initThermo",
+      "canonical_index": 2967,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        310,
+        310
+      ],
+      "signature": "void initThermo() override",
+      "function_or_method": "initThermo",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.initThermo"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:311:getSpeciesParameters",
+      "canonical_index": 2968,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        311,
+        311
+      ],
+      "signature": "void getSpeciesParameters(const string& name, AnyMap& speciesNode) const override",
+      "function_or_method": "getSpeciesParameters",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.getSpeciesParameters"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:326:setSpeciesCoeffs",
+      "canonical_index": 2969,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        326,
+        326
+      ],
+      "signature": "void setSpeciesCoeffs(const string& species, double a0, double a1, double b)",
+      "function_or_method": "setSpeciesCoeffs",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.setSpeciesCoeffs"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:349:sresid",
+      "canonical_index": 2970,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        349,
+        349
+      ],
+      "signature": "double sresid() const override",
+      "function_or_method": "sresid",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.sresid"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:350:hresid",
+      "canonical_index": 2971,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        350,
+        350
+      ],
+      "signature": "double hresid() const override",
+      "function_or_method": "hresid",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.hresid"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:353:liquidVolEst",
+      "canonical_index": 2972,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        353,
+        353
+      ],
+      "signature": "double liquidVolEst(double T, double& pres) const override",
+      "function_or_method": "liquidVolEst",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.liquidVolEst"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:354:densityCalc",
+      "canonical_index": 2973,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        354,
+        354
+      ],
+      "signature": "double densityCalc(double T, double pressure, int phase, double rhoguess) override",
+      "function_or_method": "densityCalc",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.densityCalc"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:355:dpdVCalc",
+      "canonical_index": 2974,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        355,
+        355
+      ],
+      "signature": "double dpdVCalc(double T, double molarVol, double& presCalc) const override",
+      "function_or_method": "dpdVCalc",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.dpdVCalc"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:357:isothermalCompressibility",
+      "canonical_index": 2975,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        357,
+        357
+      ],
+      "signature": "double isothermalCompressibility() const override",
+      "function_or_method": "isothermalCompressibility",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.isothermalCompressibility"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:358:thermalExpansionCoeff",
+      "canonical_index": 2976,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        358,
+        358
+      ],
+      "signature": "double thermalExpansionCoeff() const override",
+      "function_or_method": "thermalExpansionCoeff",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.thermalExpansionCoeff"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:359:internalPressure",
+      "canonical_index": 2977,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        359,
+        359
+      ],
+      "signature": "double internalPressure() const override",
+      "function_or_method": "internalPressure",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.internalPressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:360:soundSpeed",
+      "canonical_index": 2978,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        360,
+        360
+      ],
+      "signature": "double soundSpeed() const override",
+      "function_or_method": "soundSpeed",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.soundSpeed"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:366:pressureDerivatives",
+      "canonical_index": 2979,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        366,
+        366
+      ],
+      "signature": "void pressureDerivatives() const",
+      "function_or_method": "pressureDerivatives",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.pressureDerivatives"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:374:updateMixingExpressions",
+      "canonical_index": 2980,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        374,
+        374
+      ],
+      "signature": "void updateMixingExpressions() override",
+      "function_or_method": "updateMixingExpressions",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.updateMixingExpressions"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:385:calculateAB",
+      "canonical_index": 2981,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        385,
+        385
+      ],
+      "signature": "void calculateAB(double T, double& aCalc, double& bCalc) const",
+      "function_or_method": "calculateAB",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.calculateAB"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:389:da_dt",
+      "canonical_index": 2982,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        389,
+        389
+      ],
+      "signature": "double da_dt() const",
+      "function_or_method": "da_dt",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.da_dt"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:391:calcCriticalConditions",
+      "canonical_index": 2983,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        391,
+        391
+      ],
+      "signature": "void calcCriticalConditions(double& pc, double& tc, double& vc) const override",
+      "function_or_method": "calcCriticalConditions",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.calcCriticalConditions"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/RedlichKwongMFTP.h:394:solveCubic",
+      "canonical_index": 2984,
+      "source_file": "include/cantera/thermo/RedlichKwongMFTP.h",
+      "line_range": [
+        394,
+        394
+      ],
+      "signature": "int solveCubic(double T, double pres, double a, double b, span<double> Vroot) const",
+      "function_or_method": "solveCubic",
+      "class": "RedlichKwongMFTP",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.cubic_eos.RedlichKwongMFTP.solveCubic"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterProps.h:81:density_T",
+      "canonical_index": 3306,
+      "source_file": "include/cantera/thermo/WaterProps.h",
+      "line_range": [
+        81,
+        81
+      ],
+      "signature": "static double density_T(double T, double P, int ifunc)",
+      "function_or_method": "density_T",
+      "class": "WaterProps",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterProps.density_T"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterProps.h:106:relEpsilon",
+      "canonical_index": 3307,
+      "source_file": "include/cantera/thermo/WaterProps.h",
+      "line_range": [
+        106,
+        106
+      ],
+      "signature": "double relEpsilon(double T, double P_pascal, int ifunc = 0)",
+      "function_or_method": "relEpsilon",
+      "class": "WaterProps",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterProps.relEpsilon"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterProps.h:143:ADebye",
+      "canonical_index": 3308,
+      "source_file": "include/cantera/thermo/WaterProps.h",
+      "line_range": [
+        143,
+        143
+      ],
+      "signature": "double ADebye(double T, double P, int ifunc)",
+      "function_or_method": "ADebye",
+      "class": "WaterProps",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterProps.ADebye"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterProps.h:150:satPressure",
+      "canonical_index": 3309,
+      "source_file": "include/cantera/thermo/WaterProps.h",
+      "line_range": [
+        150,
+        150
+      ],
+      "signature": "double satPressure(double T)",
+      "function_or_method": "satPressure",
+      "class": "WaterProps",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterProps.satPressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterProps.h:160:density_IAPWS",
+      "canonical_index": 3310,
+      "source_file": "include/cantera/thermo/WaterProps.h",
+      "line_range": [
+        160,
+        160
+      ],
+      "signature": "double density_IAPWS(double T, double P)",
+      "function_or_method": "density_IAPWS",
+      "class": "WaterProps",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterProps.density_IAPWS"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterProps.h:166:density_IAPWS",
+      "canonical_index": 3311,
+      "source_file": "include/cantera/thermo/WaterProps.h",
+      "line_range": [
+        166,
+        166
+      ],
+      "signature": "double density_IAPWS() const",
+      "function_or_method": "density_IAPWS",
+      "class": "WaterProps",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterProps.density_IAPWS"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterProps.h:173:coeffThermalExp_IAPWS",
+      "canonical_index": 3312,
+      "source_file": "include/cantera/thermo/WaterProps.h",
+      "line_range": [
+        173,
+        173
+      ],
+      "signature": "double coeffThermalExp_IAPWS(double T, double P)",
+      "function_or_method": "coeffThermalExp_IAPWS",
+      "class": "WaterProps",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterProps.coeffThermalExp_IAPWS"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterProps.h:180:isothermalCompressibility_IAPWS",
+      "canonical_index": 3313,
+      "source_file": "include/cantera/thermo/WaterProps.h",
+      "line_range": [
+        180,
+        180
+      ],
+      "signature": "double isothermalCompressibility_IAPWS(double T, double P)",
+      "function_or_method": "isothermalCompressibility_IAPWS",
+      "class": "WaterProps",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterProps.isothermalCompressibility_IAPWS"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:176:setState_TD",
+      "canonical_index": 3314,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        176,
+        176
+      ],
+      "signature": "void setState_TD(double temperature, double rho)",
+      "function_or_method": "setState_TD",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.setState_TD"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:179:gibbs_mass",
+      "canonical_index": 3315,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        179,
+        179
+      ],
+      "signature": "double gibbs_mass() const",
+      "function_or_method": "gibbs_mass",
+      "class": "WaterPropsIAPWS",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.gibbs_mass"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:182:enthalpy_mass",
+      "canonical_index": 3316,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        182,
+        182
+      ],
+      "signature": "double enthalpy_mass() const",
+      "function_or_method": "enthalpy_mass",
+      "class": "WaterPropsIAPWS",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.enthalpy_mass"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:185:intEnergy_mass",
+      "canonical_index": 3317,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        185,
+        185
+      ],
+      "signature": "double intEnergy_mass() const",
+      "function_or_method": "intEnergy_mass",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.intEnergy_mass"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:188:entropy_mass",
+      "canonical_index": 3318,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        188,
+        188
+      ],
+      "signature": "double entropy_mass() const",
+      "function_or_method": "entropy_mass",
+      "class": "WaterPropsIAPWS",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.entropy_mass"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:192:cv_mass",
+      "canonical_index": 3319,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        192,
+        192
+      ],
+      "signature": "double cv_mass() const",
+      "function_or_method": "cv_mass",
+      "class": "WaterPropsIAPWS",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.cv_mass"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:196:cp_mass",
+      "canonical_index": 3320,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        196,
+        196
+      ],
+      "signature": "double cp_mass() const",
+      "function_or_method": "cp_mass",
+      "class": "WaterPropsIAPWS",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.cp_mass"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:205:pressure",
+      "canonical_index": 3321,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        205,
+        205
+      ],
+      "signature": "double pressure() const",
+      "function_or_method": "pressure",
+      "class": "WaterPropsIAPWS",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.pressure"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:240:density",
+      "canonical_index": 3322,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        240,
+        240
+      ],
+      "signature": "double density() const",
+      "function_or_method": "density",
+      "class": "WaterPropsIAPWS",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.density"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:246:temperature",
+      "canonical_index": 3323,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        246,
+        246
+      ],
+      "signature": "double temperature() const",
+      "function_or_method": "temperature",
+      "class": "WaterPropsIAPWS",
+      "current_status": "PARTIAL",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.temperature"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:254:coeffThermExp",
+      "canonical_index": 3324,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        254,
+        254
+      ],
+      "signature": "double coeffThermExp() const",
+      "function_or_method": "coeffThermExp",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.coeffThermExp"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:264:coeffPresExp",
+      "canonical_index": 3325,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        264,
+        264
+      ],
+      "signature": "double coeffPresExp() const",
+      "function_or_method": "coeffPresExp",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.coeffPresExp"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:275:isothermalCompressibility",
+      "canonical_index": 3326,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        275,
+        275
+      ],
+      "signature": "double isothermalCompressibility() const",
+      "function_or_method": "isothermalCompressibility",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.isothermalCompressibility"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:283:dpdrho",
+      "canonical_index": 3327,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        283,
+        283
+      ],
+      "signature": "double dpdrho() const",
+      "function_or_method": "dpdrho",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.dpdrho"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:294:psat_est",
+      "canonical_index": 3328,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        294,
+        294
+      ],
+      "signature": "double psat_est(double temperature) const",
+      "function_or_method": "psat_est",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.psat_est"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:313:psat",
+      "canonical_index": 3329,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        313,
+        313
+      ],
+      "signature": "double psat(double temperature, int waterState = WATER_LIQUID)",
+      "function_or_method": "psat",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.psat"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:325:phaseState",
+      "canonical_index": 3330,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        325,
+        325
+      ],
+      "signature": "int phaseState(bool checkState = false) const",
+      "function_or_method": "phaseState",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.phaseState"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:331:Tcrit",
+      "canonical_index": 3331,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        331,
+        331
+      ],
+      "signature": "double Tcrit() const",
+      "function_or_method": "Tcrit",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.Tcrit"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:339:Pcrit",
+      "canonical_index": 3332,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        339,
+        339
+      ],
+      "signature": "double Pcrit() const",
+      "function_or_method": "Pcrit",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.Pcrit"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:347:Rhocrit",
+      "canonical_index": 3333,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        347,
+        347
+      ],
+      "signature": "double Rhocrit() const",
+      "function_or_method": "Rhocrit",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.Rhocrit"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWS.h:357:calcDim",
+      "canonical_index": 3334,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWS.h",
+      "line_range": [
+        357,
+        357
+      ],
+      "signature": "void calcDim(double temperature, double rho)",
+      "function_or_method": "calcDim",
+      "class": "WaterPropsIAPWS",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWS.calcDim"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:46:phi",
+      "canonical_index": 3335,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        46,
+        46
+      ],
+      "signature": "double phi(double tau, double delta)",
+      "function_or_method": "phi",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phi"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:53:phi_d",
+      "canonical_index": 3336,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        53,
+        53
+      ],
+      "signature": "double phi_d(double tau, double delta)",
+      "function_or_method": "phi_d",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phi_d"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:60:phi_dd",
+      "canonical_index": 3337,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        60,
+        60
+      ],
+      "signature": "double phi_dd(double tau, double delta)",
+      "function_or_method": "phi_dd",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phi_dd"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:67:phi_t",
+      "canonical_index": 3338,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        67,
+        67
+      ],
+      "signature": "double phi_t(double tau, double delta)",
+      "function_or_method": "phi_t",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phi_t"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:74:phi_tt",
+      "canonical_index": 3339,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        74,
+        74
+      ],
+      "signature": "double phi_tt(double tau, double delta)",
+      "function_or_method": "phi_tt",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phi_tt"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:85:pressureM_rhoRT",
+      "canonical_index": 3340,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        85,
+        85
+      ],
+      "signature": "double pressureM_rhoRT(double tau, double delta)",
+      "function_or_method": "pressureM_rhoRT",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.pressureM_rhoRT"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:95:dimdpdrho",
+      "canonical_index": 3341,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        95,
+        95
+      ],
+      "signature": "double dimdpdrho(double tau, double delta)",
+      "function_or_method": "dimdpdrho",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.dimdpdrho"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:105:dimdpdT",
+      "canonical_index": 3342,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        105,
+        105
+      ],
+      "signature": "double dimdpdT(double tau, double delta)",
+      "function_or_method": "dimdpdT",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.dimdpdT"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:119:dfind",
+      "canonical_index": 3343,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        119,
+        119
+      ],
+      "signature": "double dfind(double p_red, double tau, double deltaGuess)",
+      "function_or_method": "dfind",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.dfind"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:122:gibbs_RT",
+      "canonical_index": 3344,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        122,
+        122
+      ],
+      "signature": "double gibbs_RT() const",
+      "function_or_method": "gibbs_RT",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.gibbs_RT"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:125:enthalpy_RT",
+      "canonical_index": 3345,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        125,
+        125
+      ],
+      "signature": "double enthalpy_RT() const",
+      "function_or_method": "enthalpy_RT",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.enthalpy_RT"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:128:entropy_R",
+      "canonical_index": 3346,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        128,
+        128
+      ],
+      "signature": "double entropy_R() const",
+      "function_or_method": "entropy_R",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.entropy_R"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:131:intEnergy_RT",
+      "canonical_index": 3347,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        131,
+        131
+      ],
+      "signature": "double intEnergy_RT() const",
+      "function_or_method": "intEnergy_RT",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.intEnergy_RT"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:134:cv_R",
+      "canonical_index": 3348,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        134,
+        134
+      ],
+      "signature": "double cv_R() const",
+      "function_or_method": "cv_R",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.cv_R"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:137:cp_R",
+      "canonical_index": 3349,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        137,
+        137
+      ],
+      "signature": "double cp_R() const",
+      "function_or_method": "cp_R",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.cp_R"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:147:tdpolycalc",
+      "canonical_index": 3350,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        147,
+        147
+      ],
+      "signature": "void tdpolycalc(double tau, double delta)",
+      "function_or_method": "tdpolycalc",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.tdpolycalc"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:153:phiR",
+      "canonical_index": 3351,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        153,
+        153
+      ],
+      "signature": "double phiR() const",
+      "function_or_method": "phiR",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phiR"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:158:phi0",
+      "canonical_index": 3352,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        158,
+        158
+      ],
+      "signature": "double phi0() const",
+      "function_or_method": "phi0",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phi0"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:160:phiR_d",
+      "canonical_index": 3353,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        160,
+        160
+      ],
+      "signature": "double phiR_d() const",
+      "function_or_method": "phiR_d",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phiR_d"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:162:phi0_d",
+      "canonical_index": 3354,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        162,
+        162
+      ],
+      "signature": "double phi0_d() const",
+      "function_or_method": "phi0_d",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phi0_d"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:164:phiR_dd",
+      "canonical_index": 3355,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        164,
+        164
+      ],
+      "signature": "double phiR_dd() const",
+      "function_or_method": "phiR_dd",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phiR_dd"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:166:phi0_dd",
+      "canonical_index": 3356,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        166,
+        166
+      ],
+      "signature": "double phi0_dd() const",
+      "function_or_method": "phi0_dd",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phi0_dd"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:168:phi0_t",
+      "canonical_index": 3357,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        168,
+        168
+      ],
+      "signature": "double phi0_t() const",
+      "function_or_method": "phi0_t",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phi0_t"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:171:phiR_t",
+      "canonical_index": 3358,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        171,
+        171
+      ],
+      "signature": "double phiR_t() const",
+      "function_or_method": "phiR_t",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phiR_t"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:174:phiR_tt",
+      "canonical_index": 3359,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        174,
+        174
+      ],
+      "signature": "double phiR_tt() const",
+      "function_or_method": "phiR_tt",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phiR_tt"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:176:phi0_tt",
+      "canonical_index": 3360,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        176,
+        176
+      ],
+      "signature": "double phi0_tt() const",
+      "function_or_method": "phi0_tt",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phi0_tt"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:178:phiR_dt",
+      "canonical_index": 3361,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        178,
+        178
+      ],
+      "signature": "double phiR_dt() const",
+      "function_or_method": "phiR_dt",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phiR_dt"
+    },
+    {
+      "stable_symbol_id": "include/cantera/thermo/WaterPropsIAPWSphi.h:180:phi0_dt",
+      "canonical_index": 3362,
+      "source_file": "include/cantera/thermo/WaterPropsIAPWSphi.h",
+      "line_range": [
+        180,
+        180
+      ],
+      "signature": "double phi0_dt() const",
+      "function_or_method": "phi0_dt",
+      "class": "WaterPropsIAPWSphi",
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.electrolytes.WaterPropsIAPWSphi.phi0_dt"
+    },
+    {
+      "stable_symbol_id": "src/thermo/MixtureFugacityTP.cpp:269:pressure",
+      "canonical_index": 4892,
+      "source_file": "src/thermo/MixtureFugacityTP.cpp",
+      "line_range": [
+        269,
+        269
+      ],
+      "signature": "return pressure() * meanMolecularWeight() / (density() * RT())",
+      "function_or_method": "pressure",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.pressure"
+    },
+    {
+      "stable_symbol_id": "src/thermo/MixtureFugacityTP.cpp:274:NotImplementedError",
+      "canonical_index": 4893,
+      "source_file": "src/thermo/MixtureFugacityTP.cpp",
+      "line_range": [
+        274,
+        274
+      ],
+      "signature": "throw NotImplementedError(\"MixtureFugacityTP::sresid\")",
+      "function_or_method": "NotImplementedError",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.NotImplementedError"
+    },
+    {
+      "stable_symbol_id": "src/thermo/MixtureFugacityTP.cpp:279:NotImplementedError",
+      "canonical_index": 4894,
+      "source_file": "src/thermo/MixtureFugacityTP.cpp",
+      "line_range": [
+        279,
+        279
+      ],
+      "signature": "throw NotImplementedError(\"MixtureFugacityTP::hresid\")",
+      "function_or_method": "NotImplementedError",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.NotImplementedError"
+    },
+    {
+      "stable_symbol_id": "src/thermo/MixtureFugacityTP.cpp:295:NotImplementedError",
+      "canonical_index": 4895,
+      "source_file": "src/thermo/MixtureFugacityTP.cpp",
+      "line_range": [
+        295,
+        295
+      ],
+      "signature": "throw NotImplementedError(\"MixtureFugacityTP::liquidVolEst\")",
+      "function_or_method": "NotImplementedError",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.NotImplementedError"
+    },
+    {
+      "stable_symbol_id": "src/thermo/MixtureFugacityTP.cpp:513:calculatePsat",
+      "canonical_index": 4896,
+      "source_file": "src/thermo/MixtureFugacityTP.cpp",
+      "line_range": [
+        513,
+        513
+      ],
+      "signature": "return calculatePsat(TKelvin, molarVolGas, molarVolLiquid)",
+      "function_or_method": "calculatePsat",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.calculatePsat"
+    },
+    {
+      "stable_symbol_id": "src/thermo/MixtureFugacityTP.cpp:708:NotImplementedError",
+      "canonical_index": 4897,
+      "source_file": "src/thermo/MixtureFugacityTP.cpp",
+      "line_range": [
+        708,
+        708
+      ],
+      "signature": "throw NotImplementedError(\"MixtureFugacityTP::dpdVCalc\")",
+      "function_or_method": "NotImplementedError",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.NotImplementedError"
+    },
+    {
+      "stable_symbol_id": "src/thermo/MixtureFugacityTP.cpp:771:NotImplementedError",
+      "canonical_index": 4898,
+      "source_file": "src/thermo/MixtureFugacityTP.cpp",
+      "line_range": [
+        771,
+        771
+      ],
+      "signature": "throw NotImplementedError(\"MixtureFugacityTP::calcCriticalConditions\")",
+      "function_or_method": "NotImplementedError",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.NotImplementedError"
+    },
+    {
+      "stable_symbol_id": "src/thermo/MixtureFugacityTP.cpp:838:fabs",
+      "canonical_index": 4899,
+      "source_file": "src/thermo/MixtureFugacityTP.cpp",
+      "line_range": [
+        838,
+        838
+      ],
+      "signature": "&& fabs(yN) <= cancellationTol * yScale)",
+      "function_or_method": "fabs",
+      "class": null,
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.fabs"
+    },
+    {
+      "stable_symbol_id": "src/thermo/PengRobinson.cpp:283:NotImplementedError",
+      "canonical_index": 4961,
+      "source_file": "src/thermo/PengRobinson.cpp",
+      "line_range": [
+        283,
+        283
+      ],
+      "signature": "throw NotImplementedError(\"PengRobinson::getPartialMolarCp\")",
+      "function_or_method": "NotImplementedError",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.NotImplementedError"
+    },
+    {
+      "stable_symbol_id": "src/thermo/PengRobinson.cpp:641:molarVolume",
+      "canonical_index": 4962,
+      "source_file": "src/thermo/PengRobinson.cpp",
+      "line_range": [
+        641,
+        641
+      ],
+      "signature": "return molarVolume() * sqrt(-cp_mole() / cv_mole() * m_dpdV / meanMolecularWeight())",
+      "function_or_method": "molarVolume",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.molarVolume"
+    },
+    {
+      "stable_symbol_id": "src/thermo/PureFluidPhase.cpp:201:Units",
+      "canonical_index": 4983,
+      "source_file": "src/thermo/PureFluidPhase.cpp",
+      "line_range": [
+        201,
+        201
+      ],
+      "signature": "return Units(1.0)",
+      "function_or_method": "Units",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.Units"
+    },
+    {
+      "stable_symbol_id": "src/thermo/PureFluidPhase.cpp:455:to_string",
+      "canonical_index": 4984,
+      "source_file": "src/thermo/PureFluidPhase.cpp",
+      "line_range": [
+        455,
+        455
+      ],
+      "signature": "return to_string(b)",
+      "function_or_method": "to_string",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.to_string"
+    },
+    {
+      "stable_symbol_id": "src/thermo/RedlichKwongMFTP.cpp:159:muVec",
+      "canonical_index": 4986,
+      "source_file": "src/thermo/RedlichKwongMFTP.cpp",
+      "line_range": [
+        159,
+        159
+      ],
+      "signature": "Eigen::Map<Eigen::ArrayXd> muVec(mu.data(), m_kk)",
+      "function_or_method": "muVec",
+      "class": null,
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.muVec"
+    },
+    {
+      "stable_symbol_id": "src/thermo/RedlichKwongMFTP.cpp:219:sbarVec",
+      "canonical_index": 4987,
+      "source_file": "src/thermo/RedlichKwongMFTP.cpp",
+      "line_range": [
+        219,
+        219
+      ],
+      "signature": "MappedVector sbarVec(sbar.data(), m_kk)",
+      "function_or_method": "sbarVec",
+      "class": null,
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.sbarVec"
+    },
+    {
+      "stable_symbol_id": "src/thermo/RedlichKwongMFTP.cpp:259:utildeVec",
+      "canonical_index": 4988,
+      "source_file": "src/thermo/RedlichKwongMFTP.cpp",
+      "line_range": [
+        259,
+        259
+      ],
+      "signature": "Eigen::Map<Eigen::ArrayXd> utildeVec(utilde.data(), m_kk)",
+      "function_or_method": "utildeVec",
+      "class": null,
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.utildeVec"
+    },
+    {
+      "stable_symbol_id": "src/thermo/RedlichKwongMFTP.cpp:362:cvtildeVec",
+      "canonical_index": 4989,
+      "source_file": "src/thermo/RedlichKwongMFTP.cpp",
+      "line_range": [
+        362,
+        362
+      ],
+      "signature": "Eigen::Map<Eigen::ArrayXd> cvtildeVec(cvtilde.data(), m_kk)",
+      "function_or_method": "cvtildeVec",
+      "class": null,
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.cvtildeVec"
+    },
+    {
+      "stable_symbol_id": "src/thermo/RedlichKwongMFTP.cpp:543:coeffs",
+      "canonical_index": 4990,
+      "source_file": "src/thermo/RedlichKwongMFTP.cpp",
+      "line_range": [
+        543,
+        543
+      ],
+      "signature": "vector<AnyValue> coeffs(2)",
+      "function_or_method": "coeffs",
+      "class": null,
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.coeffs"
+    },
+    {
+      "stable_symbol_id": "src/thermo/RedlichKwongMFTP.cpp:570:C",
+      "canonical_index": 4991,
+      "source_file": "src/thermo/RedlichKwongMFTP.cpp",
+      "line_range": [
+        570,
+        570
+      ],
+      "signature": "vector<AnyValue> C(2)",
+      "function_or_method": "C",
+      "class": null,
+      "current_status": "NOT_PORTED",
+      "scientific_runtime_relevance": "SCIENTIFIC_RUNTIME_CANDIDATE",
+      "python_target": "cantera_python.phases.C"
+    },
+    {
+      "stable_symbol_id": "src/thermo/RedlichKwongMFTP.cpp:754:temperature",
+      "canonical_index": 4992,
+      "source_file": "src/thermo/RedlichKwongMFTP.cpp",
+      "line_range": [
+        754,
+        754
+      ],
+      "signature": "return temperature() * dpdT_ - pressure()",
+      "function_or_method": "temperature",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.temperature"
+    },
+    {
+      "stable_symbol_id": "src/thermo/RedlichKwongMFTP.cpp:760:molarVolume",
+      "canonical_index": 4993,
+      "source_file": "src/thermo/RedlichKwongMFTP.cpp",
+      "line_range": [
+        760,
+        760
+      ],
+      "signature": "return molarVolume() * sqrt(-cp_mole() / cv_mole() * dpdV_ / meanMolecularWeight())",
+      "function_or_method": "molarVolume",
+      "class": null,
+      "current_status": "NON_RUNTIME_CPP_ONLY_PROVEN",
+      "scientific_runtime_relevance": "NON_SYMBOL_INVENTORY_ARTIFACT",
+      "python_target": "cantera_python.phases.molarVolume"
+    }
+  ]
+}

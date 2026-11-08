@@ -1,0 +1,17 @@
+{
+  "family": "THERMO_FAMILY_5_CUBIC_REAL_EOS",
+  "subsystem": "thermodynamics",
+  "total_symbols": 252,
+  "status_distribution": {
+    "PARTIAL": 26,
+    "NOT_PORTED": 213,
+    "NON_RUNTIME_CPP_ONLY_PROVEN": 13
+  },
+  "global_inventory_metrics": {
+    "canonical_total": 5784,
+    "pinned_native_validated": 2248,
+    "proven_non_runtime": 759,
+    "fully_dispositioned": 3007,
+    "unresolved": 2777
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "iterations": 5000,
+  "native_results": {
+    "peng_robinson": {
+      "time_sec": 0.0130321,
+      "us_per_call": 2.60642,
+      "dummy": -1930790000000.0
+    },
+    "redlich_kwong": {
+      "time_sec": 0.0112448,
+      "us_per_call": 2.24896,
+      "dummy": -1930330000000.0
+    },
+    "pure_fluid": {
+      "time_sec": 1.14671,
+      "us_per_call": 229.343,
+      "dummy": -77552000000.0
+    },
+    "water_props": {
+      "time_sec": 0.134816,
+      "us_per_call": 26.9632,
+      "dummy": 4772340.0
+    }
+  },
+  "native_total_sec": 1.30581,
+  "python_results": {
+    "peng_robinson": {
+      "time_sec": 5.6399198999861255,
+      "us_per_call": 1127.983979997225,
+      "dummy": -1930785193190.609
+    },
+    "redlich_kwong": {
+      "time_sec": 0.8586605000309646,
+      "us_per_call": 171.73210000619292,
+      "dummy": -1930326457699.2761
+    },
+    "pure_fluid": {
+      "time_sec": 115.46562039997661,
+      "us_per_call": 23093.124079995323,
+      "dummy": -77552031629.54285
+    },
+    "water_props": {
+      "time_sec": 2.9630967999692075,
+      "us_per_call": 592.6193599938415,
+      "dummy": 4772335.6464265175
+    }
+  },
+  "python_total_sec": 124.92729759996291,
+  "ratio_python_to_native": {
+    "peng_robinson": 432.77137989933516,
+    "redlich_kwong": 76.36067338067059,
+    "pure_fluid": 100.69295671963846,
+    "water_props": 21.978821504637487,
+    "overall": 95.67034836611982
+  }
+}

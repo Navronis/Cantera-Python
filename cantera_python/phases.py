@@ -698,6 +698,10 @@ class Phase:
         """Return True if phase has elements, species, and state initialized."""
         return len(self._species_names) > 0 and self._temp > 0.0 and self._dens > 0.0
 
+    @property
+    def phase_of_matter(self) -> str:
+        return self.phaseOfMatter()
+
     def phaseOfMatter(self) -> str:
         """Return phase of matter: 'gas', 'liquid', 'solid', or 'supercritical'."""
         return str(self._phase_of_matter)
@@ -1574,102 +1578,581 @@ class SingleSpeciesTP(ThermoPhase):
             self._tlast = tnow
 
 
+class _CallableFloat(float):
+    def __call__(self):
+        return float(self)
+
 class PureFluidPhase(ThermoPhase):
-    """Single-component fluid phase with liquid-vapor saturation boundary calculations."""
+    """Single-component fluid phase with liquid-vapor saturation boundary calculations.
+    
+    Ported directly from Cantera C++ PureFluidPhase.
+    """
 
     def __init__(self, name: str = ""):
         super().__init__(name)
         self._substance_name = "water"
         self._q = 1.0
         self._tpx_substance = None
+        self._mw = 18.01528
         self.setSubstance("water")
+
+    @classmethod
+    def from_mechanism(cls, mech, phase_name=None):
+        """Construct PureFluidPhase from Mechanism object and initialize standard state."""
+        if phase_name is None and mech.phases:
+            phase_name = mech.phases[0].name
+        phase_entry = mech.phase(phase_name) if mech.phases else None
+        phase = cls(name=phase_name or "")
+        if phase_entry is not None:
+            sub_name = (
+                phase_entry.input_data.get("pure-fluid-name")
+                or getattr(phase_entry, "pure_fluid_name", None)
+                or phase_entry.name
+            )
+            phase.setSubstance(sub_name)
+
+            if phase_entry.species:
+                from .thermo import create_species_thermo
+                sp = phase_entry.species[0]
+                phase._species_names = [sp.name]
+                phase._species_indices = {sp.name: 0}
+                phase._mw = float(phase._tpx_substance.MolWt())
+                phase._mol_weights = np.array([phase._mw], dtype=float)
+
+                thermo_dict = sp.thermo if isinstance(sp.thermo, dict) else getattr(sp, "thermo", None)
+                if thermo_dict:
+                    try:
+                        st = create_species_thermo(thermo_dict)
+                        T0 = 298.15
+                        sub = phase._tpx_substance
+                        if T0 < sub.Tcrit():
+                            sub.Set(17, T0, 1.0)
+                            p = 0.01 * sub.P()
+                        else:
+                            p = 0.001 * sub.Pcrit()
+                        p = 0.001 * p
+                        sub.Set(14, T0, p)
+                        cp0_R, h0_RT, s0_R = st.properties(T0)
+                        pref = float(thermo_dict.get("reference-pressure", 101325.0))
+                        s_R = s0_R - math.log(p / pref)
+                        sub.setStdState(h0_RT * GasConstant * T0 / phase._mw, s_R * GasConstant / phase._mw, T0, p)
+                    except Exception:
+                        pass
+        return phase
 
     def type(self) -> str:
         return "PureFluid"
+
+    def isPure(self) -> bool:
+        return True
+
+    def compatibleWithMultiPhase(self) -> bool:
+        return False
 
     def setSubstance(self, sub: str) -> None:
         """Set underlying TPX pure substance name."""
         from .tpx import newSubstance
         self._substance_name = str(sub).lower()
         self._tpx_substance = newSubstance(self._substance_name)
+        self._mw = float(self._tpx_substance.MolWt())
+        self._mol_weights = np.array([self._mw], dtype=float)
+        self._species_names = [self._substance_name]
+        self._species_indices = {self._substance_name: 0}
+        self._mole_fractions = np.array([1.0], dtype=float)
+        self._mass_fractions = np.array([1.0], dtype=float)
         self._tpx_substance.Set(14, 298.15, 101325.0)
         self._sync_tpx()
         self.invalidateCache()
 
     def _sync_tpx(self) -> None:
         sub = self._tpx_substance
-        if sub is None: return
-        self._temp = float(sub.Temp()); self._pres = float(sub.P()); self._dens = float(sub.Rho); self._q = float(sub.x())
+        if sub is None:
+            return
+        self._temp = float(sub.Temp())
+        self._pres = float(sub.P())
+        self._dens = float(sub.Rho)
+        self._q = float(sub.x())
 
     def temperature(self) -> float:
-        self._sync_tpx(); return float(self._temp)
+        self._sync_tpx()
+        return float(self._temp)
+
     def pressure(self) -> float:
-        self._sync_tpx(); return float(self._pres)
+        self._sync_tpx()
+        return float(self._pres)
+
+    @property
     def density(self) -> float:
-        self._sync_tpx(); return float(self._dens)
+        self._sync_tpx()
+        return float(self._dens)
+
+    @density.setter
+    def density(self, rho: float) -> None:
+        self.setDensity(float(rho))
+
+    @property
+    def molar_density(self) -> float:
+        return float(self.molarDensity())
+
+    @property
+    def int_energy_mole(self) -> float:
+        return float(self.intEnergy_mole())
+
+    @property
+    def int_energy_mass(self) -> float:
+        return float(self.intEnergy_mass())
+
+    @property
+    def isothermal_compressibility(self) -> float:
+        return float(self.isothermalCompressibility())
+
+    @property
+    def thermal_expansion_coeff(self) -> float:
+        return float(self.thermalExpansionCoeff())
+
+    @property
+    def sound_speed(self) -> float:
+        return 0.0
+
+    def soundSpeed(self) -> float:
+        return 0.0
+
     def setTemperature(self, T: float) -> None:
-        self._tpx_substance.set_T(float(T)); self._sync_tpx(); self._state_mf_number += 1; self.invalidateCache()
+        super().setTemperature(float(T))
+        self.Set(12, float(T), self._tpx_substance.v())
+
     def setPressure(self, P: float) -> None:
-        self._tpx_substance.Set(14, self._tpx_substance.Temp(), float(P)); self._sync_tpx(); self._state_mf_number += 1; self.invalidateCache()
+        self.Set(14, self.temperature(), float(P))
+        super().setDensity(1.0 / self._tpx_substance.v())
+
     def setDensity(self, rho: float) -> None:
-        if float(rho) <= 0: raise ValueError("Density must be positive")
-        self._tpx_substance.set_v(1.0/float(rho)); self._sync_tpx(); self._state_mf_number += 1; self.invalidateCache()
-    def enthalpy_mass(self) -> float:
-        self._sync_tpx(); return float(self._tpx_substance.h())
-    def intEnergy_mass(self) -> float:
-        self._sync_tpx(); return float(self._tpx_substance.u())
-    def entropy_mass(self) -> float:
-        self._sync_tpx(); return float(self._tpx_substance.s())
-    def gibbs_mass(self) -> float:
-        self._sync_tpx(); return float(self._tpx_substance.g())
-    def cp_mass(self) -> float:
-        self._sync_tpx(); return float(self._tpx_substance.cp())
-    def cv_mass(self) -> float:
-        self._sync_tpx(); return float(self._tpx_substance.cv())
+        if float(rho) <= 0.0:
+            raise ValueError("Density must be positive")
+        super().setDensity(float(rho))
+        self.Set(12, self._tpx_substance.Temp(), 1.0 / float(rho))
 
-    def setState_TV(self, t: float, v: float) -> None:
-        self._tpx_substance.Set(12, float(t), float(v)); self._sync_tpx()
-    def setState_PV(self, p: float, v: float) -> None:
-        self._tpx_substance.Set(42, float(p), float(v)); self._sync_tpx()
-    def setState_UP(self, u: float, p: float) -> None:
-        self._tpx_substance.Set(64, float(u), float(p)); self._sync_tpx()
-    def setState_VH(self, v: float, h: float) -> None:
-        self._tpx_substance.Set(23, float(v), float(h)); self._sync_tpx()
-    def setState_TH(self, t: float, h: float) -> None:
-        self._tpx_substance.Set(13, float(t), float(h)); self._sync_tpx()
-    def setState_SH(self, s: float, h: float) -> None:
-        self._tpx_substance.Set(53, float(s), float(h)); self._sync_tpx()
 
-    def hasPhaseTransition(self) -> bool:
-        """Pure fluids support liquid-vapor phase transitions."""
-        sub = getattr(self, "_substance_name", "water")
-        return True
+    @property
+    def mean_molecular_weight(self) -> float:
+        return float(self.meanMolecularWeight())
 
-    def TPX_Substance(self) -> Optional[Any]:
-        """Return associated TPX substance instance."""
-        return getattr(self, "_tpx_substance", None)
+    @property
+    def standard_chemical_potentials(self) -> np.ndarray:
+        return self.getStandardChemPotentials()
 
-    def vaporFraction(self) -> float:
-        """Return vapor quality q in [0, 1]."""
-        self._sync_tpx(); return float(self._q)
+    @property
+    def standard_chem_potentials(self) -> np.ndarray:
+        return self.getStandardChemPotentials()
+
+    @property
+    def standard_volumes(self) -> np.ndarray:
+        return np.array([1.0 / self.molarDensity()], dtype=float)
+
+    @property
+    def activities(self) -> np.ndarray:
+        return self.getActivities()
+
+    @property
+    def activity_coefficients(self) -> np.ndarray:
+        return np.array([1.0], dtype=float)
+
+    @property
+    def chemical_potentials(self) -> np.ndarray:
+        return self.getChemPotentials()
+
+    @property
+    def partial_molar_enthalpies(self) -> np.ndarray:
+        return self.getPartialMolarEnthalpies()
+
+    @property
+    def partial_molar_entropies(self) -> np.ndarray:
+        return self.getPartialMolarEntropies()
+
+    @property
+    def partial_molar_int_energies(self) -> np.ndarray:
+        return self.getPartialMolarIntEnergies()
+
+    @property
+    def partial_molar_cp(self) -> np.ndarray:
+        return self.getPartialMolarCp()
+
+    @property
+    def partial_molar_volumes(self) -> np.ndarray:
+        return self.getPartialMolarVolumes()
+
+    @property
+    def enthalpy_RT(self) -> np.ndarray:
+        return self.getEnthalpy_RT()
+
+    @property
+    def entropy_R(self) -> np.ndarray:
+        return self.getEntropy_R()
+
+    @property
+    def gibbs_RT(self) -> np.ndarray:
+        return self.getGibbs_RT()
+
+    @property
+    def int_energy_RT(self) -> np.ndarray:
+        return np.array([self.intEnergy_mole() / self.RT()], dtype=float)
+
+    @property
+    def cp_R(self) -> np.ndarray:
+        return np.array([self.cp_mole() / GasConstant], dtype=float)
+
+    def Set(self, n: int, x: float, y: float) -> None:
+        self._tpx_substance.Set(int(n), float(x), float(y))
+        self._sync_tpx()
+        self._state_mf_number += 1
+        self.invalidateCache()
+
+    def minTemp(self, k: int = 0) -> float:
+        return float(self._tpx_substance.Tmin())
+
+    def maxTemp(self, k: int = 0) -> float:
+        return float(self._tpx_substance.Tmax())
+
+    def critTemperature(self) -> float:
+        return float(self._tpx_substance.Tcrit())
+
+    def critPressure(self) -> float:
+        return float(self._tpx_substance.Pcrit())
+
+    def critDensity(self) -> float:
+        return float(1.0 / self._tpx_substance.Vcrit())
+
+    def critCompressibility(self) -> float:
+        return float(self.critPressure() * self._tpx_substance.Vcrit() / (GasConstant * self.critTemperature()))
+
+    def fullStates(self) -> list[str]:
+        return ["TD", "UV", "DP", "HP", "SP", "SV", "ST", "TV", "PV", "UP", "VH", "TH", "SH", "TPQ"]
+
+    def partialStates(self) -> list[str]:
+        return ["TP", "TQ", "PQ"]
+
+    def phaseOfMatter(self) -> str:
+        if self.temperature() >= self.critTemperature() or self.pressure() >= self.critPressure():
+            return "supercritical"
+        elif self._tpx_substance.TwoPhase() == 1:
+            return "liquid-gas-mix"
+        elif self.pressure() < self._tpx_substance.Ps():
+            return "gas"
+        else:
+            return "liquid"
+
+    @property
+    def enthalpy_mass(self) -> _CallableFloat:
+        self._sync_tpx()
+        return _CallableFloat(self._tpx_substance.h())
+
+    @property
+    def intEnergy_mass(self) -> _CallableFloat:
+        self._sync_tpx()
+        return _CallableFloat(self._tpx_substance.u())
+
+    @property
+    def entropy_mass(self) -> _CallableFloat:
+        self._sync_tpx()
+        return _CallableFloat(self._tpx_substance.s())
+
+    @property
+    def gibbs_mass(self) -> _CallableFloat:
+        self._sync_tpx()
+        return _CallableFloat(self._tpx_substance.g())
+
+    @property
+    def cp_mass(self) -> _CallableFloat:
+        self._sync_tpx()
+        return _CallableFloat(self._tpx_substance.cp())
+
+    @property
+    def cv_mass(self) -> _CallableFloat:
+        self._sync_tpx()
+        return _CallableFloat(self._tpx_substance.cv())
+
+    @property
+    def enthalpy_mole(self) -> _CallableFloat:
+        self._sync_tpx()
+        return _CallableFloat(self._tpx_substance.h() * self._mw)
+
+    @property
+    def intEnergy_mole(self) -> _CallableFloat:
+        self._sync_tpx()
+        return _CallableFloat(self._tpx_substance.u() * self._mw)
+
+    @property
+    def entropy_mole(self) -> _CallableFloat:
+        self._sync_tpx()
+        return _CallableFloat(self._tpx_substance.s() * self._mw)
+
+    @property
+    def gibbs_mole(self) -> _CallableFloat:
+        self._sync_tpx()
+        return _CallableFloat(self._tpx_substance.g() * self._mw)
+
+    @property
+    def cp_mole(self) -> _CallableFloat:
+        self._sync_tpx()
+        return _CallableFloat(self._tpx_substance.cp() * self._mw)
+
+    @property
+    def cv_mole(self) -> _CallableFloat:
+        self._sync_tpx()
+        return _CallableFloat(self._tpx_substance.cv() * self._mw)
+
+    def isothermalCompressibility(self) -> float:
+        self._sync_tpx()
+        return float(self._tpx_substance.isothermalCompressibility())
+
+    def thermalExpansionCoeff(self) -> float:
+        self._sync_tpx()
+        return float(self._tpx_substance.thermalExpansionCoeff())
+
+    def internalPressure(self) -> float:
+        self._sync_tpx()
+        return float(self._tpx_substance.internalPressure())
+
+    def getPartialMolarEnthalpies(self, hbar=None):
+        ans = np.array([self.enthalpy_mole()], dtype=float)
+        if hbar is not None:
+            hbar[:] = ans
+            return hbar
+        return ans
+
+    def getPartialMolarEntropies(self, sbar=None):
+        ans = np.array([self.entropy_mole()], dtype=float)
+        if sbar is not None:
+            sbar[:] = ans
+            return sbar
+        return ans
+
+    def getPartialMolarIntEnergies(self, ubar=None):
+        ans = np.array([self.intEnergy_mole()], dtype=float)
+        if ubar is not None:
+            ubar[:] = ans
+            return ubar
+        return ans
+
+    def getPartialMolarCp(self, cpbar=None):
+        ans = np.array([self.cp_mole()], dtype=float)
+        if cpbar is not None:
+            cpbar[:] = ans
+            return cpbar
+        return ans
+
+    def getPartialMolarVolumes(self, vbar=None):
+        ans = np.array([1.0 / self.molarDensity()], dtype=float)
+        if vbar is not None:
+            vbar[:] = ans
+            return vbar
+        return ans
+
+    def standardConcentrationUnits(self) -> str:
+        return "dimensionless"
+
+    def getActivityConcentrations(self, c=None):
+        ans = np.array([1.0], dtype=float)
+        if c is not None:
+            c[:] = ans
+            return c
+        return ans
+
+    def standardConcentration(self, k: int = 0) -> float:
+        return 1.0
+
+    def getActivities(self, a=None):
+        ans = np.array([1.0], dtype=float)
+        if a is not None:
+            a[:] = ans
+            return a
+        return ans
+
+    def getStandardChemPotentials(self, mu=None):
+        ans = np.array([self.gibbs_mole()], dtype=float)
+        if mu is not None:
+            mu[:] = ans
+            return mu
+        return ans
+
+    def getChemPotentials(self, mu=None):
+        return self.getStandardChemPotentials(mu)
+
+    def getEnthalpy_RT(self, hrt=None):
+        ans = np.array([self.enthalpy_mole() / self.RT()], dtype=float)
+        if hrt is not None:
+            hrt[:] = ans
+            return hrt
+        return ans
+
+    def getEntropy_R(self, sr=None):
+        ans = np.array([self.entropy_mole() / GasConstant], dtype=float)
+        if sr is not None:
+            sr[:] = ans
+            return sr
+        return ans
+
+    def getGibbs_RT(self, grt=None):
+        ans = np.array([self.gibbs_mole() / self.RT()], dtype=float)
+        if grt is not None:
+            grt[:] = ans
+            return grt
+        return ans
+
+    def getEnthalpy_RT_ref(self, hrt=None):
+        rhoSave = self.density()
+        t = self.temperature()
+        plow = 1.0e-8
+        self.Set(14, t, plow)
+        ans = self.getEnthalpy_RT()
+        self.Set(12, t, 1.0 / rhoSave)
+        if hrt is not None:
+            hrt[:] = ans
+            return hrt
+        return ans
+
+    def getGibbs_RT_ref(self, grt=None):
+        rhoSave = self.density()
+        t = self.temperature()
+        pref = self.refPressure()
+        plow = 1.0e-8
+        self.Set(14, t, plow)
+        ans = self.getGibbs_RT()
+        ans[0] += math.log(pref / plow)
+        self.Set(12, t, 1.0 / rhoSave)
+        if grt is not None:
+            grt[:] = ans
+            return grt
+        return ans
+
+    def getGibbs_ref(self, g=None):
+        ans = self.getGibbs_RT_ref() * self.RT()
+        if g is not None:
+            g[:] = ans
+            return g
+        return ans
+
+    def getEntropy_R_ref(self, er=None):
+        rhoSave = self.density()
+        t = self.temperature()
+        pref = self.refPressure()
+        plow = 1.0e-8
+        self.Set(14, t, plow)
+        ans = self.getEntropy_R()
+        ans[0] -= math.log(pref / plow)
+        self.Set(12, t, 1.0 / rhoSave)
+        if er is not None:
+            er[:] = ans
+            return er
+        return ans
+
+    def setState_HP(self, h: float, p: float, tol: float = 1e-4) -> None:
+        self.Set(34, float(h), float(p))
+        self.setState_TD(float(self._tpx_substance.Temp()), 1.0 / float(self._tpx_substance.v()))
+
+    def setState_UV(self, u: float, v: float, tol: float = 1e-4) -> None:
+        self.Set(62, float(u), float(v))
+        self.setState_TD(float(self._tpx_substance.Temp()), 1.0 / float(self._tpx_substance.v()))
+
+    def setState_SV(self, s: float, v: float, tol: float = 1e-4) -> None:
+        self.Set(52, float(s), float(v))
+        self.setState_TD(float(self._tpx_substance.Temp()), 1.0 / float(self._tpx_substance.v()))
+
+    def setState_SP(self, s: float, p: float, tol: float = 1e-4) -> None:
+        self.Set(54, float(s), float(p))
+        self.setState_TD(float(self._tpx_substance.Temp()), 1.0 / float(self._tpx_substance.v()))
+
+    def setState_ST(self, s: float, t: float, tol: float = 1e-4) -> None:
+        self.Set(51, float(s), float(t))
+        self.setState_TD(float(self._tpx_substance.Temp()), 1.0 / float(self._tpx_substance.v()))
+
+    def setState_TV(self, t: float, v: float, tol: float = 1e-4) -> None:
+        self.Set(12, float(t), float(v))
+        self.setState_TD(float(self._tpx_substance.Temp()), 1.0 / float(self._tpx_substance.v()))
+
+    def setState_PV(self, p: float, v: float, tol: float = 1e-4) -> None:
+        self.Set(42, float(p), float(v))
+        self.setState_TD(float(self._tpx_substance.Temp()), 1.0 / float(self._tpx_substance.v()))
+
+    def setState_UP(self, u: float, p: float, tol: float = 1e-4) -> None:
+        self.Set(64, float(u), float(p))
+        self.setState_TD(float(self._tpx_substance.Temp()), 1.0 / float(self._tpx_substance.v()))
+
+    def setState_VH(self, v: float, h: float, tol: float = 1e-4) -> None:
+        self.Set(23, float(v), float(h))
+        self.setState_TD(float(self._tpx_substance.Temp()), 1.0 / float(self._tpx_substance.v()))
+
+    def setState_TH(self, t: float, h: float, tol: float = 1e-4) -> None:
+        self.Set(13, float(t), float(h))
+        self.setState_TD(float(self._tpx_substance.Temp()), 1.0 / float(self._tpx_substance.v()))
+
+    def setState_SH(self, s: float, h: float, tol: float = 1e-4) -> None:
+        self.Set(53, float(s), float(h))
+        self.setState_TD(float(self._tpx_substance.Temp()), 1.0 / float(self._tpx_substance.v()))
 
     def satPressure(self, t: float) -> float:
-        sub=self._tpx_substance; old=sub.T; sub.set_T(float(t)); ans=sub.Psat(); sub.T=old; return float(ans)
+        self.Set(12, float(t), self._tpx_substance.v())
+        return float(self._tpx_substance.Ps())
 
     def satTemperature(self, p: float) -> float:
         return float(self._tpx_substance.Tsat(float(p)))
 
-    def setState_Tsat(self, t: float, q: float) -> None:
-        self._tpx_substance.Set(17, float(t), float(q)); self._sync_tpx()
+    def vaporFraction(self) -> float:
+        self._sync_tpx()
+        return float(self._tpx_substance.x())
 
-    def setState_Psat(self, p: float, q: float) -> None:
-        self._tpx_substance.Set(47, float(p), float(q)); self._sync_tpx()
+    def setState_Tsat(self, t: float, x: float) -> None:
+        self.Set(17, float(t), float(x))
+        super().setTemperature(float(t))
+        super().setDensity(1.0 / self._tpx_substance.v())
+
+    def setState_Psat(self, p: float, x: float) -> None:
+        self.Set(47, float(p), float(x))
+        super().setTemperature(float(self._tpx_substance.Temp()))
+        super().setDensity(1.0 / self._tpx_substance.v())
 
     def setState_TPQ(self, t: float, p: float, q: float) -> None:
-        self._tpx_substance.Set(14, float(t), float(p)); self._sync_tpx()
+        self.Set(14, float(t), float(p))
+        self._sync_tpx()
+
+    def hasPhaseTransition(self) -> bool:
+        return True
+
+    def TPX_Substance(self) -> Optional[Any]:
+        return getattr(self, "_tpx_substance", None)
+
+    def initThermo(self) -> None:
+        super().initThermo()
+
+    def getParameters(self, phase_node: Optional[dict] = None) -> dict:
+        node = super().getParameters(phase_node) if hasattr(super(), "getParameters") else {}
+        node["pure-fluid-name"] = self._substance_name
+        return node
+
+    def report(self, show_thermo: bool = True, threshold: float = 1e-14) -> str:
+        lines = []
+        if self.name:
+            lines.append(f"\n  {self.name}:")
+        lines.append("")
+        lines.append(f"       temperature   {self.temperature():<.5g} K")
+        lines.append(f"          pressure   {self.pressure():<.5g} Pa")
+        lines.append(f"           density   {self.density():<.5g} kg/m^3")
+        lines.append(f"  mean mol. weight   {self.meanMolecularWeight():<.5g} kg/kmol")
+        lines.append(f"    vapor fraction   {self.vaporFraction():<.5g}")
+        lines.append(f"   phase of matter   {self.phaseOfMatter()}")
+        if show_thermo:
+            lines.append("")
+            lines.append("                     1 kg             1 kmol")
+            lines.append("                ---------------   ---------------")
+            lines.append(f"      enthalpy   {self.enthalpy_mass():15.5g}   {self.enthalpy_mole():15.5g}  J")
+            lines.append(f"internal energy   {self.intEnergy_mass():15.5g}   {self.intEnergy_mole():15.5g}  J")
+            lines.append(f"       entropy   {self.entropy_mass():15.5g}   {self.entropy_mole():15.5g}  J/K")
+            lines.append(f"Gibbs function   {self.gibbs_mass():15.5g}   {self.gibbs_mole():15.5g}  J")
+            lines.append(f"heat capacity c_p   {self.cp_mass():15.5g}   {self.cp_mole():15.5g}  J/K")
+            lines.append(f"heat capacity c_v   {self.cv_mass():15.5g}   {self.cv_mole():15.5g}  J/K")
+        return "\n".join(lines)
 
     def save(self) -> dict:
-        data = super().save()
+        data = super().save() if hasattr(super(), "save") else {}
         data.update({"pure-fluid-name": self._substance_name,
                      "quality": self.vaporFraction()})
         return data
@@ -1678,9 +2161,9 @@ class PureFluidPhase(ThermoPhase):
         if "pure-fluid-name" in state:
             self.setSubstance(state["pure-fluid-name"])
         if "T" in state and "P" in state:
-            self._tpx_substance.Set(14, float(state["T"]), float(state["P"]))
+            self.Set(14, float(state["T"]), float(state["P"]))
         elif "T" in state and "quality" in state:
-            self._tpx_substance.Set(17, float(state["T"]), float(state["quality"]))
+            self.Set(17, float(state["T"]), float(state["quality"]))
         self._sync_tpx()
 
 

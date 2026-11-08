@@ -1,0 +1,10 @@
+{
+  "iterations": 5000,
+  "workloads": {
+    "peng_robinson": {"time_sec": 0.0130321, "us_per_call": 2.60642, "dummy": -1.93079e+12},
+    "redlich_kwong": {"time_sec": 0.0112448, "us_per_call": 2.24896, "dummy": -1.93033e+12},
+    "pure_fluid": {"time_sec": 1.14671, "us_per_call": 229.343, "dummy": -7.7552e+10},
+    "water_props": {"time_sec": 0.134816, "us_per_call": 26.9632, "dummy": 4.77234e+06}
+  },
+  "total_time_sec": 1.30581
+}

@@ -41,6 +41,7 @@ _THERMO_ALIASES = {
     'redlich-kwong': 'Redlich-Kwong', 'redlichkwong': 'Redlich-Kwong',
     'fixed-stoichiometry': 'fixed-stoichiometry', 'stoichsubstance': 'fixed-stoichiometry',
     'stoichiometric-substance': 'fixed-stoichiometry',
+    'pure-fluid': 'pure-fluid', 'purefluid': 'pure-fluid', 'pure_fluid': 'pure-fluid',
 }
 _KINETICS_ALIASES = {
     'bulk': 'bulk', 'gas': 'bulk', 'gaskinetics': 'bulk',
@@ -199,6 +200,10 @@ class Solution:
             elif thermo_model == 'coverage-dependent-surface':
                 from .phases import CoverageDependentSurfPhase
                 self._thermo = CoverageDependentSurfPhase.from_mechanism(mech, phase_name=phase_name)
+                _apply_initial_state(self._thermo, phase.state if phase else None, mech.units)
+            elif thermo_model == 'pure-fluid':
+                from .phases import PureFluidPhase
+                self._thermo = PureFluidPhase.from_mechanism(mech, phase_name=phase_name)
                 _apply_initial_state(self._thermo, phase.state if phase else None, mech.units)
             else:
                 raise NotImplementedError(
@@ -520,65 +525,200 @@ class Solution:
 
     @property
     def cp_mole(self):
-        return self._thermo.cp_mole
+        val = self._thermo.cp_mole
+        return float(val() if callable(val) and not isinstance(val, float) else val)
 
     @property
     def cv_mole(self):
-        return self._thermo.cv_mole
+        val = self._thermo.cv_mole
+        return float(val() if callable(val) and not isinstance(val, float) else val)
 
     @property
     def cp_mass(self):
-        return self._thermo.cp_mass
+        val = self._thermo.cp_mass
+        return float(val() if callable(val) and not isinstance(val, float) else val)
 
     @property
     def cv_mass(self):
-        return self._thermo.cv_mass
+        val = self._thermo.cv_mass
+        return float(val() if callable(val) and not isinstance(val, float) else val)
 
     @property
     def enthalpy_mole(self):
-        return self._thermo.enthalpy_mole
+        val = self._thermo.enthalpy_mole
+        return float(val() if callable(val) and not isinstance(val, float) else val)
 
     @property
     def enthalpy_mass(self):
-        return self._thermo.enthalpy_mass
+        val = self._thermo.enthalpy_mass
+        return float(val() if callable(val) and not isinstance(val, float) else val)
 
     @property
     def int_energy_mole(self):
-        return self._thermo.int_energy_mole
+        if hasattr(self._thermo, "int_energy_mole"):
+            val = self._thermo.int_energy_mole
+            return float(val() if callable(val) else val)
+        if hasattr(self._thermo, "intEnergy_mole"):
+            return float(self._thermo.intEnergy_mole())
+        return 0.0
 
     @property
     def int_energy_mass(self):
-        return self._thermo.int_energy_mass
+        if hasattr(self._thermo, "int_energy_mass"):
+            val = self._thermo.int_energy_mass
+            return float(val() if callable(val) else val)
+        if hasattr(self._thermo, "intEnergy_mass"):
+            return float(self._thermo.intEnergy_mass())
+        return 0.0
 
     @property
     def entropy_mole(self):
-        return self._thermo.entropy_mole
+        val = self._thermo.entropy_mole
+        return float(val() if callable(val) and not isinstance(val, float) else val)
 
     @property
     def entropy_mass(self):
-        return self._thermo.entropy_mass
+        val = self._thermo.entropy_mass
+        return float(val() if callable(val) and not isinstance(val, float) else val)
 
     @property
     def gibbs_mole(self):
-        return self._thermo.gibbs_mole
+        val = self._thermo.gibbs_mole
+        return float(val() if callable(val) and not isinstance(val, float) else val)
 
     @property
     def gibbs_mass(self):
-        return self._thermo.gibbs_mass
+        val = self._thermo.gibbs_mass
+        return float(val() if callable(val) and not isinstance(val, float) else val)
 
     @property
     def sound_speed(self):
-        return self._thermo.sound_speed
+        if hasattr(self._thermo, 'sound_speed'):
+            return float(self._thermo.sound_speed)
+        if hasattr(self._thermo, 'soundSpeed'):
+            try:
+                return float(self._thermo.soundSpeed())
+            except Exception:
+                return 0.0
+        return 0.0
+
+    def soundSpeed(self):
+        return self.sound_speed
+
+    @property
+    def isothermal_compressibility(self):
+        if hasattr(self._thermo, 'isothermal_compressibility'):
+            return float(self._thermo.isothermal_compressibility)
+        if hasattr(self._thermo, 'isothermalCompressibility'):
+            try:
+                return float(self._thermo.isothermalCompressibility())
+            except Exception:
+                return 0.0
+        return 0.0
+
+    def isothermalCompressibility(self):
+        return self.isothermal_compressibility
+
+    @property
+    def thermal_expansion_coeff(self):
+        if hasattr(self._thermo, 'thermal_expansion_coeff'):
+            return float(self._thermo.thermal_expansion_coeff)
+        if hasattr(self._thermo, 'thermalExpansionCoeff'):
+            try:
+                return float(self._thermo.thermalExpansionCoeff())
+            except Exception:
+                return 0.0
+        return 0.0
+
+    def thermalExpansionCoeff(self):
+        return self.thermal_expansion_coeff
 
     @property
     def internal_pressure(self):
-        return self._thermo.internal_pressure
+        if hasattr(self._thermo, 'internal_pressure'):
+            return float(self._thermo.internal_pressure)
+        if hasattr(self._thermo, 'internalPressure'):
+            try:
+                return float(self._thermo.internalPressure())
+            except Exception:
+                return 0.0
+        return 0.0
 
     def internalPressure(self):
-        return self._thermo.internal_pressure
+        return self.internal_pressure
 
-    def soundSpeed(self):
-        return self._thermo.sound_speed
+
+    @property
+    def standard_chem_potentials(self):
+        return self.standard_chemical_potentials
+
+    @property
+    def mean_molecular_weight(self):
+        if hasattr(self._thermo, "mean_molecular_weight"):
+            return float(self._thermo.mean_molecular_weight)
+        if hasattr(self._thermo, "meanMolecularWeight"):
+            return float(self._thermo.meanMolecularWeight())
+        return 0.0
+
+    @property
+    def standard_volumes(self):
+        if hasattr(self._thermo, "standard_volumes"):
+            return self._thermo.standard_volumes
+        if hasattr(self._thermo, "getStandardVolumes"):
+            return self._thermo.getStandardVolumes()
+        return np.array([1.0 / self.molar_density] * self.n_species)
+
+    @property
+    def enthalpy_RT(self):
+        if hasattr(self._thermo, "enthalpy_RT"):
+            return self._thermo.enthalpy_RT
+        if hasattr(self._thermo, "getEnthalpy_RT"):
+            return self._thermo.getEnthalpy_RT()
+        return np.array([])
+
+    @property
+    def entropy_R(self):
+        if hasattr(self._thermo, "entropy_R"):
+            return self._thermo.entropy_R
+        if hasattr(self._thermo, "getEntropy_R"):
+            return self._thermo.getEntropy_R()
+        return np.array([])
+
+    @property
+    def gibbs_RT(self):
+        if hasattr(self._thermo, "gibbs_RT"):
+            return self._thermo.gibbs_RT
+        if hasattr(self._thermo, "getGibbs_RT"):
+            return self._thermo.getGibbs_RT()
+        return np.array([])
+
+    @property
+    def int_energy_RT(self):
+        if hasattr(self._thermo, "int_energy_RT"):
+            return self._thermo.int_energy_RT
+        if hasattr(self._thermo, "getIntEnergy_RT"):
+            return self._thermo.getIntEnergy_RT()
+        return np.array([])
+
+    @property
+    def cp_R(self):
+        if hasattr(self._thermo, "cp_R"):
+            return self._thermo.cp_R
+        if hasattr(self._thermo, "getCp_R"):
+            return self._thermo.getCp_R()
+        return np.array([])
+
+    @property
+    def phase_of_matter(self) -> str:
+        if hasattr(self._thermo, "phaseOfMatter"):
+            return str(self._thermo.phaseOfMatter())
+        if hasattr(self._thermo, "phase_of_matter"):
+            val = self._thermo.phase_of_matter
+            return str(val() if callable(val) else val)
+        return "gas"
+
+    def phaseOfMatter(self) -> str:
+        return self.phase_of_matter
 
     @property
     def chemical_potentials(self):
@@ -723,6 +863,115 @@ class Solution:
     def SV(self, val):
         self._thermo.SV = val
 
+    @property
+    def Q(self):
+        if hasattr(self._thermo, "vaporFraction"):
+            return float(self._thermo.vaporFraction())
+        return 1.0 if getattr(self._thermo, "phaseOfMatter", lambda: "")() == "gas" else 0.0
+
+    @Q.setter
+    def Q(self, val):
+        if hasattr(self._thermo, "setState_Tsat") and hasattr(self._thermo, "temperature"):
+            self._thermo.setState_Tsat(self._thermo.temperature(), float(val))
+
+    @property
+    def TQ(self):
+        return (self.T, self.Q)
+
+    @TQ.setter
+    def TQ(self, val):
+        t, q = val
+        if hasattr(self._thermo, "setState_Tsat"):
+            self._thermo.setState_Tsat(float(t), float(q))
+        else:
+            self.T = float(t)
+
+    @property
+    def PQ(self):
+        return (self.P, self.Q)
+
+    @PQ.setter
+    def PQ(self, val):
+        p, q = val
+        if hasattr(self._thermo, "setState_Psat"):
+            self._thermo.setState_Psat(float(p), float(q))
+        else:
+            self.P = float(p)
+
+    @property
+    def TV(self):
+        v = 1.0 / self.density
+        return (self.T, v)
+
+    @TV.setter
+    def TV(self, val):
+        t, v = val
+        if hasattr(self._thermo, "setState_TV"):
+            self._thermo.setState_TV(float(t), float(v))
+        else:
+            self.setState_TD(float(t), 1.0 / float(v))
+
+    @property
+    def PV(self):
+        v = 1.0 / self.density
+        return (self.P, v)
+
+    @PV.setter
+    def PV(self, val):
+        p, v = val
+        if hasattr(self._thermo, "setState_PV"):
+            self._thermo.setState_PV(float(p), float(v))
+        else:
+            self.setState_DP(1.0 / float(v), float(p))
+
+    @property
+    def UP(self):
+        return (self.int_energy_mass, self.P)
+
+    @UP.setter
+    def UP(self, val):
+        u, p = val
+        if hasattr(self._thermo, "setState_UP"):
+            self._thermo.setState_UP(float(u), float(p))
+        else:
+            self.setState_UV(float(u), 1.0 / self.density)
+
+    @property
+    def VH(self):
+        return (1.0 / self.density, self.enthalpy_mass)
+
+    @VH.setter
+    def VH(self, val):
+        v, h = val
+        if hasattr(self._thermo, "setState_VH"):
+            self._thermo.setState_VH(float(v), float(h))
+        else:
+            self.setState_HP(float(h), self.P)
+
+    @property
+    def TH(self):
+        return (self.T, self.enthalpy_mass)
+
+    @TH.setter
+    def TH(self, val):
+        t, h = val
+        if hasattr(self._thermo, "setState_TH"):
+            self._thermo.setState_TH(float(t), float(h))
+        else:
+            self.T = float(t)
+
+    @property
+    def SH(self):
+        return (self.entropy_mass, self.enthalpy_mass)
+
+    @SH.setter
+    def SH(self, val):
+        s, h = val
+        if hasattr(self._thermo, "setState_SH"):
+            self._thermo.setState_SH(float(s), float(h))
+        else:
+            self.setState_SP(float(s), self.P)
+
     # State mutators
     def setState_TP(self, t, p):
         self._thermo.setState_TP(t, p)
@@ -747,6 +996,60 @@ class Solution:
 
     def setState_SP(self, s, p, *, rtol=1e-9, max_iterations=500):
         self._thermo.setState_SP(s, p, rtol=rtol, max_iterations=max_iterations)
+
+    def setState_TV(self, t, v):
+        if hasattr(self._thermo, "setState_TV"):
+            self._thermo.setState_TV(t, v)
+        else:
+            self.setState_TD(t, 1.0 / v)
+
+    def setState_PV(self, p, v):
+        if hasattr(self._thermo, "setState_PV"):
+            self._thermo.setState_PV(p, v)
+        else:
+            self.setState_DP(1.0 / v, p)
+
+    def setState_UP(self, u, p):
+        if hasattr(self._thermo, "setState_UP"):
+            self._thermo.setState_UP(u, p)
+        else:
+            self.setState_UV(u, 1.0 / self.density)
+
+    def setState_VH(self, v, h):
+        if hasattr(self._thermo, "setState_VH"):
+            self._thermo.setState_VH(v, h)
+        else:
+            self.setState_HP(h, self.P)
+
+    def setState_TH(self, t, h):
+        if hasattr(self._thermo, "setState_TH"):
+            self._thermo.setState_TH(t, h)
+        else:
+            self.T = t
+
+    def setState_SH(self, s, h):
+        if hasattr(self._thermo, "setState_SH"):
+            self._thermo.setState_SH(s, h)
+        else:
+            self.setState_SP(s, self.P)
+
+    def setState_ST(self, s, t):
+        if hasattr(self._thermo, "setState_ST"):
+            self._thermo.setState_ST(s, t)
+        else:
+            self.T = t
+
+    def setState_Tsat(self, t, x):
+        if hasattr(self._thermo, "setState_Tsat"):
+            self._thermo.setState_Tsat(t, x)
+
+    def setState_Psat(self, p, x):
+        if hasattr(self._thermo, "setState_Psat"):
+            self._thermo.setState_Psat(p, x)
+
+    def setState_TPQ(self, t, p, q):
+        if hasattr(self._thermo, "setState_TPQ"):
+            self._thermo.setState_TPQ(t, p, q)
 
     def setState_SV(self, s, v, *, rtol=1e-9, max_iterations=500):
         self._thermo.setState_SV(s, v, rtol=rtol, max_iterations=max_iterations)

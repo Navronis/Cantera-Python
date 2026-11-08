@@ -19,8 +19,8 @@ class SymbolClosureDashboardTests(unittest.TestCase):
             + dashboard['remaining_without_final_disposition'],
             CANONICAL_TOTAL)
         self.assertFalse(dashboard['FULL_PORT_COMPLETE'])
-        self.assertEqual(dashboard['fully_dispositioned'], 2771)
-        self.assertEqual(dashboard['remaining_without_final_disposition'], 3013)
+        self.assertEqual(dashboard['fully_dispositioned'], 3246)
+        self.assertEqual(dashboard['remaining_without_final_disposition'], 2538)
 
     def test_checked_in_dashboard_matches_generator(self):
         path = Path(__file__).parents[1] / 'provenance' / 'symbol_closure_dashboard.json'
