@@ -1,0 +1,143 @@
+{
+  "family": "THERMO_FAMILY_6_ELECTROLYTES_CONDENSED",
+  "root_classes": [
+    "VPStandardStateTP",
+    "PDSS",
+    "PDSS_ConstVol",
+    "PDSS_SSVol",
+    "PDSS_HKFT",
+    "PDSS_Water",
+    "PDSSFactory",
+    "WaterSSTP",
+    "MolalityVPSSTP",
+    "DebyeHuckel",
+    "HMWSoln",
+    "IdealMolalSoln",
+    "IdealSolnGasVPSS",
+    "GibbsExcessVPSSTP",
+    "MargulesVPSSTP",
+    "RedlichKisterVPSSTP",
+    "BinarySolutionTabulatedThermo"
+  ],
+  "inherits_from": "ThermoPhase",
+  "primary_callers": [
+    "Kinetics (ElectrolyteKinetics, InterfaceKinetics)",
+    "Transport (AqueousTransport, LiquidTransport)",
+    "Reactor (ConstVolumeReactor, FlowReactor)",
+    "Equilibrium / VCS (Electrolyte multiphase equilibrium, precipitation, dissolution)",
+    "Electrochemistry (Battery and fuel cell electrolyte potential gradients)"
+  ],
+  "core_model_clusters": {
+    "VPStandardStateTP": [
+      "createInstallPDSS",
+      "standardConcentration",
+      "getActivityConcentrations",
+      "getStandardChemPotentials",
+      "getEnthalpy_RT",
+      "getEntropy_R",
+      "getGibbs_RT",
+      "getCp_R",
+      "getIntEnergy_RT",
+      "getPartialMolarVolumes",
+      "initThermo",
+      "initLengths",
+      "setState_TP",
+      "calcDensity"
+    ],
+    "PDSS": [
+      "enthalpy_mole",
+      "intEnergy_mole",
+      "entropy_mole",
+      "gibbs_mole",
+      "cp_mole",
+      "cv_mole",
+      "molarVolume",
+      "density",
+      "pressure",
+      "setPressure",
+      "setTemperature",
+      "setState_TP",
+      "setState_TR",
+      "critTemperature",
+      "critPressure",
+      "critDensity",
+      "initThermo"
+    ],
+    "PDSS_HKFT": [
+      "calc_HKFT_soln",
+      "lookup_HKFT_params",
+      "enthalpy_mole",
+      "entropy_mole",
+      "cp_mole",
+      "molarVolume",
+      "gibbs_mole"
+    ],
+    "PDSS_Water": [
+      "enthalpy_mole",
+      "entropy_mole",
+      "cp_mole",
+      "molarVolume",
+      "gibbs_mole",
+      "density",
+      "pressure",
+      "dthermalExpansionCoeffdT"
+    ],
+    "MolalityVPSSTP": [
+      "setMolalities",
+      "setMolalitiesByName",
+      "getMolalities",
+      "calcDensity",
+      "standardConcentration",
+      "getStandardChemPotentials",
+      "getActivityCoefficients"
+    ],
+    "DebyeHuckel": [
+      "A_Debye_coeffs",
+      "B_Debye_coeffs",
+      "s_Beta_ij",
+      "getActivities",
+      "getActivityCoefficients",
+      "getMolalityActivityCoefficients",
+      "getChemPotentials",
+      "getPartialMolarEnthalpies",
+      "getPartialMolarEntropies",
+      "getPartialMolarCp",
+      "getPartialMolarVolumes"
+    ],
+    "HMWSoln": [
+      "Beta0_ij",
+      "Beta1_ij",
+      "Beta2_ij",
+      "Cphi_ij",
+      "Theta_ij",
+      "Psi_ijk",
+      "s_B_ij",
+      "s_C_ij",
+      "calc_Pitzer_coeffs",
+      "getActivities",
+      "getActivityCoefficients",
+      "getMolalityActivityCoefficients",
+      "getChemPotentials",
+      "getPartialMolarEnthalpies",
+      "getPartialMolarEntropies",
+      "getPartialMolarCp",
+      "getPartialMolarVolumes"
+    ],
+    "MargulesVPSSTP": [
+      "getActivities",
+      "getActivityCoefficients",
+      "getChemPotentials",
+      "getPartialMolarEnthalpies",
+      "getPartialMolarEntropies",
+      "getPartialMolarVolumes"
+    ],
+    "RedlichKisterVPSSTP": [
+      "getActivities",
+      "getActivityCoefficients",
+      "getChemPotentials",
+      "getPartialMolarEnthalpies",
+      "getPartialMolarEntropies",
+      "getPartialMolarVolumes"
+    ]
+  }
+}
